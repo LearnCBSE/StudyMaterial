@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <style>
+    :root {
+      --bg: #0b0c1a;
+      --primary: #7f5af0;
+      --text: #fdfdfd;
+      --accent: #2cb67d;
+      --glow: 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 30px var(--primary);
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      color: var(--primary);
+      margin-bottom: 0.3em;
+      animation: pulse 1.5s infinite;
+      text-shadow: var(--glow);
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1.2em;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .glow-loader {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--primary);
+      box-shadow: var(--glow);
+      animation: pulseGlow 1.2s infinite ease-in-out;
+      margin: 1.8rem auto;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.85; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes pulseGlow {
+      0% {
+        box-shadow: 0 0 10px var(--primary);
+      }
+      50% {
+        box-shadow: 0 0 25px var(--primary), 0 0 50px var(--primary);
+      }
+      100% {
+        box-shadow: 0 0 10px var(--primary);
+      }
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.9rem;
+      opacity: 0.4;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Redirecting...</h1>
+  <p>We're guiding you to the correct page.</p>
+  <div class="glow-loader"></div>
+  <p>If nothing happens, <a id="fallback-link" href="#">click here</a>.</p>
+  <footer>ZenX Auto-Redirect</footer>
+
+  <script>
+    const path = window.location.pathname.replace(/\/$/, "");
+    const newUrl = path + ".html";
+    document.getElementById('fallback-link').href = newUrl;
+    setTimeout(() => {
+      window.location.replace(newUrl);
+    }, 500); // fastest safe redirect time
+  </script>
+</body>
+</html>
