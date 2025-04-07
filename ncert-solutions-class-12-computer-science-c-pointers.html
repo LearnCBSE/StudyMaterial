@@ -1,0 +1,790 @@
+<head>
+<meta charset="utf-8"/>
+<meta content="Bqdk9rTr4" name="admaven-placement"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript">
+</script>
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ncert-solutions-class-12-computer-science-c-pointers",
+  "url": "https://learncbse.online/ncert-solutions-class-12-computer-science-c-pointers",
+  "description": "ncert-solutions-class-12-computer-science-c-pointers"
+}
+ </script>
+<!DOCTYPE html>
+
+<html>
+</html>
+<style><style> background-color: #f0f8ff; border: 1px solid #d1e7ff; border-radius: 5px; font-family: 'Courier New', Courier, monospace; color: #003366; overflow-x: auto; } </style><style> pre, code { background-color: #1e1e1e; /* Dark background */ border-radius: 8px; /* Rounded corners */ padding: 15px; /* Padding for content */ font-family: 'Fira Code', monospace; /* Modern monospace font */ color: #dcdcdc; /* Light text color */ overflow-x: auto; /* Horizontal scroll */ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */ font-size: 14px; /* Font size */ line-height: 1.5; /* Line height for readability */ }
+ /* Optional: Highlight keywords */ .keyword { color: #569cd6; /* Blue color for keywords */ font-weight: bold; /* Bold keywords */ }
+ .string { color: #ce9178; /* String color */ }
+ .comment { color: #6a9955; /* Comment color */ font-style: italic; /* Italicize comments */ }</style><style> pre, code { background-color: #f5f5f5; /* Light grey background */ border-radius: 8px; /* Rounded corners */ padding: 15px; /* Padding for content */ font-family: 'Fira Code', monospace; /* Modern monospace font */ color: #dcdcdc; /* Light text color */ overflow-x: auto; /* Horizontal scroll */ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */ font-size: 14px; /* Font size */ line-height: 1.5; /* Line height for readability */ } /* Optional: Highlight keywords */ .keyword { color: #569cd6; /* Blue color for keywords */ font-weight: bold; /* Bold keywords */ } .string { color: #ce9178; /* String color */ } .comment { color: #6a9955; /* Comment color */ font-style: italic; /* Italicize comments */ } </style><style> /* Updated CSS Rules Here */ /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; /* Modern, clean sans-serif font */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; /* border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); padding: 10px 20px; */ flex-wrap: wrap; /* Ensure the menu items wrap on smaller screens */ text-align: center; /* border-radius: 8px; Rounded corners for a sleek design */ text-decoration: none; /* Remove underline for a clean look */ color: #0056b3; /* Deep blue color for professional tone */ transition: all 0.4s ease; /* Smoother transition effects */ } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; /* Prevent text from wrapping */ } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.7); */ transform: none; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; /* Darker text color for contrast */ border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover (Font Enlargement) */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* For Multi-Level Submenus */ .sub-menu-duplicate .sub-menu-duplicate { left: 100%; top: 0; transform: translateY(-10px); background-color: #f1f1f1; border-left: 4px solid #646667; } /* Active State for Menu Items */ .menu-link-duplicate:active, .menu-link-duplicate:focus { background-color: #0056b3; color: #fff; outline: none; } /* Mobile-Specific Styles */ @media (max-width: 768px) { /* Display only the main menu on mobile devices */ .menu-duplicate { display: flex !important; /* Ensure the main menu is visible */ flex-direction: row; /* Change to horizontal layout */ justify-content: center; /* Center-align menu items horizontally */ background-color: #fff; /* Maintain background color */ } .menu-item-duplicate { margin: 0 10px; /* Add spacing between main menu items horizontally */ } .menu-link-duplicate { font-size: 16px; /* Adjust font size for readability on mobile */ padding: 10px 15px; /* Increase touch area */ } /* Hide all submenus */ .sub-menu-duplicate { display: none !important; /* Completely hide submenus */ visibility: hidden !important; opacity: 0 !important; transform: none !important; } } </style><style> /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; font-size: 1.35rem; font-weight: 700; line-height: 1.6; letter-spacing: 0.03em; list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; flex-wrap: wrap; text-align: center; color: #0056b3; transition: all 0.4s ease; } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 500; position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 500; visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* Hide the menu on mobile devices */ @media (max-width: 768px) { /* Hide the entire menu on mobile devices */ .menu-duplicate { display: none !important; } } </style><style> .social-sidebar { position: fixed; top: 50%; left: 0; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; background-color: #f9f9f9; padding: 10px; border-radius: 0 5px 5px 0; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); z-index: 1000; transition: all 0.3s ease; } .social-sidebar.minimized { left: -50px; } #minimize-button { background-color: #007BFF; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-size: 16px; margin-bottom: 10px; transition: background-color 0.3s ease; } #minimize-button:hover { background-color: #0056b3; } .social-sidebar a { text-decoration: none; display: block; } .social-sidebar .social-icon { width: 30px; height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; } .social-sidebar .social-icon:hover { transform: scale(1.2); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } /* Responsive Design */ @media (max-width: 768px) { .social-sidebar { top: auto; bottom: 10px; left: 10px; flex-direction: row; gap: 15px; border-radius: 5px; padding: 8px; } .social-sidebar.minimized { left: -100%; } .social-sidebar .social-icon { width: 24px; height: 24px; } } </style><style> body { font-family: 'Playfair Display', serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background-color: #f9f9f9; } header, footer { background-color: #282c34; color: white; text-align: center; padding: 1.5rem 0; } h1, h2, h3 { font-family: 'Playfair Display', serif; color: #222; text-align: center; } a { font-family: 'Playfair Display', serif; color: #007BFF; text-decoration: none; font-weight: bold; } a:hover { text-decoration: underline; } p { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: bold; color: #343434; margin: 0; letter-spacing: 0.5px; } </style><style> body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background-color: #f9f9f9; } header, footer { background-color: #282c34; color: white; text-align: center; padding: 1.5rem 0; } h1, h2, h3 { color: #222; text-align: center; } a { color: #007BFF; text-decoration: none; font-weight: bold; } a:hover { text-decoration: underline; } .content { max-width: 900px; margin: 1.2rem auto; padding: 2rem; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); } header { background: linear-gradient(90deg, #4a90e2, #87cefa); color: white; text-align: center; padding: 2.5rem 0; border-bottom: 5px solid #d9e9ff; } h1 { font-size: 2.8rem; font-weight: bold; color: #ffffff; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); margin: 0; letter-spacing: 0.5px; } .secondary-heading { font-size: 1.3rem; font-weight: 500; color: #ffffff; margin-top: 0.2rem; letter-spacing: 0.3px; } @media (min-width: 1024px) { .desktop-banner { max-width: 22% !important; } } p { font-size: 1.2rem; font-weight: bold; color: #343434; margin: 0; letter-spacing: 0.5px; } </style><style> .entry-content { display: flex; justify-content: center; align-items: center; text-align: center; margin: 0 auto; max-width: 90%; /* Optionally set a max-width */ } </style><style> .entry-content { display: block; margin: 0 auto; max-width: 1200px; /* Set max-width if necessary */ padding: 0 1rem; /* Add padding to prevent text from touching edges */ text-align: center; /* Center text within the div */ } </style><style> /* Centering the entry-content div and ensuring good structure */ .entry-content { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin: 2rem auto; padding: 2rem; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; max-width: 1200px; /* Max width for large screens */ width: 100%; /* Ensure it doesn't exceed the container */ box-sizing: border-box; } </style><style> /* Left-aligning the entry-content div and ensuring good structure */ .entry-content { display: block; /* Set to block to avoid flex-based layout */ margin: 2rem auto; padding: 2rem; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; max-width: 1200px; /* Max width for large screens */ width: 100%; /* Ensure it doesn't exceed the container */ box-sizing: border-box; text-align: left; /* Align text to the left */ } </style>
+
+
+
+
+
+</head>
+<body>
+<header class="entry-header">
+<h1 class="entry-title" id="h1-1">
+   NCERT Solutions for Class 12 Computer Science (C++) – Pointers
+  </h1>
+</header>
+<div class="entry-content">
+<div class="code-block code-block-2" style="margin: 8px 0; clear: both;">
+</div>
+<h2 id="h2-2">
+<span style="color: #00ccff;">
+<strong>
+     NCERT Solutions for Class 12 Computer Science (C++) – Pointers
+    </strong>
+</span>
+</h2>
+<p style="text-align: center;">
+<span style="color: #0000ff;">
+<strong>
+     Very Short Answer Type Questions    [1 mark each]
+    </strong>
+</span>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 1:
+    </strong>
+</span>
+<br/>
+   Write the definition of a function FixPay (float Pay[ ], int N) in C+ + , which should modify each element of the array Pay having N elements, as per the following rules :
+  </p>
+<div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+</div>
+<table border="2">
+<tbody>
+<tr>
+<td style="padding-left: 30px;">
+<strong>
+       Existing Salary Value
+      </strong>
+</td>
+<td style="padding-left: 30px;">
+<strong>
+       Required Modification in Value
+      </strong>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 30px;">
+      If less than 1,00,000
+     </td>
+<td style="padding-left: 30px;">
+      Add 25% in the existing value
+     </td>
+</tr>
+<tr>
+<td style="padding-left: 30px;">
+      If &gt;=1,00,000 and &lt;20,000
+     </td>
+<td style="padding-left: 30px;">
+      Add 20% in the existing value
+     </td>
+</tr>
+<tr>
+<td style="padding-left: 30px;">
+      If &gt;=2,00,000
+     </td>
+<td style="padding-left: 30px;">
+      Add 15% in the existing value
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+</p>
+<pre>Void FixPay(float Pay[],int N)
+
+{
+
+for(int i=0;i&lt;N;i++)
+
+{
+
+if(Pay[i]&lt;100000)
+
+Pay[i]+= Pay[i]*0.25;
+
+else if(Pay[i]&lt;200000)
+
+Pay[i]+= Pay[i]*0.20; 
+
+else
+
+Pay[i]+= Pay[i]*0.15 ;
+
+ }
+
+}</pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 2:
+    </strong>
+</span>
+<br/>
+   Write the definition of a member function INSERT() for a class QUEUE in C+ +, to remove a product from a dynamically allocated Queue of items considering the following code is already written as a part of the program.
+  </p>
+<div class="code-block code-block-3" style="margin: 8px 0; clear: both;">
+</div>
+<pre>Struct ITEM 
+
+{
+
+int INO; char INAME[20];
+
+ITEM*Link;
+
+};
+
+class QUEUE 
+
+{
+
+ITEM *R,*F;
+
+Public:
+
+QUEUE(){R=NULL; F=NULL;}
+
+void INSERT();
+
+void DELETE();
+
+~QUEUE();
+
+};</pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+</p>
+<pre>Void QUEUE::INSER()
+
+{
+
+ITEM*newitem = new ITEM; 
+
+Cout&lt;&lt;"enter item number";
+
+cin&gt;&gt;newitem → INO;
+
+Cout&lt;&lt;"Enter item name";  
+
+gets(newitem → INAME); 
+
+newitem → Link = NULL; 
+
+if (R==NULL)
+
+R=F=newitem;
+
+else
+
+{
+
+ R → Link=newitem; 
+
+ R = newitem;
+
+}</pre>
+<p style="text-align: center;">
+<span style="color: #0000ff;">
+<strong>
+     Short Answer Type Questions-I
+    </strong>
+</span>
+</p>
+<div class="code-block code-block-4" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 1:
+    </strong>
+</span>
+<br/>
+   Write the output from the following C+ + program code :
+  </p>
+<pre>#include&lt;iostream.h&gt;
+
+#include&lt;ctype.h&gt; 
+
+void strcon(char s[])
+
+{
+
+for(int i=0,l=0;s[i]!='\0';i++,l++); 
+
+fortint j=0;j&lt;l;j++)
+
+{
+
+if(isupper(s[j]))
+
+s[j]=tolower(s[j])+2; 
+
+else if( islower(s[j])) 
+
+s[j]=toupper(s[j])-2; 
+
+else
+
+s[j] ='@';
+
+ }
+
+}
+
+void main()
+
+{
+
+char *c="Romeo Joliet"; 
+
+strcon(c);
+
+cout&lt;&lt;"Text="&lt;&lt;c&lt;&lt;endl; 
+
+c=c+3;
+
+cout&lt;&lt;"New Text="&lt;&lt;c&lt;&lt;endl; 
+
+c=c+5-2 ;
+
+cout&lt;&lt;"last Text= "&lt;&lt;c;
+
+ }</pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   Text = tMKCM@lMJGCR
+   <br/>
+   New Text = KCM@1MJGCR
+   <br/>
+   Last Text = 1MJGCR
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 2:
+    </strong>
+</span>
+<br/>
+   Obtain the output of the following C+ + program as expected to appear on the screen after its execution.
+   <br/>
+   Important Note :
+   <br/>
+   All the desired header files are already included in the code, which are required to run the code.
+  </p>
+<pre>void main()
+
+{
+
+char *Text="AJANTA"; int *P, Num[]={l,5,7,9}
+
+P=Num;
+
+cout &lt;&lt;*p&lt;&lt; Text &lt;&lt;endl;
+
+Text++;
+
+P++;
+
+cout&lt;&lt;*P&lt;&lt;Text&lt;&lt;endl;
+
+}</pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   1AJANTA
+   <br/>
+   5JANTA
+  </p>
+<div class="code-block code-block-5" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 3:
+    </strong>
+</span>
+<br/>
+   Obtain the output from the following C+ + program as expected to appear on the screen after its execution.
+   <br/>
+   Important Note :
+   <br/>
+   • Adi the desired header files are already included in the code, which are required to run the code
+   <strong>
+    .
+   </strong>
+</p>
+<pre>void main()
+
+{
+
+char *String="SARGAM"; 
+
+int *Ptr, a[]={1,5,7,9}; 
+
+ptr=a;
+
+cout&lt;&lt;*ptr&lt;&lt;String&lt;&lt;endl;
+
+String++; 
+
+ptr+=3;
+
+cout&lt;&lt;*ptr&lt;&lt;String&lt;&lt;endl;
+
+}</pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   1 SARGAM
+   <br/>
+   9ARGAM
+  </p>
+<div class="code-block code-block-6" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 4:
+    </strong>
+</span>
+<br/>
+   Give the output of the following program segment: (Assuming all desired header file(s) are already included)
+  </p>
+<pre>void main()
+
+{
+
+float *Ptr, Points[] = {20,50,30,40,10};
+
+Ptr = points; 
+
+cout&lt;&lt;*Ptr&lt;&lt;endl;
+
+Ptr+=2;
+
+Points[2]+=2.5; 
+
+cout&lt;&lt;*Ptr&lt;&lt;endl;
+
+Ptr++;
+
+(*Ptr)+=2.5; 
+
+cout&lt;&lt;Points[3]&lt;&lt;endl;
+
+}</pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   20.00 32.5
+   <br/>
+   42.50
+  </p>
+<div class="code-block code-block-7" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 5:
+    </strong>
+</span>
+<br/>
+   Find the output of the following code :
+   <br/>
+   Important Note :
+   <br/>
+   All the header files are already included in the code, which are required to run the code.
+  </p>
+<pre>void main()
+
+{
+
+char *String="SHAKTI";
+
+int*Point,Value[]={10,15,70,19};
+
+Point=Value;
+
+cout&lt;&lt;*Point&lt;&lt;String&lt;&lt;endl;
+
+String++;
+
+Point++;
+
+cout&lt;&lt;*Point&lt;&lt;String&lt;&lt;endl;
+
+}</pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   10SHAKTI
+   <br/>
+   15HAKTI
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 6:
+    </strong>
+</span>
+<br/>
+   Write the output of the following C+ + program code :
+   <br/>
+   Note : Assume all required header files are already being included in the program.
+  </p>
+<pre>void change(int*s)
+
+{
+
+for(int i=0;i&lt;4;i++)
+
+{
+
+if(*s&lt;40)
+
+{
+
+if(*s%2==0)
+
+*s=*s+10; 
+
+else
+
+*s=*s+ll; 
+
+}
+
+else
+
+ {
+
+if(*s%2==0)
+
+*S=*S-10; 
+
+else
+
+*s=*s-ll;
+
+}
+
+cout&lt;&lt;*s&lt;&lt;" ";
+
+s++;
+
+}
+
+}
+
+void main()
+
+{
+
+int score[]={25,60,35,53 }; 
+
+change(score);
+
+}</pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   36 50 46 42
+  </p>
+<p style="text-align: center;">
+<span style="color: #0000ff;">
+<strong>
+     Short Answer Type Question-II
+    </strong>
+</span>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 1:
+    </strong>
+</span>
+<br/>
+   Find the output of the following program :
+  </p>
+<pre>#include&lt;iostream.h&gt;
+
+void in(int x,int y,int &amp;z)
+
+{
+
+x+=y; 
+
+y--;
+
+z*=(x-y);
+
+}
+
+void out(int z,int y,int &amp;x)
+
+{
+
+x*=y;
+
+y++;
+
+z/=(x+y);
+
+}
+
+void main()
+
+{
+
+int a=20, b=30, c=10;
+
+out(a,c,b);
+
+cout&lt;&lt;a&lt;&lt;"#"&lt;&lt;b&lt;&lt;"#"&lt;&lt;c&lt;&lt;"#"&lt;&lt;endl; 
+
+in(b,c, a) ;
+
+cout&lt;&lt;a&lt;&lt;"®"&lt;&lt;b&lt;&lt;"@"&lt;&lt;c&lt;&lt;"@"&lt;&lt;endl; 
+
+out(a,b,c);
+
+cout&lt;&lt;a&lt;&lt;"$"&lt;&lt;b&lt;&lt;"$"&lt;&lt;c&lt;&lt;"$"&lt;&lt;endl;
+
+}</pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   20#300#10#
+   <br/>
+   620@300@10@
+   <br/>
+   620$300$3000$
+  </p>
+<p style="text-align: center;">
+<span style="color: #0000ff;">
+<strong>
+     Long Answer Type Questions
+    </strong>
+</span>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 1:
+    </strong>
+</span>
+<br/>
+   Find the output of the following code:
+  </p>
+<pre>#include&lt;iostream.h&gt; 
+
+void main()
+
+{
+
+int *Striker;
+
+int Track[]={10,25,30,55}; 
+
+Striker=Track; 
+
+Track[1]+=30;
+
+cout&lt;&lt;"Striker"&lt;&lt;*Striker&lt;&lt;endl; 
+
+*Striker=-10;
+
+Striker++;
+
+cout&lt;&lt;"Next@"&lt;&lt;*Striker&lt;&lt;endl; 
+
+Striker+=2;
+
+cout&lt;&lt;"Last@"&lt;&lt;*Striker&lt;&lt;endl;
+
+cout&lt;&lt;"Rest To"&lt;&lt;*Track[0]&lt;&lt;endl;
+
+}</pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   Striker 10
+   <br/>
+   Next@55
+   <br/>
+   Last@55
+   <br/>
+   Rest To 0
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 2:
+    </strong>
+</span>
+<br/>
+   Find the output of the following code :
+  </p>
+<pre>#include&lt;iostream.h&gt; 
+
+void main()
+
+{ 
+
+int *Queen;
+
+Moves[]={ll,22,33,44};
+
+Queen=Moves;
+
+Moves[2]+=22;
+
+cout&lt;&lt;"Queen@"&lt;&lt;*Queen&lt;&lt;endl; 
+
+*Queen-=ll;
+
+Queen+=2;
+
+cout&lt;&lt;”Now@"&lt;&lt;*Queen&lt;&lt;endl; 
+
+Queen++;
+
+cout&lt;&lt;"Finally@"&lt;&lt;*Queen&lt;&lt;endl;
+
+cout&lt;&lt;"NewOrigin@"&lt;&lt;*Moves[0]&lt;&lt;endl; 
+
+}</pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   Queen@11
+   <br/>
+   Now@55
+   <br/>
+   Finally@44
+   <br/>
+   NewOrigin@0
+  </p>
+ CONTENT END 2 
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"&gt;
+		&lt;rdf:Description rdf:about="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-pointers/"
+    dc:identifier="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-pointers/"
+    dc:title="NCERT Solutions for Class 12 Computer Science (C++) &amp;#8211; Pointers"
+    trackback:ping="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-pointers/trackback/" /&gt;
+&lt;/rdf:RDF&gt;
+</div>
+<div class="social-sidebar" id="social-sidebar">
+<button id="minimize-button" onclick="toggleSidebar()">−</button>
+<a href="https://t.me/learncbse_online" target="_blank" title="Telegram">
+<img alt="Telegram" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png"/>
+</a>
+<a href="https://x.com/learncbse_9" target="_blank" title="Twitter">
+<img alt="Twitter" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/733/733579.png"/>
+</a>
+<a href="https://www.reddit.com/r/learncbse_online/?rdt=59433" target="_blank" title="Reddit">
+<img alt="Reddit" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111589.png"/>
+</a>
+<a href="https://discord.gg/aM6xbTDz" target="_blank" title="Discord">
+<img alt="Discord" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png"/>
+</a>
+</div>
+<script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('social-sidebar');
+        sidebar.classList.toggle('minimized');
+    }
+</script>
+</body>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-C5VTZJSJCR">
+</script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C5VTZJSJCR');
+</script>

@@ -1,0 +1,1705 @@
+<head>
+<meta charset="utf-8"/>
+<meta content="Bqdk9rTr4" name="admaven-placement"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript">
+</script>
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ncert-solutions-class-12-computer-science-c-boolean-algebra",
+  "url": "https://learncbse.online/ncert-solutions-class-12-computer-science-c-boolean-algebra",
+  "description": "ncert-solutions-class-12-computer-science-c-boolean-algebra"
+}
+ </script>
+<!DOCTYPE html>
+
+<html>
+</html>
+<style><style> background-color: #f0f8ff; border: 1px solid #d1e7ff; border-radius: 5px; font-family: 'Courier New', Courier, monospace; color: #003366; overflow-x: auto; } </style><style> pre, code { background-color: #1e1e1e; /* Dark background */ border-radius: 8px; /* Rounded corners */ padding: 15px; /* Padding for content */ font-family: 'Fira Code', monospace; /* Modern monospace font */ color: #dcdcdc; /* Light text color */ overflow-x: auto; /* Horizontal scroll */ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */ font-size: 14px; /* Font size */ line-height: 1.5; /* Line height for readability */ }
+ /* Optional: Highlight keywords */ .keyword { color: #569cd6; /* Blue color for keywords */ font-weight: bold; /* Bold keywords */ }
+ .string { color: #ce9178; /* String color */ }
+ .comment { color: #6a9955; /* Comment color */ font-style: italic; /* Italicize comments */ }</style><style> pre, code { background-color: #f5f5f5; /* Light grey background */ border-radius: 8px; /* Rounded corners */ padding: 15px; /* Padding for content */ font-family: 'Fira Code', monospace; /* Modern monospace font */ color: #dcdcdc; /* Light text color */ overflow-x: auto; /* Horizontal scroll */ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */ font-size: 14px; /* Font size */ line-height: 1.5; /* Line height for readability */ } /* Optional: Highlight keywords */ .keyword { color: #569cd6; /* Blue color for keywords */ font-weight: bold; /* Bold keywords */ } .string { color: #ce9178; /* String color */ } .comment { color: #6a9955; /* Comment color */ font-style: italic; /* Italicize comments */ } </style><style> /* Updated CSS Rules Here */ /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; /* Modern, clean sans-serif font */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; /* border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); padding: 10px 20px; */ flex-wrap: wrap; /* Ensure the menu items wrap on smaller screens */ text-align: center; /* border-radius: 8px; Rounded corners for a sleek design */ text-decoration: none; /* Remove underline for a clean look */ color: #0056b3; /* Deep blue color for professional tone */ transition: all 0.4s ease; /* Smoother transition effects */ } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; /* Prevent text from wrapping */ } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.7); */ transform: none; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; /* Darker text color for contrast */ border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover (Font Enlargement) */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* For Multi-Level Submenus */ .sub-menu-duplicate .sub-menu-duplicate { left: 100%; top: 0; transform: translateY(-10px); background-color: #f1f1f1; border-left: 4px solid #646667; } /* Active State for Menu Items */ .menu-link-duplicate:active, .menu-link-duplicate:focus { background-color: #0056b3; color: #fff; outline: none; } /* Mobile-Specific Styles */ @media (max-width: 768px) { /* Display only the main menu on mobile devices */ .menu-duplicate { display: flex !important; /* Ensure the main menu is visible */ flex-direction: row; /* Change to horizontal layout */ justify-content: center; /* Center-align menu items horizontally */ background-color: #fff; /* Maintain background color */ } .menu-item-duplicate { margin: 0 10px; /* Add spacing between main menu items horizontally */ } .menu-link-duplicate { font-size: 16px; /* Adjust font size for readability on mobile */ padding: 10px 15px; /* Increase touch area */ } /* Hide all submenus */ .sub-menu-duplicate { display: none !important; /* Completely hide submenus */ visibility: hidden !important; opacity: 0 !important; transform: none !important; } } </style><style> /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; font-size: 1.35rem; font-weight: 700; line-height: 1.6; letter-spacing: 0.03em; list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; flex-wrap: wrap; text-align: center; color: #0056b3; transition: all 0.4s ease; } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 500; position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 500; visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* Hide the menu on mobile devices */ @media (max-width: 768px) { /* Hide the entire menu on mobile devices */ .menu-duplicate { display: none !important; } } </style><style> .social-sidebar { position: fixed; top: 50%; left: 0; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; background-color: #f9f9f9; padding: 10px; border-radius: 0 5px 5px 0; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); z-index: 1000; transition: all 0.3s ease; } .social-sidebar.minimized { left: -50px; } #minimize-button { background-color: #007BFF; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-size: 16px; margin-bottom: 10px; transition: background-color 0.3s ease; } #minimize-button:hover { background-color: #0056b3; } .social-sidebar a { text-decoration: none; display: block; } .social-sidebar .social-icon { width: 30px; height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; } .social-sidebar .social-icon:hover { transform: scale(1.2); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } /* Responsive Design */ @media (max-width: 768px) { .social-sidebar { top: auto; bottom: 10px; left: 10px; flex-direction: row; gap: 15px; border-radius: 5px; padding: 8px; } .social-sidebar.minimized { left: -100%; } .social-sidebar .social-icon { width: 24px; height: 24px; } } </style><style> body { font-family: 'Playfair Display', serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background-color: #f9f9f9; } header, footer { background-color: #282c34; color: white; text-align: center; padding: 1.5rem 0; } h1, h2, h3 { font-family: 'Playfair Display', serif; color: #222; text-align: center; } a { font-family: 'Playfair Display', serif; color: #007BFF; text-decoration: none; font-weight: bold; } a:hover { text-decoration: underline; } p { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: bold; color: #343434; margin: 0; letter-spacing: 0.5px; } </style><style> body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background-color: #f9f9f9; } header, footer { background-color: #282c34; color: white; text-align: center; padding: 1.5rem 0; } h1, h2, h3 { color: #222; text-align: center; } a { color: #007BFF; text-decoration: none; font-weight: bold; } a:hover { text-decoration: underline; } .content { max-width: 900px; margin: 1.2rem auto; padding: 2rem; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); } header { background: linear-gradient(90deg, #4a90e2, #87cefa); color: white; text-align: center; padding: 2.5rem 0; border-bottom: 5px solid #d9e9ff; } h1 { font-size: 2.8rem; font-weight: bold; color: #ffffff; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); margin: 0; letter-spacing: 0.5px; } .secondary-heading { font-size: 1.3rem; font-weight: 500; color: #ffffff; margin-top: 0.2rem; letter-spacing: 0.3px; } @media (min-width: 1024px) { .desktop-banner { max-width: 22% !important; } } p { font-size: 1.2rem; font-weight: bold; color: #343434; margin: 0; letter-spacing: 0.5px; } </style><style> .entry-content { display: flex; justify-content: center; align-items: center; text-align: center; margin: 0 auto; max-width: 90%; /* Optionally set a max-width */ } </style><style> .entry-content { display: block; margin: 0 auto; max-width: 1200px; /* Set max-width if necessary */ padding: 0 1rem; /* Add padding to prevent text from touching edges */ text-align: center; /* Center text within the div */ } </style><style> /* Centering the entry-content div and ensuring good structure */ .entry-content { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin: 2rem auto; padding: 2rem; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; max-width: 1200px; /* Max width for large screens */ width: 100%; /* Ensure it doesn't exceed the container */ box-sizing: border-box; } </style><style> /* Left-aligning the entry-content div and ensuring good structure */ .entry-content { display: block; /* Set to block to avoid flex-based layout */ margin: 2rem auto; padding: 2rem; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; max-width: 1200px; /* Max width for large screens */ width: 100%; /* Ensure it doesn't exceed the container */ box-sizing: border-box; text-align: left; /* Align text to the left */ } </style>
+</head>
+<body>
+<header class="entry-header">
+<h1 class="entry-title" id="h1-1">
+   NCERT Solutions for Class 12 Computer Science (C++) – Boolean Algebra
+  </h1>
+</header>
+<div class="entry-content">
+<div class="code-block code-block-2" style="margin: 8px 0; clear: both;">
+</div>
+<h2 id="h2-2">
+<span id="NCERT_Solutions_for_Class_12_Computer_Science_C_8211_Boolean_Algebra">
+<span style="color: #00ccff;">
+<strong>
+      NCERT Solutions for Class 12 Computer Science (C++) – Boolean Algebra
+     </strong>
+</span>
+</span>
+</h2>
+<h3 id="h3-1" style="text-align: center;">
+<span id="TOPIC-1_Basics_of_Boolean_Algebra">
+<span style="color: #0000ff;">
+     TOPIC-1
+    </span>
+<br/>
+<span style="color: #0000ff;">
+     Basics of Boolean Algebra
+    </span>
+</span>
+</h3>
+<p style="text-align: center;">
+<span style="color: #0000ff;">
+<strong>
+     Very Short Answer Type Questions    [1 mark each]
+    </strong>
+</span>
+</p>
+<div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 1:
+    </strong>
+</span>
+<br/>
+   Which gates are known as universal gates ? Why?
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   Universal gates are the ones which can be used for implementing any gate like AND, OR and NOT or any combination of these basic gates. NAND and NOR gates are universal gates.
+  </p>
+<p>
+   Check the
+   <a href="https://www.learncram.com/calculator/boolean-algebra-calculator/">
+    boolean algebra calculator
+   </a>
+   , Look at How easily to solve Boolean Expressions.
+  </p>
+<div class="code-block code-block-3" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 2:
+    </strong>
+</span>
+<br/>
+   Draw the equivalent logic circuit for the following Boolean expression :
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(178-1)" class="alignnone size-full wp-image-60022" data-recalc-dims="1" decoding="async" height="147" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-178-1.png?resize=257%2C147&amp;ssl=1" width="257"/>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 3:
+    </strong>
+</span>
+<br/>
+   Express the OR operator in terms of AND and NOT operator.
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   (A . B)’ = \(\overline { A }\) + \(\overline { B }\)
+   <br/>
+   (\(\overline { A }\) + \(\overline { B }\))’ = A + B
+  </p>
+<div class="code-block code-block-4" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 4:
+    </strong>
+</span>
+<br/>
+   Specify which axioms/theorems are being used in the following Boolean reductions :
+   <br/>
+   (a) (be)’ + be = 1
+   <br/>
+   (b) xyz + zx = xz
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+      <br/>
+</span>
+</strong>
+</span>
+   (a) x + x’ = 1 &amp; Complementary law
+   <br/>
+   (b) y + x = x &amp; Absorption law.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 5:
+    </strong>
+</span>
+<br/>
+   State and verify Associative law using Truth Table.
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+<strong>
+    Associative Law:
+   </strong>
+   This law states that:
+   <br/>
+   (A + B) + C = A + (B + C)
+   <br/>
+   (A.B).C = A. (B.C)
+   <br/>
+<strong>
+    Proof:
+   </strong>
+<br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(178-2)" class="alignnone size-full wp-image-60023" data-recalc-dims="1" decoding="async" fetchpriority="high" height="228" loading="lazy" sizes="(max-width: 864px) 100vw, 864px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-178-2.png?resize=864%2C228&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-178-2.png?w=864&amp;ssl=1 864w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-178-2.png?resize=300%2C79&amp;ssl=1 300w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-178-2.png?resize=768%2C203&amp;ssl=1 768w" width="864"/>
+<br/>
+   ∴ From above truth table,
+   <br/>
+   (A + B) + C = A + (B + C)
+   <br/>
+   Similarly, we can prove,
+   <br/>
+   A. (B.C) = (A. B).C
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(179-1)" class="alignnone size-full wp-image-60024" data-recalc-dims="1" decoding="async" height="232" loading="lazy" sizes="auto, (max-width: 806px) 100vw, 806px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-179-1.png?resize=806%2C232&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-179-1.png?w=806&amp;ssl=1 806w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-179-1.png?resize=300%2C86&amp;ssl=1 300w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-179-1.png?resize=768%2C221&amp;ssl=1 768w" width="806"/>
+</p>
+<p style="text-align: center;">
+<span style="color: #0000ff;">
+<strong>
+     Short Answer Type Questions-I    [2 mark each]
+    </strong>
+</span>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 1:
+    </strong>
+</span>
+<br/>
+   Correct the following boolean statements :
+   <br/>
+   1. X+1 = X
+   <br/>
+   2. (A’)’ = A’
+   <br/>
+   3.  A+A’ = 0
+   <br/>
+   4.  (A+B)’ = A.B
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   1. X+l=l or X+0=X
+   <br/>
+   2. ((A’)’) = A
+   <br/>
+   3. A + A’ = 1 or A. A’ = 0
+   <br/>
+   4. (A 4- B)’ = A’.B1
+  </p>
+<div class="code-block code-block-5" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 2:
+    </strong>
+</span>
+<br/>
+   Write the POS form of a Boolean Function F, which is represented in a truth table as follows :
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(179-2)" class="alignnone size-full wp-image-60026" data-recalc-dims="1" decoding="async" height="260" loading="lazy" sizes="auto, (max-width: 367px) 100vw, 367px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-179-2.png?resize=367%2C260&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-179-2.png?w=367&amp;ssl=1 367w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-179-2.png?resize=300%2C213&amp;ssl=1 300w" width="367"/>
+<br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   (P+Q+R).(P’+Q+R).(P’+Q’+R)
+  </p>
+<p style="text-align: center;">
+<span style="color: #0000ff;">
+<strong>
+     Short Answer Type Questions-II  [3 mark each]
+    </strong>
+</span>
+</p>
+<div class="code-block code-block-6" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+<strong>
+    Laws and Theorems
+   </strong>
+<br/>
+<span style="color: #eb4924;">
+<strong>
+     Question 1:
+    </strong>
+</span>
+<br/>
+   State and Verify Absorption law algebraically.
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   Absorption law states that :
+   <br/>
+   A + AB = A and A. (A + B) = A
+   <br/>
+   Algebraic method :
+   <br/>
+   Taking LHS
+   <br/>
+   A + AB = (A.l) + (A.B) by Identity
+   <br/>
+   = A. (1 + B) by Distribution
+   <br/>
+   = A.l by Null Element
+   <br/>
+   = A
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 2:
+    </strong>
+</span>
+<br/>
+   State and define principle of duality. Why is it so important in Boolean Algebra ?
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   Principle of duality : Duality principle states that from every boolean relation another boolean relation can be derived by :
+   <br/>
+   (i) Changing each OR sign (+) to an AND sign (-).
+   <br/>
+   (ii) Changing each AND sign (-) to an OR sign (+)
+   <br/>
+   ex : Dual of A + A’B = A. (A’ + B)
+   <br/>
+<strong>
+    Importance in Boolean Algebra :
+   </strong>
+   The principle of duality is an important concept in Boolean algebra, particularly in proving various theorems. The principle of duality is used extensively in proving Boolean algebra theorem. Once we prove that an expression is valid, by the principle of duality, its dual is also valid. Hence, our effort in proving various theorems is reduced to half.
+  </p>
+<div class="code-block code-block-7" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 3:
+    </strong>
+</span>
+<br/>
+   Name the law shown below &amp; verify it using a . truth table.
+   <br/>
+   X+ \(\overline { X }\).Y = X + Y.
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   This law is called “Absorption Law” also referred as redundance law.
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(180-1)" class="alignnone size-full wp-image-60027" data-recalc-dims="1" decoding="async" height="158" loading="lazy" sizes="auto, (max-width: 356px) 100vw, 356px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-180-1.png?resize=356%2C158&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-180-1.png?w=356&amp;ssl=1 356w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-180-1.png?resize=300%2C133&amp;ssl=1 300w" width="356"/>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 4:
+    </strong>
+</span>
+<br/>
+   Draw a logic circuit for the following Boolean expression : ab + c.d’.
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(180-2)" class="alignnone size-full wp-image-60028" data-recalc-dims="1" decoding="async" height="174" loading="lazy" sizes="auto, (max-width: 402px) 100vw, 402px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-180-2.png?resize=402%2C174&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-180-2.png?w=402&amp;ssl=1 402w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-180-2.png?resize=300%2C130&amp;ssl=1 300w" width="402"/>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 5:
+    </strong>
+</span>
+<br/>
+   Write the SOP form of a Boolean function F, which is represented in a truth table as follows :
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(180-3)" class="alignnone size-full wp-image-60029" data-recalc-dims="1" decoding="async" height="279" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-180-3.png?resize=112%2C279&amp;ssl=1" width="112"/>
+<br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   A’B’C + A’BC + AB’C + AB’C
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 6:
+    </strong>
+</span>
+<br/>
+   Draw the Logic Circuit for the following Boolean Expression :
+   <br/>
+   (U + V). w + z
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(180-4)" class="alignnone size-full wp-image-60030" data-recalc-dims="1" decoding="async" height="103" loading="lazy" sizes="auto, (max-width: 375px) 100vw, 375px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-180-4.png?resize=375%2C103&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-180-4.png?w=375&amp;ssl=1 375w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-180-4.png?resize=300%2C82&amp;ssl=1 300w" width="375"/>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 7:
+    </strong>
+</span>
+<br/>
+   Verify the following using Boolean Laws :
+   <br/>
+   LT + V = LTV + LP.V + U.V
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   L.H.S.
+   <br/>
+   = U’ + V
+   <br/>
+   = U’ . (V + V) + V (LP + U)
+   <br/>
+   = U’ . V + LP . V + U . V + U. V
+   <br/>
+   = U’. V + LP. V + U. V
+   <br/>
+   = R.H.S.
+  </p>
+<p style="text-align: center;">
+<strong>
+    OR
+   </strong>
+</p>
+<p>
+   R.H.S.
+   <br/>
+   = U’V’ + U’. V + U. V
+   <br/>
+   = LP . (V + V) + U. V
+   <br/>
+   = U’ 1 + U.V
+   <br/>
+   = U’ + U.V
+   <br/>
+   = U’ +V
+   <br/>
+   = L.H.S.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 8:
+    </strong>
+</span>
+<br/>
+   Draw the Logic Circuit for the following Boolean Expression :
+   <br/>
+   (X’ + Y). Z + W’
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(180-5)" class="alignnone size-full wp-image-60031" data-recalc-dims="1" decoding="async" height="114" loading="lazy" sizes="auto, (max-width: 405px) 100vw, 405px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-180-5.png?resize=405%2C114&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-180-5.png?w=405&amp;ssl=1 405w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-180-5.png?resize=300%2C84&amp;ssl=1 300w" width="405"/>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 9:
+    </strong>
+</span>
+<br/>
+   Write the equivalent boolean expression for the following logic circuit.
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(180-6)" class="alignnone size-full wp-image-60032" data-recalc-dims="1" decoding="async" height="144" loading="lazy" sizes="auto, (max-width: 330px) 100vw, 330px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-180-6.png?resize=330%2C144&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-180-6.png?w=330&amp;ssl=1 330w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-180-6.png?resize=300%2C131&amp;ssl=1 300w" width="330"/>
+<br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   ((X’.Y)’ + (X.Y’)’)’
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 10:
+    </strong>
+</span>
+<br/>
+   Write the equivalent Boolean Expression for the. following Logic Circuit :
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(180-7)" class="alignnone size-full wp-image-60033" data-recalc-dims="1" decoding="async" height="99" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-180-7.png?resize=251%2C99&amp;ssl=1" width="251"/>
+<br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   Z = (A+B)(B’ +C)
+   <br/>
+   = A.B’ + AC + B.B’ + BC
+   <br/>
+   = A.B’ + AC + BC
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 11:
+    </strong>
+</span>
+<br/>
+   Obtain the Boolean Expression for the logic circuit shown below :
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(181-1)" class="alignnone size-full wp-image-60034" data-recalc-dims="1" decoding="async" height="85" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-181-1.png?resize=230%2C85&amp;ssl=1" width="230"/>
+<br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   F = \(\left( \overline { A } .B \right) +\left( \overline { C+\overline { D } }\right)\)
+   <br/>
+   = \(\left( \overline { A } .B \right) +\overline { C } .D\)
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 12:
+    </strong>
+</span>
+<br/>
+   Name the law shown below &amp; verify it using a truth table.
+   <br/>
+   A + B . C = (A + B). (A + C).
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   This law is called “Distributive Law”.
+   <br/>
+   Prove by Truth table
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(181-2)" class="alignnone size-full wp-image-60035" data-recalc-dims="1" decoding="async" height="226" loading="lazy" sizes="auto, (max-width: 420px) 100vw, 420px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-181-2.png?resize=420%2C226&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-181-2.png?w=420&amp;ssl=1 420w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-181-2.png?resize=300%2C161&amp;ssl=1 300w" width="420"/>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 13:
+    </strong>
+</span>
+<br/>
+   Obtain the Boolean Expression for the logic circuit shown below :
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(181-3)" class="alignnone size-full wp-image-60036" data-recalc-dims="1" decoding="async" height="87" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-181-3.png?resize=224%2C87&amp;ssl=1" width="224"/>
+<br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+      <br/>
+</span>
+</strong>
+</span>
+   F = ( X.\(\overline { Y }\) ) + ( \(\overline { Z }\) + W).
+   <br/>
+   F = \(\overline { X }\) + Y + \(\overline { Z }\) + W.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 14:
+    </strong>
+</span>
+<br/>
+   State Demorgan’s law. Verify one of them using truth table.
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   There are two Demorgan’s law :
+   <br/>
+   (i)  \(\overline { A.B }\) = \(\overline { A }\) + \(\overline { B }\)
+   <br/>
+   (ii)  \(\overline { A+B }\) = \(\overline { XA}\) . \(\overline { B }\)
+   <br/>
+<strong>
+    Proof :
+    <br/>
+</strong>
+   (i)  \(\overline { A.B }\) = \(\overline { A }\) + \(\overline { B }\)
+   <strong>
+<br/>
+</strong>
+<br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(181-4)" class="alignnone size-full wp-image-60037" data-recalc-dims="1" decoding="async" height="136" loading="lazy" sizes="auto, (max-width: 367px) 100vw, 367px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-181-4.png?resize=367%2C136&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-181-4.png?w=367&amp;ssl=1 367w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-181-4.png?resize=300%2C111&amp;ssl=1 300w" width="367"/>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 15:
+    </strong>
+</span>
+<br/>
+   Draw a logic Circuit for the boolean expression:
+   <br/>
+   A . \(\overline { B }\) + (C + \(\overline { B }\)). \(\overline { A }\)
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(181-5)" class="alignnone size-full wp-image-60038" data-recalc-dims="1" decoding="async" height="186" loading="lazy" sizes="auto, (max-width: 347px) 100vw, 347px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-181-5.png?resize=347%2C186&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-181-5.png?w=347&amp;ssl=1 347w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-181-5.png?resize=300%2C161&amp;ssl=1 300w" width="347"/>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 16:
+    </strong>
+</span>
+<br/>
+   Obtain the Boolean Expression for the logic circuit shown below :
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(181-6)" class="alignnone size-full wp-image-60039" data-recalc-dims="1" decoding="async" height="241" loading="lazy" sizes="auto, (max-width: 329px) 100vw, 329px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-181-6.png?resize=329%2C241&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-181-6.png?w=329&amp;ssl=1 329w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-181-6.png?resize=300%2C220&amp;ssl=1 300w" width="329"/>
+<br/>
+   F = P’ Q + (Q + R’)
+   <br/>
+   = Q. (P’ + R’)
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 17:
+    </strong>
+</span>
+<br/>
+   Verify the following using Boolean Laws X + Z = X + X’. Z + Y. Z
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   Taking RHS
+   <br/>
+   X + X’Z + YZ
+   <br/>
+   = (X + X’). (X + Z) + YZ (Distribution Law)
+   <br/>
+   = 1. (X + Z) + YZ    (A + A’ = 1)
+   <br/>
+   = X + Z + YZ
+   <br/>
+   = X + Z (1 + Y)
+   <br/>
+   = X + Z    (1 + A = 1; 1. A = A)
+   <br/>
+   = Hence verified
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 18:
+    </strong>
+</span>
+<br/>
+   Verify the following using Boolean Laws : A + C = A + A. C + B.C
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   A + C = A + A’.C + BC
+   <br/>
+   Solve RHS
+   <br/>
+   A + A’C + BC
+   <br/>
+   (A + A). (A + C) + BC [Using distributive law]
+   <br/>
+   1. (A + C) + BC
+   <br/>
+   = A + C + BC
+   <br/>
+   = A + C(1 + B)
+   <br/>
+   = A + C.1
+   <br/>
+   = A + C
+   <br/>
+   = LHS (Hence, verified)
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 19:
+    </strong>
+</span>
+<br/>
+   Obtain the Boolean Expression for the logic circuit shown below :
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(182-1)" class="alignnone size-full wp-image-60040" data-recalc-dims="1" decoding="async" height="202" loading="lazy" sizes="auto, (max-width: 352px) 100vw, 352px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-182-1.png?resize=352%2C202&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-182-1.png?w=352&amp;ssl=1 352w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-182-1.png?resize=300%2C172&amp;ssl=1 300w" width="352"/>
+<br/>
+   Expression at F :
+   <br/>
+   ( \(\overline { X }\) . Y) + (Y + \(\overline { Z }\) )
+   <br/>
+   ( \(\overline { X }\) + 1) Y + \(\overline { Z }\)    [Distributive law]
+   <br/>
+   Y + \(\overline { Z }\)    [ ∴ 1 + Z = 1]
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 20:
+    </strong>
+</span>
+<br/>
+   Verify the following using truth table :
+   <br/>
+   (i) X . X’ = 0
+   <br/>
+   (ii) X + 1 = 1
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(182-2)" class="alignnone size-full wp-image-60041" data-recalc-dims="1" decoding="async" height="204" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-182-2.png?resize=272%2C204&amp;ssl=1" width="272"/>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 21:
+    </strong>
+</span>
+<br/>
+   Write the equivalent boolean expression for the following logic circuit :
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(182-3)" class="alignnone size-full wp-image-60042" data-recalc-dims="1" decoding="async" height="94" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-182-3.png?resize=266%2C94&amp;ssl=1" width="266"/>
+<br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   Y = U \(\overline { V }\) + \(\overline { U}\) \(\overline { W }\)
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 22:
+    </strong>
+</span>
+<br/>
+   Write the equivalent boolean expression for the following logic circuit :
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(182-4)" class="alignnone size-full wp-image-60043" data-recalc-dims="1" decoding="async" height="98" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-182-4.png?resize=259%2C98&amp;ssl=1" width="259"/>
+<br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   Y = (U + \(\overline { V }\) ). (U + \(\overline { W }\) )
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 23:
+    </strong>
+</span>
+<br/>
+   Verify the following using truth table :
+   <br/>
+   (i) X + 0 = X
+   <br/>
+   (ii) X + X’ = 1
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(182-5)" class="alignnone size-full wp-image-60044" data-recalc-dims="1" decoding="async" height="117" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-182-5.png?resize=281%2C117&amp;ssl=1" width="281"/>
+<br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(182-6)" class="alignnone size-full wp-image-60045" data-recalc-dims="1" decoding="async" height="131" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-182-6.png?resize=272%2C131&amp;ssl=1" width="272"/>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 24:
+    </strong>
+</span>
+<br/>
+   Derive a Canonical SOP expression for a Boolean function F, represented by the following truth table :
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(182-7)" class="alignnone size-full wp-image-60046" data-recalc-dims="1" decoding="async" height="288" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-182-7.png?resize=259%2C288&amp;ssl=1" width="259"/>
+<br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   F(A, B, C) = A’B’C + A’BC + AB’C + ABC
+   <br/>
+<strong>
+    OR
+   </strong>
+<br/>
+   F(A,B,C) =∑(0, 3,4,7)
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 25:
+    </strong>
+</span>
+<br/>
+   Derive a Canonical POS expression for a Boolean function F, represented by the following truth table :
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(182-8)" class="alignnone size-full wp-image-60047" data-recalc-dims="1" decoding="async" height="266" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-182-8.png?resize=300%2C266&amp;ssl=1" width="300"/>
+<br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+      <br/>
+</span>
+</strong>
+</span>
+   F(RQ,R) = (P+Q+R’)(P+Q,+R)(P’+Q,+R’) (P’+Q’+R)
+   <br/>
+<strong>
+    OR
+   </strong>
+<br/>
+   F(RQ,R)=II(1,2,5,6)
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 26:
+    </strong>
+</span>
+<br/>
+   Obtain a simplified form for a Boolean expression :
+   <br/>
+   F(U, V, W, Z) = II (0,1,3,5, 6, 7,15)
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(183-1)" class="alignnone size-full wp-image-60048" data-recalc-dims="1" decoding="async" height="247" loading="lazy" sizes="auto, (max-width: 417px) 100vw, 417px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-183-1.png?resize=417%2C247&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-183-1.png?w=417&amp;ssl=1 417w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-183-1.png?resize=300%2C178&amp;ssl=1 300w" width="417"/>
+<br/>
+   (u + v + w).(u+z’).(v’+w’).(u’+w’+z)
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 27:
+    </strong>
+</span>
+<br/>
+   Reduce the following Boolean Expression to its simplest form using K-Map :
+   <br/>
+   F (X, X Z, W) = X (0,1, 6, 8, 9,10,11,12,15)
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(183-2)" class="alignnone size-full wp-image-60049" data-recalc-dims="1" decoding="async" height="324" loading="lazy" sizes="auto, (max-width: 348px) 100vw, 348px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-183-2.png?resize=348%2C324&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-183-2.png?w=348&amp;ssl=1 348w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-183-2.png?resize=300%2C279&amp;ssl=1 300w" width="348"/>
+<br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(183-3)" class="alignnone size-full wp-image-60050" data-recalc-dims="1" decoding="async" height="342" loading="lazy" sizes="auto, (max-width: 351px) 100vw, 351px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-183-3.png?resize=351%2C342&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-183-3.png?w=351&amp;ssl=1 351w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-183-3.png?resize=300%2C292&amp;ssl=1 300w" width="351"/>
+<br/>
+   Simplified Expression : XY + Y’Z’ + XZ’W’ + XZW + X’YZW’
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 28:
+    </strong>
+</span>
+<br/>
+   Reduce the following Boolean Expression to its simplest form using K-Map :
+   <br/>
+   F(X, Y, Z, W) = X (0,1,4, 5,6, 7,8, 9,11,15)
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(183-4)" class="alignnone size-full wp-image-60051" data-recalc-dims="1" decoding="async" height="323" loading="lazy" sizes="auto, (max-width: 351px) 100vw, 351px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-183-4.png?resize=351%2C323&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-183-4.png?w=351&amp;ssl=1 351w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-183-4.png?resize=300%2C276&amp;ssl=1 300w" width="351"/>
+<br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(184-1)" class="alignnone size-full wp-image-60052" data-recalc-dims="1" decoding="async" height="341" loading="lazy" sizes="auto, (max-width: 350px) 100vw, 350px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-184-1.png?resize=350%2C341&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-184-1.png?w=350&amp;ssl=1 350w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-184-1.png?resize=300%2C292&amp;ssl=1 300w" width="350"/>
+<br/>
+   Simplified Expression : Y’Z’ + XY + XZW
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 29:
+    </strong>
+</span>
+<br/>
+   Verify the following using Boolean Laws.
+   <br/>
+   X + Y’ = X. Y + X. Y + X’. Y
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   L. H. S.
+   <br/>
+   = X + Y’
+   <br/>
+   = X. (Y+Y’) + (X + X’). Y’
+   <br/>
+   = X. Y + X. Y’ + X. Y’ + X’. Y’
+   <br/>
+   = X. Y + X. Y’ + X’. Y’
+   <br/>
+   = R. H. S
+   <br/>
+<strong>
+    OR
+   </strong>
+<br/>
+   = X. Y + X. Y’ + X’. Y’
+   <br/>
+   = X. (Y + Y’) + X’. Y’
+   <br/>
+   = X. 1 + X’. Y’
+   <br/>
+   = X + X’. Y’
+   <br/>
+   = X + Y
+   <br/>
+   = L. H. S
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 30:
+    </strong>
+</span>
+<br/>
+   State Distributive law and verify it using truth table.
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+<strong>
+    Distributive law :
+   </strong>
+   This law states that
+   <br/>
+   (i) x(y + z) = xy + x.z.
+   <br/>
+   (ii) x + yz = (x + y)(x + z)
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(184-2)" class="alignnone size-full wp-image-60053" data-recalc-dims="1" decoding="async" height="605" loading="lazy" sizes="auto, (max-width: 426px) 100vw, 426px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-184-2.png?resize=426%2C605&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-184-2.png?w=426&amp;ssl=1 426w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-184-2.png?resize=211%2C300&amp;ssl=1 211w" width="426"/>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 31:
+    </strong>
+</span>
+<br/>
+   Reduce the following Boolean Expression using KMap :
+   <br/>
+   F(A, B, C, D) = ∑{0,1,3, 5, 6, 7,9,11,13,14,15}
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(184-3)" class="alignnone size-full wp-image-60054" data-recalc-dims="1" decoding="async" height="361" loading="lazy" sizes="auto, (max-width: 368px) 100vw, 368px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-184-3.png?resize=368%2C361&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-184-3.png?w=368&amp;ssl=1 368w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-184-3.png?resize=300%2C294&amp;ssl=1 300w" width="368"/>
+<br/>
+   A’B’C’+D+BC
+  </p>
+<h3 id="h3-1" style="text-align: center;">
+<span id="TOPIC-2_Karnaugh_Map_Minimization_and_Applications_of_Boolean_Algebra">
+<span style="color: #0000ff;">
+     TOPIC-2
+    </span>
+<br/>
+<span style="color: #0000ff;">
+     Karnaugh Map Minimization and Applications of Boolean Algebra
+    </span>
+</span>
+</h3>
+<p style="text-align: center;">
+<span style="color: #0000ff;">
+<strong>
+     Very Short Answer Type Questions [1 mark each]
+    </strong>
+</span>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 1:
+    </strong>
+</span>
+<br/>
+   Write Product of Sum expression of the function F (a, b, c, d) from the given truth table
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(186-1)" class="alignnone size-full wp-image-60055" data-recalc-dims="1" decoding="async" height="388" loading="lazy" sizes="auto, (max-width: 365px) 100vw, 365px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-186-1.png?resize=365%2C388&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-186-1.png?w=365&amp;ssl=1 365w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-186-1.png?resize=282%2C300&amp;ssl=1 282w" width="365"/>
+<br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   F (a, b, c, d) =
+   <br/>
+   (a + b + c + d).(a + b + c + d’). (a + b’ + c + d) . (a + b’ + c’ + d’). (a’ + b + c + d).
+   <br/>
+   (a’ + b + c + d’). (a’ + b’ + c + d). (a’ + b’ + c + d’) . (a’ + b’ + c’ + d)
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 2:
+    </strong>
+</span>
+<br/>
+   Convert the following boolean expression inti! its equivalent Canonical Sum of Products form (SOP) :
+   <br/>
+   (U + V + W) (U + V + W’) (U’ + V + W) (U’ + V’ + W’)
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   π (0,1, 4, 7)
+   <br/>
+   ∑(2, 3, 5, 6)
+   <br/>
+   010 011 101 110
+   <br/>
+   = U’VW’ + U’VW + UV’W + UVW’
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 3:
+    </strong>
+</span>
+<br/>
+   Write the Sum of Product form of the function F(R Q, R) for the following truth table representation of F :
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(186-2)" class="alignnone size-full wp-image-60056" data-recalc-dims="1" decoding="async" height="280" loading="lazy" sizes="auto, (max-width: 407px) 100vw, 407px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-186-2.png?resize=407%2C280&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-186-2.png?w=407&amp;ssl=1 407w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-186-2.png?resize=300%2C206&amp;ssl=1 300w" width="407"/>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 4:
+    </strong>
+</span>
+<br/>
+   Write the Product of Sum form of the function F(X, Y, Z) for the following truth table representation of F :
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(186-3)" class="alignnone size-full wp-image-60057" data-recalc-dims="1" decoding="async" height="282" loading="lazy" sizes="auto, (max-width: 402px) 100vw, 402px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-186-3.png?resize=402%2C282&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-186-3.png?w=402&amp;ssl=1 402w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-186-3.png?resize=300%2C210&amp;ssl=1 300w" width="402"/>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 5:
+    </strong>
+</span>
+<br/>
+   Write the Product of Sum form of the function G(U, V W) for the following truth table representation of G :
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(186-4)" class="alignnone size-full wp-image-60058" data-recalc-dims="1" decoding="async" height="313" loading="lazy" sizes="auto, (max-width: 409px) 100vw, 409px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-186-4.png?resize=409%2C313&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-186-4.png?w=409&amp;ssl=1 409w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-186-4.png?resize=300%2C230&amp;ssl=1 300w" width="409"/>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 6:
+    </strong>
+</span>
+<br/>
+   Write the Product of Sum form of function G(U, V, W) for the following truth table representation of G :
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(186-5)" class="alignnone size-full wp-image-60059" data-recalc-dims="1" decoding="async" height="274" loading="lazy" sizes="auto, (max-width: 369px) 100vw, 369px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-186-5.png?resize=369%2C274&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-186-5.png?w=369&amp;ssl=1 369w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-186-5.png?resize=300%2C223&amp;ssl=1 300w" width="369"/>
+<br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(187-1)" class="alignnone size-full wp-image-60060" data-recalc-dims="1" decoding="async" height="416" loading="lazy" sizes="auto, (max-width: 407px) 100vw, 407px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-187-1.png?resize=407%2C416&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-187-1.png?w=407&amp;ssl=1 407w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-187-1.png?resize=294%2C300&amp;ssl=1 294w" width="407"/>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 7:
+    </strong>
+</span>
+<br/>
+   Write the Sum of Product form of the function F(A, B, C) for the following truth table reprsentation of
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(187-2)" class="alignnone size-full wp-image-60061" data-recalc-dims="1" decoding="async" height="326" loading="lazy" sizes="auto, (max-width: 366px) 100vw, 366px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-187-2.png?resize=366%2C326&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-187-2.png?w=366&amp;ssl=1 366w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-187-2.png?resize=300%2C267&amp;ssl=1 300w" width="366"/>
+<br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(187-3)" class="alignnone size-full wp-image-60062" data-recalc-dims="1" decoding="async" height="218" loading="lazy" sizes="auto, (max-width: 404px) 100vw, 404px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-187-3.png?resize=404%2C218&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-187-3.png?w=404&amp;ssl=1 404w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-187-3.png?resize=300%2C162&amp;ssl=1 300w" width="404"/>
+<br/>
+   SOP = A’BC’ + A’BC + AB’C’ + ABC
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 8:
+    </strong>
+</span>
+<br/>
+   Write the SOP form of a boolean function F, which is represented in a truth table as follows:
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(187-4)" class="alignnone size-full wp-image-60063" data-recalc-dims="1" decoding="async" height="188" loading="lazy" sizes="auto, (max-width: 363px) 100vw, 363px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-187-4.png?resize=363%2C188&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-187-4.png?w=363&amp;ssl=1 363w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-187-4.png?resize=300%2C155&amp;ssl=1 300w" width="363"/>
+<br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+      <br/>
+</span>
+</strong>
+</span>
+   F(X, Y, Z) = X’.Y’. Z’ + X’. Y. Z’ + X. Y’. Z’+ X.Y.Z
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 9:
+    </strong>
+</span>
+<br/>
+   Write the POS form of boolean function G, which is represented in a truth table as follows :
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(187-5)" class="alignnone size-full wp-image-60064" data-recalc-dims="1" decoding="async" height="189" loading="lazy" sizes="auto, (max-width: 362px) 100vw, 362px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-187-5.png?resize=362%2C189&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-187-5.png?w=362&amp;ssl=1 362w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-187-5.png?resize=300%2C157&amp;ssl=1 300w" width="362"/>
+<br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   G (A, B, C) = (A + B + C). (A + B’ + C’). (A’ + B + C). (A’ + B + C’)
+  </p>
+<p style="text-align: center;">
+<span style="color: #0000ff;">
+<strong>
+     Short Answer Type Questions-II
+    </strong>
+</span>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 1:
+    </strong>
+</span>
+<br/>
+   Obtain the minimal SOP form for the following Boolean expression using K-Map.
+   <br/>
+   F(A,B,C,D) = ∑ (0,2,3,5,7,8,10,1143,15)
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(187-6)" class="alignnone size-full wp-image-60065" data-recalc-dims="1" decoding="async" height="248" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-187-6.png?resize=263%2C248&amp;ssl=1" width="263"/>
+<br/>
+   Quad 1 = m0 + m2 + m8 + m10 = B’D’
+   <br/>
+   Quad 2 = m3 + m7 + m15 + m11 = CD
+   <br/>
+   Quad 3 = m5 + m7 + m15 + m13 = BD
+   <br/>
+   Minimal SOP = B’D’ + CD + BD
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 2:
+    </strong>
+</span>
+<br/>
+   Reduce the following Boolean expression using
+   <br/>
+   K-Map :
+   <br/>
+   F(A,B,C,D) = 7r (0,1,2,4,5,6,8,10)
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(188-1)" class="alignnone size-full wp-image-60066" data-recalc-dims="1" decoding="async" height="224" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-188-1.png?resize=246%2C224&amp;ssl=1" width="246"/>
+<br/>
+   F(A, B, C, D) = π(0,1,2,4, 5, 6,8,10) F = (A + C).(A + D).(B + D)
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 3:
+    </strong>
+</span>
+<br/>
+   Reduce the following using K-Map :
+   <br/>
+   F (A, B,C,D) = ∑(1,3,4,5,6,7,12,13)
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(188-2)" class="alignnone size-full wp-image-60067" data-recalc-dims="1" decoding="async" height="247" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-188-2.png?resize=259%2C247&amp;ssl=1" width="259"/>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 4:
+    </strong>
+</span>
+<br/>
+   Reduce the following boolean expression using
+   <br/>
+   K-map.
+   <br/>
+   F(EQ,R,S) = 2(0,2,4,5,6,7,8,10,13,15).
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   \(\overline { P }\) Q + \(\overline { Q }\)\(\overline { S }\) + QS.
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(188-3)" class="alignnone size-full wp-image-60068" data-recalc-dims="1" decoding="async" height="234" loading="lazy" sizes="auto, (max-width: 237px) 100vw, 237px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-188-3.png?resize=237%2C234&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-188-3.png?w=237&amp;ssl=1 237w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-188-3.png?resize=100%2C100&amp;ssl=1 100w" width="237"/>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 5:
+    </strong>
+</span>
+<br/>
+   Reduce the following Boolean Expression using K-Map :
+   <br/>
+   F(P, Q, R, S) = ∑(1,2, 3,4,5, 6, 7, 8,10)
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(188-4)" class="alignnone size-full wp-image-60069" data-recalc-dims="1" decoding="async" height="202" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-188-4.png?resize=293%2C202&amp;ssl=1" width="293"/>
+<br/>
+   F(P, Q, R, S) = P’Q + P’S + P’R’S’ + PQ’S’
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 6:
+    </strong>
+</span>
+<br/>
+   Reduce the following Boolean Expression using
+   <br/>
+   K-Map :
+   <br/>
+   F (A, B, C, D) = ∑(2, 3,4,5, 6, 7,8,10,11)
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(188-5)" class="alignnone size-full wp-image-60070" data-recalc-dims="1" decoding="async" height="432" loading="lazy" sizes="auto, (max-width: 226px) 100vw, 226px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-188-5.png?resize=226%2C432&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-188-5.png?w=226&amp;ssl=1 226w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-188-5.png?resize=157%2C300&amp;ssl=1 157w" width="226"/>
+<br/>
+   F (A, B, C, D) = A’B + A’C + B’C + ABD’
+  </p>
+<p style="text-align: center;">
+<span style="color: #0000ff;">
+<strong>
+     Long Answer Type Questions [4 marks each]
+    </strong>
+</span>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 1:
+    </strong>
+</span>
+<br/>
+   Verify the following using Boolean Laws :
+   <br/>
+   [Delhi, 2016]
+   <br/>
+   A ‘ + B’ . C=A’ . B ‘ . C ‘ + A’ . B . C ‘ + A’ .B.C + A’ .B’ .C+ A.B’ .C
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   A’+ B’C = A’B’C’ + A,BCI + A’BC’ + A’BC + A’B’C + ABC
+   <br/>
+   =A’C'(B’+B)+A’C (Grouping)
+   <br/>
+   (B+B’)+AB’C
+   <br/>
+   =&gt; A’C’+ A’C + AB’C
+   <br/>
+   (x+x’y=x+y)
+   <br/>
+   =&gt; A’ (C+C’ ) +AB’ C
+   <br/>
+   =&gt; A’+AB’C
+   <br/>
+   (x+x’=1)
+   <br/>
+   =&gt; A’+B’C
+   <br/>
+   X=A’ y=B’C
+   <br/>
+   = LHS
+   <br/>
+   Hence Proved.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 2:
+    </strong>
+</span>
+<br/>
+   Write the Boolean Expression for the result of the Logic Circuit as shown below :
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(189-1)" class="alignnone size-full wp-image-60071" data-recalc-dims="1" decoding="async" height="207" loading="lazy" sizes="auto, (max-width: 419px) 100vw, 419px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-189-1.png?resize=419%2C207&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-189-1.png?w=419&amp;ssl=1 419w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-189-1.png?resize=300%2C148&amp;ssl=1 300w" width="419"/>
+<br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   F = (u+v’).(u+w).(v+w’)
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 3:
+    </strong>
+</span>
+<br/>
+   Derive a Canonical POS expression for a Boolen function F, represented by the following truth table :
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(189-2)" class="alignnone size-full wp-image-60073" data-recalc-dims="1" decoding="async" height="217" loading="lazy" sizes="auto, (max-width: 397px) 100vw, 397px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-189-2.png?resize=397%2C217&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-189-2.png?w=397&amp;ssl=1 397w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-189-2.png?resize=300%2C164&amp;ssl=1 300w" width="397"/>
+<br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   F = ∑(0, 3,4,5)
+   <br/>
+   = (P + Q + R) (P + Q’ + R’) (P’ + Q + R) (P’ + Q + R’)
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 4:
+    </strong>
+</span>
+<br/>
+   Reduce the following Boolean Expression to its simplest form using K-Map :
+   <br/>
+   F (X, Y, Z, W)
+   <br/>
+   ∑(2,6,7,8,9,10,11,13,14,15)
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   ∑(2,6,7,8,9,10,11,13,14,15)
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(189-3)" class="alignnone size-full wp-image-60074" data-recalc-dims="1" decoding="async" height="212" loading="lazy" sizes="auto, (max-width: 316px) 100vw, 316px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-189-3.png?resize=316%2C212&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-189-3.png?w=316&amp;ssl=1 316w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-189-3.png?resize=300%2C201&amp;ssl=1 300w" width="316"/>
+<br/>
+   F = XY’ + ZW’+ XW + YZ
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 5:
+    </strong>
+</span>
+<br/>
+   Write the Boolean Expression for the result of the Logic Circuit as shown below :
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(189-4)" class="alignnone size-full wp-image-60075" data-recalc-dims="1" decoding="async" height="199" loading="lazy" sizes="auto, (max-width: 425px) 100vw, 425px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-189-4.png?resize=425%2C199&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-189-4.png?w=425&amp;ssl=1 425w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-189-4.png?resize=300%2C140&amp;ssl=1 300w" width="425"/>
+<br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   G = PQ’ + PR + QR’
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 6:
+    </strong>
+</span>
+<br/>
+   Derive a Canonical SOP expression for a Boolean function G, represented by the following truth table :
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(189-5)" class="alignnone size-full wp-image-60076" data-recalc-dims="1" decoding="async" height="251" loading="lazy" sizes="auto, (max-width: 385px) 100vw, 385px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-189-5.png?resize=385%2C251&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-189-5.png?w=385&amp;ssl=1 385w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-189-5.png?resize=300%2C196&amp;ssl=1 300w" width="385"/>
+<br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   G = ∑{(0,2,6,7)
+   <br/>
+   = A’B’C’ + A’BC’ + ABC’ + ABC
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 7:
+    </strong>
+</span>
+<br/>
+   Verify the following using Boolean Laws :
+   <br/>
+   X’+ Y’Z = X’ .Y’ .Z’+X’ .Y.Z’+X’ .Y.Z+X’ .Y’ .Z + X.Y’.Z.
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+     </span>
+</strong>
+</span>
+<br/>
+   X ‘+Y’ Z=X ‘ Y ‘ Z ‘ +X ‘ YZ ‘ +X ‘ YZ+X ‘ Y ‘ Z+XY ‘ Z
+   <br/>
+   Taking RHS
+   <br/>
+   Grouping terms
+   <br/>
+   =&gt; x’Z’ (Y’+Y)+X’ Z(Y+Y’)+XY’Z
+   <br/>
+   =&gt; X’Z’+X’Z+XY’Z
+   <br/>
+   (Y+Y’=1)
+   <br/>
+   =&gt; X'(Z’+Z)+XY’Z
+   <br/>
+   (Grouping)
+   <br/>
+   =&gt; X’+XY’Z (Z+Z’=l)
+   <br/>
+   =&gt; X’+Y’Z (Substitute X=X’ Y=Y’Z X+X’ Y = X+Y)
+   <br/>
+   = LHS
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 8:
+    </strong>
+</span>
+<br/>
+   Reduce the following Boolean Expression to its simplest form using K-Map :
+   <br/>
+   F(P,Q,R,S) = ∑(0,4,5,8,9,10,11,12,13,15)
+   <br/>
+<span style="color: #eb4924;">
+<strong>
+<span style="color: #008000;">
+      Аnswer:
+      <br/>
+</span>
+</strong>
+</span>
+   F(P,Q,R,S) = ∑(0,4,5,8,9,10,11,12,13,15)
+   <br/>
+<img alt="ncert-solutions-class-12-computer-science-c-boolean-algebra-(190-1)" class="alignnone size-full wp-image-60077" data-recalc-dims="1" decoding="async" height="281" loading="lazy" sizes="auto, (max-width: 391px) 100vw, 391px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-190-1.png?resize=391%2C281&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-190-1.png?w=391&amp;ssl=1 391w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-class-12-computer-science-c-boolean-algebra-190-1.png?resize=300%2C216&amp;ssl=1 300w" width="391"/>
+<br/>
+   F = R’ S ‘ + PQ ‘ + QR’ + PS
+  </p>
+<p>
+<a class="button-red" href="http://www.learncbse.in/ncert-solutions-2/" title="NCERT Solutions Home Page">
+    NCERT Solutions
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/ncert-solutions-class-12-computer-science-c/" title="NCERT Solutions for Class 12 Computer Science (C++)">
+    Computer science
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/ncert-solutions-for-class-12-english/" title="NCERT Solutions for Class 12 English">
+    English
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/ncert-solutions-class-12-hindi-core/" title="NCERT Solutions for Class 12 Hindi">
+    Hindi
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/cbse-class-12-humanities/" title="NCERT Solutions for Class 12 Humanities">
+    Humanities
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/cbse-class-12-commerce/" title="NCERT Solutions for Class 12 Commerce">
+    Commerce
+   </a>
+<a class="button-red" href="http://www.learncbse.in/cbse-class-12-science/" title="CBSE Class 12 Science">
+    Science
+   </a>
+</p>
+ CONTENT END 2 
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"&gt;
+		&lt;rdf:Description rdf:about="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-boolean-algebra/"
+    dc:identifier="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-boolean-algebra/"
+    dc:title="NCERT Solutions for Class 12 Computer Science (C++) &amp;#8211; Boolean Algebra"
+    trackback:ping="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-boolean-algebra/trackback/" /&gt;
+&lt;/rdf:RDF&gt;
+</div>
+<div class="social-sidebar" id="social-sidebar">
+<button id="minimize-button" onclick="toggleSidebar()">−</button>
+<a href="https://t.me/learncbse_online" target="_blank" title="Telegram">
+<img alt="Telegram" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png"/>
+</a>
+<a href="https://x.com/learncbse_9" target="_blank" title="Twitter">
+<img alt="Twitter" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/733/733579.png"/>
+</a>
+<a href="https://www.reddit.com/r/learncbse_online/?rdt=59433" target="_blank" title="Reddit">
+<img alt="Reddit" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111589.png"/>
+</a>
+<a href="https://discord.gg/aM6xbTDz" target="_blank" title="Discord">
+<img alt="Discord" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png"/>
+</a>
+</div>
+<script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('social-sidebar');
+        sidebar.classList.toggle('minimized');
+    }
+</script>
+</body>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-C5VTZJSJCR">
+</script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C5VTZJSJCR');
+</script>

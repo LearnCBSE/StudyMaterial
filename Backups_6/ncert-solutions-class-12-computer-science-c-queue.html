@@ -1,0 +1,673 @@
+<head>
+<meta charset="utf-8"/>
+<meta content="Bqdk9rTr4" name="admaven-placement"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript">
+</script>
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ncert-solutions-class-12-computer-science-c-queue",
+  "url": "https://learncbse.online/ncert-solutions-class-12-computer-science-c-queue",
+  "description": "ncert-solutions-class-12-computer-science-c-queue"
+}
+ </script>
+<!DOCTYPE html>
+
+<html>
+</html>
+<style><style> background-color: #f0f8ff; border: 1px solid #d1e7ff; border-radius: 5px; font-family: 'Courier New', Courier, monospace; color: #003366; overflow-x: auto; } </style><style> pre, code { background-color: #1e1e1e; /* Dark background */ border-radius: 8px; /* Rounded corners */ padding: 15px; /* Padding for content */ font-family: 'Fira Code', monospace; /* Modern monospace font */ color: #dcdcdc; /* Light text color */ overflow-x: auto; /* Horizontal scroll */ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */ font-size: 14px; /* Font size */ line-height: 1.5; /* Line height for readability */ }
+ /* Optional: Highlight keywords */ .keyword { color: #569cd6; /* Blue color for keywords */ font-weight: bold; /* Bold keywords */ }
+ .string { color: #ce9178; /* String color */ }
+ .comment { color: #6a9955; /* Comment color */ font-style: italic; /* Italicize comments */ }</style><style> pre, code { background-color: #f5f5f5; /* Light grey background */ border-radius: 8px; /* Rounded corners */ padding: 15px; /* Padding for content */ font-family: 'Fira Code', monospace; /* Modern monospace font */ color: #dcdcdc; /* Light text color */ overflow-x: auto; /* Horizontal scroll */ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */ font-size: 14px; /* Font size */ line-height: 1.5; /* Line height for readability */ } /* Optional: Highlight keywords */ .keyword { color: #569cd6; /* Blue color for keywords */ font-weight: bold; /* Bold keywords */ } .string { color: #ce9178; /* String color */ } .comment { color: #6a9955; /* Comment color */ font-style: italic; /* Italicize comments */ } </style><style> /* Updated CSS Rules Here */ /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; /* Modern, clean sans-serif font */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; /* border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); padding: 10px 20px; */ flex-wrap: wrap; /* Ensure the menu items wrap on smaller screens */ text-align: center; /* border-radius: 8px; Rounded corners for a sleek design */ text-decoration: none; /* Remove underline for a clean look */ color: #0056b3; /* Deep blue color for professional tone */ transition: all 0.4s ease; /* Smoother transition effects */ } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; /* Prevent text from wrapping */ } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.7); */ transform: none; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; /* Darker text color for contrast */ border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover (Font Enlargement) */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* For Multi-Level Submenus */ .sub-menu-duplicate .sub-menu-duplicate { left: 100%; top: 0; transform: translateY(-10px); background-color: #f1f1f1; border-left: 4px solid #646667; } /* Active State for Menu Items */ .menu-link-duplicate:active, .menu-link-duplicate:focus { background-color: #0056b3; color: #fff; outline: none; } /* Mobile-Specific Styles */ @media (max-width: 768px) { /* Display only the main menu on mobile devices */ .menu-duplicate { display: flex !important; /* Ensure the main menu is visible */ flex-direction: row; /* Change to horizontal layout */ justify-content: center; /* Center-align menu items horizontally */ background-color: #fff; /* Maintain background color */ } .menu-item-duplicate { margin: 0 10px; /* Add spacing between main menu items horizontally */ } .menu-link-duplicate { font-size: 16px; /* Adjust font size for readability on mobile */ padding: 10px 15px; /* Increase touch area */ } /* Hide all submenus */ .sub-menu-duplicate { display: none !important; /* Completely hide submenus */ visibility: hidden !important; opacity: 0 !important; transform: none !important; } } </style><style> /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; font-size: 1.35rem; font-weight: 700; line-height: 1.6; letter-spacing: 0.03em; list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; flex-wrap: wrap; text-align: center; color: #0056b3; transition: all 0.4s ease; } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 500; position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 500; visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* Hide the menu on mobile devices */ @media (max-width: 768px) { /* Hide the entire menu on mobile devices */ .menu-duplicate { display: none !important; } } </style><style> .social-sidebar { position: fixed; top: 50%; left: 0; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; background-color: #f9f9f9; padding: 10px; border-radius: 0 5px 5px 0; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); z-index: 1000; transition: all 0.3s ease; } .social-sidebar.minimized { left: -50px; } #minimize-button { background-color: #007BFF; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-size: 16px; margin-bottom: 10px; transition: background-color 0.3s ease; } #minimize-button:hover { background-color: #0056b3; } .social-sidebar a { text-decoration: none; display: block; } .social-sidebar .social-icon { width: 30px; height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; } .social-sidebar .social-icon:hover { transform: scale(1.2); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } /* Responsive Design */ @media (max-width: 768px) { .social-sidebar { top: auto; bottom: 10px; left: 10px; flex-direction: row; gap: 15px; border-radius: 5px; padding: 8px; } .social-sidebar.minimized { left: -100%; } .social-sidebar .social-icon { width: 24px; height: 24px; } } </style><style> body { font-family: 'Playfair Display', serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background-color: #f9f9f9; } header, footer { background-color: #282c34; color: white; text-align: center; padding: 1.5rem 0; } h1, h2, h3 { font-family: 'Playfair Display', serif; color: #222; text-align: center; } a { font-family: 'Playfair Display', serif; color: #007BFF; text-decoration: none; font-weight: bold; } a:hover { text-decoration: underline; } p { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: bold; color: #343434; margin: 0; letter-spacing: 0.5px; } </style><style> body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background-color: #f9f9f9; } header, footer { background-color: #282c34; color: white; text-align: center; padding: 1.5rem 0; } h1, h2, h3 { color: #222; text-align: center; } a { color: #007BFF; text-decoration: none; font-weight: bold; } a:hover { text-decoration: underline; } .content { max-width: 900px; margin: 1.2rem auto; padding: 2rem; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); } header { background: linear-gradient(90deg, #4a90e2, #87cefa); color: white; text-align: center; padding: 2.5rem 0; border-bottom: 5px solid #d9e9ff; } h1 { font-size: 2.8rem; font-weight: bold; color: #ffffff; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); margin: 0; letter-spacing: 0.5px; } .secondary-heading { font-size: 1.3rem; font-weight: 500; color: #ffffff; margin-top: 0.2rem; letter-spacing: 0.3px; } @media (min-width: 1024px) { .desktop-banner { max-width: 22% !important; } } p { font-size: 1.2rem; font-weight: bold; color: #343434; margin: 0; letter-spacing: 0.5px; } </style><style> .entry-content { display: flex; justify-content: center; align-items: center; text-align: center; margin: 0 auto; max-width: 90%; /* Optionally set a max-width */ } </style><style> .entry-content { display: block; margin: 0 auto; max-width: 1200px; /* Set max-width if necessary */ padding: 0 1rem; /* Add padding to prevent text from touching edges */ text-align: center; /* Center text within the div */ } </style><style> /* Centering the entry-content div and ensuring good structure */ .entry-content { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin: 2rem auto; padding: 2rem; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; max-width: 1200px; /* Max width for large screens */ width: 100%; /* Ensure it doesn't exceed the container */ box-sizing: border-box; } </style><style> /* Left-aligning the entry-content div and ensuring good structure */ .entry-content { display: block; /* Set to block to avoid flex-based layout */ margin: 2rem auto; padding: 2rem; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; max-width: 1200px; /* Max width for large screens */ width: 100%; /* Ensure it doesn't exceed the container */ box-sizing: border-box; text-align: left; /* Align text to the left */ } </style>
+</head>
+<body>
+<header class="entry-header">
+<h1 class="entry-title" id="h1-1">
+   NCERT Solutions for Class 12 Computer Science (C++) – Queue
+  </h1>
+</header>
+<div class="entry-content">
+<div class="code-block code-block-2" style="margin: 8px 0; clear: both;">
+</div>
+<h2 id="h2-2">
+<span style="color: #00ccff;">
+    NCERT Solutions for Class 12 Computer Science (C++) – Queue
+   </span>
+</h2>
+<h3 id="h3-1" style="text-align: center;">
+<span style="color: #0000ff;">
+    Long Answer Type Questions [4 marks each]
+   </span>
+</h3>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 1:
+    </strong>
+</span>
+<br/>
+   Define member function delque() to perform delete operation on a linked queue where each node has the following structure :
+  </p>
+<pre style="padding-left: 30px;">struct node 
+
+{
+
+char name[20]
+
+int marks; 
+
+node *link;
+
+};
+
+class queue
+
+{
+
+node *front,‘rear; 
+
+public :
+
+queue() {front=rear=NULL;
+
+}
+
+void delque ( );
+
+};    <em><strong>[CBSE Comptt., 2014]</strong></em></pre>
+<p>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+</p>
+<div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+</div>
+<pre style="padding-left: 30px;">void queue : : delque ()
+
+{
+
+if ( front != NULL)
+
+{
+
+node *Temp = front;
+
+cout &lt;&lt; Temp -&gt; name &lt;&lt; Temp
+
+-&gt;marks;
+
+front = front-&gt;link;
+
+delete Temp;
+
+if(front == NULL)
+
+rear = NULL;
+
+}
+
+else
+
+cout &lt;&lt; "Queue is empty";
+
+} 
+
+<strong><em>(4 marks for correct program)</em></strong></pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 2:
+    </strong>
+</span>
+<br/>
+   Give the necessary declaration of linked’ implemented Queue containing players information (as defined in the following definition of Node). Also write a user defined function in C++ to delete one Player’s information from the Queue.
+   <em>
+<strong>
+<br/>
+     [CBSE Comptt., 2013]
+    </strong>
+</em>
+</p>
+<pre style="padding-left: 30px;">struct node   
+
+{
+
+int Player No ;
+
+char PlayerName[20];
+
+Node*Link;
+
+}</pre>
+<p>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+     <br/>
+</span>
+</strong>
+   NODE *QUEUEDEL(Node * front, int val, char val2[ ])
+  </p>
+<div class="code-block code-block-3" style="margin: 8px 0; clear: both;">
+</div>
+<pre style="padding-left: 30px;">{
+
+Node *temp;
+
+if (front ==NULL)    <strong>[1]</strong>
+
+cout&lt;&lt;"Queue EMPTY";
+
+{
+
+else
+
+{
+
+temp=front ;
+
+temp®PlayerNo=val;    <strong>[1]</strong>
+
+strcpy (temp®PlayerName, val2); 
+
+front=front®Link;    <strong>[1]</strong>
+
+delete temp;
+
+}
+
+return (front);
+
+}<strong><em> </em></strong> <strong>[1]</strong></pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 3:
+    </strong>
+</span>
+<br/>
+   Write a function QDELETE ( ) in C++ to perform delete operation on a Linked Queue, which contains Passenger no and Passenger name. Consider the following definition of Node in the code,
+  </p>
+<pre style="padding-left: 30px;">struct node
+
+{
+
+long int Pno; 
+
+char Pname [20]; 
+
+node *Link;
+
+};   <strong><em> [O.D, 2013]</em></strong></pre>
+<p>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+     <br/>
+</span>
+</strong>
+   //Function to delete queue elements Node * QUEUE (Node * front, int val, char vail [])
+  </p>
+<div class="code-block code-block-4" style="margin: 8px 0; clear: both;">
+</div>
+<pre style="padding-left: 30px;">{
+
+Node *temp; 
+
+if (front == NULL) 
+
+cout &lt;&lt;"Queue Empty"; 
+
+else 
+
+{
+
+temp = front; 
+
+temp®Pno=val;
+
+strcpy (temp®Pname, vail); 
+
+front = front®Link; 
+
+delete temp;
+
+}
+
+return (front);
+
+}   <strong> [4]</strong></pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 4:
+    </strong>
+</span>
+<br/>
+   Write a function QINSERT() in C+ + to perform insert operation on a Linked Queue, which contains Client no and Client name. Consider the following definition of NODE in the code of . QINSERT ().
+   <strong>
+    [Delhi, 2013]
+   </strong>
+</p>
+<pre style="padding-left: 30px;">struct Node
+
+{
+
+long int Cno; // Client No 
+
+char Cname [20]; //
+
+Client Name 
+
+Node *Next ;
+
+};</pre>
+<p>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+     <br/>
+</span>
+</strong>
+   Function to Insert element
+   <br/>
+   Node * QINSERT (Node *rear, int val),
+  </p>
+<pre style="padding-left: 30px;">char val []
+
+{
+
+Node *temp; 
+
+temp = new Node;
+
+temp®Cno = val; 
+
+strcpy (temp®Cname, val); 
+
+temp®NEXT=NULL; 
+
+rear®NEXT=temp; 
+
+rear=temp; 
+
+return (rear);
+
+}    <strong>[4]</strong></pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 5:
+    </strong>
+</span>
+<br/>
+   Write a function in C++ to perform Insert operation in a circular Queue containing Layer’s information (represented with the help of an array of structure Player).
+   <em>
+<strong>
+     [CBSE SQP 2013]
+    </strong>
+</em>
+</p>
+<pre style="padding-left: 30px;">struct Player
+
+{
+
+long PID;    //Player ID
+
+char Pname [20];}    //Player Name
+
+Player*Link;
+
+}</pre>
+<p>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+</p>
+<div class="code-block code-block-5" style="margin: 8px 0; clear: both;">
+</div>
+<pre style="padding-left: 30px;">void Insert ( )
+
+{
+
+PLAYER *P = new PLAYER;
+
+cout &lt;&lt;"Enter Player ID &amp; Name";
+
+cin&gt;&gt;P→PID;
+
+gets (P→ Pname);
+
+P®Link=NULL;
+
+if ((fronts = NULL) &amp;&amp; (rear == NULL))
+
+{
+
+front = rear = P;
+
+}
+
+else
+
+{
+
+rear®Link = P; 
+
+rear = P;
+
+}
+
+}    <strong>[4]</strong></pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 6:
+    </strong>
+</span>
+<br/>
+   Write a function in C++ to perform insert operation in a static circular queue containing book’s information (represented with the help of an array of structure BOOK).
+   <em>
+<strong>
+     [O.D, 2012]
+    </strong>
+</em>
+</p>
+<pre style="padding-left: 30px;">struct BOOK
+
+{
+
+long Accno; //Book Accession Number char Title[20];    //Book Title
+
+};</pre>
+<p>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+</p>
+<div class="code-block code-block-6" style="margin: 8px 0; clear: both;">
+</div>
+<pre style="padding-left: 30px;">struct BOOK
+
+{
+
+long Accno; char Title [20] ; 
+
+int front, rear;
+
+}B [10] ; 
+
+void insert()
+
+{
+
+if (r e a r = = s i z e - l &amp; &amp; f r o n t = = 0||front== rear+1)
+
+{ 
+
+cout&lt;&lt;"\n Circular queue is full"; return;
+
+}
+
+else if(rear==-l)
+
+{
+
+rear++; 
+
+front++;
+
+}
+
+else if(rear==size-1) 
+
+rear=0; 
+
+else 
+
+{
+
+rear++;
+
+}
+
+cout&lt;&lt;"Enter Title : ” ;
+
+cin&gt;&gt;B[rear] . Title;
+
+cout&lt;&lt;"Enter Accno : ” ;
+
+ cin&gt;&gt;B[rear] . Accno;
+
+}    <strong>[4]</strong></pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 7:
+    </strong>
+</span>
+<br/>
+   Write a function in C++ to perform insert operation in a dynamic queue containing DVD’s information (represented with the help of an array of structure DVD).
+   <em>
+<strong>
+     [Delhi, 2012]
+     <br/>
+</strong>
+</em>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+     <br/>
+</span>
+</strong>
+   /*Function in C++ to perform insert in a dynamic queue is given as*/
+  </p>
+<pre style="padding-left: 30px;">struct DVD 
+
+{
+
+long No; // DVD Number 
+
+char Title[20]; // DVD Title 
+
+DVD *Link 
+
+};
+
+void insert(struct DVD *start, char data[20] ) ;
+
+{
+
+DVD *q, *temp;
+
+// Dynamic memory has been allocated for a node
+
+temp=(DVD*)malloc(size of (DVD)); 
+
+temp=Title[20]=data[20] ; 
+
+temp"Next=NULL;
+
+if (start    =    = NULL) /*Element
+
+inserted at end*/
+
+while (q"Next ! = NULL)
+
+q=q.Next;
+
+q.Next = temp;
+
+}    <strong>[4]</strong></pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 8:
+    </strong>
+</span>
+<br/>
+   Write the definition of a member function INSERT() for a class QUEUE in C++, to insert a CUSTOMER in a dynamically allocated Queue of items considering the following code which is already written as a part of the program,
+  </p>
+<div class="code-block code-block-7" style="margin: 8px 0; clear: both;">
+</div>
+<pre style="padding-left: 30px;">struct CUSTOMER 
+
+{
+
+int CNO; char CNAME[20];
+
+CUSTOMER *Link;
+
+};
+
+Class QUEUE
+
+{
+
+CUSTOMER *R,*F;
+
+Public:
+
+QUEUE(){R=NULL;F=NULL;} 
+
+void INSERT(); 
+
+void DELETE()
+
+-QUEUE();
+
+};   <strong><em> [CBSE SQP 2013]</em></strong></pre>
+<p>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+</p>
+<pre style="padding-left: 30px;">void QUEUE : : INSERT ()
+
+{
+
+CUSTOMER*T=New CUSTOMER;
+
+cin&gt;&gt;T&gt;&gt;;
+
+gets(T→CNAME);
+
+//OR cin&gt;&gt;T&gt;&gt;CNAME; 
+
+T → LINK = NULL; 
+
+if (R==NULL)
+
+{
+
+F=T; R=T;
+
+}
+
+else
+
+{ R → LINK = T; R = T;
+
+}
+
+}</pre>
+<p>
+<strong>
+    (1 Mark for correct a new code)
+   </strong>
+<br/>
+<strong>
+    (1/2 Mark for entering data to new code)
+   </strong>
+<br/>
+<strong>
+    (1/2Mark for assigning NULL to link of the new code)
+   </strong>
+<br/>
+<strong>
+    (1/2 Mark for assigning front to the first code as L=T)
+   </strong>
+<br/>
+<strong>
+    (1/2 Mark for linking the last node to new code as R→Link=T)
+   </strong>
+<br/>
+<strong>
+    (1 Mark for assign Read to the new code as R=T)
+   </strong>
+</p>
+<p>
+<a class="button-red" href="http://www.learncbse.in/ncert-solutions-2/" title="NCERT Solutions Home Page">
+    NCERT Solutions
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/ncert-solutions-class-12-computer-science-c/" title="NCERT Solutions for Class 12 Computer Science (C++)">
+    Computer science
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/ncert-solutions-for-class-12-english/" title="NCERT Solutions for Class 12 English">
+    English
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/ncert-solutions-class-12-hindi-core/" title="NCERT Solutions for Class 12 Hindi">
+    Hindi
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/cbse-class-12-humanities/" title="NCERT Solutions for Class 12 Humanities">
+    Humanities
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/cbse-class-12-commerce/" title="NCERT Solutions for Class 12 Commerce">
+    Commerce
+   </a>
+<a class="button-red" href="http://www.learncbse.in/cbse-class-12-science/" title="CBSE Class 12 Science">
+    Science
+   </a>
+</p>
+ CONTENT END 2 
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"&gt;
+		&lt;rdf:Description rdf:about="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-queue/"
+    dc:identifier="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-queue/"
+    dc:title="NCERT Solutions for Class 12 Computer Science (C++) &amp;#8211; Queue"
+    trackback:ping="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-queue/trackback/" /&gt;
+&lt;/rdf:RDF&gt;
+</div>
+<div class="social-sidebar" id="social-sidebar">
+<button id="minimize-button" onclick="toggleSidebar()">−</button>
+<a href="https://t.me/learncbse_online" target="_blank" title="Telegram">
+<img alt="Telegram" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png"/>
+</a>
+<a href="https://x.com/learncbse_9" target="_blank" title="Twitter">
+<img alt="Twitter" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/733/733579.png"/>
+</a>
+<a href="https://www.reddit.com/r/learncbse_online/?rdt=59433" target="_blank" title="Reddit">
+<img alt="Reddit" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111589.png"/>
+</a>
+<a href="https://discord.gg/aM6xbTDz" target="_blank" title="Discord">
+<img alt="Discord" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png"/>
+</a>
+</div>
+<script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('social-sidebar');
+        sidebar.classList.toggle('minimized');
+    }
+</script>
+</body>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-C5VTZJSJCR">
+</script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C5VTZJSJCR');
+</script>

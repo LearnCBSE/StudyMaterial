@@ -1,0 +1,3044 @@
+<head>
+<meta charset="utf-8"/>
+<meta content="Bqdk9rTr4" name="admaven-placement"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript">
+</script>
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ncert-solutions-class-12-computer-science-c-solved-paper-2017-delhi-set",
+  "url": "https://learncbse.online/ncert-solutions-class-12-computer-science-c-solved-paper-2017-delhi-set",
+  "description": "ncert-solutions-class-12-computer-science-c-solved-paper-2017-delhi-set"
+}
+ </script>
+<!DOCTYPE html>
+
+<html>
+</html>
+<style><style> background-color: #f0f8ff; border: 1px solid #d1e7ff; border-radius: 5px; font-family: 'Courier New', Courier, monospace; color: #003366; overflow-x: auto; } </style><style> pre, code { background-color: #1e1e1e; /* Dark background */ border-radius: 8px; /* Rounded corners */ padding: 15px; /* Padding for content */ font-family: 'Fira Code', monospace; /* Modern monospace font */ color: #dcdcdc; /* Light text color */ overflow-x: auto; /* Horizontal scroll */ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */ font-size: 14px; /* Font size */ line-height: 1.5; /* Line height for readability */ }
+ /* Optional: Highlight keywords */ .keyword { color: #569cd6; /* Blue color for keywords */ font-weight: bold; /* Bold keywords */ }
+ .string { color: #ce9178; /* String color */ }
+ .comment { color: #6a9955; /* Comment color */ font-style: italic; /* Italicize comments */ }</style><style> pre, code { background-color: #f5f5f5; /* Light grey background */ border-radius: 8px; /* Rounded corners */ padding: 15px; /* Padding for content */ font-family: 'Fira Code', monospace; /* Modern monospace font */ color: #dcdcdc; /* Light text color */ overflow-x: auto; /* Horizontal scroll */ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */ font-size: 14px; /* Font size */ line-height: 1.5; /* Line height for readability */ } /* Optional: Highlight keywords */ .keyword { color: #569cd6; /* Blue color for keywords */ font-weight: bold; /* Bold keywords */ } .string { color: #ce9178; /* String color */ } .comment { color: #6a9955; /* Comment color */ font-style: italic; /* Italicize comments */ } </style><style> /* Updated CSS Rules Here */ /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; /* Modern, clean sans-serif font */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; /* border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); padding: 10px 20px; */ flex-wrap: wrap; /* Ensure the menu items wrap on smaller screens */ text-align: center; /* border-radius: 8px; Rounded corners for a sleek design */ text-decoration: none; /* Remove underline for a clean look */ color: #0056b3; /* Deep blue color for professional tone */ transition: all 0.4s ease; /* Smoother transition effects */ } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; /* Prevent text from wrapping */ } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.7); */ transform: none; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; /* Darker text color for contrast */ border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover (Font Enlargement) */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* For Multi-Level Submenus */ .sub-menu-duplicate .sub-menu-duplicate { left: 100%; top: 0; transform: translateY(-10px); background-color: #f1f1f1; border-left: 4px solid #646667; } /* Active State for Menu Items */ .menu-link-duplicate:active, .menu-link-duplicate:focus { background-color: #0056b3; color: #fff; outline: none; } /* Mobile-Specific Styles */ @media (max-width: 768px) { /* Display only the main menu on mobile devices */ .menu-duplicate { display: flex !important; /* Ensure the main menu is visible */ flex-direction: row; /* Change to horizontal layout */ justify-content: center; /* Center-align menu items horizontally */ background-color: #fff; /* Maintain background color */ } .menu-item-duplicate { margin: 0 10px; /* Add spacing between main menu items horizontally */ } .menu-link-duplicate { font-size: 16px; /* Adjust font size for readability on mobile */ padding: 10px 15px; /* Increase touch area */ } /* Hide all submenus */ .sub-menu-duplicate { display: none !important; /* Completely hide submenus */ visibility: hidden !important; opacity: 0 !important; transform: none !important; } } </style><style> /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; font-size: 1.35rem; font-weight: 700; line-height: 1.6; letter-spacing: 0.03em; list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; flex-wrap: wrap; text-align: center; color: #0056b3; transition: all 0.4s ease; } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 500; position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 500; visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* Hide the menu on mobile devices */ @media (max-width: 768px) { /* Hide the entire menu on mobile devices */ .menu-duplicate { display: none !important; } } </style><style> .social-sidebar { position: fixed; top: 50%; left: 0; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; background-color: #f9f9f9; padding: 10px; border-radius: 0 5px 5px 0; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); z-index: 1000; transition: all 0.3s ease; } .social-sidebar.minimized { left: -50px; } #minimize-button { background-color: #007BFF; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-size: 16px; margin-bottom: 10px; transition: background-color 0.3s ease; } #minimize-button:hover { background-color: #0056b3; } .social-sidebar a { text-decoration: none; display: block; } .social-sidebar .social-icon { width: 30px; height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; } .social-sidebar .social-icon:hover { transform: scale(1.2); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } /* Responsive Design */ @media (max-width: 768px) { .social-sidebar { top: auto; bottom: 10px; left: 10px; flex-direction: row; gap: 15px; border-radius: 5px; padding: 8px; } .social-sidebar.minimized { left: -100%; } .social-sidebar .social-icon { width: 24px; height: 24px; } } </style><style> body { font-family: 'Playfair Display', serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background-color: #f9f9f9; } header, footer { background-color: #282c34; color: white; text-align: center; padding: 1.5rem 0; } h1, h2, h3 { font-family: 'Playfair Display', serif; color: #222; text-align: center; } a { font-family: 'Playfair Display', serif; color: #007BFF; text-decoration: none; font-weight: bold; } a:hover { text-decoration: underline; } p { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: bold; color: #343434; margin: 0; letter-spacing: 0.5px; } </style><style> body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background-color: #f9f9f9; } header, footer { background-color: #282c34; color: white; text-align: center; padding: 1.5rem 0; } h1, h2, h3 { color: #222; text-align: center; } a { color: #007BFF; text-decoration: none; font-weight: bold; } a:hover { text-decoration: underline; } .content { max-width: 900px; margin: 1.2rem auto; padding: 2rem; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); } header { background: linear-gradient(90deg, #4a90e2, #87cefa); color: white; text-align: center; padding: 2.5rem 0; border-bottom: 5px solid #d9e9ff; } h1 { font-size: 2.8rem; font-weight: bold; color: #ffffff; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); margin: 0; letter-spacing: 0.5px; } .secondary-heading { font-size: 1.3rem; font-weight: 500; color: #ffffff; margin-top: 0.2rem; letter-spacing: 0.3px; } @media (min-width: 1024px) { .desktop-banner { max-width: 22% !important; } } p { font-size: 1.2rem; font-weight: bold; color: #343434; margin: 0; letter-spacing: 0.5px; } </style><style> .entry-content { display: flex; justify-content: center; align-items: center; text-align: center; margin: 0 auto; max-width: 90%; /* Optionally set a max-width */ } </style><style> .entry-content { display: block; margin: 0 auto; max-width: 1200px; /* Set max-width if necessary */ padding: 0 1rem; /* Add padding to prevent text from touching edges */ text-align: center; /* Center text within the div */ } </style><style> /* Centering the entry-content div and ensuring good structure */ .entry-content { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin: 2rem auto; padding: 2rem; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; max-width: 1200px; /* Max width for large screens */ width: 100%; /* Ensure it doesn't exceed the container */ box-sizing: border-box; } </style><style> /* Left-aligning the entry-content div and ensuring good structure */ .entry-content { display: block; /* Set to block to avoid flex-based layout */ margin: 2rem auto; padding: 2rem; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; max-width: 1200px; /* Max width for large screens */ width: 100%; /* Ensure it doesn't exceed the container */ box-sizing: border-box; text-align: left; /* Align text to the left */ } </style>
+</head>
+<body>
+<header class="entry-header">
+<h1 class="entry-title" id="h1-1">
+   NCERT Solutions for Class 12 Computer Science (C++) – Solved Paper, 2017 (Delhi Set)
+  </h1>
+</header>
+<div class="entry-content">
+<div class="code-block code-block-2" style="margin: 8px 0; clear: both;">
+</div>
+<h2 id="h2-2">
+<span id="NCERT_Solutions_for_Class_12_Computer_Science_C_8211_Solved_Paper_2017_Delhi_Set">
+<span style="color: #00ccff;">
+     NCERT Solutions for Class 12 Computer Science (C++) – Solved Paper, 2017 (Delhi Set)
+    </span>
+</span>
+</h2>
+<h3 id="h3-1" style="text-align: center;">
+<span id="Delhi_Set_Code_No_901">
+<span style="color: #0000ff;">
+     Delhi Set    Code No. 90/1
+    </span>
+</span>
+</h3>
+<h4 id="h4-1" style="text-align: center;">
+<span id="SECTION_8211_A">
+<span style="color: #0000ff;">
+     SECTION – A
+    </span>
+</span>
+</h4>
+<p style="text-align: center;">
+<span style="color: #0000ff;">
+<strong>
+     (Only for Candidates, who opted for C++)
+    </strong>
+</span>
+</p>
+<div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+</div>
+<p style="text-align: left;">
+<span style="color: #eb4924;">
+<strong>
+     Question 1:
+     <br/>
+</strong>
+</span>
+<strong>
+    (a)
+   </strong>
+   Write the type of C + + tokens (keywords and user defined identifiers) from the following :
+   <strong>
+    2
+   </strong>
+</p>
+<p style="text-align: left; padding-left: 30px;">
+<strong>
+    (i)
+   </strong>
+   For
+   <br/>
+<strong>
+    (ii)
+   </strong>
+   delete
+   <br/>
+<strong>
+    (iii)
+   </strong>
+   default
+   <br/>
+<strong>
+    (iv)
+   </strong>
+   Value
+  </p>
+<div class="code-block code-block-3" style="margin: 8px 0; clear: both;">
+</div>
+<p style="text-align: left;">
+<strong>
+    (b)
+   </strong>
+   Anil typed the following C+ + code and during compilation he found four errors as follows :
+   <strong>
+    1
+   </strong>
+</p>
+<p style="text-align: left; padding-left: 30px;">
+<strong>
+    (i)
+   </strong>
+   Function strlen should have a prototype
+   <br/>
+<strong>
+    (ii)
+   </strong>
+   Undefined symbol cout
+   <br/>
+<strong>
+    (iii)
+   </strong>
+   Undefined symbol endl
+   <br/>
+<strong>
+    (iv)
+   </strong>
+   Function getchar should have a prototype
+  </p>
+<div class="code-block code-block-4" style="margin: 8px 0; clear: both;">
+</div>
+<p style="text-align: left;">
+   On asking his teacher told him to include necessary header files in the code. Write the names of the header files, which Anil needs to include, for successful compilation and execution of the following code :
+  </p>
+<pre style="text-align: left; padding-left: 30px;">void main ()
+
+{
+
+char S [ ] = “Hello",
+
+for (int i = 0; i &lt; strlen (s); i++)
+
+S[i] = S[i] + 1, 
+
+cout&lt;&lt;B&lt;&lt;endl; 
+
+getchar ();
+
+}</pre>
+<p style="text-align: left;">
+<strong>
+    (c)
+   </strong>
+   Rewrite the following C++ code after removing
+   <br/>
+   any/all syntactical errors with each correction underlined.
+   <strong>
+    2
+   </strong>
+<br/>
+<strong>
+    Note :
+   </strong>
+   Assume all required header files are already being included in the program.
+  </p>
+<pre style="text-align: left; padding-left: 30px;">void main ()
+
+{
+
+cout «“Enter an integer”; 
+
+cin » N; 
+
+switch (N%2)
+
+case 0 cout&lt;&lt;“Even”; Break; 
+
+case 1 cout&lt;&lt;“Odd”; Break;
+
+}</pre>
+<p style="text-align: left;">
+<strong>
+    (d)
+   </strong>
+   Find and write the output of the following C+ + program code :
+   <strong>
+    2
+   </strong>
+<br/>
+<strong>
+    Note :
+   </strong>
+   Assume all required header files are already included in the program.
+  </p>
+<pre style="text-align: left; padding-left: 30px;"># define Big (A, B) (A &gt; B) ? A + 1: B + 2
+
+void main ()
+
+{  char w [ ] = “Exam”; 
+
+int L = strlen (w);
+
+ for (int i = 0, i &lt; L - 1, i ++) 
+
+w [i] = Big (w[i], w [i + 1]); 
+
+cout &lt; &lt; w &lt; &lt; endl;
+
+}</pre>
+<p style="text-align: left;">
+<strong>
+    (e)
+   </strong>
+   Find and write the output of the following C+ + program code :
+   <strong>
+    3
+   </strong>
+<br/>
+<strong>
+    Note :
+   </strong>
+   Assume all required header files are already being included in the program.
+  </p>
+<div class="code-block code-block-5" style="margin: 8px 0; clear: both;">
+</div>
+<pre style="text-align: left; padding-left: 30px;">void main ()
+
+{
+
+int A [ ] = {10,12,15,17,20, 30}, 
+
+for (int i = 0, i &lt; 6, i+ +) 
+
+{
+
+if (A [i] % 2 = = 0)
+
+A [i] / = 2;
+
+else if (A [i] % 3 = = 0)
+
+A [i] / = 3;
+
+if (A [i] % 5 = = 0)
+
+A [i] / = 5;
+
+}
+
+for (i = 0; i &lt; 6; i ++)
+
+cout&lt;&lt; A [i] &lt;&lt;“#”,
+
+}</pre>
+<p style="text-align: left;">
+<strong>
+    (f)
+   </strong>
+   Look at the following C++ code and find the possible output(s) from the options (i) to (iv) following it. Also, write the maximum values that can be assigned to each of the variables R and C.
+   <strong>
+    2
+   </strong>
+<br/>
+<strong>
+    Note:
+   </strong>
+<br/>
+   • Assume all the required header files are already being included in the code.
+   <br/>
+   • The function random (n) generates an integer between 0 and n -1.
+  </p>
+<pre style="text-align: left; padding-left: 30px;">void main ()
+
+ {
+
+ randomize ();
+
+ int R = random (3), C = random (4);
+
+ int MAT [3] [3] = { { 10, 20, 30}, (20, 30, 40}, (30, 40, 50}},
+
+ for (int I = 0,1 &lt; R, I + +)
+
+ {
+
+ for (int J = 0; J &lt; C; J ++)
+
+ cout &lt;&lt; MAT [I] [J] &lt;&lt;“ cout&lt;&lt; endl,
+
+ }
+
+ }</pre>
+<table border="2" style="height: 366px;" width="280">
+<tbody>
+<tr>
+<td style="text-align: center;" width="118">
+<strong>
+       (i)
+      </strong>
+</td>
+<td style="text-align: center;" width="114">
+<strong>
+       (ii)
+      </strong>
+</td>
+</tr>
+<tr>
+<td width="118">
+<p style="text-align: center;">
+       10         20        30
+      </p>
+<div class="code-block code-block-6" style="margin: 8px 0; clear: both;">
+</div>
+<p style="text-align: center;">
+       20         30        40
+      </p>
+<p style="text-align: center;">
+       30         40        50
+      </p>
+<div class="code-block code-block-7" style="margin: 8px 0; clear: both;">
+</div>
+</td>
+<td width="114">
+<p style="text-align: center;">
+       10       20        30
+      </p>
+<p style="text-align: center;">
+       20       30        40
+      </p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="118">
+<strong>
+       (iii)
+      </strong>
+</td>
+<td style="text-align: center;" width="114">
+<strong>
+       (iv)
+      </strong>
+</td>
+</tr>
+<tr>
+<td width="118">
+<p style="text-align: center;">
+       10       20
+      </p>
+<p style="text-align: center;">
+       20       30
+      </p>
+</td>
+<td width="114">
+<p style="text-align: center;">
+       10       20
+      </p>
+<p style="text-align: center;">
+       20       30
+      </p>
+<p style="text-align: center;">
+       30       40
+      </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+<span style="color: #008000;">
+<strong>
+     Solution:
+    </strong>
+</span>
+<br/>
+<strong>
+    (a)
+   </strong>
+</p>
+<p style="padding-left: 30px;">
+<strong>
+    (i)
+   </strong>
+   For – identifier
+   <br/>
+<strong>
+    (ii)
+   </strong>
+   delete – keyword
+   <br/>
+<strong>
+    (iii)
+   </strong>
+   default – keyword
+   <br/>
+<strong>
+    (iv)
+   </strong>
+   Value – identifier
+  </p>
+<p>
+<strong>
+    (b)
+   </strong>
+   string.h stdio.h
+   <br/>
+<strong>
+    (c)
+   </strong>
+</p>
+<pre style="padding-left: 30px;">void main ()
+
+{
+
+cout&lt;&lt;“Enter an integer”;
+
+cin &gt;&gt; N;
+
+switch (N % 2)
+
+{
+
+Case 0 <span style="text-decoration: underline;">:</span> cout&lt;&lt;“Even”; break;
+
+Case 1 <span style="text-decoration: underline;">:</span> Lcout&lt;&lt;“Odd”; break;
+
+}
+
+}</pre>
+<p>
+<strong>
+    (d) Output:
+   </strong>
+<br/>
+   zyom
+   <br/>
+<strong>
+    (e)
+   </strong>
+   1 # 6# 1# 17# 2# 3#
+   <br/>
+<strong>
+    (f)
+   </strong>
+   R = 0,1,2 C = 0,1,2,3
+   <br/>
+   Maximum value of R = 2, C = 3 option (ii) or (iii) is possible
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 2:
+    </strong>
+</span>
+<br/>
+<strong>
+    (a)
+   </strong>
+   Differentiate between private and public members of a class in context of Object Oriented , Programming. Also give a suitable example illustrating accessibility/non-accessibility of each using a class and an object in C ++.
+   <strong>
+    2
+   </strong>
+<br/>
+<strong>
+    (b)
+   </strong>
+   Observe the following C++ code and answer the questions (i) and (ii).
+   <br/>
+<strong>
+    Note :
+   </strong>
+   Assume all necessary files are included,
+  </p>
+<pre style="padding-left: 30px;">class EXAM 
+
+{
+
+ long code; 
+
+char EName [20]; 
+
+float Marks; public :
+
+ EXAM ()    //Member Function 1
+
+ {
+
+ code = 100, strcpy (EName, “Noname”); Marks = 0;
+
+ }
+
+ EXAM (EXAM &amp;E) //Member Function 2
+
+ {
+
+ code = E.code + 1; 
+
+strcpy (EName, E.EName);
+
+ Marks = E. Marks;
+
+ }
+
+ };
+
+ void main ()
+
+ {
+
+ ___________    //Statement 1
+
+  ___________   //Statement 2
+
+</pre>
+<p>
+   (i) Which Object Oriented Programming feature is illustrated by the Member Function 1 and Member Function 2 together in the class EXAM ?
+   <strong>
+    1
+   </strong>
+<br/>
+   (ii) Write Statement 1 and Statement 2 to execute Member Function 1 and Member Function 2 respectively.
+   <strong>
+    1
+   </strong>
+</p>
+<p>
+<strong>
+    (c)
+   </strong>
+   Write the definition of a class RING in C+ + with following description :
+   <strong>
+    4
+    <br/>
+</strong>
+<strong>
+    Private Members
+   </strong>
+</p>
+<pre style="padding-left: 30px;">- RingNumber // data member of integer type
+
+ - Radius   // data member of float type
+
+ - Area    // data member of float type
+
+ - CalcArea ( ) // Member function to calculate and assign 
+
+// Area as 3.14 ‘Radius* Radius</pre>
+<p>
+<strong>
+    Public Members
+   </strong>
+</p>
+<pre style="padding-left: 30px;">- GetArea ()    //A function to allow user
+
+ to enter values of
+
+ // RingNumber and Radius. Also, this
+
+ // function should call CalcArea () to calculate // Area
+
+ - ShowArea () // A function to display RingNumber, Radius // and Area</pre>
+<p>
+<strong>
+    (d)
+   </strong>
+   Answer the questions (i) to (iv) based on the following:
+   <strong>
+    4
+   </strong>
+</p>
+<pre style="padding-left: 30px;">class One
+
+ {
+
+ int Al, 
+
+protected : 
+
+float A2; 
+
+public :
+
+ One ();
+
+ void Get 1 (); void show1 ();
+
+ };
+
+ class Two : private One
+
+ {
+
+ int B1; 
+
+protected: 
+
+float B2; 
+
+public :
+
+ Two (), 
+
+void Get2 (); 
+
+void Show ();
+
+ };
+
+ Class Three : public Two
+
+ {
+
+ int Cl; 
+
+public :
+
+ Three (); 
+
+void Get 3 (); 
+
+void Show ();
+
+ };
+
+ void main ()
+
+ {
+
+ Three T;    //Statement 1
+
+ ______, //Statement 2</pre>
+<p>
+<strong>
+    (i)
+   </strong>
+   Which type of inheritance out of the following is illustrated in the above example?
+   <br/>
+   Single Level Inheritance, Multilevel Inheritance, Multiple Inheritance.
+   <br/>
+<strong>
+    (ii)
+   </strong>
+   Write the names of all the member j. functions, which are directly accessible by the object T of class Three as declared in
+   <br/>
+   main () function,
+   <br/>
+<strong>
+    (iii)
+   </strong>
+   Write Statement 2 to call function Show () of class Two from the object T of class Three.
+   <br/>
+<strong>
+    (iv)
+   </strong>
+   What will be the order of execution of the constructors, when the object T of class Three is declared inside main () ?
+   <br/>
+<span style="color: #008000;">
+<strong>
+     Solution:
+     <br/>
+</strong>
+</span>
+<strong>
+    (a) Private members:
+   </strong>
+   These members are hidden from the outside world. They can be accessed only by member
+   <br/>
+   functions of the same class.
+   <br/>
+<strong>
+    Public members:
+   </strong>
+<br/>
+   These members are visible to the outside world. They can be accessed by objects.
+   <br/>
+<strong>
+    (eg)
+   </strong>
+</p>
+<pre style="padding-left: 30px;">class student
+
+{
+
+private:
+
+int rollno; 
+
+char name [50]; 
+
+public :
+
+void get (); 
+
+void show ();
+
+};
+
+student s.object; 
+
+s.rollno —&gt; × not accessible 
+
+s.get () —&gt; ✓ accessible</pre>
+<p>
+<strong>
+    (b)
+   </strong>
+<br/>
+<strong>
+    (i) Constructor overloading (Polymorphism)
+   </strong>
+<br/>
+<strong>
+    (ii)
+   </strong>
+</p>
+<pre style="padding-left: 30px;">EXAM e1;           // statement 1
+
+EXAM e2 (e1);     // statement 2</pre>
+<p>
+<strong>
+    (c)
+   </strong>
+</p>
+<pre style="padding-left: 30px;">{
+
+int Ring Number; 
+
+float Radius; 
+
+float Area; 
+
+void Calc Area ()
+
+{
+
+Area = 3.14 * Radius * Radius;
+
+}
+
+ public :
+
+void GetArea ()
+
+{
+
+cout &lt;&lt;“Enter Ring Number and Radius"; 
+
+cin &gt;&gt;Ring Number &gt;&gt; Radius;
+
+CalcArea ();
+
+}
+
+void ShowArea ()
+
+{
+
+cout&lt;&lt;“RingNumber : “&lt;&lt;Ring Number&lt;&lt; endl; 
+
+cout&lt;&lt;“Radius : “ &lt;&lt; Radius &lt;&lt; endl; 
+
+cout&lt;&lt;“Area : “ &lt;&lt; Area &lt;&lt; endl;
+
+}
+
+};</pre>
+<p>
+<strong>
+    (d)
+   </strong>
+</p>
+<p style="padding-left: 30px;">
+<strong>
+    (i)
+   </strong>
+   Multilevel inheritance.
+   <br/>
+<strong>
+    (ii)
+   </strong>
+   Get 3 (), Show (), Get 2 (), Show ()
+   <br/>
+<strong>
+    (iii)
+   </strong>
+   T. super (Show ())
+   <br/>
+<strong>
+    (iv)
+   </strong>
+   One (), Two (), Three ().
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 3:
+     <br/>
+</strong>
+</span>
+<strong>
+    (a)
+   </strong>
+   Write the definition of a function Reverse (int Arr [ ], int N) in C++, which should reverse the entire content of the array Arr having N elements, without using any other array.
+   <strong>
+    3
+   </strong>
+<br/>
+<strong>
+    Example:
+   </strong>
+   if the array Arr contains
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;" width="26">
+      13
+     </td>
+<td style="text-align: center;" width="24">
+      10
+     </td>
+<td style="text-align: center;" width="23">
+      15
+     </td>
+<td style="text-align: center;" width="23">
+      20
+     </td>
+<td style="text-align: center;" width="22">
+      5
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+   Then the array should become
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;" width="26">
+      5
+     </td>
+<td style="text-align: center;" width="24">
+      20
+     </td>
+<td style="text-align: center;" width="23">
+      15
+     </td>
+<td style="text-align: center;" width="23">
+      10
+     </td>
+<td style="text-align: center;" width="25">
+      13
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+<strong>
+    Note:
+   </strong>
+<br/>
+   • The function should only rearrange the content of the array.
+   <br/>
+   • The function should not copy the reversed content in another array.
+   <br/>
+   • The function should not display the content of the array.
+   <br/>
+<strong>
+    (b)
+   </strong>
+   Write definition for a function ADDMIDROW (int MAT[ ] [10], int R, int C) in C++, which finds sum of the middle row elements of the matrix MAT (Assuming C represents number of Columns and R represents number of rows, which is an odd integer).
+   <strong>
+    2
+   </strong>
+<br/>
+   For example, if the content of array MAT having R as 3 and C as 5 is as follows :
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;" width="62">
+<strong>
+       1
+      </strong>
+</td>
+<td style="text-align: center;" width="62">
+<strong>
+       2
+      </strong>
+</td>
+<td style="text-align: center;" width="62">
+<strong>
+       3
+      </strong>
+</td>
+<td style="text-align: center;" width="62">
+<strong>
+       4
+      </strong>
+</td>
+<td style="text-align: center;" width="62">
+<strong>
+       5
+      </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="62">
+<strong>
+       2
+      </strong>
+</td>
+<td style="text-align: center;" width="62">
+<strong>
+       1
+      </strong>
+</td>
+<td style="text-align: center;" width="62">
+<strong>
+       3
+      </strong>
+</td>
+<td style="text-align: center;" width="62">
+<strong>
+       4
+      </strong>
+</td>
+<td style="text-align: center;" width="62">
+<strong>
+       5
+      </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="62">
+<strong>
+       3
+      </strong>
+</td>
+<td style="text-align: center;" width="62">
+<strong>
+       4
+      </strong>
+</td>
+<td style="text-align: center;" width="62">
+<strong>
+       1
+      </strong>
+</td>
+<td style="text-align: center;" width="62">
+<strong>
+       2
+      </strong>
+</td>
+<td style="text-align: center;" width="62">
+<strong>
+       5
+      </strong>
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+   The function should calculate the sum and display the following:
+   <br/>
+   Sum of Middle Row :
+   <strong>
+    15
+   </strong>
+<br/>
+<strong>
+    (c)
+   </strong>
+   T[25][30] is a two dimensional array, which is stored in the memory along the row with each of its element occupying 2 bytes, find the address of the element T[10] [15], if the elements T[5] [10] is stored at the memory location 25000.
+   <strong>
+    3
+   </strong>
+<br/>
+<strong>
+    (d)
+   </strong>
+   Write the definition of a member function ADDMEM () for a class QUEUE in C+ +, to add a MEMBER in a dynamically allocated Queue of Members considering the following code is already written as a part of the program.
+   <strong>
+    4
+   </strong>
+</p>
+<pre style="padding-left: 30px;">struct Member
+
+ {
+
+ int MNO;
+
+ char MNAME (20);
+
+ Member *Next;
+
+ };
+
+Class QUEUE
+
+{
+
+Member “Rear, “Front; 
+
+public :
+
+QUEUE () {Rear = NULL, Front = NULL,) 
+
+voidADDMEM (); 
+
+void REMOVEMEM ();
+
+~ QUEUE ();
+
+};</pre>
+<p>
+<strong>
+    (e)
+   </strong>
+   Convert the following Infix expression to its equivalent Postfix expression, showing the stack contents for each step of conversion. 2 P + (Q-R) * S/T
+   <br/>
+<span style="color: #008000;">
+<strong>
+     Solution:
+     <br/>
+</strong>
+</span>
+<strong>
+    (a)
+   </strong>
+</p>
+<pre style="padding-left: 30px;">Void Reverse (int Arr [ ], int N)
+
+{
+
+int temp;
+
+for (int i = 0, j = N-1; i &lt; j; i++, j--)
+
+{
+
+temp = Arr [i]; 
+
+Arr [i] = Arr [j]; 
+
+Arr [j] = temp; }</pre>
+<p>
+<strong>
+    (b)
+   </strong>
+</p>
+<pre style="padding-left: 30px;">Void . ADDMIDROW (int MAT [ ] [10], int R, int C)
+
+{
+
+int mid = R/2, sum = 0; 
+
+for (int j = 0; j &lt; C; j + +)
+
+sum = sum + MAT [mid] [j]; 
+
+cout&lt;&lt;“Sum of Middle Row &lt;&lt; sum;</pre>
+<p>
+<strong>
+    (c)
+   </strong>
+</p>
+<pre style="padding-left: 30px;">T[5] [10] = 25000 nr = 25 nc = 30 w = 2 bytes
+
+T[i] [j] = BA + size * (i * nr + j) 
+
+i-sr j-sc
+
+T[10] [15] = 25000 + 2* ((10 - 5) * 25 + (15 - 10))
+
+= 25 000 + 2* (125 + 5)
+
+= 25000 + 260 
+
+= 25260</pre>
+<p>
+<strong>
+    (d)
+   </strong>
+</p>
+<pre style="padding-left: 30px;">Void QUEUE :: ADDMEM ()
+
+{
+
+Member * newnode = new Member; 
+
+cout &lt;&lt;“Enter member no”; 
+
+cin &gt;&gt; newnode —&gt; MNO;
+
+cout &lt;&lt;“Enter member name”;
+
+gets (newnode —&gt; MNAME);
+
+ newnode -&gt; Next = NULL;
+
+if (Rear = = NULL)
+
+{
+
+Rear = newnode;
+
+Front = newnode;
+
+else
+
+Rear —&gt; Next = newnode;
+
+Rear = newnode
+
+}
+
+}</pre>
+<p>
+<strong>
+    (e)
+   </strong>
+   (P + (Q – R) * S / T)
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;" width="78">
+<strong>
+       Symbol
+      </strong>
+</td>
+<td style="text-align: center;" width="79">
+<strong>
+       Stock
+      </strong>
+</td>
+<td style="text-align: center;" width="102">
+<strong>
+       Expression
+      </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="78">
+      (
+     </td>
+<td style="text-align: center;" width="79">
+      (
+     </td>
+<td style="text-align: center;" width="102">
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="78">
+      P
+     </td>
+<td style="text-align: center;" width="79">
+      (
+     </td>
+<td style="text-align: center;" width="102">
+      P
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="78">
+      +
+     </td>
+<td style="text-align: center;" width="79">
+      ( +
+     </td>
+<td style="text-align: center;" width="102">
+      P
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="78">
+      (
+     </td>
+<td style="text-align: center;" width="79">
+      ( + (
+     </td>
+<td style="text-align: center;" width="102">
+      P
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="78">
+      Q
+     </td>
+<td style="text-align: center;" width="79">
+      ( + (
+     </td>
+<td style="text-align: center;" width="102">
+      PQ
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="78">
+      –
+     </td>
+<td style="text-align: center;" width="79">
+      ( + (-
+     </td>
+<td style="text-align: center;" width="102">
+      PQ
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="78">
+      R
+     </td>
+<td style="text-align: center;" width="79">
+      ( + (-
+     </td>
+<td style="text-align: center;" width="102">
+      PQR
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="78">
+      )
+     </td>
+<td style="text-align: center;" width="79">
+      ( +
+     </td>
+<td style="text-align: center;" width="102">
+      PQR-
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="78">
+      *
+     </td>
+<td style="text-align: center;" width="79">
+      ( + *
+     </td>
+<td style="text-align: center;" width="102">
+      PQR-
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="78">
+      S
+     </td>
+<td style="text-align: center;" width="79">
+      ( + *
+     </td>
+<td style="text-align: center;" width="102">
+      PQR-S
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="78">
+      /
+     </td>
+<td style="text-align: center;" width="79">
+      ( + /
+     </td>
+<td style="text-align: center;" width="102">
+      PQR-S*
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="78">
+      T
+     </td>
+<td style="text-align: center;" width="79">
+      ( + /
+     </td>
+<td style="text-align: center;" width="102">
+      PQR-S*T
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="78">
+      )
+     </td>
+<td width="79">
+</td>
+<td style="text-align: center;" width="102">
+      PQR-S*T/+
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+<span style="color: #008000;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+     Answer:
+    </strong>
+</span>
+<br/>
+   PQR – S * T / +
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 4:
+    </strong>
+</span>
+<br/>
+<strong>
+    (a)
+   </strong>
+   Aditi has used a text editing software to type some text. After saving the article as WORDS. TXT, she realised that she has wrongly typed alphabet J in place of alphabet I everywhere in the article.
+   <strong>
+    3
+   </strong>
+<br/>
+   Write a function definition for JTOI () in C+ + that would display the corrected version of entire content of the file WORDS.TXT with all the alphabets “J” to be displayed as an alphabet “I” on screen.
+   <br/>
+<strong>
+    Note :
+   </strong>
+   Assuming that WORD.TXT does not contain any J alphabet otherwise.
+   <br/>
+<strong>
+    Example:
+   </strong>
+<br/>
+   If Aditi has stored the following content in the file WORDS.TXT:
+  </p>
+<pre>WELL, THJS JS A WORD BY JTSELF. YOU COULD STRETCH THJS TO BE A SENTENCE</pre>
+<p>
+   The function JTOI ( ) should display the following content:
+  </p>
+<pre>WELL, THIS IS A WORD BY ITSELF. YOU COULD STRETCH THIS TO BE A SENTENCE</pre>
+<p>
+<strong>
+    (b)
+   </strong>
+   Write a definition for function COUNTDEPT () in C++ to read each object of a binary file TEACHERS.DAT, find and display the total number of teachers in the department MATHS. Assume that the file TEACHERS.DAT is created with the help of objects of class TEACHERS, which is defined below :
+   <strong>
+    2
+   </strong>
+</p>
+<pre style="padding-left: 30px;">class TEACHERS
+
+{
+
+intTID; char DEPT [20]; 
+
+public :
+
+void GET ()
+
+{
+
+cin &gt;&gt; TID, get, (DEPT);
+
+}
+
+void SHOW ()
+
+{
+
+cout&lt;&lt; TID &lt;&lt; "i" «DEPT«endl;
+
+}
+
+char *RDEPT () {return DEPT;}
+
+}</pre>
+<p>
+<strong>
+    (c)
+   </strong>
+   Find the output of the following C++ code considering that the binary file BOOK.DAT exists on the hard disk with a data of 200 books.
+   <strong>
+    1
+   </strong>
+</p>
+<pre style="padding-left: 30px;">class BOOK
+
+{
+
+int SID, char BName [20], 
+
+public :
+
+void Enter () void Display ();
+
+};
+
+void main ()
+
+{
+
+fstream InFile;
+
+InFile.open ("BOOK.DAT", ios :: binary | ios : : in);
+
+BOOK B;
+
+InFile.seekg (5* sizeof (B)};
+
+InFile, read (char *) &amp;B, sizeof (B) 
+
+cout«"Book Number«InFile.tellg ( ) / size of (B) + 1;
+
+InFile.seekg (0, ios : : and); 
+
+cout&lt;&lt;"of &lt;&lt; IpFile.tellg () / size of (B) «endl;
+
+InFile.close ();
+
+}</pre>
+<p>
+<span style="color: #008000;">
+<strong>
+     Solution:
+    </strong>
+</span>
+</p>
+<p>
+<strong>
+    (a)
+   </strong>
+</p>
+<pre style="padding-left: 30px;">Void JTOI ()
+
+{
+
+fstream f ("WORDS.TXT"); 
+
+char ch;
+
+while (! f.eof ())
+
+{
+
+f &gt; &gt; ch; 
+
+if (ch = = 'J')
+
+cout &lt; &lt; 'I';
+
+else
+
+cout &lt;&lt;ch;
+
+}
+
+f.close ();
+
+}</pre>
+<p>
+<strong>
+    (b)
+   </strong>
+</p>
+<pre style="padding-left: 30px;">void COUNTDEPT ()
+
+{
+
+TEACHERS t; 
+
+fstream f;
+
+f.open ("TEACHERS.DAT”, ios :: binary: ios :: in); 
+
+while (f.read ((char *) &amp; t, size of (t))
+
+{
+
+if (strcmp (t.RDEPT (), "MATHS") = =0) 
+
+count + +;
+
+}
+
+cout &lt; &lt;"No. of teachers of math department"
+
+&lt; &lt; count; 
+
+f.close ();
+
+}</pre>
+<p>
+<strong>
+    (c)
+   </strong>
+   Output:
+   <br/>
+   Book Number : 7 of 200
+  </p>
+<h4 id="h4-1" style="text-align: center;">
+<span id="SECTION_8211_C">
+<span style="color: #0000ff;">
+     SECTION – C
+    </span>
+</span>
+</h4>
+<p style="text-align: center;">
+<strong>
+<span style="color: #0000ff;">
+     (For All the Candidates)
+    </span>
+</strong>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 5:
+    </strong>
+</span>
+<br/>
+<strong>
+    (a)
+   </strong>
+   Observe the following table CANDIDATE carefully and write the name of the RDBMS operation out of
+   <br/>
+   (i) SELECTION (ii) PROJECTION (iii) UNION (iv) CARTESIAN PRODUCT, which has been used to produce the output as shown in RESULT. Also, find the Degree and Cardinality of the RESULT.
+   <strong>
+    2
+   </strong>
+</p>
+<p>
+<strong>
+    TABLE: CANDIDATE
+   </strong>
+</p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;" width="83">
+<strong>
+       NO
+      </strong>
+</td>
+<td style="text-align: center;" width="101">
+<strong>
+       NAME
+      </strong>
+</td>
+<td style="text-align: center;" width="108">
+<strong>
+       STREAM
+      </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="83">
+      Cl
+     </td>
+<td style="text-align: center;" width="101">
+      AJAY
+     </td>
+<td style="text-align: center;" width="108">
+      LAW
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="83">
+      C2
+     </td>
+<td style="text-align: center;" width="101">
+      ADITI
+     </td>
+<td style="text-align: center;" width="108">
+      MEDICAL
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="83">
+      C3
+     </td>
+<td style="text-align: center;" width="101">
+      ROHAN
+     </td>
+<td style="text-align: center;" width="108">
+      EDUCATION
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="83">
+      C4
+     </td>
+<td style="text-align: center;" width="101">
+      RISHAV
+     </td>
+<td style="text-align: center;" width="108">
+      ENGINEERING
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+<strong>
+    RESULT
+   </strong>
+</p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;" width="104">
+<strong>
+       NO
+      </strong>
+</td>
+<td style="text-align: center;" width="128">
+<strong>
+       NAME
+      </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="104">
+      C3
+     </td>
+<td style="text-align: center;" width="128">
+      ROHAN
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+<strong>
+    (b)
+   </strong>
+   Write SQL queries for (i) to (iv) and find outputs for SQL queries (v) to (viii), which are based on the tables:
+   <strong>
+    6
+   </strong>
+</p>
+<p>
+<strong>
+    TABLE: BOOK
+   </strong>
+</p>
+<table border="2" style="height: 181px;" width="359">
+<tbody>
+<tr>
+<td style="text-align: center;" width="67">
+<strong>
+       Code
+      </strong>
+</td>
+<td style="text-align: center;" width="154">
+<strong>
+       BNAME
+      </strong>
+</td>
+<td style="text-align: center;" width="80">
+<strong>
+       TYPE
+      </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="67">
+      F101
+     </td>
+<td style="text-align: center;" width="154">
+      The Priest
+     </td>
+<td style="text-align: center;" width="80">
+      Fiction
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="67">
+      L102
+     </td>
+<td style="text-align: center;" width="154">
+      German easy
+     </td>
+<td style="text-align: center;" width="80">
+      Literature
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="67">
+      C101
+     </td>
+<td style="text-align: center;" width="154">
+      Tarran in the lost world
+     </td>
+<td style="text-align: center;" width="80">
+      Comic
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="67">
+      F102
+     </td>
+<td style="text-align: center;" width="154">
+      Untold story
+     </td>
+<td style="text-align: center;" width="80">
+      Fiction
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="67">
+      C102
+     </td>
+<td style="text-align: center;" width="154">
+      War heroes
+     </td>
+<td style="text-align: center;" width="80">
+      Comic
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+<strong>
+    TABLE: MEMBER
+   </strong>
+</p>
+<table border="2" style="height: 101px;" width="375">
+<tbody>
+<tr>
+<td style="text-align: center;" width="58">
+<strong>
+       MNO
+      </strong>
+</td>
+<td style="text-align: center;" width="91">
+<strong>
+       MNAME
+      </strong>
+</td>
+<td style="text-align: center;" width="61">
+<strong>
+       CODE
+      </strong>
+</td>
+<td style="text-align: center;" width="89">
+<strong>
+       ISSUEDATE
+      </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="58">
+      M101
+     </td>
+<td style="text-align: center;" width="91">
+      Raghav Sinha
+     </td>
+<td style="text-align: center;" width="61">
+      L102
+     </td>
+<td style="text-align: center;" width="89">
+      2016-10-13
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="58">
+      M103
+     </td>
+<td style="text-align: center;" width="91">
+      Sarthakjohn
+     </td>
+<td style="text-align: center;" width="61">
+      F102
+     </td>
+<td style="text-align: center;" width="89">
+      2017-02-23
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="58">
+      M102
+     </td>
+<td style="text-align: center;" width="91">
+      Anisha Khan
+     </td>
+<td style="text-align: center;" width="61">
+      C101
+     </td>
+<td style="text-align: center;" width="89">
+      2016-06-12
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+<strong>
+    (i)
+   </strong>
+   To display all details from table MEMBER in descending order of ISSUEDATE.
+   <br/>
+<strong>
+    (ii)
+   </strong>
+   To display the BNO and BNAME of all Fiction Type books from the table Book.
+   <br/>
+<strong>
+    (iii)
+   </strong>
+   To display the TYPE and number of books in each TYPE from the table BOOK.
+   <br/>
+<strong>
+    (iv)
+   </strong>
+   To display all MNAME and ISSUEDATE of those members from table MEMBER who have books issued (i.e., ISSUEDATE) in the year 2017.
+   <br/>
+<strong>
+    (v)
+   </strong>
+   SELECT MAX (ISSUEDATE) FROM MEMBER;
+   <br/>
+<strong>
+    (vi)
+   </strong>
+   SELECT DISTINCT TYPE FROM BOOK;
+   <br/>
+<strong>
+    (vii)
+   </strong>
+   SELECT A.CODE, BNAME, MNO, MNAME FROM BOOK A, MEMBER B WHERE A.CODE=B.CODE;
+   <br/>
+<strong>
+    (viii)
+   </strong>
+   SELECT BNAME FROM BOOK
+   <br/>
+   WHERE TYPE NOT IN (“FICTION”, “COMIC”);
+   <br/>
+<span style="color: #008000;">
+<strong>
+     Solution:
+     <br/>
+</strong>
+</span>
+<strong>
+    (a)
+   </strong>
+</p>
+<p style="padding-left: 30px;">
+<strong>
+    (ii)
+   </strong>
+   PROJECTION
+   <br/>
+   Degree: 2
+   <br/>
+   Cardinality: 1
+  </p>
+<p>
+<strong>
+    (b)
+   </strong>
+</p>
+<p>
+<strong>
+    (i)
+   </strong>
+   Select * from MEMBER order by ISSUEDATE desc.
+   <br/>
+<strong>
+    (ii)
+   </strong>
+   Select BNO, BNAME from BOOK where TYPE = “Fiction”;
+   <br/>
+<strong>
+    (iii)
+   </strong>
+   Select distinct TYPE, count (TYPE) from Book group by TYPE.
+   <br/>
+<strong>
+    (iv)
+   </strong>
+   Select MNAME, ISSUEDATE from MEMBER where ISSUEDATE like ‘2017 %’.
+   <br/>
+<strong>
+    (v)
+   </strong>
+</p>
+<pre style="padding-left: 30px;">MAX (ISSUE DATE)
+
+2017-02-23</pre>
+<p>
+<strong>
+    (vi)
+   </strong>
+</p>
+<pre style="padding-left: 30px;">DISTINCT (TYPE)
+
+Fiction
+
+Literature
+
+Comic</pre>
+<p>
+<strong>
+    (vii)
+   </strong>
+</p>
+<pre style="padding-left: 30px;">CODE     BNAME         MNO     MNAME
+
+L102   German easy     M101    RAGHAV SINHA
+
+F102   Untold Story    M103    SARTHAK JOHN
+
+C101   Tarzan in the   M102    ANISHA KHAN             
+
+       lost World</pre>
+<p>
+<strong>
+    (viii)
+   </strong>
+</p>
+<pre style="padding-left: 30px;">BNAME
+
+German easy.</pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 6:
+    </strong>
+</span>
+<br/>
+<strong>
+    (a)
+   </strong>
+   State Distributive Laws of Boolean Algebra and verify them using truth table.
+   <strong>
+    2
+   </strong>
+<br/>
+<strong>
+    (b)
+   </strong>
+   Draw the Logic Circuit of the following Boolean
+   <br/>
+   Expression using only NAND Gates :
+   <strong>
+    2
+   </strong>
+</p>
+<pre>X.Y+Y.Z</pre>
+<p>
+<strong>
+    (c)
+   </strong>
+   Derive a Canonical SOP expression for a Boolean function F, represented by the following truth table:
+   <strong>
+    1
+   </strong>
+</p>
+<table border="2" style="height: 296px;" width="250">
+<tbody>
+<tr>
+<td style="text-align: center;" width="43">
+<strong>
+       U
+      </strong>
+</td>
+<td style="text-align: center;" width="42">
+<strong>
+       V
+      </strong>
+</td>
+<td style="text-align: center;" width="42">
+<strong>
+       W
+      </strong>
+</td>
+<td style="text-align: center;" width="85">
+<strong>
+       F (U, V,W)
+      </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="43">
+      0
+     </td>
+<td style="text-align: center;" width="42">
+      0
+     </td>
+<td style="text-align: center;" width="42">
+      0
+     </td>
+<td style="text-align: center;" width="85">
+      1
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="43">
+      0
+     </td>
+<td style="text-align: center;" width="42">
+      0
+     </td>
+<td style="text-align: center;" width="42">
+      1
+     </td>
+<td style="text-align: center;" width="85">
+      0
+     </td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td style="text-align: center;" width="43">
+      0
+     </td>
+<td style="text-align: center;" width="42">
+      1
+     </td>
+<td style="text-align: center;" width="42">
+      0
+     </td>
+<td style="text-align: center;" width="85">
+      1
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="43">
+      0
+     </td>
+<td style="text-align: center;" width="42">
+      1
+     </td>
+<td style="text-align: center;" width="42">
+      1
+     </td>
+<td style="text-align: center;" width="85">
+      1
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="43">
+      1
+     </td>
+<td style="text-align: center;" width="42">
+      0
+     </td>
+<td style="text-align: center;" width="42">
+      0
+     </td>
+<td style="text-align: center;" width="85">
+      0
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="43">
+      1
+     </td>
+<td style="text-align: center;" width="42">
+      0
+     </td>
+<td style="text-align: center;" width="42">
+      1
+     </td>
+<td style="text-align: center;" width="85">
+      0
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="43">
+      1
+     </td>
+<td style="text-align: center;" width="42">
+      1
+     </td>
+<td style="text-align: center;" width="42">
+      0
+     </td>
+<td style="text-align: center;" width="85">
+      1
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="43">
+      1
+     </td>
+<td style="text-align: center;" width="42">
+      1
+     </td>
+<td style="text-align: center;" width="42">
+      1
+     </td>
+<td style="text-align: center;" width="85">
+      0
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+<strong>
+    (d)
+   </strong>
+   Reduce the following Boolean Expression to its simplest from using K-Map :
+   <strong>
+    3
+   </strong>
+<br/>
+   F (X, Y, Z, W) = X (0,1, 2, 3, 4, 5,10,11,14)
+   <br/>
+<span style="color: #008000;">
+<strong>
+     Solution:
+    </strong>
+</span>
+<br/>
+<strong>
+    (a)
+   </strong>
+   Distributive laws.
+   <br/>
+   A + B. C = (A + B) . (A + C)
+   <br/>
+   A . (B + C) = (A. B) + (A.C)
+  </p>
+<p>
+   (II) Law
+  </p>
+<table border="2" style="height: 289px;" width="549">
+<tbody>
+<tr>
+<td style="text-align: center;" width="45">
+<strong>
+       A
+      </strong>
+</td>
+<td style="text-align: center;" width="61">
+<strong>
+       B
+      </strong>
+</td>
+<td style="text-align: center;" width="48">
+<strong>
+       C
+      </strong>
+</td>
+<td style="text-align: center;" width="41">
+<strong>
+       B.C
+      </strong>
+</td>
+<td style="text-align: center;" width="60">
+<strong>
+       A+B.C
+      </strong>
+</td>
+<td style="text-align: center;" width="60">
+<strong>
+       A+B
+      </strong>
+</td>
+<td style="text-align: center;" width="61">
+<strong>
+       A+C
+      </strong>
+</td>
+<td style="text-align: center;" width="94">
+<strong>
+       (A+B).(A+C)
+      </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="45">
+      0
+     </td>
+<td style="text-align: center;" width="61">
+      0
+     </td>
+<td style="text-align: center;" width="48">
+      0
+     </td>
+<td style="text-align: center;" width="41">
+      0
+     </td>
+<td style="text-align: center;" width="60">
+      0
+     </td>
+<td style="text-align: center;" width="60">
+      0
+     </td>
+<td style="text-align: center;" width="61">
+      0
+     </td>
+<td style="text-align: center;" width="94">
+      0
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="45">
+      0
+     </td>
+<td style="text-align: center;" width="61">
+      0
+     </td>
+<td style="text-align: center;" width="48">
+      1
+     </td>
+<td style="text-align: center;" width="41">
+      0
+     </td>
+<td style="text-align: center;" width="60">
+      0
+     </td>
+<td style="text-align: center;" width="60">
+      0
+     </td>
+<td style="text-align: center;" width="61">
+      1
+     </td>
+<td style="text-align: center;" width="94">
+      0
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="45">
+      0
+     </td>
+<td style="text-align: center;" width="61">
+      1
+     </td>
+<td style="text-align: center;" width="48">
+      0
+     </td>
+<td style="text-align: center;" width="41">
+      0
+     </td>
+<td style="text-align: center;" width="60">
+      0
+     </td>
+<td style="text-align: center;" width="60">
+      1
+     </td>
+<td style="text-align: center;" width="61">
+      0
+     </td>
+<td style="text-align: center;" width="94">
+      0
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="45">
+      0
+     </td>
+<td style="text-align: center;" width="61">
+      1
+     </td>
+<td style="text-align: center;" width="48">
+      1
+     </td>
+<td style="text-align: center;" width="41">
+      1
+     </td>
+<td style="text-align: center;" width="60">
+      1
+     </td>
+<td style="text-align: center;" width="60">
+      1
+     </td>
+<td style="text-align: center;" width="61">
+      1
+     </td>
+<td style="text-align: center;" width="94">
+      1
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="45">
+      1
+     </td>
+<td style="text-align: center;" width="61">
+      0
+     </td>
+<td style="text-align: center;" width="48">
+      0
+     </td>
+<td style="text-align: center;" width="41">
+      0
+     </td>
+<td style="text-align: center;" width="60">
+      1
+     </td>
+<td style="text-align: center;" width="60">
+      1
+     </td>
+<td style="text-align: center;" width="61">
+      1
+     </td>
+<td style="text-align: center;" width="94">
+      1
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="45">
+      1
+     </td>
+<td style="text-align: center;" width="61">
+      0
+     </td>
+<td style="text-align: center;" width="48">
+      1
+     </td>
+<td style="text-align: center;" width="41">
+      0
+     </td>
+<td style="text-align: center;" width="60">
+      1
+     </td>
+<td style="text-align: center;" width="60">
+      1
+     </td>
+<td style="text-align: center;" width="61">
+      1
+     </td>
+<td style="text-align: center;" width="94">
+      1
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="45">
+      1
+     </td>
+<td style="text-align: center;" width="61">
+      1
+     </td>
+<td style="text-align: center;" width="48">
+      0
+     </td>
+<td style="text-align: center;" width="41">
+      0
+     </td>
+<td style="text-align: center;" width="60">
+      1
+     </td>
+<td style="text-align: center;" width="60">
+      1
+     </td>
+<td style="text-align: center;" width="61">
+      1
+     </td>
+<td style="text-align: center;" width="94">
+      1
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="45">
+      1
+     </td>
+<td style="text-align: center;" width="61">
+      1
+     </td>
+<td style="text-align: center;" width="48">
+      1
+     </td>
+<td style="text-align: center;" width="41">
+      1
+     </td>
+<td style="text-align: center;" width="60">
+      1
+     </td>
+<td style="text-align: center;" width="60">
+      1
+     </td>
+<td style="text-align: center;" width="61">
+      1
+     </td>
+<td style="text-align: center;" width="94">
+      1
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+   (1) = (2) Hence proved.
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;" width="45">
+<strong>
+       A
+      </strong>
+</td>
+<td style="text-align: center;" width="61">
+<strong>
+       B
+      </strong>
+</td>
+<td style="text-align: center;" width="48">
+<strong>
+       C
+      </strong>
+</td>
+<td style="text-align: center;" width="41">
+<strong>
+       B+C
+      </strong>
+</td>
+<td style="text-align: center;" width="60">
+<strong>
+       A.(B+C)
+      </strong>
+</td>
+<td style="text-align: center;" width="60">
+<strong>
+       A.B
+      </strong>
+</td>
+<td style="text-align: center;" width="61">
+<strong>
+       AC
+      </strong>
+</td>
+<td style="text-align: center;" width="93">
+<strong>
+       AB +AC
+      </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="45">
+      0
+     </td>
+<td style="text-align: center;" width="61">
+      0
+     </td>
+<td style="text-align: center;" width="48">
+      0
+     </td>
+<td style="text-align: center;" width="41">
+      0
+     </td>
+<td style="text-align: center;" width="60">
+      0
+     </td>
+<td style="text-align: center;" width="60">
+      0
+     </td>
+<td style="text-align: center;" width="61">
+      0
+     </td>
+<td style="text-align: center;" width="93">
+      0
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="45">
+      0
+     </td>
+<td style="text-align: center;" width="61">
+      0
+     </td>
+<td style="text-align: center;" width="48">
+      1
+     </td>
+<td style="text-align: center;" width="41">
+      1
+     </td>
+<td style="text-align: center;" width="60">
+      0
+     </td>
+<td style="text-align: center;" width="60">
+      0
+     </td>
+<td style="text-align: center;" width="61">
+      0
+     </td>
+<td style="text-align: center;" width="93">
+      0
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="45">
+      0
+     </td>
+<td style="text-align: center;" width="61">
+      1
+     </td>
+<td style="text-align: center;" width="48">
+      0
+     </td>
+<td style="text-align: center;" width="41">
+      1
+     </td>
+<td style="text-align: center;" width="60">
+      0
+     </td>
+<td style="text-align: center;" width="60">
+      0
+     </td>
+<td style="text-align: center;" width="61">
+      0
+     </td>
+<td style="text-align: center;" width="93">
+      0
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="45">
+      0
+     </td>
+<td style="text-align: center;" width="61">
+      1
+     </td>
+<td style="text-align: center;" width="48">
+      1
+     </td>
+<td style="text-align: center;" width="41">
+      1
+     </td>
+<td style="text-align: center;" width="60">
+      0
+     </td>
+<td style="text-align: center;" width="60">
+      0
+     </td>
+<td style="text-align: center;" width="61">
+      0
+     </td>
+<td style="text-align: center;" width="93">
+      0
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="45">
+      1
+     </td>
+<td style="text-align: center;" width="61">
+      0
+     </td>
+<td style="text-align: center;" width="48">
+      0
+     </td>
+<td style="text-align: center;" width="41">
+      0
+     </td>
+<td style="text-align: center;" width="60">
+      0
+     </td>
+<td style="text-align: center;" width="60">
+      0
+     </td>
+<td style="text-align: center;" width="61">
+      0
+     </td>
+<td style="text-align: center;" width="93">
+      0
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="45">
+      1
+     </td>
+<td style="text-align: center;" width="61">
+      0
+     </td>
+<td style="text-align: center;" width="48">
+      1
+     </td>
+<td style="text-align: center;" width="41">
+      1
+     </td>
+<td style="text-align: center;" width="60">
+      1
+     </td>
+<td style="text-align: center;" width="60">
+      0
+     </td>
+<td style="text-align: center;" width="61">
+      1
+     </td>
+<td style="text-align: center;" width="93">
+      1
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="45">
+      1
+     </td>
+<td style="text-align: center;" width="61">
+      1
+     </td>
+<td style="text-align: center;" width="48">
+      0
+     </td>
+<td style="text-align: center;" width="41">
+      1
+     </td>
+<td style="text-align: center;" width="60">
+      1
+     </td>
+<td style="text-align: center;" width="60">
+      1
+     </td>
+<td style="text-align: center;" width="61">
+      0
+     </td>
+<td style="text-align: center;" width="93">
+      1
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="45">
+      1
+     </td>
+<td style="text-align: center;" width="61">
+      1
+     </td>
+<td style="text-align: center;" width="48">
+      1
+     </td>
+<td style="text-align: center;" width="41">
+      1
+     </td>
+<td style="text-align: center;" width="60">
+      1
+     </td>
+<td style="text-align: center;" width="60">
+      1
+     </td>
+<td style="text-align: center;" width="61">
+      1
+     </td>
+<td style="text-align: center;" width="93">
+      1
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+   (3) = (4) Hence proved.
+  </p>
+<p>
+<strong>
+    (b)
+   </strong>
+   X.Y+Y. Z
+   <br/>
+<img alt="E:\image\NCERT Solutions for Class 12 Computer Science (C++) - Solved Paper, 2017 (Delhi &amp; Outside Delhi Set)-1.png" class="alignnone size-full wp-image-60117" data-recalc-dims="1" decoding="async" height="144" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/NCERT-Solutions-for-Class-12-Computer-Science-C-Solved-Paper-2017-Delhi-amp-Outside-Delhi-Set-1.png?resize=280%2C144&amp;ssl=1" width="280"/>
+<br/>
+<strong>
+    (c)
+   </strong>
+   U’V’W + U’VW’+ U’VW + UVW’
+   <br/>
+<strong>
+    (d)
+   </strong>
+   F (X, Y, Z, W) = I (0,1, 2, 3, 4, 5,10,11,14)
+   <br/>
+<img alt="NCERT Solutions for Class 12 Computer Science (C++) - Solved Paper, 2017 (Delhi &amp; Outside Delhi Set)-2" class="alignnone size-full wp-image-60119" data-recalc-dims="1" decoding="async" height="197" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/NCERT-Solutions-for-Class-12-Computer-Science-C-Solved-Paper-2017-Delhi-amp-Outside-Delhi-Set-2.png?resize=229%2C197&amp;ssl=1" width="229"/>
+<br/>
+   F = X’Z’ + Y’Z + XZW’
+  </p>
+<p>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 7:
+    </strong>
+</span>
+<br/>
+<strong>
+    (a)
+   </strong>
+   Differentiate between Radio Link and Microwave in context of wireless communication technologies.
+   <strong>
+    2
+   </strong>
+<br/>
+<strong>
+    (b)
+   </strong>
+   Amit used a pen drive to copy files from his friend’s laptop to his office computer. Soon his office computer started abnormal functioning. Sometimes it would restart by itself and sometimes it would stop functioning totally. Which of the following options out of (i) to (iv), would have caused the malfunctioning of the computer ? Justify the reason for your chosen option:
+   <strong>
+    2
+   </strong>
+</p>
+<p style="padding-left: 30px;">
+<strong>
+    (i)
+   </strong>
+   Computer Worm
+   <br/>
+<strong>
+    (ii)
+   </strong>
+   Computer Virus
+   <br/>
+<strong>
+    (iii)
+   </strong>
+   Computer Bacteria
+   <br/>
+<strong>
+    (iv)
+   </strong>
+   Trojan Horse
+  </p>
+<p>
+<strong>
+    (c)
+   </strong>
+   Jai is an IT expert and a freelancer. He recently used his skills to access the Administrator password for the network server of Megatech Corpn Ltd. and provided confidential data of the organization to its Director, informing him about the vulnerability of their network security. Out of the following options (i) to (iv), which one most appropriately defines Jai ?
+   <strong>
+    2
+   </strong>
+<br/>
+<strong>
+    Justify the reason for your chosen option:
+   </strong>
+</p>
+<p style="padding-left: 30px;">
+<strong>
+    (i)
+   </strong>
+   Hacker
+   <br/>
+<strong>
+    (ii)
+   </strong>
+   Cracker
+   <br/>
+<strong>
+    (iii)
+   </strong>
+   Operator
+   <br/>
+<strong>
+    (iv)
+   </strong>
+   Network Admin
+  </p>
+<p>
+<strong>
+    (d)
+   </strong>
+   Hi Speed Technologies Ltd. is a Delhi based organization which is expanding its office setup to Chandigarh. At Chandigarh office campus, they are planning to have 3 different blocks for HR, Accounts and Logistics related work. Each block has number of computers, which are required to be connected in a network for communication, data and resource sharing.
+  </p>
+<p>
+   As a network consultant, you have to suggest the best network related solutions for them for issues/problems raised in (i) to (iv), keeping in mind the distances between various blocks / locations and other given parameters.
+  </p>
+<p>
+<img alt="NCERT Solutions for Class 12 Computer Science (C++) - Solved Paper, 2017 (Delhi &amp; Outside Delhi Set)-4" class="alignnone size-full wp-image-60121" data-recalc-dims="1" decoding="async" height="169" loading="lazy" sizes="auto, (max-width: 335px) 100vw, 335px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/NCERT-Solutions-for-Class-12-Computer-Science-C-Solved-Paper-2017-Delhi-amp-Outside-Delhi-Set-4.png?resize=335%2C169&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/NCERT-Solutions-for-Class-12-Computer-Science-C-Solved-Paper-2017-Delhi-amp-Outside-Delhi-Set-4.png?w=335&amp;ssl=1 335w, https://www.cbsetuts.com/wp-content/uploads/2017/12/NCERT-Solutions-for-Class-12-Computer-Science-C-Solved-Paper-2017-Delhi-amp-Outside-Delhi-Set-4.png?resize=300%2C151&amp;ssl=1 300w" width="335"/>
+</p>
+<p>
+   Shortest distances between various blocks/locations;
+  </p>
+<table border="2" style="height: 195px;" width="370">
+<tbody>
+<tr>
+<td style="text-align: left;" width="218">
+      HR Block to Accounts Block
+     </td>
+<td style="text-align: center;" width="67">
+      400 metres
+     </td>
+</tr>
+<tr>
+<td style="text-align: left;" width="218">
+      Accounts Block to Logistics Block
+     </td>
+<td style="text-align: center;" width="67">
+      200 metres
+     </td>
+</tr>
+<tr>
+<td style="text-align: left;" width="218">
+      Logistics Block to HR Block
+     </td>
+<td style="text-align: center;" width="67">
+      150 metres
+     </td>
+</tr>
+<tr>
+<td style="text-align: left;" width="218">
+      DELHI Head Office to CHANDIGARH Office
+     </td>
+<td style="text-align: center;" width="67">
+      270 km
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+   Number of Computers installed at various blocks are as follows:
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;" width="124">
+      HR Block
+     </td>
+<td style="text-align: center;" width="33">
+      70
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="124">
+      Accounts Block
+     </td>
+<td style="text-align: center;" width="33">
+      50
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;" width="124">
+      Logistics Block
+     </td>
+<td style="text-align: center;" width="33">
+      40
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+<strong>
+    (i)
+   </strong>
+   Suggest the most appropriate block/location to house the SERVER in the CHANDIGARH Office (out of the 3 blocks) to get the best and effective connectivity. Justify your answer.
+   <strong>
+    1
+   </strong>
+<br/>
+<strong>
+    (ii)
+   </strong>
+   Suggest the best wired medium and draw the cable layout (Block to Block) to efficiently connect various Blocks within the CHANDIGARH office compound.
+   <strong>
+    1
+   </strong>
+<br/>
+<strong>
+    (iii)
+   </strong>
+   Suggest a device / software and its placement that would provide data security for the entire network of CHANDIGARH OFFICE.
+   <strong>
+    1
+   </strong>
+<br/>
+<strong>
+    (iv)
+   </strong>
+   Which of the following kind of network, would it be?
+   <strong>
+    1
+   </strong>
+</p>
+<p style="padding-left: 30px;">
+<strong>
+    (a)
+   </strong>
+   PAN
+   <strong>
+    (b)
+   </strong>
+   WAN
+   <br/>
+<strong>
+    (c)
+   </strong>
+   MAN
+   <strong>
+    (d)
+   </strong>
+   LAN
+  </p>
+<p>
+<span style="color: #008000;">
+<strong>
+     Solution:
+    </strong>
+</span>
+<br/>
+<strong>
+    (a)
+   </strong>
+</p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;" width="217">
+<strong>
+       Radio Link
+      </strong>
+</td>
+<td style="text-align: center;" width="211">
+<strong>
+       Microwave
+      </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align: left;" width="217">
+<strong>
+       (i)
+      </strong>
+      Satellite radiolink system operates through transponders
+     </td>
+<td style="text-align: left;" width="211">
+<strong>
+       (i)
+      </strong>
+      long distance transmission is easy
+     </td>
+</tr>
+<tr>
+<td style="text-align: left;" width="217">
+<strong>
+       (ii)
+      </strong>
+      com travel through vacuum.
+     </td>
+<td style="text-align: left;" width="211">
+<strong>
+       (ii)
+      </strong>
+      uses line-of-sight transmission
+     </td>
+</tr>
+<tr>
+<td width="217">
+</td>
+<td style="text-align: left;" width="211">
+<strong>
+       (iii)
+      </strong>
+      cheaper
+     </td>
+</tr>
+<tr>
+<td width="217">
+</td>
+<td style="text-align: left;" width="211">
+<strong>
+       (iv)
+      </strong>
+      cannot travel through vaccum
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+<strong>
+    (b) (iv)
+   </strong>
+   Trojan Horse – As the program must have been hidden while copying.
+   <br/>
+<strong>
+    (c) (i)
+   </strong>
+   Hacker – he has used his skills for good intentions.
+   <br/>
+<strong>
+    (d)
+   </strong>
+</p>
+<p style="padding-left: 30px;">
+<strong>
+    (i)
+   </strong>
+   HR block (has maximum no. of computers).
+   <br/>
+<strong>
+    (ii)
+   </strong>
+   Optical fiber cable is the best wired medium.
+   <br/>
+<strong>
+    (iii)
+   </strong>
+   Firewall.
+   <br/>
+<strong>
+    (iv)
+   </strong>
+   LAN.
+  </p>
+<p>
+<img alt="NCERT Solutions for Class 12 Computer Science (C++) - Solved Paper, 2017 (Delhi &amp; Outside Delhi Set)-3" class="alignnone size-full wp-image-60120" data-recalc-dims="1" decoding="async" height="150" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/NCERT-Solutions-for-Class-12-Computer-Science-C-Solved-Paper-2017-Delhi-amp-Outside-Delhi-Set-3.png?resize=259%2C150&amp;ssl=1" width="259"/>
+</p>
+<p>
+<a class="button-red" href="http://www.learncbse.in/ncert-solutions-2/" title="NCERT Solutions Home Page">
+    NCERT Solutions
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/ncert-solutions-class-12-computer-science-c/" title="NCERT Solutions for Class 12 Computer Science (C++)">
+    Computer science
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/ncert-solutions-for-class-12-english/" title="NCERT Solutions for Class 12 English">
+    English
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/ncert-solutions-class-12-hindi-core/" title="NCERT Solutions for Class 12 Hindi">
+    Hindi
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/cbse-class-12-humanities/" title="NCERT Solutions for Class 12 Humanities">
+    Humanities
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/cbse-class-12-commerce/" title="NCERT Solutions for Class 12 Commerce">
+    Commerce
+   </a>
+<a class="button-red" href="http://www.learncbse.in/cbse-class-12-science/" title="CBSE Class 12 Science">
+    Science
+   </a>
+</p>
+ CONTENT END 2 
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"&gt;
+		&lt;rdf:Description rdf:about="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-solved-paper-2017-delhi-set/"
+    dc:identifier="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-solved-paper-2017-delhi-set/"
+    dc:title="NCERT Solutions for Class 12 Computer Science (C++) &amp;#8211; Solved Paper, 2017 (Delhi Set)"
+    trackback:ping="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-solved-paper-2017-delhi-set/trackback/" /&gt;
+&lt;/rdf:RDF&gt;
+</div>
+<div class="social-sidebar" id="social-sidebar">
+<button id="minimize-button" onclick="toggleSidebar()">−</button>
+<a href="https://t.me/learncbse_online" target="_blank" title="Telegram">
+<img alt="Telegram" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png"/>
+</a>
+<a href="https://x.com/learncbse_9" target="_blank" title="Twitter">
+<img alt="Twitter" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/733/733579.png"/>
+</a>
+<a href="https://www.reddit.com/r/learncbse_online/?rdt=59433" target="_blank" title="Reddit">
+<img alt="Reddit" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111589.png"/>
+</a>
+<a href="https://discord.gg/aM6xbTDz" target="_blank" title="Discord">
+<img alt="Discord" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png"/>
+</a>
+</div>
+<script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('social-sidebar');
+        sidebar.classList.toggle('minimized');
+    }
+</script>
+</body>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-C5VTZJSJCR">
+</script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C5VTZJSJCR');
+</script>

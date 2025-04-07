@@ -1,0 +1,156 @@
+
+   body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+header, footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #222;
+    text-align: center;
+}
+a {
+    font-family: 'Playfair Display', serif;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #343434;
+    
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+  
+
+   body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+header, footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+h1, h2, h3 {
+    color: #222;
+    text-align: center;
+}
+a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+.content {
+    max-width: 900px;
+    margin:  1.2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header {
+    background: linear-gradient(90deg, #4a90e2, #87cefa);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 0;
+    border-bottom: 5px solid #d9e9ff;
+}
+h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+.secondary-heading {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 0.2rem;
+    letter-spacing: 0.3px;
+}
+@media (min-width: 1024px) {
+    .desktop-banner {
+        max-width: 22% !important;
+    }
+}
+p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #343434;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+  
+
+   #menu-top a {
+    padding: 12px 8px; /* Slightly increased padding for better touch targets */
+    margin: 10px 0 2px 0; /* Adjusted spacing for a more balanced design */
+    display: inline-block;
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Modern sans-serif font for a clean, fresh look */
+    font-size: 1.25rem; /* Slightly smaller font size for a more compact design */
+    font-weight: 600; /* Bold font weight for emphasis */
+    line-height: 1.5; /* Increased line height for readability */
+    letter-spacing: 0.02em; /* Slight letter spacing for clarity */
+    border-radius: 6px; /* Rounded corners for a contemporary appearance */
+    text-decoration: none; /* No underlines for a clean design */
+    color: #007BFF; /* Bold, vibrant blue for text */
+    transition: all 0.3s ease; /* Smooth transition for all interactive states */
+}
+
+#menu-top a:hover {
+    background-color: transparent; /* No background on hover */
+    color: #0056b3; /* Slightly darker blue text on hover */
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 91, 179, 0.3); /* Enhanced shadow effect */
+    transform: scale(1.05); /* Subtle scale effect on hover */
+}
+  .responsive-banner {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Desktop View */
+  @media (min-width: 1024px) {
+    .responsive-banner {
+      max-width: 28%;  /* Adjusted for smaller desktop view */
+      height: auto;    /* Maintain aspect ratio */
+    }
+  }
+
+  /* Mobile View */
+  @media (max-width: 1023px) {
+    .responsive-banner {
+      max-width: 90%;
+      height: auto;    /* Maintain aspect ratio */
+    }
+  }
+  

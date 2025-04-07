@@ -1,0 +1,257 @@
+
+  pre, code {
+        background-color: #f0f8ff;
+        border: 1px solid #d1e7ff;
+        border-radius: 5px;
+        padding: 10px;
+        font-family: 'Courier New', Courier, monospace;
+        color: #003366;
+        overflow-x: auto;
+    }
+ 
+
+  pre, code {
+        background-color: #1e1e1e;  /* Dark background */
+        border-radius: 8px;         /* Rounded corners */
+        padding: 15px;               /* Padding for content */
+        font-family: 'Fira Code', monospace; /* Modern monospace font */
+        color: #dcdcdc;              /* Light text color */
+        overflow-x: auto;            /* Horizontal scroll */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        font-size: 14px;             /* Font size */
+        line-height: 1.5;            /* Line height for readability */
+    }
+
+    /* Optional: Highlight keywords */
+    .keyword {
+        color: #569cd6;              /* Blue color for keywords */
+        font-weight: bold;           /* Bold keywords */
+    }
+
+    .string {
+        color: #ce9178;              /* String color */
+    }
+
+    .comment {
+        color: #6a9955;              /* Comment color */
+        font-style: italic;          /* Italicize comments */
+    }
+ 
+
+  pre, code {
+        background-color: #f5f5f5;  /* Light grey background */
+        border-radius: 8px;         /* Rounded corners */
+        padding: 15px;               /* Padding for content */
+        font-family: 'Fira Code', monospace; /* Modern monospace font */
+        color: #dcdcdc;              /* Light text color */
+        overflow-x: auto;            /* Horizontal scroll */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        font-size: 14px;             /* Font size */
+        line-height: 1.5;            /* Line height for readability */
+    }
+
+    /* Optional: Highlight keywords */
+    .keyword {
+        color: #569cd6;              /* Blue color for keywords */
+        font-weight: bold;           /* Bold keywords */
+    }
+
+    .string {
+        color: #ce9178;              /* String color */
+    }
+
+    .comment {
+        color: #6a9955;              /* Comment color */
+        font-style: italic;          /* Italicize comments */
+    }
+ 
+
+  pre, code {
+        background-color: #2e2e2e;  /* Dark background */
+        border-radius: 8px;         /* Rounded corners */
+        padding: 15px;               /* Padding for content */
+        font-family: 'Fira Code', monospace; /* Modern monospace font */
+        color: #dcdcdc;              /* Light text color */
+        overflow-x: auto;            /* Horizontal scroll */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        font-size: 14px;             /* Font size */
+        line-height: 1.5;            /* Line height for readability */
+    }
+
+    /* Optional: Highlight keywords */
+    .keyword {
+        color: #569cd6;              /* Blue color for keywords */
+        font-weight: bold;           /* Bold keywords */
+    }
+
+    .string {
+        color: #ce9178;              /* String color */
+    }
+
+    .comment {
+        color: #6a9955;              /* Comment color */
+        font-style: italic;          /* Italicize comments */
+    }
+ 
+
+  body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+header, footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #222;
+    text-align: center;
+}
+a {
+    font-family: 'Playfair Display', serif;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #343434;
+    
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+ 
+
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+header, footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+h1, h2, h3 {
+    color: #222;
+    text-align: center;
+}
+a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+.content {
+    max-width: 900px;
+    margin:  1.2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header {
+    background: linear-gradient(90deg, #4a90e2, #87cefa);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 0;
+    border-bottom: 5px solid #d9e9ff;
+}
+h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+.secondary-heading {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 0.2rem;
+    letter-spacing: 0.3px;
+}
+@media (min-width: 1024px) {
+    .desktop-banner {
+        max-width: 22% !important;
+    }
+}
+p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #343434;
+    
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+ 
+
+  .entry-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 90%;  /* Optionally set a max-width */
+    }
+ 
+
+  .entry-content {
+        display: block;
+        margin: 0 auto;
+        max-width: 1200px; /* Set max-width if necessary */
+        padding: 0 1rem; /* Add padding to prevent text from touching edges */
+        text-align: center; /* Center text within the div */
+    }
+ 
+
+  /* Centering the entry-content div and ensuring good structure */
+    .entry-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: #ffffff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        max-width: 1200px; /* Max width for large screens */
+        width: 100%; /* Ensure it doesn't exceed the container */
+        box-sizing: border-box;
+    }
+ 
+
+  /* Left-aligning the entry-content div and ensuring good structure */
+.entry-content {
+    display: block; /* Set to block to avoid flex-based layout */
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 1200px; /* Max width for large screens */
+    width: 100%; /* Ensure it doesn't exceed the container */
+    box-sizing: border-box;
+    text-align: left; /* Align text to the left */
+}
+ 

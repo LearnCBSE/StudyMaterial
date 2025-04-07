@@ -1,0 +1,2264 @@
+<head>
+ <meta charset="utf-8"/>
+ <meta content="Bqdk9rTr4" name="admaven-placement"/>
+ <script async="true" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript">
+ </script>
+ <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ncert-solutions-for-class-12-computer-science-c-solved-paper-2017-outside-delhi-set",
+  "url": "https://learncbse.online/ncert-solutions-for-class-12-computer-science-c-solved-paper-2017-outside-delhi-set",
+  "description": "ncert-solutions-for-class-12-computer-science-c-solved-paper-2017-outside-delhi-set"
+}
+ </script>
+ <!DOCTYPE html>
+ <html>
+ </html>
+ <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+ <header class="entry-header">
+  <h1 class="entry-title" id="h1-1">
+   NCERT Solutions for Class 12 Computer Science (C++) – Solved Paper, 2017 (Outside Delhi Set)
+  </h1>
+ </header>
+ <div class="entry-content">
+  <div class="code-block code-block-2" style="margin: 8px 0; clear: both;">
+  </div>
+  <h2 id="h2-2">
+   <span id="NCERT_Solutions_for_Class_12_Computer_Science_C_8211_Solved_Paper_2017_Outside_Delhi_Set">
+    NCERT Solutions for Class 12 Computer Science (C++) – Solved Paper, 2017 (Outside Delhi Set)
+   </span>
+  </h2>
+  <h3 id="h3-1" style="text-align: center;">
+   <span id="SECTION_8211_A">
+    SECTION – A
+   </span>
+  </h3>
+  <p style="text-align: center;">
+   (Only for Candidates, who opted for C++)
+  </p>
+  <div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+  </div>
+  <p>
+   Question 1:
+   <br/>
+   (a) Write the type of C+ + tokens (keywords and user defined identifiers) from the following:    2
+  </p>
+  <p style="padding-left: 30px;">
+   (i) new
+   <br/>
+   (ii) While
+   <br/>
+   (iii) case
+   <br/>
+   (iv) Num_2
+  </p>
+  <div class="code-block code-block-3" style="margin: 8px 0; clear: both;">
+  </div>
+  <p>
+   (b) Anil typed the following C+ + code and during compilation he found three errors as follows :
+  </p>
+  <p style="padding-left: 30px;">
+   (i) Function strlen should have prototype
+   <br/>
+   (ii) Undefined symbol cout
+   <br/>
+   (iii) Undefined symbol endl
+  </p>
+  <div class="code-block code-block-4" style="margin: 8px 0; clear: both;">
+  </div>
+  <p>
+   On asking, his teacher told him to include necessary header files in the code. Write the names of the
+   <br/>
+   header files, which Anil needs to include, for successful compilation and execution of the following code :    1
+  </p>
+  <pre style="padding-left: 30px;">void main()
+
+{
+
+char Txt [ ] = “Welcome”;
+
+for (int C = 0; C&lt;strlen (Txt) ; C++)
+
+Txt [C] = Txt [C]+l; 
+
+cout « Txt « endl;
+
+}</pre>
+  <p>
+   (c) Rewrite the following C + + code after removing any/all syntactical errors with each correction underlined.
+   <br/>
+   2 Note : Assume all required header files are already being included in the program.
+  </p>
+  <pre style="padding-left: 30px;">void main ()
+
+{
+
+cout &lt; &lt; "Enter an Alphabet: " ;
+
+cin&gt;&gt;CH;
+
+switch(CH)
+
+case 'A' cout &lt;&lt;"Ant"; Break;
+
+case 'B' cout&lt;&lt;"Bear" ; Break;</pre>
+  <p>
+   (d) Find and write the output of the following C++ program code :    2
+   <br/>
+   Note : Assume all required header files are already included in the program.
+  </p>
+  <pre style="padding-left: 30px;">#defme Diff (Nl, N2) ((Nl&gt;N2) ?N1 - N2 : N2 - Nl)
+
+void main ()
+
+{
+
+int A, B, NUM [ ] = (10, 23,14, 54, 32}; for (int CNT = 4 ; CNT &gt; 0 ; CNT --)
+
+{
+
+A=NUM[CNT] ;
+
+B=NUM[CNT-1] ; 
+
+cout&lt;&lt;Diff (A , B) &lt;&lt; ‘ # ‘ ;
+
+}
+
+}</pre>
+  <p>
+   (e) Find and write the output of the following C++program code :    3
+   <br/>
+   Note : Assume all required header files are already being included in the program.
+  </p>
+  <div class="code-block code-block-5" style="margin: 8px 0; clear: both;">
+  </div>
+  <pre style="padding-left: 30px;">void main ()
+
+{
+
+int *Point, Score [ ]={100, 95,150, 75, 65,120};
+
+Point = Score;
+
+for (int L = 0; L&lt;6; L++)
+
+{ 
+
+if ((*Point)%10==0)
+
+Point/= 2; 
+
+else
+
+Point / = 2;
+
+if ((*Point)%5==0)
+
+*Point /= 5;
+
+Point++ ;
+
+}
+
+for (int L =5; L&gt; = 0; L- -)
+
+cout&lt;&lt;Score[L]&lt;&lt;"*"
+
+}</pre>
+  <p>
+   (f) Look at the following C+ + code and find the possible output(s) from the options (i) to (iv) following it.
+   <br/>
+   Also, write the maximum values that can be assigned to each of the variables N and M.
+   <br/>
+   Note:
+   <br/>
+   • Assume all the required header files are already being included in the code.
+   <br/>
+   • The function random(n) generates an integer between 0 and n -1, void main ()
+  </p>
+  <pre style="padding-left: 30px;">{
+
+randomize 0 ;
+
+int N=random(3), M=random (4);
+
+int DOCK [3] [3] = {{1, 2, 3}, {2, 3, 4}, {3, 4, 5}};
+
+for (int R=0; R&lt;N; R++)
+
+{
+
+for (int C=0; C&lt;M; C++) 
+
+cout &lt;&lt;DOCK [R] [C] &lt;&lt;“ "; 
+
+cout&lt;&lt;endl;
+
+}
+
+}</pre>
+  <table border="2">
+   <tbody>
+    <tr>
+     <td colspan="3" style="text-align: center;" width="118">
+      (i)
+     </td>
+     <td colspan="3" style="text-align: center;" width="113">
+      (ii)
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="38">
+      1
+     </td>
+     <td style="text-align: center;" width="40">
+      2
+     </td>
+     <td style="text-align: center;" width="40">
+      3
+     </td>
+     <td style="text-align: center;" width="37">
+      1
+     </td>
+     <td style="text-align: center;" width="39">
+      2
+     </td>
+     <td style="text-align: center;" width="37">
+      3
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="38">
+      2
+     </td>
+     <td style="text-align: center;" width="40">
+      3
+     </td>
+     <td style="text-align: center;" width="40">
+      4
+     </td>
+     <td style="text-align: center;" width="37">
+      2
+     </td>
+     <td style="text-align: center;" width="39">
+      3
+     </td>
+     <td style="text-align: center;" width="37">
+      4
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="38">
+      3
+     </td>
+     <td style="text-align: center;" width="40">
+      4
+     </td>
+     <td style="text-align: center;" width="40">
+      5
+     </td>
+     <td width="37">
+     </td>
+     <td width="39">
+     </td>
+     <td width="37">
+     </td>
+    </tr>
+    <tr>
+     <td colspan="3" style="text-align: center;" width="118">
+      (iii)
+     </td>
+     <td colspan="3" style="text-align: center;" width="113">
+      (iv)
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="38">
+      1
+     </td>
+     <td style="text-align: center;" width="40">
+      2
+     </td>
+     <td width="40">
+     </td>
+     <td style="text-align: center;" width="37">
+      1
+     </td>
+     <td style="text-align: center;" width="39">
+      2
+     </td>
+     <td width="37">
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="38">
+      2
+     </td>
+     <td style="text-align: center;" width="40">
+      3
+     </td>
+     <td width="40">
+     </td>
+     <td style="text-align: center;" width="37">
+      2
+     </td>
+     <td style="text-align: center;" width="39">
+      3
+     </td>
+     <td width="37">
+     </td>
+    </tr>
+    <tr>
+     <td width="38">
+     </td>
+     <td width="40">
+     </td>
+     <td width="40">
+     </td>
+     <td style="text-align: center;" width="37">
+      3
+     </td>
+     <td style="text-align: center;" width="39">
+      4
+     </td>
+     <td width="37">
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   Solution:
+   <br/>
+   (a)
+  </p>
+  <div class="code-block code-block-6" style="margin: 8px 0; clear: both;">
+  </div>
+  <p style="padding-left: 30px;">
+   (i) new – keyword
+   <br/>
+   (ii) while – identifier
+   <br/>
+   (iii) case – keyword
+   <br/>
+   (iv) Num_2 – identifier
+  </p>
+  <p>
+   (b) iostream.h
+   <br/>
+   string.h
+   <br/>
+   (c)
+  </p>
+  <div class="code-block code-block-7" style="margin: 8px 0; clear: both;">
+  </div>
+  <pre style="padding-left: 30px;">Void main () 
+
+{
+
+char CH:
+
+cout&lt;&lt;“Enter an Alphabet”; 
+
+cin &gt;&gt; CH; 
+
+switch (CH)
+
+<span style="text-decoration: underline;">{</span>
+
+Case ‘A’: cout&lt;&lt;“Ant”; <span style="text-decoration: underline;">b</span>reak; 
+
+Case ‘B’<span style="text-decoration: underline;">:</span> cout&lt;&lt;“Bear”; <span style="text-decoration: underline;">b</span>reak;
+
+<span style="text-decoration: underline;">}</span></pre>
+  <p>
+   (d) Output:
+   <br/>
+   22 # 40 # 9 # 13 # 10 #
+   <br/>
+   (e) Output
+   <br/>
+   12 * 63 * 73 * 15 * 93 * 10 *
+   <br/>
+   (f) Maximum value of N = 2, M = 3
+   <br/>
+   Options (ii) and (iii) are possible.
+  </p>
+  <p>
+   Question 2:
+   <br/>
+   (a) Differentiate between protected and private members of a class in context of Object Oriented Programming.
+   <br/>
+   Also give a suitable example illustrating accessibility/non-accessibility of each using a class and
+   <br/>
+   an object in C+ + .    2
+   <br/>
+   (b) Observe the following C++ code and answer the questions (i) and (ii).
+   <br/>
+   Note : Assume all necessary files are included,
+  </p>
+  <pre style="padding-left: 30px;">class TEST
+
+ {
+
+ long TCode;
+
+ char TTitle [20];
+
+ float Score;
+
+ public:
+
+ TEST ()    //Member Function 1
+
+ {
+
+ TCode=100;strcpy(TTitle, "FIRST Test") ;Score=0;
+
+ }
+
+ TEST (TEST &amp;T)    //Member Function 2
+
+ {
+
+ TCode=E . TCode+1;
+
+ strcpy (TTitle, T . TTitle);
+
+ Score=T . Score;
+
+ }
+
+ };
+
+ void main ()
+
+ {
+
+ ____________  //Statement 1
+
+ ____________ //Statement 1
+
+ }</pre>
+  <p>
+   (i) Which Object Oriented Programming feature is illustrated by the Member Function 1 and the Member
+   <br/>
+   Function 2 together in the class TEST ?    1
+   <br/>
+   (ii) Write Statement 1 and Statement 2 to execute Member Function 1 and Member Function 2 respectively. 1
+  </p>
+  <p>
+   (c) Write the definition of a class BOX in C++ with the following description:    4
+  </p>
+  <p>
+   Private Members
+  </p>
+  <p>
+   – BoxNumber                             // data member of integer type
+   <br/>
+   – Side                                           // data member of float type
+   <br/>
+   – Area                                         // data member of float type
+   <br/>
+   – ExecArea ()                           // Member function to calculate and assign
+   <br/>
+   // Area as Side * Side
+  </p>
+  <p>
+   Public Members
+  </p>
+  <p>
+   – GetBox ()                                       // A function to allow user to enter values of
+   <br/>
+   // BoxNumber and Side. Also, this
+   <br/>
+   // function should call ExecArea() to calculate
+   <br/>
+   // Area
+   <br/>
+   – ShowBox()                                  // A function to display BoxNumber, Side
+   <br/>
+   // and Area
+  </p>
+  <p>
+   (d) Answer the questions (i) to (iv) based on the following:
+  </p>
+  <pre style="padding-left: 30px;">class First
+
+{
+
+ int XI; 
+
+protected: 
+
+float X2;
+
+ public:
+
+ First ();
+
+ void Enterl (); void Displayl (); 
+
+};
+
+class Second: private First 
+
+{
+
+ int Yl; 
+
+protected: 
+
+float Y2; 
+
+public:
+
+ Second (); 
+
+void Enter 2 (); 
+
+void Display ();
+
+ };
+
+ class Third: public Second
+
+ {
+
+ int Z1; 
+
+public:
+
+ Third (); 
+
+void Enter3 (); 
+
+void Display ();
+
+ };
+
+ void main ()
+
+ {
+
+Third T;                     //Statement 1
+
+_________ ;                 //Statement 2
+
+ }</pre>
+  <p>
+   (i) Which type of Inheritance out of the following is illustrated in the above example ?
+   <br/>
+   Single Level Inheritance, Multilevel Inheritance, Multiple Inheritance
+   <br/>
+   (ii) Write the names of all the member functions, which are directly accessible by the object T of class
+   <br/>
+   Third as declared in main() function.
+   <br/>
+   (iii) Write Statement 2 to call function Display () of class Second from the object T of class Third.
+   <br/>
+   (iv) What will be the order of execution of the constructors, when the object T of class Third is
+   <br/>
+   declared inside main() ?
+   <br/>
+   Solution:
+   <br/>
+   (a) Protected members can be accessed by the inherited class,
+   <br/>
+   (b) Private members are never inherited
+  </p>
+  <pre style="padding-left: 30px;">class student                     class report: protected student
+
+{                                 {
+
+int mo;                                 cout&lt;&lt; grade; ✓
+
+char name [50];                         cout&lt;&lt; mo; x
+
+protected:                        }
+
+char grade;
+
+public :
+
+void get (2); 
+
+void display ();
+
+}</pre>
+  <p>
+   (b)
+  </p>
+  <p style="padding-left: 30px;">
+   (i) Constructor overloading (Polymorphism)
+   <br/>
+   (ii)
+  </p>
+  <pre style="padding-left: 60px;">Statement 1: Test t1;
+
+Statement 2 : Test t2 (t1);</pre>
+  <p>
+   (c)
+  </p>
+  <pre style="padding-left: 30px;">class Box 
+
+{
+
+int BoxNumber; 
+
+float side, Area; 
+
+void ExecArea ()
+
+{
+
+Area = side * side;
+
+}
+
+public:
+
+void GetBox ()
+
+{
+
+cout &lt; &lt;"Enter Box Number side"; 
+
+cin &gt; &gt; BoxNumber &gt; &gt; side; 
+
+ExecArea ();
+
+}
+
+void showBox ()
+
+{
+
+cout &lt; &lt; BoxNumber &lt; &lt; side &lt; &lt; Area;
+
+}</pre>
+  <p>
+   (d)
+  </p>
+  <p style="padding-left: 30px;">
+   (i) Multilevel inheritance.
+   <br/>
+   (ii) Enter3(), Display (), Enter2(), Display ()
+   <br/>
+   (iii) Tsuper (Display ());
+   <br/>
+   (iv) First (), Second (), Third ()
+  </p>
+  <p>
+   Question 3:
+   <br/>
+   (a) Write the definition of a function AddUp(int Arr[], int N) in C+ +, in which all even positions (i.e., 0,2,4,…)
+   <br/>
+   of the array should be added with the content of the element in the next position and odd positions (i.e., 1,3,5,…)
+   <br/>
+   elements should be incremented by 10.
+   <br/>
+   Example: if the array Arr contains
+  </p>
+  <table border="2">
+   <tbody>
+    <tr>
+     <td style="text-align: center;" width="26">
+      23
+     </td>
+     <td style="text-align: center;" width="26">
+      30
+     </td>
+     <td style="text-align: center;" width="23">
+      45
+     </td>
+     <td style="text-align: center;" width="26">
+      10
+     </td>
+     <td style="text-align: center;" width="29">
+      15
+     </td>
+     <td style="text-align: center;" width="27">
+      25
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   Then the array should become
+  </p>
+  <table border="2">
+   <tbody>
+    <tr>
+     <td style="text-align: center;" width="26">
+      53
+     </td>
+     <td style="text-align: center;" width="26">
+      40
+     </td>
+     <td style="text-align: center;" width="23">
+      55
+     </td>
+     <td style="text-align: center;" width="26">
+      20
+     </td>
+     <td style="text-align: center;" width="29">
+      40
+     </td>
+     <td style="text-align: center;" width="27">
+      35
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   Note:
+   <br/>
+   • The function should only alter the content in the same array.
+   <br/>
+   • The function should not copy the altered content in another array.
+   <br/>
+   • The function should not display the altered content of the array.
+   <br/>
+   • Assuming, the Number of elements in the array are Even.
+  </p>
+  <p>
+   (b) Write a definition for a function SUMMIDCOL(int MATRIX [ ] [10], int N,int M) in C+ +, which finds the
+   <br/>
+   sum of the middle column’s elements of the MATRIX (Assuming N represents number of rows and M
+   <br/>
+   represents number of columns, which is an odd integer).
+   <br/>
+   Example : If the content of array MATRIX having N as 5 and M as 3 is as follows:
+  </p>
+  <table border="2">
+   <tbody>
+    <tr>
+     <td style="text-align: center;" width="38">
+      1
+     </td>
+     <td style="text-align: center;" width="34">
+      2
+     </td>
+     <td style="text-align: center;" width="33">
+      1
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="38">
+      2
+     </td>
+     <td style="text-align: center;" width="34">
+      1
+     </td>
+     <td style="text-align: center;" width="33">
+      4
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="38">
+      3
+     </td>
+     <td style="text-align: center;" width="34">
+      4
+     </td>
+     <td style="text-align: center;" width="33">
+      5
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="38">
+      4
+     </td>
+     <td style="text-align: center;" width="34">
+      5
+     </td>
+     <td style="text-align: center;" width="33">
+      3
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="38">
+      5
+     </td>
+     <td style="text-align: center;" width="34">
+      3
+     </td>
+     <td style="text-align: center;" width="33">
+      2
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   The function should calculate the sum and display the following:
+   <br/>
+   Sum of Middle Column: 15
+   <br/>
+   (c) ARR[15][20] is a two-dimensional array, which is stored in the memory along the row with each of its
+   <br/>
+   elements occupying 4 bytes. Find the address of the element ARR[5][15], if the element ARR[10] [5] is
+   <br/>
+   stored at the memory location 35000.    3
+   <br/>
+   (d) Write the definition of a member function PUSHGIFT () for a class STACK in C++, to add a GIFT in a
+   <br/>
+   dynamically allocated stack of GIFTs considering the following code is already written as a part of the program: 4
+  </p>
+  <pre style="padding-left: 30px;">struct GIFT
+
+{
+
+int GCODE;           //Gift Code
+
+char GDESC[20] ;    //Gift Description
+
+ GIFT *Link;
+
+ };
+
+ class STACK
+
+ {
+
+ Gift‘TOP; 
+
+public :
+
+ STACK () {TOP=NULL ;} 
+
+void PUSHGIFT ();
+
+ void POPGIFT ();
+
+ ~ STACK ();
+
+ };</pre>
+  <p>
+   (e) Convert the following Infix expression to its equivalent Postfix expression, showing the stack contents for each step of conversion:    2
+  </p>
+  <pre>X - (Y + Z)/U*V</pre>
+  <p>
+   Solution:
+  </p>
+  <pre style="padding-left: 30px;">(a) Void AddUp (int Arr [ ], int N)
+
+{
+
+for (int i = 0, i &lt; N; i++)
+
+{
+
+if (i%2==0)
+
+A[i] = A[i] + A[i + 1]; 
+
+else
+
+A[i] = A[i] + 10;
+
+}
+
+}</pre>
+  <p>
+   (b)
+  </p>
+  <pre style="padding-left: 30px;">Void SUMMIDCOL (int Matrix [ ] [10], int N, int M)
+
+{
+
+int mid = M/2, sum = 0; 
+
+for (int i = 0; i &lt; N; i ++)
+
+sum = sum + MATRIX [i] [mid]; 
+
+cout &lt;&lt;“Sum of Middle, column:' &lt;&lt; sum;
+
+}</pre>
+  <p>
+   (c)
+  </p>
+  <pre style="padding-left: 30px;">A[i] [j] = BA + size * ((i - sr) * nr + (j - sc))
+
+ARR [5] [15] = 35000 + 4 * ((5 - 10) * 15 + (15 - 5))
+
+= 35000 + 4 * (-75 + 10)
+
+= 35000 - 260 
+
+= 34740</pre>
+  <p>
+   (d)
+  </p>
+  <pre style="padding-left: 30px;">Void STACK : : PUST GIFT ()
+
+{
+
+GIFT * newnode = new GIFT; 
+
+cout &lt;&lt;“Enter gift code, description”; 
+
+cin &gt;&gt; newnode → GCODE; 
+
+gets (newnode →GDESC); 
+
+newnode → Link = NULL; 
+
+if (Top = = NULL)
+
+Top = newnode;
+
+else
+
+{
+
+newnode → Link = TOP;
+
+TOP = newnode;
+
+}
+
+}</pre>
+  <p>
+   (e)
+  </p>
+  <pre>X - (Y + Z)/U * V</pre>
+  <table border="2">
+   <tbody>
+    <tr>
+     <td style="text-align: center;" width="78">
+      Element
+     </td>
+     <td style="text-align: center;" width="79">
+      Stack
+     </td>
+     <td style="text-align: center;" width="102">
+      Expression
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="78">
+      (
+     </td>
+     <td style="text-align: center;" width="79">
+      (
+     </td>
+     <td width="102">
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="78">
+      X
+     </td>
+     <td style="text-align: center;" width="79">
+      (
+     </td>
+     <td style="text-align: center;" width="102">
+      X
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="78">
+      –
+     </td>
+     <td style="text-align: center;" width="79">
+      (-
+     </td>
+     <td style="text-align: center;" width="102">
+      X
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="78">
+      (
+     </td>
+     <td style="text-align: center;" width="79">
+      (-(
+     </td>
+     <td style="text-align: center;" width="102">
+      X
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="78">
+      Y
+     </td>
+     <td style="text-align: center;" width="79">
+      (-(
+     </td>
+     <td style="text-align: center;" width="102">
+      XY
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="78">
+      +
+     </td>
+     <td style="text-align: center;" width="79">
+      (-( +
+     </td>
+     <td style="text-align: center;" width="102">
+      XY
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="78">
+      Z
+     </td>
+     <td style="text-align: center;" width="79">
+      (-( +
+     </td>
+     <td style="text-align: center;" width="102">
+      XYZ
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="78">
+      )
+     </td>
+     <td style="text-align: center;" width="79">
+      (-
+     </td>
+     <td style="text-align: center;" width="102">
+      XYZ +
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="78">
+      /
+     </td>
+     <td style="text-align: center;" width="79">
+      (-/
+     </td>
+     <td style="text-align: center;" width="102">
+      XYZ +
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="78">
+      U
+     </td>
+     <td style="text-align: center;" width="79">
+      (-/
+     </td>
+     <td style="text-align: center;" width="102">
+      XYZ + U
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="78">
+      *
+     </td>
+     <td style="text-align: center;" width="79">
+      (-*
+     </td>
+     <td style="text-align: center;" width="102">
+      XYZ + U/
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="78">
+      V
+     </td>
+     <td style="text-align: center;" width="79">
+      (-*
+     </td>
+     <td style="text-align: center;" width="102">
+      XYZ + U/V
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="78">
+      )
+     </td>
+     <td style="text-align: center;" width="79">
+     </td>
+     <td style="text-align: center;" width="102">
+      XYZ + U/V * –
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   Answer:
+   <br/>
+   XYZ + U/V*-
+  </p>
+  <p>
+   Question 4:
+   <br/>
+   (a) Polina Raj has used a text editing software to type some text in an article. After saving the article as MYNOTES. TXT, she realised that she has wrongly typed alphabet K in place of alphabet C everywhere in the article. Write a function definition for PURETEXT() in C++ that would display the corrected version of the entire article of the file MYNOTES. TXT with all the alphabets “K” to be displayed as an alphabet “C” on screen. Note : Assuming that MYNOTES. TXT does not contain any C alphabet otherwise.
+   <br/>
+   Example:
+   <br/>
+   If Polina has stored the following content in the file MYNOTES. TXT:
+  </p>
+  <pre>I OWN A KUTE LITTLE KAR.
+
+I KARE FOR IT AS MY KHILD.</pre>
+  <p>
+   The function PURETEXT () should display the following content
+  </p>
+  <pre>I OWN A CUTE LITTLE CAR.
+
+I CARE FOR IT AS MY CHILD.</pre>
+  <p>
+   (b) Write a definition for function COUNTPICS() in C+ + to read each object of a binary file PHOTOS.DAT,
+   <br/>
+   find and display the total number of PHOTOS of type PORTRAIT. Assume that the file PHOTOS.DAT is
+   <br/>
+   created with the help of objects of class PHOTOS, which is defined below :
+  </p>
+  <pre style="padding-left: 30px;">class PHOTOS
+
+ {
+
+ int PCODE;
+
+ char PTYPE [20];//Photo Type as "PORTRAIT”,’’NATURE” 
+
+public:
+
+ void ENTER ()
+
+ {
+
+ cin&gt;&gt;CODE;gets (PTYPE);
+
+ }
+
+ void SHOWCASE ()
+
+ {
+
+ cout&lt;&lt;PCODE&lt;&lt;“: “&lt;&lt;PTYPE&lt;&lt;endl;
+
+ }
+
+ char *GETPTYPE () (return PTYPE;}
+
+ };</pre>
+  <p>
+   (c) Find the output of the following C+ + code considering that the binary file CLIENTS.DAT exists on the hard
+   <br/>
+   disk with a data of 200 clients :    1
+  </p>
+  <pre style="padding-left: 30px;">class CLIENTS
+
+ { 
+
+int CCode;char CName [20]; 
+
+public :
+
+ void REGISTER (); void DISPLAY ();
+
+ };
+
+ void main ()
+
+ {
+
+ f stream File;
+
+ File, open (“CLIENTS. DAT ”, ios :: binary | ios :: in) ;
+
+ CLIENTS C;
+
+ File . seekg (6*sizeof (C));
+
+ File. read ((char*) &amp;C, sizeof(C));
+
+ cout&lt;&lt;”Client Number; “&lt;&lt;File.tellg() /sizeof(C) + 1;
+
+ File . seekg (0 , ios : : end);
+
+ cout&lt;&lt;” of “&lt;&lt;File . tellg () /sizeof (C)&lt;&lt;endl;
+
+ File . close ();</pre>
+  <p>
+   Solution:
+   <br/>
+   (a)
+  </p>
+  <pre style="padding-left: 30px;">Void PURETEXT ()
+
+ {
+
+ ifstream f1 ("MYNOTES.TXT"); 
+
+char ch;
+
+ while (! f1.eof ())
+
+ {
+
+ f1&gt; &gt; ch; 
+
+if (ch = = 'K') 
+
+cout &gt; &gt; 'C'; 
+
+else
+
+ cout &gt; &gt; ch;
+
+ }
+
+ fl.close ();
+
+ }</pre>
+  <p>
+   (b)
+  </p>
+  <pre style="padding-left: 30px;">void COUNTPICS ()
+
+ {
+
+ fstream f;
+
+ f open ("PHOTES.DAT", ios :: in : ios :: binary);
+
+ PHOTOS P; int count = 0;
+
+ while (f.read ((char *) &amp;P, size of (P))
+
+ {
+
+ if (strcmp (EGETPTYPE (), "PORTRAIT") == 0) count ++;
+
+ }
+
+ cout &lt;&lt; "PORTRAIT PHOTOS COUNT : "&lt;&lt;count; 
+
+f.close ();
+
+ }</pre>
+  <p>
+   (c) Output:
+  </p>
+  <p>
+   Client Number : 8 of 0
+  </p>
+  <h3 id="h3-1" style="text-align: center;">
+   <span id="SECTION_8211_C">
+    SECTION – C
+   </span>
+  </h3>
+  <p style="text-align: center;">
+   (For All the Candidates)
+  </p>
+  <p>
+   Question 5:
+   <br/>
+   (a) Observe the following table MEMBER carefully and write the name of the RDBMS operation out of (i) SELECTION (ii) PROJECTION (iii) UNION (iv) CARTESIAN PRODUCT, which has been used to produce
+   <br/>
+   the output as shown in RESULT. Also, find the Degree and Cardinality of the RESULT :
+  </p>
+  <p>
+   MEMBER
+  </p>
+  <table border="2">
+   <tbody>
+    <tr>
+     <td style="text-align: center;" width="100">
+      NO
+     </td>
+     <td style="text-align: center;" width="137">
+      MNAME
+     </td>
+     <td style="text-align: center;" width="92">
+      STREAM
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="100">
+      M001
+     </td>
+     <td style="text-align: center;" width="137">
+      JAYA
+     </td>
+     <td style="text-align: center;" width="92">
+      SCIENCE
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="100">
+      M002
+     </td>
+     <td style="text-align: center;" width="137">
+      ADITYA
+     </td>
+     <td style="text-align: center;" width="92">
+      HUMANITIES
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="100">
+      M003
+     </td>
+     <td style="text-align: center;" width="137">
+      HANSRAJ
+     </td>
+     <td style="text-align: center;" width="92">
+      SCIENCE
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="100">
+      M004
+     </td>
+     <td style="text-align: center;" width="137">
+      SHIVAK
+     </td>
+     <td style="text-align: center;" width="92">
+      COMMERCE
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   RESULT
+  </p>
+  <table border="2">
+   <tbody>
+    <tr>
+     <td style="text-align: center;" width="100">
+      NO
+     </td>
+     <td style="text-align: center;" width="137">
+      MNAME
+     </td>
+     <td style="text-align: center;" width="92">
+      STREAM
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="100">
+      M002
+     </td>
+     <td style="text-align: center;" width="137">
+      ADITYA
+     </td>
+     <td style="text-align: center;" width="92">
+      HUMANITIES
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   (b) Write SQL queries for (i) to (iv) and find outputs for SQL queries (v) to (viii), which are based on the tables.
+  </p>
+  <p>
+   DVD
+  </p>
+  <table border="2">
+   <tbody>
+    <tr>
+     <td style="text-align: center;" width="100">
+      DCODE
+     </td>
+     <td style="text-align: center;" width="137">
+      DTITLE
+     </td>
+     <td style="text-align: center;" width="92">
+      DTYPE
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="100">
+      F101
+     </td>
+     <td style="text-align: center;" width="137">
+      Henry Martin
+     </td>
+     <td style="text-align: center;" width="92">
+      Folk
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="100">
+      C102
+     </td>
+     <td style="text-align: center;" width="137">
+      Dhrupad
+     </td>
+     <td style="text-align: center;" width="92">
+      Classical
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="100">
+      C101
+     </td>
+     <td style="text-align: center;" width="137">
+      The Planets
+     </td>
+     <td style="text-align: center;" width="92">
+      Classical
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="100">
+      F102
+     </td>
+     <td style="text-align: center;" width="137">
+      Universal Soldier
+     </td>
+     <td style="text-align: center;" width="92">
+      Folk
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="100">
+      R102
+     </td>
+     <td style="text-align: center;" width="137">
+      A day in life
+     </td>
+     <td style="text-align: center;" width="92">
+      Rock
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   MEMBER
+  </p>
+  <table border="2">
+   <tbody>
+    <tr>
+     <td style="text-align: center;" width="100">
+      MID
+     </td>
+     <td style="text-align: center;" width="137">
+      NAME
+     </td>
+     <td style="text-align: center;" width="92">
+      DCODE
+     </td>
+     <td style="text-align: center;" width="94">
+      ISSUEDATE
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="100">
+      101
+     </td>
+     <td style="text-align: center;" width="137">
+      AGAM SINGH
+     </td>
+     <td style="text-align: center;" width="92">
+      R102
+     </td>
+     <td style="text-align: center;" width="94">
+      2017-11-30
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="100">
+      103
+     </td>
+     <td style="text-align: center;" width="137">
+      ARTH JOSEPH
+     </td>
+     <td style="text-align: center;" width="92">
+      F102
+     </td>
+     <td style="text-align: center;" width="94">
+      2016-12-13
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="100">
+      102
+     </td>
+     <td style="text-align: center;" width="137">
+      NISHA HANS
+     </td>
+     <td style="text-align: center;" width="92">
+      C101
+     </td>
+     <td style="text-align: center;" width="94">
+      2017-07-24
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   (i) To display all details from the table MEMBER in descending order of ISSUEDATE.
+   <br/>
+   (ii) To display the DCODE and DTITLE of all Folk Type DVDs from the table DVD.
+   <br/>
+   (iii) To display the DTYPE and number of DVDs in each DTYPE from the table DVD.
+   <br/>
+   (iv) To display all NAME and ISSUEDATE of those members from the table MEMBER who have DVDs issued
+   <br/>
+   (i.e., ISSUEDATE) in the year 2017.
+   <br/>
+   (v) SELECT MIN (ISSUEDATE) FROM MEMBER;
+   <br/>
+   (vi) SELECT DISTINCT DTYPE FROM DVD;
+   <br/>
+   (vii) SELECT D. DCODE, NAME, DTITLE : ,
+   <br/>
+   FROM DVD D, MEMBER M WHERE D.DCODE=M.DCODE;
+   <br/>
+   (viii) SELECT DTITLE FROM DVD
+   <br/>
+   WHERE DTYPE NOT IN (“Folk”, “Classical”);
+   <br/>
+   Solution:
+   <br/>
+   (a) SELECTION
+   <br/>
+   Degree (no. of columns) – 3
+   <br/>
+   Cardinality (no. of rows) -1
+   <br/>
+   (i) select * from MEMBER order by ISSUEDATE desc
+   <br/>
+   (ii) select DCODE, DTITLE from DVD where DTYPE = ’Folk’
+   <br/>
+   (iii) select DTYPE, count(*) from DVD group by DTYPE
+   <br/>
+   (iv) select NAME, ISSUEDATE from MEMBER,
+   <br/>
+   where ISSUEDATE like ‘2017%’
+   <br/>
+   (v) MIN (ISSUEDATE)
+   <br/>
+   2016-12-13
+   <br/>
+   (vi) DISTINCT (DTYPE)
+   <br/>
+   Folk
+   <br/>
+   Classical
+   <br/>
+   Rock
+   <br/>
+   (Vii)
+  </p>
+  <pre style="padding-left: 30px;">DCODE      NAME            DTITLE 
+
+R102       AGAM SINGH      A day in life
+
+F102       ARTH JOSEPH     Universal Soldier
+
+C101       NISHA HANS      The Planets</pre>
+  <p>
+   (viii)
+   <br/>
+   DTITLE
+   <br/>
+   A day in life
+  </p>
+  <p>
+   Question 6:
+   <br/>
+   (a) State DeMorgan’s Laws of Boolean Algebra and verify them using truth table.    2
+   <br/>
+   (b) Draw the Logic Circuit of the following Boolean Expression using only NOR Gates :    2
+   <br/>
+   (A+B) . (C+D)
+   <br/>
+   (c) Derive a Canonical POS expression for a Boolean function G, represented by the following truth table :
+  </p>
+  <table border="2">
+   <tbody>
+    <tr>
+     <td style="text-align: center;" width="57">
+      X
+     </td>
+     <td style="text-align: center;" width="53">
+      Y
+     </td>
+     <td style="text-align: center;" width="44">
+      Z
+     </td>
+     <td style="text-align: center;" width="94">
+      G(X,Y,Z)
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="57">
+      0
+     </td>
+     <td style="text-align: center;" width="53">
+      0
+     </td>
+     <td style="text-align: center;" width="44">
+      0
+     </td>
+     <td style="text-align: center;" width="94">
+      0
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="57">
+      0
+     </td>
+     <td style="text-align: center;" width="53">
+      0
+     </td>
+     <td style="text-align: center;" width="44">
+      1
+     </td>
+     <td style="text-align: center;" width="94">
+      0
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="57">
+      0
+     </td>
+     <td style="text-align: center;" width="53">
+      1
+     </td>
+     <td style="text-align: center;" width="44">
+      0
+     </td>
+     <td style="text-align: center;" width="94">
+      1
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="57">
+      0
+     </td>
+     <td style="text-align: center;" width="53">
+      1
+     </td>
+     <td style="text-align: center;" width="44">
+      1
+     </td>
+     <td style="text-align: center;" width="94">
+      0
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="57">
+      1
+     </td>
+     <td style="text-align: center;" width="53">
+      0
+     </td>
+     <td style="text-align: center;" width="44">
+      0
+     </td>
+     <td style="text-align: center;" width="94">
+      1
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="57">
+      1
+     </td>
+     <td style="text-align: center;" width="53">
+      0
+     </td>
+     <td style="text-align: center;" width="44">
+      1
+     </td>
+     <td style="text-align: center;" width="94">
+      1
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="57">
+      1
+     </td>
+     <td style="text-align: center;" width="53">
+      1
+     </td>
+     <td style="text-align: center;" width="44">
+      0
+     </td>
+     <td style="text-align: center;" width="94">
+      0
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="57">
+      1
+     </td>
+     <td style="text-align: center;" width="53">
+      1
+     </td>
+     <td style="text-align: center;" width="44">
+      1
+     </td>
+     <td style="text-align: center;" width="94">
+      1
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   (d) Reduce the following Boolean Expression to its simplest form using K-Map :    3
+   <br/>
+   E (U, V, Z, W) = Z (2,3,6,8,9,10,11,12,13)
+   <br/>
+   Solution:
+   <br/>
+   DeMorgan’s Laws.
+   <br/>
+   (i) A + B)’=A’.B’
+   <br/>
+   (ii) (A . B)’ = A’ + B’
+   <br/>
+   (i)
+  </p>
+  <table border="2">
+   <tbody>
+    <tr>
+     <td style="text-align: center;" width="45">
+      A
+     </td>
+     <td style="text-align: center;" width="61">
+      B
+     </td>
+     <td style="text-align: center;" width="48">
+      A+B
+     </td>
+     <td style="text-align: center;" width="64">
+      (A + B)’
+     </td>
+     <td style="text-align: center;" width="61">
+      A’
+     </td>
+     <td style="text-align: center;" width="61">
+      B’
+     </td>
+     <td style="text-align: center;" width="61">
+      A’B’
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="45">
+      0
+     </td>
+     <td style="text-align: center;" width="61">
+      0
+     </td>
+     <td style="text-align: center;" width="48">
+      0
+     </td>
+     <td style="text-align: center;" width="64">
+      1
+     </td>
+     <td style="text-align: center;" width="61">
+      1
+     </td>
+     <td style="text-align: center;" width="61">
+      1
+     </td>
+     <td style="text-align: center;" width="61">
+      1
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="45">
+      0
+     </td>
+     <td style="text-align: center;" width="61">
+      1
+     </td>
+     <td style="text-align: center;" width="48">
+      1
+     </td>
+     <td style="text-align: center;" width="64">
+      0
+     </td>
+     <td style="text-align: center;" width="61">
+      1
+     </td>
+     <td style="text-align: center;" width="61">
+      0
+     </td>
+     <td style="text-align: center;" width="61">
+      0
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="45">
+      1
+     </td>
+     <td style="text-align: center;" width="61">
+      0
+     </td>
+     <td style="text-align: center;" width="48">
+      1
+     </td>
+     <td style="text-align: center;" width="64">
+      0
+     </td>
+     <td style="text-align: center;" width="61">
+      0
+     </td>
+     <td style="text-align: center;" width="61">
+      1
+     </td>
+     <td style="text-align: center;" width="61">
+      0
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="45">
+      1
+     </td>
+     <td style="text-align: center;" width="61">
+      1
+     </td>
+     <td style="text-align: center;" width="48">
+      1
+     </td>
+     <td style="text-align: center;" width="64">
+      0
+     </td>
+     <td style="text-align: center;" width="61">
+      0
+     </td>
+     <td style="text-align: center;" width="61">
+      0
+     </td>
+     <td style="text-align: center;" width="61">
+      0
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   (1) = (2) Hence proved.
+  </p>
+  <table border="2">
+   <tbody>
+    <tr>
+     <td style="text-align: center;" width="45">
+      A
+     </td>
+     <td style="text-align: center;" width="61">
+      B
+     </td>
+     <td style="text-align: center;" width="47">
+      A.B
+     </td>
+     <td style="text-align: center;" width="63">
+      (A+B)’
+     </td>
+     <td style="text-align: center;" width="61">
+      A’
+     </td>
+     <td style="text-align: center;" width="60">
+      B’
+     </td>
+     <td style="text-align: center;" width="62">
+      A’+B’
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="45">
+      0
+     </td>
+     <td style="text-align: center;" width="61">
+      0
+     </td>
+     <td style="text-align: center;" width="47">
+      0
+     </td>
+     <td style="text-align: center;" width="63">
+      1
+     </td>
+     <td style="text-align: center;" width="61">
+      1
+     </td>
+     <td style="text-align: center;" width="60">
+      1
+     </td>
+     <td style="text-align: center;" width="62">
+      1
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="45">
+      0
+     </td>
+     <td style="text-align: center;" width="61">
+      1
+     </td>
+     <td style="text-align: center;" width="47">
+      0
+     </td>
+     <td style="text-align: center;" width="63">
+      1
+     </td>
+     <td style="text-align: center;" width="61">
+      1
+     </td>
+     <td style="text-align: center;" width="60">
+      0
+     </td>
+     <td style="text-align: center;" width="62">
+      1
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="45">
+      1
+     </td>
+     <td style="text-align: center;" width="61">
+      0
+     </td>
+     <td style="text-align: center;" width="47">
+      0
+     </td>
+     <td style="text-align: center;" width="63">
+      1
+     </td>
+     <td style="text-align: center;" width="61">
+      0
+     </td>
+     <td style="text-align: center;" width="60">
+      1
+     </td>
+     <td style="text-align: center;" width="62">
+      1
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: center;" width="45">
+      1
+     </td>
+     <td style="text-align: center;" width="61">
+      1
+     </td>
+     <td style="text-align: center;" width="47">
+      1
+     </td>
+     <td style="text-align: center;" width="63">
+      0
+     </td>
+     <td style="text-align: center;" width="61">
+      0
+     </td>
+     <td style="text-align: center;" width="60">
+      0
+     </td>
+     <td style="text-align: center;" width="62">
+      1
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   (3) = (4) Hence proved.
+  </p>
+  <p>
+   (b) (A + B) . (C + D)
+   <br/>
+   <img alt="NCERT Solutions for Class 12 Computer Science (C++) - Solved Paper, 2017 (Outside Delhi Set)-1" class="alignnone size-full wp-image-60123" data-recalc-dims="1" decoding="async" height="141" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/NCERT-Solutions-for-Class-12-Computer-Science-C-Solved-Paper-2017-Outside-Delhi-Set-1.png?resize=293%2C141&amp;ssl=1" width="293"/>
+   <br/>
+   (c) G(X,Y,Z) = 71(0,1,3, 6)
+   <br/>
+   = (X + Y + Z).(X + Y + Z’). (X + Y’ + Z’) (X’ + Y’+ Z) is
+   <br/>
+   (d) E (U, V, Z, W) = £ (2, 3, 6, 8, 9,10,11,12,13)
+   <br/>
+   <img alt="NCERT Solutions for Class 12 Computer Science (C++) - Solved Paper, 2017 (Outside Delhi Set)-2" class="alignnone size-full wp-image-60125" data-recalc-dims="1" decoding="async" height="196" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/NCERT-Solutions-for-Class-12-Computer-Science-C-Solved-Paper-2017-Outside-Delhi-Set-2.png?resize=233%2C196&amp;ssl=1" width="233"/>
+   <br/>
+   E = UZ + V’Z + U’ZW’
+  </p>
+  <p>
+   Question 7:
+   <br/>
+   (a) Differentiate between communication using Optical Fiber and Ethernet Cable in context of wired medium of communication technologies.    2
+   <br/>
+   (b) Janish Khanna used a pen drive to copy files from his friend’s laptop to his office computer. Soon his computer started abnormal functioning. Sometimes it would restart by itself and sometimes it would stop different applications running on it. Which of the following options out of (i) to (iv), would have caused the malfunctioning of the computer ?
+   <br/>
+   Justify the reason for your chosen option :    2
+   <br/>
+   (i) Computer Virus
+   <br/>
+   (ii) Spam Mail
+   <br/>
+   (iii) Computer Bacteria
+   <br/>
+   (iv) Trojan Horse
+   <br/>
+   (c) Ms. Raveena Sen is an IT expert and a freelancer. She recently used her skills to access the
+   <br/>
+   Admin password for the network server of Super Dooper Technology Ltd. and provided confidential data of the organization to its CEO, informing him about the vulnerability of their network security.
+   <br/>
+   Out of the following options (i) to (iv), which one most appropriately defines Ms. Sen?    2
+   <br/>
+   Justify the reason for your chosen option :
+   <br/>
+   (i) Hacker
+   <br/>
+   (ii) Cracker
+   <br/>
+   (iii) Operator
+   <br/>
+   (iv) Network Admin
+  </p>
+  <p>
+   (d) Hi Standard Tech Training Ltd. is a Mumbai based organization which is expanding its office
+   <br/>
+   set-up to Chennai. At Chennai office compound, they are planning to have 3 different blocks for Admin,
+   <br/>
+   Training and Accounts related activities. Each block has a number of computers, which are required to be
+   <br/>
+   connected in a network for communication, data and resource sharing.
+   <br/>
+   As a network consultant, you have to suggest the best network related solutions for them for
+   <br/>
+   issues/problems raised by them in (i) to (iv), as per the distances between various blocks/locations
+   <br/>
+   and other given parameters.
+   <br/>
+   <img alt="NCERT Solutions for Class 12 Computer Science (C++) - Solved Paper, 2017 (Outside Delhi Set)-3" class="alignnone size-full wp-image-60126" data-recalc-dims="1" decoding="async" height="156" loading="lazy" sizes="auto, (max-width: 335px) 100vw, 335px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/NCERT-Solutions-for-Class-12-Computer-Science-C-Solved-Paper-2017-Outside-Delhi-Set-3.png?resize=335%2C156&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/NCERT-Solutions-for-Class-12-Computer-Science-C-Solved-Paper-2017-Outside-Delhi-Set-3.png?w=335&amp;ssl=1 335w, https://www.cbsetuts.com/wp-content/uploads/2017/12/NCERT-Solutions-for-Class-12-Computer-Science-C-Solved-Paper-2017-Outside-Delhi-Set-3.png?resize=300%2C140&amp;ssl=1 300w" width="335"/>
+   <br/>
+   Shortest distances between various blocks/locations:
+  </p>
+  <table border="2" style="height: 320px;" width="415">
+   <tbody>
+    <tr>
+     <td width="257">
+      <p style="text-align: left;">
+       Admin Block to Accounts Block
+      </p>
+     </td>
+     <td width="78">
+      <p style="text-align: center;">
+       300 Metres
+      </p>
+     </td>
+    </tr>
+    <tr>
+     <td width="257">
+      <p style="text-align: left;">
+       Accounts Block to Training Block
+      </p>
+     </td>
+     <td width="78">
+      <p style="text-align: center;">
+       150 Metres
+      </p>
+     </td>
+    </tr>
+    <tr>
+     <td width="257">
+      <p style="text-align: left;">
+       Admin Block to Training Block
+      </p>
+     </td>
+     <td width="78">
+      <p style="text-align: center;">
+       200 Metres
+      </p>
+     </td>
+    </tr>
+    <tr>
+     <td width="257">
+      <p style="text-align: left;">
+       MUMBAI Head Office to CHENNAI Office
+      </p>
+     </td>
+     <td width="78">
+      <p style="text-align: center;">
+       1300 Km
+      </p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   Number of computers installed at various blocks are as follows:
+  </p>
+  <table border="2" style="height: 194px;" width="222">
+   <tbody>
+    <tr>
+     <td width="108">
+      <p style="text-align: left;">
+       Training Block
+      </p>
+     </td>
+     <td width="45">
+      <p style="text-align: center;">
+       150
+      </p>
+     </td>
+    </tr>
+    <tr>
+     <td width="108">
+      <p style="text-align: left;">
+       Accounts Block
+      </p>
+     </td>
+     <td width="45">
+      <p style="text-align: center;">
+       30
+      </p>
+     </td>
+    </tr>
+    <tr>
+     <td width="108">
+      <p style="text-align: left;">
+       Admin Block
+      </p>
+     </td>
+     <td width="45">
+      <p style="text-align: center;">
+       40
+      </p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   (i) Suggest the most appropriate block/location to house the SERVER in the CHENNAI office (out of the 3
+   <br/>
+   blocks) to get the best and effective connectivity. Justify your answer.    1
+   <br/>
+   (ii) Suggest the best wired medium and draw the cable layout (Block to Block) to efficiently connect various
+   <br/>
+   blocks within the CHENNAI office compound.    1
+   <br/>
+   (iii) Suggest a device/software and its placement that would provide data security for the entire network of
+   <br/>
+   the CHENNAI office.    1
+   <br/>
+   (iv) Suggest a device and the protocol that shall be needed to provide wireless Internet access to all
+   <br/>
+   smartphone/laptop users in the CHENNAI office.    1
+   <br/>
+   Solution:
+   <br/>
+   (a)
+  </p>
+  <table border="2">
+   <tbody>
+    <tr>
+     <td style="text-align: center;" width="217">
+      Optical Fiber
+     </td>
+     <td style="text-align: center;" width="211">
+      Ethernet Cable
+     </td>
+    </tr>
+    <tr>
+     <td width="217">
+      (i) Costly
+     </td>
+     <td width="211">
+      Cheaper
+     </td>
+    </tr>
+    <tr>
+     <td width="217">
+      (ii) less interference
+     </td>
+     <td width="211">
+      Quality is not so good
+     </td>
+    </tr>
+    <tr>
+     <td width="217">
+      (iii) Greater bandwidths
+     </td>
+     <td width="211">
+      Lesser bandwidth
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   (b) (iv) Trojan Horse – Since it is from a friend’s laptop it could be a hidden file.
+   <br/>
+   (c) (i) Hacker – She used her skills to help the organisation and not for her personal gains.
+   <br/>
+   (d)
+  </p>
+  <p style="padding-left: 30px;">
+   (i) Training block – has maximum number of computers.
+   <br/>
+   (ii) Optical fibre cable is the best wired medium
+   <br/>
+   (iii) Firewall
+   <br/>
+   (iv) Router has a wireless access point (WAP), Wireless Application Protocol (WAP). It allows
+   <br/>
+   a wi-fi complaint device to correct to a wired network.
+  </p>
+  <p>
+   <a class="button-red" href="http://www.learncbse.in/ncert-solutions-2/" title="NCERT Solutions Home Page">
+    NCERT Solutions
+   </a>
+   <a class="button-blue" href="http://www.learncbse.in/ncert-solutions-class-12-computer-science-c/" title="NCERT Solutions for Class 12 Computer Science (C++)">
+    Computer science
+   </a>
+   <a class="button-blue" href="http://www.learncbse.in/ncert-solutions-for-class-12-english/" title="NCERT Solutions for Class 12 English">
+    English
+   </a>
+   <a class="button-blue" href="http://www.learncbse.in/ncert-solutions-class-12-hindi-core/" title="NCERT Solutions for Class 12 Hindi">
+    Hindi
+   </a>
+   <a class="button-blue" href="http://www.learncbse.in/cbse-class-12-humanities/" title="NCERT Solutions for Class 12 Humanities">
+    Humanities
+   </a>
+   <a class="button-blue" href="http://www.learncbse.in/cbse-class-12-commerce/" title="NCERT Solutions for Class 12 Commerce">
+    Commerce
+   </a>
+   <a class="button-red" href="http://www.learncbse.in/cbse-class-12-science/" title="CBSE Class 12 Science">
+    Science
+   </a>
+  </p>
+  CONTENT END 2 
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"&gt;
+		&lt;rdf:Description rdf:about="https://www.cbsetuts.com/ncert-solutions-for-class-12-computer-science-c-solved-paper-2017-outside-delhi-set/"
+    dc:identifier="https://www.cbsetuts.com/ncert-solutions-for-class-12-computer-science-c-solved-paper-2017-outside-delhi-set/"
+    dc:title="NCERT Solutions for Class 12 Computer Science (C++) &amp;#8211; Solved Paper, 2017 (Outside Delhi Set)"
+    trackback:ping="https://www.cbsetuts.com/ncert-solutions-for-class-12-computer-science-c-solved-paper-2017-outside-delhi-set/trackback/" /&gt;
+&lt;/rdf:RDF&gt;
+ </div>
+ <div class="social-sidebar" id="social-sidebar">
+  <button id="minimize-button" onclick="toggleSidebar()">
+   −
+  </button>
+  <a href="https://t.me/learncbse_online" target="_blank" title="Telegram">
+   <img alt="Telegram" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png"/>
+  </a>
+  <a href="https://x.com/learncbse_9" target="_blank" title="Twitter">
+   <img alt="Twitter" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/733/733579.png"/>
+  </a>
+  <a href="https://www.reddit.com/r/learncbse_online/?rdt=59433" target="_blank" title="Reddit">
+   <img alt="Reddit" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111589.png"/>
+  </a>
+  <a href="https://discord.gg/aM6xbTDz" target="_blank" title="Discord">
+   <img alt="Discord" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png"/>
+  </a>
+ </div>
+ <script>
+  function toggleSidebar() {
+        const sidebar = document.getElementById('social-sidebar');
+        sidebar.classList.toggle('minimized');
+    }
+ </script>
+</body>
+<!-- Google tag (gtag.js) -->
+<script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-C5VTZJSJCR">
+</script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C5VTZJSJCR');
+</script>

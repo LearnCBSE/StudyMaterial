@@ -1,0 +1,2800 @@
+<head>
+ <meta charset="utf-8"/>
+ <meta content="Bqdk9rTr4" name="admaven-placement"/>
+ <script async="true" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript">
+ </script>
+ <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ncert-solutions-class-12-computer-science-c-implementation-oop-concepts-c",
+  "url": "https://learncbse.online/ncert-solutions-class-12-computer-science-c-implementation-oop-concepts-c",
+  "description": "ncert-solutions-class-12-computer-science-c-implementation-oop-concepts-c"
+}
+ </script>
+ 
+ <!DOCTYPE html>
+ <html>
+  <body>
+   <header class="entry-header">
+    <h1 class="entry-title">
+     NCERT Solutions for Class 12 Computer Science (C++) – Implementation of OOP Concepts in C++
+    </h1>
+   </header>
+   <div class="entry-content">
+    <div class="code-block code-block-2" style="margin: 8px 0; clear: both;">
+    </div>
+    <h2>
+     NCERT Solutions for Class 12 Computer Science (C++) – Implementation of OOP Concepts in C++
+    </h2>
+    <p style="text-align: left;">
+     <span style="text-decoration: underline;">
+      <span style="text-decoration: underline;">
+       TOPIC-1
+      </span>
+     </span>
+     Classes
+    </p>
+    <p style="text-align: left;">
+     Short Answer Type Questions-I    [2 marks each]
+    </p>
+    <div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+    </div>
+    <p>
+     Question 1:
+     <br/>
+     Observe the following C++ code and answer the question (i) and (ii):    [Delhi, 2015]
+    </p>
+    <pre style="padding-left: 30px;">class Traveller
+
+ {
+
+ long PNR;
+
+ char TName [20];
+
+ public :
+
+ Traveller ( ) //Function 1
+
+ {cout&lt;&lt;"Ready"&lt;&lt;endl;}
+
+ void Book (long P, char N [ ])
+
+ //Function 2
+
+ {PNR = P, strcpy (TName, N);} void print ()    //Function 3
+
+ {cout&lt;&lt;PNR &lt;&lt; TName &lt;&lt;endl;} ~Traveller ( )    //Function 4
+
+ {cout&lt;&lt;"Booking cancelled!"&lt;&lt;endl;
+
+ } ;
+
+</pre>
+    <p>
+     (i) Fill in the blank statements in Line 1 and Line 2 to execute Function 2 and Function 3 respectively in the following code: void main ( )
+     <br/>
+     {
+     <br/>
+     Traveller T;
+     <br/>
+     ___________    //Line 1
+     <br/>
+     ___________    //Line 2
+     <br/>
+     }//Stops here
+     <br/>
+     Answer:
+     <br/>
+     T. Book (1234567, “Ravi”);
+     <br/>
+     //Line 1
+     <br/>
+     T. Print ();
+     <br/>
+     //Line 2
+     <br/>
+     <em>
+      (1/2 Mark for writing each correct Function)
+     </em>
+     <br/>
+     [ICBSE Marking Scheme 2015]
+     <br/>
+     (ii) Which function will be executed at }//Stops here ? What is this function referred as ?
+     <br/>
+     Function 4
+     <br/>
+     OR
+     <br/>
+     ~ Traveller ( )
+     <br/>
+     It is a destructor function.
+     <br/>
+     <em>
+      (1/2 Mark for writing Function 4 or- Traveller ())
+     </em>
+     <br/>
+     <em>
+      (1/2 Mark for referring Destructor)
+     </em>
+     <br/>
+     [CBSE Marking Scheme 2015]
+    </p>
+    <div class="code-block code-block-3" style="margin: 8px 0; clear: both;">
+    </div>
+    <p>
+     Question 2:
+     <br/>
+     Write the definition of a class PIC in C++ with following description :    [Delhi, 2015]
+     <br/>
+     Private Members
+     <br/>
+     — Pno // Data member for Picture Number (an integer)
+     <br/>
+     — Category // Data member for picture category (a string)
+     <br/>
+     — Location // Data member for Exhibition Location (a string)
+     <br/>
+     — FixLocation // A member function to assign // Exhibition Location as per category // as
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td style="text-align: center;" width="89">
+        Category
+       </td>
+       <td style="text-align: center;" width="92">
+        Location
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="89">
+        Classic
+       </td>
+       <td style="text-align: center;" width="92">
+        Amina
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="89">
+        Modern
+       </td>
+       <td style="text-align: center;" width="92">
+        Jim Plaq
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="89">
+        Antique
+       </td>
+       <td style="text-align: center;" width="92">
+        Ustad Khan
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     Public Members
+     <br/>
+     shown in the following table
+     <br/>
+     — Enter ( ) // A function to allow user to enter values
+     <br/>
+     // Pno, category and call FixLocation () function
+     <br/>
+     — SeeAll ( ) // A function to display all the data members.
+     <br/>
+     Answer:
+    </p>
+    <div class="code-block code-block-4" style="margin: 8px 0; clear: both;">
+    </div>
+    <pre style="padding-left: 30px;">class PIC
+
+{
+
+ int Pno;
+
+ char Category [20] ; 
+
+char Location [20]; 
+
+void FixLocation ( ); 
+
+public :
+
+ void Enter ( ) ; 
+
+void SeeAll ( );
+
+ };
+
+ void PIC : FixLocation ( ) 
+
+ {
+
+ if (strucmpi (category, "Classic”)
+
+ = = 0)
+
+ strcpy (Location, "Amina") ;
+
+ else  if (strcmpi (category,'' / "Modern") = = 0)
+
+ strcpy (Location, "Jim Plaq") ; else if strcmpi (category, "Antique") = = 0) 
+
+strcpy (Location, "Ustad khan");
+
+void PIC : : Enter ( )
+
+ {
+
+ cin&gt;&gt;Pno; gets (Category) ; 
+
+FixLocation ( );
+
+}
+
+ void PIC :    SeeAll ( )
+
+ {
+
+ cout&lt;&lt;Pho&lt;&lt;Category&lt;&lt;Location&lt;&lt;endl;
+
+ }</pre>
+    <p>
+     <em>
+      (1/2 Mark for correct syntax for class header)
+     </em>
+     <br/>
+     <em>
+      (1/2 Mark for correct declaration of data members)
+     </em>
+     <br/>
+     <em>
+      (1 Mark for correct definition of FixLocation ( ))
+     </em>
+     <br/>
+     <em>
+      (1 Mark for correct definition of Enter ()
+      <br/>
+      with proper invocation of FixLocation () function)
+     </em>
+     <br/>
+     <em>
+      (1 Mark for correct definition of See All( ))
+     </em>
+     <br/>
+     NOTE:
+     <br/>
+     •  Deduct % Mark if FixLocation ( ) is not invoked properly inside Enter ( ) function
+     <br/>
+     •  No marks to be deducted for defining Member Functions inside the class
+     <br/>
+     •  strcmp () strcmpi () acceptable [CBSE Marking Scheme 2015]
+    </p>
+    <p>
+     Question 3:
+     <br/>
+     What is the difference between the members in private visibility mode and the members in protected visibility mode inside a class ? Also, give a suitable C++ code to illustrate both. [O.D, 2012]
+     <br/>
+     Answer:
+     <br/>
+     Private:
+     <br/>
+     This type of member can only be accessed by code in the same class.    [1]
+     <br/>
+     Protected:
+     <br/>
+     This type of member can only be accessed by code in the same class, or in a derived class. [1]
+    </p>
+    <p>
+     //C++ code : class Me
+     <br/>
+     {
+     <br/>
+     public :
+     <br/>
+     int a, b;
+     <br/>
+     protected :
+     <br/>
+     int c, d;  //protected Member
+     <br/>
+     private :
+     <br/>
+     int e, f;  //Private Member
+     <br/>
+     }
+    </p>
+    <h4 style="text-align: left;">
+     Short Answer Type Questions-II [3 marks each]
+    </h4>
+    <p>
+     Question 1:
+     <br/>
+     Observe the following C++ code and answer the questions (i) and (ii). Assume all necessary files are included.    [O.D, 2016]
+    </p>
+    <div class="code-block code-block-5" style="margin: 8px 0; clear: both;">
+    </div>
+    <pre style="padding-left: 30px;">class BOOK
+
+ {
+
+ long Code;
+
+char Title[20];
+
+float Price; 
+
+Public:
+
+ BOOK ( )
+
+ //Member Function 1
+
+ {
+
+ cout &lt; &lt;"Bought"&lt; &lt; endl;
+
+ Code=10;strcpy(Title,"NoTitle")
+
+;Price=100;
+
+ }
+
+ BOOK(int C, char T[], float P) //Member Function 2
+
+ {
+
+ Code=C;
+
+ strcpy(Title,T);
+
+ Price=P;
+
+ }
+
+ void Update(float P)
+
+ //Member Function 3
+
+ {
+
+ Price+=P;
+
+ }
+
+ void Display ( )
+
+ //Member Function 4
+
+ {
+
+ cout&lt;&lt;Code&lt;&lt;":"&lt;&lt;Title&lt;&lt;":"&lt;&lt;Pr ice&lt;&lt;endl;
+
+ }
+
+ -BOOK()
+
+ //Member Function 5
+
+ {
+
+ cout&lt;&lt;"Book Discarded!"&lt;&lt;endl;
+
+ }
+
+ } ;
+
+ void main()
+
+ //Line 1
+
+ {
+
+ //Line 2
+
+ BOOK B, C(101,"Truth",350);
+
+ //Line 3
+
+ for (int I=0;I&lt;4;I++)
+
+ //Line 4
+
+ {
+
+ //Line 5
+
+ B.Update(50);C.Update(20);
+
+ //Line 6
+
+ B.Display 0 ;C.Display() ;
+
+ //Line 7
+
+ }
+
+ //Line 8
+
+ }
+
+ //Line 9</pre>
+    <p>
+     (i) Which specific concept of object oriented programming out of the following is illustrated by Member Function 1 and Member Function 2 combined together ?
+     <br/>
+     &gt; Data Encapsulation
+     <br/>
+     &gt; Polymorphism
+     <br/>
+     &gt; Inheritance
+     <br/>
+     &gt; Data Hiding
+     <br/>
+     (ii) How many times the message “Book Discarded!” will be displayed after executing the above C+ + code ? Out of Line 1 to Line 9, which line is responsible to display the message “Book Discarded!”?
+     <br/>
+     Answer:
+     <br/>
+     (i) Polymorphism
+     <br/>
+     <em>
+      (1 Mark for mentioning the correct concept name)
+     </em>
+     <br/>
+     (ii) 2 times
+     <br/>
+     Line 9.
+     <br/>
+     (1/2 Mark for writing correct number of times)
+     <br/>
+     OR
+     <br/>
+     (1/2 Mark for writing – “No execution due to wrong syntax in Line 3”)
+     <br/>
+     OR
+     <br/>
+     Any other equivalent answer conveying similar meaning
+     <br/>
+     (1/2 Mark for writing correct line number)
+     <br/>
+     [CBSE Marking Scheme 2016]
+    </p>
+    <p>
+     Question 2:
+     <br/>
+     Write the definition of a class CITY in C + + with following description :    [O.D, 2016]
+     <br/>
+     Private Members
+    </p>
+    <div class="code-block code-block-6" style="margin: 8px 0; clear: both;">
+    </div>
+    <pre style="padding-left: 30px;">-    CCode    //Data member for
+
+ City Code (an integer)
+
+ -    CName    //Data    member    for
+
+ City Name    (a string)
+
+ -    Pop    //Data    member    for
+
+ Population (a long int)
+
+ -    KM    //Data    member    for
+
+ Area Coverage (a float)
+
+ -    Density    //Data    member    for
+
+ Population Density (a float)
+
+ -    DenCalO    //A member function
+
+ to calculate............... 
+
+ //Density as Pop/KM 
+
+Public Members
+
+ -    Record 0    //A function to
+
+ allow user to enter values of //Acode, Name, pop, KM and call DenCalO function
+
+ -    view    //A function to
+
+ display all the data members 
+
+//also display a message "Highly Populated City" 
+
+//if the Density is more than 10000</pre>
+    <p>
+     Answer:
+    </p>
+    <pre style="padding-left: 30px;">Class City
+
+ {
+
+ int Ccode;
+
+ Char CName [2 0] ; 
+
+long int Pop; 
+
+float KM; 
+
+float Density; 
+
+void Dencal (); 
+
+Public :
+
+ void Record(); 
+
+void View();
+
+ };
+
+ void CITY :: 
+
+Record ( )
+
+ {
+
+ cin&gt;&gt;ccode; 
+
+gets(C Name);
+
+ cin&gt;&gt;pop; 
+
+cin»KM; 
+
+Dencal () ;
+
+ }
+
+ void CITY :: view()
+
+ {
+
+ Cout &lt; &lt; code &lt; &lt; CName &lt;&lt;Pop&lt;&lt;KM&lt;&lt; Density;
+
+ if (Density&gt;10000)
+
+ cout&lt;&lt;"Highly populated city";
+
+ }
+
+ void CITY :: Dencal()
+
+ {
+
+ Density=Pop/KM;
+
+ }</pre>
+    <p>
+     Question 3:
+     <br/>
+     Write the definition of a class METROPOLIS in C+ + with following description :    [Delhi, 2016]
+    </p>
+    <div class="code-block code-block-7" style="margin: 8px 0; clear: both;">
+    </div>
+    <pre style="padding-left: 30px;">Private Members
+
+ -    MCode    //Data member for
+
+ Code (an integer)
+
+ -    MName    //Data member for
+
+ Name (a string)
+
+ -    MPop    //Data member for
+
+ Population (a long int)
+
+ -    Area    //Data member for
+
+ Area Coverage (a float)
+
+ -    PopDens    //Data member for
+
+ Population Density (a float)
+
+ -    CaldenO    //A member function
+
+ to calculate.........
+
+ //Density as PopDens/Area
+
+Public Members
+
+ -    Ender ()    //A function to
+
+ allow    user to  enter values  of
+
+ //MCode, MName, MPop, Area and call claDen () //function
+
+ -    viewall    //A function    to
+
+ display all the data members 
+
+//also display a message "Highly Populated Area" 
+
+//if the Density is more than 12000</pre>
+    <p>
+     Answer:
+    </p>
+    <pre style="padding-left: 30px;">class METROPOLIS
+
+ {
+
+ int MCode; 
+
+char MName[2 0] ; 
+
+long int MPop; 
+
+float Area; 
+
+float PopDens; 
+
+void CalDen() 
+
+public:
+
+ Void Enter(); 
+
+void veiw ALL();
+
+ } ;
+
+ void METROPOLIS::Enter()
+
+ {
+
+ cin&gt;&gt;Mcode; 
+
+gets(MName);
+
+ Cin&gt;&gt;Mpop;
+
+ Cin&gt;&gt;Area;
+
+ CalDen();
+
+ }
+
+ void METROPOLIS::viewALL ( )
+
+ {
+
+ cout &lt; &lt;Mcode&lt; &lt;Mname&lt; &lt;Area&lt; &lt; "Popens",
+
+ if (Pop Dens &gt; 12000) cont&lt;&lt;"Highly Populated Area";
+
+ }
+
+ void METROPOLIS::call Den()
+
+ {
+
+ PopDens =Mpop/Area
+
+ }    [3]</pre>
+    <p>
+     Question 4:
+     <br/>
+     Answer the questions (i) to (iv) based on the following:    [Delhi, 2016]
+    </p>
+    <pre style="padding-left: 30px;">class PRODUCT
+
+ {
+
+ int Code; 
+
+char Item[20]; 
+
+protected: 
+
+float Qty; 
+
+public:
+
+ PRODUCT();
+
+ void Getln(); 
+
+void show();
+
+ {
+
+ int WCode;
+
+ Protected :
+
+ char Manager[20]; 
+
+public:
+
+ WHOLE SALER(); 
+
+void Enter(); 
+
+void Display();
+
+ }
+
+ class SHOWROOM :    public PRODUCT,
+
+ private WHOLE SALER
+
+ {
+
+ Char Name [20], 
+
+public :
+
+ SHOWROOM(); 
+
+void Input(); 
+
+void View();
+
+ } ;</pre>
+    <p>
+     (i) Which type of Inheritance out of the following is illustrated in the above example ?
+     <br/>
+     –    Single Level Inheritance
+     <br/>
+     –    Multi Level Inheritance
+     <br/>
+     –    Multiple Inheritance
+     <br/>
+     (ii) Write the names of all the data members, which are directly accessible from the member functions of class SHOWROOM.
+     <br/>
+     (iii) Write the names of all the member functions, which are directly accessible by an object of class SHOWROOM.
+     <br/>
+     (iv) What will be the order of execution of the constructors, when an object of class SHOWROOM is declared ?
+     <br/>
+     Answer:
+    </p>
+    <pre style="padding-left: 30px;">(i) Multiple
+
+(ii) Name, City, Manager, Qty
+
+(iii) Input (), View (), Getln (), Show ()
+
+(iv) PRODUCT (), WHOLESALER () , SHOWROOM ()</pre>
+    <p>
+     [CBSE Marking Scheme 2016]
+    </p>
+    <p>
+     Question 5:
+     <br/>
+     Write the definition of a function Fixpay (float Pay[], int N) in C+ +, which should modify each element of the array Salary pay N elements, as per the following rules :    [O.D, 2016]
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td style="text-align: center;" width="284">
+        Existing Pay Value
+       </td>
+       <td style="text-align: center;" width="284">
+        Required Modification in Value
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="284">
+        If less than 1,00,000
+       </td>
+       <td style="text-align: center;" width="284">
+        Add 35% in the existing value
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="284">
+        If &gt;=1,00,000 and &lt;20,000
+       </td>
+       <td style="text-align: center;" width="284">
+        Add 30% in the existing value
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="284">
+        If &gt;=2,00,000
+       </td>
+       <td style="text-align: center;" width="284">
+        Add 20% in the existing value
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     Answer:
+    </p>
+    <pre style="padding-left: 30px;">Void Fixpay (float pay[],int N)
+
+ {
+
+for(int i=0; i&lt;N; i++)
+
+ {
+
+ if(pay[i] &lt; 100000)
+
+ pay[i]+ = pay[i]*0.35; 
+
+else if (pay[i] &lt; 200000) 
+
+pay[i]+ = pay[i]*0.30; else
+
+ pay[i]+ = pay[i]*0.20;
+
+ }
+
+ }</pre>
+    <p style="text-align: left;">
+     Long Answer Type Questions  [4 marks each]
+    </p>
+    <p>
+     Question 1:
+     <br/>
+     Define a class Candidate in C++ with the following specification :    [Delhi, 2015]
+     <br/>
+     Private Mumbers:
+     <br/>
+     A data members Rno (Registration Number) type long
+     <br/>
+     A data member Cname of type string
+     <br/>
+     A data members Agg_marks (Aggregate Marks) of type float
+     <br/>
+     A data members Grade of type char
+     <br/>
+     A member function setGrade() to find the grade as per the aggregate marks obtained by the student. Equivalent aggregate marks range and the respective grade as shown below.
+    </p>
+    <p>
+     Aggregate Marks                      Grade
+     <br/>
+     &gt; = 80                                          A
+     <br/>
+     Less than 80 and &gt;    =    65     B
+     <br/>
+     Less than 65 and &gt;    =    50     C
+     <br/>
+     Less than 50                               D
+     <br/>
+     Public members:
+     <br/>
+     A constructor to assign default values to data members:
+     <br/>
+     Rno = 0, Cname “N.A”, Age_marks = 0.0
+     <br/>
+     A function Getdata ( ) to allow users to enter values for Rno. Cname, Agg_marks and call function setGrade () to find the grade.
+     <br/>
+     A function dispResult () to allow user to view the content of all the data members.
+     <br/>
+     Answer:
+    </p>
+    <pre style="padding-left: 30px;">class Candidate 
+
+{ long Rno;
+
+ char Cname [20]; 
+
+float Agg_marks; 
+
+char Grade; 
+
+void setGrade ()
+
+ { if (Agg_marks&gt;= 80)
+
+ Grade = 'A';
+
+ else if (Agg_marks&lt;80 &amp;&amp; Agg_ marks&gt;=65)
+
+ Grade = 'B' ;
+
+ else if (Agg_marks&lt;65 &amp;&amp; Agg_ marks&gt;=50)
+
+ Grade = 'C'; 
+
+else
+
+ Grade = 'D' ;
+
+ }
+
+ public;
+
+ Candidate ( )
+
+ {
+
+ Rno=0;
+
+ Strcpy (Cname, ''N.A.''); 
+
+Agg_marks=0.0;
+
+ }
+
+ void Getdata ()
+
+ {
+
+ cout&lt;&lt;''Registration No''; 
+
+cin&gt;&gt;Rno; 
+
+cout&lt;&lt;"Name''; 
+
+cin&gt;&gt;Cname;
+
+ cout&lt;&lt;Aggregate Marks''; 
+
+cin&gt;&gt;Agg_marks; 
+
+set Grade ();
+
+ }
+
+ void dispResult ()
+
+ {
+
+ cout&lt;&lt;"Registration No''&lt;&lt;Rno;
+
+cout&lt;&lt;"Name''&lt;&lt;Cname;
+
+ cout&lt;&lt;"Aggregate Marks''&lt;&lt;Agg_
+
+ marks;
+
+ }
+
+</pre>
+    <p>
+     <em>
+      (1/2 mark for correct syntax for class header]
+     </em>
+     <br/>
+     <em>
+      (1/2 marks for correct declaration of data members]
+     </em>
+     <br/>
+     <em>
+      (1/2 mark for correct definition of the constructor Candidate ()]
+     </em>
+     <br/>
+     <em>
+      [1 mark for correct definition of setGrade ()]
+     </em>
+     <br/>
+     <em>
+      [1 mark for correct definition of Getdata of Getdata () with proper invocation of setGrade ()]
+     </em>
+     <br/>
+     <em>
+      (1/2 mark for correct definition of dispresult]
+     </em>
+    </p>
+    <p>
+     Question 2:
+     <br/>
+     Define a class Customer with the following specifications.    [CBSE SQP 2015]
+     <br/>
+     Private Members:
+     <br/>
+     Customer_no integer
+     <br/>
+     Customerjname char (20)
+     <br/>
+     Qty integer
+     <br/>
+     Price, TotalPrice, Discount, Netprice float
+     <br/>
+     Member Functions:
+     <br/>
+     Public members:
+    </p>
+    <ol>
+     <li>
+      A constructer to assign initial values of Customer_no as 111, Customer_name as “Leena”, Quantity as 0 and Price, Discount and Netprice as 0.
+     </li>
+     <li>
+      Input() – to read data members (Customer_ no, Customer_name, Quantity and Price) call Caldiscount().
+     </li>
+     <li>
+      Caldiscount ( ) – To calculate Discount according to TotalPrice and NetPrice
+      <br/>
+      TotalPrice = Price*Qty
+      <br/>
+      TotalPrice &gt; =50000 – Discount 25% of TotalPrice TotalPrice &gt;=25000 and TotalPrice &lt;50000 – Discount 15% of TotalPrice TotalPrice &lt;25000 – Discount 10% of TotalPrice Netprice = TotalPrice-Discount Show() – to display Customer details.
+     </li>
+    </ol>
+    <p>
+     Answer:
+    </p>
+    <pre style="padding-left: 30px;">class Customer
+
+ {
+
+ int Customer_no; 
+
+char Customer_name; 
+
+int Qty;
+
+ float Price, TotalPrice, Discount, Netprice; 
+
+public:
+
+ Customer ( )    [1]
+
+ {
+
+ Customer_no = 111;
+
+ strcpy( Customer_name, "Leena");
+
+ Qty=0 ;
+
+ Price =0, Discount=0, Netprice=0;
+
+ }
+
+ void Input ()    [1]
+
+{
+
+ cin&gt;&gt;Custome r_no; 
+
+gets( Customer_name); 
+
+cin&gt;&gt;Qty&gt;&gt;TotalPrice;
+
+ Caldiscount();
+
+ }
+
+ void Caldiscount()    [1]
+
+ {
+
+ TotalPrice = Price*Qty; 
+
+if ( TotalPrice &gt;= 50000)
+
+ Discount = 0.25 * TotalPrice;
+
+ else if (TotalPrice &gt;= 2 5000) 
+
+Discount = 0.15 * TotalPrice; 
+
+else
+
+ Discount = 0.10 * TotalPrice; 
+
+Netprice = TotalPrice - Discount;
+
+ }
+
+ void Show ( )    [1]
+
+ {
+
+ cout&lt;&lt;Customer_no&lt;&lt;" name &lt;&lt;"    "&lt;&lt;Qty&lt;" "&lt;&lt;TotalPrice &lt;&lt;" "&lt;&lt;Netprice;
+
+ }
+
+ };</pre>
+    <p>
+     Question 3:
+     <br/>
+     Define a class CONTEST folowing description:
+     <br/>
+     Private Data Members
+    </p>
+    <p>
+     Eventno               integer
+     <br/>
+     Description         char(30)
+     <br/>
+     Score                    integer
+     <br/>
+     Qualified             char
+    </p>
+    <p>
+     Public Member functions
+     <br/>
+     • A constructor to assign initial values Evento as 11, Description’s “School level”, Score as 100, Qualified as ‘N’
+     <br/>
+     • Input()-To take the input for Eventno, Description and Score.
+     <br/>
+     • Award (int cutoffscore) – To assign Qualified as ‘Y’, If score is more than the cutoffscore that is passed as argument to the function, else assign Qualified as ‘N’.
+     <br/>
+     • Displaydata()-to display all the data members.
+     <br/>
+     Answer:
+    </p>
+    <pre style="padding-left: 30px;">class CONTEST
+
+ {
+
+ private :
+
+ int Eventno;
+
+ char ‘Description [30];
+
+ public :
+
+ Contest () ;
+
+ void Input () ;
+
+ void Award (int cutoffscore);    [1]
+
+ void Display ();
+
+ };
+
+ Contest : : contest()
+
+ {
+
+ Evento =11 ;
+
+ Description = "school level" ;
+
+ Score = 100;
+
+ Qualified = 'N' ;
+
+ }    [1]
+
+ void Contest : : Input ( )
+
+ {
+
+ cin &gt;&gt; Eventno;
+
+ gets (Description);
+
+ cin &gt;&gt; Score ;
+
+ }    [1]
+
+ void CONTEST : :    Award (in cut of
+
+ score)
+
+ {
+
+ int K = cutoffscore ;
+
+ (Score &gt; K)
+
+ Qualified = 'Y' ;
+
+ else
+
+ Qualified = 'N' ;
+
+ }
+
+ void CONTEST ()
+
+ {
+
+ cout &lt;&lt; Event No : &lt;&lt; Eventno &lt;&lt; endl ;
+
+ cout &lt;&lt; Description :    &lt;&lt;
+
+ Description &lt;&lt; endl;
+
+ cout &lt;&lt; Score : &lt;&lt; Score &lt;&lt; Endl
+
+ cout &lt;&lt; Qualified : &lt;&lt; Qualified &lt;&lt; endl;
+
+ } [1]</pre>
+    <p>
+     Question 4:
+     <br/>
+     Consider the following class state:
+    </p>
+    <pre style="padding-left: 30px;">class State 
+
+{
+
+ protected :
+
+ int tp; //no. of tourist places 
+
+public :
+
+ State()
+
+ {
+
+ tp = 0 ;
+
+ }
+
+ void inctp ( )
+
+ {
+
+ tp++ ;
+
+ }
+
+ int gettp ( ) 
+
+{
+
+ return tp;
+
+ }
+
+ };</pre>
+    <p>
+     Write a code in C+ + to publically derive another
+    </p>
+    <p>
+     class ‘District’ with the following additional members derived in the Public visibility mode.
+     <br/>
+     Data Members
+     <br/>
+     distname – char (50)
+     <br/>
+     population – long
+     <br/>
+     Member functions:
+     <br/>
+     • dinput ( ) – To enter distname and population.
+     <br/>
+     • doutput ( ) – To display distname and population on screen.
+     <br/>
+     Answer:
+    </p>
+    <pre style="padding-left: 30px;">class District ; public state
+
+ { [1]
+
+ private :
+
+ char *distname [50]; 
+
+long population; 
+
+pubilc :    [1]
+
+ void dinput ()  [1]
+
+ {
+
+ gets (distname); 
+
+cin ... population ;    [1]
+
+ }
+
+ void doutput ()
+
+ {
+
+puts (distname) ;
+
+ cout &gt;&gt; population ;    [1]
+
+ }
+
+ }</pre>
+    <p>
+     Question 5:
+     <br/>
+     Define a class CABS in C++ with the following specification:
+     <br/>
+     Data Members
+     <br/>
+     • CNo – to store Cab No
+     <br/>
+     • Type – to store a character ‘A’, ‘B’ or ‘C’ as City Type
+     <br/>
+     • PKM – to store Kilo Meter charges
+     <br/>
+     • Dist – to store Distance travelled (in KM)
+     <br/>
+     Member Functions
+     <br/>
+     • A constructor function to initialize Type as ‘A’ and CNo as ‘1111’
+     <br/>
+     • A function ChargesQ to assign PKM as per
+     <br/>
+     the following table:
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td style="text-align: center;" width="118">
+        Type
+       </td>
+       <td style="text-align: center;" width="118">
+        PerKM
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="118">
+        A
+       </td>
+       <td style="text-align: center;" width="118">
+        25
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="118">
+        B
+       </td>
+       <td style="text-align: center;" width="118">
+        20
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="118">
+        C
+       </td>
+       <td style="text-align: center;" width="118">
+        15
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     • A function Register() to allow administrator to enter the values for CNo and Type. Also, this function should call Charges() to assign PKM Charges.
+     <br/>
+     • A function ShowCab() to allow user to enter the value of Distance and display CNo, Type, PKM, PKM “‘Distance (as Amount) on screen    [Delhi, 2014]
+     <br/>
+     Answer:
+    </p>
+    <pre style="padding-left: 30px;">class CABS
+
+ {
+
+ int CNo; 
+
+char Type; 
+
+int PKM; 
+
+float Dist;
+
+ CABS
+
+ {
+
+ Type='A';
+
+ CNo=llll;    [1]
+
+ }
+
+ void Charges()
+
+ {
+
+ if (Type=='A')
+
+ PKM=25;
+
+ if(Type=='B')
+
+ PKM=20;
+
+ if(Type=='C')
+
+ PKM=15; PKM= 0;
+
+ }    [1]
+
+ void Register ( )
+
+ {
+
+ cin&gt;&gt;CNo&gt;&gt;Type;
+
+ PKM=Charges ()    ;    [1]
+
+ }
+
+ void ShowCab()
+
+ {
+
+ cin&gt;&gt;Dist;
+
+ cout&lt;&lt;CNo&lt;&lt;Type&lt;&lt;PKM&lt;&lt;PKM*Dist;
+
+ }
+
+ };    [1]
+
+</pre>
+    <p>
+     Question 6:
+     <br/>
+     Define a class Tourist    in C + + with the following specification:
+     <br/>
+     Data Members
+     <br/>
+     • CNo – to store Cab No
+     <br/>
+     • CType – to store a character ‘A’, ‘B’, or ‘C’ as City Type
+     <br/>
+     • PerKM – to store per Kilo Meter charges
+     <br/>
+     • Distance – to store Distance travelled (in KM) Member Functions
+     <br/>
+     • A constructor function to initialize CType as ‘A’ and CNo as ‘0000’
+     <br/>
+     • A function CityCharges() to assign PerKM as per the following table:
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td style="text-align: center;" width="118">
+        CType
+       </td>
+       <td style="text-align: center;" width="118">
+        PerKM
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="118">
+        A
+       </td>
+       <td style="text-align: center;" width="118">
+        20
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="118">
+        B
+       </td>
+       <td style="text-align: center;" width="118">
+        18
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="118">
+        C
+       </td>
+       <td style="text-align: center;" width="118">
+        15
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     • A function RegisterCab() to allow administrator to enter the values for CNo and CType. Also, this function should call CityCharges() to assign PerKM charges.
+     <br/>
+     • A function Display() to allow user to enter the value of Distance and display CNo, CType, PerKM, PerKM*Distance (as Amount) on screen.    [O.D, 2014]
+     <br/>
+     Answer:
+    </p>
+    <pre style="padding-left: 30px;">Class Tourist
+
+ {
+
+ int CNo; 
+
+char CType; 
+
+int PerKM; 
+
+float Distance;
+
+ Tourist()
+
+ {
+
+ CType='A';
+
+ CNo=0000;
+
+ }
+
+ void CityCharges ()    [1]
+
+ {
+
+ if(CType=='A')
+
+ PerKm=20;
+
+ if(CType=='B')
+
+ PerKM=18;
+
+ if(CType=='C')
+
+ PerKM=15;
+
+ }    [1]
+
+ void RegisterCab()
+
+ {
+
+ cin&gt;&gt;CNo&gt;&gt;CType;
+
+ CityCharges();
+
+ }
+
+ void Display ()    [1]
+
+ {
+
+ cin&gt;&gt;Distance; 
+
+cout&lt;&lt;CNo&lt;&lt;CType&lt;&lt;PerKM&lt;&lt; PerKM*Distance;
+
+ } [1]
+
+</pre>
+    <p>
+     Question 7:
+     <br/>
+     Define a class Seminar with the following specification:
+     <br/>
+     private members
+     <br/>
+     Seminarld               long
+     <br/>
+     Topic                         string of 20 characters
+     <br/>
+     VenueLocation     string of 20 characters
+     <br/>
+     Fee                             float
+    </p>
+    <p>
+     CalcFee() function to calculate Fee depending on VenueLocation
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td style="text-align: center;" width="118">
+        VenueLocation
+       </td>
+       <td style="text-align: center;" width="118">
+        Fee
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="118">
+        Outdoor
+       </td>
+       <td style="text-align: center;" width="118">
+        5000
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="118">
+        Indoor Non-AC
+       </td>
+       <td style="text-align: center;" width="118">
+        6500
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="118">
+        Indoor AC
+       </td>
+       <td style="text-align: center;" width="118">
+        7500
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     Public members
+     <br/>
+     Register() function to accept values for SeminarlD, Topic, VenueLocation and call CalcFee() to calculate Fee
+     <br/>
+     ViewSeminar() function to display all the data members on the screen
+     <em>
+      [CBSE Comptt., 2013]
+     </em>
+     <br/>
+     Answer:
+    </p>
+    <pre style="padding-left: 30px;">class Seminar
+
+ {
+
+ private:
+
+ long Seminarld; 
+
+char Topic [20] ; 
+
+char VenueLocation[20]; 
+
+float Fee;
+
+ void CalcFeeO    [1]
+
+ {
+
+ if    (strcmp    (VenueLocation, ''Outdoor'')==0)
+
+ Fee=5000;
+
+ else {if (strcmp (VenueLocation, ''Indoor Non-AC" ) = = 0)
+
+ Fee=6500;
+
+ else {if (strcmp (VenueLocation, ''Indoor AC'')==0)
+
+ Fee = 7500;    [1]
+
+ }
+
+ public:
+
+ void Register ()
+
+ {
+
+ cin&gt;&gt;seminarld; 
+
+gets (Topic) ; 
+
+gets (VenueLocation); 
+
+cin&gt;&gt;Fee;
+
+ CalcFee () ;
+
+ } [1]
+
+ Void ViewSeminar ()
+
+ {
+
+ cout&lt;&lt;SeminarId; 
+
+puts (Topic); 
+
+puts (VenueLocation); 
+
+cout&lt;&lt;Fee;
+
+ }
+
+ }; [1]</pre>
+    <p>
+     Question 8:
+     <br/>
+     Define a class Bus in C++ with the following specifications:
+     <br/>
+     Data Members
+     <br/>
+     •  Busno—to store Bus No
+     <br/>
+     •  From—to store Place name of origin
+     <br/>
+     •  To—to store Place name of destination
+     <br/>
+     •  Type—to store Bus Type such as ‘O’ for ordinary
+     <br/>
+     •  Distance—to store the Distance in Kilometers
+     <br/>
+     •  Fare—to store the Bus Fare
+     <br/>
+     Member Functions
+     <br/>
+     • A constructor function to initialize Type as ‘O’ and Freight as 500
+     <br/>
+     • A function CalcFare( ) to calculate Fare as per the following criteria
+     <br/>
+     Type        Fare
+     <br/>
+     ‘O’            15*Distance
+     <br/>
+     ‘E’            20*Distance
+     <br/>
+     ‘L’            24*Distance
+     <br/>
+     • A function Allocate() to allow user to enter values for BusNo, From, To, Type and Distance.
+     <em>
+      [O.D, 2013]
+     </em>
+     <br/>
+     Answer:
+    </p>
+    <pre style="padding-left: 30px;">class Bus
+
+ {
+
+ int Busno; 
+
+char From [20]; 
+
+charTo[20]; 
+
+char Type; 
+
+float Distance;
+
+ float Fare, ;    [1]
+
+ BUS ( )
+
+ {
+
+ Type='O';
+
+ Fare=500;
+
+ }
+
+ void CalcFare( )    [1]
+
+ {
+
+ if(Type=='O')
+
+ Fare = 15*Distance;  
+
+if (Type=='E')
+
+ Fare = 20* Distance;
+
+ if(Type=='L')
+
+ Fare = 24*Distance;
+
+ void Allocate( ) [1]
+
+ {
+
+ cout&lt;&lt;''Enter  Bus Number"; cin&gt;&gt;Busno; 
+
+cout&lt;&lt;''Enter Source:"; gets(From);
+
+ cout&lt;&lt;''Enter  Destination"; gets(To); 
+
+cout&lt;&lt;''Enter Type:"; cin&gt;&gt;Type; 
+
+cout&lt;&lt;''Enter Distance (in kms)"; cin&gt;&gt;Distance;
+
+ }
+
+ }; [1]</pre>
+    <p>
+     Question 9:
+     <br/>
+     Define a class Tourist in C + + with the following specifications:
+     <br/>
+     Data Members
+     <br/>
+     •  Carno—to store Bus No
+     <br/>
+     •  Origin—to store Place name of origin
+     <br/>
+     •  Destination—to store Place name
+     <br/>
+     •  Type—to store Car Type such as ‘E’ for Economy
+     <br/>
+     •  Distance—-to    store the Distance in Kilometers
+     <br/>
+     •    Charge—to store the Car Fare
+     <br/>
+     Member Functions
+     <br/>
+     • A constructor function to initialize Type as ‘E’ and Freight as 250
+     <br/>
+     • A function CalcCharges () to calculate Fare as per the following criteria
+     <br/>
+     Type              Fare
+     <br/>
+     ‘E’             16* Distance
+     <br/>
+     ‘K’             22* Distance
+     <br/>
+     T’              30*Distance
+    </p>
+    <p>
+     • A function Enter( ) to allow user to enter values for CarNo, Origin, Destination, Type and Distance. Also, this function should call CalcCharges () to calculate fare.
+     <br/>
+     • A function Show() to display contents of all data members on the screen. [Delhi, 2013]
+     <br/>
+     Answer:
+    </p>
+    <pre style="padding-left: 30px;">class Tourist
+
+ {
+
+ int Carno; char Origin[20]; 
+
+char Destination[20]; 
+
+char Type; 
+
+float Distance;
+
+ float Charges;
+
+ Tourist ( )    [1]
+
+{
+
+ Type='E';
+
+ int charges=250;
+
+ }
+
+ void CalcCharges( )
+
+ {
+
+ if(Types=='E')
+
+ Charges = 16*Distance; if(Type=='A')
+
+ Charges = 22‘Distance; if(Type=='L')
+
+ Charges = 30*Distance;
+
+ }
+
+ void Enter( )
+
+ {
+
+ cout&lt;&lt;''Enter Car Number"; cin&gt;&gt;Carno;
+
+ cout&lt;&lt;''Enter Source:"; gets(Origin);
+
+ cout&lt;&lt;''Enter Destination"; gets(Destination);
+
+ cout&lt;&lt;''Enter Type:"; cin&gt;&gt;Type;
+
+ cout&lt;&lt;''Enter Distance (in
+
+ kms) " ;    [1]
+
+ cin&gt;&gt;Distance;
+
+ CalcCharges( );
+
+ }
+
+ void Show( )
+
+{
+
+ cout&lt;&lt; "Car Number:"&lt;&lt;Carno;
+
+ cout&lt;&lt; "Origin:";
+
+ puts(Origin);
+
+ cout&lt;&lt; "Destination:";
+
+ puts(Destination);
+
+ cout&lt;&lt;"Fare:"&lt;&lt;Charges;
+
+ }
+
+ };    [1]</pre>
+    <p>
+     Question 10:
+     <br/>
+     Define a class Hand set in C++ with the following description : Private members :
+     <br/>
+     Make—of type string
+     <br/>
+     Model—of type string
+     <br/>
+     Price—of type long int
+     <br/>
+     Rating—of type char
+     <br/>
+     Public members:
+     <br/>
+     Function Read_Data to read an object of Handset type.
+     <br/>
+     Function Display( ) to display the details of an object of type Handset type.
+     <br/>
+     Function RetPrice() to return the value of Price of an object of Handset type.
+     <em>
+      [CBSE SQP, 2013]
+     </em>
+     <br/>
+     Answer:
+    </p>
+    <pre style="padding-left: 30px;">class Handset
+
+ {
+
+ private: 
+
+char Make[20] ; 
+
+char Model[20] ; 
+
+long int Price;
+
+ char Rating;    [1]
+
+ public :
+
+ void Read_Data( )
+
+ {
+
+ gets(Make); 
+
+gets(Model);
+
+ cin&gt;&gt;Price;  [1]
+
+ cin&gt;&gt;Rating;
+
+ }
+
+ void Display()
+
+ {
+
+ puts (Make);    [1]
+
+ puts(Model) ; 
+
+cout&lt;&lt;Price; 
+
+cout&lt;&lt;Rating;
+
+ }
+
+ long int RetPrice( )
+
+ {
+
+ return(Price);
+
+ }
+
+ };    [1]</pre>
+    <p>
+     Question 11:
+     <br/>
+     Find the output of the following program :
+    </p>
+    <pre style="padding-left: 30px;">#include&lt;iostream.h&gt; 
+
+class METRO 
+
+{
+
+ int Mno, TripNo, PassengerCount; public: METRO(int Tmno=l)
+
+ {
+
+Mno=Tmno;
+
+ TripNo=0;
+
+ PassengerCount=0;
+
+ }
+
+ void Trip(int PC=20)
+
+ {
+
+ TripNo++;
+
+ PassengerCount+=PC;
+
+ }
+
+ void StatusShow( )
+
+ {
+
+ c o u t &lt; &lt; M n o &lt; &lt; "  :  " &lt;  &lt;  T  r  i  p N o &lt; &lt; "  : " 
+
+&lt; &lt; P a s s e n g e r C o u n t &lt; &lt; e n d l ;
+
+ } ;
+
+ void main( )
+
+ {
+
+ METRO M(5),T;
+
+ M.Trip( ) ;
+
+ T.Trip(50) ;
+
+ M.StatusShow( ) ;
+
+ M.Trip(30) ;
+
+ T.StatusShow( );
+
+ M.StatusShow( );
+
+ }    [O.D, 2012]</pre>
+    <p>
+     Answer:
+    </p>
+    <p>
+     5:1:20
+     <br/>
+     1:1:50
+     <br/>
+     5:2:50    [4]
+    </p>
+    <p>
+     Question 12:
+     <br/>
+     Define a Class RESTRA in C++ with following description:
+     <br/>
+     Private members
+     <br/>
+     • Food Code of type int
+     <br/>
+     • Food of type string
+     <br/>
+     • FType of type String
+     <br/>
+     • Sticker of type String
+     <br/>
+     • A Member function GetSticker( ) to assign the following values for Food Sticker as per the given FType:
+     <br/>
+     FType                        Sticker
+     <br/>
+     Vegetarian                GREEN
+     <br/>
+     Contains egg            YELLOW
+     <br/>
+     Non-Vegetarian       RED
+     <br/>
+     Public Members
+     <br/>
+     • A function GetFood() to allow user to enter values for FoodCode, Food, FType and call function GetSticker() to assign Sticker.
+     <br/>
+     • A function ShowFood( ) to allow user to view the content of all the data members. [O.D, 2012]
+     <br/>
+     Answer:
+    </p>
+    <pre style="padding-left: 30px;">class RESTRA
+
+ { 
+
+char FoodCode;
+
+ charFood[20] ,FType [20] ,Stick er[20];
+
+ void GetSticker()
+
+ {
+
+ if (strcmp (FType, ' 'Vegetari an")==0)
+
+ {
+
+ strcpy(Sticker,"GREEN");
+
+ }    [ ]
+
+ if    (strcmp(FType,''ContainsEgg")==0)
+
+ {
+
+ strcpy(Sticker, "YELLOW");
+
+ }
+
+ if    (strcmp(FType,''Non-Vegetarian") ==0)
+
+ strcpy(Sticker,''RED");
+
+ }
+
+ public:    [1]
+
+ void GetFood()
+
+ {
+
+ cout&lt;&lt;"Enter    FoodCode,    Food,
+
+ Food Type";
+
+ cin&gt;&gt;FoodCode; 
+
+gets(Food); 
+
+gets(FType);
+
+ GetSticker( );
+
+ }    [1]
+
+ void ShowFood( )
+
+ {
+
+ cout&lt;&lt;''Enter    Food    Code,    Food,
+
+ FoodType, Sticker:";
+
+ cout &lt; &lt; FoodCode;
+
+ puts(Food);    
+
+puts(FType);
+
+ puts(Sticker);
+
+ &gt; ,
+
+ };    [1]</pre>
+    <p>
+     Question 13:
+     <br/>
+     Find the output of the following program :
+    </p>
+    <pre style="padding-left: 30px;">#include&lt;iostream.h&gt; 
+
+class TRAIN {
+
+ int Tno, TripNo, PersonCount, T, N; 
+
+public:
+
+ Train(int Tmno=l)
+
+ { Tno=Tmno; TripNo=0; PersonCount = 0; }
+
+ void Trip (int TC =100)
+
+ {TripNo++; PersonCount =TC;}
+
+ void    show()    {cout&lt;&lt;Tno&lt;&lt;'' :  ''&lt;&lt;TripNo&lt;&lt;''    :
+
+ "&lt;&lt;PersonCoun&lt;&lt;endl;}
+
+ } ;
+
+ void main( )
+
+ {
+
+Train T(10), N;
+
+ N.Trip();
+
+ T.show();
+
+ N.Trip(70) ;
+
+ N.Trip(4 0) ;
+
+ N.show( );
+
+ T.show( );
+
+ }    [Delhi, 2012]</pre>
+    <p>
+     Answer:
+    </p>
+    <p>
+     10:0:0
+     <br/>
+     1:2:140
+     <br/>
+     10:1:70    [4]
+    </p>
+    <p>
+     Question 14:
+     <br/>
+     Define a class Candidate in C++ with the
+     <br/>
+     following description:
+     <br/>
+     Private members
+     <br/>
+     • A data member RNo(Registration Number) of type long
+     <br/>
+     • A data member Name of type String
+     <br/>
+     • A data member Score of type float
+     <br/>
+     • A data member Remarks of type String
+     <br/>
+     •  A member function AssignRem() to assign the remarks as per the score obtained by the candidate.
+     <br/>
+     •   Scor6 range and the respective remarks are shown as follow:
+     <br/>
+     Score           Remarks
+     <br/>
+     &gt;=50           Selected
+     <br/>
+     &lt;50             Not Selected
+     <br/>
+     Public members
+     <br/>
+     • A function ENTERQ to allow user to enter values for RNo, Names, Score and call function AssignRem() to assign the remarks.
+     <br/>
+     • A function display() to allow user to view the content of all data members. [Delhi, 2012]
+     <br/>
+     Answer:
+    </p>
+    <pre style="padding-left: 30px;">class Candidate
+
+ {
+
+ long RNo; 
+
+char Name[40]; 
+
+float Score;
+
+ [1]
+
+ char Remarks[20] 
+
+void AssignRem()
+
+ if (Score&gt;=50)    [1]
+
+ strcpy(Remarks, "Selected"); else
+
+ strcpy(Remarks,''Not Selected");
+
+ }
+
+ public: 
+
+void Enter()
+
+ { [1]
+
+ cout&lt;&lt;''Enter the values for RNo, Name, Score";
+
+ cin&gt;&gt;RNo;
+
+ gets(Name);
+
+cin&gt;&gt;Score;
+
+ AssignRem( );    [1]
+
+ }
+
+ void Display( )
+
+ {
+
+ cout&lt;&lt;RNo&lt;&lt;Score;
+
+ puts(Name); puts(Remarks);
+
+ }
+
+ }; [1]</pre>
+    <p>
+     Question 15:
+     <br/>
+     Define a class Applicant in C++ with the following description:
+     <br/>
+     Private members
+     <br/>
+     •  A data member ANo(Admission Number) of type long
+     <br/>
+     •  A data member Name of type String
+     <br/>
+     •  data member Agg(Aggregate Marks) of type float
+     <br/>
+     •  A data member Grade of type char
+     <br/>
+     •  A member function GradeMe() to assign the grades as per the aggregate obtained by the candidate.
+     <br/>
+     •  Score range and the respective remarks are shown as follow:
+     <br/>
+     Aggregate                   Grade
+     <br/>
+     &gt;=80                               A
+     <br/>
+     less than 80 and &gt; = 65     B
+     <br/>
+     less than 65 and &gt; = 50     C
+     <br/>
+     less than 50                         D
+     <br/>
+     Public members
+     <br/>
+     • A function ENTER( ) to allow user to enter values for ANo, Names, Aggregate and call function GradeMe () to assign grade.
+     <br/>
+     • A function RESULT( ) to allow user to view the content of all data members. [O.D, 2012]
+     <br/>
+     Answer:
+    </p>
+    <pre style="padding-left: 30px;">class Applicant
+
+ {
+
+ long ANo; 
+
+char Name[40]; 
+
+float Agg; 
+
+char Grade;
+
+ void GradeMe ( )    [1]
+
+ {
+
+ if (Agg&gt;80)
+
+ Grade='A';
+
+ if (Agg&lt;80 &amp;&amp; Agg&gt;=65)
+
+ Grade='B';
+
+ if (Agg&lt;65 &amp;&amp; Agg&gt;=50)
+
+ Grade='C'; if(Agg&lt;50)
+
+ Grade='D';
+
+ }
+
+ public: 
+
+void Enter ( )
+
+{
+
+ cout&lt;&lt;''Enter the values for Ano, Name, Agg" ; 
+
+cin&gt;&gt;ANo; 
+
+gets(Name);
+
+ cin&gt;&gt;Agg;    [1]
+
+ GradeMe( );
+
+ }
+
+ void Result( )
+
+ {
+
+ cout&lt;&lt;ANo&lt;&lt;Agg;
+
+ puts(Name); puts(Grade);
+
+ }
+
+ };    [1]</pre>
+    <p>
+     Question 16:
+     <br/>
+     Define a class ITEM in C++ with the following description:
+     <br/>
+     Private Members
+     <br/>
+     • Code of type integer (Item Code)
+     <br/>
+     • Iname of type string (Item Name)
+     <br/>
+     • Price of type float (Price of each item)
+     <br/>
+     • Qty of type integer (Quantity of item in stock)
+     <br/>
+     • Offer of type float (Offer percentage on the item)
+     <br/>
+     • A member function GetOffer( ) to calculate Offer percentage as per the following rule :
+     <br/>
+     If Qty &lt; = 50 Offer is 0
+     <br/>
+     If 50 &lt; Qty &lt; = 100 Offer is 5
+     <br/>
+     If Qty &gt;100 Offer is 10
+     <br/>
+     Public Members
+     <br/>
+     • A function GetStock() to allow user to enter values for Code, Iname, Price, Qty and call function GetOffer() to calculate the offer.
+     <br/>
+     • A function ShowItem( ) to allow user to view the content of all the data members.
+     <br/>
+     Answer:
+    </p>
+    <pre style="padding-left: 30px;">class Item
+
+ {
+
+ int Code; 
+
+char Iname [20]; 
+
+float Price; 
+
+int Qty; 
+
+float Offer; 
+
+void GetOffer( ) ; 
+
+public:
+
+ void GetStock ()
+
+ {
+
+ cin&gt;&gt;Code;
+
+ gets (Iname) ;    // OR cin.
+
+ getline (Iname, 80); Or cin&gt;&gt;Iname;
+
+ cin&gt;&gt;Price&gt;&gt;Qty;
+
+ GetOfferO ;
+
+ }
+
+ void Showltem ()
+
+ {
+
+ cout&lt;&lt;Code&lt;&lt;Iname&lt;&lt;Price&lt;&lt;Qty&lt;&lt;Offer;
+
+ };
+
+ void Item : GetOffer ()
+
+ {
+
+ if (Qty &lt; =50)
+
+ Offer = 0;
+
+ else if (Qty &lt;= 100)
+
+ Offer = 5; //OR Offer = 0.05; 
+
+else
+
+ Offer = 10; //OR Offer = 0.1;
+
+ }</pre>
+    <p>
+     <em>
+      (1/2 Mark for correct syntax for class header)
+     </em>
+     <br/>
+     <em>
+      (1/2 Mark for correct declaration of data members) (1 Mark for correct definition of Get OfferQ)
+     </em>
+     <br/>
+     <em>
+      (1 Mark for correct definition of Get Stock () with proper invocation of Get Offer () function)
+     </em>
+     <br/>
+     <em>
+      (1 Mark for correct definition of ShowltemO)
+     </em>
+     <br/>
+     <em>
+      Note : Deduct 1/2 Mark if Get Offer () is not invoked properly inside Stock Ofunction.
+     </em>
+    </p>
+    <p>
+     Question 17:
+     <br/>
+     Define a class Stock in C++ with following description;
+     <br/>
+     Private Memebrs
+     <br/>
+     •  ICode of type integer (Item Code)
+     <br/>
+     •  Item of type string (Item Name)
+     <br/>
+     •  Price of type float (Price of each item)
+     <br/>
+     •  Qty of type integer (Quantity in stock)
+     <br/>
+     •  Discount of type float (Discount percentage on the item)
+     <br/>
+     •  A member function FindDisc() to calculate discount as per the following rule :
+     <br/>
+     If Qty&lt; =50              Discount is 0
+     <br/>
+     If 50&lt;Qty,=100       Discountis 5
+     <br/>
+     If Qty &gt;100              Discount is 10
+     <br/>
+     Public Members
+     <br/>
+     • A function buy () to allow use to entervalue for ICode, Item, Price, Qty and call function Find Disc () to calculate the discount.
+     <br/>
+     • A function Show All() to allow user to view the content of all the data members.
+     <br/>
+     Answer:
+    </p>
+    <pre style="padding-left: 30px;">class Stock
+
+ {
+
+ int ICode, Qty ; 
+
+char Item[20]    ;
+
+ float Price, Discount; 
+
+void FindDisc ()    ;
+
+ public :
+
+ void Buy ()    ;
+
+ void ShowAll ()    ;
+
+ };
+
+ void Stock :    : Buy ( )
+
+{
+
+cin&gt;&gt;ICode ; 
+
+gets (Item) ; 
+
+cin &gt;&gt; Price ; 
+
+cin &gt;&gt; Qty ;
+
+ Find Disc () ;
+
+ }
+
+ void Stock : : FindDisc ()
+
+ {
+
+ If (Qty &lt; = 50)
+
+ Discount = 0 ; 
+
+else if (Qty &lt; = 100)
+
+ Discount =5;    // = 0.05 ;
+
+ else
+
+ Discount = 10 ;    // =0.1;
+
+}
+
+ void Stock :    : ShowAll ()
+
+ {
+
+c o u t &lt; &lt; I C o d e &lt; &lt; ' \ t ' &lt; &lt; l t e m &lt; &lt; 1 \ 
+
+t1&lt;&lt;Price&lt;&lt;'\t'                                 &lt;&lt;Qty&lt;&lt;'\
+
+t1&lt;&lt;Discount&lt;&lt;endl ;
+
+ }</pre>
+    <p>
+     <em>
+      (1/2 Mark for correct syntax for class header)
+     </em>
+     <br/>
+     <em>
+      (1/2Mark for correct declaration of data members)
+     </em>
+     <br/>
+     <em>
+      (1 Mark for correct definition of FindDiscO)
+     </em>
+     <br/>
+     <em>
+      (1 Mark for correct definition of Buy() with proper invocation of Find Disc() function)
+     </em>
+     <br/>
+     <em>
+      (1 Mark for correct definition of Show All())
+     </em>
+     <br/>
+     Note :
+     <em>
+      Deduct 1/2 Mark if Find Disc() is not invoked properly inside Buy() function.
+     </em>
+    </p>
+    <p style="text-align: left;">
+     <span style="text-decoration: underline;">
+      <span style="text-decoration: underline;">
+       TOPIC-2
+      </span>
+     </span>
+     Objects
+    </p>
+    <p style="text-align: left;">
+     Short Answer Type Questions-1    [2 marks each]
+    </p>
+    <p>
+     Question 1:
+     <br/>
+     Answer the questions (i) and (ii) after going through the following class :
+    </p>
+    <pre style="padding-left: 30px;">class Hospital
+
+{
+
+int Pno, Dno;
+
+ class Hospital    
+
+public :
+
+Hospital (int    PN);             //Function  1
+
+Hospital ();                      //Function  2
+
+Hospital (Hospital &amp;H);           //Function  3
+
+void In ();                       //Function  4
+
+void Disp ();                     //Function  5
+
+ } ;
+
+ void main()
+
+ {
+
+ Hospital H(20);                  //Statement 1
+
+ }</pre>
+    <p>
+     (i) Which of the functions out of Function 1, 2, 3, 4 or 5 will get executed when the Statement 1 is executed in the above code?
+     <br/>
+     (ii) Write a Statement to declare a new object G
+     <br/>
+     with reference to already existing object H using Function 3.    [O.D, 2014]
+     <br/>
+     Answer:
+     <br/>
+     (i) Function 1 will get executed.    [1]
+     <br/>
+     (ii) Hospital G(H);    [1]
+    </p>
+    <p>
+     Question 2:
+     <br/>
+     Answer the questions (i) and (ii) after going through the following class :
+    </p>
+    <pre style="padding-left: 30px;">class Health
+
+ {
+
+ int PId, Did; public:
+
+Health (int PPID);            //Function 1
+
+Health ();                    //Function 2
+
+Health (Health &amp;H);           //Function 3
+
+void Entry ();                //Function 4
+
+void Display ();              //Function 5
+
+ };
+
+void main ( )
+
+ {
+
+ Health H(20);               //Statement 1
+
+ }</pre>
+    <p>
+     (i)  Which of the Function out of Function 1, 2, 3, 4 or 5 will get executed when the Statement 1 is executed in the above code ?
+     <br/>
+     (ii)  Write a statement to declare a new object G
+     <br/>
+     with reference to already existing object H using Function 3.
+     <em>
+      [Delhi, 2014]
+     </em>
+     <br/>
+     Answer:
+     <br/>
+     (i) Function 1 will get executed.    [1]
+     <br/>
+     (ii) Hospital G (H);    [1]
+    </p>
+    <p>
+     Question 3:
+     <br/>
+     What is the relationship between a class and an object? Illustrate with a suitable example. [CBSE Comptt., 2013]
+    </p>
+    <p>
+     Answer:
+     <br/>
+     A class is a collection of objects. Each object represents the behaviour and functions, which the class members can performs. In other words, an object is an instance of a class.    [1]
+     <br/>
+     For Example:
+     <br/>
+     A Class Box will have characteristics as length, breadth and height:
+    </p>
+    <pre style="padding-left: 30px;">class Box
+
+ { int length, breadth, height; 
+
+void Display (int length, int breadth, int height) 
+
+{cout&lt;&lt;length&lt;&lt;breadth&lt;&lt;height;}
+
+ };
+
+ void main()
+
+ {Box a=new Box();
+
+ a. Display(10,20,30);
+
+ // a is the object of class Box [1]
+
+ }</pre>
+    <p>
+     <a class="button-blue" href="http://www.learncbse.in/ncert-solutions-class-12-computer-science-c/" title="NCERT Solutions for Class 12 Computer Science (C++)">
+      NCERT Solutions for Class 12 Computer science
+     </a>
+    </p>
+    CONTENT END 2 
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"&gt;
+		&lt;rdf:Description rdf:about="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-implementation-oop-concepts-c/"
+    dc:identifier="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-implementation-oop-concepts-c/"
+    dc:title="NCERT Solutions for Class 12 Computer Science (C++) &amp;#8211; Implementation of OOP Concepts in C++"
+    trackback:ping="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-implementation-oop-concepts-c/trackback/" /&gt;
+&lt;/rdf:RDF&gt;
+   </div>
+  </body>
+ </html>
+ <!-- Google tag (gtag.js) -->
+ <script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-C5VTZJSJCR">
+ </script>
+ <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C5VTZJSJCR');
+ </script>
+ <link href="styles.css" rel="stylesheet"/>
+</head>

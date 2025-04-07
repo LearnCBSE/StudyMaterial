@@ -1,0 +1,4572 @@
+<head>
+<meta charset="utf-8"/>
+<meta content="Bqdk9rTr4" name="admaven-placement"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript">
+</script>
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ncert-solutions-class-12-computer-science-c-networking-open-source-concepts",
+  "url": "https://learncbse.online/ncert-solutions-class-12-computer-science-c-networking-open-source-concepts",
+  "description": "ncert-solutions-class-12-computer-science-c-networking-open-source-concepts"
+}
+ </script>
+<!DOCTYPE html>
+
+<html>
+</html>
+<style><style> background-color: #f0f8ff; border: 1px solid #d1e7ff; border-radius: 5px; font-family: 'Courier New', Courier, monospace; color: #003366; overflow-x: auto; } </style><style> pre, code { background-color: #1e1e1e; /* Dark background */ border-radius: 8px; /* Rounded corners */ padding: 15px; /* Padding for content */ font-family: 'Fira Code', monospace; /* Modern monospace font */ color: #dcdcdc; /* Light text color */ overflow-x: auto; /* Horizontal scroll */ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */ font-size: 14px; /* Font size */ line-height: 1.5; /* Line height for readability */ }
+ /* Optional: Highlight keywords */ .keyword { color: #569cd6; /* Blue color for keywords */ font-weight: bold; /* Bold keywords */ }
+ .string { color: #ce9178; /* String color */ }
+ .comment { color: #6a9955; /* Comment color */ font-style: italic; /* Italicize comments */ }</style><style> pre, code { background-color: #f5f5f5; /* Light grey background */ border-radius: 8px; /* Rounded corners */ padding: 15px; /* Padding for content */ font-family: 'Fira Code', monospace; /* Modern monospace font */ color: #dcdcdc; /* Light text color */ overflow-x: auto; /* Horizontal scroll */ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */ font-size: 14px; /* Font size */ line-height: 1.5; /* Line height for readability */ } /* Optional: Highlight keywords */ .keyword { color: #569cd6; /* Blue color for keywords */ font-weight: bold; /* Bold keywords */ } .string { color: #ce9178; /* String color */ } .comment { color: #6a9955; /* Comment color */ font-style: italic; /* Italicize comments */ } </style><style> /* Updated CSS Rules Here */ /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; /* Modern, clean sans-serif font */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; /* border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); padding: 10px 20px; */ flex-wrap: wrap; /* Ensure the menu items wrap on smaller screens */ text-align: center; /* border-radius: 8px; Rounded corners for a sleek design */ text-decoration: none; /* Remove underline for a clean look */ color: #0056b3; /* Deep blue color for professional tone */ transition: all 0.4s ease; /* Smoother transition effects */ } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; /* Prevent text from wrapping */ } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.7); */ transform: none; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; /* Darker text color for contrast */ border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover (Font Enlargement) */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* For Multi-Level Submenus */ .sub-menu-duplicate .sub-menu-duplicate { left: 100%; top: 0; transform: translateY(-10px); background-color: #f1f1f1; border-left: 4px solid #646667; } /* Active State for Menu Items */ .menu-link-duplicate:active, .menu-link-duplicate:focus { background-color: #0056b3; color: #fff; outline: none; } /* Mobile-Specific Styles */ @media (max-width: 768px) { /* Display only the main menu on mobile devices */ .menu-duplicate { display: flex !important; /* Ensure the main menu is visible */ flex-direction: row; /* Change to horizontal layout */ justify-content: center; /* Center-align menu items horizontally */ background-color: #fff; /* Maintain background color */ } .menu-item-duplicate { margin: 0 10px; /* Add spacing between main menu items horizontally */ } .menu-link-duplicate { font-size: 16px; /* Adjust font size for readability on mobile */ padding: 10px 15px; /* Increase touch area */ } /* Hide all submenus */ .sub-menu-duplicate { display: none !important; /* Completely hide submenus */ visibility: hidden !important; opacity: 0 !important; transform: none !important; } } </style><style> /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; font-size: 1.35rem; font-weight: 700; line-height: 1.6; letter-spacing: 0.03em; list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; flex-wrap: wrap; text-align: center; color: #0056b3; transition: all 0.4s ease; } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 500; position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 500; visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* Hide the menu on mobile devices */ @media (max-width: 768px) { /* Hide the entire menu on mobile devices */ .menu-duplicate { display: none !important; } } </style><style> .social-sidebar { position: fixed; top: 50%; left: 0; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; background-color: #f9f9f9; padding: 10px; border-radius: 0 5px 5px 0; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); z-index: 1000; transition: all 0.3s ease; } .social-sidebar.minimized { left: -50px; } #minimize-button { background-color: #007BFF; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-size: 16px; margin-bottom: 10px; transition: background-color 0.3s ease; } #minimize-button:hover { background-color: #0056b3; } .social-sidebar a { text-decoration: none; display: block; } .social-sidebar .social-icon { width: 30px; height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; } .social-sidebar .social-icon:hover { transform: scale(1.2); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } /* Responsive Design */ @media (max-width: 768px) { .social-sidebar { top: auto; bottom: 10px; left: 10px; flex-direction: row; gap: 15px; border-radius: 5px; padding: 8px; } .social-sidebar.minimized { left: -100%; } .social-sidebar .social-icon { width: 24px; height: 24px; } } </style><style> body { font-family: 'Playfair Display', serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background-color: #f9f9f9; } header, footer { background-color: #282c34; color: white; text-align: center; padding: 1.5rem 0; } h1, h2, h3 { font-family: 'Playfair Display', serif; color: #222; text-align: center; } a { font-family: 'Playfair Display', serif; color: #007BFF; text-decoration: none; font-weight: bold; } a:hover { text-decoration: underline; } p { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: bold; color: #343434; margin: 0; letter-spacing: 0.5px; } </style><style> body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background-color: #f9f9f9; } header, footer { background-color: #282c34; color: white; text-align: center; padding: 1.5rem 0; } h1, h2, h3 { color: #222; text-align: center; } a { color: #007BFF; text-decoration: none; font-weight: bold; } a:hover { text-decoration: underline; } .content { max-width: 900px; margin: 1.2rem auto; padding: 2rem; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); } header { background: linear-gradient(90deg, #4a90e2, #87cefa); color: white; text-align: center; padding: 2.5rem 0; border-bottom: 5px solid #d9e9ff; } h1 { font-size: 2.8rem; font-weight: bold; color: #ffffff; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); margin: 0; letter-spacing: 0.5px; } .secondary-heading { font-size: 1.3rem; font-weight: 500; color: #ffffff; margin-top: 0.2rem; letter-spacing: 0.3px; } @media (min-width: 1024px) { .desktop-banner { max-width: 22% !important; } } p { font-size: 1.2rem; font-weight: bold; color: #343434; margin: 0; letter-spacing: 0.5px; } </style><style> .entry-content { display: flex; justify-content: center; align-items: center; text-align: center; margin: 0 auto; max-width: 90%; /* Optionally set a max-width */ } </style><style> .entry-content { display: block; margin: 0 auto; max-width: 1200px; /* Set max-width if necessary */ padding: 0 1rem; /* Add padding to prevent text from touching edges */ text-align: center; /* Center text within the div */ } </style><style> /* Centering the entry-content div and ensuring good structure */ .entry-content { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin: 2rem auto; padding: 2rem; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; max-width: 1200px; /* Max width for large screens */ width: 100%; /* Ensure it doesn't exceed the container */ box-sizing: border-box; } </style><style> /* Left-aligning the entry-content div and ensuring good structure */ .entry-content { display: block; /* Set to block to avoid flex-based layout */ margin: 2rem auto; padding: 2rem; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; max-width: 1200px; /* Max width for large screens */ width: 100%; /* Ensure it doesn't exceed the container */ box-sizing: border-box; text-align: left; /* Align text to the left */ } </style>
+
+
+
+
+
+</head>
+<body>
+<header class="entry-header">
+<h1 class="entry-title" id="h1-1">
+   NCERT Solutions for Class 12 Computer Science (C++) – Networking and Open Source Concepts
+  </h1>
+</header>
+<div class="entry-content">
+<div class="code-block code-block-2" style="margin: 8px 0; clear: both;">
+</div>
+<h2 id="h2-2">
+<span id="NCERT_Solutions_for_Class_12_Computer_Science_C_8211_Networking_and_Open_Source_Concepts">
+<span style="color: #00ccff;">
+<strong>
+      NCERT Solutions for Class 12 Computer Science (C++) – Networking and Open Source Concepts
+     </strong>
+</span>
+</span>
+</h2>
+<h3 id="h3-1" style="text-align: center;">
+<span id="TOPIC-1_Communication_Technoiogies">
+<span style="color: #0000ff;">
+     TOPIC-1
+    </span>
+<br/>
+<span style="color: #0000ff;">
+     Communication Technoiogies
+    </span>
+</span>
+</h3>
+<p style="text-align: center;">
+<span style="color: #0000ff;">
+<strong>
+     Very Short Answer Type Questions [1 mark each]
+    </strong>
+</span>
+</p>
+<div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 1:
+    </strong>
+</span>
+<br/>
+   Identify the Domain name and URL from the following :
+   <br/>
+   http://www.income.in/home.aboutus.hml
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   Domain name – income.in
+   <br/>
+   URL – http://www.income.in/home.aboutus.hml
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 2:
+     <br/>
+</strong>
+</span>
+   What is Web Hosting?
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   Web hosting is the service that makes our website available to be viewed by others on the Internet. A web host provides space on its server, so that other computers around the world can access our website by means of a network or modem.
+  </p>
+<div class="code-block code-block-3" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 3:
+     <br/>
+</strong>
+</span>
+   What is the difference between packet &amp; message switching ?
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+</p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<strong>
+       Packet Switching
+      </strong>
+</td>
+<td style="text-align: center;">
+<strong>
+       Message switching
+      </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      There is a tight upper limit on the block size. A fixed size of packet is specified.
+     </td>
+<td style="text-align: center;">
+      In message switching there was no upper limit.
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      All the packets are stored in main memory in switching office.
+     </td>
+<td style="text-align: center;">
+      In message switching packets are stored on disk. This increases the performance as access time is reduced.
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 4:
+     <br/>
+</strong>
+</span>
+   Which protocol in used in creating a connection with a remote machine ?
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   Telnet : It is an older internet utility that allow us to log on to remote computer system. It also facilitates for terminal emulation purpose.
+  </p>
+<div class="code-block code-block-4" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 5:
+     <br/>
+</strong>
+</span>
+   Which protocol is used to create a connection with a remote machine? Give any two advantage of using Optical Fibers.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   Telnet Two advantage of using Optical Fibers are
+  </p>
+<ol>
+<li>
+    Capable of extremely high speed.
+   </li>
+<li>
+    No Electromagnetic interference.
+   </li>
+<li>
+    Extremely low attending
+   </li>
+</ol>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 6:
+     <br/>
+</strong>
+</span>
+   What is cloud computing ?
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   The sharing of computer resources (dedicated, time-shared, or dynamically shared servers) and related infrastructurer components (load balancers, firewalls, network storage, developer tools, monitors and management tools) to facilitate the deployment and operation of web and network based applications. Cloud computing relies on sharing of resources to achieve coherence and economies of scale, similar to a utility (like the electricity grid) over a network.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 7:
+     <br/>
+</strong>
+</span>
+   Write two characterstics of Wi-Fi.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+</p>
+<ol>
+<li>
+    It is wireless network.
+   </li>
+<li>
+    It is for short range.
+   </li>
+</ol>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 8:
+     <br/>
+</strong>
+</span>
+   Expand the following :
+  </p>
+<div class="code-block code-block-5" style="margin: 8px 0; clear: both;">
+</div>
+<ol>
+<li>
+    GSM
+   </li>
+<li>
+    GPRS
+   </li>
+</ol>
+<p>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+</p>
+<ol>
+<li>
+    GSM – Global System for Mobile Communication.
+   </li>
+<li>
+    GPRS – General Packet Radio Service.
+   </li>
+</ol>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 9:
+     <br/>
+</strong>
+</span>
+   Which type of network out of LAN, PAN and MAN is formed, when you connect two mobiles using Bluetooth to transfer a video
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   PAN
+  </p>
+<div class="code-block code-block-6" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 10:
+     <br/>
+</strong>
+</span>
+   Write one characterstic each for 2G and 3G mobile technologies.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   2G networks primarily involve the transmission of voice information while 3G technology provides the additional advantage of data transfer.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 11:
+     <br/>
+</strong>
+</span>
+   What is the difference between Packet switching and circuit switching techniques ?
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   In circuit switching, a dedicated path exists from source to destination while in packet switching, there is no fixed path.
+  </p>
+<div class="code-block code-block-7" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 12:
+     <br/>
+</strong>
+</span>
+   Write two advantages of using an optical fibre cable over an Ethernet cable to connect two service stations, which are 200 m away from each other.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   Advantages of optical fibre :
+  </p>
+<ol>
+<li>
+    Faster speed than ethernet
+   </li>
+<li>
+    Lower Attenuation
+   </li>
+</ol>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 13:
+     <br/>
+</strong>
+</span>
+   Write one advantage of bus topology of network. Also illustrate how four (4) computers can be connected with each other using bus topology of network.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   Advantage (benefits) of Linear Bus Topology is that the cable length required for this topology is the least compared to the other networks.
+   <br/>
+   Bus Topology of Network:
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(198-1)" class="alignnone size-full wp-image-60079" data-recalc-dims="1" decoding="async" height="192" loading="lazy" sizes="(max-width: 314px) 100vw, 314px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-198-1.png?resize=314%2C192&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-198-1.png?w=314&amp;ssl=1 314w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-198-1.png?resize=300%2C183&amp;ssl=1 300w" width="314"/>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 14:
+     <br/>
+</strong>
+</span>
+   Give one suitable example of each URL and Domain Name.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   URL: http://waltons.in
+   <br/>
+   Domain Name: gmail.com
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 15:
+     <br/>
+</strong>
+</span>
+   Write one advantage of star topology of network ? Also, illustrate how five (5) computers can be connected with each other using star topology of network.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   Advantage (benefits) of star toplogy:
+   <br/>
+   Easy to replace, install or remove hosts or other devices.
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(198-2)" class="alignnone size-full wp-image-60081" data-recalc-dims="1" decoding="async" height="264" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-198-2.png?resize=293%2C264&amp;ssl=1" width="293"/>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 16:
+     <br/>
+</strong>
+</span>
+   Identify the type of topology on the basis of the following :
+   <br/>
+   (a) Since every node is directly connected to the server, a large amount of cable is needed which increases the installation cost of the network.
+   <br/>
+   (b) It has a single common data path connecting all the nods.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   (a) Star Topology
+   <br/>
+   (b) Bus Topology
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 17:
+     <br/>
+</strong>
+</span>
+   Expand the following :
+   <br/>
+   (a) VOIP
+   <br/>
+   (b) SMTP
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   (a) Voice Over Internet Protocol
+   <br/>
+   (b) Simple Mail Transfer Protocol
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 18:
+     <br/>
+</strong>
+</span>
+   Daniel has to share the data among various computers of his two offices branches situated in the same city. Name the network (out of LAN, WAN, PAN and MAN) which is being formed in this process.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   MAN
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 19:
+     <br/>
+</strong>
+</span>
+   ABC International School is planning to connect • all computers, each spread over a distance of 50 metres. Suggest an economic cable type having high speed data transfer to connect these computers.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   Optical Fibre Cable.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 20:
+     <br/>
+</strong>
+</span>
+   Mahesh wants to transfer data within a city at very high speed. Write the wired transmission medium and type of network.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   Wired transmission medium – Optical fibre cable Type of network – MAN.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 21:
+     <br/>
+</strong>
+</span>
+   Which device is used to connect all computers inside a lab ?
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   Hub or Switch
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 22:
+     <br/>
+</strong>
+</span>
+   Which device is used to connect all computers to the internet using telephone wire ?
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   RJ – 45. It is an eight wired connectors used to connect computers on a LAN.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 23:
+     <br/>
+</strong>
+</span>
+   What is Wi-Fi Card ?
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   Wi-Fi cards are small and portable cards that allow the computer to connect to the internet through a wireless network. The transmission is through the use of radio waves.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 24:
+    </strong>
+</span>
+<br/>
+   Explain the purpose of a router.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   A router establishes connection between two network and it can handle network with different protocols. Using a routing table, routers make sure that the data packets are travelling through the best possible paths to reach their destination.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 25:
+     <br/>
+</strong>
+</span>
+   Identify the type of topology from the following.
+   <br/>
+   (a) Each node is connected with the help of a single cable
+   <br/>
+   (b) Each node is connected with the help of independent cable with central switching.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   (a) Bus topology
+   <br/>
+   (b) Star topology
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 26:
+     <br/>
+</strong>
+</span>
+   What is the difference between LAN and MAN ?
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   LAN : It is Local Area Network. The diameter is not more than a single building.
+   <br/>
+   WAN : It is Metropolitan Area Network. LAN spans a few kms while MAN spans 5-50 km diameter and is larger than a WAN.
+  </p>
+<p style="text-align: center;">
+<span style="color: #0000ff;">
+<strong>
+     Short Answer Type Questions-I [2 marks each]
+     <br/>
+</strong>
+</span>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 1:
+    </strong>
+</span>
+<br/>
+   Write any 1 advantage and 1 disadvantage of Bus topology.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   Advantage : Since there is a single common data path connecting all the nodes, the bus topology uses a very short cable length which considerably reduces the installation cost. Disadvantage : Fault detection and isolation is difficult. This is because control of the network is not centralized in any particular node. If a node is faulty on the bus, detection of fault may have to be performed at many points on the network. The faulty node has then to be rectified at that connection point.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 2:
+    </strong>
+</span>
+<br/>
+   SunRise Pvt. Ltd. is setting up the network in the Ahmedabad. There are four departments named as MrktDept, FinDept, LegalDept, SalesDept.
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(199-1)" class="alignnone size-full wp-image-60082" data-recalc-dims="1" decoding="async" height="244" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-199-1.png?resize=282%2C244&amp;ssl=1" width="282"/>
+<br/>
+   Distance between varioud buldings is as given:
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+      MrktDept to FinDept
+     </td>
+<td style="text-align: center;">
+      80 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      MrktDept to LegalDept
+     </td>
+<td style="text-align: center;">
+      180 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      MrktDept to SalesDept
+     </td>
+<td style="text-align: center;">
+      100 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      LegalDept to SalesDept
+     </td>
+<td style="text-align: center;">
+      150 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      LegalDept to FinDept
+     </td>
+<td style="text-align: center;">
+      100 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      FinDept to SalesDept
+     </td>
+<td style="text-align: center;">
+      50 m
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+   Number of Computers in the buildings :
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+      MrktDept
+     </td>
+<td style="text-align: center;">
+      20
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      LegalDept
+     </td>
+<td style="text-align: center;">
+      10
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      FinDept
+     </td>
+<td style="text-align: center;">
+      08
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      SalesDept
+     </td>
+<td style="text-align: center;">
+      42
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+   (i) Suggest a cable layout of connections between the Departments and specify the topology.
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(200-1)" class="alignnone size-full wp-image-60083" data-recalc-dims="1" decoding="async" height="358" loading="lazy" sizes="auto, (max-width: 306px) 100vw, 306px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-200-1.png?resize=306%2C358&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-200-1.png?w=306&amp;ssl=1 306w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-200-1.png?resize=256%2C300&amp;ssl=1 256w" width="306"/>
+<br/>
+   Star Topology should be used.
+   <br/>
+   (ii) Suggest the most suitable building to place the server by giving suitable reason.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   As per 80 – 20 rule, server should be placed in MrktDept because it has maximium no. of computers.
+   <br/>
+   (iii) Suggest the placement of (i) modem (ii) Hub/ Switch in the network.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   Each building should have hub/switch and moderm in case Internet connection is required.
+   <br/>
+   (iv) The organization is planning to link its sale counter situated in various part of the same city, which type of network out of LAN, WAN, MAN will be formed ? Justify.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   MAN (Metropolitan Area Network) as MAN network can be carried out in a city network.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 3:
+    </strong>
+</span>
+<br/>
+   Name the protocol
+   <br/>
+   (i) Used to transfer voice using packet switched network.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   VAns.VOIP (Voice Over Internet Protocol)
+   <br/>
+   (ii) Used for chatting between 2 group or between 2 individuals.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   IRC (Internet Relay Chat)
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 4:
+    </strong>
+</span>
+<br/>
+   What is an IP Address ?
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   IP address is a unique identifier for a node or host connection on an IP network. An IP address is a 32 bit binary number usually represented as 4 decimal values, each representing 8 bits, in the range 0 to 255 (know as octets) separated by decimal points. This is known as “dotted decimal” notation.
+   <br/>
+   Example : 140.179.220.200
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 5:
+     <br/>
+</strong>
+</span>
+   What is HTTP ?
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   HTTP is a protocol that is used for transferring hypertext (i.e., text,graphic,image,sound,video,e tc,) between 2 computers and is particularly used on the world wideWeb (WWW).
+   <br/>
+   [1 mark for definition/explanation]
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 6:
+     <br/>
+</strong>
+</span>
+   Explain the importance of Cookies.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   When the user browses a website, the web server sends a text file to the web browser. This small text file is a cookie. They are usually used to track the pages that we visit so that information can be customised for us for that visit.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 7:
+     <br/>
+</strong>
+</span>
+   How is 4G different from 3G?
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   3G technology adds multimedia facilities such as video, audio and graphics applications whereas 4G will provide better than TV quality images and video-links.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 8:
+     <br/>
+</strong>
+</span>
+   Illustrate the layout for connecting 5 computers
+   <br/>
+   in a Bus and a Start topology of Networks.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   Bus topology
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(200-2)" class="alignnone size-full wp-image-60084" data-recalc-dims="1" decoding="async" height="281" loading="lazy" sizes="auto, (max-width: 399px) 100vw, 399px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-200-2.png?resize=399%2C281&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-200-2.png?w=399&amp;ssl=1 399w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-200-2.png?resize=300%2C211&amp;ssl=1 300w" width="399"/>
+<br/>
+   Or any valid illustration of Bus and Star Topology.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 9:
+    </strong>
+</span>
+<br/>
+   What is a spam mail ?
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   Spam is the abuse of electronic messaging systems (including most broadcast media, digital delivery systems) to send unsolicited bulk messages indiscriminately.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 10:
+     <br/>
+</strong>
+</span>
+   Differentiate between FTP and HTTP
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   FTP is a protocol to transfer files over the Internet
+   <br/>
+   HTTP is a protocol which allows the use of HTML to browse web pages in the World Wide Web.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 11:
+     <br/>
+</strong>
+</span>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+      <br/>
+</span>
+</strong>
+</span>
+   following, which is the fastest
+  </p>
+<ol>
+<li>
+    wired and
+   </li>
+<li>
+    wireless medium of communication ?
+   </li>
+</ol>
+<p>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+</p>
+<ol>
+<li>
+    Wired – Optical Fiber
+   </li>
+<li>
+    Wireless – Infrared OR Microwave
+   </li>
+</ol>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 12:
+     <br/>
+</strong>
+</span>
+   What is Worm ? How is it removed ?
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   A worm is a self-replicating computer program. It uses a network to send copies of itself to other computers on the network and it may do so without any user intervention.
+   <br/>
+   Most of .the common anti-virus (anti-worm) remove worm.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 13:
+     <br/>
+</strong>
+</span>
+   Out of the following, which all comes under cyber crime ?
+   <br/>
+   (i) Stealing away a brand new computer from a showroom.
+   <br/>
+   (ii) Getting in someone’s social networking account without his consent and posting pictures on his behalf to harash him.
+   <br/>
+   (iii) Secretly copying files from server of a call center and selling it to the other organization.
+   <br/>
+   (iv) Viewing sites on a internet browser.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   (ii) &amp; (iii)
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 14:
+     <br/>
+</strong>
+</span>
+   Perfect Edu Services Ltd. is an educational organization. It is planning to setup its India campus at Chennai with its head office at Delhi. The Chennai campus has 4 main buildings – ADMIN, ENGINEERING, BUSINESS and MEDIA. [O.D, 2015]
+   <br/>
+   You as a network expert have to suggest the best network related solutions for their problems raised in (i) to (iv), keeping in mind the distances between the buildings and other given parameters.
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(201-1)" class="alignnone size-full wp-image-60085" data-recalc-dims="1" decoding="async" height="143" loading="lazy" sizes="auto, (max-width: 393px) 100vw, 393px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-201-1.png?resize=393%2C143&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-201-1.png?w=393&amp;ssl=1 393w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-201-1.png?resize=300%2C109&amp;ssl=1 300w" width="393"/>
+<br/>
+   Shortest distances between various buildings.
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="padding-left: 30px;">
+      ADMIN To ENGINEERING
+     </td>
+<td style="padding-left: 30px;">
+      55 m
+     </td>
+</tr>
+<tr>
+<td style="padding-left: 30px;">
+      ADMIN to BUSINESS
+     </td>
+<td style="padding-left: 30px;">
+      90 m
+     </td>
+</tr>
+<tr>
+<td style="padding-left: 30px;">
+      ADMIN to MEDIA
+     </td>
+<td style="padding-left: 30px;">
+      90 m
+     </td>
+</tr>
+<tr>
+<td style="padding-left: 30px;">
+      ENGINEERING to BUSINESS
+     </td>
+<td style="padding-left: 30px;">
+      55 m
+     </td>
+</tr>
+<tr>
+<td style="padding-left: 30px;">
+      ENGINEERING to MEDIA
+     </td>
+<td style="padding-left: 30px;">
+      90 m
+     </td>
+</tr>
+<tr>
+<td style="padding-left: 30px;">
+      BUSINESS to MEDIA
+     </td>
+<td style="padding-left: 30px;">
+      45 m
+     </td>
+</tr>
+<tr>
+<td style="padding-left: 30px;">
+      DELHI Head Office to CHENNAI Campus
+     </td>
+<td style="padding-left: 30px;">
+      2175 km
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+   Number of Computers Installed at various buildings are as follows :
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="padding-left: 30px;">
+      ADMIN
+     </td>
+<td style="padding-left: 30px;">
+      110
+     </td>
+</tr>
+<tr>
+<td style="padding-left: 30px;">
+      ENGINEERING
+     </td>
+<td style="padding-left: 30px;">
+      75
+     </td>
+</tr>
+<tr>
+<td style="padding-left: 30px;">
+      BUSINESS
+     </td>
+<td style="padding-left: 30px;">
+      40
+     </td>
+</tr>
+<tr>
+<td style="padding-left: 30px;">
+      MEDIA
+     </td>
+<td style="padding-left: 30px;">
+      12
+     </td>
+</tr>
+<tr>
+<td style="padding-left: 30px;">
+      DELHI Head Office
+     </td>
+<td style="padding-left: 30px;">
+      20
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+   (i) Suggest the most appropriate location of the server inside the Chennai campus (out of the 4 buildings), to get the best connectivity for maximum no. of computers. Justify your answer.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   ADMIN (Due to maximum number of computers)
+   <br/>
+<strong>
+    OR
+   </strong>
+<br/>
+   Media (Due to shorter distance from the other buildings)
+   <br/>
+   (ii) Suggest and draw the cable layout to efficiently connect various buildings within the Chennai Campus for connecting the computers.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   Anyone of the following
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(201-2)" class="alignnone size-full wp-image-60086" data-recalc-dims="1" decoding="async" height="154" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-201-2.png?resize=284%2C154&amp;ssl=1" width="284"/>
+<br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(202-1)" class="alignnone size-full wp-image-60087" data-recalc-dims="1" decoding="async" height="164" loading="lazy" sizes="auto, (max-width: 307px) 100vw, 307px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-202-1.png?resize=307%2C164&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-202-1.png?w=307&amp;ssl=1 307w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-202-1.png?resize=300%2C160&amp;ssl=1 300w" width="307"/>
+<br/>
+   (iii) Which hardware device will you suggest to be procured by the company to be installed to protect and control the internet uses within the campus ?
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   Firewall OR Router
+   <br/>
+   (iv) Which of the following will you suggest to establish the online face-to-face communication between the people in the Admin Office of Chennai Campus and Delhi Head Office ?
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   Cable TV
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 15:
+    </strong>
+</span>
+<br/>
+   What kind of data gets stored in cookies and how is it useful ?
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   When a Website with cookie capabilities is visited, its server sends certain information about the browser, which is stored in the hard drive as a text file. It is as way for the server to remember things about the visited sites.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 16:
+    </strong>
+</span>
+<br/>
+   Differentiate between packet switching over message switching ?
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   Packet Switching : Follow store and forward principle for fixed packets. Fixes an upper limit for packet size.
+   <br/>
+   Message Switching : Follows store and forward principle for complete message. No limit on block size.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 17:
+    </strong>
+</span>
+<br/>
+   Out of the following, which is the fastest
+   <br/>
+   (i) wired and
+   <br/>
+   (ii) wireless medium of communication ?
+   <br/>
+   Infrared, Coaxial Cable, Ethernet Cable, Microwave, Optical Fiber
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   (i) Wired : Optical Fiber
+   <br/>
+   (ii) Wireless : Infrared OR Microwave
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 18:
+    </strong>
+</span>
+<br/>
+   What is Trojan Horse ?
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   A Trojan Horse is a code hidden in a program, that looks safe but has hidden side effects typically causing loss or theft of data, and possible system harm.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 19:
+    </strong>
+</span>
+<br/>
+   Out of the following, which all comes under cyber crime ?
+  </p>
+<ol>
+<li>
+    Stealing away a brand new hard disk from a showroom.
+   </li>
+<li>
+    Getting in someone’s social networking account without his consent and posting on his behalf.
+   </li>
+<li>
+    Secretly copying data from server of an organization and selling it to tire other organization.
+   </li>
+<li>
+    Looking at online activities of a friends blog.
+   </li>
+</ol>
+<p>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   (ii) &amp; (iii)
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 20:
+    </strong>
+</span>
+<br/>
+   Write any two differences between twisted pair and coaxial pair cable.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+</p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<strong>
+       Twisted Pair
+      </strong>
+</td>
+<td style="text-align: center;">
+<strong>
+       Co-axial Cable
+      </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Their bandwidth is not as high as coaxial cables.
+     </td>
+<td style="text-align: center;">
+      It has high bandwidth.
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      A twisted pair consists of two copper wires twisted around each other (each has its own insulation around it) like a double helix.
+     </td>
+<td style="text-align: center;">
+      A coaxial cable consists of a copper wire core covered by an insulating material and a layer of conducting material over that.
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 21:
+    </strong>
+</span>
+<br/>
+   Write one advantage of Bus Topology of network, also, illustrate how 4 computers can be connected with each other using star topology of network.
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   Cable length required for his topology is the least compared to other networks.
+   <br/>
+<strong>
+    OR
+   </strong>
+<br/>
+   Any other correct advantage of Bus Topology of network.
+   <br/>
+   Illustration of 4 computers connected with each other using star topology of network.
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(202-2)" class="alignnone size-full wp-image-60088" data-recalc-dims="1" decoding="async" height="123" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-202-2.png?resize=276%2C123&amp;ssl=1" width="276"/>
+</p>
+<p style="text-align: center;">
+<span style="color: #0000ff;">
+<strong>
+     Short Answer Type Question-II [3 marks]
+     <br/>
+</strong>
+</span>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 1:
+    </strong>
+</span>
+<br/>
+   Uplifting Skills Hub India is a knowledge and skill community which has an aim to uplift the standard of knowledge and skills in the society. It is planning to setup its training centres in multiple towns and villages pan India with its head offices in the nearest cities. They have created a model of their network with a city, a town and 3 villages as follows.
+   <br/>
+   As a network consultant, you have to suggest the best network related solutions for their issues/problems raised in (i) to (iv) keeping in mind the distance between various locations and given parameters.
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(203-1)" class="alignnone size-full wp-image-60089" data-recalc-dims="1" decoding="async" height="169" loading="lazy" sizes="auto, (max-width: 401px) 100vw, 401px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-203-1.png?resize=401%2C169&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-203-1.png?w=401&amp;ssl=1 401w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-203-1.png?resize=300%2C126&amp;ssl=1 300w" width="401"/>
+<br/>
+   Shortest distance between various location :
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+      VILLAGE 1 to B_TOWN
+     </td>
+<td style="text-align: center;">
+      2 KM
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      VILLAGE 2 to B_TOWN
+     </td>
+<td style="text-align: center;">
+      1.0 KM
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      VILLAGE 3 to B_TOWN
+     </td>
+<td style="text-align: center;">
+      1.5 KM
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      VILLAGE 1 to VILLAGE 2
+     </td>
+<td style="text-align: center;">
+      3.5 KM
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      VILLAGE 1 to VILLAGE 3
+     </td>
+<td style="text-align: center;">
+      4.5 KM
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      VILLAGE 2 to VILLAGE 3
+     </td>
+<td style="text-align: center;">
+      2.5 KM
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      A CITY Head Office to B HUB
+     </td>
+<td style="text-align: center;">
+      25 KM
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+   Number of Computers installed at various locations are as follows :
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+      B_TOWN
+     </td>
+<td style="text-align: center;">
+      120
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      VILLAGE 1
+     </td>
+<td style="text-align: center;">
+      15
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      VILLAGE 2
+     </td>
+<td style="text-align: center;">
+      10
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      VILLAGE 3
+     </td>
+<td style="text-align: center;">
+      15
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      A_CITY OFFICE
+     </td>
+<td style="text-align: center;">
+      6
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+   Note :
+  </p>
+<p>
+   • In Villages, there are community centres, in which one room has been given as training center to this organization to install computers.
+   <br/>
+   • The organization has got financial support from the government and top IT companies.
+  </p>
+<ol>
+<li>
+    Suggest the most appropriate location of the SERVER in the BHUB (out of the 4 locations), to get the best and effective connectivity. Justify your answer.
+   </li>
+<li>
+    Suggest the best wired medium and draw the cable layout (location to location) to efficiently connect various locations within the B HUB.
+   </li>
+<li>
+    Which hardware device will you suggest to connect all the computers within each location of B_HUB ?
+   </li>
+<li>
+    Which service/protocol will be most helpful to conduct live interactions of Experts from Head Office and people at all locations of B HUB ?
+   </li>
+</ol>
+<p>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   (i) B-TOWN can house the server as it has the maximum no. of computers.
+   <br/>
+   (ii) Optical fibre cable is the best for this star topology.
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(203-2)" class="alignnone size-full wp-image-60090" data-recalc-dims="1" decoding="async" height="198" loading="lazy" sizes="auto, (max-width: 400px) 100vw, 400px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-203-2.png?resize=400%2C198&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-203-2.png?w=400&amp;ssl=1 400w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-203-2.png?resize=300%2C149&amp;ssl=1 300w" width="400"/>
+<br/>
+   (iii) Switch
+   <br/>
+   (iv) VoIP
+  </p>
+<p style="text-align: center;">
+<span style="color: #0000ff;">
+<strong>
+     Long Answer Type Questions [4 marks each]
+     <br/>
+</strong>
+</span>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 1:
+    </strong>
+</span>
+<br/>
+   Indian School in Mumbai is starting up the network between its different wings. There are Four Buildings named as SENIOR, JUNIOR, ADMIN and HOSTEL as shown below.:
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(203-3)" class="alignnone size-full wp-image-60091" data-recalc-dims="1" decoding="async" height="141" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-203-3.png?resize=101%2C141&amp;ssl=1" width="101"/>
+<br/>
+   The distance between various buildings is as follows:
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+      ADMIN TO SENIOR
+     </td>
+<td style="text-align: center;">
+      200m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      ADMIN TO JUNIOR
+     </td>
+<td style="text-align: center;">
+      150m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      ADMIN TO HOSTEL
+     </td>
+<td style="text-align: center;">
+      50m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      SENIOR TO JUNIOR
+     </td>
+<td style="text-align: center;">
+      250m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      SENIOR TO HOSTEL
+     </td>
+<td style="text-align: center;">
+      350m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      JUNIOR TO HOSTEL
+     </td>
+<td style="text-align: center;">
+      350m
+     </td>
+</tr>
+</tbody>
+</table>
+<p class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTION0" style="background: transparent;">
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+     Number of Computers in Each Building :
+     <br/>
+</span>
+</span>
+</p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+      SENIOR
+     </td>
+<td style="text-align: center;">
+      130
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      JUNIOR
+     </td>
+<td style="text-align: center;">
+      80
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      ADMIN
+     </td>
+<td style="text-align: center;">
+      160
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      HOSTEL
+     </td>
+<td style="text-align: center;">
+      50
+     </td>
+</tr>
+</tbody>
+</table>
+<p class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTION0" style="background: transparent;">
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+     (b1) Suggest the cable layout of connections between the buildings.
+     <br/>
+     (b2) Suggest the most suitable place (i.e., building) to house the server of this school, provide a suitable reason.
+     <br/>
+     (b3) Suggest the placement of the following devices with justification, i Repeater i Hub/Switch
+     <br/>
+     (b4) The organisation also has inquiry office in another dty about 50-60 km away in hilly region. Suggest the suitable transmission media to interconnect to school and inquiry office out of the following : i Fiber optic cable, i Microwave, i Radiowave
+     <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+<br/>
+   (b1)
+  </p>
+<p class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTION0" style="background: transparent;">
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(204-1)" class="alignnone size-full wp-image-60092" data-recalc-dims="1" decoding="async" height="118" loading="lazy" sizes="auto, (max-width: 364px) 100vw, 364px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-204-1.png?resize=364%2C118&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-204-1.png?w=364&amp;ssl=1 364w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-204-1.png?resize=300%2C97&amp;ssl=1 300w" width="364"/>
+</p>
+<p>
+   (b2) Server can be placed in the ADMIN building as it has the maxium number of computer.
+   <br/>
+   (b3) Repeater can be placed between ADMIN and SENIOR building as the distance is more than 110 m.
+   <br/>
+   (b4) Radiowaves can be used in hilly regions as they can travel through obstacles.
+  </p>
+<p class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTION0" style="background: transparent;">
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 2:
+      </strong>
+</span>
+<br/>
+     Vidya Senior Secondary Public School in Nainital is setting up the network between its different wings. There are 4 wings named as SENIOR(S), JUNIOR(J), ADMIN(A) and HOSTEL(H).
+     <br/>
+     Distance between various wings are given below :
+     <br/>
+</span>
+</span>
+</p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+      Wing A to Wing S
+     </td>
+<td style="text-align: center;">
+      100 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Wing A to Wing J
+     </td>
+<td style="text-align: center;">
+      200 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Wing A to Wing H
+     </td>
+<td style="text-align: center;">
+      400 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Wing S to Wing J
+     </td>
+<td style="text-align: center;">
+      300 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Wing S to Wing H
+     </td>
+<td style="text-align: center;">
+      100 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Wing J to Wing H
+     </td>
+<td style="text-align: center;">
+      450 m
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+</p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+      Wing
+     </td>
+<td style="text-align: center;">
+      Number of Computers
+     </td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">
+       Wing A
+       <br/>
+       Wing S
+       <br/>
+       Wing J
+       <br/>
+       Wing H
+      </p>
+</td>
+<td>
+<p style="text-align: center;">
+       20
+       <br/>
+       150
+       <br/>
+       50
+       <br/>
+       25
+      </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+   (ii) Name the most suitable wing where the Server should be installed. Justify your answer.
+   <br/>
+   (iii) Suggest where all Hub(s)/Switch(es) should be placed in the network.
+   <br/>
+   (iv) Which communication medium would you suggest to connect this school with its main branch in Delhi ?
+   <br/>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   (i) Star Topology
+  </p>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(204-2)" class="alignnone size-full wp-image-60093" data-recalc-dims="1" decoding="async" height="100" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-204-2.png?resize=235%2C100&amp;ssl=1" width="235"/>
+</span>
+</span>
+</p>
+<p>
+   (ii) Server should be in Wing S as it has the maximum number of computers.
+   <br/>
+   (iii) All Wings need hub/switch as it has more than one computer.
+   <br/>
+   (iv) Since the distance is more, wireless transmission would be better. Radiowaves are reliable and can travel through obstacles
+  </p>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 3:
+      </strong>
+</span>
+</span>
+</span>
+<br/>
+   Trine Tech Corporation (TTC) is a professional consultancy company. The company is planning to set up their new offices in India with its hub at Hyderabad. As a network adviser, you have to understand their requirement and suggest them the best available solutions. Their queries are mentioned as (i) to (iv) below.
+   <br/>
+   Physical Locations of the blocks of TTC
+  </p>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(204-3)" class="alignnone size-full wp-image-60094" data-recalc-dims="1" decoding="async" height="218" loading="lazy" sizes="auto, (max-width: 401px) 100vw, 401px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-204-3.png?resize=401%2C218&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-204-3.png?w=401&amp;ssl=1 401w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-204-3.png?resize=300%2C163&amp;ssl=1 300w" width="401"/>
+<br/>
+</span>
+</span>
+<br/>
+   Block to Block distances (in Mtrs.)
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<strong>
+       Block (From)
+      </strong>
+</td>
+<td style="text-align: center;">
+<strong>
+       Block (To)
+      </strong>
+</td>
+<td style="text-align: center;">
+<strong>
+       Distance
+      </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Human Resource
+     </td>
+<td style="text-align: center;">
+      Conference
+     </td>
+<td style="text-align: center;">
+      110
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Human Resource
+     </td>
+<td style="text-align: center;">
+      Finance
+     </td>
+<td style="text-align: center;">
+      40
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Conference
+     </td>
+<td style="text-align: center;">
+      Finance
+     </td>
+<td style="text-align: center;">
+      80
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+   Expected Number of Computers to be installed in each block
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<strong>
+       Block
+      </strong>
+</td>
+<td style="text-align: center;">
+<strong>
+       Computers
+      </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Human Resource
+      <br/>
+      Finance
+      <br/>
+      Conference
+     </td>
+<td style="text-align: center;">
+      25
+      <br/>
+      120
+      <br/>
+      90
+     </td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>
+    What will be the most appropriate block, where TTC should plan to install their server?
+   </li>
+<li>
+    Draw a block diagram showing cable layout to connect all the buildings in the most appropriate manner for efficient communication.
+   </li>
+<li>
+    What will be the best possible connectivity out of the following, you will suggest to connect the new setup of offices in Bangalore with its London based office.
+    <br/>
+    • Satellite Link
+    <br/>
+    • Infrared
+    <br/>
+    • Ethernet Cable
+   </li>
+<li>
+    Which of the following device will be suggested by you to connect each computer in each of the buildings?
+    <br/>
+    • Switch
+    <br/>
+    • Modem
+    <br/>
+    • Gateway
+   </li>
+</ol>
+<p>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   (i) Finance block because it has maximum number of computers.
+   <br/>
+   (ii)
+  </p>
+<p>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(205-1)" class="alignnone size-full wp-image-60095" data-recalc-dims="1" decoding="async" height="104" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-205-1.png?resize=271%2C104&amp;ssl=1" width="271"/>
+</p>
+<p>
+   (iii) Satellite link
+   <br/>
+   (iv) Switch
+  </p>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 4:
+      </strong>
+</span>
+</span>
+</span>
+<br/>
+   Tech Up Corporation (TUC) is a professional consultancy company. The company is planning to set up their new offices in India with its hub at Hyderabad. As a network adviser, you have to understand their requirement and suggest them the best available solutions. Their queries are mentioned as (i) to (iv) below.
+   <br/>
+   Physical Locations of the blocks of TUC
+  </p>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(205-2)" class="alignnone size-full wp-image-60096" data-recalc-dims="1" decoding="async" height="193" loading="lazy" sizes="auto, (max-width: 390px) 100vw, 390px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-205-2.png?resize=390%2C193&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-205-2.png?w=390&amp;ssl=1 390w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-205-2.png?resize=300%2C148&amp;ssl=1 300w" width="390"/>
+</span>
+</span>
+<br/>
+   Block to Block distances (in Mtrs.)
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<strong>
+       Block (From)
+      </strong>
+</td>
+<td style="text-align: center;">
+<strong>
+       Block (To)
+      </strong>
+</td>
+<td style="text-align: center;">
+<strong>
+       Distance
+      </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Human Resource
+     </td>
+<td style="text-align: center;">
+      Conference
+     </td>
+<td style="text-align: center;">
+      60
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Human Resource
+     </td>
+<td style="text-align: center;">
+      Finance
+     </td>
+<td style="text-align: center;">
+      120
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Conference
+     </td>
+<td style="text-align: center;">
+      Finance
+     </td>
+<td style="text-align: center;">
+      80
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+   Expected Number of Computers to be installed in each block
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<strong>
+       Block
+      </strong>
+</td>
+<td style="text-align: center;">
+<strong>
+       Computers
+      </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Human Resource
+      <br/>
+      Finance
+      <br/>
+      Conference
+     </td>
+<td style="text-align: center;">
+      25
+      <br/>
+      120
+      <br/>
+      90
+     </td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>
+    What will be the most appropriate block, where TUC should plan to install their server?
+   </li>
+<li>
+    Draw a block to block cable layout to connect all the buildings in the most appropriate manner for efficient communication.
+   </li>
+<li>
+    What will be the best possible connectivity out of the following you will suggest to connect the new setup of offices in Bangalore with its London based office?
+    <br/>
+    • Infrared
+    <br/>
+    • Satellite Link
+    <br/>
+    • Ethernet Cable
+   </li>
+<li>
+    Which of the following devices will be suggested by you to connect each computer in each of the buildings?
+    <br/>
+    • Gateway
+    <br/>
+    • Switch
+    <br/>
+    • Modem
+   </li>
+</ol>
+<p>
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+      Answer:
+     </span>
+</strong>
+</span>
+<br/>
+   (i) Human resource block because it has maximum number of computers.
+   <br/>
+   (ii)
+   <br/>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(205-3)" class="alignnone size-full wp-image-60097" data-recalc-dims="1" decoding="async" height="105" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-205-3.png?resize=265%2C105&amp;ssl=1" width="265"/>
+</span>
+</span>
+<br/>
+   (iii) Satellite link
+   <br/>
+   (iv) Switch
+  </p>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 5:
+      </strong>
+</span>
+</span>
+</span>
+<br/>
+   G.R.K International Inc. is planning to connect its Bengaluru Office Setup with its Head Office in Delhi. The Bengaluru Office G.R.K. inter-national Inc. is spread across and area of approx. 1 square kilometer, consisting of 3 blocks – Human Resources, Academics and Administration.
+   <br/>
+   You as a network expert have to suggest answers to the four queries (i) to (iv) raised by them.
+   <br/>
+   Note : Keep the distance’ between blocks and no. of computers in each block in mind, while providing them the solutions.
+  </p>
+<p>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(205-4)" class="alignnone size-full wp-image-60098" data-recalc-dims="1" decoding="async" height="120" loading="lazy" sizes="auto, (max-width: 366px) 100vw, 366px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-205-4.png?resize=366%2C120&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-205-4.png?w=366&amp;ssl=1 366w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-205-4.png?resize=300%2C98&amp;ssl=1 300w" width="366"/>
+</p>
+<p>
+   Shortest distances between various blocks :
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+      Human Resources to Administration
+     </td>
+<td style="text-align: center;">
+      100 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Human Resources to Academics
+     </td>
+<td style="text-align: center;">
+      65 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Academics to Administration
+     </td>
+<td style="text-align: center;">
+      110 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Delhi Head Office to Bengaluru Office Setup
+     </td>
+<td style="text-align: center;">
+      2350 km
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+   Number of Computers installed at various blocks are as follows:
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<strong>
+       BLOCK
+      </strong>
+</td>
+<td style="text-align: center;">
+<strong>
+       No. of Computers
+      </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Human Resources
+     </td>
+<td style="text-align: center;">
+      155
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Administration
+     </td>
+<td style="text-align: center;">
+      20
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Academics
+     </td>
+<td style="text-align: center;">
+      100
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Delhi Head Office
+     </td>
+<td style="text-align: center;">
+      20
+     </td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>
+    Suggest the most suitable block in the Bengaluru Office Setup, to host the server. Give a suitable reason with your suggestion.
+   </li>
+<li>
+    Suggest the cable layout among the various blocks within the Bengaluru Office Setup for connecting the Blocks.
+   </li>
+<li>
+    Suggest a suitable networking device to be installed in each of the blocks essentially required for connecting computers inside the blocks with fast and efficient connectivity.
+   </li>
+<li>
+    Suggest the most suitable media to provide secure, fast and reliable data connectivity between Delhi Head Office and the Bengaluru Office Setup.
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+</p>
+<p>
+   (i) Human Resources because it has maximum number of computers.
+   <br/>
+   (ii)
+  </p>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(206-1)" class="alignnone size-full wp-image-60099" data-recalc-dims="1" decoding="async" height="110" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-206-1.png?resize=274%2C110&amp;ssl=1" width="274"/>
+</span>
+</span>
+<br/>
+   (iii) Switch
+   <br/>
+   (iv) Satellite link
+  </p>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 6:
+      </strong>
+</span>
+</span>
+</span>
+<br/>
+   Rovenza Communications International (RCI) is an online corporate training provider company for IT related courses. The company is setting up their new campus in Kolkata. You as a network expert have to study the physical locations of various blocks and the number of computers to be installed. In the planning phase, provide the best possible answers for the queries (i) to (iv) raised by them.
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(206-2)" class="alignnone size-full wp-image-60100" data-recalc-dims="1" decoding="async" height="265" loading="lazy" sizes="auto, (max-width: 425px) 100vw, 425px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-206-2.png?resize=425%2C265&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-206-2.png?w=425&amp;ssl=1 425w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-206-2.png?resize=300%2C187&amp;ssl=1 300w" width="425"/>
+<br/>
+   Block to Block Distances (in Mtrs.)
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<strong>
+       From
+      </strong>
+</td>
+<td style="text-align: center;">
+<strong>
+       To
+      </strong>
+</td>
+<td style="text-align: center;">
+<strong>
+       Distance
+      </strong>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">
+       Administrative Block
+       <br/>
+       Administrative Block
+       <br/>
+       Finance Block
+      </p>
+</td>
+<td>
+<p style="text-align: center;">
+       Finance Block Faculty
+       <br/>
+       Recording Block Faculty
+       <br/>
+       Recording Block
+      </p>
+</td>
+<td>
+<p style="text-align: center;">
+       60
+       <br/>
+       120
+       <br/>
+       70
+      </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+   Expected Computers to be installed in each block
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<strong>
+       Block
+      </strong>
+</td>
+<td style="text-align: center;">
+<strong>
+       Computers
+      </strong>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">
+       Administrative Block
+       <br/>
+       Finance Block
+       <br/>
+       Faculty Recording Block
+      </p>
+</td>
+<td>
+<p style="text-align: center;">
+       30
+       <br/>
+       20
+       <br/>
+       100
+      </p>
+</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>
+    Suggest the most appropriate block, where RCI should plan to install the server.
+   </li>
+<li>
+    Suggest the most appropriate block to block cable layout to connect all three blocks for efficient communication.
+   </li>
+<li>
+    Which type of network out of the following is formed by connecting the computers of these three blocks?
+    <br/>
+    • LAN
+    <br/>
+    • MAN
+    <br/>
+    • WAN
+   </li>
+<li>
+    Which wireless channel out of the following should be opted by RCI to connect to students from all over the world?
+    <br/>
+    • Infrared
+    <br/>
+    • Microwave
+    <br/>
+    • Satellite
+   </li>
+<li>
+    Write two advantages of using open source software over proprietary software.
+   </li>
+<li>
+    Which of the following crime(s) does not come under cybercrime ?
+    <ol>
+<li>
+      Copying some important data from a computer without taking permission from the owner of-the data.
+     </li>
+<li>
+      Stealing keyboard and mouse from a shop.
+     </li>
+<li>
+      Getting into unknown person’s social networking account and start messaging on his behalf.
+     </li>
+</ol>
+</li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+<br/>
+   (i) Faculty Recording Block.
+   <br/>
+   (ii) Bus Topology
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(206-3)" class="alignnone size-full wp-image-60101" data-recalc-dims="1" decoding="async" height="109" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-206-3.png?resize=300%2C109&amp;ssl=1" width="300"/>
+<br/>
+   (iii) LAN
+   <br/>
+   (iv) Satellite connection
+   <br/>
+   (v) Advantages of open source over proprietary software :
+   <br/>
+   • Open source software’s source code is available, can be modified copied &amp; distributed while propritary software can’t be change.
+   <br/>
+   • Open source is free while propriatary is paid.
+   <br/>
+   (vi) (ii) Stealing keyboard &amp; mouse from-a shop.
+  </p>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 7:
+      </strong>
+</span>
+</span>
+</span>
+<br/>
+   (a) What is the difference between domain name and IP address?
+   <br/>
+   (b) Write two advantages of using an optical fibre cable over an Ethernet cable to connect two sendee stations, which are 190 m away from each other.
+   <br/>
+   (c) Expertia Professsional Global (EPG) is an online, corporate training provider company for IT related courses. The company is setting up their new campus in Mumbai. You as a network expert have to study the physical locations of various buildings and the number of computers to be installed. In the planning phase, provide the best possible answer for the queries (i) to (iv) raised by them.
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(207-1)" class="alignnone size-full wp-image-60115" data-recalc-dims="1" decoding="async" height="271" loading="lazy" sizes="auto, (max-width: 426px) 100vw, 426px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-207-1.png?resize=426%2C271&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-207-1.png?w=426&amp;ssl=1 426w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-207-1.png?resize=300%2C191&amp;ssl=1 300w" width="426"/>
+<br/>
+   Building to Building Distances (in Mtrs.)
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<strong>
+       From
+      </strong>
+</td>
+<td style="text-align: center;">
+<strong>
+       To
+      </strong>
+</td>
+<td style="text-align: center;">
+<strong>
+       Distance
+      </strong>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">
+       Administrative Building
+       <br/>
+       Administrative Building
+       <br/>
+       Finance Building
+      </p>
+</td>
+<td>
+<p style="text-align: center;">
+       Finance Building
+       <br/>
+       Recording Studio Building
+       <br/>
+       Faculty Studio Building
+      </p>
+</td>
+<td>
+<p style="text-align: center;">
+       60
+       <br/>
+       120
+       <br/>
+       70
+      </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+   Expected Computers to be installed in each Building:
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<strong>
+       Building
+      </strong>
+</td>
+<td style="text-align: center;">
+<strong>
+       Computers
+      </strong>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">
+       Administrative Building
+       <br/>
+       Finance Building
+       <br/>
+       Faculty Studio Building
+      </p>
+</td>
+<td>
+<p style="text-align: center;">
+       20
+       <br/>
+       40
+       <br/>
+       120
+      </p>
+</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>
+    Suggest the most appropriate building, where EPG should plan to install the server.
+   </li>
+<li>
+    Suggest the most appropriate building to building cable layout to connect all three buildings for efficient communication.
+   </li>
+<li>
+    Which type of network out of the following is formed by connecting the computers of these three buildings?
+    <br/>
+    • LAN
+    <br/>
+    • MAN
+    <br/>
+    • WAN
+   </li>
+<li>
+    Which wireless channel out of the following should be opted by EPG to connect to students of all over the world?
+    <br/>
+    • Infrared
+    <br/>
+    • Microwave
+    <br/>
+    • Satellite
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+<br/>
+<strong>
+    (a)
+   </strong>
+   Domain Name is alphanumeric address of a resource over network IP address is a Numeric Address of a resoure in a Network. Example :
+   <br/>
+   Domain Name
+   <br/>
+   WWW.Gabsclasses.com
+   <br/>
+   IP Address
+   <br/>
+   102.112.0.153
+   <br/>
+<strong>
+    (b)
+   </strong>
+   Optical fibre Advantages :
+   <br/>
+   (i) Faculty Studio Building.
+   <br/>
+   (ii) Bus Topology.
+   <br/>
+   Faculty Finance
+   <br/>
+   Administrative Building
+   <br/>
+   Studio Building
+   <br/>
+   (iii) LAN
+   <br/>
+   (iv) Satellite
+  </p>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 8:
+      </strong>
+</span>
+</span>
+</span>
+<br/>
+   To provide telemedicine faculty in a hilly state, a computer network is to be setup to connect hospitals in 6 small villages (VI, V2, …, V6) to the base hospital (H) in the state capital. This is shown in the following diagram.
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(207-2)" class="alignnone size-full wp-image-60103" data-recalc-dims="1" decoding="async" height="282" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-207-2.png?resize=288%2C282&amp;ssl=1" width="288"/>
+<br/>
+   No village is more than 20 km away from the state capital.
+   <br/>
+   Imagine yourself as a computer consultant for this project and answer the following questions with justification :
+  </p>
+<ol>
+<li>
+    Out of the following what kind of link should be provided to setup this network :
+    <ol>
+<li>
+      Microwave link,
+     </li>
+<li>
+      Radio Link,
+     </li>
+<li>
+      Wired Link ?
+     </li>
+</ol>
+</li>
+<li>
+    What kind of network will be formed; LAN, MAN, or WAN ?
+   </li>
+<li>
+    Many times doctors at village hospital will have to consult senior doctors at the base hospital. For this purpose, how should they contact them: using email, sms, telephone, or video conference ?
+   </li>
+<li>
+    Out of SMTP and POP3 which protocol is used to receive emails ?
+   </li>
+<li>
+    What are cookies in the context of computer networks?
+   </li>
+<li>
+    Rajeshwari is trying for on-line subscription to a magazine. For this she has filled in a form on the magazine’s web site. When the clicks submit button she gets a message that she has left e-mail field empty and she must fill it. For such checking which type of script is generally executed; client side script or server-side script ?
+   </li>
+<li>
+    Mention any one difference between free-ware and free software.
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+<br/>
+   (i) Radio Link
+   <br/>
+   (ii) MAN
+   <br/>
+   (iii) e-mail
+   <br/>
+   (iv) POP3
+   <br/>
+   (v) Cookies are files that store user information that is used to identify the user when he logs into the system.
+   <br/>
+   (vi) Server-side script.
+   <br/>
+   (vii) Freeware is a software that has the user to get unlimited usage. Free software may be free for a certain period’only.
+  </p>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 9:
+      </strong>
+</span>
+</span>
+</span>
+<br/>
+   Work a lot Consultants are setting up a secured network for their office campus at Gurgaon for their day-to-day office and web- based activities. They are planning to have connectivity between three buildings and the head office situated in Mumbai. Answer the questions (i) to (iv) after going through the building positions in the campus and other details, which are given below:
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(208-1)" class="alignnone size-full wp-image-60114" data-recalc-dims="1" decoding="async" height="220" loading="lazy" sizes="auto, (max-width: 423px) 100vw, 423px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-208-1.png?resize=423%2C220&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-208-1.png?w=423&amp;ssl=1 423w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-208-1.png?resize=300%2C156&amp;ssl=1 300w" width="423"/>
+<br/>
+   Distances between various buildings :
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+      Building “GREEN” to Building “RED”
+     </td>
+<td style="text-align: center;">
+      110 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Building “GREEN” to Building “BLUE”
+     </td>
+<td style="text-align: center;">
+      45 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Building “BLUE” to Building “RED”
+     </td>
+<td style="text-align: center;">
+      65 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Gurgaon Campus to Head Office
+     </td>
+<td style="text-align: center;">
+      1760 km
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+   Number of computers
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+      Building “GREEN”
+     </td>
+<td style="text-align: center;">
+      32
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Building “RED”
+     </td>
+<td style="text-align: center;">
+      150
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Building “BLUE”
+     </td>
+<td style="text-align: center;">
+      45
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Head Office
+     </td>
+<td style="text-align: center;">
+      10
+     </td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>
+    Suggest the most suitable place (i.e., building) to house the server of this organization. Also give a reason to justify your suggested location.
+   </li>
+<li>
+    Suggest a cable layout of connections between the buildings inside the campus.
+   </li>
+<li>
+    Suggest the placement of the following devices with justification:
+    <ol>
+<li>
+      Repeater.
+     </li>
+<li>
+      Switch.
+     </li>
+</ol>
+</li>
+<li>
+    The organization is planning to provide a high speed link with its head office situated in Mumbai using a wired connection. Which of the following cables will be most suitable for this job ?
+    <ol>
+<li>
+      Optical Fibre
+     </li>
+<li>
+      Coaxial Cable
+     </li>
+<li>
+      Ethernet Cable
+     </li>
+</ol>
+</li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+<br/>
+   (i) The most suitable place to install server is building “RED” because this building has maximum computer which reduce communication delay.
+   <br/>
+   (ii) Cable layout is Bus topology
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(208-2)" class="alignnone size-full wp-image-60113" data-recalc-dims="1" decoding="async" height="220" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-208-2.png?resize=301%2C220&amp;ssl=1" width="301"/>
+<br/>
+   (iii) Since the cabling distance between buildings GREEN, BLUE and RED are quite large, so a repeater, would ideally be needed along their path to avoid loss of signals during the course of data flow in there routes.
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(208-3)" class="alignnone size-full wp-image-60112" data-recalc-dims="1" decoding="async" height="218" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-208-3.png?resize=299%2C218&amp;ssl=1" width="299"/>
+<br/>
+   (2) In the layout a switch each would be needed in all the building, to interconnect the group of cables from the different computers in each building.
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(209-1)" class="alignnone size-full wp-image-60111" data-recalc-dims="1" decoding="async" height="266" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-209-1.png?resize=297%2C266&amp;ssl=1" width="297"/>
+<br/>
+   (iv) Optical fibre.
+  </p>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 10:
+      </strong>
+</span>
+</span>
+</span>
+<br/>
+   Granuda Consultants are setting up a secured network for their office campus at Faridabad for their day to day office and web based activities. They are planning to have connectivity between 3 building and the head office situated in Kolkata. Answer the questions (i) to (iv) after going through the building positions in the campus and other details, which are given below :
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(209-2)" class="alignnone size-full wp-image-60110" data-recalc-dims="1" decoding="async" height="218" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-209-2.png?resize=301%2C218&amp;ssl=1" width="301"/>
+<br/>
+   Distances between various buildings :
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+      Building “RAVI” to Building “JAMUNA”
+     </td>
+<td style="text-align: center;">
+      120 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Building “RAVI” to Building “GANGA”
+     </td>
+<td style="text-align: center;">
+      50 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Building “GANGA” to Building “JAMUNA”
+     </td>
+<td style="text-align: center;">
+      65 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Faridabad Campus to Head Office
+     </td>
+<td style="text-align: center;">
+      1460 km
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+   Number of computers
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+      Building “RAVI”
+     </td>
+<td style="text-align: center;">
+      25
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Building “JAMUNA”
+     </td>
+<td style="text-align: center;">
+      150
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Building “GANGA”
+     </td>
+<td style="text-align: center;">
+      51
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Head Office
+     </td>
+<td style="text-align: center;">
+      10
+     </td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>
+    Suggest the most suitable place (i.e., block) to house the server of this organization. Also give a reason to justify your suggested location.
+   </li>
+<li>
+    Suggest a cable layout of connections between the buildings inside the campus.
+   </li>
+<li>
+    Suggest the placement of the following devices with justification:
+    <ol>
+<li>
+      Repeater
+     </li>
+<li>
+      Switch
+     </li>
+</ol>
+</li>
+<li>
+    The organization is planning to provide a high speed link with its head office situated in the KOLKATA using a wired connection. Which of the following cable will be most suitable for this job ?
+    <ol>
+<li>
+      Optical Fibre
+     </li>
+<li>
+      Coaxial Cable
+     </li>
+<li>
+      Ethernet Cable
+     </li>
+</ol>
+</li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+<br/>
+   (i) The most suitable place to install server is in building “JAMUNA” because this building has maximum computer which reduce the communication delay.
+   <br/>
+   (ii) Cable layout. (Bus topology).
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(209-3)" class="alignnone size-full wp-image-60109" data-recalc-dims="1" decoding="async" height="217" loading="lazy" sizes="auto, (max-width: 304px) 100vw, 304px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-209-3.png?resize=304%2C217&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-209-3.png?w=304&amp;ssl=1 304w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-209-3.png?resize=300%2C214&amp;ssl=1 300w" width="304"/>
+<br/>
+   (iii) (1) Since the cabling distance between buildings RAVI, GANGA and JAMUNA are quite large, so a repeater, would ideally be needed along their path to avoid loss of signals during the course of data flow in these routes.
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(209-4)" class="alignnone size-full wp-image-60108" data-recalc-dims="1" decoding="async" height="221" loading="lazy" sizes="auto, (max-width: 303px) 100vw, 303px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-209-4.png?resize=303%2C221&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-209-4.png?w=303&amp;ssl=1 303w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-209-4.png?resize=300%2C219&amp;ssl=1 300w" width="303"/>
+<br/>
+   (2) In the layout a switch would be needed in all the building, to interconnect the group of cables from the different computers in each building.
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(210-1)" class="alignnone size-full wp-image-60107" data-recalc-dims="1" decoding="async" height="225" loading="lazy" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-210-1.png?resize=301%2C225&amp;ssl=1" width="301"/>
+<br/>
+   (iv) Optical fibre.
+  </p>
+<p data-wp-editing="1">
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 11:
+      </strong>
+</span>
+</span>
+</span>
+<br/>
+   Rehaana Medicos Center has set up its new center in Dubai. It has four buildings as shown in the diagram given below :
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(210-2)" class="alignnone size-full wp-image-60105" data-recalc-dims="1" decoding="async" height="243" loading="lazy" sizes="auto, (max-width: 365px) 100vw, 365px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-210-2.png?resize=365%2C243&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-210-2.png?w=365&amp;ssl=1 365w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-210-2.png?resize=300%2C200&amp;ssl=1 300w" width="365"/>
+<br/>
+   Distances between various buildings are as follows:
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+      Accounts to Research Lab
+     </td>
+<td style="text-align: center;">
+      55 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Accounts to Store
+     </td>
+<td style="text-align: center;">
+      150 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Store to Packaging Unit
+     </td>
+<td style="text-align: center;">
+      160 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Packaging Unit to Research Lab
+     </td>
+<td style="text-align: center;">
+      60 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Accounts to Packaging Unit
+     </td>
+<td style="text-align: center;">
+      125 m
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Store to Research Lab
+     </td>
+<td style="text-align: center;">
+      180 m
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+   Number of computers
+  </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+      Accounts
+     </td>
+<td style="text-align: center;">
+      25
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Research Lab
+     </td>
+<td style="text-align: center;">
+      100
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Store
+     </td>
+<td style="text-align: center;">
+      15
+     </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+      Packaging Unit
+     </td>
+<td style="text-align: center;">
+      60
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+   As a network expert, provide the best possible answer for the following queries :
+  </p>
+<ol>
+<li>
+    Suggest a cable layout of connections between the buildings.
+   </li>
+<li>
+    Suggest the most suitable place (i.e. buildings) to house the server of this origanization.
+   </li>
+<li>
+    Suggest the placement of the following device with justification :
+    <br/>
+    (a) Repeater
+    <br/>
+    (b) Switch/Hub
+   </li>
+<li>
+    Suggest a system (hardware/sofware) to prevent unauthorized access to or from the network.
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+<br/>
+   (i) Layout 1
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-(210-3)" class="alignnone size-full wp-image-60104" data-recalc-dims="1" decoding="async" height="532" loading="lazy" sizes="auto, (max-width: 360px) 100vw, 360px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-210-3.png?resize=360%2C532&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-210-3.png?w=360&amp;ssl=1 360w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-networking-and-open-source-concepts-210-3.png?resize=203%2C300&amp;ssl=1 203w" width="360"/>
+<br/>
+   (ii) The most suitable place/building to house the server of this organization would be in Research Lab, building as this building contains the maximum number of computers.
+   <br/>
+   (iii) (a) For layout I, since the cabling distance between Accounts to Store is quite large, so a repeater would ideally be needed along their path to avoid loss of signals during the course of data flow in this route. For layotat2, since the cabling distance between Store to Research Lab is quite large, so a repeater would ideally be placed.
+   <br/>
+   (b) In both the layouts, a Flub/Switch each would be needed in all the buildings to interconnect the group of cables from the different computers in each building.
+   <br/>
+   (iv) Firewall
+  </p>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 12:
+      </strong>
+</span>
+</span>
+</span>
+<br/>
+   Who is a hacker ?
+   <br/>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+<br/>
+   A computer enthusiast, who uses his computer . programming skills to intentionally access a computer without authorization is known as hacker. A hacker accesses the computer without the intention of destorying data or maliciously harming the computer.
+  </p>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 13:
+      </strong>
+</span>
+</span>
+</span>
+<br/>
+   The following is a 32 bit binary number usually represented as 4 decimal values, each representing 8 bits, in the range 0 to 255 (know as octets) separated by decimal points. 140.179.220.200
+   <br/>
+   What is it? What is its importance?
+   <br/>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+<br/>
+   It is an IP Address. It is used to identify the computers on a network.
+  </p>
+<h3 id="h3-1" style="text-align: center;">
+<span id="TOPIC-2_Network_Security_and_Web_Service">
+<span style="color: #0000ff;">
+     TOPIC-2
+    </span>
+<br/>
+<span style="color: #0000ff;">
+     Network Security and Web Service
+    </span>
+</span>
+</h3>
+<p style="text-align: center;">
+<span style="color: #0000ff;">
+<strong>
+     Very Short Answer Type Questions [1 mark each]
+    </strong>
+</span>
+</p>
+<p style="text-align: left;">
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 1:
+      </strong>
+</span>
+</span>
+</span>
+<br/>
+   Define firewall.
+   <br/>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+<br/>
+   A system designed to prevent unauthorized access to or from a private network is called firewall. It can be implemented in both hardware and software or combination of both.
+  </p>
+<p style="text-align: left;">
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 2:
+       <br/>
+</strong>
+</span>
+</span>
+</span>
+   Write any two examples of Server side Scripts.
+   <br/>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+</p>
+<ol>
+<li style="text-align: left;">
+    ASP
+   </li>
+<li style="text-align: left;">
+    PHP
+   </li>
+</ol>
+<p style="text-align: left;">
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 3:
+       <br/>
+</strong>
+</span>
+</span>
+</span>
+   What is the difference between E-mail &amp; chat?
+   <br/>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+</p>
+<ol>
+<li style="text-align: left;">
+    Chat occurs in near real time, while E-mail doesn’t.
+   </li>
+<li style="text-align: left;">
+    Chat is a 2-way communication which require the permission of both parties, while E-mail is a 1-way communication.
+   </li>
+</ol>
+<p style="text-align: left;">
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 4:
+       <br/>
+</strong>
+</span>
+</span>
+</span>
+   Write names of any two popular open source software, which are used as operating systems.
+   <br/>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+</p>
+<ol>
+<li style="text-align: left;">
+    Kernels
+   </li>
+<li style="text-align: left;">
+    Unix
+   </li>
+<li style="text-align: left;">
+    Linux
+   </li>
+</ol>
+<p style="text-align: left;">
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 5:
+       <br/>
+</strong>
+</span>
+</span>
+</span>
+   What is the difference between video conferencing and chat.
+   <br/>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+<br/>
+   In conference, we can include more than one person and it allows text, video and audio while chat is one-to-one communication.
+  </p>
+<p style="text-align: left;">
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 6:
+       <br/>
+</strong>
+</span>
+</span>
+</span>
+   Expand the following abbreviations :
+  </p>
+<ol>
+<li style="text-align: left;">
+    HTTP
+   </li>
+<li style="text-align: left;">
+    VOIP
+   </li>
+</ol>
+<p style="text-align: left;">
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+</p>
+<ol>
+<li style="text-align: left;">
+    HTTP-Hyper Text Transfer Protocol.
+   </li>
+<li style="text-align: left;">
+    VOIP-Voice Over Internet Protocol.
+   </li>
+</ol>
+<p style="text-align: left;">
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 7:
+       <br/>
+</strong>
+</span>
+</span>
+</span>
+   What is the difference between HTTP and FTP?
+   <br/>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+<br/>
+   Hyper Text Transfer Protocol deals with Transfer of Text and Multimedia content over internet while FTP (File Transfer Protocol) deals with transfer of files over the internet.
+  </p>
+<p style="text-align: left;">
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 8:
+       <br/>
+</strong>
+</span>
+</span>
+</span>
+   What out of the following, will you use to have an audio-visual chat with an expert sitting in a far-away place to fix-up a technical issue ?
+  </p>
+<ol>
+<li style="text-align: left;">
+    VOIP
+   </li>
+<li style="text-align: left;">
+    Email
+   </li>
+<li style="text-align: left;">
+    FTP
+   </li>
+</ol>
+<p style="text-align: left;">
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+<br/>
+   (i) VOIP
+  </p>
+<p style="text-align: left;">
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 9:
+       <br/>
+</strong>
+</span>
+</span>
+</span>
+   Name one server side scripting language and one client side scripting language.
+   <br/>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+<br/>
+<strong>
+    Client Side :
+   </strong>
+</p>
+<ol>
+<li style="text-align: left;">
+    JAVASCRIPT
+   </li>
+<li style="text-align: left;">
+    VBSCRIPT
+   </li>
+</ol>
+<p style="text-align: left;">
+<strong>
+    Server Side :
+   </strong>
+</p>
+<ol>
+<li style="text-align: left;">
+    ASP
+   </li>
+<li style="text-align: left;">
+    JSP
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 10:
+       <br/>
+</strong>
+</span>
+</span>
+</span>
+   Which out of the following comes under cyber crime ?
+  </p>
+<ol>
+<li>
+    Operating someone’s internet banking account, without his knowledge.
+   </li>
+<li>
+    Stealing a keyboard from someone’s computer.
+   </li>
+<li>
+    Working on someone’s Computer with his/ her permission.
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+<br/>
+   (i) Operating someone’s internet banking account, without his knowledge.
+  </p>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 11:
+       <br/>
+</strong>
+</span>
+</span>
+</span>
+   Name two proprietary softwares along with their application.
+   <br/>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+</p>
+<ol>
+<li>
+    MS-Office – All office applications MS-Word, MS-Excel, MS-PowerPoint.
+   </li>
+<li>
+    Visual Studio – Visual Basic, Visual C+ + softwares for application development.
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 12:
+       <br/>
+</strong>
+</span>
+</span>
+</span>
+   Name some cyber offences under the IT Act.
+   <br/>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+</p>
+<ol>
+<li>
+    Tampering with computer source documents
+   </li>
+<li>
+    Hacking.
+   </li>
+<li>
+    Publishing of information which is obscene in electronic form.
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 13:
+       <br/>
+</strong>
+</span>
+</span>
+</span>
+   What are the 3 ways of protecting intellectual property ?
+   <br/>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+</p>
+<ol>
+<li>
+    Patents
+   </li>
+<li>
+    Copyrights
+   </li>
+<li>
+    Trademark
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 14:
+       <br/>
+</strong>
+</span>
+</span>
+</span>
+   When a user browses a website, the web server sends a text file to the web browser. What is the name of this ?
+   <br/>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+<br/>
+   Cookies.
+  </p>
+<p style="text-align: center;">
+<span style="color: #0000ff;">
+<strong>
+     Short Answer Type Questions – I [2 mark each]
+    </strong>
+</span>
+</p>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 1:
+      </strong>
+</span>
+</span>
+</span>
+<br/>
+   Define the following :
+  </p>
+<ol>
+<li>
+    Firewall
+   </li>
+<li>
+    VoIP
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+<br/>
+   (
+   <strong>
+    i) Firewall :
+   </strong>
+   A system designed to prevent unauthorized access to or from a private network is called firewall. It can be implemented in both hardware and software or combination of both.
+   <br/>
+   (ii) VoIP : Voice -over-Internet Protocol(VoIP) is a methodology and group of technologies for delivering voice communications and multimedia sessions over Internet Protocol(IP) networks, such as the Internet.
+  </p>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 2:
+      </strong>
+</span>
+</span>
+</span>
+<br/>
+   Give the full form of the following terms.
+  </p>
+<ol>
+<li>
+    XML
+   </li>
+<li>
+    FLOSS
+   </li>
+<li>
+    HTTP
+   </li>
+<li>
+    FTP
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+</p>
+<ol>
+<li>
+    XML: Extensible Markup Language.
+   </li>
+<li>
+    FLOSS: Free-Libre Open Source Software.
+   </li>
+<li>
+    HTTP: Hyper Text Transfer Protocol.
+   </li>
+<li>
+    FTP: File Transfer Protocol.
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 3:
+      </strong>
+</span>
+</span>
+</span>
+<br/>
+   Differentiate between WORM and VIRUS in Computer terminology.
+   <br/>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+<br/>
+   VIRUS directly effects the system by corrupting the useful data. A computer virus attaches itself to a program or file enabling it to spread from one computer to another.
+   <br/>
+   A worm is similar to a virus by design and is considered to be sub class of a virus. Worm spread from computer to computer, but unlike a virus, it has the capability to travel without any human action.
+  </p>
+<p>
+<strong>
+    Abbrevations :
+    <br/>
+</strong>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 4:
+      </strong>
+</span>
+</span>
+</span>
+<br/>
+   Expand the following
+  </p>
+<ol>
+<li>
+    GSM
+   </li>
+<li>
+    GPRS.
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+</p>
+<ol>
+<li>
+    GSM : Global System for Mobile Communication.
+   </li>
+<li>
+    GPRS : General Packet Radio Service.
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 5:
+       <br/>
+</strong>
+</span>
+</span>
+</span>
+   Expand the following abbreviations :
+  </p>
+<ol>
+<li>
+    HTTP
+   </li>
+<li>
+    VOIP
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+</p>
+<ol>
+<li>
+    HTTP : Hyper Text Transfer Protocol.
+   </li>
+<li>
+    VOIP : Voice Over Internet Protocol.
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 6:
+       <br/>
+</strong>
+</span>
+</span>
+</span>
+   Give the full form of :
+  </p>
+<ol>
+<li>
+    FOSS
+   </li>
+<li>
+    HTTP
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+</p>
+<ol>
+<li>
+    FOSS : Free Open Source Software.
+   </li>
+<li>
+    HTTP : Hyper Text Transfer Protocol.
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 7:
+      </strong>
+</span>
+</span>
+</span>
+<br/>
+   Write the full forms of the following :
+  </p>
+<ol>
+<li>
+    GNU
+   </li>
+<li>
+    XML
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+</p>
+<ol>
+<li>
+    GNU : GNU’s Not Unix
+   </li>
+<li>
+    XML : Extensible Markup Language.
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 8:
+       <br/>
+</strong>
+</span>
+</span>
+</span>
+   Expand the following terminologies :
+  </p>
+<ol>
+<li>
+    GSM
+   </li>
+<li>
+    WLL
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+</p>
+<ol>
+<li>
+    GSM : Global System for Mobile Communication
+   </li>
+<li>
+    WLL : Wireless Local Loop.
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 9:
+       <br/>
+</strong>
+</span>
+</span>
+</span>
+   Give the full forms of the following terms :
+  </p>
+<ol>
+<li>
+    CDMA
+   </li>
+<li>
+    TDMA
+   </li>
+<li>
+    FDMA
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+</p>
+<ol>
+<li>
+    CDMA : Code Division Multiple Access
+   </li>
+<li>
+    TDMA : Time Division Multiple Access
+   </li>
+<li>
+    FDMA : Frequency Division Multiple Access
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 10:
+       <br/>
+</strong>
+</span>
+</span>
+</span>
+   Expand the following abbreviations :
+  </p>
+<ol>
+<li>
+    FTP
+   </li>
+<li>
+    TCP
+   </li>
+<li>
+    SMTP
+   </li>
+<li>
+    VOIP
+   </li>
+</ol>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+</p>
+<ol>
+<li>
+    FTP : File Transfer Protocol
+   </li>
+<li>
+    TCP : Transmission Control Protocol.
+   </li>
+<li>
+    SMTP : Simple Mail Transfer Protocol.
+   </li>
+<li>
+    VOIP : Voice Over Internet Protocol.
+   </li>
+</ol>
+<p style="text-align: center;">
+<span style="color: #0000ff;">
+<strong>
+     Short Answer Type Questions-II [3 marks each]
+     <br/>
+</strong>
+</span>
+</p>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 1:
+      </strong>
+</span>
+</span>
+</span>
+<br/>
+   Give two examples of PAN and LAN type of networks.
+   <br/>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+</p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<strong>
+       PAN
+      </strong>
+</td>
+<td style="text-align: center;">
+<strong>
+       LAN
+      </strong>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 30px;">
+      (i) Personal Area Network
+      <br/>
+      (ii) Spans a few meters
+      <br/>
+<strong>
+       Example :
+      </strong>
+<br/>
+      Bluetooth using 2 moblies and laptops sharing files.
+     </td>
+<td style="padding-left: 30px;">
+      (i) Local Area Network
+      <br/>
+      (ii) Spans upto a km.
+      <br/>
+<strong>
+       Example :
+      </strong>
+<br/>
+      System in a lab in a school, systems at home.
+     </td>
+</tr>
+</tbody>
+</table>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 2:
+       <br/>
+</strong>
+</span>
+</span>
+</span>
+   Which protocol helps us to browse through web pages using internet browsers ? Name any one internet browser.
+   <br/>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+<br/>
+   HTTP
+   <br/>
+   Google Chrome is a browser
+  </p>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 3:
+       <br/>
+</strong>
+</span>
+</span>
+</span>
+   Write two advantages of 4G over 3G Mobile Telecommunication Technologies in terms of speed and services.
+   <br/>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+<br/>
+   4G has very high data rates upto 100 Mbps.
+   <br/>
+   It covers a wider lange than 3G
+  </p>
+<p>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong>
+       Question 1:
+       <br/>
+</strong>
+</span>
+</span>
+</span>
+   Write two characteristics of Web 2.0
+   <br/>
+<span class="MSGENFONTSTYLENAMETEMPLATEROLEMSGENFONTSTYLENAMEBYROLETABLECAPTIONExact">
+<span style="color: black;">
+<span style="color: #eb4924;">
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+        Answer:
+       </span>
+</strong>
+</span>
+</span>
+</span>
+<br/>
+   Web 2.0
+  </p>
+<ol>
+<li>
+    dynamic and interactive websites
+   </li>
+<li>
+    Only the changed part is reloaded so faster.
+   </li>
+</ol>
+<p>
+<a class="button-red" href="http://www.learncbse.in/ncert-solutions-2/" title="NCERT Solutions Home Page">
+    NCERT Solutions
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/ncert-solutions-class-12-computer-science-c/" title="NCERT Solutions for Class 12 Computer Science (C++)">
+    Computer science
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/ncert-solutions-for-class-12-english/" title="NCERT Solutions for Class 12 English">
+    English
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/ncert-solutions-class-12-hindi-core/" title="NCERT Solutions for Class 12 Hindi">
+    Hindi
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/cbse-class-12-humanities/" title="NCERT Solutions for Class 12 Humanities">
+    Humanities
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/cbse-class-12-commerce/" title="NCERT Solutions for Class 12 Commerce">
+    Commerce
+   </a>
+<a class="button-red" href="http://www.learncbse.in/cbse-class-12-science/" title="CBSE Class 12 Science">
+    Science
+   </a>
+</p>
+ CONTENT END 2 
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"&gt;
+		&lt;rdf:Description rdf:about="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-networking-open-source-concepts/"
+    dc:identifier="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-networking-open-source-concepts/"
+    dc:title="NCERT Solutions for Class 12 Computer Science (C++) &amp;#8211; Networking and Open Source Concepts"
+    trackback:ping="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-networking-open-source-concepts/trackback/" /&gt;
+&lt;/rdf:RDF&gt;
+</div>
+<div class="social-sidebar" id="social-sidebar">
+<button id="minimize-button" onclick="toggleSidebar()">−</button>
+<a href="https://t.me/learncbse_online" target="_blank" title="Telegram">
+<img alt="Telegram" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png"/>
+</a>
+<a href="https://x.com/learncbse_9" target="_blank" title="Twitter">
+<img alt="Twitter" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/733/733579.png"/>
+</a>
+<a href="https://www.reddit.com/r/learncbse_online/?rdt=59433" target="_blank" title="Reddit">
+<img alt="Reddit" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111589.png"/>
+</a>
+<a href="https://discord.gg/aM6xbTDz" target="_blank" title="Discord">
+<img alt="Discord" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png"/>
+</a>
+</div>
+<script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('social-sidebar');
+        sidebar.classList.toggle('minimized');
+    }
+</script>
+</body>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-C5VTZJSJCR">
+</script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C5VTZJSJCR');
+</script>

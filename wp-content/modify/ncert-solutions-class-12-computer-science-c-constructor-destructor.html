@@ -1,0 +1,1732 @@
+<head>
+ <meta charset="utf-8"/>
+ <meta content="Bqdk9rTr4" name="admaven-placement"/>
+ <script async="true" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript">
+ </script>
+ <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ncert-solutions-class-12-computer-science-c-constructor-destructor",
+  "url": "https://learncbse.online/ncert-solutions-class-12-computer-science-c-constructor-destructor",
+  "description": "ncert-solutions-class-12-computer-science-c-constructor-destructor"
+}
+ </script>
+ 
+ <!DOCTYPE html>
+ <html>
+  <body>
+   <header class="entry-header">
+    <h1 class="entry-title">
+     NCERT Solutions for Class 12 Computer Science (C++) – Constructor and Destructor
+    </h1>
+   </header>
+   <div class="entry-content">
+    <div class="code-block code-block-2" style="margin: 8px 0; clear: both;">
+    </div>
+    <h2>
+     <span id="NCERT_Solutions_for_Class_12_Computer_Science_C_8211_Constructor_and_Destructor">
+      <span style="color: #00ccff;">
+       NCERT Solutions for Class 12 Computer Science (C++) – Constructor and Destructor
+      </span>
+     </span>
+    </h2>
+    <h3 style="text-align: center;">
+     <span id="TOPIC-1_Constructors">
+      <span style="text-decoration: underline;">
+       <span style="color: #0000ff; text-decoration: underline;">
+        TOPIC-1
+        <br/>
+       </span>
+      </span>
+      <span style="color: #0000ff;">
+       Constructors
+       <br/>
+      </span>
+     </span>
+    </h3>
+    <h4 style="text-align: center;">
+     <span id="Short_Answer_Type_Questions-I_2_marks_each">
+      <span style="color: #0000ff;">
+       Short Answer Type Questions-I    [2 marks each]
+      </span>
+     </span>
+    </h4>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 1:
+      </strong>
+     </span>
+     <br/>
+     Write four characteristics of constructor function used in a class.
+     <em>
+      <strong>
+       [Delhi, 2014]
+      </strong>
+     </em>
+     <br/>
+     <strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+      <span style="color: #008000;">
+       Answer:
+      </span>
+     </strong>
+     <br/>
+     (i) A constructor function has no return type.
+     <br/>
+     (ii) Name of constructor is same as that of class.
+     <br/>
+     (iii) A constructor can be called while creating objects.
+     <br/>
+     (iv) If there is no constructor declared in class then default constructor is invoked.
+     <strong>
+      <em>
+       (1/2 mark for each characteristic).
+      </em>
+     </strong>
+    </p>
+    <div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+    </div>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 2:
+      </strong>
+     </span>
+     <br/>
+     What is a copy constructor ? Give a suitable example in C++ to illustrate with its definition within a class and a declaration of an object with the help of it.
+     <em>
+      <strong>
+       [Delhi, 2015]
+      </strong>
+     </em>
+     <br/>
+     <strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+      <span style="color: #008000;">
+       Answer:
+      </span>
+     </strong>
+     <br/>
+     A copy constructor is an overloaded constructor in which an object of the same class is passed as reference parameter,
+    </p>
+    <pre style="padding-left: 30px;">class point 
+
+{
+
+int x ; 
+
+public :
+
+point ( ) {x = 0 ; } point (Point &amp;p)    // copy
+
+constructor
+
+{x = p . x;}
+
+};
+
+void main ( )
+
+{
+
+point p1;
+
+point p2 (p1) ;    // copy constructor is called here
+
+//
+
+<strong>OR</strong> 
+
+point p3 = p1 ; //Copy constructor is called here
+
+}</pre>
+    <p>
+     <em>
+      <strong>
+       (1 1/2 Mark to be awarded if the copy constructor is explained with an appropriate example)
+      </strong>
+     </em>
+     <br/>
+     <strong>
+      OR
+     </strong>
+     <br/>
+     <strong>
+      <em>
+       (1 Mark for correct explanation of copy constructor only without an example)
+      </em>
+     </strong>
+     <br/>
+     <em>
+      <strong>
+       (1/2
+      </strong>
+      <strong>
+       Mark for correct declaration of an object)
+      </strong>
+     </em>
+    </p>
+    <div class="code-block code-block-3" style="margin: 8px 0; clear: both;">
+    </div>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 3:
+      </strong>
+     </span>
+     <br/>
+     Answer the questions (i) and (ii) after going through the following class :
+     <strong>
+      [Delhi, 2015]
+     </strong>
+    </p>
+    <pre style="padding-left: 30px;">class Exam
+
+{
+
+ int Rollno; 
+
+char Cname [25]; 
+
+float Marks; 
+
+public :
+
+Exam( ) //Function 1 
+
+Rollno = 0;
+
+strcpy (Cname = " " );
+
+ Marks = 0.0;
+
+}
+
+Exam (int Rno, char candnam [ ] //Function 2
+
+{
+
+Rollno = Rno;
+
+strcpy(Cname, candname);
+
+}
+
+~Exam ( ) //Function 3
+
+{
+
+cout&lt;&lt;"Result  will    be intimated shortly'' &lt;&lt;endl;
+
+}
+
+void Display ( ) //Function 4
+
+{
+
+cout&lt;&lt;"Roll no :"&lt;&lt;Rollno; 
+
+cout&lt;&lt;"Name :"&lt;&lt;Cname; 
+
+cout&lt;&lt;"Marks :"&lt;&lt;Marks;
+
+}
+
+} ;</pre>
+    <p>
+     (i) Which OOP concept does Function 1 and Function 2 implement. Explain ?
+     <br/>
+     <strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+      <span style="color: #008000;">
+       Answer:
+       <br/>
+      </span>
+     </strong>
+     Constructor Overloading/Polymorphism, as multiple definitions for Constructors are given in the same scope. Function 1 is a Default constructor and function 2 is a Parameterized constructor.
+     <br/>
+     <em>
+      <strong>
+       [1/2 mark for the concept]
+      </strong>
+     </em>
+     <br/>
+     <em>
+      <strong>
+       [1/2 mark for explanation]
+      </strong>
+     </em>
+     <br/>
+     What is Function 3 called ? When will it be invoked ?
+     <br/>
+     <strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+      <span style="color: #008000;">
+       Answer:
+      </span>
+     </strong>
+     <br/>
+     (ii) Function 3 is a Destructor which is invoked when the object goes out of scope.
+     <br/>
+     <em>
+      <strong>
+       [1/2
+      </strong>
+      <strong>
+       mark for identification]
+      </strong>
+     </em>
+     <br/>
+     <em>
+      <strong>
+       [1/2
+      </strong>
+      <strong>
+       mark for time of invocation]
+      </strong>
+     </em>
+    </p>
+    <div class="code-block code-block-4" style="margin: 8px 0; clear: both;">
+    </div>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 4:
+      </strong>
+     </span>
+     <br/>
+     Answer the questions (i) and (ii) after going through the following class :
+    </p>
+    <pre style="padding-left: 30px;">class planet 
+
+{
+
+char name[20];
+
+char distance[20] 
+
+public:
+
+planet()    //Function 1
+
+{
+
+strcpy(name, "Venus");
+
+strcpy(distance,"38 million km");
+
+}
+
+void display(char na[],char d[]) //Function 2 
+
+{
+
+cout&lt;&lt;na&lt;&lt;"has"&lt;&lt;d&lt;&lt;" distance from Earth"&lt;&lt;endl ;
+
+}
+
+planet (char na[],char d[]) //Funciton 3 
+
+strcpy(name,na); 
+
+strcpy(distance,d);
+
+}
+
+~Planet()  //Function 4
+
+{
+
+cout&lt;&lt;"Planetarium time over !!! "«endl;
+
+}
+
+ };</pre>
+    <p>
+     (i) What is Function 1 referred as ? When will it be executed ?
+     <br/>
+     (ii) Write suitable C++ statement to invoke Function 2.
+     <br/>
+     <strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+      <span style="color: #008000;">
+       Answer:
+       <br/>
+      </span>
+      (i)
+     </strong>
+     Constructor
+     <br/>
+     It will be excuted at the time of object creation.
+     <br/>
+     <strong>
+      (1 1/2 Mark for each correct answer)
+     </strong>
+     <br/>
+     <strong>
+      (ii)
+     </strong>
+     planet p;
+     <br/>
+     p.display(“Pluto”,”7.5 Billion Km”);
+     <br/>
+     <strong>
+      (1/2 Mark for each correct answer)
+     </strong>
+    </p>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 5:
+      </strong>
+     </span>
+     <br/>
+     Observe the following C++ code and answer the question (i) and (ii):
+     <strong>
+      [O.D, 2015]
+     </strong>
+    </p>
+    <pre style="padding-left: 30px;">class passenger
+
+{
+
+long PNR; 
+
+char Name [20]    ;
+
+public :
+
+passenger    (    )    //Function    1
+
+{cout&lt;&lt;"Ready"&lt;&lt;endl; } 
+
+void Book (long P, char N[ ])
+
+//Function 2
+
+{ PNR = P; strcpy (Name, N) . ; } void print (    )    //Function    3
+
+{ cout&lt;&lt;PNR &lt;&lt; Name &lt;&lt; endl; } -Passenger (    )    //Function    4
+
+{ cout&lt;&lt;"Booking cancelled ! "&lt;&lt;endl
+
+}
+
+} ;</pre>
+    <p>
+     <strong>
+      (i)
+     </strong>
+     Fill in the statements in Line 1 and Line 2 to execute Function 2 and Function 3 respectively in the following code:
+     <br/>
+     void main ( )
+     <br/>
+     {
+     <br/>
+     Passenger P;
+     <br/>
+     __________   //Line 1
+     <br/>
+     __________   //Line 2
+     <br/>
+     } // Ends here
+     <br/>
+     <strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+      <span style="color: #008000;">
+       Answer:
+       <br/>
+      </span>
+     </strong>
+     (i) P. Book (1234567, “Ravi”);    //Line    1
+     <br/>
+     P. Frint ();                                      //Line    2
+     <br/>
+     <em>
+      <strong>
+       (1/2 Mark for writing each correct Function)
+      </strong>
+     </em>
+     <br/>
+     (ii) Which function will be executed at } // Ends here ? What is this function referred as ?
+     <br/>
+     (ii) Function 4
+     <br/>
+     <strong>
+      OR
+      <br/>
+     </strong>
+     ~ Passenger ()
+     <br/>
+     It is a Destructor function.
+     <br/>
+     <em>
+      <strong>
+       (1/2 Mark for writing Function 4  OR  ~Passenger ())
+      </strong>
+     </em>
+     <br/>
+     It is a Destructor function.
+     <br/>
+     <em>
+      <strong>
+       (1/2 Mark for referring Destructor)
+      </strong>
+     </em>
+    </p>
+    <div class="code-block code-block-5" style="margin: 8px 0; clear: both;">
+    </div>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 6:
+      </strong>
+     </span>
+     <br/>
+     Answer the questions (i) and (ii) after going through the following C+ + class :
+     <strong>
+      [CBSE SQP 2015]
+     </strong>
+    </p>
+    <pre style="padding-left: 30px;">class Stream
+
+{
+
+int StreamCode ; 
+
+char Streamname [20]; float fees;
+
+public:
+
+Stream( )    //Function 1
+
+{
+
+StreamCode=1;
+
+strcpy (Streamname,"DELHI"); 
+
+fees=1000;
+
+}
+
+void display(float C) //Function 2
+
+{
+
+cout&lt;&lt;StreamCode&lt;&lt;":"&lt;&lt;Streamname &lt;&lt;fees&lt;&lt;endl;
+
+}
+
+~Stream( )    //Function 3
+
+{
+
+cout&lt;&lt;"End of Stream Object"&lt;&lt;endl;
+
+}
+
+Stream (int SC,char S[ ],float F) ;
+
+//Function 4
+
+} ;</pre>
+    <p>
+     <strong>
+      (i)
+     </strong>
+     In Object Oriented Programming, what are Function 1 and Function 4 combined together referred as ? Write the definition of function 4.
+     <br/>
+     <strong>
+      (ii)
+     </strong>
+     What is the difference between the following statements ?
+     <br/>
+     Stream S(11,”Science”,8700);
+     <br/>
+     Stream S=Stream(11,”Science”,8700);
+     <br/>
+     <strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+      <span style="color: #008000;">
+       Answer:
+       <br/>
+      </span>
+     </strong>
+     (i) Constructor Overloading
+     <br/>
+     Stream (int Sc, char S[], float F)
+     <br/>
+     {
+     <br/>
+     StreamCode = Sc;
+     <br/>
+     strcpy(Streamname, S);
+     <br/>
+     fees = F;
+     <br/>
+     }
+     <strong>
+      [1]
+     </strong>
+     <br/>
+     (ii) The constructors can be called explicitly or implicitly. The method of calling the constructor implicitly is also called the shorthand method.
+     <br/>
+     <strong>
+      Stream S(ll,” Science,8700);
+     </strong>
+     – In this statement constructor is called implicitly.
+     <br/>
+     <strong>
+      Stream S = Stream(ll,”Science,8700);
+     </strong>
+     – Here constructor is called explicitly.
+     <strong>
+      [1]
+     </strong>
+    </p>
+    <div class="code-block code-block-6" style="margin: 8px 0; clear: both;">
+    </div>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 7:
+      </strong>
+     </span>
+     <br/>
+     Answer the question (i) and (ii) after going through the following class:
+    </p>
+    <pre style="padding-left: 30px;">class Book 
+
+{
+
+int BookNo; char BookTitle[20];
+
+public:
+
+Book ();
+
+//Function 1 
+
+Book (Book &amp;);    //Function 2
+
+Book (int, char [ ] );//Function 3
+
+void Buy ();    //Function 4
+
+void Sell ();    //Function 5
+
+:
+
+:
+
+}</pre>
+    <p>
+     <strong>
+      (i)
+     </strong>
+     Name the feature of Object Oriented Programming demonstrated by Function 1, Function 2 and Function 3.
+     <strong>
+      [CBSE Comptt., 2013]
+     </strong>
+     <br/>
+     (ii) Write statements in C + + to execute function 3 &amp; Function 4 inside the main () function.
+     <br/>
+     <strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+      <span style="color: #008000;">
+       Answer:
+      </span>
+     </strong>
+     <br/>
+     (i) Constructor overloading is demonstrated.
+     <strong>
+      [1]
+     </strong>
+     (ii) void main ()
+    </p>
+    <div class="code-block code-block-7" style="margin: 8px 0; clear: both;">
+    </div>
+    <pre style="padding-left: 30px;">{ 
+
+Book B;
+
+B. Book (5,'Jay');
+
+B. Buy();
+
+} <strong>[1]</strong></pre>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 8:
+      </strong>
+     </span>
+     <br/>
+     Answer the questions (i) and (ii) after going through the following class:
+    </p>
+    <pre style="padding-left: 30px;">class Race
+
+{
+
+int CarNo, Track; 
+
+public:
+
+Race ( ) ;                         //Function 1
+
+Race (int CN);               //Function 2
+
+Race (Race &amp;R);          //Function 3
+
+void Register! );          //Function 4
+
+void Drive( );              //Function 5
+
+};
+
+void main( )
+
+{
+
+Race R;
+
+}</pre>
+    <p>
+     <strong>
+      (i)
+     </strong>
+     Out of the following, which of the options is correct way for calling Function 2?
+     <br/>
+     Option 1—Race T(30);
+     <br/>
+     Option 2—Race U(R);
+     <br/>
+     <strong>
+      (ii)
+     </strong>
+     Name the feature of Object Oriented
+     <br/>
+     Programming, which is illustrated by Function 1, Function 2, and Function 3 combined Together.
+     <strong>
+      [O.D, 2013]
+     </strong>
+     <br/>
+     <strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+      <span style="color: #008000;">
+       Answer:
+       <br/>
+      </span>
+     </strong>
+     (i) Option 1: Race T(30) is the correct way for calling Function 2.
+     <strong>
+      [1]
+     </strong>
+     <br/>
+     (ii) Constructor Overloading, i.e., Polymorphism.
+     <strong>
+      [1]
+     </strong>
+    </p>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 9:
+      </strong>
+     </span>
+     <br/>
+     Answer the questions (i) and (ii) after going through the following class:
+    </p>
+    <pre style="padding-left: 30px;">class Motor 
+
+{
+
+int MotorNo, Track; 
+
+public:
+
+Motor ();                          //Function 1
+
+Motor (int MN);                   //Function 2
+
+Motor (Motor &amp; M) ;               //Function 3
+
+void Allocate();                  //Function 4
+
+void Move();                      //Function 5
+
+} ;
+
+void main()
+
+{
+
+MotorM;
+
+}</pre>
+    <p>
+     <strong>
+      (i)
+     </strong>
+     Out of the following, which of the options is correct way for calling Function 2?
+     <br/>
+     Option 1—Motor N(M);
+     <br/>
+     Option 2—Motor P(10);
+     <br/>
+     <strong>
+      (ii)
+     </strong>
+     Name the feature of Object Oriented Programming, which is illustrated by Function 1, Function 2 and Function 3 combined Together.
+     <strong>
+      <em>
+       [Delhi, 2013]
+      </em>
+     </strong>
+     <br/>
+     <strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+      <span style="color: #008000;">
+       Answer:
+      </span>
+     </strong>
+     <br/>
+     (i) Option 2: Motor P(10) is the correct way for calling Function 2.
+     <strong>
+      [1]
+     </strong>
+     <br/>
+     (ii) Constructor Overloading, i.e.,
+     <strong>
+      Polymorphism.
+     </strong>
+     <strong>
+      [1]
+     </strong>
+    </p>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 10:
+      </strong>
+     </span>
+     <br/>
+     What is constructor overloading ? Give an example to illustrate the same.
+     <strong>
+      [CBSE SQP 2013]
+     </strong>
+     <br/>
+     <strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+      <span style="color: #008000;">
+       Answer:
+      </span>
+     </strong>
+     <br/>
+     Declaring constructors with different parameters in a program is called Constructor overloading.
+     <strong>
+      [1]
+     </strong>
+     <br/>
+     <strong>
+      Example:
+     </strong>
+    </p>
+    <pre style="padding-left: 30px;">class Circle
+
+{
+
+int radius, area; public:
+
+Circle()    //Constructor
+
+{
+
+radius=0;
+
+}
+
+Circle(int r)//Constructor Overloaded
+
+{
+
+radius=r;
+
+}
+
+};    <strong>[1]</strong></pre>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 11:
+      </strong>
+     </span>
+     <br/>
+     What is a Copy Constructor ? Give a suitable example of Copy Constructor using a class in C+ + .
+     <strong>
+      [CBSE Comptt. 2016]
+     </strong>
+     <br/>
+     <strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+      <span style="color: #008000;">
+       Answer:
+      </span>
+     </strong>
+     <br/>
+     Copy Constructor
+     <br/>
+     • A copy constructor is a special constructor in the C++ programming language used to create a new object as a copy of an existing object.
+     <br/>
+     • A copy constructor is a constructor of the form classname (classname &amp;). The compiler will use the copy constructors
+     <br/>
+     • whenever you initialize an instance using the values of another instance of the same type.
+     <br/>
+     • Copying of objects is achieved by the use of a copy constructor and a assignment operator.
+     <br/>
+     <strong>
+      Example:
+     </strong>
+    </p>
+    <pre style="padding-left: 30px;">class Sample {int i, j ; 
+
+public:
+
+Sample(int a, int b) // constructor {i=a;j =b;}
+
+Sample (Sample &amp; s)
+
+//copy constructor
+
+{j=s.j ; i=s.j;
+
+cout &lt;&lt; "\n Copy constructor
+
+working \n";
+
+}
+
+void print (void)
+
+{cout&lt;&lt;i&lt;&lt;j&lt;&lt;"\n";
+
+}
+
+};</pre>
+    <p>
+     <strong>
+      Note :
+     </strong>
+     The argument to a copy constructor is passed by reference, the reason being that when an argument is passed by value, a copy of it is constructed. But the copy constructor is creating a copy of the object for itself, thus, it calls itself. Again the called copy constructor requires another copy, so again it is called. In fact it calls itself again and again until the compiler runs out of the memory so, in the copy constructor, the argument must be passed by reference.
+     <strong>
+      [2]
+     </strong>
+    </p>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 12:
+      </strong>
+     </span>
+     <br/>
+     Observe the following C++ code and answer the questions (i) and (ii) Assume all necessary files are included :
+     <strong>
+      [CBSE Comptt 2016]
+     </strong>
+    </p>
+    <pre style="padding-left: 30px;">class COMIC
+
+{
+
+long CCode; 
+
+char CTitle [20]; 
+
+float CPrice; 
+
+public :
+
+COMIC ()    //Member Function 1
+
+{
+
+cout&lt;&lt;"got..."&lt;&lt;endl; 
+
+CCode=100;strcpy(CTitle, "Unkown"); CPrice=100;
+
+}
+
+COMIC(int C, char T[],float p) //Member Function 2
+
+CCode=C;
+
+strapy(CTitle, T);
+
+CPrice=P;
+
+}
+
+void Raise(float P)
+
+//Member Function 3
+
+{
+
+void Disp()
+
+//Member Function 4
+
+{ 
+
+cout&lt;&lt;CCode&lt;&lt;";"&lt;&lt;CTitle&lt;&lt; " ; "&lt;&lt;CPrice&lt;&lt;endl;
+
+}
+
+-COMIC() //Member Function 5
+
+{
+
+cout&lt;&lt;"COMIC discarded! "«endl;
+
+}
+
+} ;
+
+void main()                               //Line  1
+
+{                                         //Line  2
+
+COMIC Cl,C2(1001,"Tom and Jerry",75)      //Line  3
+
+for (int 1=0;I&lt;4;I++) /                   //Line  4 
+
+{                                         //Line  5
+
+Cl.Raise(20);C2,Raise(15);                //Line  6
+
+Cl.DispO ;C2.Disp() ;                     //Line  7                     
+
+      }                                   //Line  8
+
+}                                         //Line  9</pre>
+    <p>
+     <strong>
+      (i)
+     </strong>
+     Which specific concept of object oriented programming out of the following is illustrated by Member Function 1 and Member Function 2 combined together ?
+     <br/>
+     • Data Encapsulation
+     <br/>
+     • Data Hiding
+     <br/>
+     • Polymorphism
+     <br/>
+     • Inheritance
+     <br/>
+     <strong>
+      (ii)
+     </strong>
+     How many times the massage “COMIC Discard!” will be displayed after executing the above C++ code ? Out of Line 1 to Line 9, which line(s) is responsible to display the message “COMIC Discarded!”
+     <br/>
+     <strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+      <span style="color: #008000;">
+       Answer:
+      </span>
+     </strong>
+     <br/>
+     <strong>
+      (i)
+     </strong>
+     Polymorphism
+     <br/>
+     <strong>
+      <em>
+       (1 Mark for mentioning the correct option name)
+      </em>
+     </strong>
+     <br/>
+     <strong>
+      (ii)
+     </strong>
+     2 times Line 9
+     <br/>
+     <em>
+      <strong>
+       (1/2 Mark for writing correct number of times)
+      </strong>
+     </em>
+     <br/>
+     <em>
+      <strong>
+       (1/2 Mark for writing correct line numbers)
+      </strong>
+     </em>
+    </p>
+    <h4 style="text-align: center;">
+     <span id="Short_Answer_Type_Questions-II_3_marks_each">
+      <span style="color: #0000ff;">
+       Short Answer Type Questions-II  [3 marks each]
+      </span>
+     </span>
+    </h4>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 1:
+      </strong>
+     </span>
+     <br/>
+     Differentiate between Constructor and Destructor functions giving suitable example using a class in C++. When does each of them execute ?
+     <strong>
+      [Delhi, 2016]
+      <br/>
+     </strong>
+     <strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+      <span style="color: #008000;">
+       Answer:
+      </span>
+     </strong>
+     <br/>
+     Constructor is a member function which creates an object.
+     <br/>
+     Destructor is a member function which deallocates the memory occupied by an object
+    </p>
+    <pre style="padding-left: 30px;">class ABC
+
+{
+
+int a, b; 
+
+public 
+
+ABC () //Constructor
+
+{a=0;b=0;}
+
+~ ABC () //Destructor
+
+{
+
+}
+
+};</pre>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 2:
+      </strong>
+     </span>
+     <br/>
+     Observe the following C++ code and answer the questions (i) and (ii). Assume all necessary files are included.
+     <strong>
+      [Delhi, 2016]
+     </strong>
+    </p>
+    <pre style="padding-left: 30px;">class FICTION
+
+{
+
+long FCode; 
+
+char FTitle [20]; 
+
+float FPrice;
+
+Public:
+
+FICTION()
+
+//Member Function 1
+
+{
+
+cout &lt; &lt;"Bought"&lt; &lt; endl;
+
+FCode=100;strcpy(FTitle,"Noname ");FPrice=50;
+
+}
+
+FICTION(int C, char T[], float P) //Member Function 2
+
+{
+
+FCode=C;
+
+strcpy(FTitle,T);
+
+FPrice=P;
+
+}
+
+void Increase(float P) //Member Function 3
+
+{
+
+FPrice+=P;
+
+}
+
+void Show()
+
+//Member Function 4
+
+{
+
+cout&lt;&lt;Fcode&lt;&lt; " : "&lt;&lt;FTitle&lt;&lt;":"&lt;&lt;FPrice&lt;&lt;endl;
+
+}
+
+~FICTION ( ) //Member Function 5
+
+}
+
+};
+
+void    main()                       //Line 1
+
+{                                    //Line 2
+
+FICTION FI, F2(101,"Dare",75);      // Line 3
+
+for    (int 1=0;I&lt;4;I++)            //Line  4
+
+{                                   //Line  5
+
+F1.Increase(2 0);F2.
+
+Increase(15);                       //Line 6   
+
+FI.Show();                          //Line 7
+
+F2.Show()                           //Line 8
+
+}                                   //Line 9</pre>
+    <p>
+     <strong>
+      (i)
+     </strong>
+     Which specific concept of object oriented programming out of the following is illustrated by Member Function 1 and Member Function 2 combined together ?
+     <br/>
+     &gt; Data Encapsulation
+     <br/>
+     &gt; Data Hiding
+     <br/>
+     &gt; Polymorphism
+     <br/>
+     &gt; Inheritance
+     <br/>
+     <strong>
+      (ii)
+     </strong>
+     How many times the message “Fiction removed!” will be display ed after executing the above C + + code ? Out of Line 1 to Line 9, which line is responsible to display the message “Fiction removed! ” ?
+     <br/>
+     <strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+      <span style="color: #008000;">
+       Answer:
+      </span>
+     </strong>
+    </p>
+    <p style="padding-left: 30px;">
+     <strong>
+      (i)
+     </strong>
+     Polymorphism
+     <strong>
+      1
+     </strong>
+     <br/>
+     <strong>
+      (ii)
+     </strong>
+     2 times
+     <strong>
+      1
+     </strong>
+     <br/>
+     Line 9.
+     <strong>
+      1
+     </strong>
+    </p>
+    <h3 style="text-align: center;">
+     <span id="Topic-II_Destructors">
+      <span style="text-decoration: underline;">
+       <span style="color: #0000ff;">
+        <strong>
+         Topic-II
+         <br/>
+        </strong>
+       </span>
+      </span>
+      <span style="color: #0000ff;">
+       Destructors
+      </span>
+     </span>
+    </h3>
+    <h4 style="text-align: center;">
+     <span id="Short_Answer_Type_Questions-I_2_marks_each-2">
+      <strong>
+       <span style="color: #0000ff;">
+        Short Answer Type Questions-I
+       </span>
+      </strong>
+      <span style="color: #0000ff;">
+       [2 marks each]
+      </span>
+     </span>
+    </h4>
+    <h4 style="text-align: center;">
+     <span id="i">
+     </span>
+    </h4>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 1:
+      </strong>
+     </span>
+     <br/>
+     Write any two similarities between Constructors and Destructors. Write the Function headers for constructor and destructor of a class Flight.
+     <em>
+      <strong>
+       [O.D, 2013]
+      </strong>
+     </em>
+     <br/>
+     <strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+      <span style="color: #008000;">
+       Answer:
+      </span>
+     </strong>
+     <br/>
+     Similarities between Constructor and Destructor:
+     <br/>
+     <strong>
+      (i)
+     </strong>
+     Both have same name as of the class name.
+     <br/>
+     <strong>
+      (ii)
+     </strong>
+     Both handle the objects of a class.
+     <strong>
+      [1]
+     </strong>
+     <br/>
+     <strong>
+      Function Headers:
+     </strong>
+    </p>
+    <pre style="padding-left: 30px;">Constructor:
+
+Flight ( )
+
+Destructor:
+
+~ Flight ( )   <strong> [1]</strong></pre>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 2:
+      </strong>
+     </span>
+     <br/>
+     Write any two differences between Constructors and Destructors. Write the function headers for constructor and destructor of a class member.
+     <em>
+      <strong>
+       [Delhi, 2013]
+      </strong>
+     </em>
+     <br/>
+     <strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+      <span style="color: #008000;">
+       Answer:
+      </span>
+     </strong>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="41">
+       </td>
+       <td style="text-align: center;" width="134">
+        <strong>
+         Constructor
+        </strong>
+       </td>
+       <td style="text-align: center;" width="131">
+        <strong>
+         Destructor
+        </strong>
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="41">
+        <strong>
+         (i)
+        </strong>
+       </td>
+       <td style="text-align: center;" width="134">
+        Invoked every time when the object is created
+       </td>
+       <td style="text-align: center;" width="131">
+        Invoked everytime when object goes out of scope.
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="41">
+        <strong>
+         (ii)
+        </strong>
+       </td>
+       <td style="text-align: center;" width="134">
+        Used to construct and initialize object values.
+       </td>
+       <td style="text-align: center;" width="131">
+        Used to destroy objects
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     <strong>
+      [1]
+      <br/>
+      Function Headers:
+     </strong>
+     <br/>
+     <strong>
+      Constructor:
+     </strong>
+     <br/>
+     Member ( )
+     <br/>
+     <strong>
+      Destructor:
+     </strong>
+     <br/>
+     ~ Member ( )
+     <strong>
+      [1]
+     </strong>
+    </p>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 3:
+      </strong>
+     </span>
+     <br/>
+     Answer the following questions (i) and (ii) aftergoing through the following class :
+    </p>
+    <pre style="padding-left: 30px;">class Tour 
+
+{
+
+ int LocationCode; char Location[20]; float Charges;
+
+public:
+
+Tour()                                               //Function 1
+
+{
+
+LocationCode=1;
+
+strcpy (Location,"PURI");
+
+Charges=1200;
+
+}
+
+void TourPlan(float C)                                //Function 2
+
+{
+
+cout&lt;&lt;PlaceCode&lt;&lt;":"&lt;&lt;LPlace&lt;&lt;":" &lt;&lt;Charges&lt;&lt;endl;
+
+Charges+=100;
+
+Tour (int LC, char L[ ], float C)
+
+                                                      //Function 3
+
+{
+
+LocationCode=LC; 
+
+strcpy(Location, L);
+
+Charges=C;
+
+~Tour( )                                              //Function 4
+
+{
+
+ cout&lt;&lt;"TourPlan cancelled" &lt;&lt;endl;
+
+ }
+
+ };</pre>
+    <p>
+     (i) In object oriented programming, what are Function 1 and Function 3 combined together known as?
+     <br/>
+     (ii) In object oriented programming, which concept is illustrated by Function 4? When is this function called/invoked?
+     <br/>
+     <em>
+      <strong>
+       [Delhi, 2012]
+      </strong>
+     </em>
+     <br/>
+     <strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+      <span style="color: #008000;">
+       Answer:
+      </span>
+     </strong>
+     <br/>
+     (i) Function 1 and 3 are together referred as Constructor overloading.
+     <strong>
+      [1]
+     </strong>
+     <br/>
+     (ii) Function 4 illustrates Destructor.
+     <strong>
+      [1/2]
+     </strong>
+     <br/>
+     It is invoked when object goes out of scope.
+     <strong>
+      [1/2]
+     </strong>
+    </p>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 4:
+      </strong>
+     </span>
+     <br/>
+     Answer the following questions (i) and (ii) after going through the following class:
+    </p>
+    <pre style="padding-left: 30px;">class Travel
+
+int PlaceCode;
+
+char Place [20];
+
+float Charges;
+
+public:
+
+Travel( )                                        //Function 1
+
+{
+
+PlaceCode=l;
+
+strcpy (Place,"DELHI");
+
+Charges=l000;
+
+}
+
+void TravelPlan( float C)                         //Function 2
+
+{
+
+cout&lt;&lt;PlaceCode&lt;&lt;":"&lt;&lt;Place&lt;&lt;":"« Charges&lt;&lt;endl;
+
+Charges+=100;
+
+}
+
+~Travel ( )                                       //Function 3
+
+{
+
+cout&lt;&lt;"Travel Plan cancelled"&lt;&lt;endl;
+
+}
+
+Travel (int PC, charP [ ], float C)
+
+                                                  //Function 4
+
+{
+
+PlaceCode=PC;
+
+strcpy(Place, P);
+
+Charges=C;
+
+}
+
+};</pre>
+    <p>
+     (i) In object oriented programming, what are Function 1 and Function 4 combined together known as?
+     <br/>
+     (ii) In object oriented programming, which concept is illustrated by Function 3? When is this function called/invoked?
+     <br/>
+     <strong>
+      [O.D, 2012]
+     </strong>
+     <br/>
+     <strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+      <span style="color: #008000;">
+       Answer:
+      </span>
+     </strong>
+     <br/>
+     <strong>
+      (i)
+     </strong>
+     Function 1 and 4 are together referred as
+     <strong>
+      Constructor
+     </strong>
+     overloading.
+     <strong>
+      [1]
+     </strong>
+     <br/>
+     <strong>
+      (ii)
+     </strong>
+     Function 3 illustrates Destructor.
+     <strong>
+      [1/2]
+     </strong>
+     <br/>
+     It is invoked when object of the class goes out of scope.
+     <strong>
+      [1/2]
+     </strong>
+    </p>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 5:
+      </strong>
+     </span>
+     <br/>
+     Answer the questions (i) and (ii) after going through the following:
+    </p>
+    <pre style="padding-left: 30px;">class schoolbag
+
+{
+
+int pockets;
+
+public:
+
+schoolbag()                                //Function 1
+
+{ pockets=30;
+
+cout&lt;&lt;"The bag has pockets"&lt;&lt;endl;
+
+}
+
+void company()                             //Function 2
+
+{
+
+cout&lt;&lt;"The company of the Bag is ABC" «endl ;
+
+}
+
+schoolbag(int D)                           //Function 3
+
+{
+
+pockets=D;
+
+cout&lt;&lt;"Now    the    Bag    has
+
+pockets"&lt;&lt;pockets &lt;&lt;endl;
+
+}
+
+-schoolbag()                                 //Function 4
+
+{
+
+cout&lt;&lt;" Thanks " &lt; &lt; endl ;
+
+}
+
+};</pre>
+    <p>
+     <strong>
+      (i)
+     </strong>
+     In Object Oriented Programming, what is Function 4 referred as and when does it get invoked/called ?
+     <br/>
+     <strong>
+      (ii)
+     </strong>
+     In Object Oriented Programming, which concept is illustrated by Function 1 and Function 3 together ?
+     <br/>
+     <strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+      <span style="color: #008000;">
+       Answer:
+      </span>
+     </strong>
+     <br/>
+     <strong>
+      (i)
+     </strong>
+     Function 4 is referred as Destructor, and this function is called / invoked as soon as the scope of the object gets over.
+     <strong>
+      [1]
+     </strong>
+     <br/>
+     <strong>
+      (ii)
+     </strong>
+     Here constructor overloading concept is illustrated by function 1 and function 3 together.
+     <strong>
+      [1]
+     </strong>
+    </p>
+    <p>
+     <a class="button-red" href="http://www.learncbse.in/ncert-solutions-2/" title="NCERT Solutions Home Page">
+      NCERT Solutions
+     </a>
+     <a class="button-blue" href="http://www.learncbse.in/ncert-solutions-class-12-computer-science-c/" title="NCERT Solutions for Class 12 Computer Science (C++)">
+      Computer science
+     </a>
+     <a class="button-blue" href="http://www.learncbse.in/ncert-solutions-for-class-12-english/" title="NCERT Solutions for Class 12 English">
+      English
+     </a>
+     <a class="button-blue" href="http://www.learncbse.in/ncert-solutions-class-12-hindi-core/" title="NCERT Solutions for Class 12 Hindi">
+      Hindi
+     </a>
+     <a class="button-blue" href="http://www.learncbse.in/cbse-class-12-humanities/" title="NCERT Solutions for Class 12 Humanities">
+      Humanities
+     </a>
+     <a class="button-blue" href="http://www.learncbse.in/cbse-class-12-commerce/" title="NCERT Solutions for Class 12 Commerce">
+      Commerce
+     </a>
+     <a class="button-red" href="http://www.learncbse.in/cbse-class-12-science/" title="CBSE Class 12 Science">
+      Science
+     </a>
+    </p>
+    CONTENT END 2 
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"&gt;
+		&lt;rdf:Description rdf:about="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-constructor-destructor/"
+    dc:identifier="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-constructor-destructor/"
+    dc:title="NCERT Solutions for Class 12 Computer Science (C++) &amp;#8211; Constructor and Destructor"
+    trackback:ping="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-constructor-destructor/trackback/" /&gt;
+&lt;/rdf:RDF&gt;
+   </div>
+  </body>
+ </html>
+ <!-- Google tag (gtag.js) -->
+ <script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-C5VTZJSJCR">
+ </script>
+ <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C5VTZJSJCR');
+ </script>
+ <link href="styles.css" rel="stylesheet"/>
+</head>

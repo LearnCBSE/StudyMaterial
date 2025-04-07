@@ -1,0 +1,2135 @@
+<head>
+<meta charset="utf-8"/>
+<meta content="Bqdk9rTr4" name="admaven-placement"/>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript">
+</script>
+<style>
+  pre, code {
+        background-color: #f0f8ff;
+        border: 1px solid #d1e7ff;
+        border-radius: 5px;
+        padding: 10px;
+        font-family: 'Courier New', Courier, monospace;
+        color: #003366;
+        overflow-x: auto;
+    }
+ </style>
+<style>
+  pre, code {
+        background-color: #1e1e1e;  /* Dark background */
+        border-radius: 8px;         /* Rounded corners */
+        padding: 15px;               /* Padding for content */
+        font-family: 'Fira Code', monospace; /* Modern monospace font */
+        color: #dcdcdc;              /* Light text color */
+        overflow-x: auto;            /* Horizontal scroll */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        font-size: 14px;             /* Font size */
+        line-height: 1.5;            /* Line height for readability */
+    }
+
+
+
+
+
+
+    /* Optional: Highlight keywords */
+    .keyword {
+        color: #569cd6;              /* Blue color for keywords */
+        font-weight: bold;           /* Bold keywords */
+    }
+
+
+
+
+
+
+    .string {
+        color: #ce9178;              /* String color */
+    }
+
+
+
+
+
+
+    .comment {
+        color: #6a9955;              /* Comment color */
+        font-style: italic;          /* Italicize comments */
+    }</style>
+<style>
+  pre, code {
+        background-color: #f5f5f5;  /* Light grey background */
+        border-radius: 8px;         /* Rounded corners */
+        padding: 15px;               /* Padding for content */
+        font-family: 'Fira Code', monospace; /* Modern monospace font */
+        color: #dcdcdc;              /* Light text color */
+        overflow-x: auto;            /* Horizontal scroll */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        font-size: 14px;             /* Font size */
+        line-height: 1.5;            /* Line height for readability */
+    }
+
+    /* Optional: Highlight keywords */
+    .keyword {
+        color: #569cd6;              /* Blue color for keywords */
+        font-weight: bold;           /* Bold keywords */
+    }
+
+    .string {
+        color: #ce9178;              /* String color */
+    }
+
+    .comment {
+        color: #6a9955;              /* Comment color */
+        font-style: italic;          /* Italicize comments */
+    }
+ </style>
+<style>
+  pre, code {
+        background-color: #2e2e2e;  /* Dark background */
+        border-radius: 8px;         /* Rounded corners */
+        padding: 15px;               /* Padding for content */
+        font-family: 'Fira Code', monospace; /* Modern monospace font */
+        color: #dcdcdc;              /* Light text color */
+        overflow-x: auto;            /* Horizontal scroll */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        font-size: 14px;             /* Font size */
+        line-height: 1.5;            /* Line height for readability */
+    }
+
+    /* Optional: Highlight keywords */
+    .keyword {
+        color: #569cd6;              /* Blue color for keywords */
+        font-weight: bold;           /* Bold keywords */
+    }
+
+    .string {
+        color: #ce9178;              /* String color */
+    }
+
+    .comment {
+        color: #6a9955;              /* Comment color */
+        font-style: italic;          /* Italicize comments */
+    }
+ </style>
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ncert-solutions-class-12-computer-science-c-inheritance",
+  "url": "https://learncbse.online/ncert-solutions-class-12-computer-science-c-inheritance",
+  "description": "ncert-solutions-class-12-computer-science-c-inheritance"
+}
+ </script>
+ 
+ <!DOCTYPE html>
+
+<html>
+<body>
+<header class="entry-header">
+<h1 class="entry-title">
+     NCERT Solutions for Class 12 Computer Science (C++) – Inheritance
+    </h1>
+</header>
+<div class="entry-content">
+<div class="code-block code-block-2" style="margin: 8px 0; clear: both;">
+</div>
+<h2>
+     NCERT Solutions for Class 12 Computer Science (C++) – Inheritance
+    </h2>
+<p style="text-align: center;">
+     Long Answer Type Questions
+    </p>
+<p>
+     Question 1:
+     <br/>
+     Answer the questions (i) to (iv) based on the following :
+    </p>
+<div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+</div>
+<pre>class ITEM
+
+{
+
+int ID;
+
+char IName[20]; 
+
+protected: 
+
+float Qty; 
+
+public:
+
+ITEM();
+
+void Enter(); 
+
+void View();
+
+ };
+
+Class TRADER;
+
+{
+
+int DCode;
+
+Protected:
+
+char Manager[20]; 
+
+public:
+
+TRADER();
+
+void Enter();  
+
+void View();
+
+};
+
+class- SALEPOINT : public ITEM, private TRADER
+
+{
+
+Char Name[20],Location[20]; 
+
+public:
+
+SALEPOINT(); 
+
+void EnterAll(); 
+
+void ViewAll();
+
+};
+
+(i)Which type of Inheritance out of the following is illustrated in the above example ?
+
+ - Single Level Inheritance
+
+ - Multi Level Inheritance
+
+ - Multiple Inheritance
+
+(ii)Write the names of all the data members, which are directly accessible 
+
+from the member functions 
+
+of class SALEPOINT.
+
+(iii)Write the names of all the member functions, 
+
+which are directly accessible by an object of 
+
+class SALEPOINT.
+
+(iv)What will be the order of execution of the constructors, when an object of class 
+
+SALEPOINT is declared ?
+
+</pre>
+<p>
+     Аnswer:
+    </p>
+<ol>
+<li>
+      Multiple Inheritance
+     </li>
+<li>
+      Name, Location, Manager, Qty
+     </li>
+<li>
+      EnterAll ( ) , VeiwAll ( ) , Enter ( ) ,ViewO
+     </li>
+<li>
+      ITEM ( ) , TRADER (), SALEPOINT ()
+     </li>
+</ol>
+<p>
+     Question 2:
+     <br/>
+     Give the following class definition answer the question that is follow :
+    </p>
+<div class="code-block code-block-3" style="margin: 8px 0; clear: both;">
+</div>
+<pre>class University
+
+{
+
+char name[20]; 
+
+protected:
+
+char vc[20]; 
+
+public :
+
+void estd(); 
+
+void inputdata(); 
+
+void outputdata();
+
+ }
+
+class College : protected University 
+
+{ 
+
+int regno; 
+
+protected 
+
+char principal() 
+
+public :
+
+int no_of_students; 
+
+void readdata(); 
+
+void dispdata();
+
+ };
+
+class Department : public College 
+
+char name[20]; 
+
+char HOD[20]; 
+
+public:
+
+void fetchdata(int); 
+
+void displaydata();
+
+ }</pre>
+<p>
+     (i) Name the base class and derived class of college.
+     <br/>
+     Аnswer:
+     <br/>
+     Base class : University
+     <br/>
+     Derived class : Department
+     <br/>
+     (ii) Name the data member(s) that can be accessed from function display data.
+     <br/>
+     Аnswer:
+     <br/>
+     char name [20], char principal), no_of_students, char vc[20]
+     <br/>
+     (iii) What type of inheritance is depicted in the above class definition ?
+     <br/>
+     Аnswer:
+     <br/>
+     Multilevel Inheritance
+     <br/>
+     (iv)    What will be the size of an object (in bytes) of  class Department ?
+     <br/>
+     Аnswer:
+     <br/>
+     85 bytes.
+    </p>
+<p>
+     Question 3:
+     <br/>
+     Answer the question (i) to (iv) based on the following :
+    </p>
+<div class="code-block code-block-4" style="margin: 8px 0; clear: both;">
+</div>
+<pre>class Exterior 
+
+{
+
+int orderld; 
+
+char Address[20]; 
+
+protected:
+
+float Advance; 
+
+public:
+
+Exterior();
+
+void Book(); 
+
+void View();
+
+};
+
+class Paint : public Exterior
+
+ {
+
+int Wall Area, ColorCode; 
+
+protected: 
+
+char Type; 
+
+public:
+
+paint(); 
+
+void PBook(); 
+
+void PView()
+
+}; 
+
+class Bill : public Paint 
+
+{
+
+float Charges; 
+
+void Calculate(); 
+
+public:
+
+Bill();
+
+void Billing();
+
+void Print();
+
+ };
+
+(i)Which type of Inheritance out of the following is illustrated in the above example ?
+
+— Single Level Inheritance 
+
+— Multi Level Inheritance 
+
+— Multiple Inheritance</pre>
+<p>
+     Аnswer:
+     <br/>
+     Multi Level Inheritance
+     <br/>
+     (ii) Write the names of all the data members, which are directly accessible from the member functions of class Paint.
+     <br/>
+     Аnswer:
+     <br/>
+     Wall Area, Color Code, Type, Advance
+     <br/>
+     Note : No marks to be awarded for any partial/ additional answer(s)
+     <br/>
+     (iii) Write the names of all the member functions, which are directly accessible from an object of class Bill.
+     <br/>
+     Аnswer:
+     <br/>
+     Billing( ), Print( ), PBook( ), PView( ), Book( ), View( )
+     <br/>
+     Note :
+     <br/>
+     •  No marks to be awarded for any partial/ additional answer(s)
+     <br/>
+     •  Constructors can be ignored
+     <br/>
+     (iv) What will be the order of execution of the constructors, when an object of class Bill is declared ?
+     <br/>
+     Аnswer:
+     <br/>
+     Exterior(), Paint (), Bill()
+     <br/>
+     Note : No marks to be awarded for any other order
+    </p>
+<p>
+     Question 4:
+     <br/>
+     Write the definition of a class Photo in C + + with following description :
+     <br/>
+     Private Members
+     <br/>
+     — Pno // Data member for Picture Number (an integer)
+     <br/>
+     — Category // Data member for Picture Category (a string)
+     <br/>
+     — Exhibit // Data member for Exhibition Location (a string)
+     <br/>
+     — Fix Exhibit // A member function to assign
+     <br/>
+     //Exhibition Location as per category
+     <br/>
+     //as shown in the following table
+    </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+        Category
+       </td>
+<td style="text-align: center;">
+        Exhibit
+       </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+        Antique
+       </td>
+<td style="text-align: center;">
+        Zaveri
+       </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+        Modern
+       </td>
+<td style="text-align: center;">
+        Johnsen
+       </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+        Classic
+       </td>
+<td style="text-align: center;">
+        Terenida
+       </td>
+</tr>
+</tbody>
+</table>
+<p>
+     Public Members
+     <br/>
+     — Enter ( ) //A function to allow user to enter values //Pno, category and call FixLocation () function
+     <br/>
+     — SeeAll ( ) //A function to display all the data members
+    </p>
+<p>
+     Аnswer:
+    </p>
+<div class="code-block code-block-5" style="margin: 8px 0; clear: both;">
+</div>
+<pre>class photo
+
+{
+
+int Pno;
+
+ char Category [20]; char Exhibit [20]; void FixExhibit (); public :
+
+ void Register();
+
+ void ViewAll();
+
+ };
+
+ void Photo :: FixExhibit()
+
+{
+
+if(strcmpi(category, "Antique") == 0)
+
+strcpy(Exhibit, "Zaveri");
+
+else if(strcmpi(Category,"Modern") == 0)
+
+strcpy (Exhibit, "Johnsen");
+
+else if strcmpi(Category,"Classic") == 0) 
+
+strcpy(Exhibit, "Terenida");
+
+}
+
+void Photo :: Register()
+
+{
+
+cin&gt;&gt;"Pno"; 
+
+gets(Category);
+
+FixExhibit 0;
+
+}
+
+void Photo :: ViewAll()
+
+{
+
+coute&lt;Pno&lt;&lt;Category&lt;&lt;Exhibit&lt;&lt;endl;
+
+}</pre>
+<p>
+     Question 5:
+     <br/>
+     Answer the question (i) to (iv) based on the following :
+    </p>
+<pre>class Interior
+
+{
+
+int OrderId; 
+
+char Address[20]; 
+
+protected:
+
+float Advance; 
+
+public:
+
+Interior();
+
+void Book(); 
+
+void View();
+
+};
+
+class Painting : public Interior
+
+{ 
+
+int WallArea, ColorCode; 
+
+protected:
+
+char Type; 
+
+public:
+
+Painting(); 
+
+void PBook(); 
+
+void PView();
+
+};
+
+class Billing : public Painting
+
+{
+
+float Charges; 
+
+void Calculate(); 
+
+public:
+
+Billing(); 
+
+void Bill();
+
+void BillPrint();
+
+};
+
+(i) Which type of Inheritance of the following is illustrated in the above example ?
+
+— Single Level Inheritance 
+
+— Multi Level Inheritance 
+
+— Multiple Inheritance</pre>
+<p>
+     Аnswer:
+     <br/>
+     Mutli Level Inheritance
+     <br/>
+     (ii)    Write the names of all the data members, which are directly accessible from the member functions of class painting.
+     <br/>
+     Wall Area, Color Code, Type, Advance
+     <br/>
+     Note :
+     <br/>
+     •    No marks to be awaarded for any partial or additional answer(s)
+     <br/>
+     (iii)    Write the names of all the member functions, which are directly accessible from an object of class Billing. Bill(), BillPrint(), PBook(), PViewQ, Book(), View()
+     <br/>
+     Note : No marks to be awarded for any partial/ additional answer(s)
+     <br/>
+     • Constructors can be ignored
+     <br/>
+     (iv) What will be the order of execution of the constructors, when an object of class Billing is declared ?
+     <br/>
+     Аnswer:
+     <br/>
+     Interior, Painting, Billing
+     <br/>
+     Note : No marks to be awarded for any other order
+    </p>
+<div class="code-block code-block-6" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+     Question 6:
+     <br/>
+     Answer the questions (i) to (iv) based on the following code :
+    </p>
+<pre>class AC
+
+{
+
+char Model[10]; 
+
+char Date_of_purchase[10]; 
+
+char Company[20]; 
+
+public();
+
+AC();
+
+void enter car detail(); 
+
+void show car detail();
+
+};
+
+class Accessories : protected AC
+
+{
+
+protected:
+
+char Stabilizer[30]; 
+
+char AC_cover[20]; 
+
+public: 
+
+float Price;
+
+Accessories();  
+
+void enteraccessoriesdetails();
+
+void showaccessoriesdetails();
+
+};
+
+class Dealer : public Accessories
+
+{
+
+int No_of_dealers; 
+
+char dealers_name[20]; 
+
+int No_of_products; 
+
+public:
+
+Dealer();
+
+void enterdetails(); 
+
+void showdetails();
+
+}; 
+
+(i)How many bytes will be required by an object of class Dealer and class Accessories?
+
+(ii)Which type of inheritance is illustrated in the above c++ code ? Write the base class and 
+
+derived class name of class Accessories.
+
+(iii)Write names of all the members which are accessible from the objects of class Dealer.
+
+(iv)Write names of all the members accessible from member functions of class Dealer.</pre>
+<p>
+     Аnswer:
+     <br/>
+     (i) Object of Dealer = 118 bytes and object of Accessories = 98 bytes
+     <br/>
+     (ii) Multilevel Inheritance, Base class = AC,
+     <br/>
+     Derived class = Dealer
+     <br/>
+     (iii) enterdetails(), showdetails(), price, enteraccessoriesdetails(), showaccessoriesdetails()
+     <br/>
+     (iv) No_of_dealers, dealers name, No_of_products, enterdetails(), showdetails(), Stablizer, Ac_cover, price, enteraccessories details(), showaccessoriesdetails(), entercardetail, showcardetail()
+    </p>
+<div class="code-block code-block-7" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+     Question 7:
+     <br/>
+     Consider the following class state :
+    </p>
+<pre>class State
+
+{ 
+
+protected:
+
+int tp; //no. of tourist places 
+
+public:
+
+State()
+
+{
+
+tp = 0;
+
+}
+
+void inctp()
+
+{
+
+tp++;
+
+}
+
+int gettp()
+
+{
+
+return tp;
+
+}
+
+};
+
+Write a code in C + + to publically derive another class 'District' 
+
+with the following additional
+
+members derived in the Public visibility mode.
+
+Data Members
+
+distname - char(50)
+
+population - long
+
+Member functions:
+
+dinput() - To enter distname and population. 
+
+doutput() - To display distname and population on screen.</pre>
+<p>
+     Аnswer:
+    </p>
+<pre>class District : public state
+
+{
+
+private:   
+
+char *distname[50];
+
+long population;  
+
+public :
+
+void dinput()
+
+{   
+
+gets(distname); 
+
+cin&gt;&gt;population;
+
+}
+
+void output()
+
+{
+
+puts(disname);
+
+cout&gt;&gt;population ;
+
+}   
+
+}</pre>
+<p>
+     Question 8:
+     <br/>
+     Define a class Dance Academy in C++ with following description :
+     <br/>
+     Private Members :
+     <br/>
+     •    Enrollno of type int
+     <br/>
+     •    Name of type string
+     <br/>
+     •    Style of type string
+     <br/>
+     •    Fee of type float
+     <br/>
+     •    A member function chkfee( ) to assign the value of fee variable according to the style entered by the user according to the criteria as given below.
+    </p>
+<table border="2">
+<tbody>
+<tr>
+<td style="text-align: center;">
+        Style
+       </td>
+<td style="text-align: center;">
+        Fee
+       </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+        Classical
+       </td>
+<td style="text-align: center;">
+        10000
+       </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+        Western
+       </td>
+<td style="text-align: center;">
+        8000
+       </td>
+</tr>
+<tr>
+<td style="text-align: center;">
+        Freestyle
+       </td>
+<td style="text-align: center;">
+        11000
+       </td>
+</tr>
+</tbody>
+</table>
+<p>
+     Public Members
+     <br/>
+     • A function enrollment) to allow users to enter values for Enrollno, Name, Style and call function chkfee( ) to assign value of fee variable according to the Style entered by the user.
+     <br/>
+     • A function display( ) to allow users to view the details of all the data members.
+    </p>
+<p>
+     Аnswer:
+    </p>
+<pre>class Dance Academy
+
+int Enrollno;   
+
+char Name[20];
+
+Char, style[20-]
+
+Float Fee; 
+
+void chkfee()
+
+{
+
+if(strcmpi(Style."Classical")==0) 
+
+Fee=10000;
+
+else if(strcrapi(Style,"Western")==0)
+
+Fee=8000;
+
+else if(strcmpi(Style,"Freestyle")==0)
+
+Fee=11000; 
+
+}
+
+public;
+
+void enrollment()
+
+{
+
+cout&lt;&lt;"Please enter Enrollno,Name,Style";
+
+cin&gt;&gt;Enrollno;
+
+gets(Name);
+
+gets(Style);
+
+chkfee();
+
+}
+
+void display()
+
+{
+
+cout&lt;&lt;"\n Entered Enrollno, Name Style, and Fee is:
+
+"&lt;&lt;Enrollno&lt;&lt;"t"&lt;&lt;Name&lt;&lt;"\t"&lt;&lt;Style&lt;&lt;"\t"&lt;&lt;Fee;
+
+}
+
+};</pre>
+<p>
+     Question 9:
+     <br/>
+     Consider the following C++ code and answer the questions from (i) to (iv) :
+    </p>
+<pre>Class Campus
+
+{
+
+long Id; 
+
+char City[20]; 
+
+protected:
+
+char Country[20]; 
+
+public:
+
+Campus(); 
+
+void Register(); 
+
+void Display();
+
+};
+
+class Dept:private Campus
+
+{
+
+long DCode[10]; 
+
+char HOD[20]; 
+
+protected:
+
+double Budget; 
+
+public:
+
+Dept(); 
+
+void Enter(); 
+
+void Show();
+
+};
+
+class Applicant:public Dept
+
+{
+
+long RegNo; 
+
+char Name[20];
+
+public:
+
+Applicant(); 
+
+void Enroll(); 
+
+void View();
+
+};    
+
+(i) Which type of Inheritance is shown in the above example?
+
+(ii) Write the names of those member functions, 
+
+which are directly accessed from the objects of 
+
+class Applicant.
+
+(iii) Write the names of those data members, 
+
+which can be directly accessible from the member 
+
+functions of class Applicant.
+
+(iv) Is it possible to directly call function Display() 
+
+of class University from an object of 
+
+class Dept?
+
+(Answer as Yes or No).</pre>
+<p>
+     Аnswer:
+     <br/>
+     (i) Multilevel Inheritance
+     <br/>
+     (ii)  Enroll(), View(), Enter(), Show().
+     <br/>
+     (iii)  RegNo., Name, Budget.
+     <br/>
+     (iv)  No.
+    </p>
+<p>
+     Question 10:
+     <br/>
+     Consider the following and answer the question given below:
+    </p>
+<pre>class ITEM 
+
+{
+
+char ICode[10]; 
+
+protected:
+
+char IName[20]; 
+
+public:
+
+ITEM();
+
+void Enter():
+
+void Display();
+
+};
+
+class SUPPLIER
+
+{
+
+char SCode [10]; 
+
+protected:
+
+char SName[25]; 
+
+public :
+
+SUPPLIER(); 
+
+void TEnter(); 
+
+void TDisplay();
+
+};
+
+class SHOP: private SUPPLIER, public ITEM 
+
+{
+
+char SHOPADDRESS [15], SEmail [25]; 
+
+public:
+
+SHOP();
+
+void Enter();
+
+void Display();
+
+};
+
+(i)Which type of inheritance is shown in the above example? 
+
+(ii)Write the names of all the member functions accessible from Enter() 
+
+function of class SHOP.
+
+(iii)Write name of all the member functions accessible through an object of class SHOE
+
+(iv)What will be the order of execution for the constructors ITEM(), SUPPLIER() and SHOP(), 
+
+when an object of class SHOP is declared?</pre>
+<p>
+     Аnswer:
+    </p>
+<p>
+     (i) Multiple inheritance.
+     <br/>
+     (ii) Display (), TEnter(), TDisplay, Enter(), DisplayO.
+     <br/>
+     (iii) Enter(), DisplayO, ITEM.Enter(), Item. Display.
+     <br/>
+     (iv) ITEM(), then SUPPLIER(), then SHOP().
+    </p>
+<p>
+     Question 11:
+     <br/>
+     Consider the following C++ code and answer the questions from (i) to (iv) :
+    </p>
+<pre>class Personal:
+
+{
+
+int Class, Rno; char Section; protected:
+
+char Name[20];  
+
+public:  
+
+Personal(); 
+
+void Pentry(); 
+
+void Pdisplayf();
+
+};
+
+class Marks:private Personal
+
+{
+
+float M[5]; 
+
+protected:
+
+char Grade[5]; 
+
+public:
+
+Marks();
+
+void Mentry();
+
+void Mdisplay();
+
+};
+
+class Result : public Marks
+
+{
+
+float Total, Agg; 
+
+public:
+
+char FinalGrade,Comments[20]; 
+
+Result();
+
+void Rcalculate(); 
+
+void Rdisplayt();
+
+};    
+
+(i) Which type of inheritance is shown in the above example ?
+
+(ii) Write the names of those data members, 
+
+which can be directly accessed from the objects of 
+
+class result.
+
+(iii) Write the names of those member functions, 
+
+which can be directly accessed from the objects 
+
+of class Result.
+
+(iv) Write the names of those data members, 
+
+which can be directly accessed from the Mentry() function 
+
+of class Marks.</pre>
+<p>
+     Аnswer:
+    </p>
+<ol>
+<li>
+      Inheritance Type:
+      <br/>
+      Personal    Base class
+      <br/>
+      ↓
+      <br/>
+      Marks    Sub class of personal
+      <br/>
+      ↓
+      <br/>
+      Result    Sub class of Result
+      <br/>
+      Multilevel Inheritance
+     </li>
+<li>
+      FinalGrade
+      <br/>
+      Comments [20]
+     </li>
+<li>
+      Rcalculate ( )
+      <br/>
+      Rdisplay ( )
+      <br/>
+      Mentry ( )
+      <br/>
+      Mdisplay ( )
+     </li>
+<li>
+      M [5], Rno, Class, Section,
+      <br/>
+      Grade [5]
+     </li>
+</ol>
+<p>
+     Question 12:
+     <br/>
+     Consider the following C++ code and answer the questions from (i) to (iv):
+    </p>
+<pre>class Student 
+
+{
+
+int Class, Rno; 
+
+char Section; 
+
+protected :
+
+ char SName[20]; 
+
+public:
+
+ Student(); 
+
+void Stentry(); 
+
+void StdisplayO;
+
+};
+
+class Score: private Student
+
+{
+
+float Marks[5]; 
+
+protected:
+
+char Grade[5]; 
+
+public:
+
+Score(); 
+
+void Sentry(); 
+
+void Sdisplay();
+
+};
+
+class Report : public Score
+
+{
+
+float Total, Avg; 
+
+public:
+
+char OverallGrade, Remarks[20]; 
+
+Report(); 
+
+void Revaluate(); 
+
+void RPrint();
+
+};
+
+(i) Which type of inheritance is shown in the above example?
+
+(ii) Write the names of those data members, 
+
+which can be directly accessed from the objects of class 
+
+Report.
+
+(iii) Write the names of those member function, 
+
+which can be directly accessed from the objects of 
+
+class Report.
+
+(iv) Write the names of those data members, 
+
+which can be directly accessed from the Sentry( ) 
+
+function of class Score.</pre>
+<p>
+     Аnswer:
+    </p>
+<ol>
+<li>
+      Student
+      <br/>
+      ↓
+      <br/>
+      Score
+      <br/>
+      ↓
+      <br/>
+      Report
+      <br/>
+      This is multilevel inheritance:
+     </li>
+<li>
+      Data Members:
+      <br/>
+      Total,
+      <br/>
+      Avg,
+      <br/>
+      OverallGrade,
+      <br/>
+      Remarks [20],
+     </li>
+<li>
+      Member functions:
+      <br/>
+      Report ( ),
+      <br/>
+      REvaluate ( ),
+      <br/>
+      RPrint ( ),
+      <br/>
+      Score ( ),    .
+      <br/>
+      Sentry ( ),
+      <br/>
+      Sdisplay ( ).
+     </li>
+<li>
+      Data members
+      <br/>
+      Marks [5], Class, Rno, Section,
+      <br/>
+      Grade [5], SName.
+     </li>
+</ol>
+<p>
+     Question 13:
+     <br/>
+     Answer the questions (i) to (iv) based on the following:
+    </p>
+<pre>class COMPANY
+
+{ 
+
+char Location[20]; 
+
+double budget, income; 
+
+protected: 
+
+void Accounts(); 
+
+public :
+
+COMPANY(); 
+
+void Register(); 
+
+void Show();
+
+};
+
+ class FACTORY : public COMPANY
+
+{
+
+char Location[20]; 
+
+int Workers; 
+
+protected:double salary; 
+
+void Computer(); 
+
+public:
+
+FACTORY();
+
+void Enter(); 
+
+void Show();
+
+};
+
+class SHOP:private Company
+
+{
+
+char Location[20];
+
+float Area; 
+
+double Sale;
+
+public: 
+
+SHOP(); 
+
+void Input(); 
+
+void Output();
+
+};
+
+(i) Name the type of inheritance illustrated in the above C+ + code.
+
+(ii) Write the name of data members which are accessible from the member 
+
+functions of class SHOE
+
+(iii) Write the name of member functions which are accessible 
+
+from the objects of class FACTORY.
+
+(iv) Write the name of data members which are accessible from the objects of class SHOE</pre>
+<p>
+     Аnswer:
+     <br/>
+     (i) Hierarchical Inheritance
+     <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-inheritance-(81-1)" class="alignnone size-full wp-image-60018" data-recalc-dims="1" decoding="async" height="93" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-inheritance-81-1.png?resize=252%2C93&amp;ssl=1" width="252"/>
+<br/>
+     (ii) None
+     <br/>
+     (iii) Enter(), Show(), Register( ), Accounts company :: Show ().
+     <br/>
+     (iv) Data Members : NONE
+    </p>
+<p>
+     Question 14:
+     <br/>
+     Answer the questions (i) to (iv) based on the following:
+    </p>
+<pre>class ORGANIZATION
+
+{
+
+char Address[20];
+
+double budget, income; 
+
+protected: 
+
+void Compute(); 
+
+public:
+
+ORGANIZATION();
+
+void Get(); 
+
+void Show();
+
+};
+
+class WORKAREA : public ORGANIZATION
+
+{
+
+charAddress[20]; 
+
+int staff; 
+
+protected: 
+
+double pay; 
+
+void Calculate(); 
+
+public:
+
+WORKAREA(); 
+
+void Enter(); 
+
+void Display();
+
+};
+
+class SHOWROOM:private
+
+ORGANIZATION
+
+{
+
+char Address[20]; 
+
+float Area; 
+
+double Sale; 
+
+public:
+
+SHOWROOM(); 
+
+void Enter(); 
+
+void Show();
+
+};
+
+(i) Name the type of inheritance illustrated in the above C+ + code.
+
+(ii) Write the name of data members 
+
+which are accessible from the member functions of class SHOWROOM.
+
+(iii) Write the name of member functions which are accessible 
+
+from the objects of class WORKAREA.
+
+(iv) Write the name of members which are accessible from the objects of class SHOWROOM.   
+
+</pre>
+<p>
+     Аnswer:
+     <br/>
+     (i) Hierarchical Inheritance
+     <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-inheritance-(82-1)" class="alignnone size-full wp-image-60017" data-recalc-dims="1" decoding="async" height="94" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-inheritance-82-1.png?resize=250%2C94&amp;ssl=1" width="250"/>
+<br/>
+     (ii)  Address, Area, Sale, Budget, Income.
+     <br/>
+     (iii) Enter(), Display(), Get (), Show()
+     <br/>
+     (iv) Data Members: NONE
+     <br/>
+     Member Functions: Enter(), Show()
+    </p>
+<p>
+     Question 15:
+     <br/>
+     Answer the questions (i) to (iv) based on the following:
+    </p>
+<pre>class indoor_sports
+
+{
+
+int i_id; 
+
+char i_name[20]; 
+
+char i_coach[20]; 
+
+protected:
+
+int i_rank,i_fee;
+
+void get_ifee()
+
+public: indoor_sports();
+
+void iEntry();
+
+void ishow();
+
+};
+
+class outdoor_sports
+
+ {
+
+int o_id; 
+
+char o_name[20]; 
+
+char o_coach[20]; 
+
+protected;
+
+int orank,ofee;
+
+void get_ofee(); 
+
+public;
+
+outdoor_sports(); 
+
+void oshow();
+
+};
+
+class sports:public indoor_sports, protected outdoor_sports
+
+{
+
+char rules [20]; 
+
+public;
+
+sports();
+
+void registration(); 
+
+void showdata();
+
+};
+
+(i)Name the type of inheritance illustrated in the above C+ + code.
+
+(ii) Write the names of all the members, which are accessible 
+
+from the objects belonging to class
+
+outdoor_sports.
+
+(iii) Write the name of member functions which are accessible 
+
+from the objects of class sports.
+
+(iv) What will be the size of the object belonging to class indoor_sports?</pre>
+<p>
+     Аnswer:
+     <br/>
+     (i) Multiple Inheritance.
+     <br/>
+     (ii) Data Member; None
+     <br/>
+     Member Funcitons; oEntry(), oShow()
+     <br/>
+     Note :
+     <br/>
+     No marks to be awarded for any partial or additional answer (s)
+     <br/>
+     (iii) registration(), showdat(), oEnty(), oShow(), get_ofee(), iEntryO, iShow(), get_ ifee()
+     <br/>
+     Note :
+     <br/>
+     No marks to be awarded for any partial or additional answer (s)
+     <br/>
+     (iv) 46 Bytes
+    </p>
+<p>
+     Question 16:
+     <br/>
+     Write the definition of a class DISTRICT in C++ with following description :
+     <br/>
+     Private Member
+     <br/>
+     –  Dcode
+     <br/>
+     //Data member for code (an integer)
+     <br/>
+     –  DName
+     <br/>
+     //Data member for Name (a string)
+     <br/>
+     –  DPop
+     <br/>
+     //Data member for Population (a long int)
+     <br/>
+     –  Area
+     <br/>
+     //Data member for Area Coverage
+     <br/>
+     (a float)
+     <br/>
+     – Density
+     <br/>
+     //Data member for Population Density
+     <br/>
+     (a float)
+     <br/>
+     – DenCal()
+     <br/>
+     //A member function to calculate //Density as Pop/Area
+     <br/>
+     Public Members
+     <br/>
+     – Input()
+     <br/>
+     //A function to allow user to enter
+     <br/>
+     values of
+     <br/>
+     //Dcode, DName, DPop, Area and call
+     <br/>
+     DenCal () //function
+     <br/>
+     – ShowALL()
+     <br/>
+     //A function to display all the data
+     <br/>
+     members
+     <br/>
+     //also display a message “Highly Populated Area”
+     <br/>
+     //if the Density is more than 12000
+    </p>
+<p>
+     Аnswer:
+    </p>
+<pre>Class DISTRICT 
+
+{
+
+int DCode; 
+
+char DName[20]; 
+
+long int DPop;
+
+Float Area;
+
+Float Dens;
+
+Void Dencal();
+
+Public:
+
+void Input(); 
+
+void showALL();
+
+};
+
+void DISTICT::Input()
+
+{
+
+cin&gt;&gt;Dcode;
+
+gets(DName);//OR cin&gt;&gt;Dname;
+
+cin&gt;&gt;DPop;
+
+cin&gt;&gt;Area;
+
+Dencal();
+
+}
+
+void DISTRICT::ShowALL()
+
+{
+
+cout&lt;&lt;Dcode&lt;&lt;DName&lt;&lt;DPop&lt;&lt;Area&lt;&lt;Dens; //Ignore endl 
+
+if(Dens&gt;12000)cout&lt;&lt;"Highly Populated Area";
+
+\\Ignore endl
+
+}
+
+void DISTRICT::Dencal()
+
+{
+
+Dens=DPop/Area;
+
+}</pre>
+<p>
+     Question 17:
+     <br/>
+     Answer the questions (i) to (iv) based on the following :
+    </p>
+<pre>class PACKAGE
+
+{
+
+int PCode; 
+
+char PDes[20];
+
+protected:
+
+float PQty; 
+
+public :
+
+PACKAGE();
+
+void In();
+
+void DispO;
+
+};
+
+class TRANSPORT
+
+{
+
+int TCode; 
+
+protected:
+
+char TName[20]; 
+
+public:
+
+TRANSPORT(); 
+
+void Enter(); 
+
+void Display();
+
+};
+
+class DELIVERY:public PACKAGE, private TRANSPORT 
+
+{
+
+char Address[40],Date[12]; 
+
+public:
+
+DELIVERY();
+
+void Input(); 
+
+void Show();
+
+}
+
+(i) Which type of Inheritance out of the following illustrated in the above example?
+
+• Single Level Inheritance
+
+• Multi Level Inheritance
+
+• Multiple Inheritance
+
+(ii) Write the names of all the data members, 
+
+which are directly accessible from the member functions 
+
+of class DELIVERY.
+
+(iii) Write the names of all the member functions, 
+
+which are directly accessible by an object of 
+
+class DELIVERY.
+
+(iv) What will be the order of execution of the constructors, 
+
+when and object of class DELIVERY 
+
+is declared ?</pre>
+<p>
+     Аnswer:
+     <br/>
+     (i) Multiple Inheritance.
+     <br/>
+     (ii) PQty, IName, Address, Date
+     <br/>
+     (iii) Input(), show(), In(), Disp()
+     <br/>
+     (iv) PACKAGE(), TRANSPORTO, DELIVERY()
+    </p>
+<p>
+<a class="button-red" href="http://www.learncbse.in/ncert-solutions-2/" title="NCERT Solutions Home Page">
+      NCERT Solutions
+     </a>
+<a class="button-blue" href="http://www.learncbse.in/ncert-solutions-class-12-computer-science-c/" title="NCERT Solutions for Class 12 Computer Science (C++)">
+      Computer science
+     </a>
+<a class="button-blue" href="http://www.learncbse.in/ncert-solutions-for-class-12-english/" title="NCERT Solutions for Class 12 English">
+      English
+     </a>
+<a class="button-blue" href="http://www.learncbse.in/ncert-solutions-class-12-hindi-core/" title="NCERT Solutions for Class 12 Hindi">
+      Hindi
+     </a>
+<a class="button-blue" href="http://www.learncbse.in/cbse-class-12-humanities/" title="NCERT Solutions for Class 12 Humanities">
+      Humanities
+     </a>
+<a class="button-blue" href="http://www.learncbse.in/cbse-class-12-commerce/" title="NCERT Solutions for Class 12 Commerce">
+      Commerce
+     </a>
+<a class="button-red" href="http://www.learncbse.in/cbse-class-12-science/" title="CBSE Class 12 Science">
+      Science
+     </a>
+</p>
+<p>
+     Must Read:
+    </p>
+<p>
+<a href="https://paisaalgo.com/britannia-pivots-calculator/">
+      BRITANNIA Pivot Point Calculator
+     </a>
+</p>
+ CONTENT END 2 
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"&gt;
+		&lt;rdf:Description rdf:about="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-inheritance/"
+    dc:identifier="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-inheritance/"
+    dc:title="NCERT Solutions for Class 12 Computer Science (C++) &amp;#8211; Inheritance"
+    trackback:ping="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-inheritance/trackback/" /&gt;
+&lt;/rdf:RDF&gt;
+</div>
+</body>
+</html>
+<style>
+  body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+header, footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #222;
+    text-align: center;
+}
+a {
+    font-family: 'Playfair Display', serif;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #343434;
+    
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+ </style>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+header, footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+h1, h2, h3 {
+    color: #222;
+    text-align: center;
+}
+a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+.content {
+    max-width: 900px;
+    margin:  1.2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header {
+    background: linear-gradient(90deg, #4a90e2, #87cefa);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 0;
+    border-bottom: 5px solid #d9e9ff;
+}
+h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+.secondary-heading {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 0.2rem;
+    letter-spacing: 0.3px;
+}
+@media (min-width: 1024px) {
+    .desktop-banner {
+        max-width: 22% !important;
+    }
+}
+p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #343434;
+    
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+ </style>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-C5VTZJSJCR">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C5VTZJSJCR');
+ </script>
+<style>
+  .entry-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 90%;  /* Optionally set a max-width */
+    }
+ </style>
+<style>
+  .entry-content {
+        display: block;
+        margin: 0 auto;
+        max-width: 1200px; /* Set max-width if necessary */
+        padding: 0 1rem; /* Add padding to prevent text from touching edges */
+        text-align: center; /* Center text within the div */
+    }
+ </style>
+<style>
+  /* Centering the entry-content div and ensuring good structure */
+    .entry-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: #ffffff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        max-width: 1200px; /* Max width for large screens */
+        width: 100%; /* Ensure it doesn't exceed the container */
+        box-sizing: border-box;
+    }
+ </style>
+<style>
+  /* Left-aligning the entry-content div and ensuring good structure */
+.entry-content {
+    display: block; /* Set to block to avoid flex-based layout */
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 1200px; /* Max width for large screens */
+    width: 100%; /* Ensure it doesn't exceed the container */
+    box-sizing: border-box;
+    text-align: left; /* Align text to the left */
+}
+ </style>
+</head>

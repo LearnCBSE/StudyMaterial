@@ -1,0 +1,8 @@
+User-agent: *
+
+Disallow: /modify/
+
+Allow: /*.css$
+Allow: /*.js$
+
+Sitemap: https://learncbse.online/sitemap.xml

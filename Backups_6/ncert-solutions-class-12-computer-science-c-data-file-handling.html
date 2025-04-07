@@ -1,0 +1,2572 @@
+<head>
+<meta charset="utf-8"/>
+<meta content="Bqdk9rTr4" name="admaven-placement"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript">
+</script>
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ncert-solutions-class-12-computer-science-c-data-file-handling",
+  "url": "https://learncbse.online/ncert-solutions-class-12-computer-science-c-data-file-handling",
+  "description": "ncert-solutions-class-12-computer-science-c-data-file-handling"
+}
+ </script>
+<!DOCTYPE html>
+
+<html>
+</html>
+<style><style> background-color: #f0f8ff; border: 1px solid #d1e7ff; border-radius: 5px; font-family: 'Courier New', Courier, monospace; color: #003366; overflow-x: auto; } </style><style> pre, code { background-color: #1e1e1e; /* Dark background */ border-radius: 8px; /* Rounded corners */ padding: 15px; /* Padding for content */ font-family: 'Fira Code', monospace; /* Modern monospace font */ color: #dcdcdc; /* Light text color */ overflow-x: auto; /* Horizontal scroll */ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */ font-size: 14px; /* Font size */ line-height: 1.5; /* Line height for readability */ }
+ /* Optional: Highlight keywords */ .keyword { color: #569cd6; /* Blue color for keywords */ font-weight: bold; /* Bold keywords */ }
+ .string { color: #ce9178; /* String color */ }
+ .comment { color: #6a9955; /* Comment color */ font-style: italic; /* Italicize comments */ }</style><style> pre, code { background-color: #f5f5f5; /* Light grey background */ border-radius: 8px; /* Rounded corners */ padding: 15px; /* Padding for content */ font-family: 'Fira Code', monospace; /* Modern monospace font */ color: #dcdcdc; /* Light text color */ overflow-x: auto; /* Horizontal scroll */ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */ font-size: 14px; /* Font size */ line-height: 1.5; /* Line height for readability */ } /* Optional: Highlight keywords */ .keyword { color: #569cd6; /* Blue color for keywords */ font-weight: bold; /* Bold keywords */ } .string { color: #ce9178; /* String color */ } .comment { color: #6a9955; /* Comment color */ font-style: italic; /* Italicize comments */ } </style><style> /* Updated CSS Rules Here */ /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; /* Modern, clean sans-serif font */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; /* border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); padding: 10px 20px; */ flex-wrap: wrap; /* Ensure the menu items wrap on smaller screens */ text-align: center; /* border-radius: 8px; Rounded corners for a sleek design */ text-decoration: none; /* Remove underline for a clean look */ color: #0056b3; /* Deep blue color for professional tone */ transition: all 0.4s ease; /* Smoother transition effects */ } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; /* Prevent text from wrapping */ } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.7); */ transform: none; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; /* Darker text color for contrast */ border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover (Font Enlargement) */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* For Multi-Level Submenus */ .sub-menu-duplicate .sub-menu-duplicate { left: 100%; top: 0; transform: translateY(-10px); background-color: #f1f1f1; border-left: 4px solid #646667; } /* Active State for Menu Items */ .menu-link-duplicate:active, .menu-link-duplicate:focus { background-color: #0056b3; color: #fff; outline: none; } /* Mobile-Specific Styles */ @media (max-width: 768px) { /* Display only the main menu on mobile devices */ .menu-duplicate { display: flex !important; /* Ensure the main menu is visible */ flex-direction: row; /* Change to horizontal layout */ justify-content: center; /* Center-align menu items horizontally */ background-color: #fff; /* Maintain background color */ } .menu-item-duplicate { margin: 0 10px; /* Add spacing between main menu items horizontally */ } .menu-link-duplicate { font-size: 16px; /* Adjust font size for readability on mobile */ padding: 10px 15px; /* Increase touch area */ } /* Hide all submenus */ .sub-menu-duplicate { display: none !important; /* Completely hide submenus */ visibility: hidden !important; opacity: 0 !important; transform: none !important; } } </style><style> /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; font-size: 1.35rem; font-weight: 700; line-height: 1.6; letter-spacing: 0.03em; list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; flex-wrap: wrap; text-align: center; color: #0056b3; transition: all 0.4s ease; } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 500; position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 500; visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* Hide the menu on mobile devices */ @media (max-width: 768px) { /* Hide the entire menu on mobile devices */ .menu-duplicate { display: none !important; } } </style><style> .social-sidebar { position: fixed; top: 50%; left: 0; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; background-color: #f9f9f9; padding: 10px; border-radius: 0 5px 5px 0; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); z-index: 1000; transition: all 0.3s ease; } .social-sidebar.minimized { left: -50px; } #minimize-button { background-color: #007BFF; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-size: 16px; margin-bottom: 10px; transition: background-color 0.3s ease; } #minimize-button:hover { background-color: #0056b3; } .social-sidebar a { text-decoration: none; display: block; } .social-sidebar .social-icon { width: 30px; height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; } .social-sidebar .social-icon:hover { transform: scale(1.2); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } /* Responsive Design */ @media (max-width: 768px) { .social-sidebar { top: auto; bottom: 10px; left: 10px; flex-direction: row; gap: 15px; border-radius: 5px; padding: 8px; } .social-sidebar.minimized { left: -100%; } .social-sidebar .social-icon { width: 24px; height: 24px; } } </style><style> body { font-family: 'Playfair Display', serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background-color: #f9f9f9; } header, footer { background-color: #282c34; color: white; text-align: center; padding: 1.5rem 0; } h1, h2, h3 { font-family: 'Playfair Display', serif; color: #222; text-align: center; } a { font-family: 'Playfair Display', serif; color: #007BFF; text-decoration: none; font-weight: bold; } a:hover { text-decoration: underline; } p { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: bold; color: #343434; margin: 0; letter-spacing: 0.5px; } </style><style> body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background-color: #f9f9f9; } header, footer { background-color: #282c34; color: white; text-align: center; padding: 1.5rem 0; } h1, h2, h3 { color: #222; text-align: center; } a { color: #007BFF; text-decoration: none; font-weight: bold; } a:hover { text-decoration: underline; } .content { max-width: 900px; margin: 1.2rem auto; padding: 2rem; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); } header { background: linear-gradient(90deg, #4a90e2, #87cefa); color: white; text-align: center; padding: 2.5rem 0; border-bottom: 5px solid #d9e9ff; } h1 { font-size: 2.8rem; font-weight: bold; color: #ffffff; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); margin: 0; letter-spacing: 0.5px; } .secondary-heading { font-size: 1.3rem; font-weight: 500; color: #ffffff; margin-top: 0.2rem; letter-spacing: 0.3px; } @media (min-width: 1024px) { .desktop-banner { max-width: 22% !important; } } p { font-size: 1.2rem; font-weight: bold; color: #343434; margin: 0; letter-spacing: 0.5px; } </style><style> .entry-content { display: flex; justify-content: center; align-items: center; text-align: center; margin: 0 auto; max-width: 90%; /* Optionally set a max-width */ } </style><style> .entry-content { display: block; margin: 0 auto; max-width: 1200px; /* Set max-width if necessary */ padding: 0 1rem; /* Add padding to prevent text from touching edges */ text-align: center; /* Center text within the div */ } </style><style> /* Centering the entry-content div and ensuring good structure */ .entry-content { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin: 2rem auto; padding: 2rem; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; max-width: 1200px; /* Max width for large screens */ width: 100%; /* Ensure it doesn't exceed the container */ box-sizing: border-box; } </style><style> /* Left-aligning the entry-content div and ensuring good structure */ .entry-content { display: block; /* Set to block to avoid flex-based layout */ margin: 2rem auto; padding: 2rem; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; max-width: 1200px; /* Max width for large screens */ width: 100%; /* Ensure it doesn't exceed the container */ box-sizing: border-box; text-align: left; /* Align text to the left */ } </style>
+</head>
+<body>
+<header class="entry-header">
+<h1 class="entry-title" id="h1-1">
+   NCERT Solutions for Class 12 Computer Science (C++) – Data File Handling
+  </h1>
+</header>
+<div class="entry-content">
+<div class="code-block code-block-2" style="margin: 8px 0; clear: both;">
+</div>
+<h2 id="h2-2">
+   NCERT Solutions for Class 12 Computer Science (C++) – Data File Handling
+  </h2>
+<p style="text-align: left;">
+   TOPIC-1
+  </p>
+<p style="text-align: left;">
+   Data File Handling : text file
+  </p>
+<div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+</div>
+<p style="text-align: left;">
+   Short Answer Type Questions-I
+   <span class="MSGENFONTSTYLENAMETEMPLATEROLENUMBERMSGENFONTSTYLENAMEBYROLETEXT11Exact">
+<span style="font-weight: normal;">
+     [2 marks each]
+    </span>
+</span>
+</p>
+<p>
+   Question 1.
+   <br/>
+   Write a user defined function word_count() in C+ + to count how many words are present in a text file named “opinion.txt”. For Example, if the file opinion.txt contains following text:
+  </p>
+<div class="code-block code-block-3" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+   Co-education system is necessary for a balanced society. With co-education system. Girls and Boys may develop a feeling of mutual respect towards each other.
+  </p>
+<p>
+   The function should display the following :
+   <br/>
+   Total number of words present in the text file are:24
+   <br/>
+   Answer:
+  </p>
+<div class="code-block code-block-4" style="margin: 8px 0; clear: both;">
+</div>
+<pre>void word_count ()
+
+ {
+
+ ifstream i;char ch[20];int c=0;
+
+ i.open("opinion.txt"); while(!i.eof())
+
+ {
+
+ i&gt;&gt;ch;
+
+ C=C+1;
+
+ }
+
+ cout&lt;&lt;"Total number of words present in the text file are: "&lt;&lt;c;
+
+ }</pre>
+<p>
+   Question 2.
+   <br/>
+   Write a function in C + + to count and display the no of three letter words in the file “VOWEL.TXT”.
+   <br/>
+   Example :
+   <br/>
+   If the file contains :
+   <br/>
+   A boy is playing there. I love to eat pizza. A plane is in the sky.
+   <br/>
+   Then the output should be : 4
+   <br/>
+   Answer:
+  </p>
+<pre>#include
+
+ #include
+
+ void wordcount()
+
+ { char word[80];
+
+ int cnt=0;
+
+ ifstream fl;
+
+ f1.open("VOWEL.TXT");
+
+ while (fl&gt;&gt;word)
+
+ {
+
+ if (strlen(word) == 3)
+
+ {
+
+ cnt++;
+
+ cout&lt;&lt;word&lt;&lt;endl;
+
+ }
+
+ }
+
+ cout&lt;&lt;" number of three letter words = ”&lt;&lt;cnt;
+
+ f1.close();
+
+ }</pre>
+<p>
+   Question 3.
+   <br/>
+   Write a function AECount() in C++, which should read each character of a text file NOTES. TXT, should count and display the occurrence of alphabets A and E (including small cases a and e too).
+   <br/>
+   Example :
+   <br/>
+   If the file content is as follow :
+   <br/>
+   CBSE enhanced its CCE guidelines further.
+   <br/>
+   The AECount() function should display the output as
+   <br/>
+   A:1
+   <br/>
+   E:7
+   <br/>
+   Answer:
+  </p>
+<pre>Void AECount ()
+
+ {
+
+ Fstream obj;
+
+ Obj.open ("NOTES.TXT", ios :: in) ;
+
+ char x;
+
+ int i=o, Sum A=0, Sum E=0,
+
+ while (obj.get (ch)!=0)
+
+ {
+
+ obj . get (x) ;
+
+ if (x=="A"||? x=="a")
+
+ SumA =SumA+l;
+
+ if(x=="E"|| x =="e")
+
+ SumE=sumE+l;
+
+ }
+
+ cout&lt;&lt;"A:"&lt;&lt;sumA&lt;&lt;endl;
+
+ Cout&lt;&lt;"E:"&lt;&lt; SumE;
+
+ }</pre>
+<p>
+   Question 4.
+   <br/>
+   Write a function Countaroma() to count and display the number of times “Aroma” occurs in a text file “Cook.txt”.
+   <br/>
+   Note : Only complete word “Aroma” should be counted. Words like “Aromatic” should not be counted.
+   <br/>
+   Answer:
+  </p>
+<pre>Void Countword ()
+
+ {
+
+ fstream tfile;
+
+ clrscr();
+
+ tfile.open ("Cook.txt", ios::in);
+
+ char arr[80];
+
+ char ch;
+
+ int i=0;sum=0;n=0;
+
+ while(tfile)
+
+ {
+
+ tfile.get (ch)
+
+ arr[i] = ch;
+
+ i++ ;
+
+ if (strcpy(ch, "Aroma"))
+
+ {
+
+ i--;
+
+ sum = sum+i;
+
+ n++;
+
+ }
+
+ }
+
+ Cout&lt;&lt;"Total number of Aroma:" &lt;&lt;n;
+
+ }</pre>
+<p>
+   Question 5.
+   <br/>
+   Write a function EUCount ( ) in C++, which should read each character of a text file IMP TXT, should count and display the occurrence of alphabets E and U (including small cases e and u too).
+   <br/>
+   Example:
+   <br/>
+   If the file content is as follows ;
+   <br/>
+   Updated information is simplified by official websites.
+   <br/>
+   The EUCount() function should display the
+   <br/>
+   output as
+   <br/>
+   E:4
+   <br/>
+   U:1
+   <br/>
+   Answer:
+  </p>
+<div class="code-block code-block-5" style="margin: 8px 0; clear: both;">
+</div>
+<pre>void EUCount ()
+
+ {
+
+ fstream obj;
+
+ obj. open("IMP.TXT");
+
+ char ch;
+
+ int i = 0 , sumE=0, sumU=0 ;
+
+ while (obj. get (ch)! =0)
+
+ {obj. get (ch);
+
+ if(ch=="E"||ch=="e")
+
+ SumE=sumE+l;
+
+ if(ch=="U" ??ch =="u")
+
+ SumU=SumU+l;
+
+ } cout &lt;&lt; "E : " «sum E&lt;&lt;endl;
+
+ cout&lt;&lt;"U:"&lt;&lt;sumU&lt;&lt;endl;
+
+ }</pre>
+<p>
+   Question 6.
+   <br/>
+   Write a function CountDig() in C++ which reads the content of a text file story.txt and displays the number of digits in it
+   <br/>
+   For example if the file contains:
+   <br/>
+   Amrapali was a queen of Gareware Kingdom in the year 1911. She had 2 daughters.
+   <br/>
+   Her palace had 200 rooms.
+   <br/>
+   Then the output on the screen should be :
+   <br/>
+   Number of digits in Story: 8
+   <br/>
+   Answer:
+  </p>
+<pre>void CountDig ()
+
+ {
+
+ ifstream fin ("STORY.TXT");
+
+ char ch;
+
+ int count=0;
+
+ while(!fin.eof ())
+
+ {fin&gt;&gt;ch;
+
+ if(isdigit(ch))
+
+ count++;
+
+ }
+
+ cout&lt;&lt;"Number of digit in Story: "&lt;&lt;count;
+
+ fin:close();
+
+ }</pre>
+<p>
+   Question 7.
+   <br/>
+   Write a function in C + + to count the number of lines starting with a digit in a text file “Diary.Txt”.
+   <br/>
+   Answer:
+  </p>
+<div class="code-block code-block-6" style="margin: 8px 0; clear: both;">
+</div>
+<pre>int countNum ()
+
+ {
+
+ ifstream fin("Diary.Txt");
+
+ char ch[80];
+
+ int count = 0;
+
+ while (!fin.eof())
+
+ {
+
+ fin.getline (ch, 80);
+
+ if (isdigit (ch[0])
+
+ count ++;
+
+ }
+
+ fin.close( );
+
+ return count;
+
+ }</pre>
+<p>
+   Question 8.
+   <br/>
+   Write a function in C+ + to read the content of a text file “DELHI.TXT” and display all those lines on the screen, which are either starting with ‘D’ or starting with ‘M’.
+   <br/>
+   Answer:
+  </p>
+<pre>void disp ()
+
+ {
+
+ ifstream FILE("DELHI.TXT");
+
+ int CA= 0;
+
+ char LINE [80];
+
+ while(FILE.getline(LINE,80))
+
+ if(LINE [0]=='D' | | LINE[0]= 'M')
+
+ puts(LINE);
+
+ FILE.close();
+
+ }</pre>
+<p>
+   Question 9.
+   <br/>
+   Write a function in C++ to read the content of a text file “PLACES.TXT” and display all those lines on screen, which are either starting with ‘P’ or starting with ‘S’.
+   <br/>
+   Answer:
+  </p>
+<div class="code-block code-block-7" style="margin: 8px 0; clear: both;">
+</div>
+<pre>void disp ()
+
+ {
+
+ ifstream FILE("PLACES.TXT");
+
+ int CA=0;
+
+ char LINE [80];
+
+ while(FILE.getline(LINE,80))
+
+ if(LINE[0]=='P' | | LINE[0]=='S')
+
+ puts(LINE);
+
+ FILE.close();
+
+ }</pre>
+<p>
+   Question 10.
+   <br/>
+   Write a function CountYouMe ( ) in C+ + which reads the contents of a text file story.txt and counts the words You and Me (not case sensitive).
+   <br/>
+   For example, if the file contains:
+   <br/>
+   You are my best friend.
+   <br/>
+   You and me make a good team.
+   <br/>
+   The function should display the output as:
+   <br/>
+   Count for you : 2
+   <br/>
+   Count for Me : 1
+   <br/>
+   Answer:
+  </p>
+<pre>void countyoume ( )
+
+ {
+
+ ifstream fil("story.txt");
+
+ char word [80];
+
+ int WC = 0, WM = 0;
+
+ while (! fil.eof())
+
+ {
+
+ fil&gt;&gt;word;
+
+ if ((strcmp WC++ ; (word, "You") = = 0)
+
+ if (strcmp (word, "Me") = = 0) )
+
+ WM++ ;
+
+ }
+
+ cout &lt;&lt;"count for you" &lt;&lt; WC;
+
+ cout &lt;&lt;"count for me" &lt;&lt; WM;
+
+ fil. close ( ) ;}</pre>
+<p>
+   Question 11.
+   <br/>
+   Write a function in C + + to count the number of lines present in a text file “STORY.TXT”.
+   <br/>
+   Answer:
+  </p>
+<pre>void CountLine ()
+
+ {
+
+ ifstream FIL("STORY.TXT");
+
+ int LINES=0;
+
+ char STR[80]; while {FIL.getline(STR, 80);
+
+ LINES++;}
+
+ cout&lt;&lt;"No. of Lines:"&lt;&lt;LINES;
+
+ f.close();
+
+ }
+
+
+
+</pre>
+<p style="text-align: left;">
+<span style="text-decoration: underline;">
+    TOPIC-2
+   </span>
+</p>
+<p style="text-align: left;">
+   Data File Handling : binary file
+  </p>
+<p style="text-align: left;">
+   Very Short Answer Type Questions[1 mark each]
+  </p>
+<p>
+</p>
+<p>
+   Question 1.
+   <br/>
+   Write the command to place the file pointer at the 10th and 4th record starting position using seekp() or seekg() command. File object is “file”? and record name is “STUDENT”.
+   <br/>
+   Answer:
+   <br/>
+   file.seekp( 9 * sizeof(STUDENT), ios::beg);
+   <br/>
+   file.seekp( 3 * sizeof(STUDENT), ios::beg);
+  </p>
+<p>
+   Question 2.
+   <br/>
+   Find the output of the following C++ code considering that the binary file sp.dat already exists on the hard disk with 2 records in it.
+  </p>
+<pre>class sports
+
+ {
+
+ int id;
+
+ char sname[20];
+
+ char coach[20];
+
+ public:
+
+ void entry();
+
+ void show();
+
+ void writing();
+
+ void reading();
+
+ }s;
+
+ void sports::reading()
+
+ {
+
+ ifstream i;
+
+ i.open("sp.dat");
+
+ while(1)
+
+ {
+
+ i.read((char*)&amp;s.size of (s));
+
+ if(i.eof())
+
+ break;
+
+ else
+
+ cout&lt;&lt;"\n"&lt;&lt;i.tellg();
+
+ }
+
+ i.close () ;
+
+ }
+
+ void main()
+
+ {
+
+ s.reading();
+
+ }</pre>
+<p>
+   Answer:
+   <br/>
+   42
+   <br/>
+   84
+  </p>
+<p>
+   Question 3.
+   <br/>
+   A binary file “games.dat” contains data of 10 games where each game’s data is an object of the following class :
+  </p>
+<pre>class game
+
+ {
+
+ int gameno;
+
+ char game_name[20];
+
+ public :
+
+ void enterdetails(){cin&gt;&gt;gameno;
+
+ gets(game_name);}
+
+ void enterdetails()
+
+ {cout&lt;&lt;gameno&lt;&lt;endl&lt;&lt; game_name;}
+
+ };
+
+ With reference to this information, write C++ statement in the blank given below 
+
+to move the file pointer to the end of file, ifstream ifile; game G;
+
+ ifile.open("games.dat",ios::binary| ios::in);
+
+ cout&lt;&lt;ifile.tellg();</pre>
+<p>
+   Answer:
+  </p>
+<pre>ifile.seekg(0,ios::end);</pre>
+<p>
+   Question 4.
+   <br/>
+   Fill in the blanks marked as Statement 1 and Statement 2, in the program segment given below with appropriate functions for the required task,
+  </p>
+<pre>class Agency {
+
+ int ANo; //Agent Code
+
+ char AName [20]; //Agent Name
+
+ char Mobile [12]; //Agent Mobile
+
+ public:
+
+ void Enter (); /*Function to
+
+ enter details of agent*/
+
+ void Disp (); /‘Function to
+
+ display details of agent*/
+
+ int RAno () {return ANo; }
+
+ void UpdateMobile() /‘Function to update Mobile*/
+
+ {
+
+ cout&lt;&lt;"Updated Mobile:";
+
+ gets(Mobile);
+
+ };
+
+ void AgentUpdate ()
+
+ {
+
+ fstream F;
+
+ F. open ("AGENT.DAT", ios:: binary |ios:: in | ios:: out);
+
+ int Updt=0;
+
+ int UAno;
+
+ cout&lt;&lt;"Ano (Agent No - to update Mobile):"; cin&gt;&gt; UAno;
+
+ Agency A;
+
+ while (!Updt &amp;&amp; F.read ((char*) &amp;A, sizeof (A)))
+
+ {
+
+ if (A. RAno ()==UAno)
+
+ {
+
+ //Statement 1: To call the function to Update Mobile No.</pre>
+<pre> //Statement 2: To reposition file pointer to re-write the updated object back in the file
+
+F. Write ((char*)&amp;A, sizeof (A));
+
+Updt++;</pre>
+<pre> }
+
+ }
+
+ if (Updt)
+
+ cout&lt;&lt;"Mobile Updated for Agent" &lt;&lt;UAno&lt;&lt;endl;
+
+ else
+
+ cout&lt;&lt; "Agent not in the Agency"&lt;&lt;endl;
+
+ F. close ();
+
+ }</pre>
+<p>
+   Answer:
+   <br/>
+   Statement 1:
+   <br/>
+   A. Update Mobile ();
+   <br/>
+   Statement 2:
+   <br/>
+   F. seekg (-l*size of (A),ios:: (cur);
+  </p>
+<p>
+   Question 5.
+   <br/>
+   Fill in the blanks marked as Statement 1 and Statements 2, in the program segment given below with appropriate functions for the required task.
+  </p>
+<pre>class Medical
+
+ {
+
+ int RNo; //Representative Code
+
+ char Name [20];
+
+ //Representative Name
+
+ char Mobile [12];
+
+ //Representative Mobile
+
+ public :
+
+ void Input (); // Function to enter all details
+
+ void Show (); //Function to display all details
+
+ int RRno () {return RNo;}
+
+ void Change Mobile () //Function to change Mobile
+
+ {
+
+ cout&lt;&lt;"Changed Mobile:";
+
+ gets (mobile);
+
+ }
+
+ };
+
+ void RepUpdate ()
+
+ {
+
+ fstream F;
+
+ F. open ("REP. DAT", ios : : binaryl ios:: in| ios:: out):
+
+ int Change=0;
+
+ int URno;
+
+ cout&lt;&lt;"Rno (Rep No-to update Mobile) :"; cin&gt;&gt;URno;
+
+ Medical M;
+
+ while (! Change &amp;&amp; F.read((char*) &amp;M, sizeof (M))
+
+ {
+
+ if (M. RRno()==URno)
+
+ {
+
+ //Statement 1: To call the function to change Mobile No.
+
+ //Statement 2: To reposition file pointer to re-write
+
+ //the updated object back in the file ;
+
+ F. write ((char*) &amp;M, Sizeof (M)) ;
+
+ Change++;
+
+ }
+
+ }
+
+ if (change)
+
+ cout &lt;&lt;"Mobile Changed for Rep" &lt;&lt;URno&lt;&lt;endl;
+
+ else
+
+ cout &lt;&lt;"Rep not in the Medical"&lt; F. close ();
+
+ }</pre>
+<p>
+   Answer:
+   <br/>
+   Statement 1:
+   <br/>
+   M. Change Mobile ();
+   <br/>
+   Statement 2:
+   <br/>
+   F. seekp (-1* sizeof (M), ios :: (ur);
+  </p>
+<p>
+   Question 6.
+   <br/>
+   Fill in the blanks marked as Statement 1 and Statement 2, in the program segment given below with appropriate functions for the required task.
+  </p>
+<pre>class Agent
+
+ {
+
+ long ACode; //Agent Code
+
+ char AName [2 0] ; //Agent Name
+
+ int Commission;
+
+ public:
+
+ void Enter (); //Function to enter details of Agent
+
+ void Display (); //Function to display details of Agent
+
+ void Update (int c) //Function to modify commission
+
+ {
+
+ Commission = C;
+
+ }
+
+ int GetComm(){return Commission;}
+
+ long GetAcodeO {return Acode;}
+
+ };
+
+ void ChangeCommission (long AC, int CM)
+
+ //AC " Agent Code, whose commission needs to change
+
+ //CM " New Commission
+
+ {
+
+ fstream F;
+
+ F. open ("AGENT.DAT", ios : :
+
+ binary |ios : : in|ios : : out);
+
+ char Changed='N';
+
+ Agent A;
+
+ while (Changed=='N'&amp;&amp; F. read ((char*) &amp;A, size of (A)))
+
+ { if (A. GetAcode ()==AC)
+
+ {
+
+ Changed = 'Y';
+
+ A. Update (CM);
+
+ //Statement 1: To place file pointer to the required position
+
+------------------------;
+
+ //Statement 2: To write the object A on to the binary file
+
+ -------------------------;
+
+ }
+
+ }
+
+ if (Changed=='N')
+
+ cout &lt;&lt;"Agent not registered.";
+
+ F. close ();</pre>
+<p>
+   Answer:
+   <br/>
+   Statement 1:
+   <br/>
+   F. seekg (position);
+   <br/>
+   Statement 2:
+   <br/>
+   F. write ((char *) &amp; A, size of (A));
+  </p>
+<p>
+   Question 7.
+   <br/>
+   Fill in the blanks marked as Statement 1 and Statement 2, in the program segment given below with appropriate functions for the required task.
+  </p>
+<pre>class Customer {
+
+ long int CNo; //Customer Number
+
+ char CName[20]; //Customer Name
+
+ char Email[30]; //Email of Customer
+
+ public :
+
+ void Allocate(); //Function to allocate a member
+
+ void Show(); //Function to show customer data
+
+ void ModifyEmail() //Function to modify Email ,
+
+ { cout&lt;&lt;"Enter Modified Email:";
+
+ gets(Email);
+
+ }
+
+ long int GetCno( ) {return CNo;}
+
+ };
+
+ void ChangeData( )
+
+ {
+
+ fstream File;
+
+ File.open ("CUST.DAT", ios: :.binary | ios: :in|ios: :out);
+
+ int Change=0, Location; long int ChangeCno;
+
+ cout&lt;&lt;"Cno - whose email required to be modified:"; cin&gt;&gt;ChangeCno;
+
+ Customer CU;
+
+ while(Modify &amp;&amp; File,read((char*)&amp;CU, sizeof(CU)))
+
+ {
+
+ if (CU.GetCno()==ChangeCno)
+
+ {
+
+ CU.ModifyEmail ();
+
+ Location=File.tellg()- sizeof(CU);
+
+ //Statement 1: To place file pointer to the required position
+
+ //Statement 2: To write the object CU on to the binary file
+
+ Change ++;
+
+ }
+
+ }
+
+ if (Change)
+
+ cout&lt;&lt;"Email Modified... "&lt;&lt;endl;
+
+ else
+
+ cout &lt;&lt;"Customer not found... "&lt;&lt;endl;
+
+ File. close();
+
+ }</pre>
+<p>
+   Answer:
+   <br/>
+   Statement 1:
+   <br/>
+   File.seekp (-l*size of (CU), ios ::cur);
+   <br/>
+   Statement 2:
+   <br/>
+   File.write ((char*)&amp;CU, sizeof (CU));
+  </p>
+<p>
+   Question 8.
+   <br/>
+   A binary file “Students.dat” contains data of 10 students where each student’s data is an object of the following class:
+  </p>
+<pre>class Student
+
+ {
+
+ int Rno; char Name [20] ;
+
+ public:
+
+ void EnterDataO {cin&gt;&gt;Rno; cin. getline (Name, 20)}
+
+ void showData( ) {cout&lt;&lt;Rno&lt;&lt;”- &lt;&lt;Name&lt;&lt; endl;}
+
+ };</pre>
+<p>
+   With reference to this information, write output of the following program segment:
+  </p>
+<pre> ifstream file; Student S;
+
+ File.open ("Students.dat", ios::binary |ios::in);
+
+ File.seekg (0, ios::end);
+
+ Cout&lt;&lt;File.tellg();</pre>
+<p>
+   Answer:
+   <br/>
+   A1
+   <br/>
+   B2
+   <br/>
+   C3
+  </p>
+<p>
+   Question 9.
+   <br/>
+   Observe the program segment given below carefully and answer the questions that follow:
+  </p>
+<pre>class Stock
+
+ {
+
+ int Ino,Qty; char Item[20];
+
+ public:
+
+ void Enter( ){cin&gt;&gt;Ino;
+
+ gets(Item); cin&gt;&gt;Qty;}
+
+ void Issue (int Q) {Qty+=Q;}
+
+ void Purchase (int Q) {Qty- =Q;)
+
+ int GetlnoO {return Ino;}
+
+ } ;
+
+ void Purchaseltem (int Pino, int PQty)
+
+ {
+
+ fstream File;
+
+ File.open ("STOCK.DAT", ios:: binary |ios: : in|ios : : out);
+
+ Stock S;
+
+ int Success=0;
+
+ while (Success==0 &amp;&amp; File . read ((char*) &amp;S, sizeof (S)))
+
+ {
+
+ if (Pino==S. Getlno ())
+
+ {
+
+ S. Purchase (PQty);
+
+ //Statement 1
+
+ //Statement 2
+
+ Success++ ;
+
+ }
+
+ }
+
+ if (Success==l)
+
+ cout&lt;&lt;" Purchase Updated" &lt;&lt;endl;
+
+ else
+
+ cout&lt;&lt;"Wrong Item No"&lt;&lt;endl;
+
+ File . close ( ) ;
+
+ }</pre>
+<p>
+   (i)Write statement 1 to position the file pointer to the appropriate place, so that the data updation is done for the, required item.
+   <br/>
+   (ii)Write statement 2 to perform the write operation so that the updation is done in the binary file.
+   <br/>
+   Answer:
+   <br/>
+   (i) file.seekp(-sizeof(Qty), ios::cur);
+   <br/>
+   (ii) file.write((char*)&amp;S, sizeof (stock));
+  </p>
+<p>
+   Question 10.
+   <br/>
+   Observe the program segment given below carefully and answer the questions that follow:
+  </p>
+<pre>class Inventory
+
+ { int Ano, Qty; char Article [20];
+
+ public:
+
+ void Input () (cin&gt;&gt;Ano; gets(Article); cin&gt;&gt;Qty;}
+
+ void Issue (int Q) {Qty+=Q;}
+
+ void Procure (int Q) {Qty-=Q;}
+
+ int GetAno () {return Ano;}
+
+ };
+
+ void ProcureArticle (int TAno, int TQty)
+
+ {
+
+ fstream File;
+
+ File.open("STOCK.DAT", ios :: binary|ios :: in|ios :: out);
+
+ Inventory I;
+
+ int Found=0;
+
+ while (Found==0 &amp;&amp; File, read((char*)&amp;I. sizeof(I)))
+
+ if (TAno=|S.GetAno())
+
+ {
+
+ I. Procure (TQty);
+
+ //Statement 1
+
+ //Statement 2
+
+ Found++;
+
+ }
+
+ }
+
+ if (Found==l)
+
+ {
+
+ cout&lt;&lt;" Procurement Updated" &lt;&lt; endl ;
+
+ else
+
+ cout&lt;&lt;"Wrong Article No"&lt;&lt;endl; 
+
+ File.close ( ) ;}</pre>
+<p>
+   (i) Write statement 1 to position the file pointer to the appropriate place, so that the data updation is done for the required term.
+   <br/>
+   (ii) Write statement 2 to perform the write operation so that the updation is done in the binary file.
+  </p>
+<p>
+   Answer:
+   <br/>
+   (i) file.seekp(sizeof (qty), ios :: cur);
+   <br/>
+   (ii) file.write((char*)&amp; |, sizeof(|));
+  </p>
+<p style="text-align: left;">
+   Short Answer Type Questions-I[2 marks each]
+  </p>
+<p>
+</p>
+<p>
+   Question 1.
+   <br/>
+   Consider a file F containing objects E of class Emp. [Delhi, 2015]
+   <br/>
+   (i) Write statement to position the file pointer to the end of the file.
+   <br/>
+   (ii) Write statement to return the number of bytes from the begining of the file to the current position of the file pointer.
+   <br/>
+   Answer:
+   <br/>
+   (i) F. seekg (0,ios::end);
+   <br/>
+   (ii) F.tellg();
+  </p>
+<p>
+   Question 2.
+   <br/>
+   Write a function RevText() to read a text file “Input.txt” and Print only word starting with ‘I’in reverse order. [Delhi, 2015]
+   <br/>
+   Example : If value in text file is : INDIA IS MY COUNTRY v
+   <br/>
+   Output will be : AIDNI SI MY COUNTRY
+   <br/>
+   Answer:
+  </p>
+<pre>void RevText ()
+
+ {ifstream in ("Input.txt");
+
+ char word[25];
+
+ while(in)
+
+ { in &gt;&gt;word;
+
+ if (word[0] = = 'I' )
+
+ cout&lt;&lt;strrev(word);
+
+ else
+
+ cout&lt;&lt;word;
+
+ }</pre>
+<p>
+   Question 3.
+   <br/>
+   Write a function in C++ to search display details, where destination is “Chandigarh” from binary file “Flight.Dat”. Assuming the binary file is containing the objects of the following class :
+  </p>
+<pre> class FLIGHT
+
+ { int Fno; // Flight Number
+
+ char From [20]; // Flight Starting Point
+
+ char To [20]; //Flight Destination
+
+ public :
+
+ char * GetFrom (); { return from;}
+
+ char * GetTo(); { return To; }
+
+ void input()
+
+ {cin&gt;&gt;Fno&gt;&gt;; gets(From); get (To);}
+
+ void show()
+
+ {cout&lt;&lt;Fno&lt;&lt;":"&lt;&lt;From&lt;&lt;":"&lt;&lt;To&lt;&lt;endl; }
+
+ };</pre>
+<p>
+   Answer:
+  </p>
+<pre>void Dispdetails ()
+
+ {ifstream fin ("Flight.Dat");
+
+ Flight F;
+
+ while (fin)
+
+ {fin.read((char*)&amp;F,sizeof(F))
+
+ if (strcmp(F.GetTo0, "Chandigarh"))
+
+ F.show();
+
+ }
+
+ }</pre>
+<p>
+   Question 4.
+   <br/>
+   Write function definition for TOWER () in C++ to read content of a text file WRITEUE TXT. Count the presence of word TOWER and display the number of occurrences of this word.
+   <br/>
+   Note:
+   <br/>
+   — The word TOWER should be an independent word
+   <br/>
+   — Ignore type cases (i.e. lower/upper case) Example:
+   <br/>
+   If the content of the file WRITEUETXT is as follows:
+  </p>
+<pre>Tower of hanoi is an interesting problem. Mobile phone tower is away from here. 
+
+Views from EIFFEL TOWER are amazing.</pre>
+<p>
+   The function TOWER() should display the following:
+   <br/>
+   3
+   <br/>
+   Answer:
+  </p>
+<p>
+   void TOWER ()
+   <br/>
+   {
+   <br/>
+   int count = 0;
+   <br/>
+   ifstream f (“WRITEUP.TXT”);
+   <br/>
+   char s [20];
+   <br/>
+   while (! f . eof () )
+   <br/>
+   {
+   <br/>
+   f &gt;&gt;S;
+   <br/>
+   if (strcmpi (s, “TOWER”) = =0)
+   <br/>
+   count ++;
+   <br/>
+   }
+   <br/>
+   cout&lt;&lt;count; f.close () ;
+   <br/>
+   }
+  </p>
+<p>
+   OR
+   <br/>
+   Any other correct function defintion
+  </p>
+<p>
+   Question 5.
+   <br/>
+   Write a definition for function COSTLY() In C++ to read each record of a binary file GIFTS. DAT, find and display those items, which are priced more than 2000. Assume that the file GIFTS.DAT is created with the help of objects of class GIFTS, which is defined below:
+  </p>
+<pre>class GIFTS
+
+ {
+
+ int CODE; char ITEM [20] ; float PRICE;
+
+ public :
+
+ void procure ()
+
+ {
+
+ cin&gt;&gt;CODE; gets (ITEM); cin&gt;&gt;PRICE;
+
+ }
+
+ void View ()
+
+ {
+
+ cout&lt;&lt;CODE&lt;&lt;":"&lt;&lt;ITEM&lt;&lt;":"&lt; }
+
+ float GetPrice () {return PRICE;
+
+ }.</pre>
+<p>
+   Answer:
+  </p>
+<pre>void COSTLY ()
+
+ {
+
+ GIFTS G;
+
+ ifstream fin ("GIFTS.DAT" , ios : : binary);
+
+ while (fin.read( (char *)&amp;G, sizeof (G)))
+
+ {
+
+ if (G.GetPrlce () &gt;2000)
+
+ G.View ();
+
+ }
+
+ fin. close ();</pre>
+<p>
+   OR
+   <br/>
+   Any other correct equivalent function definition
+  </p>
+<p>
+   Question 6.
+   <br/>
+   Find the output of the following C++ code considering that the binary file MEMBER. DAT exists on the hard disk with records of 100 members:
+  </p>
+<pre>class MEMBER
+
+ {
+
+ int Mno; char Name [20];
+
+ public :
+
+ void In (); void out ();
+
+ };
+
+ void main ()
+
+ {
+
+ fstream MF;
+
+ MF.open (:MEMBER.DAT", ios :: binary |ios :: in);
+
+ MEMBER M;
+
+ MF.read ((char*) &amp;M, sizeof (M)) ;
+
+ MF.read ((char*)) &amp;M, sizeof (M));
+
+ MF.read ((char*) &amp;M, sizeof (M));
+
+ int POSITION = MF. tellg () / sizeof (M) ;
+
+ Cout&lt;&lt;"PRESENT REOCRD :"&lt; MF.close () ;
+
+ }</pre>
+<p>
+   Answer:
+   <br/>
+   PRESENT RECORD : 3
+  </p>
+<p>
+   Question 7.
+   <br/>
+   Write function definition for SUCCESS () in C + + to read the content of a text file STORY.TXT, count the presence of word STORY and display the number of occurrence of this word.
+   <br/>
+   Note:
+   <br/>
+   — The word STORY should be an independent word
+   <br/>
+   — Ignore type cases (i.e. lower/upper case)
+   <br/>
+   Example:
+   <br/>
+   If the content of the file STORY.TXT is as follows
+  </p>
+<pre>Success shows others that we can do it. It is possible to achieve success with hard work.
+
+ Lot of money does not mean SUCCESS.</pre>
+<p>
+   The function SUCCESS() should display the following:
+   <br/>
+   3
+   <br/>
+   Answer:
+  </p>
+<pre>void SUCCESS ()
+
+ {
+
+ int count = 0 ;
+
+ ifstream f ("STORY.TXT") ;
+
+ char s [20] ;
+
+ while (! f. eof () )
+
+ {
+
+ f &gt;&gt;S;
+
+ if (strcmpi (s, "STORY") = = 0)
+
+ //OR if (strcmpi (s, "SUCCESS")==0)
+
+ count++;
+
+ }
+
+ cout&lt;&lt;count;
+
+ f.close () ;</pre>
+<p>
+   OR
+   <br/>
+   Any other correct function definition
+  </p>
+<p>
+   Question 8.
+   <br/>
+   Write a definition for function Economic ( ) in C++ to read each record of a binary file ITEMS.DAT, find and display those items, which costs less than 2500. Assume that the file ITEMS. DAT is created with the help of objects of class ITEMS, which is defined below :
+  </p>
+<pre>class ITEMS
+
+ {
+
+ int ID; char GIFT [20] ; float cost ;
+
+ public :
+
+ void Get ()
+
+ {
+
+ cin&gt;&gt;CODE,-gets (GIFT) ;
+
+ cin&gt;&gt;cost;
+
+ }
+
+ void See ()
+
+ {
+
+ COUt &lt; }
+
+ float GetCost 0 {return Cost;}.
+
+ } ;</pre>
+<p>
+   Answer:
+  </p>
+<pre>void Economic ()
+
+ {
+
+ ITEMS I;
+
+ ifstream fin (" ITEMS.DAT",ios:: binary);
+
+ while (fin.read ((char *)&amp;I,sizeof (I)))
+
+ {
+
+ if (I.GetCost ()&lt;2500)
+
+ I. See ();
+
+ }
+
+ fin. close ();
+
+ }</pre>
+<p>
+   OR
+   <br/>
+   Any other correct equivalent function definition
+  </p>
+<p>
+   Question 9.
+   <br/>
+   Find the output of the following C++ code considering that the binary file CLIENTS. DAT exists on the hard disk with records of 100 members.
+  </p>
+<pre>class CLIENTS
+
+ {
+
+ int Cno; char Name [20];
+
+ public :
+
+ void In (); void out () ;
+
+ } ;
+
+ void main ( )
+
+ {
+
+ fstream CF;
+
+ CF.open "CLIENTS.DAT", ios :: binary | ios :: in);
+
+ CLIENTS C ;
+
+ CF.read ((char*) &amp;C, sizeof (C));
+
+ CF.read ((char*) &amp;C, sizeof (C));
+
+ CF.read ((char*) &amp;C, sizeof (C));
+
+ int POS = CF. tellg ()/sizeof (C) ;
+
+ cout &lt; &lt;"PRESENT RECORD :"&lt; &lt; POS &lt; &lt;endl;
+
+ CF.close ();
+
+ }</pre>
+<p>
+   Answer:
+   <br/>
+   PRESENT RECORD : 3
+  </p>
+<p>
+   Question 10.
+   <br/>
+   Write function definition for WORDABSTART () in C++ to read the content of a text file, JOY. TXT, and display all those words, which are starting with either ‘A’, ‘a’ or ‘B’, ‘b’.
+   <br/>
+   Example:
+   <br/>
+   If the content of the file JOY.TXT is as follows :
+   <br/>
+   I love to eat apples and bananas. I was travelling to Ahmedabad to buy some clothes.
+   <br/>
+   The function WORDABSTART() should display the following:
+   <br/>
+   apples bananas Ahmedabad buy
+  </p>
+<p>
+   Answer:
+  </p>
+<pre>void WORDABSTART ()
+
+ {
+
+ ifstream fil; fi1.open ("JOY.TXT");
+
+ char W[20];
+
+ fi1&gt; &gt;W;
+
+ while(!fil.eof())//OR While(fil)
+
+ {
+
+ if(strlen(w)==4) cout&lt;&lt;W&lt;&lt;" "; fi1&gt; &gt;W;
+
+ }
+
+ fil.close ();//Ignore
+
+ }</pre>
+<p>
+   Question 11.
+   <br/>
+   Write a definition for function OFFER() in C+ + to read each object of a binary file OFFER.DAT, find and display details of those ITEMS, which has status as “ON OFFER”. Assume that the file OFFER.DAT is created with the help of objects of class ITEMS, which is defined below:
+  </p>
+<pre>class ITEMS
+
+ {
+
+ int ID;char Item[20];Status[20]; float Price;
+
+ public:
+
+ void GetonstockO
+
+ {
+
+ cin&gt;&gt;ID;gets(Item);gets(Status);
+
+ cin&gt;&gt;Price;
+
+ }
+
+ void view()
+
+ {
+
+ cout&lt;&lt;ID&lt;&lt;":"&lt;&lt;Item&lt;&lt;":"&lt; }
+
+ char*IStatus(){return Status}.
+
+ };</pre>
+<p>
+   Answer:
+  </p>
+<pre>void OFFER ()
+
+ {
+
+ ITEMS;
+
+ ifstream fin;
+
+ fin.open("OFFER.DAT",ios::binary);
+
+ while(fin.read(char*)&amp;G size of(G))
+
+ {
+
+ if strcmp (G.Get status(),"ON OFFER")==0)
+
+ G.view();
+
+ }
+
+ fin.close()///Ignore
+
+}</pre>
+<p style="text-align: left;">
+   Short Answer Type Questions-II
+   <span class="MSGENFONTSTYLENAMETEMPLATEROLENUMBERMSGENFONTSTYLENAMEBYROLETEXT11Exact">
+<span style="font-weight: normal;">
+     [3 marks each]
+    </span>
+</span>
+</p>
+<p>
+   Question 1.
+   <br/>
+   Given the binary file CAR.Dat, containing . records of the following class CAR type:
+  </p>
+<pre>class CAR
+
+ {
+
+ int C_No;
+
+ char C_Name[20];
+
+ float Mileage;
+
+ public :
+
+ void enter( )
+
+ {
+
+ cin&gt;&gt; C_No ; gets(C_Name) ; cin &gt;&gt;Mileage;
+
+ }
+
+ void display( )
+
+ {
+
+ cout&lt;&lt;C_No; cout&lt;&lt;C_Name;
+
+ cout&lt;&lt;Mileage;
+
+ }
+
+ int RETURN_Mileage( )
+
+ {
+
+ return Mileage;
+
+ }
+
+ };</pre>
+<p>
+   Write a function in C++, that would read contents from the file CAR.DAT and display the details of car with mileage between 100 to 150.
+   <br/>
+   Answer:
+  </p>
+<pre>void CARSearch ()
+
+ {
+
+ fstream FIL;
+
+ FIL.open("CAR.DAT" , ios::binary|ios::in);
+
+ CAR C;
+
+ int Found = 0;
+
+ while(FIL.read((char*)&amp;C,sizeof(C)))
+
+ {
+
+ if ((C.RETURN_Mileage( )&gt;100) &amp;&amp;
+
+ (C.RETURN_Mileage( ) &lt; 150) )
+
+ {
+
+ C.display();
+
+ Found++;
+
+ }
+
+ }
+
+ if (Found==0)
+
+ cout&lt;&lt;"Sorry! No car found with mileage between 100 to 150";
+
+ FIL.close () ;
+
+ }</pre>
+<p>
+   Question 2.
+   <br/>
+   Given a binary file “SPORTS.DAT” containing records of the following class :
+  </p>
+<pre>class Player
+
+ { char PNO[10]; //player number
+
+ char Name[20]; //Name of player
+
+ int rank; //rank of the player
+
+ public :
+
+ void EnterData()
+
+ {
+
+ gets (PNO) ;gets (Name);cin&gt;&gt;rank;
+
+ }
+
+ void DisplayData()
+
+ { cout&lt;&lt;setw(12)&lt;&lt;PNO;
+
+ cout&lt;&lt;setw(32)&lt;&lt;Name;
+
+ cout&lt;&lt;setw(3)&lt;&lt;rank&lt;&lt;endl;
+
+ }
+
+ int Ret_rank() {return rank;}
+
+ } ;</pre>
+<p>
+   Write a function in C++ that would read contents of the file “SPORTS.DAT” and display the
+   <br/>
+   details of those jolayers whose rank is above 500.
+   <br/>
+   Answer:
+  </p>
+<pre>Void show()
+
+ {
+
+ fstream file;
+
+ file.open( ("SPORTS. DAT"),ios::binary:ios::in));
+
+ player P;
+
+ while (file.read((char*)&amp;P,sizeof(P)))
+
+ if(P.rank&gt;500)
+
+ { Pi
+
+ P.DisplayData () ;
+
+ P.close();
+
+ }
+
+ }</pre>
+<p>
+   Question 3.
+   <br/>
+   Assuming the Class WORKER as declared below, write a function in C++ to read the objects of WORKER from binary file named WORKER. DAT and display those records of workers, whose Wage is less then 300.
+  </p>
+<pre>class WORKER
+
+ {
+
+ int WNO;
+
+ char WName [30] ; float Wage;
+
+ public:
+
+ void Enter() {cin&gt;&gt;WNo; gets (WName); cin&gt;&gt;wage;}
+
+ void DISPO {Cout&lt;&lt;ENo&lt;&lt;'*'&lt; float GetWage () {return Wage,-}
+
+ };</pre>
+<p>
+   Answer:
+  </p>
+<pre>void Display()
+
+ {
+
+ ifstream fin;
+
+ fin.open("WORKER.DAT",ios::in | ios:: binary) ;
+
+ WORKER W;
+
+ while (! fin. eof () )
+
+ {
+
+ fin.read((char*)&amp;W,sizeof(W) ) ;
+
+ if W. GetWage() &lt;300)
+
+ W. DISP ();
+
+ }
+
+ fin. close ();
+
+ }</pre>
+<p>
+   Question 4.
+   <br/>
+   Assuming the class TOYS as declared below, write a function in C++ to read the objects of TOYS from binary file TOYS. DAT and display those details of those TOYS, which are meant for children of AgeRange “5 to 8”.
+  </p>
+<pre>class TOYS 
+
+{
+
+ int ToyCode;
+
+ char ToyName[10];
+
+ char AgeRange;
+
+ public:
+
+ void Enter()
+
+ {
+
+ cin&gt;&gt;ToyCode;
+
+ gets (ToyName);
+
+ gets(AgeRange);
+
+ }
+
+ void Display()
+
+ {
+
+ cout&lt;&lt;ToyCode
+
+ ToyName&lt;&lt;endl;
+
+ cout&lt;&lt;AgeRange&lt;&lt;endl;
+
+ }
+
+ char*WhatAge() {returnAgeRange;}
+
+ };</pre>
+<p>
+   Answer:
+  </p>
+<pre>void READTOYS()
+
+ { fstream obj;
+
+ obj.open ("TOYS.DAT",ios::binary);
+
+ TOYS T;
+
+ while (obj.read ((char*)&amp;T, Sizeof(T)))
+
+ if(T. WhatAge()&gt;=5&amp;&amp;T.whatAge&lt;=8)
+
+ T. Display();
+
+ obj. Close();
+
+ }</pre>
+<p>
+   Question 5.
+   <br/>
+   Assuming the class GAMES as declared below, write a functions in C++ to read the objects of GAMES from binary file GAMES.DAT and display those details of those GAMES, which are meant for children of AgeRange “8 to 13”.
+  </p>
+<pre>class GAMES
+
+ {
+
+ int GameCode; char GameName [10];
+
+ char AgeRange;
+
+ public:
+
+ void Enter()
+
+ {
+
+ cin&gt;&gt;GameCode;
+
+ gets(GameName);
+
+ gets (AgeRange);
+
+ }
+
+ void Display()
+
+ {
+
+ cout&lt;&lt;GameCode&lt;&lt;":"GameName&lt;&lt;endl;
+
+ cout&lt;&lt;AgeRange&lt;&lt;ehdl;
+
+ }
+
+ char* AgeR() {return AgeRange};
+
+ };</pre>
+<p>
+   Answer:
+  </p>
+<pre>Void READGAMES ()
+
+ { fstream obj ;obj. open ("GAMES.DAT",ios::binary);
+
+ Games T;
+
+ while (obj. read ((char*)&amp;T,size of(T) ) )
+
+ if (T. AgeR()&gt;=8&amp;&amp; T. What Age &lt;=13) T. Display ();
+
+ obj. closet)
+
+ }</pre>
+<p>
+   Question 6.
+   <br/>
+   Assuming the class ANTIQUE as declared below, write a function in C++ to read the objects of Antique from binary file ANTIQUE. DAT and display those antique items, which are priced between 10000 and 15000.
+  </p>
+<pre>class ANTIQUE
+
+ {
+
+ int ANO;
+
+ char Aname [10] ;
+
+ float price;
+
+ public :
+
+ void BUY() {cin&gt;&gt;ANO;gets(Aname); cin&gt;&gt; price;}
+
+ void SHOW ( )
+
+ {
+
+ cout&lt;&lt;ANO&lt;&lt;endl;
+
+ cout &lt; cout&lt;&lt;Price&lt;&lt;endl;
+
+ }
+
+ float Get Price ( ) {return Price;}
+
+ };</pre>
+<p>
+   Answer:
+  </p>
+<pre>void Disp( )
+
+ {
+
+ ifstream fin;
+
+ fin.open ("ANTIQUE.DAT", ios:: in |ios : : out | ios : : binary);
+
+ Antique A;
+
+ while (!fin.eof( ))
+
+ { -
+
+ fin.read ((char*) &amp;A, sizeof(A));
+
+ if (A.GetPrice ( )&gt; 10000 &amp; A.GetPrice( )&lt;15000)
+
+ A.SHOW( );
+
+ }
+
+ fin.close( ) ;
+
+ }</pre>
+<p>
+   Question 7.
+   <br/>
+   Assuming the class VINTAGE as declared below, write a function in C++ to read the objects of VINTAGE from binary file VINTAGE.DAT and display those vintage vehicles, which are priced between 200000 and 250000.
+  </p>
+<pre>class VINTAGE {
+
+ int VNO; //Vehicle Number
+
+ char VDesc[10]; //Vehicle Description
+
+ float price;
+
+ public:
+
+ void GET( ) {cin&gt;&gt;VNO;gets(VDesc); cin&gt;&gt;Price;}
+
+ void VIEW( )
+
+ {
+
+ cout&lt;&lt;VNO&lt;&lt;endl;
+
+ cout&lt;&lt;VDesc&lt;&lt;endl;
+
+ cout&lt;&lt;Price&lt;&lt;endl;
+
+ }
+
+ float ReturnPrice ( ) {return Price;}
+
+ };</pre>
+<p>
+   Answer:
+  </p>
+<pre>void Disp( )
+
+ {
+
+ ifstream fin;
+
+ fin.open ("VINTAGE.DAT", ios ::in| ios : : binary);
+
+ vintage V; while (Ifin.eof())
+
+ {
+
+ fin.read ((char*)&amp;V, sizeof(V));
+
+ if (V.ReturnPrice( )&gt; 200000 &amp; &amp;V.ReturnPrice( )&lt;250000)
+
+ V.VIEW ( );
+
+ }
+
+ fin.close ( );
+
+ }</pre>
+<p>
+   Question 8.
+   <br/>
+   Write a function display () in C + + to display all the students who have got a distinction (scored percentage more than or equal to 75) from a binary file “stud.dat”, assuming the binary file is containing the objects of the following class:
+  </p>
+<pre>class Student
+
+ {
+
+ int rno;
+
+ char sname [20];
+
+ int percent
+
+ public;
+
+ int retpercent()
+
+ {
+
+ return percent;
+
+ }
+
+ void getdetails()
+
+ {
+
+ cin&gt;&gt;rno;
+
+ gets(sname);
+
+ cin&gt;&gt;percent;
+
+ }
+
+ void showdetails()
+
+ {
+
+ cout&lt;&lt;rno;
+
+ puts(sname);
+
+ cout&lt;&lt;percent;
+
+ }
+
+ };</pre>
+<p>
+   Answer:
+  </p>
+<pre>void display()
+
+ {
+
+ student s;
+
+ ifstream i("stud.dat");
+
+ while(i.read(char*)&amp;s,sizeof(s)))
+
+ {
+
+ if(s.retpercent()&gt;=75)
+
+ S.showdetails();
+
+ }
+
+ i.close();
+
+ }</pre>
+<p>
+   Question 9.
+   <br/>
+   Write a function in C++ to search for the details (Phone no. and Calls) of those phones, which have more than 800 calls from a binary file “phones.dat”. Assuming that this binary file contains records/objects of class phone, which is defined below.
+  </p>
+<pre>class Phone
+
+ {
+
+ char Phoneno[10]; int Calls;
+
+ public:
+
+ void Get() {gets (Phoneno); cin&gt;&gt;Calls;}
+
+ void Billing!){cout&lt;&lt;Phoneno&lt;&lt;"#"&lt; int GetCalls(){return Calls;}
+
+ };</pre>
+<p>
+   Answer:
+  </p>
+<pre>void Search ()
+
+ {
+
+ ifstream infile;
+
+ infile, open ("phones.dat");
+
+ if(! infile)
+
+ {
+
+ cout&lt;&lt;"can't open the'file"; exit(); } while(! infile.eof()) } { infile, read (Char #) &amp; P, 
+
+size of (P); if (P. GetCalls()&gt;800)
+
+ P. Billing ();
+
+ }
+
+ infile.close ();
+
+ }</pre>
+<p>
+   Question 10.
+   <br/>
+   Write a function in C++ to search for the details (Number and Calls) of those Mobile phones, which have more than 100 calls from a binary file “mobile.dat”. Assuming that this binary file contains records/objects of class Mobile, which is defined below:
+  </p>
+<pre>class Mobile
+
+ {
+
+ char Number [10]; int Calls;
+
+ public:
+
+ void Enter () {gets (Number); cin&gt;&gt;Calls;}
+
+ void Billing () {cout&lt;&lt;Number&lt;&lt;"#"&lt; int GetCalls() {return Calls;}
+
+ } ;</pre>
+<p>
+   Answer:
+  </p>
+<pre>void Search ( )
+
+ {
+
+ Mobile m;
+
+ ifstream f;
+
+ f.open ("mobile.dat");
+
+ while (!f.eof())
+
+ {
+
+ f.read ((char*)&amp;m, sizeof (m));
+
+ if (m.GetCalls0&gt;100)
+
+ m.Billing ();
+
+ }
+
+ }</pre>
+<p>
+   Question 11.
+   <br/>
+   Write a function in C++ to search for a camera from a binary file “CAMERA.DAT” containing the objects of class CAMERA (as defined below). The user should enter the model no and the function should search and display the details of the camera,
+  </p>
+<pre>class CAMERA {
+
+ long ModelNo;
+
+ float Megapixel; int Zoom;
+
+ char Details[120];
+
+ public:
+
+ void Enter(){cin&gt;&gt;ModelNo&gt;&gt;Megapixel &gt;&gt; Zoom;
+
+ gets (Details);}
+
+ void Display( )
+
+ {cout&lt; &lt;ModelNo&lt; &lt;MegaPixel&lt;&lt;Zoom&lt; long GetModelNo(){return ModelNo;}
+
+ };</pre>
+<p>
+   Answer:
+  </p>
+<pre>void cameraSearch ()
+
+ {
+
+ fstreamFIL;
+
+ FIL.openCCAMERA.DAT", ios::binary|ios :: in );
+
+ CAMERA B;
+
+ long bn; int Found = 0;
+
+ cout&lt;&lt;"Enter the Model Number"; cin &gt;&gt; bn;
+
+ while (FIL.read((char*)&amp;B, sizeof (B)))
+
+ {
+
+ if (FIL.GetModelNo() = = bn)
+
+ {
+
+ B.Display();
+
+ Found ++;
+
+ }}
+
+ if(Found = = 0)
+
+ cout&lt;&lt;"Sorry ! Camera not found"&lt;&lt;endl;
+
+ FIL.close( );
+
+ }</pre>
+<p>
+   Long Answer Type Questions[4 marks each]
+  </p>
+<p>
+   Question 1.
+   <br/>
+   Write function definition for WORD4CHAR() in C++ to read the content of a text file FUN.TXT. and display all those words, which have four characters in it.
+   <br/>
+   Example:
+   <br/>
+   If the content of the file FUN.TXT is as follows :
+  </p>
+<pre>When I was a small child, I used to play in the garden with my grand mom.
+
+Those days were amazingly funful and I remember all the moments of that time.</pre>
+<p>
+   The function WORD4CHAR() should display the following:
+  </p>
+<pre>When used play with days were that time.</pre>
+<p>
+   Answer:
+  </p>
+<pre>Void WORD4CHAR ()
+
+ {
+
+ ifstream f("FUN.TXT");
+
+ char ch[20] ;
+
+ while (!f.eof())
+
+ {
+
+ f &gt;&gt;ch;
+
+ if(strlen(ch)==4)
+
+ cout&lt;&lt;ch,
+
+ }
+
+ f close(),
+
+ }</pre>
+<p>
+   Question 2.
+   <br/>
+   Write a definition for function ONOFFER()in C++ to read each object of a binary file TOYS. DAT, find and display details of those toys, which have status as “ON OFFER”. Assume that the file Toys.DAT is created with the help of objects of class TOYS, which is defined below:
+  </p>
+<pre>Class TOYS
+
+ {
+
+ int TID; char Toy[20], Status[20];
+
+ float MRP;
+
+ Public:
+
+ void Getinstock()
+
+ {
+
+ cin&gt;&gt;TID;gets (Toy) ; gets (Status) ; cin»MRP:}
+
+ void View()
+
+ {
+
+ Cout&lt;&lt;TID&lt;&lt;":"&lt;&lt;Toy&lt;&lt;":"&lt;&lt;MRP&lt;&lt; "":"&lt;&lt;Status&lt;&lt;endl;
+
+ }
+
+ Char *SeeOffer() {Return Status;}
+
+ } ;</pre>
+<p>
+   Answer:
+  </p>
+<pre>Void ONOFFER ()
+
+ {
+
+ TOYS T;
+
+ Ifstream fin;
+
+ fin.open("TOYS.DAT", ios ::binary) ;
+
+ while(fin.read((char*)&amp;T,size (T) ))
+
+ {
+
+ if (strcmp(T.see offer(),"ON OFFER")= = 0)
+
+ T.view();
+
+ }
+
+ fin.close();//Ignore
+
+ }</pre>
+<p>
+   Question 3.
+   <br/>
+   Find the output of the following C++ code considering that the binary file CLIENT.DAT exists on the hard disk with a data of 1000 clients :
+  </p>
+<pre>Class CLIENT
+
+ {
+
+ int Ccode;char CName[20];
+
+ public:
+
+ void Register();void Display();
+
+ };
+
+ void main()
+
+ {
+
+ fstream CFile;
+
+ CFile.Open ( "CLIENT. DAT",ios::binary|ios::in); CLIENT C;
+
+ CFile. read ( (char*) &amp; C , sizeof(C)) ;
+
+ cout&lt;&lt; "Rec: "&lt;&lt;CFile.tellg()/ sizeof(C)&lt;&lt;endl;
+
+ CFile. read ( (char*) &amp; C , sizeof*(C));
+
+ CFile . read ( (char*) &amp; C , sizeof(C));
+
+ cout&lt;&lt;"Rec:"&lt;&lt;CFile.tellg()/ sizeof(C)&lt;&lt;endl;
+
+ CFile.close () ;
+
+ }</pre>
+<p>
+   Answer:
+   <br/>
+   Rec: 1
+   <br/>
+   Rec: 3
+  </p>
+<p>
+<a class="button-red" href="http://www.learncbse.in/ncert-solutions-2/" title="NCERT Solutions Home Page">
+    NCERT Solutions
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/ncert-solutions-class-12-computer-science-c/" title="NCERT Solutions for Class 12 Computer Science (C++)">
+    Computer science
+   </a>
+</p>
+ CONTENT END 2 
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"&gt;
+		&lt;rdf:Description rdf:about="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-data-file-handling/"
+    dc:identifier="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-data-file-handling/"
+    dc:title="NCERT Solutions for Class 12 Computer Science (C++) &amp;#8211; Data File Handling"
+    trackback:ping="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-data-file-handling/trackback/" /&gt;
+&lt;/rdf:RDF&gt;
+</div>
+<div class="social-sidebar" id="social-sidebar">
+<button id="minimize-button" onclick="toggleSidebar()">−</button>
+<a href="https://t.me/learncbse_online" target="_blank" title="Telegram">
+<img alt="Telegram" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png"/>
+</a>
+<a href="https://x.com/learncbse_9" target="_blank" title="Twitter">
+<img alt="Twitter" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/733/733579.png"/>
+</a>
+<a href="https://www.reddit.com/r/learncbse_online/?rdt=59433" target="_blank" title="Reddit">
+<img alt="Reddit" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111589.png"/>
+</a>
+<a href="https://discord.gg/aM6xbTDz" target="_blank" title="Discord">
+<img alt="Discord" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png"/>
+</a>
+</div>
+<script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('social-sidebar');
+        sidebar.classList.toggle('minimized');
+    }
+</script>
+</body>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-C5VTZJSJCR">
+</script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C5VTZJSJCR');
+</script>

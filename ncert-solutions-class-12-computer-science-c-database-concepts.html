@@ -1,0 +1,688 @@
+<head>
+<meta charset="utf-8"/>
+<meta content="Bqdk9rTr4" name="admaven-placement"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript">
+</script>
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ncert-solutions-class-12-computer-science-c-database-concepts",
+  "url": "https://learncbse.online/ncert-solutions-class-12-computer-science-c-database-concepts",
+  "description": "ncert-solutions-class-12-computer-science-c-database-concepts"
+}
+ </script>
+<!DOCTYPE html>
+
+<html>
+</html>
+<style><style> background-color: #f0f8ff; border: 1px solid #d1e7ff; border-radius: 5px; font-family: 'Courier New', Courier, monospace; color: #003366; overflow-x: auto; } </style><style> pre, code { background-color: #1e1e1e; /* Dark background */ border-radius: 8px; /* Rounded corners */ padding: 15px; /* Padding for content */ font-family: 'Fira Code', monospace; /* Modern monospace font */ color: #dcdcdc; /* Light text color */ overflow-x: auto; /* Horizontal scroll */ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */ font-size: 14px; /* Font size */ line-height: 1.5; /* Line height for readability */ }
+ /* Optional: Highlight keywords */ .keyword { color: #569cd6; /* Blue color for keywords */ font-weight: bold; /* Bold keywords */ }
+ .string { color: #ce9178; /* String color */ }
+ .comment { color: #6a9955; /* Comment color */ font-style: italic; /* Italicize comments */ }</style><style> pre, code { background-color: #f5f5f5; /* Light grey background */ border-radius: 8px; /* Rounded corners */ padding: 15px; /* Padding for content */ font-family: 'Fira Code', monospace; /* Modern monospace font */ color: #dcdcdc; /* Light text color */ overflow-x: auto; /* Horizontal scroll */ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */ font-size: 14px; /* Font size */ line-height: 1.5; /* Line height for readability */ } /* Optional: Highlight keywords */ .keyword { color: #569cd6; /* Blue color for keywords */ font-weight: bold; /* Bold keywords */ } .string { color: #ce9178; /* String color */ } .comment { color: #6a9955; /* Comment color */ font-style: italic; /* Italicize comments */ } </style><style> /* Updated CSS Rules Here */ /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; /* Modern, clean sans-serif font */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; /* border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); padding: 10px 20px; */ flex-wrap: wrap; /* Ensure the menu items wrap on smaller screens */ text-align: center; /* border-radius: 8px; Rounded corners for a sleek design */ text-decoration: none; /* Remove underline for a clean look */ color: #0056b3; /* Deep blue color for professional tone */ transition: all 0.4s ease; /* Smoother transition effects */ } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; /* Prevent text from wrapping */ } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.7); */ transform: none; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; /* Darker text color for contrast */ border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover (Font Enlargement) */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* For Multi-Level Submenus */ .sub-menu-duplicate .sub-menu-duplicate { left: 100%; top: 0; transform: translateY(-10px); background-color: #f1f1f1; border-left: 4px solid #646667; } /* Active State for Menu Items */ .menu-link-duplicate:active, .menu-link-duplicate:focus { background-color: #0056b3; color: #fff; outline: none; } /* Mobile-Specific Styles */ @media (max-width: 768px) { /* Display only the main menu on mobile devices */ .menu-duplicate { display: flex !important; /* Ensure the main menu is visible */ flex-direction: row; /* Change to horizontal layout */ justify-content: center; /* Center-align menu items horizontally */ background-color: #fff; /* Maintain background color */ } .menu-item-duplicate { margin: 0 10px; /* Add spacing between main menu items horizontally */ } .menu-link-duplicate { font-size: 16px; /* Adjust font size for readability on mobile */ padding: 10px 15px; /* Increase touch area */ } /* Hide all submenus */ .sub-menu-duplicate { display: none !important; /* Completely hide submenus */ visibility: hidden !important; opacity: 0 !important; transform: none !important; } } </style><style> /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; font-size: 1.35rem; font-weight: 700; line-height: 1.6; letter-spacing: 0.03em; list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; flex-wrap: wrap; text-align: center; color: #0056b3; transition: all 0.4s ease; } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 500; position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 500; visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* Hide the menu on mobile devices */ @media (max-width: 768px) { /* Hide the entire menu on mobile devices */ .menu-duplicate { display: none !important; } } </style><style> .social-sidebar { position: fixed; top: 50%; left: 0; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; background-color: #f9f9f9; padding: 10px; border-radius: 0 5px 5px 0; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); z-index: 1000; transition: all 0.3s ease; } .social-sidebar.minimized { left: -50px; } #minimize-button { background-color: #007BFF; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-size: 16px; margin-bottom: 10px; transition: background-color 0.3s ease; } #minimize-button:hover { background-color: #0056b3; } .social-sidebar a { text-decoration: none; display: block; } .social-sidebar .social-icon { width: 30px; height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; } .social-sidebar .social-icon:hover { transform: scale(1.2); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } /* Responsive Design */ @media (max-width: 768px) { .social-sidebar { top: auto; bottom: 10px; left: 10px; flex-direction: row; gap: 15px; border-radius: 5px; padding: 8px; } .social-sidebar.minimized { left: -100%; } .social-sidebar .social-icon { width: 24px; height: 24px; } } </style><style> body { font-family: 'Playfair Display', serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background-color: #f9f9f9; } header, footer { background-color: #282c34; color: white; text-align: center; padding: 1.5rem 0; } h1, h2, h3 { font-family: 'Playfair Display', serif; color: #222; text-align: center; } a { font-family: 'Playfair Display', serif; color: #007BFF; text-decoration: none; font-weight: bold; } a:hover { text-decoration: underline; } p { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: bold; color: #343434; margin: 0; letter-spacing: 0.5px; } </style><style> body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background-color: #f9f9f9; } header, footer { background-color: #282c34; color: white; text-align: center; padding: 1.5rem 0; } h1, h2, h3 { color: #222; text-align: center; } a { color: #007BFF; text-decoration: none; font-weight: bold; } a:hover { text-decoration: underline; } .content { max-width: 900px; margin: 1.2rem auto; padding: 2rem; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); } header { background: linear-gradient(90deg, #4a90e2, #87cefa); color: white; text-align: center; padding: 2.5rem 0; border-bottom: 5px solid #d9e9ff; } h1 { font-size: 2.8rem; font-weight: bold; color: #ffffff; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); margin: 0; letter-spacing: 0.5px; } .secondary-heading { font-size: 1.3rem; font-weight: 500; color: #ffffff; margin-top: 0.2rem; letter-spacing: 0.3px; } @media (min-width: 1024px) { .desktop-banner { max-width: 22% !important; } } p { font-size: 1.2rem; font-weight: bold; color: #343434; margin: 0; letter-spacing: 0.5px; } </style><style> .entry-content { display: flex; justify-content: center; align-items: center; text-align: center; margin: 0 auto; max-width: 90%; /* Optionally set a max-width */ } </style><style> .entry-content { display: block; margin: 0 auto; max-width: 1200px; /* Set max-width if necessary */ padding: 0 1rem; /* Add padding to prevent text from touching edges */ text-align: center; /* Center text within the div */ } </style><style> /* Centering the entry-content div and ensuring good structure */ .entry-content { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin: 2rem auto; padding: 2rem; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; max-width: 1200px; /* Max width for large screens */ width: 100%; /* Ensure it doesn't exceed the container */ box-sizing: border-box; } </style><style> /* Left-aligning the entry-content div and ensuring good structure */ .entry-content { display: block; /* Set to block to avoid flex-based layout */ margin: 2rem auto; padding: 2rem; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; max-width: 1200px; /* Max width for large screens */ width: 100%; /* Ensure it doesn't exceed the container */ box-sizing: border-box; text-align: left; /* Align text to the left */ } </style>
+
+
+
+
+
+</head>
+<body>
+<header class="entry-header">
+<h1 class="entry-title" id="h1-1">
+   NCERT Solutions for Class 12 Computer Science (C++) – Database Concepts
+  </h1>
+</header>
+<div class="entry-content">
+<div class="code-block code-block-2" style="margin: 8px 0; clear: both;">
+</div>
+<h2 id="h2-2">
+<span style="color: #00ccff;">
+    NCERT Solutions for Class 12 Computer Science (C++) – Database Concepts
+   </span>
+</h2>
+<p style="text-align: center;">
+<span style="color: #0000ff;">
+<strong>
+     Short Answer Type Questions-I
+    </strong>
+</span>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 1:
+    </strong>
+</span>
+<br/>
+   What is relation? Define the relational data model.
+   <br/>
+<strong>
+<span style="color: #008000;">
+     Аnswer:
+    </span>
+</strong>
+<br/>
+   A relation is a table having atomic values, unique row and unordered rows and columns. The relational mode represent data and relationship among data by a collection of tables known as relation, each of which has a number of columns with unique names.
+  </p>
+<div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 2:
+    </strong>
+</span>
+<br/>
+   What are all the domain names possible in gender ?
+   <br/>
+<strong>
+<span style="color: #008000;">
+     Аnswer:
+    </span>
+</strong>
+<br/>
+   Male and Female.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 3:
+    </strong>
+</span>
+<br/>
+   Give a suitable example of a table with sample data and illustrate Primary and Candidate Keys in it.
+   <br/>
+<strong>
+<span style="color: #008000;">
+     Аnswer:
+    </span>
+</strong>
+<br/>
+   A table may have more than one such attribute/ group of attribute that identifies a row/tuple uniquely, all such attribute(s) are known as Candidate Keys. Out of the Candidate keys, one is selected as Primary Key,
+  </p>
+<div class="code-block code-block-3" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 4:
+    </strong>
+</span>
+<br/>
+   Differentiate between cardinality and degree of a table with the help of an example.
+   <br/>
+<strong>
+<span style="color: #008000;">
+     Аnswer:
+    </span>
+</strong>
+<br/>
+   Cardinality is defined as the number of rows in table.
+   <br/>
+   Degree is the number of columns in a table,
+   <br/>
+   eg: Consider the following tables
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-database-concepts-4" class="alignnone size-full wp-image-59948" data-recalc-dims="1" decoding="async" height="173" loading="lazy" sizes="(max-width: 359px) 100vw, 359px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4.png?resize=359%2C173&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4.png?w=359&amp;ssl=1 359w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4.png?resize=300%2C145&amp;ssl=1 300w" width="359"/>
+<br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-database-concepts-4-1" class="alignnone size-full wp-image-59949" data-recalc-dims="1" decoding="async" height="304" loading="lazy" sizes="(max-width: 430px) 100vw, 430px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-1.png?resize=430%2C304&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-1.png?w=430&amp;ssl=1 430w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-1.png?resize=300%2C212&amp;ssl=1 300w" width="430"/>
+<br/>
+<strong>
+    (1 Mark for writing suitable example/correct definition of a table)
+   </strong>
+<br/>
+<strong>
+    (½ Mark for correct illustration/definition of Candidate Keys)
+   </strong>
+<br/>
+<strong>
+    (½ Mark for correct illustration/definition of Primary Key)
+   </strong>
+<br/>
+   Cardinality of Account table is : 3
+   <br/>
+   Degree of Account table is : 2
+   <br/>
+<strong>
+    [½ mark each for definition of cardinality and degree]
+   </strong>
+<br/>
+<strong>
+    [1 mark for correct demonstration using example]
+   </strong>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 5:
+    </strong>
+</span>
+<br/>
+   Observe the following table carefully and write the names of the most appropriate columns, which can be considered as (i) candidate keys and (ii) primary key.
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-database-concepts-4-5" class="alignnone size-full wp-image-59950" data-recalc-dims="1" decoding="async" height="204" loading="lazy" sizes="auto, (max-width: 788px) 100vw, 788px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-5.png?resize=788%2C204&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-5.png?w=788&amp;ssl=1 788w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-5.png?resize=300%2C78&amp;ssl=1 300w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-5.png?resize=768%2C199&amp;ssl=1 768w" width="788"/>
+<br/>
+<strong>
+<span style="color: #008000;">
+     Аnswer:
+    </span>
+</strong>
+<br/>
+   Candidate keys : Id, Product
+   <br/>
+   Primary keys: Id
+   <br/>
+<strong>
+    (1 Mark for writing correct Candidate keys)
+   </strong>
+<br/>
+<strong>
+    (1 Mark for writing correct Primary key)
+   </strong>
+</p>
+<div class="code-block code-block-4" style="margin: 8px 0; clear: both;">
+</div>
+<p style="text-align: left;">
+<strong>
+    Note : No marks to be deducted for mentioning Price and/or Transaction Date as additional candidate keys.
+   </strong>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 6:
+    </strong>
+</span>
+<br/>
+   Observe the following table carefully and write the names of the most appropriate columns, which can be considered as (i) candidate keys and (ii) primary key :
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-database-concepts-4-6" class="alignnone size-full wp-image-59951" data-recalc-dims="1" decoding="async" height="204" loading="lazy" sizes="auto, (max-width: 721px) 100vw, 721px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-6.png?resize=721%2C204&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-6.png?w=721&amp;ssl=1 721w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-6.png?resize=300%2C85&amp;ssl=1 300w" width="721"/>
+<br/>
+<strong>
+<span style="color: #008000;">
+     Аnswer:
+    </span>
+</strong>
+<br/>
+   Candidate keys : Code, Item Primary keys : Code
+   <br/>
+<strong>
+    (1 Mark for writing correct Candidate keys)
+   </strong>
+<br/>
+<strong>
+    (1 Mark for writing correct Primary key)
+   </strong>
+<br/>
+<strong>
+    Note : No marks to be deducted for mentioning Price and/or Transaction Date as additional candidate keys.
+   </strong>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 7:
+    </strong>
+</span>
+<br/>
+   Define degree and cardinality. Based upon given table write degree and cardinality.
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-database-concepts-4-7" class="alignnone size-full wp-image-59952" data-recalc-dims="1" decoding="async" height="256" loading="lazy" sizes="auto, (max-width: 444px) 100vw, 444px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-7.png?resize=444%2C256&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-7.png?w=444&amp;ssl=1 444w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-7.png?resize=300%2C173&amp;ssl=1 300w" width="444"/>
+<br/>
+<strong>
+<span style="color: #008000;">
+     Аnswer:
+    </span>
+</strong>
+<br/>
+   Degree is the number of attributes or columns present in a table.
+   <br/>
+   Cardinality is the number of tuples or rows present in a table.
+   <br/>
+   Patients Degree = 4
+   <br/>
+<strong>
+    [½ mark for each correct definition]
+   </strong>
+<br/>
+   Cardinality = 5
+   <br/>
+<strong>
+    [ ½ mark for each correct answer]
+   </strong>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 8:
+    </strong>
+</span>
+<br/>
+   Differentiate between the Primary key and Alternate key of a table with the help of an example.
+   <br/>
+<strong>
+<span style="color: #008000;">
+     Аnswer:
+    </span>
+</strong>
+<br/>
+   Primary Key – A primary key is a value that can be used to identify a unique row in a table .
+   <br/>
+   Alternate Key – An alternate key is any candidate key which is not selected to be the primary key.
+   <br/>
+   Example:
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-database-concepts-4-8" class="alignnone size-full wp-image-59953" data-recalc-dims="1" decoding="async" height="184" loading="lazy" sizes="auto, (max-width: 450px) 100vw, 450px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-8.png?resize=450%2C184&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-8.png?w=450&amp;ssl=1 450w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-8.png?resize=300%2C123&amp;ssl=1 300w" width="450"/>
+<br/>
+   So, (Bank Account Number, Aadhaar Number) is a candidate key for the table.
+   <br/>
+   Aadhaar Number ” Primary key
+   <br/>
+   Bank Account Number ” Alternate Key
+  </p>
+<div class="code-block code-block-5" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 9:
+    </strong>
+</span>
+<br/>
+   Explain the concept of candidate keys with the help of an appropriate example.
+   <br/>
+<strong>
+<span style="color: #008000;">
+     Аnswer:
+    </span>
+</strong>
+<br/>
+   Candidate key is a column or set of columns that can help in identifying records uniquely.
+   <br/>
+   Example,consider a Table STUDENT
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-database-concepts-4-9" class="alignnone size-full wp-image-59954" data-recalc-dims="1" decoding="async" height="158" loading="lazy" sizes="auto, (max-width: 513px) 100vw, 513px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-9.png?resize=513%2C158&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-9.png?w=513&amp;ssl=1 513w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-9.png?resize=300%2C92&amp;ssl=1 300w" width="513"/>
+<br/>
+   Here, AdminN0
+   <strong>
+</strong>
+   &amp; Roll N0 define Table uniquely.
+   <br/>
+   Hence, they are candidate keys.
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Questi
+    </strong>
+</span>
+<span style="color: #eb4924;">
+<strong>
+     on 10:
+    </strong>
+</span>
+<br/>
+   A table ‘customer’ has 10 columns but no row. Later, 10 new rows are inserted and 3 rows are deleted in the table. What is the degree and cardinality of the table customer
+   <br/>
+<strong>
+<span style="color: #008000;">
+     Аnswer:
+    </span>
+</strong>
+<br/>
+   Degree = 10[no.of cols]
+   <br/>
+   Cardinality = 10-3=7[no.of rows]
+  </p>
+<div class="code-block code-block-6" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 11:
+    </strong>
+</span>
+<br/>
+   A table ‘student’ has 3 columns and 10 rows and another table ‘student 2’ has the same number of columns and 15 rows. 5 rows are common in both the tables. If we take union, what is the degree and cardinality of the resultant table ?
+   <br/>
+<strong>
+<span style="color: #008000;">
+     Аnswer:
+    </span>
+</strong>
+<br/>
+   Degree-3
+   <br/>
+   Cardinality – 30 = (20 + 15-5)
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 12:
+    </strong>
+</span>
+<br/>
+   A table ‘studentl’ has 4 columns and 10 rows and table ‘student 2’ has 5 columns and 5 rows.If we take cartesian product of these two tables,what is the degree and cardinally of the resultant table?
+   <br/>
+<strong>
+<span style="color: #008000;">
+     Аnswer:
+    </span>
+</strong>
+<br/>
+   Degree-4 ×5=20[no.of columns]
+   <br/>
+   Cardinally – 10×5 = 50 [no.of rows]
+  </p>
+<div class="code-block code-block-7" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 13:
+    </strong>
+</span>
+<br/>
+   Observe the following table and answer the parts (i) and (ii) :
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-database-concepts-4-13" class="alignnone size-full wp-image-59955" data-recalc-dims="1" decoding="async" height="231" loading="lazy" sizes="auto, (max-width: 448px) 100vw, 448px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-13.png?resize=448%2C231&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-13.png?w=448&amp;ssl=1 448w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-13.png?resize=300%2C155&amp;ssl=1 300w" width="448"/>
+</p>
+<ol>
+<li>
+    In the above table, can we have Qty as primary key.[Answer as yes/no]. Justify your answer.
+   </li>
+<li>
+    What is the cardinality and degree of the above table ?
+   </li>
+</ol>
+<p style="text-align: left;">
+<strong>
+<span style="color: #008000;">
+     Аnswer:
+    </span>
+</strong>
+</p>
+<ol>
+<li style="text-align: left;">
+    We cannot use Qty as primary key because there is dulication of values and primary key value cannot be duplicate.
+   </li>
+<li style="text-align: left;">
+    Degree = 4
+   </li>
+</ol>
+<p>
+<strong>
+    [1/2 mark for each correct definition]
+   </strong>
+<br/>
+   Cardinity = 5
+   <br/>
+<strong>
+    [1/2 mark for each correct definition]
+   </strong>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 14:
+    </strong>
+</span>
+<br/>
+   What do you understand by Union &amp; Cartesian product in the relational algebra ?
+   <br/>
+<strong>
+<span style="color: #008000;">
+     Аnswer:
+    </span>
+</strong>
+</p>
+<p>
+   Union of R and S : The Union of two relations is a relation that includes all the tuples that are either in R or in S or in both R and S. Duplicate tuples are eliminated.
+   <br/>
+<strong>
+    Cartesian Product:
+   </strong>
+   The Cartesian Product is an operator which works on two sets. It combines the tuples of one relation with all the tuples of the other relation.
+   <br/>
+   Example: Cartesian Product
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-database-concepts-4-14" class="alignnone size-full wp-image-59956" data-recalc-dims="1" decoding="async" height="245" loading="lazy" sizes="auto, (max-width: 978px) 100vw, 978px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-14.png?resize=978%2C245&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-14.png?w=978&amp;ssl=1 978w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-14.png?resize=300%2C75&amp;ssl=1 300w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-14.png?resize=768%2C192&amp;ssl=1 768w" width="978"/>
+<br/>
+   The Union is an operator which works on two sets. It combines the tuples of one relation with all the tuples of the other relation such that there is no duplication.
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-database-concepts-4-14-1" class="alignnone size-full wp-image-59959" data-recalc-dims="1" decoding="async" height="339" loading="lazy" sizes="auto, (max-width: 433px) 100vw, 433px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-14-1.png?resize=433%2C339&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-14-1.png?w=433&amp;ssl=1 433w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-14-1.png?resize=300%2C235&amp;ssl=1 300w" width="433"/>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 15:
+    </strong>
+</span>
+<br/>
+   Explain the concept of union between two tables, with the help of appropriate example.
+   <br/>
+<strong>
+<span style="color: #008000;">
+     Аnswer:
+    </span>
+</strong>
+<br/>
+   The union operation denoted by ‘U’ combines two or more relations. The resultant of union operation contain tuples that are in either of the table or in both tables.
+   <br/>
+   For example :
+  </p>
+<p>
+<img alt="ncert-solutions-for-class-12-computer-science-c-database-concepts-4-14-2" class="alignnone size-full wp-image-59961" data-recalc-dims="1" decoding="async" height="479" loading="lazy" sizes="auto, (max-width: 405px) 100vw, 405px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-14-2.png?resize=405%2C479&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-14-2.png?w=405&amp;ssl=1 405w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-14-2.png?resize=254%2C300&amp;ssl=1 254w" width="405"/>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 16:
+    </strong>
+</span>
+<br/>
+   In the following 2 tables, find the union value of Student 1 and Student 2.
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-database-concepts-4-16" class="alignnone size-full wp-image-59964" data-recalc-dims="1" decoding="async" height="202" loading="lazy" sizes="auto, (max-width: 446px) 100vw, 446px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-16.png?resize=446%2C202&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-16.png?w=446&amp;ssl=1 446w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-16.png?resize=300%2C136&amp;ssl=1 300w" width="446"/>
+<br/>
+<strong>
+<span style="color: #008000;">
+     Аnswer:
+    </span>
+</strong>
+<br/>
+   The resultant table is
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-database-concepts-4-16-1" class="alignnone size-full wp-image-59966" data-recalc-dims="1" decoding="async" height="185" loading="lazy" sizes="auto, (max-width: 330px) 100vw, 330px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-16-1.png?resize=330%2C185&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-16-1.png?w=330&amp;ssl=1 330w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-16-1.png?resize=300%2C168&amp;ssl=1 300w" width="330"/>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 17:
+    </strong>
+</span>
+<br/>
+   Observe the table ‘Club’ given below :
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-database-concepts-4-17" class="alignnone size-full wp-image-59968" data-recalc-dims="1" decoding="async" height="189" loading="lazy" sizes="auto, (max-width: 441px) 100vw, 441px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-17.png?resize=441%2C189&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-17.png?w=441&amp;ssl=1 441w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-17.png?resize=300%2C129&amp;ssl=1 300w" width="441"/>
+</p>
+<ol>
+<li>
+    What is the cardinality and degree of the above given table ?
+   </li>
+<li>
+    If a new column contact_no has been added and three more members have joined the club then how these chages will affect the degree and cardinality of the above given table.
+   </li>
+</ol>
+<p>
+<strong>
+<span style="color: #008000;">
+     Аnswer:
+    </span>
+</strong>
+<br/>
+   Cadinality: 4
+   <br/>
+   Degree: 5
+   <br/>
+<strong>
+    (1/2 Mark for each correct answer)
+   </strong>
+<br/>
+   2. Cadinality: 7
+   <br/>
+   Degree: 6
+   <br/>
+<strong>
+    (1/2 Mark for each correct answer)
+   </strong>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 18:
+    </strong>
+</span>
+<br/>
+   In which situation can we apply union operation of two table ?
+   <br/>
+<strong>
+<span style="color: #008000;">
+     Аnswer:
+    </span>
+</strong>
+<br/>
+   Each table in the UNION
+  </p>
+<ol>
+<li>
+    should have the same number of columns
+   </li>
+<li>
+    similar data types
+   </li>
+<li>
+    columns must be in the same order [2]
+   </li>
+</ol>
+<p>
+</p>
+<p style="text-align: center;">
+<span style="color: #0000ff;">
+<strong>
+     Short Answer Type Questions – II
+    </strong>
+</span>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 1:
+    </strong>
+</span>
+<br/>
+   Observe the following STUDENTS and EVENTS tables carefully and write the name of the RDBMS operation which will be used to produce the output as shown in LIST. Also, find the Degree and Cardinality of the LIST.
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-database-concepts-4-18" class="alignnone size-full wp-image-59971" data-recalc-dims="1" decoding="async" height="442" loading="lazy" sizes="auto, (max-width: 899px) 100vw, 899px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-18.png?resize=899%2C442&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-18.png?w=899&amp;ssl=1 899w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-18.png?resize=300%2C147&amp;ssl=1 300w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-18.png?resize=768%2C378&amp;ssl=1 768w" width="899"/>
+<br/>
+<strong>
+<span style="color: #008000;">
+     Аnswer:
+    </span>
+</strong>
+<br/>
+   Cartesian Product
+   <br/>
+   Degree = 4
+   <br/>
+   Cardinality = 6
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 2:
+    </strong>
+</span>
+<br/>
+   Observe the following PARTICIPANTS and EVENTS tables carefully and write the name of the RDBMS operation which will be used to produce the output as shown in RESULT. Also, find the Degree and Cardinality of the
+   <br/>
+<img alt="ncert-solutions-for-class-12-computer-science-c-database-concepts-4-2" class="alignnone size-full wp-image-59972" data-recalc-dims="1" decoding="async" height="374" loading="lazy" sizes="auto, (max-width: 899px) 100vw, 899px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-2.png?resize=899%2C374&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-2.png?w=899&amp;ssl=1 899w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-2.png?resize=300%2C125&amp;ssl=1 300w, https://www.cbsetuts.com/wp-content/uploads/2017/12/ncert-solutions-for-class-12-computer-science-c-database-concepts-4-2.png?resize=768%2C320&amp;ssl=1 768w" width="899"/>
+<br/>
+<strong>
+<span style="color: #008000;">
+     Аnswer:
+    </span>
+</strong>
+<br/>
+   Degree = no of columns = 4
+   <br/>
+   Cartesian Product
+   <br/>
+   Cardinality = no. of rows = 6
+  </p>
+<p>
+<a class="button-red" href="http://www.learncbse.in/ncert-solutions-2/" title="NCERT Solutions Home Page">
+    NCERT Solutions
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/ncert-solutions-class-12-computer-science-c/" title="NCERT Solutions for Class 12 Computer Science (C++)">
+    Computer science
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/ncert-solutions-for-class-12-english/" title="NCERT Solutions for Class 12 English">
+    English
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/ncert-solutions-class-12-hindi-core/" title="NCERT Solutions for Class 12 Hindi">
+    Hindi
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/cbse-class-12-humanities/" title="NCERT Solutions for Class 12 Humanities">
+    Humanities
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/cbse-class-12-commerce/" title="NCERT Solutions for Class 12 Commerce">
+    Commerce
+   </a>
+<a class="button-red" href="http://www.learncbse.in/cbse-class-12-science/" title="CBSE Class 12 Science">
+    Science
+   </a>
+</p>
+ CONTENT END 2 
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"&gt;
+		&lt;rdf:Description rdf:about="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-database-concepts/"
+    dc:identifier="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-database-concepts/"
+    dc:title="NCERT Solutions for Class 12 Computer Science (C++) &amp;#8211; Database Concepts"
+    trackback:ping="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-database-concepts/trackback/" /&gt;
+&lt;/rdf:RDF&gt;
+</div>
+<div class="social-sidebar" id="social-sidebar">
+<button id="minimize-button" onclick="toggleSidebar()">−</button>
+<a href="https://t.me/learncbse_online" target="_blank" title="Telegram">
+<img alt="Telegram" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png"/>
+</a>
+<a href="https://x.com/learncbse_9" target="_blank" title="Twitter">
+<img alt="Twitter" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/733/733579.png"/>
+</a>
+<a href="https://www.reddit.com/r/learncbse_online/?rdt=59433" target="_blank" title="Reddit">
+<img alt="Reddit" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111589.png"/>
+</a>
+<a href="https://discord.gg/aM6xbTDz" target="_blank" title="Discord">
+<img alt="Discord" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png"/>
+</a>
+</div>
+<script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('social-sidebar');
+        sidebar.classList.toggle('minimized');
+    }
+</script>
+</body>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-C5VTZJSJCR">
+</script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C5VTZJSJCR');
+</script>

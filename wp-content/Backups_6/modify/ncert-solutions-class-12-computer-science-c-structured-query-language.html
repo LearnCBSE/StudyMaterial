@@ -1,0 +1,5669 @@
+<head>
+ <meta charset="utf-8"/>
+ <meta content="Bqdk9rTr4" name="admaven-placement"/>
+ <script async="true" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript">
+ </script>
+ <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ncert-solutions-class-12-computer-science-c-structured-query-language",
+  "url": "https://learncbse.online/ncert-solutions-class-12-computer-science-c-structured-query-language",
+  "description": "ncert-solutions-class-12-computer-science-c-structured-query-language"
+}
+ </script>
+ 
+ <!DOCTYPE html>
+ <html>
+  <body>
+   <header class="entry-header">
+    <h1 class="entry-title">
+     NCERT Solutions for Class 12 Computer Science (C++) – Structured Query Language
+    </h1>
+   </header>
+   <div class="entry-content">
+    <div class="code-block code-block-2" style="margin: 8px 0; clear: both;">
+    </div>
+    <h2>
+     <span style="color: #00ccff;">
+      NCERT Solutions for Class 12 Computer Science (C++) – Structured Query Language
+     </span>
+    </h2>
+    <p style="text-align: center;">
+     <span style="color: #0000ff;">
+      <strong>
+       Short Answer Type Questions-I    [2 mark each]
+      </strong>
+     </span>
+    </p>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 1:
+      </strong>
+     </span>
+     <br/>
+     Differentiate between delete and drop table command ?
+     <br/>
+     <span style="color: #eb4924;">
+      <strong>
+       <span style="color: #008000;">
+        Аnswer:
+       </span>
+      </strong>
+     </span>
+     <br/>
+     DELETE command is used to remove information from a particular row or rows. If used without any condition, it will delete all row information but not the structure of the table. It is a DML command. DROP table command is used to remove the entire structure of the table and information. It is a DDL command.
+    </p>
+    <div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+    </div>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 2:
+      </strong>
+     </span>
+     <br/>
+     What is the use of wildcard ?
+     <br/>
+     <span style="color: #eb4924;">
+      <strong>
+       <span style="color: #008000;">
+        Аnswer:
+       </span>
+      </strong>
+     </span>
+     <br/>
+     The wildcard operators are used with the LIKE operator to search a value similar to a specific pattern in a column. There are 2 wildcard operators.
+     <br/>
+     % – represents 0,1 or many characters
+     <br/>
+     – = represents a single number or character
+    </p>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 3:
+      </strong>
+     </span>
+     <br/>
+     Write SQL query to add a column total price with datatype numeric and size 10, 2 in a table product.
+     <br/>
+     <span style="color: #eb4924;">
+      <strong>
+       <span style="color: #008000;">
+        Аnswer:
+       </span>
+      </strong>
+     </span>
+     <br/>
+     ALTER TABLE product ADD total price number
+    </p>
+    <div class="code-block code-block-3" style="margin: 8px 0; clear: both;">
+    </div>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 4:
+      </strong>
+     </span>
+     <br/>
+     While creating table ‘customer’, Rahula forgot to add column ‘price’. Which command is used to add new column in the table. Write the command to implement the same.
+     <br/>
+     <span style="color: #eb4924;">
+      <strong>
+       <span style="color: #008000;">
+        Аnswer:
+       </span>
+      </strong>
+     </span>
+     <br/>
+     ALTER TABLE customer ADD price number(10,2)
+    </p>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 5:
+      </strong>
+     </span>
+     <br/>
+     Deepika wants to remove all rows from the table BANK. But he needs to maintain the structure of the table. Which command is used to implement the same ?
+     <br/>
+     <span style="color: #eb4924;">
+      <strong>
+       <span style="color: #008000;">
+        Аnswer:
+       </span>
+      </strong>
+     </span>
+     <br/>
+     DELETE FROM BANK
+    </p>
+    <div class="code-block code-block-4" style="margin: 8px 0; clear: both;">
+    </div>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 6:
+      </strong>
+     </span>
+     <br/>
+     Sonal needs to display name of teachers, who have “0” as the third character in their name. She wrote the following query.
+     <br/>
+     Select name from teacher where name = “$$0?”; But the query isn’t producing the result. Identify the problem.
+     <br/>
+     <span style="color: #eb4924;">
+      <strong>
+       <span style="color: #008000;">
+        Аnswer:
+       </span>
+      </strong>
+     </span>
+     <br/>
+     The wildcards are incorrect. The corrected query is SELECT name FROM teacher WHERE name
+     <br/>
+     LIKE’ _ _  0%’
+    </p>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 7:
+      </strong>
+     </span>
+     <br/>
+     Consider the following tables School and Admin and answer this question :
+     <br/>
+     Give the output the following SQL queries :
+    </p>
+    <ol>
+     <li>
+      Select Designation Count (*) From Admin Group By Designation Having Count (*) &lt;2;
+     </li>
+     <li>
+      SELECT max (EXPERIENCE) FROM SCHOOL;
+     </li>
+     <li>
+      SELECT TEACHERNAME FROM SCHOOL WHERE EXPERIENCE &gt;12 ORDER BY TEACHER NAME;
+     </li>
+     <li>
+      SELECT COUNT (*), GENDER FROM ADMIN GROUP BY GENDER;
+     </li>
+    </ol>
+    <p>
+     <strong>
+      Table : SCHOOL
+     </strong>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="96">
+        <strong>
+         CODE
+        </strong>
+       </td>
+       <td width="103">
+        <strong>
+         TEACHER
+        </strong>
+       </td>
+       <td width="96">
+        SUBJECT
+       </td>
+       <td width="96">
+        <strong>
+         DOJ
+        </strong>
+       </td>
+       <td width="96">
+        PERIODS
+       </td>
+       <td width="97">
+        <strong>
+         EXPERIENCE
+        </strong>
+       </td>
+      </tr>
+      <tr>
+       <td width="96">
+        1001
+       </td>
+       <td width="103">
+        RAVI SHANKAR
+       </td>
+       <td width="96">
+        ENGLISH
+       </td>
+       <td width="96">
+        12/3/2000
+       </td>
+       <td width="96">
+        24
+       </td>
+       <td width="97">
+        10
+       </td>
+      </tr>
+      <tr>
+       <td width="96">
+        1009
+       </td>
+       <td width="103">
+        PRIYARAI
+       </td>
+       <td width="96">
+        PHYSICS
+       </td>
+       <td width="96">
+        03/09/1998
+       </td>
+       <td width="96">
+        26
+       </td>
+       <td width="97">
+        12
+       </td>
+      </tr>
+      <tr>
+       <td width="96">
+        1203
+       </td>
+       <td width="103">
+        LIS ANAND
+       </td>
+       <td width="96">
+        ENGLISH
+       </td>
+       <td width="96">
+        09/04/2000
+       </td>
+       <td width="96">
+        27
+       </td>
+       <td width="97">
+        5
+       </td>
+      </tr>
+      <tr>
+       <td width="96">
+        1045
+       </td>
+       <td width="103">
+        YASHRAJ
+       </td>
+       <td width="96">
+        MATHS
+       </td>
+       <td width="96">
+        24/8/2000
+       </td>
+       <td width="96">
+        24
+       </td>
+       <td width="97">
+        15
+       </td>
+      </tr>
+      <tr>
+       <td width="96">
+        1123
+       </td>
+       <td width="103">
+        GANAN
+       </td>
+       <td width="96">
+        PHYSICS
+       </td>
+       <td width="96">
+        16/7/1999
+       </td>
+       <td width="96">
+        28
+       </td>
+       <td width="97">
+        3
+       </td>
+      </tr>
+      <tr>
+       <td width="96">
+        1167
+       </td>
+       <td width="103">
+        HARISHB
+       </td>
+       <td width="96">
+        CHEMISTRY
+       </td>
+       <td width="96">
+        19/10/1999
+       </td>
+       <td width="96">
+        27
+       </td>
+       <td width="97">
+        5
+       </td>
+      </tr>
+      <tr>
+       <td width="96">
+        1215
+       </td>
+       <td width="103">
+        UMESH
+       </td>
+       <td width="96">
+        PHYSICS
+       </td>
+       <td width="96">
+        11/05/1998
+       </td>
+       <td width="96">
+        22
+       </td>
+       <td width="97">
+        16
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     <strong>
+      TABLE : ADMIN
+     </strong>
+    </p>
+    <div class="code-block code-block-5" style="margin: 8px 0; clear: both;">
+    </div>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="97">
+        CODE
+       </td>
+       <td width="96">
+        GENDER
+       </td>
+       <td width="145">
+        DESIGNATION
+       </td>
+      </tr>
+      <tr>
+       <td width="97">
+        1001
+       </td>
+       <td width="96">
+        MALE
+       </td>
+       <td width="145">
+        VICE PRINCIPAL
+       </td>
+      </tr>
+      <tr>
+       <td width="97">
+        1009
+       </td>
+       <td width="96">
+        FEMALE
+       </td>
+       <td width="145">
+        COORDINATOR
+       </td>
+      </tr>
+      <tr>
+       <td width="97">
+        1203
+       </td>
+       <td width="96">
+        FEMALE
+       </td>
+       <td width="145">
+        COORDINATOR
+       </td>
+      </tr>
+      <tr>
+       <td width="97">
+        1045
+       </td>
+       <td width="96">
+        MALE
+       </td>
+       <td width="145">
+        HOD
+       </td>
+      </tr>
+      <tr>
+       <td width="97">
+        1123
+       </td>
+       <td width="96">
+        MALE
+       </td>
+       <td width="145">
+        SENIOR TEACHER
+       </td>
+      </tr>
+      <tr>
+       <td width="97">
+        1167
+       </td>
+       <td width="96">
+        MALE
+       </td>
+       <td width="145">
+        SENIOR TEACHER
+       </td>
+      </tr>
+      <tr>
+       <td width="97">
+        1215
+       </td>
+       <td width="96">
+        MALE
+       </td>
+       <td width="145">
+        HOD
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     <strong>
+      <span style="color: #008000;">
+       <br/>
+       Аnswer:
+      </span>
+     </strong>
+     <br/>
+     (i)
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="186">
+        VICE PRINCIPAL
+       </td>
+       <td width="54">
+        01
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     (ii)
+    </p>
+    <div class="code-block code-block-6" style="margin: 8px 0; clear: both;">
+    </div>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="42">
+        16
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     (iii)
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="115">
+        UMESH
+       </td>
+      </tr>
+      <tr>
+       <td width="115">
+        YASH RAJ
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+    </p>
+    <div class="code-block code-block-7" style="margin: 8px 0; clear: both;">
+    </div>
+    <p style="text-align: center;">
+     <span style="color: #0000ff;">
+      <strong>
+       Short Answer Type Questions-II    [3 mark each]
+      </strong>
+     </span>
+    </p>
+    <p style="text-align: left;">
+     <span style="color: #eb4924;">
+      <strong>
+       Question 1:
+      </strong>
+     </span>
+    </p>
+    <p style="text-align: left;">
+     Write SQL queries for (i) to (iv) and find outputs for SQL queries (v) to (viii), which are based on the tables.
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td colspan="3" width="439">
+        <strong>
+         Table: VEHICLE
+        </strong>
+       </td>
+      </tr>
+      <tr>
+       <td width="133">
+        <strong>
+         CODE
+        </strong>
+       </td>
+       <td width="166">
+        <strong>
+         VTYPE
+        </strong>
+       </td>
+       <td width="140">
+        <strong>
+         PERKM
+        </strong>
+       </td>
+      </tr>
+      <tr>
+       <td width="133">
+        101
+       </td>
+       <td width="166">
+        VOLVO BUS
+       </td>
+       <td width="140">
+        160
+       </td>
+      </tr>
+      <tr>
+       <td width="133">
+        102
+       </td>
+       <td width="166">
+        AC DELUXE BUS
+       </td>
+       <td width="140">
+        150
+       </td>
+      </tr>
+      <tr>
+       <td width="133">
+        103
+       </td>
+       <td width="166">
+        ORDINARY BUS
+       </td>
+       <td width="140">
+        90
+       </td>
+      </tr>
+      <tr>
+       <td width="133">
+        105
+       </td>
+       <td width="166">
+        SUV
+       </td>
+       <td width="140">
+        40
+       </td>
+      </tr>
+      <tr>
+       <td width="133">
+        104
+       </td>
+       <td width="166">
+        CAR
+       </td>
+       <td width="140">
+        20
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p style="text-align: left;">
+     <strong>
+      Note :
+     </strong>
+    </p>
+    <ol>
+     <li>
+      PERKM is Freight Charges per Kilometer.
+     </li>
+     <li>
+      VTYPE is Vehicle Type.
+     </li>
+    </ol>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td colspan="6" width="538">
+        <strong>
+         Table: TRAVEL
+        </strong>
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="39">
+        <strong>
+         No.
+        </strong>
+       </td>
+       <td style="text-align: center;" width="155">
+        <strong>
+         NAME
+        </strong>
+       </td>
+       <td style="text-align: center;" width="139">
+        <strong>
+         TDATE
+        </strong>
+       </td>
+       <td style="text-align: center;" width="68">
+        <strong>
+         KM
+        </strong>
+       </td>
+       <td style="text-align: center;" width="68">
+        <strong>
+         CODE
+        </strong>
+       </td>
+       <td style="text-align: center;" width="69">
+        <strong>
+         NOP
+        </strong>
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="39">
+        101
+       </td>
+       <td style="text-align: center;" width="155">
+        Janish Kin
+       </td>
+       <td style="text-align: center;" width="139">
+        2015-11-13
+       </td>
+       <td style="text-align: center;" width="68">
+        200
+       </td>
+       <td style="text-align: center;" width="68">
+        101
+       </td>
+       <td style="text-align: center;" width="69">
+        32
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="39">
+        103
+       </td>
+       <td style="text-align: center;" width="155">
+        Vedika Sahai
+       </td>
+       <td style="text-align: center;" width="139">
+        2016-04-21
+       </td>
+       <td style="text-align: center;" width="68">
+        100
+       </td>
+       <td style="text-align: center;" width="68">
+        103
+       </td>
+       <td style="text-align: center;" width="69">
+        45
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="39">
+        105
+       </td>
+       <td style="text-align: center;" width="155">
+        Tarun Ram
+       </td>
+       <td style="text-align: center;" width="139">
+        2016-03-23
+       </td>
+       <td style="text-align: center;" width="68">
+        350
+       </td>
+       <td style="text-align: center;" width="68">
+        102
+       </td>
+       <td style="text-align: center;" width="69">
+        42
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="39">
+        102
+       </td>
+       <td style="text-align: center;" width="155">
+        John Fen
+       </td>
+       <td width="139">
+        2016-02-13
+       </td>
+       <td width="68">
+        90
+       </td>
+       <td width="68">
+        102
+       </td>
+       <td width="69">
+        40
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="39">
+        107
+       </td>
+       <td width="155">
+        Ahmed Khan
+       </td>
+       <td width="139">
+        2015-01-10
+       </td>
+       <td width="68">
+        75
+       </td>
+       <td width="68">
+        104
+       </td>
+       <td width="69">
+        2
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="39">
+        104
+       </td>
+       <td style="text-align: center;" width="155">
+        Raveena
+       </td>
+       <td width="139">
+        2016-05-28
+       </td>
+       <td width="68">
+        80
+       </td>
+       <td width="68">
+        105
+       </td>
+       <td width="69">
+        4
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: center;" width="39">
+        106
+       </td>
+       <td style="text-align: center;" width="155">
+        Kripal Anya
+       </td>
+       <td style="text-align: center;" width="139">
+        2016-02-06
+       </td>
+       <td style="text-align: center;" width="68">
+        200
+       </td>
+       <td style="text-align: center;" width="68">
+        101
+       </td>
+       <td style="text-align: center;" width="69">
+        25
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     <strong>
+      Note:
+     </strong>
+    </p>
+    <ul>
+     <li>
+      NO is Traveller Number
+     </li>
+     <li>
+      KM is Kilometer Travelled
+     </li>
+     <li>
+      NOP is number of travellers travelled in vehicle.
+     </li>
+     <li>
+      TDATE is Travel Date
+     </li>
+    </ul>
+    <ol>
+     <li>
+      To display NO, NAME, TDATE from the table TRAVEL in descending order of NO.
+     </li>
+     <li>
+      To display the NAME of all the travellers from the table TRAVEL who are travelling by vehicle with code 101 or 102.
+     </li>
+     <li>
+      To display the NO and NAME of those travellers from the table TRAVEL who travelled between ‘2015-12­31’ and ‘2015-04-01’.
+     </li>
+     <li>
+      To display all the details from table TRAVEL for the travellers, who have travelled distance more than 100 KM in ascending order of NOP  .
+     </li>
+     <li>
+      SELECT COUNT (*), CODE FROM TRAVEL GROUP BY CODE HAVING COUNT(*)&gt;1;
+     </li>
+     <li>
+      SELECT DISTINCT CODE FROM TRAVEL;
+     </li>
+     <li>
+      SELECT A. CODE,NAME, VTYPE
+     </li>
+    </ol>
+    <p>
+     FROM TRAVEL A,VEHICLE B
+     <br/>
+     WHERE A.CODE=B.CODE AND ‘KM&lt;90;
+     <br/>
+     8.SELECT NAME, KM*PERKM
+     <br/>
+     FROM TRAVEL A,VEHICLE B
+     <br/>
+     WHERE A.CODE=B. CODE AND A.CODE=’105’;
+    </p>
+    <p style="text-align: left;">
+     <span style="color: #eb4924;">
+      <strong>
+       <span style="color: #008000;">
+        Аnswer:
+       </span>
+      </strong>
+     </span>
+    </p>
+    <ol>
+     <li>
+      Select NO, Name, TDATE from TRAVEL order by NO desc
+     </li>
+     <li>
+      Select NAME from TRAVEL, where CODE in (101, 102)
+     </li>
+     <li>
+      Select NO, NAME from TRAVEL where TDATE between ’2015-12-31′ and ‘2015-04-01’.
+     </li>
+     <li>
+      Select * from TRAVEL where KM &gt; 100 order by NOP.
+     </li>
+     <li>
+     </li>
+    </ol>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="42">
+       </td>
+       <td width="105">
+        COUNT (*)
+       </td>
+       <td width="61">
+        CODE
+       </td>
+      </tr>
+      <tr>
+       <td width="42">
+       </td>
+       <td width="105">
+        2
+       </td>
+       <td width="61">
+        101
+       </td>
+      </tr>
+      <tr>
+       <td width="42">
+       </td>
+       <td width="105">
+        2
+       </td>
+       <td width="61">
+        102
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     6.
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="120">
+        DISTANCE (CODE)
+       </td>
+      </tr>
+      <tr>
+       <td width="120">
+        101
+       </td>
+      </tr>
+      <tr>
+       <td width="120">
+        103
+       </td>
+      </tr>
+      <tr>
+       <td width="120">
+        102
+       </td>
+      </tr>
+      <tr>
+       <td width="120">
+        104
+       </td>
+      </tr>
+      <tr>
+       <td width="120">
+        105
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p style="text-align: left;">
+     7.
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="208">
+        CODE
+       </td>
+       <td width="208">
+        NAME
+       </td>
+       <td width="208">
+        VTYPE
+       </td>
+      </tr>
+      <tr>
+       <td width="208">
+        104
+       </td>
+       <td width="208">
+        Ahmed khan
+       </td>
+       <td width="208">
+        CAR
+       </td>
+      </tr>
+      <tr>
+       <td width="208">
+        105
+       </td>
+       <td width="208">
+        Raveena
+       </td>
+       <td width="208">
+        SUV
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p style="text-align: left;">
+     8.
+    </p>
+    <p style="text-align: left;">
+     NAME KM*PERKM
+     <br/>
+     Tarun Ram 14000
+    </p>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 2:
+      </strong>
+     </span>
+     <br/>
+     Write SQL queries for (i) to (iv) and find outputs for SQL queries (v) to (viii), which are based on the tables.
+     <br/>
+     <strong>
+      Table :VEHICLE
+     </strong>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="133">
+        VCODE
+       </td>
+       <td width="166">
+        VEHICLETYPE
+       </td>
+       <td width="140">
+        PERKM
+       </td>
+      </tr>
+      <tr>
+       <td width="133">
+        VOl
+       </td>
+       <td width="166">
+        VOLVO BUS
+       </td>
+       <td width="140">
+        150
+       </td>
+      </tr>
+      <tr>
+       <td width="133">
+        V02
+       </td>
+       <td width="166">
+        AC DELUXE BUS
+       </td>
+       <td width="140">
+        125
+       </td>
+      </tr>
+      <tr>
+       <td width="133">
+        V03
+       </td>
+       <td width="166">
+        ORDINARY BUS
+       </td>
+       <td width="140">
+        80
+       </td>
+      </tr>
+      <tr>
+       <td width="133">
+        V0’5
+       </td>
+       <td width="166">
+        SUV
+       </td>
+       <td width="140">
+        30
+       </td>
+      </tr>
+      <tr>
+       <td width="133">
+        V04
+       </td>
+       <td width="166">
+        CAR
+       </td>
+       <td width="140">
+        18
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     <strong>
+      Note:
+     </strong>
+     <br/>
+     PERKM is Freight Charges per kilometer.
+     <br/>
+     <strong>
+      Table : TRAVEL
+     </strong>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="38">
+        CNo
+       </td>
+       <td width="155">
+        CNAME
+       </td>
+       <td width="139">
+        TRAVELDATE
+       </td>
+       <td width="68">
+        KM
+       </td>
+       <td width="68">
+        VCODE
+       </td>
+       <td width="69">
+        NOP
+       </td>
+      </tr>
+      <tr>
+       <td width="38">
+        101
+       </td>
+       <td width="155">
+        K.Niwal
+       </td>
+       <td width="139">
+        2015-12-13
+       </td>
+       <td width="68">
+        200
+       </td>
+       <td width="68">
+        VOl
+       </td>
+       <td width="69">
+        32
+       </td>
+      </tr>
+      <tr>
+       <td width="38">
+        103
+       </td>
+       <td width="155">
+        Fredrick Sym
+       </td>
+       <td width="139">
+        2016-03-21
+       </td>
+       <td width="68">
+        120
+       </td>
+       <td width="68">
+        V03
+       </td>
+       <td width="69">
+        45
+       </td>
+      </tr>
+      <tr>
+       <td width="38">
+        105
+       </td>
+       <td width="155">
+        Hitesh Jain
+       </td>
+       <td width="139">
+        2016-04-23
+       </td>
+       <td width="68">
+        450
+       </td>
+       <td width="68">
+        V02
+       </td>
+       <td width="69">
+        42
+       </td>
+      </tr>
+      <tr>
+       <td width="38">
+        102
+       </td>
+       <td width="155">
+        Ravi Anish
+       </td>
+       <td width="139">
+        2016-01-13
+       </td>
+       <td width="68">
+        80
+       </td>
+       <td width="68">
+        V02
+       </td>
+       <td width="69">
+        40
+       </td>
+      </tr>
+      <tr>
+       <td width="38">
+        107
+       </td>
+       <td width="155">
+        John Malina
+       </td>
+       <td width="139">
+        2015-02-10
+       </td>
+       <td width="68">
+        65
+       </td>
+       <td width="68">
+        V04
+       </td>
+       <td width="69">
+        2
+       </td>
+      </tr>
+      <tr>
+       <td width="38">
+        104
+       </td>
+       <td width="155">
+        Sahanubhuti
+       </td>
+       <td width="139">
+        2016-01-28
+       </td>
+       <td width="68">
+        90
+       </td>
+       <td width="68">
+        V0 5
+       </td>
+       <td width="69">
+        4
+       </td>
+      </tr>
+      <tr>
+       <td width="38">
+        106
+       </td>
+       <td width="155">
+        Ramesh Jaya
+       </td>
+       <td width="139">
+        2016-04-06
+       </td>
+       <td width="68">
+        100
+       </td>
+       <td width="68">
+        VOl
+       </td>
+       <td width="69">
+        25
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     <strong>
+      Note:
+     </strong>
+    </p>
+    <ul>
+     <li>
+      Km is Kilometers Travelled
+     </li>
+     <li>
+      NOP is number of plassangers travelled in vehicle.
+     </li>
+    </ul>
+    <p>
+     1.To display CNO, CNAME, TRAVELDATE from the table TRAVEL in descending order of CNO.
+     <br/>
+     2.To display the CNAME of all the customers from the table TRAVEL who are travelling by vehicle with code V01 or V02.
+     <br/>
+     3.To display the CNO and CNAME of those customers from the table TRAVEL who travelled between ‘2015-12-31’ and ‘2015-05-01’.
+     <br/>
+     4.To display all the details from table TRAVEL for the customers, who have travel distance more than 120 KM in ascending order of NOP.
+     <br/>
+     5.SELECT COUNT (*) , VCODE FROM TRAVEL
+     <br/>
+     GROUP BY VCODE HAVING COUNT(*)&gt;1;
+     <br/>
+     6.  SELECT DISTINCT VCODE FROM TRAVEL;
+     <br/>
+     7. SELECT A. VCODE, CNAME, VEHICLETYPE
+     <br/>
+     FROM TRAVEL A,VEHICLE B
+     <br/>
+     WHERE A.VCODE=B.VCODE AND KM&lt;90;
+     <br/>
+     8.  SELECT CNAME, KM*PERKM FROM TRAVEL A,VEHICLE B
+     <br/>
+     WHERE A.VCODE=B . VCODE AND A.VCODE= ‘V05
+     <span style="font-size: 13.3333px;">
+      ‘
+     </span>
+     ;
+     <br/>
+     <span style="color: #eb4924;">
+      <strong>
+       <span style="color: #008000;">
+        Аnswer:
+       </span>
+      </strong>
+     </span>
+     <br/>
+     (i) Select CNO, CNAME, TRAVELDATE from TRAVEL order by CNO desc
+     <br/>
+     (ii) Select CNAME from TRAVEL, where VCODE in (‘VOl’, ‘ V02
+     <span style="font-size: 13.3333px;">
+      ‘
+     </span>
+     )
+     <br/>
+     (iii)Select CNO, CNAME from TRAVEL where TRAVELDATE between ‘2015-12-31’ and ‘2015­-05-01 ‘
+     <br/>
+     (iv) Select * from TRAVEL where KM &gt; 120 order by NOP.
+     <br/>
+     (v)
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="85">
+        COUNT (*)
+       </td>
+       <td width="61">
+        VCODE
+       </td>
+      </tr>
+      <tr>
+       <td width="85">
+        2
+       </td>
+       <td width="61">
+        V01
+       </td>
+      </tr>
+      <tr>
+       <td width="85">
+        2
+       </td>
+       <td width="61">
+        V02
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     <span style="color: #eb4924;">
+      <span style="color: #000000;">
+       (vi)
+      </span>
+      <b>
+       <br/>
+      </b>
+     </span>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="74">
+        DISTANCE (CODE)
+       </td>
+      </tr>
+      <tr>
+       <td width="74">
+        V01
+       </td>
+      </tr>
+      <tr>
+       <td width="74">
+        V03
+       </td>
+      </tr>
+      <tr>
+       <td width="74">
+        V02
+       </td>
+      </tr>
+      <tr>
+       <td width="74">
+        V04
+       </td>
+      </tr>
+      <tr>
+       <td width="74">
+        V05
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     (vii)
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="208">
+        VCODE
+       </td>
+       <td width="208">
+        CNAME
+       </td>
+       <td width="208">
+        VEHICLETYPE
+       </td>
+      </tr>
+      <tr>
+       <td width="208">
+        V04
+       </td>
+       <td width="208">
+        JOHN MALINI
+       </td>
+       <td width="208">
+        CAR
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     (viii)
+     <br/>
+     CNAME KM*PERKM
+     <br/>
+     Sahanubhuti 30
+     <br/>
+     <strong>
+      Note:
+     </strong>
+     PERKM is neither given in query nor in TABLE so no output is also acceptable.
+    </p>
+    <p style="text-align: center;">
+     <span style="color: #0000ff;">
+      <strong>
+       Long Answer Type Questions [ 4 marks each]
+      </strong>
+     </span>
+    </p>
+    <p>
+    </p>
+    <p>
+     <strong style="color: #eb4924;">
+      Question 1:
+     </strong>
+     <br/>
+     Consider the following tables FACULTY and COURSES. Write SQL commands for the statements (i) to (v) and give outputs for SQL queries (vi) to (vii)
+     <br/>
+     <strong>
+      FACULTY
+     </strong>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="81">
+        F_ID
+       </td>
+       <td width="107">
+        Fname
+       </td>
+       <td width="108">
+        Lname
+       </td>
+       <td width="108">
+        Hire_date
+       </td>
+       <td width="81">
+        Salary
+       </td>
+      </tr>
+      <tr>
+       <td width="81">
+        102
+       </td>
+       <td width="107">
+        Amit
+       </td>
+       <td width="108">
+        Mishra
+       </td>
+       <td width="108">
+        12-10-1998
+       </td>
+       <td width="81">
+        12000
+       </td>
+      </tr>
+      <tr>
+       <td width="81">
+        103
+       </td>
+       <td width="107">
+        Nitin
+       </td>
+       <td width="108">
+        Vyas
+       </td>
+       <td width="108">
+        24-12-1994
+       </td>
+       <td width="81">
+        8000
+       </td>
+      </tr>
+      <tr>
+       <td width="81">
+        104
+       </td>
+       <td width="107">
+        Rakshit
+       </td>
+       <td width="108">
+        Soni
+       </td>
+       <td width="108">
+        18-5-2001
+       </td>
+       <td width="81">
+        14000
+       </td>
+      </tr>
+      <tr>
+       <td width="81">
+        105
+       </td>
+       <td width="107">
+        Rashmi
+       </td>
+       <td width="108">
+        Malhotra
+       </td>
+       <td width="108">
+        11-9-2004
+       </td>
+       <td width="81">
+        11000
+       </td>
+      </tr>
+      <tr>
+       <td width="81">
+        106
+       </td>
+       <td width="107">
+        Sulekha
+       </td>
+       <td width="108">
+        Srivastava
+       </td>
+       <td width="108">
+        5-6-2006
+       </td>
+       <td width="81">
+        10000
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     <strong>
+      COURSES
+     </strong>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="94">
+        C_ID
+       </td>
+       <td width="77">
+        FJD
+       </td>
+       <td width="177">
+        Cname
+       </td>
+       <td width="91">
+       </td>
+      </tr>
+      <tr>
+       <td width="94">
+        C21
+       </td>
+       <td width="77">
+        102
+       </td>
+       <td width="177">
+        Grid Computing
+       </td>
+       <td width="91">
+        40000
+       </td>
+      </tr>
+      <tr>
+       <td width="94">
+        C22
+       </td>
+       <td width="77">
+        106
+       </td>
+       <td width="177">
+        System Design
+       </td>
+       <td width="91">
+        16000
+       </td>
+      </tr>
+      <tr>
+       <td width="94">
+        C23
+       </td>
+       <td width="77">
+        104
+       </td>
+       <td width="177">
+        Computer Security
+       </td>
+       <td width="91">
+        8000
+       </td>
+      </tr>
+      <tr>
+       <td width="94">
+        C24
+       </td>
+       <td width="77">
+        106
+       </td>
+       <td width="177">
+        Human Biology
+       </td>
+       <td width="91">
+        15000
+       </td>
+      </tr>
+      <tr>
+       <td width="94">
+        C25
+       </td>
+       <td width="77">
+        102
+       </td>
+       <td width="177">
+        Computer Network
+       </td>
+       <td width="91">
+        20000
+       </td>
+      </tr>
+      <tr>
+       <td width="94">
+        C26
+       </td>
+       <td width="77">
+        105
+       </td>
+       <td width="177">
+        Visual Basic
+       </td>
+       <td width="91">
+        6000
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     (i) To display details of those Faculties whose salary is greater than 12000.
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     <br/>
+     Select * from faculty
+     <br/>
+     where salry &gt; 12000;
+     <br/>
+     (ii) To display the details of courses whose fees is in th range of 15000 to 50000(both values included).
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     <br/>
+     Select * from Courses
+     <br/>
+     where fees between 15000 and 50000;
+     <br/>
+     (iii)To increase the fees of all courses by 500 of “System Design” Course.
+     <br/>
+     &lt;strong
+     <span style="color: #008000;">
+      Аnswer:
+     </span>
+     <br/>
+     Update courses set fees = fees + 500
+     <br/>
+     where Cname = “System Design”;
+     <br/>
+     (iv)To display details of those courses which are taught by ‘Sulekha’ in descending order of courses.
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     <br/>
+     Select * from faculty fac, courses cour
+     <br/>
+     where fac.f_id = cour.f_id and fac.fname = ‘Sulekha’ order by cname desc;
+     <br/>
+     (v)Select COUNT (DISTINCT F_ID) from COURSES;
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     <br/>
+     4
+     <br/>
+     (vi)Select MIN (Salary) from FACULTY, COURSES where COURSES.F_ID = FACULTY.FJD;
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     <br/>
+     6000
+    </p>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 2:
+      </strong>
+     </span>
+     <br/>
+     Consider the following DEPT and WORKER tables. Write SQL queries for (i) to (iv) and find outputs for SQL queries (v) to (viii):
+     <br/>
+     <strong>
+      TABLE : DEPT
+     </strong>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="123">
+        DCODE
+       </td>
+       <td width="157">
+        DEPARTMENT
+       </td>
+       <td width="144">
+        CITY
+       </td>
+      </tr>
+      <tr>
+       <td width="123">
+        D01
+       </td>
+       <td width="157">
+        MEDIA
+       </td>
+       <td width="144">
+        DELHI
+       </td>
+      </tr>
+      <tr>
+       <td width="123">
+        D02
+       </td>
+       <td width="157">
+        MARKETING
+       </td>
+       <td width="144">
+        DELHI
+       </td>
+      </tr>
+      <tr>
+       <td width="123">
+        D03
+       </td>
+       <td width="157">
+        INFRASTRUCTURE
+       </td>
+       <td width="144">
+        MUMBAI
+       </td>
+      </tr>
+      <tr>
+       <td width="123">
+        D05
+       </td>
+       <td width="157">
+        FINANCE
+       </td>
+       <td width="144">
+        KOLKATA
+       </td>
+      </tr>
+      <tr>
+       <td width="123">
+        D04
+       </td>
+       <td width="157">
+        HUMAN RESOURCE
+       </td>
+       <td width="144">
+        MUMBAI
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     <strong>
+      TABLE : WORKER
+     </strong>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="70">
+        WNO
+       </td>
+       <td width="103">
+        NAME . Y;
+       </td>
+       <td width="86">
+        DOJ
+       </td>
+       <td width="103">
+        DOB
+       </td>
+       <td width="102">
+        GENDER
+       </td>
+       <td width="84">
+        DCODE
+       </td>
+      </tr>
+      <tr>
+       <td width="70">
+        1001
+       </td>
+       <td width="103">
+        George K
+       </td>
+       <td width="86">
+        2013-09-02
+       </td>
+       <td width="103">
+        1991-09-01
+       </td>
+       <td width="102">
+        MALE
+       </td>
+       <td width="84">
+        D01
+       </td>
+      </tr>
+      <tr>
+       <td width="70">
+        1002
+       </td>
+       <td width="103">
+        Ryma Sen
+       </td>
+       <td width="86">
+        2012-12-11
+       </td>
+       <td width="103">
+        1990-12-15
+       </td>
+       <td width="102">
+        FEMALE
+       </td>
+       <td width="84">
+        D03
+       </td>
+      </tr>
+      <tr>
+       <td width="70">
+        1003
+       </td>
+       <td width="103">
+        Mohitesh
+       </td>
+       <td width="86">
+        2013-02-03
+       </td>
+       <td width="103">
+        1987-09-04
+       </td>
+       <td width="102">
+        MALE
+       </td>
+       <td width="84">
+        D05
+       </td>
+      </tr>
+      <tr>
+       <td width="70">
+        1007
+       </td>
+       <td width="103">
+        Anil Jha
+       </td>
+       <td width="86">
+        2014-01-17
+       </td>
+       <td width="103">
+        1984-10-19
+       </td>
+       <td width="102">
+        MALE
+       </td>
+       <td width="84">
+        D04
+       </td>
+      </tr>
+      <tr>
+       <td width="70">
+        1004
+       </td>
+       <td width="103">
+        Manila Sahai
+       </td>
+       <td width="86">
+        2012-12-09
+       </td>
+       <td width="103">
+        1986-11-14
+       </td>
+       <td width="102">
+        FEMALE
+       </td>
+       <td width="84">
+        DOl
+       </td>
+      </tr>
+      <tr>
+       <td width="70">
+        1005
+       </td>
+       <td width="103">
+        RSAHAY
+       </td>
+       <td width="86">
+        2013-11-18
+       </td>
+       <td width="103">
+        1987-03-31
+       </td>
+       <td width="102">
+        MALE
+       </td>
+       <td width="84">
+        D02
+       </td>
+      </tr>
+      <tr>
+       <td width="70">
+        1006
+       </td>
+       <td width="103">
+        Jaya Priya
+       </td>
+       <td width="86">
+        2014-06-09
+       </td>
+       <td width="103">
+        1985-06-23
+       </td>
+       <td width="102">
+        FEMALE
+       </td>
+       <td width="84">
+        DQ5
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     <strong>
+      Note :
+     </strong>
+     DOJ refers to date of joining and DOB refers to date of birth of workers.
+     <br/>
+     <span style="color: #000000;">
+      (i)
+     </span>
+     To display Wno. Name, Gender from the table WORKER in descending order of Wno. Ans.
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     <br/>
+     SELECT WNO, Name, Gender FROM Worker
+     <br/>
+     ORDER BY Wno DESC;
+     <br/>
+     (ii)To display the Name of all the FEMALE workers from the table WORKER.
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     <br/>
+     SELECT Name FROM Worker
+     <br/>
+     WHERE gender = ‘FEMALE’;
+     <br/>
+     (iii)To display the Wno and Name of those workers from the table WORKER who are born between
+     <br/>
+     ‘1987-01-01’ and ‘1991-12-01’.
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     <br/>
+     SELECT Wno, Name FROM Worker
+     <br/>
+     WHERE DOB BETWEEN ‘1987-01-01’ AND ‘1991-12-01’;
+    </p>
+    <p style="text-align: center;">
+     <strong>
+      OR
+     </strong>
+    </p>
+    <p>
+     SELECT Wno, Name FROM worker
+     <br/>
+     WHERE DOB &gt; = 1987-01-01′ AND DOB &lt; = ‘1991-12-01’;
+     <br/>
+     WHERE DOB BETWEEN ‘1987-01-01’ AND ‘1991-12-01’;
+    </p>
+    <p style="text-align: center;">
+     <strong>
+      OR
+     </strong>
+    </p>
+    <p>
+     WHERE DOB &gt; = ‘1987-01-01’ AND DOB &lt; = ‘1991-12-01’;
+     <br/>
+     (iv)To count and display MALE workers who have joined after ‘1986-01-01’.
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     <br/>
+     SELECT COUNT (*) FROM Worker
+     <br/>
+     WHERE GENDER = ‘MALE’ AND DOJ &gt; ‘1986­01-01’;
+    </p>
+    <p style="text-align: center;">
+     <strong>
+      OR
+     </strong>
+    </p>
+    <p>
+     SELECT * FROM Worker
+     <br/>
+     WHERE GENDER = ‘MALE’ AND DOJ &gt; ‘1986­01-01’;
+     <br/>
+     <strong>
+      (Any valid query for counting and/or displaying for male workers will be awarded 1 mark)
+     </strong>
+     <br/>
+     (v) SELECT COUNT (*), DCODE FROM WORKER GROUP BY DCODE HAVING COUNT (*) &gt; 1;
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     <br/>
+     COUNT (*) DCODE
+    </p>
+    <p>
+     2      D01
+    </p>
+    <p>
+     2     D05
+     <br/>
+     (vi)SELECT DISTINCT DEPARTMENT FROM DEPT;
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     <br/>
+     Department
+     <br/>
+     MEDIA
+     <br/>
+     MARKETING
+     <br/>
+     INFRASTRUCTURE
+     <br/>
+     FINANCE
+     <br/>
+     HUMAN RESOURCE
+     <br/>
+     (viii)SELECT NAME, DEPARTMENT, CITY FROM WORKER W, DEPT D WHERE W DCODE = D. DCODE AND WNO &lt; 1003;
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="208">
+        NAME
+       </td>
+       <td width="208">
+        DEPARTMENT
+       </td>
+       <td width="208">
+        CITY
+       </td>
+      </tr>
+      <tr>
+       <td width="208">
+        George K
+       </td>
+       <td width="208">
+        MEDIA
+       </td>
+       <td width="208">
+        DELHI
+       </td>
+      </tr>
+      <tr>
+       <td width="208">
+        Ryma Sen
+       </td>
+       <td width="208">
+        infrastructure
+       </td>
+       <td width="208">
+        MUMBAI
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     (viii) SELECT MAX (DOJ), MIN (DOB) FROM WORKER;
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     MAX (DOJ) MIN (DOB)
+     <br/>
+     2014-06-09 1984-10-19
+     <br/>
+     <strong>
+      Note : In the output queries, please ignore the order of rows
+     </strong>
+    </p>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 3:
+      </strong>
+     </span>
+     <br/>
+     Consider the following DEPT and EMPLOYEE tables. Write SQL queries for (i) to (iv) and find outputs for SQL queries (v) to (viii).
+     <br/>
+     TABLE : DEPT
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="116">
+        DCODE
+       </td>
+       <td width="215">
+        DEPARTMENT
+       </td>
+       <td width="108">
+        LOCATION
+       </td>
+      </tr>
+      <tr>
+       <td width="116">
+        D01
+       </td>
+       <td width="215">
+        INFRASTRUCTURE
+       </td>
+       <td width="108">
+        DELHI
+       </td>
+      </tr>
+      <tr>
+       <td width="116">
+        D02
+       </td>
+       <td width="215">
+        MARKETING
+       </td>
+       <td width="108">
+        DELHI
+       </td>
+      </tr>
+      <tr>
+       <td width="116">
+        D03
+       </td>
+       <td width="215">
+        MEDIA
+       </td>
+       <td width="108">
+        MUMBAI
+       </td>
+      </tr>
+      <tr>
+       <td width="116">
+        DOS
+       </td>
+       <td width="215">
+        FINANCE
+       </td>
+       <td width="108">
+        KOLKATA
+       </td>
+      </tr>
+      <tr>
+       <td width="116">
+        D04
+       </td>
+       <td width="215">
+        HUMAN RESOURCE
+       </td>
+       <td width="108">
+        MUMBAI
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     <strong>
+      TABLE : EMPLOYE
+     </strong>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="89">
+        ENO
+       </td>
+       <td width="112">
+        NAME
+       </td>
+       <td width="95">
+        DOJ
+       </td>
+       <td width="84">
+        DOB
+       </td>
+       <td width="84">
+        GENDER
+       </td>
+       <td width="86">
+        DCODE
+       </td>
+      </tr>
+      <tr>
+       <td width="89">
+        1001
+       </td>
+       <td width="112">
+        GEORGE K
+       </td>
+       <td width="95">
+        2013-09-02
+       </td>
+       <td width="84">
+        1991-09-01
+       </td>
+       <td width="84">
+        MALE
+       </td>
+       <td width="86">
+        D01
+       </td>
+      </tr>
+      <tr>
+       <td width="89">
+        1002
+       </td>
+       <td width="112">
+        Ryma Sen
+       </td>
+       <td width="95">
+        2012-12-11
+       </td>
+       <td width="84">
+        1990-12-15
+       </td>
+       <td width="84">
+        FEMALE
+       </td>
+       <td width="86">
+        D03
+       </td>
+      </tr>
+      <tr>
+       <td width="89">
+        1003
+       </td>
+       <td width="112">
+        Mohitesh
+       </td>
+       <td width="95">
+        2013-02-03
+       </td>
+       <td width="84">
+        1987-09-04
+       </td>
+       <td width="84">
+        MALE
+       </td>
+       <td width="86">
+        D05
+       </td>
+      </tr>
+      <tr>
+       <td width="89">
+        1007
+       </td>
+       <td width="112">
+        Anil Jha
+       </td>
+       <td width="95">
+        2014-01-17
+       </td>
+       <td width="84">
+        198410-19
+       </td>
+       <td width="84">
+        MALE
+       </td>
+       <td width="86">
+        D04
+       </td>
+      </tr>
+      <tr>
+       <td width="89">
+        1004
+       </td>
+       <td width="112">
+        Manila Sahai
+       </td>
+       <td width="95">
+        2012-12-09
+       </td>
+       <td width="84">
+        1986-11-14
+       </td>
+       <td width="84">
+        FEMALE
+       </td>
+       <td width="86">
+        D01
+       </td>
+      </tr>
+      <tr>
+       <td width="89">
+        1005
+       </td>
+       <td width="112">
+        RSAHAY
+       </td>
+       <td width="95">
+        2013-11-18
+       </td>
+       <td width="84">
+        1987-03-31
+       </td>
+       <td width="84">
+        MALE
+       </td>
+       <td width="86">
+        D02
+       </td>
+      </tr>
+      <tr>
+       <td width="89">
+        1006
+       </td>
+       <td width="112">
+        JAYA Priya
+       </td>
+       <td width="95">
+        2014-06-09
+       </td>
+       <td width="84">
+        1985-06-23
+       </td>
+       <td width="84">
+        FEMALE
+       </td>
+       <td width="86">
+        D05
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     <strong>
+      Note
+     </strong>
+     :DOJ refers to date of joining and DOB refers to date of Birth of employees.
+     <br/>
+     (i)To display Eno, Name, Gender from the table EMPLOYEE in ascending order of Eno.
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     SELECT Eno, Name, Gender FROM Employee ORDER BY Eno;
+     <br/>
+     (ii)To display the Name of all the MALE employees from the table EMPLOYEE.
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     SELECT Name FROM EMPLOYEE WHERE
+     <br/>
+     Gender = ‘MALE’;
+     <br/>
+     (iii)To display the Eno and Name of those employees from the table EMPLOYEE who are born between ‘1987-01-01’ and ‘1991-12-01’.
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     <br/>
+     SELECT Eno, Name FROM Employee
+     <br/>
+     WHERE DOB BETWEEN ‘1987-01-01’ AND ‘1991-12-01’;
+    </p>
+    <p style="text-align: center;">
+     <strong>
+      OR
+     </strong>
+    </p>
+    <p>
+     SELECT Eno, Name FROM Employee
+     <br/>
+     WHERE DOB &gt; = ‘1987-01-01′ AND DOB &lt; =’1991-12-01’;
+    </p>
+    <p style="text-align: center;">
+     <strong>
+      OR
+     </strong>
+    </p>
+    <p>
+     SELECT Eno, Name FROM Employee WHERE DOB &gt; ‘1987-01-01’ AND DOB &lt; ‘1991­12-01’;
+     <br/>
+     WHERE DOB BETWEEN ‘1987-01-01’ AND ‘1991-12-01’;
+    </p>
+    <p style="text-align: center;">
+     OR
+    </p>
+    <p>
+     WHERE DOB &gt; = ‘1987-01-01’ AND DOB &lt; = ‘1991-12-01’;
+    </p>
+    <p style="text-align: center;">
+     OR
+    </p>
+    <p>
+     WHERE DOB &gt; ‘1987-01-01’ AND DOB &lt; ‘1991­12-01’);
+     <br/>
+     (iv)To count and display FEMALE employees who have joined after ‘1986-01-01’;
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     SELECT count (*) FROM Employee
+     <br/>
+     WHERE GENDER = ‘FEMALE’ AND DOJ &gt; ‘1986-01-01’;
+    </p>
+    <p style="text-align: center;">
+     OR
+    </p>
+    <p>
+     SELECT * FROM Employee
+     <br/>
+     WHERE GENDER = ‘FEMALE’ AND DOJ &gt; ‘1986-01-01’;
+     <br/>
+     <strong>
+      (Any valid query for counting and/or displaying for female employees will be awarded 1 mark)
+     </strong>
+     <br/>
+     (v)SELECT COUNT (*), DCODE FROM EMPLOYEE
+     <br/>
+     GROUP BY DCODE HAVING COUNT (*) &gt; 1;
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="61">
+        COUNT
+       </td>
+       <td width="60">
+        DCODE
+       </td>
+      </tr>
+      <tr>
+       <td width="61">
+        2
+       </td>
+       <td width="60">
+        D01
+       </td>
+      </tr>
+      <tr>
+       <td width="61">
+        2
+       </td>
+       <td width="60">
+        D05
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p align="left" class="MSGENFONTSTYLENAMETEMPLATEROLENUMBERMSGENFONTSTYLENAMEBYROLETABLECAPTION30" style="margin-top: 0in; text-align: left; background: transparent;">
+     <span class="MSGENFONTSTYLENAMETEMPLATEROLENUMBERMSGENFONTSTYLENAMEBYROLETABLECAPTION3Exact">
+      <span style="color: black;">
+       <br/>
+       (½Mark for correct output)
+      </span>
+     </span>
+    </p>
+    <p align="left" class="MSGENFONTSTYLENAMETEMPLATEROLENUMBERMSGENFONTSTYLENAMEBYROLETABLECAPTION30" style="margin-top: 0in; text-align: left; background: transparent;">
+     (vi)SELECT DISTINCT DEPARTMENT FROM DEPT
+    </p>
+    <p>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     <strong>
+      Department
+     </strong>
+     <br/>
+     INFRASTRUCTURE
+     <br/>
+     MARKETING
+     <br/>
+     MEDIA
+     <br/>
+     FINANCE
+     <br/>
+     HUMAN RESOURCE
+     <br/>
+     (vii) SELECT NAME, DEPARTMENT FROM EMPLOYEE E, DEPT D WHERE E. DCODE = D.DCODE AND ENO &lt;1003;
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="208">
+        NAME
+       </td>
+       <td width="208">
+        DEPARTMENT
+       </td>
+      </tr>
+      <tr>
+       <td width="208">
+        George K
+       </td>
+       <td width="208">
+        MEDIA
+       </td>
+      </tr>
+      <tr>
+       <td width="208">
+        Ryma Sen
+       </td>
+       <td width="208">
+        infrastructure
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     (viii) SELECT MAX (DOJ), MIN (DOB) FROM EMPLOYEE;
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     <br/>
+     <strong>
+      MAX (DOJ)
+     </strong>
+     <strong>
+      MIN (DOB)
+     </strong>
+     <br/>
+     2014-06-09                  1984-10-19
+     <br/>
+     <strong>
+      Note : In the output queries, please ignore the order of rows.
+     </strong>
+     <br/>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 4:
+      </strong>
+     </span>
+     <br/>
+     Write SQL commands for the queries (i) to (iv) and output for (v) &amp; (viii) based on a table COMPANY and CUSTOMER
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="35">
+        CID
+       </td>
+       <td width="89">
+        NAME
+       </td>
+       <td width="63">
+        CITY
+       </td>
+       <td width="113">
+        PRODUCTNAME
+       </td>
+      </tr>
+      <tr>
+       <td width="35">
+        111
+       </td>
+       <td width="89">
+        SONY
+       </td>
+       <td width="63">
+        DELHI
+       </td>
+       <td width="113">
+        TV
+       </td>
+      </tr>
+      <tr>
+       <td width="35">
+        222
+       </td>
+       <td width="89">
+        NOKIA
+       </td>
+       <td width="63">
+        MUMBAI
+       </td>
+       <td width="113">
+        MOBILE
+       </td>
+      </tr>
+      <tr>
+       <td width="35">
+        333
+       </td>
+       <td width="89">
+        ONIDA
+       </td>
+       <td width="63">
+        DELHI
+       </td>
+       <td width="113">
+        TV
+       </td>
+      </tr>
+      <tr>
+       <td width="35">
+        444
+       </td>
+       <td width="89">
+        SONY
+       </td>
+       <td width="63">
+        MUMBAI
+       </td>
+       <td width="113">
+        MOBILE
+       </td>
+      </tr>
+      <tr>
+       <td width="35">
+        555
+       </td>
+       <td width="89">
+        BLACKBERRY
+       </td>
+       <td width="63">
+        MADRAS
+       </td>
+       <td width="113">
+        MOBILE
+       </td>
+      </tr>
+      <tr>
+       <td width="35">
+        666
+       </td>
+       <td width="89">
+        DELL
+       </td>
+       <td width="63">
+        DELHI
+       </td>
+       <td width="113">
+        LAPTOP
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="59">
+        CUSTID
+       </td>
+       <td width="124">
+        NAME
+       </td>
+       <td width="47">
+        PRICE
+       </td>
+       <td width="36">
+        QTY
+       </td>
+       <td width="34">
+        CID
+       </td>
+      </tr>
+      <tr>
+       <td width="59">
+        101
+       </td>
+       <td width="124">
+        ROHAN SHARMA
+       </td>
+       <td width="47">
+        70,000
+       </td>
+       <td width="36">
+        20
+       </td>
+       <td width="34">
+        222
+       </td>
+      </tr>
+      <tr>
+       <td width="59">
+        102
+       </td>
+       <td width="124">
+        DEEPAK KUMAR
+       </td>
+       <td width="47">
+        50,000
+       </td>
+       <td width="36">
+        10
+       </td>
+       <td width="34">
+        666
+       </td>
+      </tr>
+      <tr>
+       <td width="59">
+        103
+       </td>
+       <td width="124">
+        MOHAN KUMAR
+       </td>
+       <td width="47">
+        30,000
+       </td>
+       <td width="36">
+        5
+       </td>
+       <td width="34">
+        111
+       </td>
+      </tr>
+      <tr>
+       <td width="59">
+        104
+       </td>
+       <td width="124">
+        SAHIL BANSAL
+       </td>
+       <td width="47">
+        35,000
+       </td>
+       <td width="36">
+        3
+       </td>
+       <td width="34">
+        333
+       </td>
+      </tr>
+      <tr>
+       <td width="59">
+        105
+       </td>
+       <td width="124">
+        NEHA SONI
+       </td>
+       <td width="47">
+        25,000
+       </td>
+       <td width="36">
+        7
+       </td>
+       <td width="34">
+        444
+       </td>
+      </tr>
+      <tr>
+       <td width="59">
+        106
+       </td>
+       <td width="124">
+        SONAL AGGARWAL
+       </td>
+       <td width="47">
+        20,000
+       </td>
+       <td width="36">
+        5
+       </td>
+       <td width="34">
+        333
+       </td>
+      </tr>
+      <tr>
+       <td width="59">
+        107
+       </td>
+       <td width="124">
+        ARUN SINGH
+       </td>
+       <td width="47">
+        50,000
+       </td>
+       <td width="36">
+        15
+       </td>
+       <td width="34">
+        666
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <ol>
+     <li>
+      To display those company name which are having prize less than 30000.
+     </li>
+     <li>
+      To display the name of the companies in reverse alphabetical order.
+     </li>
+     <li>
+      To increase the prize by 1000 for those customer whose name starts with’S?
+     </li>
+     <li>
+      To add one more column totalprice with decimal(10,2) to the table customer
+     </li>
+     <li>
+      SELECT COUNTO ,CITY FROM COMPANY GROUP BY CITY;
+     </li>
+     <li>
+      SELECT MIN(PRICE), MAX(PRICE) FROM CUSTOMER WHERE QTY&gt;10;
+     </li>
+     <li>
+      SELECT AVG(QTY) FROM CUSTOMER WHERE NAME LIKE “%r%;
+     </li>
+     <li>
+      SELECT PRODUCTNAME,CITY, PRICE FROM COMPANY, CUSTOMER WHERE COMPANY.CID=CUSTOMER.CID AND PRODU CTN AME=”MOBILE”;
+     </li>
+    </ol>
+    <p>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     <br/>
+     1. To display those company name which are having prize less than 30000.
+     <br/>
+     SELECT NAME FROM COMPANY WHERE COMPANY.CID=CUSTOMER. CID AND    PRICE &lt; 30000
+     <br/>
+     2.To display the name of the companies in reverse alphabetical order.
+     <br/>
+     SELECT NAME FROM COMPANY
+     <br/>
+     ORDER BY NAME DESC?;
+     <br/>
+     3.To increase the prize by 1000 for those customer whose name starts with “S”
+     <br/>
+     UPDATE CUSTOMER
+     <br/>
+     SET PRICE = PRICE + 1000;
+     <br/>
+     WHERE NAME LIKE ‘S%’;
+     <br/>
+     4.To add one more column totalprice with decimal(10,2) to the table customer
+     <br/>
+     ALTER TABLE CUSTOMER
+     <br/>
+     ADD TOTALPRICE DECIMAL(10,2);
+     <br/>
+     5.SELECT COUNT(*) ,CITY FROM COMPANY GROUP BY CITY;
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="208">
+        3
+       </td>
+       <td width="208">
+        DELHI
+       </td>
+      </tr>
+      <tr>
+       <td width="208">
+        2
+       </td>
+       <td width="208">
+        MUMBAI
+       </td>
+      </tr>
+      <tr>
+       <td width="208">
+        1
+       </td>
+       <td width="208">
+        MADRAS
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     6.SELECT MIN(PRICE), MAX(PRICE) FROM
+     <br/>
+     CUSTOMER WHERE QTY&gt; 10;
+     <br/>
+     50000,70000
+     <br/>
+     7.SELECT AVG(QTY) FROM CUSTOMER
+     <br/>
+     WHERE NAME LIKE “%r%;                        [
+     <br/>
+     8.SELECT PRODUCTNAME, CITY, PRICE FROM COMPANY, CUSTOMER WHERE COMPANY.CID=CUSTOMER.CID AND PRODUCTNAME=”MOBILE”;
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="91">
+        MOBILE
+       </td>
+       <td width="91">
+        MUMBAI
+       </td>
+       <td width="91">
+        70000
+       </td>
+      </tr>
+      <tr>
+       <td width="91">
+        MOBILE
+       </td>
+       <td width="91">
+        MUMBAI
+       </td>
+       <td width="91">
+        25000
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 5:
+      </strong>
+     </span>
+     <br/>
+     Consider the following tables SCHOOL and ADMIN and answer this question :
+     <br/>
+     <strong>
+      Table : SCHOOL
+     </strong>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="48">
+        CODE
+       </td>
+       <td width="144">
+        TEACHERNAME
+       </td>
+       <td width="96">
+        SUBJECT
+       </td>
+       <td width="96">
+        DOJ
+       </td>
+       <td width="96">
+        PERIODS
+       </td>
+       <td width="97">
+        EXPERIENCE
+       </td>
+      </tr>
+      <tr>
+       <td width="48">
+        1001
+       </td>
+       <td width="144">
+        Ravi Shankar
+       </td>
+       <td width="96">
+        English
+       </td>
+       <td width="96">
+        12/3/2000
+       </td>
+       <td width="96">
+        24
+       </td>
+       <td width="97">
+        10
+       </td>
+      </tr>
+      <tr>
+       <td width="48">
+        1009
+       </td>
+       <td width="144">
+        Priya Rai
+       </td>
+       <td width="96">
+        Physics
+       </td>
+       <td width="96">
+        03/09/1998
+       </td>
+       <td width="96">
+        26 ,
+       </td>
+       <td width="97">
+        12
+       </td>
+      </tr>
+      <tr>
+       <td width="48">
+        1203
+       </td>
+       <td width="144">
+        Lisa Anand
+       </td>
+       <td width="96">
+        English
+       </td>
+       <td width="96">
+        09/04/2000
+       </td>
+       <td width="96">
+        27
+       </td>
+       <td width="97">
+        5
+       </td>
+      </tr>
+      <tr>
+       <td width="48">
+        1045
+       </td>
+       <td width="144">
+        Yashraj
+       </td>
+       <td width="96">
+        Maths
+       </td>
+       <td width="96">
+        24/08/2000
+       </td>
+       <td width="96">
+        24
+       </td>
+       <td width="97">
+        15
+       </td>
+      </tr>
+      <tr>
+       <td width="48">
+        1123
+       </td>
+       <td width="144">
+        Ganan
+       </td>
+       <td width="96">
+        Physics
+       </td>
+       <td width="96">
+        16/07/1999
+       </td>
+       <td width="96">
+        28
+       </td>
+       <td width="97">
+        3
+       </td>
+      </tr>
+      <tr>
+       <td width="48">
+        1167
+       </td>
+       <td width="144">
+        Harish B
+       </td>
+       <td width="96">
+        Chemistry
+       </td>
+       <td width="96">
+        19/10/1999
+       </td>
+       <td width="96">
+        27
+       </td>
+       <td width="97">
+        5
+       </td>
+      </tr>
+      <tr>
+       <td width="48">
+        1215
+       </td>
+       <td width="144">
+        Umesh
+       </td>
+       <td width="96">
+        Physics
+       </td>
+       <td width="96">
+        11/05/1998
+       </td>
+       <td width="96">
+        22
+       </td>
+       <td width="97">
+        16
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     <strong>
+      Table : Admin
+     </strong>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="58">
+        Code
+       </td>
+       <td width="62">
+        Gender
+       </td>
+       <td width="94">
+        Designation
+       </td>
+      </tr>
+      <tr>
+       <td width="58">
+        1001
+       </td>
+       <td width="62">
+        Male
+       </td>
+       <td width="94">
+        Vice Principal
+       </td>
+      </tr>
+      <tr>
+       <td width="58">
+        1009
+       </td>
+       <td width="62">
+        Female
+       </td>
+       <td width="94">
+        Coordinator
+       </td>
+      </tr>
+      <tr>
+       <td width="58">
+        1203
+       </td>
+       <td width="62">
+        Female
+       </td>
+       <td width="94">
+        Coordinator
+       </td>
+      </tr>
+      <tr>
+       <td width="58">
+        1045
+       </td>
+       <td width="62">
+        Male
+       </td>
+       <td width="94">
+        HOD
+       </td>
+      </tr>
+      <tr>
+       <td width="58">
+        1123
+       </td>
+       <td width="62">
+        Male
+       </td>
+       <td width="94">
+        Senior Teacher
+       </td>
+      </tr>
+      <tr>
+       <td width="58">
+        1167
+       </td>
+       <td width="62">
+        Male
+       </td>
+       <td width="94">
+        Senior Teacher
+       </td>
+      </tr>
+      <tr>
+       <td width="58">
+        1215
+       </td>
+       <td width="62">
+        Male
+       </td>
+       <td width="94">
+        HOD
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     Write SQL statements for the following :
+    </p>
+    <ol>
+     <li>
+      To display TEACHERNAME, PERIODS of all teachers whose periods are more than 25.
+     </li>
+     <li>
+      To display all the information from the table SCHOOL in descending order of experience.
+     </li>
+     <li>
+      To display DESIGNATION without duplicate entries from the table ADMIN.
+     </li>
+     <li>
+      To display TEACHERNAME, CODE and corresponding DESIGNATION from tables SCHOOL and ADMIN of Male teachers.
+     </li>
+    </ol>
+    <p>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     <br/>
+     1. To display TEACHERNAME, PERIODS of all teachers whose periods are more than 25.
+     <br/>
+     SELECT TEACHERNAME, PERIODS
+     <br/>
+     FROM SCHOOL WHERE PERIODS &gt;25.
+     <br/>
+     2.To display all the information from the table SCHOOL in descending order of experience.
+    </p>
+    <ul>
+     <li style="list-style-type: none;">
+      SELECT * FROM SCHOOL;
+     </li>
+    </ul>
+    <p>
+     3.To display DESIGNATION without duplicate entries from the table ADMIN.
+     <br/>
+     SELECT DISTINCT DESIGNATION FROM ADMIN;
+     <br/>
+     4.To display TEACHERNAME, CODE and corresponding DESIGNATION from tables SCHOOL and ADMIN of Male teachers.
+     <br/>
+     SELECT TEACHERNAME.CODE
+     <br/>
+     DESIGNATION FROM SCHOOL.CODE = ADMIN.CODE
+     <br/>
+     WHERE GENDER = MALE;
+    </p>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 6:
+      </strong>
+     </span>
+     <br/>
+     Answer the questions (a) and (b) on the basis of the following tables SHOPPE and ACCESSORIES.
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+    </p>
+    <table>
+     <tbody>
+      <tr>
+       <td width="48">
+        Id
+       </td>
+       <td width="120">
+        SName
+       </td>
+       <td width="92">
+        Area
+       </td>
+      </tr>
+      <tr>
+       <td width="48">
+        S001
+       </td>
+       <td width="120">
+        ABC computronics
+       </td>
+       <td width="92">
+        CP
+       </td>
+      </tr>
+      <tr>
+       <td width="48">
+        S002
+       </td>
+       <td width="120">
+        All Infotech Media
+       </td>
+       <td width="92">
+        GKII
+       </td>
+      </tr>
+      <tr>
+       <td width="48">
+        S003
+       </td>
+       <td width="120">
+        Tech Shoppe
+       </td>
+       <td width="92">
+        CP
+       </td>
+      </tr>
+      <tr>
+       <td width="48">
+        S004
+       </td>
+       <td width="120">
+        Geeks Tecno Soft
+       </td>
+       <td width="92">
+        Nehru Place
+       </td>
+      </tr>
+      <tr>
+       <td width="48">
+        S005
+       </td>
+       <td width="120">
+        Hitech Tech Store
+       </td>
+       <td width="92">
+        Nehru Place
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="49">
+        No
+       </td>
+       <td width="114">
+        Name
+       </td>
+       <td width="48">
+        Price
+       </td>
+       <td width="49">
+        Id
+       </td>
+      </tr>
+      <tr>
+       <td width="49">
+        A01
+       </td>
+       <td width="114">
+        Mother Board
+       </td>
+       <td width="48">
+        12000
+       </td>
+       <td width="49">
+        SOI
+       </td>
+      </tr>
+      <tr>
+       <td width="49">
+        A02
+       </td>
+       <td width="114">
+        Hard Disk
+       </td>
+       <td width="48">
+        5000
+       </td>
+       <td width="49">
+        SOI
+       </td>
+      </tr>
+      <tr>
+       <td width="49">
+        A03
+       </td>
+       <td width="114">
+        Keyboard
+       </td>
+       <td width="48">
+        500
+       </td>
+       <td width="49">
+        S02
+       </td>
+      </tr>
+      <tr>
+       <td width="49">
+        A04
+       </td>
+       <td width="114">
+        Mouse
+       </td>
+       <td width="48">
+        300
+       </td>
+       <td width="49">
+        SOI
+       </td>
+      </tr>
+      <tr>
+       <td width="49">
+        A05
+       </td>
+       <td width="114">
+        Mother Board
+       </td>
+       <td width="48">
+        13000
+       </td>
+       <td width="49">
+        S02
+       </td>
+      </tr>
+      <tr>
+       <td width="49">
+        A06
+       </td>
+       <td width="114">
+        Keyboard
+       </td>
+       <td width="48">
+        400
+       </td>
+       <td width="49">
+        S03
+       </td>
+      </tr>
+      <tr>
+       <td width="49">
+        A07
+       </td>
+       <td width="114">
+        LCD
+       </td>
+       <td width="48">
+        6000
+       </td>
+       <td width="49">
+        S04
+       </td>
+      </tr>
+      <tr>
+       <td width="49">
+        T08
+       </td>
+       <td width="114">
+        LCD
+       </td>
+       <td width="48">
+        5500
+       </td>
+       <td width="49">
+        S05
+       </td>
+      </tr>
+      <tr>
+       <td width="49">
+        T09
+       </td>
+       <td width="114">
+        Mouse
+       </td>
+       <td width="48">
+        350
+       </td>
+       <td width="49">
+        S05
+       </td>
+      </tr>
+      <tr>
+       <td width="49">
+        T10
+       </td>
+       <td width="114">
+        Hard Disk
+       </td>
+       <td width="48">
+        4500
+       </td>
+       <td width="49">
+        S03
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <ol>
+     <li>
+      To display Name and Price of all the Accessories in ascending order of their Price.
+     </li>
+     <li>
+      To display Id and SName of all Shoppe located in Nehru Place.
+     </li>
+     <li>
+      To display Minimum and Maximum Price of each Name of Accessories.
+     </li>
+     <li>
+      To display Name, Price of all Accessories and their respective SName where they are available.
+     </li>
+    </ol>
+    <p>
+     (b)Write the output of the following SQL commands:
+    </p>
+    <ol>
+     <li>
+      SELECT DISTINCT NAME FROM ACCESSORIES WHERE PRICE &gt; =5000;
+     </li>
+     <li>
+      SELECT AREA, COUNT(*) FROM SHOPPE GROUP BY AREA;
+     </li>
+     <li>
+      SELECT COUNT (DISTINCT AREA) FROM SHOPPE;
+     </li>
+     <li>
+      SELECT NAME, PRICE*0.05 DISCOUNT FROM ACCESSORIES
+     </li>
+    </ol>
+    <p>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     (a) (i) SELECT Name, Price FROM ACCESSORIES ORDER BY Prices;
+     <br/>
+     (ii)SELECT ID, SName FROM SHOPPE WHERE Area=”Nehru Place”;
+     <br/>
+     (iii)SELECT Name, max (Price); min(Price) FROM ACCESSORIES, Group By Name;
+     <br/>
+     (iv)SELECT Name, price, Sname FROM ACCESSORIES, SHOPPE WHERE SHOPPE.ID=ACCESSORIES.ID
+     <br/>
+     (b)
+     <strong>
+      (i) Name
+     </strong>
+     <br/>
+     Mother Board
+     <br/>
+     Hard Disk
+     <br/>
+     LCD
+     <br/>
+     (ii)
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="312">
+        Area
+       </td>
+       <td width="312">
+        Count
+       </td>
+      </tr>
+      <tr>
+       <td width="312">
+        CP
+       </td>
+       <td width="312">
+        2
+       </td>
+      </tr>
+      <tr>
+       <td width="312">
+        GK II
+       </td>
+       <td width="312">
+        1
+       </td>
+      </tr>
+      <tr>
+       <td width="312">
+        Nehru Place
+       </td>
+       <td width="312">
+        2
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     (iii) count(Distinct Area)
+     <br/>
+     3
+     <br/>
+     (iv) Name
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="312">
+        Name
+       </td>
+       <td width="312">
+        DISCOUNT
+       </td>
+      </tr>
+      <tr>
+       <td width="312">
+        600
+       </td>
+       <td width="312">
+        600
+       </td>
+      </tr>
+      <tr>
+       <td width="312">
+        Hard Disk
+       </td>
+       <td width="312">
+        250
+       </td>
+      </tr>
+      <tr>
+       <td width="312">
+        Key Board
+       </td>
+       <td width="312">
+        20
+       </td>
+      </tr>
+      <tr>
+       <td width="312">
+        Hard Disk
+       </td>
+       <td width="312">
+        225
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 7:
+      </strong>
+     </span>
+     <br/>
+     Answer the questions (a) to (g) on the basics of the following tables APPLICANTS and COURSB.
+    </p>
+    <ol>
+     <li>
+      To display name, fee, gender, joinyear about the applicants, who have joined before 2010.
+     </li>
+     <li>
+      To display names of applicants, who are paying fee more than 30000.
+     </li>
+     <li>
+      To display names of all applicants in ascending order of their joinyear.
+     </li>
+     <li>
+      To display the year and the total number of applicants joined in each YEAR from the table APPLICANTS.
+     </li>
+    </ol>
+    <table>
+     <tbody>
+      <tr>
+       <td width="38">
+        No
+       </td>
+       <td width="71">
+        Name
+       </td>
+       <td width="48">
+        Fee
+       </td>
+       <td width="56">
+        Gender
+       </td>
+       <td width="48">
+        C_ID
+       </td>
+       <td width="40">
+        Join
+        <p>
+         Year
+        </p>
+       </td>
+      </tr>
+      <tr>
+       <td width="38">
+        1012
+       </td>
+       <td width="71">
+        Amandeep
+       </td>
+       <td width="48">
+        30000
+       </td>
+       <td width="56">
+        M
+       </td>
+       <td width="48">
+        A01
+       </td>
+       <td width="40">
+        2012
+       </td>
+      </tr>
+      <tr>
+       <td width="38">
+        1102
+       </td>
+       <td width="71">
+        Avisha
+       </td>
+       <td width="48">
+        25000
+       </td>
+       <td width="56">
+        F
+       </td>
+       <td width="48">
+        A02
+       </td>
+       <td width="40">
+        2009
+       </td>
+      </tr>
+      <tr>
+       <td width="38">
+        1103
+       </td>
+       <td width="71">
+        Ekant
+       </td>
+       <td width="48">
+        30000
+       </td>
+       <td width="56">
+        M
+       </td>
+       <td width="48">
+        A02
+       </td>
+       <td width="40">
+        2011
+       </td>
+      </tr>
+      <tr>
+       <td width="38">
+        1049
+       </td>
+       <td width="71">
+        Arun
+       </td>
+       <td width="48">
+        30000
+       </td>
+       <td width="56">
+        M
+       </td>
+       <td width="48">
+        A03
+       </td>
+       <td width="40">
+        2009
+       </td>
+      </tr>
+      <tr>
+       <td width="38">
+        1025
+       </td>
+       <td width="71">
+        Amber
+       </td>
+       <td width="48">
+        40000
+       </td>
+       <td width="56">
+        M
+       </td>
+       <td width="48">
+        A02
+       </td>
+       <td width="40">
+        2011
+       </td>
+      </tr>
+      <tr>
+       <td width="38">
+        1106
+       </td>
+       <td width="71">
+        Ela
+       </td>
+       <td width="48">
+        40000
+       </td>
+       <td width="56">
+        F
+       </td>
+       <td width="48">
+        A05
+       </td>
+       <td width="40">
+        2010
+       </td>
+      </tr>
+      <tr>
+       <td width="38">
+        1017
+       </td>
+       <td width="71">
+        Nikita
+       </td>
+       <td width="48">
+        35000
+       </td>
+       <td width="56">
+        F
+       </td>
+       <td width="48">
+        A03
+       </td>
+       <td width="40">
+        2012
+       </td>
+      </tr>
+      <tr>
+       <td width="38">
+        1108
+       </td>
+       <td width="71">
+        Arleena
+       </td>
+       <td width="48">
+        30000
+       </td>
+       <td width="56">
+        F
+       </td>
+       <td width="48">
+        A03
+       </td>
+       <td width="40">
+        2012
+       </td>
+      </tr>
+      <tr>
+       <td width="38">
+        2109
+       </td>
+       <td width="71">
+        Shakti
+       </td>
+       <td width="48">
+        35000
+       </td>
+       <td width="56">
+        M
+       </td>
+       <td width="48">
+        A04
+       </td>
+       <td width="40">
+        2011
+       </td>
+      </tr>
+      <tr>
+       <td width="38">
+        1101
+       </td>
+       <td width="71">
+        Kirat
+       </td>
+       <td width="48">
+        25000
+       </td>
+       <td width="56">
+        M
+       </td>
+       <td width="48">
+        A01
+       </td>
+       <td width="40">
+        2012
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     <strong>
+      <br/>
+      Table Courses
+     </strong>
+    </p>
+    <table>
+     <tbody>
+      <tr>
+       <td width="69">
+        C_ID
+       </td>
+       <td width="152">
+        Course
+       </td>
+      </tr>
+      <tr>
+       <td width="69">
+        A01
+       </td>
+       <td width="152">
+        Fashion Design
+       </td>
+      </tr>
+      <tr>
+       <td width="69">
+        A02
+       </td>
+       <td width="152">
+        Networking
+       </td>
+      </tr>
+      <tr>
+       <td width="69">
+        A03
+       </td>
+       <td width="152">
+        Hotel Management
+       </td>
+      </tr>
+      <tr>
+       <td width="69">
+        A04
+       </td>
+       <td width="152">
+        Event Manangement
+       </td>
+      </tr>
+      <tr>
+       <td width="69">
+        A05
+       </td>
+       <td width="152">
+        Office Management
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     5.To display the C_ID (i.e., CourselD) and the number of applicants registered in the course from the APPLICANTS and table.
+     <br/>
+     6.To display the applicant’s name with their respective course’s name from the tables APPLICANTS and COURSES.
+     <br/>
+     7.Give the output statements:of following SQL statements :
+     <br/>
+     (i)SELECT Name, Joinyear FROM APPLICANTS
+     <br/>
+     WHERE            GENDER=’F’ and C_ID=’A02′;
+     <br/>
+     (ii) SELECT MIN (Joinyear) FROM APPLICANTS
+     <br/>
+     (iii)SELECT AVG (Fee) FROM APPLICANTS WHERE C_ID=’A01′ OR C_ID=’A05′;
+     <br/>
+     (iv)SELECT SUM (Fee), C_ID FROM APPLICANTS
+     <br/>
+     GROUP BY C_ID HAVING COUNT(*)=2;
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     (a) SELECT NAME,FEE,GENDERJOINYEAR FROM APPLICANTS
+     <br/>
+     WHERE JOINYEAR&lt;2000;
+     <br/>
+     (b)SELECT NAME FROM APPLICANTS
+     <br/>
+     WHERE FEE&gt;30000;
+     <br/>
+     (c)SELECT NAME FROM APPLICANTS
+     <br/>
+     ORDERBY JOINYEAR ASC;
+     <br/>
+     (d)SELECT YEAR, COUNTf)    FROM APPLICANTS;
+    </p>
+    <p>
+     (e)SELECT C_ID, COUNT(*) FROM APPLICANTS, COURSES
+    </p>
+    <p>
+     WHERE APPLICANTS.C_ID=COURSES; C_ID;
+     <br/>
+     (f)SELECT NAME,COURSE FROM
+     <br/>
+     APPLICANTS, COURSES
+     <br/>
+     WHERE    APPLICANTS.C_ID=COURSES. C_ID;
+     <br/>
+     (g)(i) Avisha 2009
+     <br/>
+     (ii)2009
+     <br/>
+     (iii)67
+     <br/>
+     (iv)55000 A01
+    </p>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 8:
+      </strong>
+     </span>
+     <br/>
+     Write SQL queries for (a) to (g) and write the output for the SQL queries mentioned shown in (hi) to (h4) parts on the basis of table ITEMS and TRADERS :
+     <br/>
+     <strong>
+      Table : ITEMS
+     </strong>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="72">
+        CODE
+       </td>
+       <td width="144">
+        INAME
+       </td>
+       <td width="72">
+        QTY
+       </td>
+       <td width="72">
+        PRICE
+       </td>
+       <td width="120">
+        COMPANY
+       </td>
+       <td width="72">
+        TCODE
+       </td>
+      </tr>
+      <tr>
+       <td width="72">
+        1001
+       </td>
+       <td width="144">
+        DIGITAL PAD 12i
+       </td>
+       <td width="72">
+        120
+       </td>
+       <td width="72">
+        11000
+       </td>
+       <td width="120">
+        XENITA
+       </td>
+       <td width="72">
+        T01
+       </td>
+      </tr>
+      <tr>
+       <td width="72">
+        1006
+       </td>
+       <td width="144">
+        LED SCREEN 40
+       </td>
+       <td width="72">
+        70
+       </td>
+       <td width="72">
+        38000
+       </td>
+       <td width="120">
+        SANTORA
+       </td>
+       <td width="72">
+        T02
+       </td>
+      </tr>
+      <tr>
+       <td width="72">
+        1004
+       </td>
+       <td width="144">
+        CAR GPS SYSTEM
+       </td>
+       <td width="72">
+        50
+       </td>
+       <td width="72">
+        21500
+       </td>
+       <td width="120">
+        GEOKNOW
+       </td>
+       <td width="72">
+        T01
+       </td>
+      </tr>
+      <tr>
+       <td width="72">
+        1003
+       </td>
+       <td width="144">
+        DIGITAL CAMERA 12X
+       </td>
+       <td width="72">
+        160
+       </td>
+       <td width="72">
+        8000
+       </td>
+       <td width="120">
+        DIGICLICK
+       </td>
+       <td width="72">
+        T02
+       </td>
+      </tr>
+      <tr>
+       <td width="72">
+        1005
+       </td>
+       <td width="144">
+        PEN DRIVE 32 GB
+       </td>
+       <td width="72">
+        600
+       </td>
+       <td width="72">
+        1200
+       </td>
+       <td width="120">
+        STOREHOME
+       </td>
+       <td width="72">
+        T03
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     <strong>
+      Table : TRADERS
+     </strong>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="48">
+        TCode
+       </td>
+       <td width="141">
+        TName
+       </td>
+       <td width="73">
+        City
+       </td>
+      </tr>
+      <tr>
+       <td width="48">
+        T01
+        <br/>
+        T03
+        <br/>
+        T02
+       </td>
+       <td width="141">
+        ELECTRONIC SALES BUSY STORE CORP DISP HOUSE INC
+       </td>
+       <td width="73">
+        MUMBAI
+        <br/>
+        DELHI
+        <br/>
+        CHENNAI
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <ul>
+     <li>
+      To display the details of all the items in ascending order of item names (i.e., INAME).
+     </li>
+     <li>
+      To display item name and price of all those items, whose price is in the range of 10000 and 22000 (both values inclusive).
+     </li>
+     <li>
+      To display the number of items, which are traded by each trader. The expected output of this query should be:
+     </li>
+     <li>
+      To display the price, item name and quantity (i.e., qty) of those items which have quantity more than 150.
+     </li>
+     <li>
+      To display the names of those traders, who are either from DELHI or from MUMBAI.
+     </li>
+     <li>
+      To display the names of the companies and the names of the items in descending order of company names.
+     </li>
+     <li>
+      Obtain the outputs, of the following SQL queries based on the data given in tables ITEMS and TRADERS above.
+     </li>
+    </ul>
+    <p>
+     (h1)SELECT MAX (PRICE), MIN (PRICE) FROM ITEMS;
+     <br/>
+     (h2) SELECT PRICE*QTY
+     <br/>
+     FROM ITEMS WHERE CODE-1004;
+     <br/>
+     (h3) SELECT DISTINCT TCODE FROM ITEMS;
+     <br/>
+     (h4) SELECT INAME, TNAME
+     <br/>
+     FROM ITEMS I, TRADERS T WHERE I.TCODE=T.TCODE AND
+     <br/>
+     QTY&lt;100;
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     <br/>
+     (a) SELECT INAME FROM ITEMS ORDER BY INAME ASC;
+     <br/>
+     (b)SELECT INAME, PRICE FROM ITEMS WHERE PRICE =&gt; 10000 AND PRICE =&lt; 22000;
+     <br/>
+     (c)SELECT TCODE, COUNT (CODE) FROM
+     <br/>
+     ITEMS GROUP BY TCODE;
+     <br/>
+     (d)SELECT PRICE, INAME, QTY FROM ITEMS
+     <br/>
+     WHERE (QTY&gt; 150);
+     <br/>
+     (e)SELECT TNAME FROM TRADERS
+     <br/>
+     WHERE (CITY = “DELHI”) OR (CITY = “MUMBAI”)
+     <br/>
+     ORDER BY COMPANY DESC;
+     <br/>
+     (g)   (h1) 38000
+     <br/>
+     1200
+     <br/>
+     (h2) 1075000
+     <br/>
+     (h3) T01
+     <br/>
+     T02
+     <br/>
+     T03
+     <br/>
+     (h4) LED SCREEN 40 DISPHOUSE INC
+     <br/>
+     CAR GPS SYSTEM ELECTRONICS
+     <br/>
+     SALES
+    </p>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 9:
+      </strong>
+     </span>
+     <br/>
+     Write SQL queries for (a) to (f) and write the outputs for the SQL queries mentioned shown in (hi) to (h4) parts on the basis of tables PRODUCTS and SUPPLIERS
+     <br/>
+     <strong>
+      Table : PRODUCTS
+     </strong>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="72">
+        PID
+       </td>
+       <td width="144">
+        PNAME
+       </td>
+       <td width="72">
+        QTY
+       </td>
+       <td width="72">
+        PRICE
+       </td>
+       <td width="96">
+        COMPANY
+       </td>
+       <td width="73">
+        SUPCODE
+       </td>
+      </tr>
+      <tr>
+       <td width="72">
+        101
+       </td>
+       <td width="144">
+        DIGITAL CAMERA 14X
+       </td>
+       <td width="72">
+        120
+       </td>
+       <td width="72">
+        12000
+       </td>
+       <td width="96">
+        RENBIX
+       </td>
+       <td width="73">
+        SOI
+       </td>
+      </tr>
+      <tr>
+       <td width="72">
+        102
+       </td>
+       <td width="144">
+        DIGITAL PAD lli
+       </td>
+       <td width="72">
+        100
+       </td>
+       <td width="72">
+        22000
+       </td>
+       <td width="96">
+        DIGI POP
+       </td>
+       <td width="73">
+        S02
+       </td>
+      </tr>
+      <tr>
+       <td width="72">
+        104
+       </td>
+       <td width="144">
+        PEN DRIVE 16 GB
+       </td>
+       <td width="72">
+        500
+       </td>
+       <td width="72">
+        1100
+       </td>
+       <td width="96">
+        STOREKING
+       </td>
+       <td width="73">
+        SOI
+       </td>
+      </tr>
+      <tr>
+       <td width="72">
+        106
+       </td>
+       <td width="144">
+        LED SCREEN 32
+       </td>
+       <td width="72">
+        70
+       </td>
+       <td width="72">
+        28000
+       </td>
+       <td width="96">
+        DISPEXPERTS
+       </td>
+       <td width="73">
+        S02
+       </td>
+      </tr>
+      <tr>
+       <td width="72">
+        105
+       </td>
+       <td width="144">
+        CAR GPS SYSTEM
+       </td>
+       <td width="72">
+        60
+       </td>
+       <td width="72">
+        12000
+       </td>
+       <td width="96">
+        MOVEON
+       </td>
+       <td width="73">
+        S03
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     <strong>
+      Table : SUPPLIERS
+     </strong>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="71">
+        SUPCODE
+       </td>
+       <td width="119">
+        SNAME
+       </td>
+       <td width="71">
+        CITY
+       </td>
+      </tr>
+      <tr>
+       <td width="71">
+        SOI
+       </td>
+       <td width="119">
+        GET ALL INC
+       </td>
+       <td width="71">
+        KOLKATA
+       </td>
+      </tr>
+      <tr>
+       <td width="71">
+        S03
+       </td>
+       <td width="119">
+        EASY        MARKET
+       </td>
+       <td width="71">
+        DELHI
+       </td>
+      </tr>
+      <tr>
+       <td width="71">
+       </td>
+       <td width="119">
+        CORP
+       </td>
+       <td width="71">
+       </td>
+      </tr>
+      <tr>
+       <td width="71">
+        S02
+       </td>
+       <td width="119">
+        DIGI BUSY GROUP
+       </td>
+       <td width="71">
+        CHENNAI
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     (a)To display the details of all the products in ascending order of product names (e., PNAME).
+     <br/>
+     (b)To display product name and price of all those products, whose price is in the range of 10000 and 15000 (both values inclusive).
+     <br/>
+     (c)To display the number of products, which are supplied by each supplier, i.e., the expected output should be;
+     <br/>
+     2
+     <br/>
+     2
+     <br/>
+     1
+     <br/>
+     (d)To display the price, product name and quantity (i.e., qty) of those products which have quantity more than 100.
+     <br/>
+     (e)To display the names of those suppliers, who are either from DELHI or from CHENNAI.
+     <br/>
+     (f)To display the name of the companies and the name of the products in descending order of company names.
+     <br/>
+     (g)Obtain the outputs of the following SQL queries based on the data given in tables PRODUCTS and SUPPLIERS above.
+     <br/>
+     (gl) SELECT DISTINCT SUPCODE FROM PRODUCTS;
+     <br/>
+     (g2) SELEC MAX (PRICE), MIN (PRICE) FROM PRODUCTS
+     <br/>
+     (g3) SELECT PRICE*QTY
+     <br/>
+     FROM PRODUCTS WHERE PID = 104;
+     <br/>
+     (g4) SELECT PNAME, SNAME
+     <br/>
+     FROM PRODUCTS P, SUPPLIERS S WHERE P SUPCODE = S. SUPCODE AND QTY&gt;100;
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     <br/>
+     (a) SELECT * FROM PRODUCTS ORDER. BY PNAME ASC;
+     <br/>
+     (b)SELECT PNAME, PRICE FROM PRODUCTS WHERE ((PRICE =&gt; 10000) AND (PRICE = &lt; 15000));
+     <br/>
+     (c)SELECT SUPCODE, COUNT (PID) [Yz] FROM PRODUCTS GROUP BY SUPCODE;
+     <br/>
+     (d)SELECT PRICE, PNAME, QTY FROM PRODUCTS WHERE (QTY &gt; 100);
+     <br/>
+     (e)SELECT SNAME FROM SUPPLIERS WHERE ((CITY = “DELHI”) OR (CITY = “CHENNAI”));
+     <br/>
+     (f)SELECT COMPANY, PNAME FROM PRODUCTS ORDER BY COMPANY DESC;
+     <br/>
+     (g) SOI
+     <br/>
+     (g1) S02
+     <br/>
+     S03
+     <br/>
+     (g2) 28000
+     <br/>
+     1100
+     <br/>
+     (g3) 550000
+     <br/>
+     (g4) PNAME       SNAME
+     <br/>
+     DIGITAL CAMERA 14 X GET ALL INC
+     <br/>
+     PENDRIVE 16 GB GET ALL INC
+     <br/>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 10:
+      </strong>
+     </span>
+     <br/>
+     Give a suitable example of a table with sample data and illustrate Primary and Alternate Keys in it. Consider the following tables CARDEN and CUSTOMER and answer (b) and (c) parts of this question :
+     <br/>
+     <strong>
+      Table : CARDEN
+     </strong>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="72">
+        Ceode
+       </td>
+       <td width="96">
+        CarName
+       </td>
+       <td width="96">
+        Make
+       </td>
+       <td width="96">
+        Colour
+       </td>
+       <td width="96">
+        Capacity
+       </td>
+       <td width="89">
+        Charges
+       </td>
+      </tr>
+      <tr>
+       <td width="72">
+        501
+       </td>
+       <td width="96">
+        A-Star
+       </td>
+       <td width="96">
+        Suzuki
+       </td>
+       <td width="96">
+        RED
+       </td>
+       <td width="96">
+        3Q
+       </td>
+       <td width="89">
+        14
+       </td>
+      </tr>
+      <tr>
+       <td width="72">
+        503
+       </td>
+       <td width="96">
+        Indigo
+       </td>
+       <td width="96">
+        Tata
+       </td>
+       <td width="96">
+        SILVER
+       </td>
+       <td width="96">
+        3
+       </td>
+       <td width="89">
+        12
+       </td>
+      </tr>
+      <tr>
+       <td width="72">
+        502
+       </td>
+       <td width="96">
+        Innova
+       </td>
+       <td width="96">
+        Toyota
+       </td>
+       <td width="96">
+        WHITE
+       </td>
+       <td width="96">
+        7
+       </td>
+       <td width="89">
+        15
+       </td>
+      </tr>
+      <tr>
+       <td width="72">
+        509
+       </td>
+       <td width="96">
+        SX4
+       </td>
+       <td width="96">
+        Suzuki
+       </td>
+       <td width="96">
+        SILVER
+       </td>
+       <td width="96">
+        4
+       </td>
+       <td width="89">
+        14
+       </td>
+      </tr>
+      <tr>
+       <td width="72">
+        510
+       </td>
+       <td width="96">
+        C Class
+       </td>
+       <td width="96">
+        Mercedes
+       </td>
+       <td width="96">
+        RED
+       </td>
+       <td width="96">
+        4
+       </td>
+       <td width="89">
+        35
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     <strong>
+      Table : CUSTOMER
+     </strong>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="48">
+        CCode
+       </td>
+       <td width="110">
+        Cname
+       </td>
+       <td width="100">
+        Ceode
+       </td>
+      </tr>
+      <tr>
+       <td width="48">
+        1001
+       </td>
+       <td width="110">
+        Hemant Sahu
+       </td>
+       <td width="100">
+        501
+       </td>
+      </tr>
+      <tr>
+       <td width="48">
+        1002
+       </td>
+       <td width="110">
+        Raj Lai
+       </td>
+       <td width="100">
+        509
+       </td>
+      </tr>
+      <tr>
+       <td width="48">
+        1003
+       </td>
+       <td width="110">
+        Feroza Shah
+       </td>
+       <td width="100">
+        503
+       </td>
+      </tr>
+      <tr>
+       <td width="48">
+        1004
+       </td>
+       <td width="110">
+        Ketan Dhal
+       </td>
+       <td width="100">
+        502
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     (b)Write SQL commands for the following statements:
+    </p>
+    <ol>
+     <li>
+      To display the names of all the silver coloured cars.
+     </li>
+     <li>
+      Tp display names of car, make and capacity of cars in descending order of their sitting capacity.
+     </li>
+     <li>
+      To display the highest charges at which a vehicle can be hired from CARDEN.
+     </li>
+     <li>
+      To display the customer name and the corresponding name of the cars hired by them.
+     </li>
+    </ol>
+    <p>
+     (c)Give the output of the following SQL queries:
+     <br/>
+     (i)SELECT COUNT(DlST!NCT Make) FROM CARDEN;
+     <br/>
+     (ii)SELECT MAX(Charges), MIN (Charges) FROM CARDEN;
+     <br/>
+     SELECT COUNTO, Make FROM CARDEN;
+     <br/>
+     (iv) SELECT CarName FROM CARDEN WHERE Capacity=4;
+     <br/>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     <br/>
+     (a) Primary Key of CARDEN = Ceode of CARDEN
+     <br/>
+     Alternate Key = CarName:
+     <br/>
+     Primary key of Customer = Ceode
+     <br/>
+     Alternate Key of Customer = Cname
+     <br/>
+     (b) (i)   SELECT CarName    From   CARDEN
+     <br/>
+     WHERE Color = “SILVER”;
+     <br/>
+     (ii)SELECT CarName, Make,   Capacity
+     <br/>
+     From CARDEN ORDER BY Capacity DESC;
+     <br/>
+     (iii)SELECT MAX(Charges) From CARDEN;
+     <br/>
+     (iv)SELECT Cname, CarName From
+     <br/>
+     CUSTOMER, CARDEN WHERE CARDEN. Ccode = CUSTOMER. Ccode;
+     <br/>
+     (c) (i) 4
+     <br/>
+     (ii) MAX(Charges)                      MIN(Charges)
+     <br/>
+     35                                            12
+     <br/>
+     (iii)5
+     <br/>
+     (iv)SX4
+     <br/>
+     C Class
+     <br/>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 11:
+      </strong>
+     </span>
+     <br/>
+     (a) Give a suitable example of a table with sample data and illustrate Primary agd Candidate Keys in it. Consider the following tables CABHUB and CUSTOMER and answer (b) and (c) parts of this question :
+     <br/>
+     <strong>
+      Table : CABHUB
+     </strong>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="72">
+        Vcode
+       </td>
+       <td width="96">
+        VehicleName
+       </td>
+       <td width="96">
+        Make
+       </td>
+       <td width="96">
+        Colour
+       </td>
+       <td width="96">
+        Capacity
+       </td>
+       <td width="97">
+        Charges
+       </td>
+      </tr>
+      <tr>
+       <td width="72">
+        100
+       </td>
+       <td width="96">
+        Innova
+       </td>
+       <td width="96">
+        Toyota
+       </td>
+       <td width="96">
+        WHITE
+       </td>
+       <td width="96">
+        7
+       </td>
+       <td width="97">
+        15
+       </td>
+      </tr>
+      <tr>
+       <td width="72">
+        102
+       </td>
+       <td width="96">
+        SX4
+       </td>
+       <td width="96">
+        Suzuki
+       </td>
+       <td width="96">
+        BLUE
+       </td>
+       <td width="96">
+        4
+       </td>
+       <td width="97">
+        14
+       </td>
+      </tr>
+      <tr>
+       <td width="72">
+        104
+       </td>
+       <td width="96">
+        C Class
+       </td>
+       <td width="96">
+        Mercedes
+       </td>
+       <td width="96">
+        RED
+       </td>
+       <td width="96">
+        4
+       </td>
+       <td width="97">
+        35
+       </td>
+      </tr>
+      <tr>
+       <td width="72">
+        105
+       </td>
+       <td width="96">
+        A-Star
+       </td>
+       <td width="96">
+        Suzuki
+       </td>
+       <td width="96">
+        WHITE
+       </td>
+       <td width="96">
+        3
+       </td>
+       <td width="97">
+        14
+       </td>
+      </tr>
+      <tr>
+       <td width="72">
+        108
+       </td>
+       <td width="96">
+        Indigo
+       </td>
+       <td width="96">
+        Tata
+       </td>
+       <td width="96">
+        SILVER            –
+       </td>
+       <td width="96">
+        3
+       </td>
+       <td width="97">
+        12
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     <strong>
+      Table : CUSTOMER
+     </strong>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="48">
+        Ceode
+       </td>
+       <td width="110">
+        Cname
+       </td>
+       <td width="100">
+        Vcode
+       </td>
+      </tr>
+      <tr>
+       <td width="48">
+        1
+       </td>
+       <td width="110">
+        Hemant Sahu
+       </td>
+       <td width="100">
+        101
+       </td>
+      </tr>
+      <tr>
+       <td width="48">
+        2
+       </td>
+       <td width="110">
+        Raj Lai
+       </td>
+       <td width="100">
+        108
+       </td>
+      </tr>
+      <tr>
+       <td width="48">
+        3
+       </td>
+       <td width="110">
+        Feroza Shah
+       </td>
+       <td width="100">
+        105
+       </td>
+      </tr>
+      <tr>
+       <td width="48">
+        4
+       </td>
+       <td width="110">
+        Ketan Dhal
+       </td>
+       <td width="100">
+        104
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     (b) Write SQL commands for the following statements:
+    </p>
+    <ol>
+     <li>
+      To display the names of all the white coloured vehicles.
+     </li>
+     <li>
+      To display name of vehicle name and capacity of vehicles in ascending order of their sitting capacity.
+     </li>
+     <li>
+      To display the highest charges at which a vehicle can be hired from CABHUB.
+     </li>
+     <li>
+      To display the customer name and the corresponding name of the vehicle hired by them.
+     </li>
+    </ol>
+    <p>
+     (c)Give the output of the following SQL queries :
+    </p>
+    <ol>
+     <li>
+      SELECT COUNT (DISTINCT Make) FROMCABHUB;
+     </li>
+     <li>
+      SELECT MAX(Charges), MIN(Charges) FROM CABHUB;
+     </li>
+     <li>
+      SELECT COUNT (*) Make FROM CABHUB;
+     </li>
+     <li>
+      SELECT Vehicle FROM CABHUB WHERE Capacity=4;
+     </li>
+    </ol>
+    <p>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     <br/>
+     (a) Primary Key of CABHUB = Vcode
+     <br/>
+     Alternate key of CABHUB = Vehicle Name.
+     <br/>
+     Primary Key of Customer = Ccode
+     <br/>
+     Alternate Key of CUSTOMER = Cname.
+     <br/>
+     (b) (i) SELECT VehicleName FROM CABHUB WHERE Colour =”WHITE”;
+     <br/>
+     (ii)SELECT VehicleName, Capacity From CABHUB ORDER BY Capacity ASC;
+     <br/>
+     (iii)SELECT MAX(Charges) FROM CABHUB;
+     <br/>
+     (iv)SELECT Cname,VehicleName FROM CABHUB, CUSTOMER WHERE CUSTOMER. Vcode=CABHUB. Vcode;
+     <br/>
+     (c)4
+     <br/>
+     (ii)Max(Charges)                Min(Charges)
+     <br/>
+     35                              12
+     <br/>
+     (iii)5
+     <br/>
+     (iv)SX4
+     <br/>
+     C Class
+    </p>
+    <p style="text-align: center;">
+     <span style="color: #0000ff;">
+      <b>
+       Long Answer Type Question – II
+      </b>
+     </span>
+    </p>
+    <p>
+     <span style="color: #eb4924;">
+      <strong>
+       Question 1:
+      </strong>
+     </span>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="82">
+        Watchid
+       </td>
+       <td width="107">
+        Watch_Name
+       </td>
+       <td width="108">
+        Price
+       </td>
+       <td width="108">
+        Type
+       </td>
+       <td width="81">
+        Qty_Store
+       </td>
+      </tr>
+      <tr>
+       <td width="82">
+        ‘wool
+       </td>
+       <td width="107">
+        High Time
+       </td>
+       <td width="108">
+        10000
+       </td>
+       <td width="108">
+        Unisex
+       </td>
+       <td width="81">
+        100
+       </td>
+      </tr>
+      <tr>
+       <td width="82">
+        W002
+       </td>
+       <td width="107">
+        Life Time
+       </td>
+       <td width="108">
+        15000
+       </td>
+       <td width="108">
+        Ladies
+       </td>
+       <td width="81">
+        150
+       </td>
+      </tr>
+      <tr>
+       <td width="82">
+        W003
+       </td>
+       <td width="107">
+        Wave
+       </td>
+       <td width="108">
+        20000
+       </td>
+       <td width="108">
+        Gents
+       </td>
+       <td width="81">
+        200
+       </td>
+      </tr>
+      <tr>
+       <td width="82">
+        W004
+       </td>
+       <td width="107">
+        HlghFashion
+       </td>
+       <td width="108">
+        7000
+       </td>
+       <td width="108">
+        Unisex
+       </td>
+       <td width="81">
+        250
+       </td>
+      </tr>
+      <tr>
+       <td width="82">
+        W005
+       </td>
+       <td width="107">
+        GoldenTime
+       </td>
+       <td width="108">
+        25000
+       </td>
+       <td width="108">
+        Gents
+       </td>
+       <td width="81">
+        100
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="95">
+        Watchid
+       </td>
+       <td width="78">
+        Qly_Sold
+       </td>
+       <td width="180">
+        Quarter
+       </td>
+      </tr>
+      <tr>
+       <td width="95">
+        wool
+       </td>
+       <td width="78">
+        10
+       </td>
+       <td width="180">
+        1
+       </td>
+      </tr>
+      <tr>
+       <td width="95">
+        W003
+       </td>
+       <td width="78">
+        5
+       </td>
+       <td width="180">
+        1
+       </td>
+      </tr>
+      <tr>
+       <td width="95">
+        W002
+       </td>
+       <td width="78">
+        20
+       </td>
+       <td width="180">
+        2
+       </td>
+      </tr>
+      <tr>
+       <td width="95">
+        W003
+       </td>
+       <td width="78">
+        10
+       </td>
+       <td width="180">
+        2
+       </td>
+      </tr>
+      <tr>
+       <td width="95">
+        W001
+       </td>
+       <td width="78">
+        15
+       </td>
+       <td width="180">
+        3
+       </td>
+      </tr>
+      <tr>
+       <td width="95">
+        W002
+       </td>
+       <td width="78">
+        20
+       </td>
+       <td width="180">
+        3
+       </td>
+      </tr>
+      <tr>
+       <td width="95">
+        W005
+       </td>
+       <td width="78">
+        10
+       </td>
+       <td width="180">
+        3
+       </td>
+      </tr>
+      <tr>
+       <td width="95">
+        W003
+       </td>
+       <td width="78">
+        15
+       </td>
+       <td width="180">
+        4
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+    </p>
+    <ol>
+     <li>
+      To display all the details of those watches whose name ends with ‘Time’
+     </li>
+     <li>
+      To display watch’s name and price of those watches which have price range in between 5000-15000.
+     </li>
+     <li>
+      To display total quantity in store of Unisex type watches.
+     </li>
+     <li>
+      To display watch name and their quantity sold in first quarter.
+     </li>
+     <li>
+      select max(price), min(qty_store) from watches;
+     </li>
+     <li>
+      select quarter, sum(qty_sold) from sale group by quarter;
+     </li>
+     <li>
+      select watch_name,price, type from watches w, sale s where w.watchid!=s.watchid;
+     </li>
+     <li>
+      select watch_name, qty_store, sum(qty_sold), qty_store-sum(qty_sold) “Stock” from watches w, sales where w. watchid=s. watchid group by s.watchid;
+     </li>
+    </ol>
+    <p>
+     <strong>
+      <span style="color: #008000;">
+       Аnswer:
+      </span>
+     </strong>
+     <br/>
+     (i) Select*from watches where watch_name like’Time’
+     <br/>
+     (ii)select watchjname, price from watches where price between 5000 and 15000;
+     <br/>
+     (iii)select sum(qty_store) from watches where type like ‘Unisex’;
+     <br/>
+     (iv)select watch name, qty_sold from watches w,sale s where w.watchid=s.watchid and quarter=l;
+     <br/>
+     (v)
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="136">
+        max(price)
+       </td>
+       <td width="136">
+        min(qty_store)
+       </td>
+      </tr>
+      <tr>
+       <td width="136">
+        25000
+       </td>
+       <td width="136">
+        100
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     (vi)
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="136">
+        quarter
+       </td>
+       <td width="136">
+        suxn(qty_sold)
+       </td>
+      </tr>
+      <tr>
+       <td width="136">
+        1
+       </td>
+       <td width="136">
+        15
+       </td>
+      </tr>
+      <tr>
+       <td width="136">
+        2
+       </td>
+       <td width="136">
+        30
+       </td>
+      </tr>
+      <tr>
+       <td width="136">
+        3
+       </td>
+       <td width="136">
+        45
+       </td>
+      </tr>
+      <tr>
+       <td width="136">
+        4
+       </td>
+       <td width="136">
+        15
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     (vii)
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="136">
+        Watch_name
+       </td>
+       <td width="136">
+        price
+       </td>
+       <td width="136">
+        type
+       </td>
+      </tr>
+      <tr>
+       <td width="136">
+        HighFashion
+       </td>
+       <td width="136">
+        7000
+       </td>
+       <td width="136">
+        Unisex
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     (viii)
+    </p>
+    <table border="2">
+     <tbody>
+      <tr>
+       <td width="136">
+        Watch_name
+       </td>
+       <td width="135">
+        qty_store
+       </td>
+       <td width="135">
+        qty_sold
+       </td>
+       <td width="136">
+        Stock
+       </td>
+      </tr>
+      <tr>
+       <td width="136">
+        HighTime
+       </td>
+       <td width="135">
+        100
+       </td>
+       <td width="135">
+        25
+       </td>
+       <td width="136">
+        75
+       </td>
+      </tr>
+      <tr>
+       <td width="136">
+        LifTime
+       </td>
+       <td width="135">
+        150
+       </td>
+       <td width="135">
+        40
+       </td>
+       <td width="136">
+        110
+       </td>
+      </tr>
+      <tr>
+       <td width="136">
+        Wave
+       </td>
+       <td width="135">
+        200
+       </td>
+       <td width="135">
+        30
+       </td>
+       <td width="136">
+        170
+       </td>
+      </tr>
+      <tr>
+       <td width="136">
+        GoldenTime
+       </td>
+       <td width="135">
+        100
+       </td>
+       <td width="135">
+        10
+       </td>
+       <td width="136">
+        90
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     Raju CBSE
+     <br/>
+     <a class="button-red" href="http://www.learncbse.in/ncert-solutions-2/" title="NCERT Solutions Home Page">
+      NCERT Solutions
+     </a>
+     <a class="button-blue" href="http://www.learncbse.in/ncert-solutions-class-12-computer-science-c/" title="NCERT Solutions for Class 12 Computer Science (C++)">
+      Computer science
+     </a>
+     <a class="button-blue" href="http://www.learncbse.in/ncert-solutions-for-class-12-english/" title="NCERT Solutions for Class 12 English">
+      English
+     </a>
+     <a class="button-blue" href="http://www.learncbse.in/ncert-solutions-class-12-hindi-core/" title="NCERT Solutions for Class 12 Hindi">
+      Hindi
+     </a>
+     <a class="button-blue" href="http://www.learncbse.in/cbse-class-12-humanities/" title="NCERT Solutions for Class 12 Humanities">
+      Humanities
+     </a>
+     <a class="button-blue" href="http://www.learncbse.in/cbse-class-12-commerce/" title="NCERT Solutions for Class 12 Commerce">
+      Commerce
+     </a>
+     <a class="button-red" href="http://www.learncbse.in/cbse-class-12-science/" title="CBSE Class 12 Science">
+      Science
+     </a>
+    </p>
+    CONTENT END 2 
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"&gt;
+		&lt;rdf:Description rdf:about="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-structured-query-language/"
+    dc:identifier="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-structured-query-language/"
+    dc:title="NCERT Solutions for Class 12 Computer Science (C++) &amp;#8211; Structured Query Language"
+    trackback:ping="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-structured-query-language/trackback/" /&gt;
+&lt;/rdf:RDF&gt;
+   </div>
+  </body>
+ </html>
+ <!-- Google tag (gtag.js) -->
+ <script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-C5VTZJSJCR">
+ </script>
+ <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C5VTZJSJCR');
+ </script>
+ <link href="styles.css" rel="stylesheet"/>
+</head>

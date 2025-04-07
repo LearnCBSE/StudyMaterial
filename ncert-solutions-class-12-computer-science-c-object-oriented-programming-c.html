@@ -1,0 +1,2600 @@
+<head>
+<meta charset="utf-8"/>
+<meta content="Bqdk9rTr4" name="admaven-placement"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript">
+</script>
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ncert-solutions-class-12-computer-science-c-object-oriented-programming-c",
+  "url": "https://learncbse.online/ncert-solutions-class-12-computer-science-c-object-oriented-programming-c",
+  "description": "ncert-solutions-class-12-computer-science-c-object-oriented-programming-c"
+}
+ </script>
+<!DOCTYPE html>
+
+<html>
+</html>
+<style><style> background-color: #f0f8ff; border: 1px solid #d1e7ff; border-radius: 5px; font-family: 'Courier New', Courier, monospace; color: #003366; overflow-x: auto; } </style><style> pre, code { background-color: #1e1e1e; /* Dark background */ border-radius: 8px; /* Rounded corners */ padding: 15px; /* Padding for content */ font-family: 'Fira Code', monospace; /* Modern monospace font */ color: #dcdcdc; /* Light text color */ overflow-x: auto; /* Horizontal scroll */ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */ font-size: 14px; /* Font size */ line-height: 1.5; /* Line height for readability */ }
+ /* Optional: Highlight keywords */ .keyword { color: #569cd6; /* Blue color for keywords */ font-weight: bold; /* Bold keywords */ }
+ .string { color: #ce9178; /* String color */ }
+ .comment { color: #6a9955; /* Comment color */ font-style: italic; /* Italicize comments */ }</style><style> pre, code { background-color: #f5f5f5; /* Light grey background */ border-radius: 8px; /* Rounded corners */ padding: 15px; /* Padding for content */ font-family: 'Fira Code', monospace; /* Modern monospace font */ color: #dcdcdc; /* Light text color */ overflow-x: auto; /* Horizontal scroll */ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */ font-size: 14px; /* Font size */ line-height: 1.5; /* Line height for readability */ } /* Optional: Highlight keywords */ .keyword { color: #569cd6; /* Blue color for keywords */ font-weight: bold; /* Bold keywords */ } .string { color: #ce9178; /* String color */ } .comment { color: #6a9955; /* Comment color */ font-style: italic; /* Italicize comments */ } </style><style> /* Updated CSS Rules Here */ /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; /* Modern, clean sans-serif font */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; /* border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); padding: 10px 20px; */ flex-wrap: wrap; /* Ensure the menu items wrap on smaller screens */ text-align: center; /* border-radius: 8px; Rounded corners for a sleek design */ text-decoration: none; /* Remove underline for a clean look */ color: #0056b3; /* Deep blue color for professional tone */ transition: all 0.4s ease; /* Smoother transition effects */ } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; /* Prevent text from wrapping */ } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.7); */ transform: none; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; /* Darker text color for contrast */ border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover (Font Enlargement) */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* For Multi-Level Submenus */ .sub-menu-duplicate .sub-menu-duplicate { left: 100%; top: 0; transform: translateY(-10px); background-color: #f1f1f1; border-left: 4px solid #646667; } /* Active State for Menu Items */ .menu-link-duplicate:active, .menu-link-duplicate:focus { background-color: #0056b3; color: #fff; outline: none; } /* Mobile-Specific Styles */ @media (max-width: 768px) { /* Display only the main menu on mobile devices */ .menu-duplicate { display: flex !important; /* Ensure the main menu is visible */ flex-direction: row; /* Change to horizontal layout */ justify-content: center; /* Center-align menu items horizontally */ background-color: #fff; /* Maintain background color */ } .menu-item-duplicate { margin: 0 10px; /* Add spacing between main menu items horizontally */ } .menu-link-duplicate { font-size: 16px; /* Adjust font size for readability on mobile */ padding: 10px 15px; /* Increase touch area */ } /* Hide all submenus */ .sub-menu-duplicate { display: none !important; /* Completely hide submenus */ visibility: hidden !important; opacity: 0 !important; transform: none !important; } } </style><style> /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; font-size: 1.35rem; font-weight: 700; line-height: 1.6; letter-spacing: 0.03em; list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; flex-wrap: wrap; text-align: center; color: #0056b3; transition: all 0.4s ease; } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 500; position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 500; visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* Hide the menu on mobile devices */ @media (max-width: 768px) { /* Hide the entire menu on mobile devices */ .menu-duplicate { display: none !important; } } </style><style> .social-sidebar { position: fixed; top: 50%; left: 0; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; background-color: #f9f9f9; padding: 10px; border-radius: 0 5px 5px 0; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); z-index: 1000; transition: all 0.3s ease; } .social-sidebar.minimized { left: -50px; } #minimize-button { background-color: #007BFF; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-size: 16px; margin-bottom: 10px; transition: background-color 0.3s ease; } #minimize-button:hover { background-color: #0056b3; } .social-sidebar a { text-decoration: none; display: block; } .social-sidebar .social-icon { width: 30px; height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; } .social-sidebar .social-icon:hover { transform: scale(1.2); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } /* Responsive Design */ @media (max-width: 768px) { .social-sidebar { top: auto; bottom: 10px; left: 10px; flex-direction: row; gap: 15px; border-radius: 5px; padding: 8px; } .social-sidebar.minimized { left: -100%; } .social-sidebar .social-icon { width: 24px; height: 24px; } } </style><style> body { font-family: 'Playfair Display', serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background-color: #f9f9f9; } header, footer { background-color: #282c34; color: white; text-align: center; padding: 1.5rem 0; } h1, h2, h3 { font-family: 'Playfair Display', serif; color: #222; text-align: center; } a { font-family: 'Playfair Display', serif; color: #007BFF; text-decoration: none; font-weight: bold; } a:hover { text-decoration: underline; } p { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: bold; color: #343434; margin: 0; letter-spacing: 0.5px; } </style><style> body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background-color: #f9f9f9; } header, footer { background-color: #282c34; color: white; text-align: center; padding: 1.5rem 0; } h1, h2, h3 { color: #222; text-align: center; } a { color: #007BFF; text-decoration: none; font-weight: bold; } a:hover { text-decoration: underline; } .content { max-width: 900px; margin: 1.2rem auto; padding: 2rem; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); } header { background: linear-gradient(90deg, #4a90e2, #87cefa); color: white; text-align: center; padding: 2.5rem 0; border-bottom: 5px solid #d9e9ff; } h1 { font-size: 2.8rem; font-weight: bold; color: #ffffff; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); margin: 0; letter-spacing: 0.5px; } .secondary-heading { font-size: 1.3rem; font-weight: 500; color: #ffffff; margin-top: 0.2rem; letter-spacing: 0.3px; } @media (min-width: 1024px) { .desktop-banner { max-width: 22% !important; } } p { font-size: 1.2rem; font-weight: bold; color: #343434; margin: 0; letter-spacing: 0.5px; } </style><style> .entry-content { display: flex; justify-content: center; align-items: center; text-align: center; margin: 0 auto; max-width: 90%; /* Optionally set a max-width */ } </style><style> .entry-content { display: block; margin: 0 auto; max-width: 1200px; /* Set max-width if necessary */ padding: 0 1rem; /* Add padding to prevent text from touching edges */ text-align: center; /* Center text within the div */ } </style><style> /* Centering the entry-content div and ensuring good structure */ .entry-content { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin: 2rem auto; padding: 2rem; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; max-width: 1200px; /* Max width for large screens */ width: 100%; /* Ensure it doesn't exceed the container */ box-sizing: border-box; } </style><style> /* Left-aligning the entry-content div and ensuring good structure */ .entry-content { display: block; /* Set to block to avoid flex-based layout */ margin: 2rem auto; padding: 2rem; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; max-width: 1200px; /* Max width for large screens */ width: 100%; /* Ensure it doesn't exceed the container */ box-sizing: border-box; text-align: left; /* Align text to the left */ } </style>
+
+
+
+
+
+</head>
+<body>
+<header class="entry-header">
+<h1 class="entry-title" id="h1-1">
+   NCERT Solutions for Class 12 Computer Science (C++) – Object Oriented Programming in C++
+  </h1>
+</header>
+<div class="entry-content">
+<div class="code-block code-block-2" style="margin: 8px 0; clear: both;">
+</div>
+<h2 id="h2-2">
+<span id="NCERT_Solutions_for_Class_12_Computer_Science_C_8211_Object_Oriented_Programming_in_C">
+<span style="color: #00ccff;">
+     NCERT Solutions for Class 12 Computer Science (C++) – Object Oriented Programming in C++
+    </span>
+</span>
+</h2>
+<h3 id="h3-1" style="text-align: center;">
+<span id="TOPIC_8211_1">
+<span style="text-decoration: underline;">
+<span style="color: #0000ff; text-decoration: underline;">
+      TOPIC – 1
+     </span>
+</span>
+</span>
+</h3>
+<h3 id="h3-1" style="text-align: center;">
+<span id="Object_Oriented_Programming_Introduction">
+<span style="color: #0000ff;">
+     Object Oriented Programming : Introduction
+    </span>
+</span>
+</h3>
+<h3 id="h3-1" style="text-align: center;">
+<span id="Short_Answer_Type_Questions-I_2_marks_each">
+<span style="color: #0000ff;">
+     Short Answer Type Questions-I    [2 marks each]
+    </span>
+</span>
+</h3>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 1:
+    </strong>
+</span>
+<br/>
+   Differentiate between data abstraction and data hiding.
+   <strong>
+    [Delhi, 2015]
+   </strong>
+<br/>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+<br/>
+   Data hiding can be defined as the mechanism of hiding the data of a class from the outside world. This is done to protect the data from any accidental or intentional access. Data hiding is achieved by making the members of the class private.
+   <br/>
+   Data abstraction refers to, providing only essential information to’ the outside world and hiding their background details.
+   <br/>
+   Members defined with a public label are accessible to all parts of the program. The data abstraction view of a type is defined by its public members.
+  </p>
+<div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 2:
+    </strong>
+</span>
+<br/>
+   How encapsulation and abstraction are implemented in C++ language ? Explain with an example.
+   <strong>
+    [CBSE SQP 2015]
+   </strong>
+<br/>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+<br/>
+   Abstraction refers to the act of representing essential features without including the back-ground details or explanations.
+   <br/>
+   Encapsulation is wrapping up of data and function together in a single unit.
+   <br/>
+   We can say that encapsulation is way of achieving abstraction. Both these concepts are implemented in C++ in the form of a class. In a class data and function members are wrapped together. Only essential features are shown to the outside world in the form of member functions with public mode of accessibility.
+   <strong>
+    [1]
+   </strong>
+<br/>
+<strong>
+    Example:     [1]
+   </strong>
+</p>
+<pre style="padding-left: 30px;">class Rectangle
+
+ {
+
+ int L, B;
+
+ public: void Input() 
+
+ {
+
+      cin&gt;&gt;L&gt;&gt;B; 
+
+ }
+
+ void Output()
+
+ {
+
+ Cout&lt;&lt;L&lt;&lt;B;
+
+ }
+
+ };</pre>
+<p>
+   In this example:
+   <br/>
+   Data and member functions are together encapsulated
+   <br/>
+   Only Input ( ) and Output ( ) functions are visible outside the class which can only can be accessed outside the class using objects of the same class – Abstraction
+  </p>
+<div class="code-block code-block-3" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 3:
+     <br/>
+</strong>
+</span>
+   Explain data hiding with an example.
+   <strong>
+    [CBSE Comptt., 2014]
+   </strong>
+<em>
+<br/>
+</em>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+<br/>
+<strong>
+    Data Hiding
+   </strong>
+<br/>
+   Data Hiding is the mechanism where the details of the class are hidden from the user.
+   <br/>
+   The user can perform only a restricted set of operations in the hidden member of the class For example,
+   <br/>
+   In order to make the design and maintenance of a car reasonable the complexity of equipment is divided into modules with particular interfaces hiding design decisions.
+   <br/>
+<strong>
+    General Form:
+   </strong>
+</p>
+<pre style="padding-left: 30px;">class classname
+
+ {
+
+ private:
+
+datatype data;
+
+    public:
+
+       Member functions,-'
+
+ };
+
+ main()
+
+ {
+
+ classname objectnamel, objectname2</pre>
+<pre style="padding-left: 30px;">.........;
+
+ {
+
+ Example :</pre>
+<pre style="padding-left: 30px;">class Square</pre>
+<pre style="padding-left: 30px;">{
+
+ private
+
+ int Num;
+
+ public:
+
+ void Get() {
+
+ cout&lt;&lt;"Enter Number:";
+
+ cin&gt;&gt;Num;
+
+ }
+
+ void Display!) { cout&lt;&lt;"Square Is:"&lt;&lt;Num*Num;
+
+ }
+
+ };
+
+ void main()
+
+ {
+
+ Square Obj;
+
+ Obj.Get();
+
+ Obj.Display ();    [1]
+
+ getch()
+
+ }</pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 4:
+    </strong>
+</span>
+<br/>
+   What do you understand by data encapsulation and Data hiding ?
+   <br/>
+   Also, give a suitable C++ code to illustrate both.
+   <strong>
+    [CBSE SQP 2013]
+   </strong>
+<em>
+<br/>
+</em>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+<br/>
+   Data hiding is a property of OOP by which the crucial data of an object is made hidden from the rest of the program or outside the world.
+   <strong>
+    [1]
+   </strong>
+<br/>
+   Encapsulation refers to the wrapping of data and associated functions together under a unit class.
+   <strong>
+    [1]
+   </strong>
+</p>
+<div class="code-block code-block-4" style="margin: 8px 0; clear: both;">
+</div>
+<pre style="padding-left: 30px;">// Program for hiding &amp; Encapsulation 
+
+#include &lt;iostream.h&gt; 
+
+class Adder {    // Encapsulation
+
+ public :
+
+ Adder (int i = 0)
+
+ { total = i;}
+
+ void addNum (int Number)
+
+ { total + = Number;
+
+ }
+
+ int getTotal ( )
+
+ { return total;
+
+ }
+
+ private : int total ;
+
+ //Data Hiding
+
+};
+
+int main ( )
+
+{
+
+Adder a;
+
+a . addNum (10);
+
+a . addNum (20);
+
+a . addNum (30);
+
+cout &lt;&lt; "Total :&lt;&lt;a.getTotal (
+
+) &lt; &lt; endl;
+
+return 0 ;
+
+}</pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 5:
+    </strong>
+</span>
+<br/>
+   Write the output of the following C++ program code:
+   <strong>
+    [Delhi, 2015]
+   </strong>
+</p>
+<pre style="padding-left: 30px;">class Eval
+
+{
+
+char Level; 
+
+int Point;
+
+Public :
+
+Eval () {
+
+Level = 'E' ; Point = 0;
+
+}
+
+void Sink (int L)
+
+{
+
+Level - = L;
+
+}
+
+void Float (int L)
+
+{
+
+Level + = L;
+
+Point ++;
+
+}
+
+void Show ( )
+
+{
+
+cout&lt;&lt;Level&lt;&lt;"#"&lt;&lt;Point&lt;&lt;endl;
+
+}
+
+};
+
+void main ( )
+
+{
+
+Eval E;
+
+E. Sink (3) ;
+
+E. Show ( );
+
+E. Float (7);
+
+E. Show ( );
+
+E. Sink (2) ;
+
+E. Show ( );
+
+}</pre>
+<p>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+     <br/>
+</span>
+</strong>
+   B#0
+   <br/>
+   I#1
+   <br/>
+   G#1
+   <br/>
+<em>
+    (1 Mark for each correct line of output)
+   </em>
+<br/>
+<em>
+    Note:
+   </em>
+<br/>
+<em>
+    •  Deduct 1/2 Mark for not considering any or all end/(s) at proper place(s)
+   </em>
+<br/>
+<em>
+    •  Deduct 1/2 Mark for not writing any for all
+   </em>
+<em>
+    symbol(s)
+   </em>
+<strong>
+    [CBSE Marking Scheme 2015]
+   </strong>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 6:
+    </strong>
+</span>
+<br/>
+   Observe the following program carefully and attempt the given questions :
+  </p>
+<p style="padding-left: 30px;">
+   #include&lt;iostream.h&gt;
+   <br/>
+   #include&lt;cono.h&gt;
+   <br/>
+   #include&lt;stdlib,h&gt;
+   <br/>
+   void main()
+   <br/>
+   clrscr();
+   <br/>
+   randomize();
+   <br/>
+   char courses![ ] [10]={“M.Tech”.”MCA”, “MBA”,”B.Tech”};
+   <br/>
+   int ch;
+   <br/>
+   for(int i= l;i&lt;=3;i++)
+   <br/>
+   {
+   <br/>
+   ch=random(i)+1;
+   <br/>
+   cout&lt;&lt;courses[ch]&lt;&lt;“\t;
+   <br/>
+   }
+   <br/>
+   getch () ;
+   <br/>
+   }
+  </p>
+<div class="code-block code-block-5" style="margin: 8px 0; clear: both;">
+</div>
+<p>
+<strong>
+    (i)
+   </strong>
+   Out of all the four courses stored in the variable courses, which course will never be displayed in the output and which course will always be displayed at first in the output ?
+   <br/>
+<strong>
+    (ii)
+   </strong>
+   Mention the minimum and the maximum value assigned to the variable ch ?
+   <strong>
+    [CBSE SQP 2016]
+   </strong>
+<br/>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+<br/>
+<strong>
+    (i)
+   </strong>
+   M. Tech will never be displayed in the output.
+   <br/>
+   MCA will always be displayed at first in the output.
+   <br/>
+<strong>
+    (ii)
+   </strong>
+   Minimum value of ch=l
+   <br/>
+   Maximum value of ch=3
+   <br/>
+<strong>
+    (1 Mark for each correct answer)
+   </strong>
+<br/>
+<strong>
+    Note:
+   </strong>
+<br/>
+   • Deduct 1/2  Mark for writing any additional option.
+   <strong>
+    [CBSE Marking Scheme 2016]
+   </strong>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 7:
+    </strong>
+</span>
+<br/>
+   Study the following program and select the possible output(s) from the options (i) to (iv) following it. Also, write the maximum and the minimum values that can be assigned to the variable VAL.
+   <br/>
+   Note:
+   <br/>
+   — Assume all required header files are already being included in the program.
+   <br/>
+   — random(n) function generates an integer between 0 and n -1.
+   <strong>
+    [O.D, 2015]
+   </strong>
+</p>
+<div class="code-block code-block-6" style="margin: 8px 0; clear: both;">
+</div>
+<pre style="padding-left: 30px;">void main ()
+
+ {
+
+ randomize ()    ;
+
+ int VAL;
+
+ VAL = random (3) + 2;
+
+ chart GUESS [    ]    = "ABCDEFGHIJK"
+
+ ;    for (int I = 1; I &lt; = VAL;
+
+ I ++)
+
+ {
+
+ for (int J = VAL; J &lt; = 7; J ++)
+
+ Cout&lt;&lt;GUESS [J] ;
+
+ cout&lt;&lt;endl;
+
+ }</pre>
+<p>
+<img alt="NCERT Solutions for Class 12 Computer Science (C++) - Object Oriented Programming in C++-1" class="alignnone size-full wp-image-60013" data-recalc-dims="1" decoding="async" height="83" loading="lazy" sizes="(max-width: 337px) 100vw, 337px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/NCERT-Solutions-for-Class-12-Computer-Science-C-Object-Oriented-Programming-in-C-1.png?resize=337%2C83&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/NCERT-Solutions-for-Class-12-Computer-Science-C-Object-Oriented-Programming-in-C-1.png?w=337&amp;ssl=1 337w, https://www.cbsetuts.com/wp-content/uploads/2017/12/NCERT-Solutions-for-Class-12-Computer-Science-C-Object-Oriented-Programming-in-C-1.png?resize=300%2C74&amp;ssl=1 300w" width="337"/>
+<br/>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+     <br/>
+</span>
+</strong>
+   (ii) and (iii)
+   <br/>
+   Min Value of VAL = 2
+   <br/>
+   Max Value of VAL. = 4
+   <br/>
+<em>
+    (1/2 CA Mark for writing option (ii))
+   </em>
+<br/>
+<em>
+    (1/2 Mark for writing option (iii))
+   </em>
+<br/>
+<strong>
+    Note:
+   </strong>
+<br/>
+   • Deduct 1/2 mark for ivriting each additional option along with both correct options:
+   <br/>
+   (1/2 Mark for writing correct Minimum value of VAL)
+   <br/>
+   (1/2 Mark for writing correct Maximum value of VAL)
+   <strong>
+    [CBSE Marking Scheme 2015]
+   </strong>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 8:
+     <br/>
+</strong>
+</span>
+   Rewrite the following program after removing the syntax errors (if any). Under line each correction.
+   <em>
+<strong>
+     [O.D, 2012]
+    </strong>
+</em>
+</p>
+<div class="code-block code-block-7" style="margin: 8px 0; clear: both;">
+</div>
+<pre style="padding-left: 30px;">#include &lt;iostream.h&gt;
+
+Class Item
+
+{
+
+long IId, Qty; 
+
+public :
+
+void Purchase {cin&gt;&gt;IId&gt;&gt;Qty;} 
+
+void sale ()
+
+{
+
+cout&lt;&lt;setw (5)&lt;&lt; IId&lt;&lt;" Old :"&lt;Qty 
+
+&lt;&lt;endl;
+
+cout&lt;&lt;"New :" &lt;&lt;Qty&lt;&lt;endl;
+
+}
+
+};
+
+void main ()
+
+{
+
+Item I;
+
+Purchase ();
+
+I. Sale () ;
+
+I. Sale ()
+
+}</pre>
+<p>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+</p>
+<pre style="padding-left: 30px;"><span style="text-decoration: underline;">#include&lt;iostream.h&gt;</span>
+
+<span style="text-decoration: underline;">#include&lt;iomanip.h&gt;</span> 
+
+<span style="text-decoration: underline;">class Item</span> 
+
+{
+
+long IId, Qty; 
+
+public :
+
+void purchase() 
+
+{<span style="text-decoration: underline;">cin&gt;&gt;IId&gt;&gt;Qty;</span>} 
+
+void sale()
+
+{
+
+cout&lt;&lt;setw(5)&lt;&lt;IId&lt;&lt;"Old"&lt;&lt;Qty&lt;&lt;endl; 
+
+cout&lt;&lt; "New    Qty&lt;&lt;endl;
+
+}
+
+};
+
+void main( )
+
+{
+
+Item I ;
+
+<span style="text-decoration: underline;">I. purchase( );</span> // Object missing 
+
+I. sale ( ) ;
+
+<span style="text-decoration: underline;">I. sale( );</span> //; is missing
+
+}
+
+<strong><em>(1/4 mark for each correction)</em></strong></pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 9:
+     <br/>
+</strong>
+</span>
+   Rewrite the following program after removing the syntax errors (if any). Underline each correction.
+   <strong>
+    [Delhi, 2012]
+   </strong>
+</p>
+<pre style="padding-left: 30px;"># include &lt;iostream.h&gt; 
+
+class book {
+
+long Bid, Qty; 
+
+public :
+
+void purchase () {cin&gt;&gt;BID&gt;&gt;Qty;} 
+
+void sale ( )
+
+{
+
+cout&lt;&lt;setw&lt;&lt;BId&lt;&lt;"Old:"&lt;&lt;Qty&lt;&lt;en 
+
+dl;
+
+cout&lt;&lt;"New; "&lt;&lt;—Qty&lt;&lt;endl;
+
+}
+
+};
+
+void main ()
+
+{
+
+Book B;
+
+B. Purchase(); 
+
+sale ();
+
+B. Sale ()
+
+}</pre>
+<p>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+</p>
+<pre style="padding-left: 30px;"><span style="text-decoration: underline;">#include&lt;iomanip.h&gt;</span>
+
+#include&lt;iostream.h&gt; 
+
+class Book
+
+ {
+
+long Bid, Qty; 
+
+public:
+
+void purchase()(<span style="text-decoration: underline;">cin&gt;&gt;Bld&gt;&gt;Qty;</span>) 
+
+void sale( )
+
+{
+
+cout &lt; &lt; <span style="text-decoration: underline;">setw(5)</span> &lt; &lt; Bld &lt; &lt; "0ld " &lt; &lt; Qty &lt; &lt; e n
+
+dl;
+
+cout&lt;"New:"&lt;&lt;—Qty&lt;&lt;endl;
+
+}
+
+} ;
+
+<span style="text-decoration: underline;">void main ()</span>
+
+{
+
+Book B;
+
+B. purchase ();
+
+B. sale();
+
+}
+
+<em>(1/2 mark for each correction) </em><strong>[CBSE Marking Scheme 2012]</strong></pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 10:
+    </strong>
+</span>
+<br/>
+   Answer the questions (i) and (ii) after going through the following class:
+   <strong>
+    [O. D, 2012]
+   </strong>
+</p>
+<pre style="padding-left: 30px;">class Travel
+
+{
+
+int PlaceCode; char Place [20] ; 
+
+float Charges; 
+
+public :
+
+Travel ( )    //Function 1
+
+{
+
+PlaceCode = 1; strcpy (Place,
+
+"DELHI"); Charges =1000;
+
+}
+
+void TravelPlan (float C)
+
+//Function 2
+
+{
+
+cout&lt;&lt;PlaceCode&lt;&lt; ":" &lt;&lt;Place&lt;&lt;
+
+":" &lt;&lt;Charges&lt;&lt;endl;</pre>
+<pre style="padding-left: 30px;">} 
+
+- Travel ( )   //Function 3
+
+{
+
+cout&lt;&lt;"Travel Plan Cancelled"&lt;&lt;
+
+endl;
+
+}
+
+Travel (int PC, char P [], float C)
+
+                         // Function 4
+
+{
+
+PlaceCode = PC; strcpy (Place, P);
+
+Charges = C;
+
+}
+
+} ;</pre>
+<p>
+<strong>
+    (i)
+   </strong>
+   In Object Oriented Programming, what are Function 1 and Function 4 combinely referred to as ?
+   <br/>
+<strong>
+    (ii)
+   </strong>
+   In Object Oriented Programming which concept is illustrated by Function 3? When is this function called/invoked ?
+   <br/>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+<br/>
+   The concept demonstrated is constructor over-loading:
+   <br/>
+<strong>
+    (i)
+   </strong>
+   Function 1 and Function 4 are called overloaded Constructor of the Class Travel.
+   <br/>
+<strong>
+    (ii)
+   </strong>
+   Function 3 is Destructor of Class Travel.
+   <br/>
+   The destructors are called automatically
+   <br/>
+   when the objects are destroyed.
+   <strong>
+    [2]
+   </strong>
+</p>
+<h3 id="h3-1" style="text-align: center;">
+<span id="Short_Answer_Type_Questions-II_3_marks_each">
+<span style="color: #0000ff;">
+     Short Answer Type Questions-II (3 marks each)
+    </span>
+</span>
+</h3>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 1:
+    </strong>
+</span>
+<br/>
+   Write any four important characteristics of object Oriented Programming ? Give example of any one of the characteristics using C++.
+   <strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+    [O.D, 2016]
+    <br/>
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+<br/>
+<img alt="NCERT Solutions for Class 12 Computer Science (C++) - Object Oriented Programming in C++-2" class="alignnone size-full wp-image-60015" data-recalc-dims="1" decoding="async" fetchpriority="high" height="276" loading="lazy" sizes="(max-width: 355px) 100vw, 355px" src="https://www.cbsetuts.com/wp-content/uploads/2017/12/NCERT-Solutions-for-Class-12-Computer-Science-C-Object-Oriented-Programming-in-C-2.png?resize=355%2C276&amp;ssl=1" srcset="https://www.cbsetuts.com/wp-content/uploads/2017/12/NCERT-Solutions-for-Class-12-Computer-Science-C-Object-Oriented-Programming-in-C-2.png?w=355&amp;ssl=1 355w, https://www.cbsetuts.com/wp-content/uploads/2017/12/NCERT-Solutions-for-Class-12-Computer-Science-C-Object-Oriented-Programming-in-C-2.png?resize=300%2C233&amp;ssl=1 300w" width="355"/>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 2:
+     <br/>
+</strong>
+</span>
+   Find the output of the following C++ program
+   <strong>
+    [CBSE SQP 2015]
+   </strong>
+</p>
+<pre style="padding-left: 30px;">#include&lt;iostream.h&gt;
+
+#include&lt;conio.h&gt;
+
+#include&lt;ctype.h&gt; 
+
+class Class 
+
+{
+
+int Cno,total; 
+
+char section; public:
+
+Class(int no=l)
+
+{
+
+Cno=no; 
+
+section='A'; 
+
+total=30;
+
+}
+
+void admission(int c=20)
+
+{
+
+section++;
+
+total+=c;
+
+}
+
+void ClassShow ()
+
+{
+
+cout&lt;&lt;Cno&lt;&lt;":"&lt;&lt;section&lt;&lt;":"&lt;&lt;total&lt;
+
+endl;
+
+}
+
+};
+
+void main ()
+
+{
+
+Class C1 (5),C2;
+
+Cl.admission(25)
+
+Cl.ClassShow();
+
+C2.admission() ;
+
+Cl.admission(30)
+
+C2.ClassShow();
+
+Cl.ClassShow();
+
+}</pre>
+<p>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+     <br/>
+</span>
+</strong>
+   5 : B : 55
+   <strong>
+    [1]
+   </strong>
+<br/>
+   1: B : 50
+   <strong>
+    [1]
+   </strong>
+<br/>
+   5 : C : 85
+   <strong>
+    [1]
+   </strong>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 3:
+     <br/>
+</strong>
+</span>
+   Obtain the output of the following C+ + program, which will appear on the screen after its execution.
+   <br/>
+<strong>
+    Important Note:
+   </strong>
+<br/>
+   • All the desired header files are already included in the code, which are required to run the code,
+  </p>
+<pre style="padding-left: 30px;">class Game 
+
+{
+
+int Level, Score; 
+
+char Type; 
+
+public:
+
+Game (char GType='p')
+
+{Level=1; Score=0; Type= GType;} 
+
+void Play (int GS); 
+
+void Change (); 
+
+void Show()
+
+{
+
+cout&lt;&lt;Type&lt;&lt;"@"&lt;&lt;Level&lt;&lt;endl; 
+
+cout&lt;&lt;Score&lt;&lt;endl;
+
+}
+
+} ;
+
+void main () 
+
+{
+
+Game A ('G'), B;
+
+B. Show ();
+
+A. Play (11);
+
+A. Change ();
+
+B. Play (25);
+
+A. Show ();
+
+B. Show ();
+
+}
+
+void Game:    : Change()
+
+{
+
+Type=(Type== 'P')?'G' :'P';
+
+}
+
+void Game: :Play(int GS)
+
+{
+
+Score+=GS; 
+
+if(Score&gt;=30)
+
+Level=3;
+
+else if (Score&gt;=20)
+
+Level=2; 
+
+else
+
+Level=l;
+
+}        <em><strong>[O.D, 2014]</strong></em></pre>
+<p>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+</p>
+<p style="padding-left: 30px;">
+   P@1
+   <br/>
+   0
+   <br/>
+   P@1
+   <br/>
+   11
+   <br/>
+   P@2
+   <br/>
+   25
+   <br/>
+<strong>
+<em>
+     (1/2 mark for each correct line)
+    </em>
+</strong>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 4:
+    </strong>
+</span>
+<br/>
+   Obtain the output of the following C+ + program, which will appear on the screen after its execution.
+   <br/>
+<strong>
+    Important Note:
+   </strong>
+<br/>
+   • All the desired header files are already included in the code, which are required to run the code,
+  </p>
+<pre style="padding-left: 30px;">class Player 
+
+{
+
+int Score, Level; 
+
+char Game;
+
+public:
+
+Player (char GGame='A')
+
+{Score=0; Level=1; Game =GGame;} 
+
+void Start (int SC); 
+
+void Next (); 
+
+void Disp ()
+
+{
+
+cout &lt;&lt;Game&lt;&lt;"@"&lt;&lt;Level &lt;&lt;endl; 
+
+cout &lt;&lt;Score&lt;&lt;endl;
+
+}
+
+};
+
+void main ()
+
+{
+
+Player P,Q ('B');
+
+P. Disp ();
+
+Q. Start (75);
+
+Q. Next ();
+
+P. Start (120);
+
+Q. DispO ;
+
+P.Disp ();
+
+}
+
+void Player : : Next ()
+
+{
+
+Game = (Game =='A')?'B':'A' ;
+
+}
+
+void Player : : Start (int SC)
+
+{
+
+Score+=SC;
+
+If (Score&gt;=100)
+
+Level=3;
+
+else if (Score&gt;=50)
+
+Level=2; 
+
+else
+
+Level=1;
+
+}    <em><strong>[O.D, 2014]</strong></em></pre>
+<p>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+</p>
+<p style="padding-left: 30px;">
+   A@1 0
+   <br/>
+   A@2
+   <br/>
+   75
+   <br/>
+   A@3
+   <br/>
+   120
+   <strong>
+    [3]
+   </strong>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 5:
+    </strong>
+</span>
+<br/>
+   Observe the following C++ code carefully and obtain the output, which will appear on the screen after execution of it.
+  </p>
+<pre style="padding-left: 30px;">#include &lt;iostream.h&gt; 
+
+class Mausam 
+
+{
+
+int city, Temp, Humidity; 
+
+public :
+
+Mausam (int C = 1) {City = C; Temp = 
+
+10; Humidity = 63;}; 
+
+void Sun (int T) {Temp + = T;}; 
+
+void Rain (int H) {Humidity +=H;}; 
+
+void Checkout ( )
+
+{
+
+cout&lt;&lt;City&lt;&lt;":"&lt;&lt;Temp&lt;&lt; "&amp;" &lt;&lt;Humidity 
+
+&lt;&lt;"%"&lt;&lt;endl;
+
+}
+
+} ;
+
+void main ( )
+
+{
+
+Mausam M, N(2);
+
+M. Sun (5);
+
+M. Checkout ( );
+
+N.  Rain (10);
+
+N.Sun (2)    ;
+
+N.Checkout ( );
+
+M.Rain (15)    ;
+
+M.Checkout ( ) ;
+
+}    <em><strong>[O.D, 2013</strong><strong>]</strong></em></pre>
+<p>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+<br/>
+<strong>
+    Output:
+   </strong>
+<br/>
+   1:1:15%
+   <strong>
+    [1]
+   </strong>
+<br/>
+   2:2:12%
+   <strong>
+    [1]
+   </strong>
+<br/>
+   3:1:15%
+   <strong>
+    [1]
+   </strong>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 6:
+    </strong>
+</span>
+<br/>
+   Observe the following C++ code carefully and obtain the output, which will appear on the screen after execution of it.
+  </p>
+<pre style="padding-left: 30px;"># include &lt;iostream.h&gt; 
+
+class Aroundus
+
+ {
+
+ int Place, Humidity, Temp; public:
+
+ Aroundus(int p = 2) {
+
+ Place = P; Humidity = 60; Temp = 20;
+
+ }
+
+ void Hot (int T) {
+
+ Temp+=T ;
+
+ };
+
+ void Humid (int H) {
+
+ Humidity+=H ;
+
+ };
+
+ void JustSee ( )
+
+ {
+
+ cout&lt;&lt;Place&lt;&lt;":"&lt;&lt;Temp&lt;&lt;"&amp;"&lt;&lt;Humidity &lt;&lt;"%"&lt;&lt;endl;
+
+ }
+
+ };
+
+ int main()
+
+ {
+
+ Aroundus A, B (5) ;
+
+ A. Hot (10)    ;
+
+ A. JustSee ( )    ;
+
+ B. Humid (15)    ;
+
+ B. Hot (2)    ;
+
+ B. JustSee ( )    ;
+
+ A. Humid (5)    ;
+
+ A. Justsee ( ) ;    <strong><em>[Delhi, 2013]</em></strong></pre>
+<p>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+     <br/>
+</span>
+    Output:
+   </strong>
+<br/>
+   2 : 30 &amp; 60%
+   <strong>
+    [1]
+   </strong>
+<br/>
+   5 : 22 &amp; 75%
+   <strong>
+    [1]
+   </strong>
+<br/>
+   2 : 30 &amp; 65%
+   <strong>
+    [1]
+   </strong>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 7:
+    </strong>
+</span>
+<br/>
+   Find the output of the following program :
+   <em>
+<strong>
+     [O.D., 2012]
+    </strong>
+</em>
+</p>
+<pre style="padding-left: 30px;">#include &lt;iostream.h&gt; 
+
+class METRO 
+
+{
+
+ int Mno, TripNo, PassengerCount; 
+
+public :
+
+METRO (int Tmno=l)
+
+ {
+
+ Mno=Tmno;
+
+ TripNo=0;
+
+ PassengerCount=0;
+
+ }
+
+ void Trip (int PC = 20)
+
+ { TripNo++; PassengerCount+=PC;} 
+
+void StatusShow ()
+
+ {cout&lt;&lt;Mno&lt;&lt;" : "&lt;&lt;TripNo&lt;&lt;":"
+
+ &lt;&lt;PassengerCount&lt;&lt;endl;}
+
+ } ;
+
+ int main ()
+
+ {
+
+ METRO M (5), T;
+
+ M.Trip () ;
+
+ T.Trip (50) ;
+
+ M.StatusShow ();
+
+ M.Trip (30)    ;
+
+ T.StatusShow ();
+
+ M.StatusShow ();
+
+ }</pre>
+<p>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+     <br/>
+</span>
+    Output:
+   </strong>
+<br/>
+   5 :1: 20
+   <br/>
+   1 :1 : 50
+   <br/>
+   5 : 2 : 50
+   <br/>
+<strong>
+<em>
+     (1 mark for each line of output)
+    </em>
+</strong>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 8:
+    </strong>
+</span>
+<br/>
+   Find the output of the following program:
+   <strong>
+    [Delhi, 2012]
+   </strong>
+</p>
+<pre style="padding-left: 30px;">#include&lt;iostream.h&gt; 
+
+class TRAIN 
+
+{
+
+ int Tno, TripNo, PersonCount; 
+
+public :
+
+ TRAIN (int Tmno=l) {Tno=Tno; TripNo=0; PersonCount = 0;}
+
+ void Trip    (int TC=100)
+
+ {TripNo++; PersonCount+=TC;} 
+
+void Show ()
+
+ {cout&lt;&lt;Tno&lt;&lt;" : "&lt;&lt;Trip’No&lt;&lt;" : "&lt;&lt;Person Count &lt;&lt;endl;}
+
+ };
+
+ void main ()
+
+ {
+
+ TRAIN T    (10), N.    
+
+N. Trip () ;
+
+ T.  Show  () ;
+
+ T.  Trip (70)
+
+ N.  Trip (40)
+
+ N.  Show () ;
+
+ T.  Show  () ;
+
+}</pre>
+<p>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+<br/>
+<strong>
+    Output:
+   </strong>
+<br/>
+   1202 : 0:0
+   <br/>
+   950 : 2 :140
+   <br/>
+   1202 :1: 70
+   <br/>
+<em>
+<strong>
+     (1 mark for each line of output)
+    </strong>
+</em>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 9:
+     <br/>
+</strong>
+</span>
+   Write the output of the following C++ progam code:
+   <br/>
+<strong>
+    Note :
+   </strong>
+   Assume all required header files are already being included in the program,
+  </p>
+<pre style="padding-left: 30px;">class seminar 
+
+{
+
+char topic [30]; 
+
+int charges; 
+
+public:
+
+{
+
+strcpy(topic,"Registration"); 
+
+charges=5000;
+
+}
+
+seminar(char t [ ] )
+
+{
+
+strcpy (topic,t) 
+
+charges = 5000;
+
+}
+
+seminar (intc)
+
+{
+
+strcpy(topic,"Registration    with
+
+Discount") ;
+
+charges=5000-c;
+
+}
+
+void regis(char t [ ], int c)
+
+{
+
+strcpy(topic, t); 
+
+charges=charges+c;
+
+}
+
+void regis(int c=2000)
+
+{
+
+charges=charges+c;
+
+}
+
+void subject(char t [ ],int c)
+
+{
+
+strcpy(topic,t); 
+
+charges=charges+c;
+
+}
+
+void show ( )
+
+{
+
+cout&lt;&lt;topic&lt;&lt;"@&lt;&lt;charges&lt;&lt;endl;
+
+}
+
+};
+
+void main ( )
+
+{
+
+seminar s1,s2(1000),s3("Genetic Mutation") , s4; 
+
+s1.show ( ); 
+
+s2.show ( );
+
+s1.subject("ICT",2000) ; 
+
+s1.show ( );
+
+s2.regis("Cyber Crime",2500); 
+
+s2.show ( );
+
+s3.regis ( ) ; 
+
+s3.show(); 
+
+s4=s2; 
+
+s4.show(); 
+
+getch();
+
+}   <em><strong> [CBSE SQP, 2016]</strong></em></pre>
+<p>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+</p>
+<pre style="padding-left: 30px;">Registration@5000
+
+Registration with Discount@4000 
+
+ICT@7000
+
+Cyber Crime@6500 
+
+Genetic Mutation@7000 
+
+Cyber Crime@6500</pre>
+<p style="padding-left: 30px;">
+<em>
+    (1/2 mark for each correct output)
+   </em>
+<br/>
+<em>
+<strong>
+     Note:
+    </strong>
+</em>
+<br/>
+<em>
+    Deduct 1/2 Mark for not considering any “@” symbol
+   </em>
+<em>
+<strong>
+     [CBSE Marking Scheme, 2016]
+    </strong>
+</em>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 10:
+    </strong>
+</span>
+<br/>
+   Find and write the output of the following C+ + program code:
+   <br/>
+<strong>
+    Note :
+   </strong>
+   Assume all required header files are already being included in the program,
+  </p>
+<pre style="padding-left: 30px;">class product 
+
+{
+
+ int PID' 
+
+float price; 
+
+int Qty;
+
+ public:
+
+ Product ( ) {PID=100;Price=20;Qty=100;} 
+
+void Add(int I, float p)
+
+ {
+
+ ID=I ;
+
+ Price=P;
+
+ }
+
+ void Alter(int Change,int TQ)
+
+ {
+
+ Price+=Change;
+
+ Qty+=TQ;
+
+ }
+
+ void Display ( )
+
+ {
+
+ cout&lt;&lt;"PID:"&lt;&lt;PID&lt;&lt;endl; 
+
+cout&lt;&lt;Qty&lt;&lt;"@"&lt;&lt;Price&lt;&lt;endl;
+
+ }
+
+ };
+
+ void main ( )
+
+ {
+
+ Product P,Q,R;
+
+ P. Add(104,50);
+
+ Q. Add(201,30) ;
+
+ R. Alter(-10,25) ;
+
+ P. Display();
+
+ Q. Display();
+
+ R. Display();
+
+ }</pre>
+<p>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+</p>
+<pre style="padding-left: 30px;">PID: 100 
+
+104@150 
+
+PID:29 201
+
+@130 PID:25 
+
+100@10</pre>
+<p>
+<em>
+    (1/2 mark for each correct line of output)
+   </em>
+<br/>
+<em>
+    Note:
+   </em>
+<br/>
+<em>
+    • Deduct only 1/2 Mark for not writing any or all.
+   </em>
+<br/>
+<em>
+    • Deduct 1/2 Mark for not considering any or all
+   </em>
+</p>
+<h3 id="h3-1" style="text-align: center;">
+<span id="TOPIC-2">
+<span style="color: #0000ff;">
+     TOPIC-2
+    </span>
+</span>
+</h3>
+<h3 id="h3-1" style="text-align: center;">
+<span id="Function_Overloading">
+<span style="color: #0000ff;">
+     Function Overloading
+     <strong>
+<br/>
+</strong>
+</span>
+</span>
+</h3>
+<h3 id="h3-1" style="text-align: center;">
+<span id="Short_Answer_Type_Questions-1_2_marks_each">
+<span style="color: #0000ff;">
+     Short Answer Type Questions-1    [2 marks each]
+    </span>
+</span>
+</h3>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 1:
+    </strong>
+</span>
+<br/>
+   Answer the questions (i) and (ii) after going through the following class :
+  </p>
+<pre style="padding-left: 30px;">class Motor 
+
+{
+
+int MotorNo. Track; 
+
+public :
+
+Motor ( );    //Function 1
+
+Motor (int MN) ; //Function 2 
+
+Motor (Motor &amp;M); //Function 3 
+
+void Allocate ( ) ///Function 4 
+
+void Move ( ); //Function 5
+
+} ;
+
+void main ( )
+
+{
+
+Motor M;
+
+}</pre>
+<p>
+<strong>
+    (i)
+   </strong>
+   Out of the following, which of the option is correct for calling Function 2?
+   <br/>
+   Option 1 – Motor N (M);
+   <br/>
+   Option 2 – Motor P (10);
+   <br/>
+<strong>
+    (ii)
+   </strong>
+   Name the feature of Object Oriented
+   <br/>
+   Programming, which is illustrated by Function 1, Function 2 and Function 3 combined together.
+   <strong>
+    [Delhi, 2013]
+   </strong>
+<br/>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+<br/>
+   (i) Option 2 is correct for calling Function 2.
+   <strong>
+    [1]
+   </strong>
+<br/>
+   (ii) Function overloading, i.e.,
+   <strong>
+    Polymorphism. [1]
+   </strong>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 2:
+    </strong>
+</span>
+<br/>
+   Answer the questions (i) and (ii) after going through the following class :
+  </p>
+<pre style="padding-left: 30px;">class Race 
+
+{
+
+int CarNo, Track; 
+
+public:
+
+Race ( ) ; //Function 1
+
+Race (int CN) ; //Function 2
+
+Race (Race &amp;R);  //Function 3
+
+void Register ( ); //Function 4
+
+void Drive ( ); //Function 5
+
+};
+
+void main ( )
+
+{
+
+Race R ;
+
+:
+
+}</pre>
+<p>
+<strong>
+    (i)
+   </strong>
+   Out of the following, which of the option is correct for calling Function 2?
+   <br/>
+   Option 1 – Race T (30);
+   <br/>
+   Option 2 – Race U (R);
+   <br/>
+<strong>
+    (ii)
+   </strong>
+   Name the feature of Object Oriented
+   <br/>
+   Programming, which is illustrated by Function 1, Function 2 and Function 3 combined together.
+   <strong>
+    [O.D, 2013]
+   </strong>
+<br/>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+<br/>
+   (i) Option 1 – Race T (30); is correct since the parameter to T is integer.
+   <strong>
+    [1]
+   </strong>
+<br/>
+   (ii) When Functions – Function 1, Function 2 and Function 3 are combined together, it is referred as constructor overloading, i.e.,
+   <strong>
+    Polymorphism
+   </strong>
+   .
+   <strong>
+    [1]
+   </strong>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 3:
+    </strong>
+</span>
+<br/>
+   What is function overloading ? Write an example using C++ to illustrate the concept of function overloading.
+   <br/>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+     <br/>
+</span>
+    Function Overloading
+   </strong>
+<br/>
+   In C++, we can declare different functions with same name. This property is called function overloading. Function overloading implements polymorphism.
+   <br/>
+<strong>
+    Example:
+    <br/>
+</strong>
+   # include &lt;iostream.h &gt;
+   <br/>
+   #include &lt; stdlib.h&gt;
+   <br/>
+   #include &lt; conio.h&gt;
+   <br/>
+   #define pi 3.14
+  </p>
+<pre style="padding-left: 30px;">class fn    <strong>[1]</strong>
+
+{
+
+public:
+
+void area(int); //circle 
+
+void area(int,int); //rectangle
+
+};
+
+void fn : : area(int a)
+
+{
+
+cout &lt;&lt;"Area of Circle:"&lt;&lt;pi*a*a;
+
+}
+
+void fn::area (int a, int b)
+
+{
+
+cout &lt;&lt;"Area of rectangle:"&lt;&lt;a*b;
+
+}
+
+void main ( )
+
+{
+
+int ch; 
+
+int a, b, r; 
+
+fn obj;
+
+cout&lt;&lt;''\nl.Area    of Circle\
+
+n2.Area of Rectangle\ n3.Exit\n:"; 
+
+cout&lt;&lt;''Enter your Choice:"; 
+
+cin&gt;&gt;ch; 
+
+switch(ch)
+
+{
+
+case 1: 
+
+cin&gt;&gt;r; 
+
+obj.area(r);
+
+break;   <strong> [1]</strong>
+
+case 2:
+
+'cin&gt;&gt;a&gt;&gt;b;
+
+obj.area(a,b); 
+
+break; 
+
+case 3:
+
+exit (0);
+
+}
+
+getch ( );
+
+}</pre>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 4:
+    </strong>
+</span>
+<br/>
+   Write the output of the following C++ code. Also, write the name of feature of Objects Oriented Programming used in the following program jointly illustrated by the functions [I] to [IV]
+  </p>
+<pre style="padding-left: 30px;">include&lt;iostream.h&gt;
+
+void Line ( )    //Function[I]
+
+{
+
+for(int L=1;L&lt;=80;L++)
+
+Cout&lt;&lt;"-";
+
+cout&lt;&lt;endl;
+
+}
+
+void Line(int N)    //Function[II]
+
+{
+
+for (int L=1;L&lt;=N;L++)
+
+Cout&lt;&lt;"*";
+
+cout&lt;&lt;endl;
+
+}
+
+void Line (char C, Int N) //Function[III]
+
+{
+
+for(int L=1;L&lt;=N;L++) 
+
+Cout&lt;&lt;C;
+
+cout&lt;&lt;endl;
+
+}
+
+Void Line (int M, int, N)  //Function [IV]
+
+{
+
+for (int L = 1;L&lt;=N;L++)
+
+cout&lt;&lt;M*L;
+
+cout&lt;&lt;endl;
+
+}
+
+void main ( )
+
+{
+
+int A=9, B=4 C=3;
+
+char K = "#" ;
+
+Line (K, B);
+
+Line (A,C);
+
+}</pre>
+<p>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+<br/>
+   ####
+   <br/>
+   91827
+   <br/>
+   Function Overloading
+   <br/>
+<em>
+<strong>
+     (1/2 Mark for writing each correct output)
+    </strong>
+</em>
+<br/>
+<em>
+<strong>
+     (1 Mark for writing the feature, name correctly)
+    </strong>
+</em>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 5:
+    </strong>
+</span>
+<br/>
+   Answer the question (i) and (ii) after going through the following class :
+  </p>
+<pre style="padding-left: 30px;">class Test 
+
+{
+
+int Regno, Max, Min, Score; 
+
+public :
+
+Test ( )    //Function 1
+
+{
+
+Regno =101; Max = 100;    Min=40;
+
+Score=75 ;
+
+}
+
+Test (int Pregno, int Pscore) //Function 2
+
+{
+
+Regno=Pregno;Max=100;Min=40; 
+
+Score=Pscore;
+
+}
+
+~Test()    //Function 3
+
+{
+
+cout&lt;&lt;"Test Over"&lt;&lt;endl;
+
+}
+
+void Display ( )    //Function 4
+
+{
+
+cout&lt;&lt;Regno&lt;&lt;":"&lt;&lt;Max&lt;&lt;":"&lt;&lt;Min&lt;&lt; endl ;
+
+cout&lt;&lt;" [Score]"&lt;&lt;Score&lt;&lt;endl ;
+
+}
+
+} ;</pre>
+<p>
+   (i) As per object oriented programming which concept is illustrated by
+   <strong>
+    function 1
+   </strong>
+   and
+   <strong>
+    function 2
+   </strong>
+   together ?
+   <br/>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+<br/>
+   Polymorphism
+   <br/>
+<strong>
+    OR
+   </strong>
+<br/>
+   Function Overloading
+   <br/>
+<strong>
+    OR
+   </strong>
+<br/>
+   Constructor Overloading
+   <br/>
+<em>
+<strong>
+     (1 Mark for naming the concept correctly)
+    </strong>
+</em>
+<br/>
+   (ii) What is
+   <strong>
+    Function 3
+   </strong>
+   specially referred as ? When do you think,
+   <strong>
+    Function 3
+   </strong>
+   will be invoked/called ?
+   <br/>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+<br/>
+   Destructor is invoked or called when scope of an Object gets over.
+   <br/>
+   (1/2 Mark of naming Destructor correctly)
+   <br/>
+   (1/2 Mark for mentioning correctly when it is invoked)
+  </p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 6:
+    </strong>
+</span>
+<br/>
+   Answer the questions (i) and (ii) after going through the following class :
+  </p>
+<pre style="padding-left: 30px;">class Exam 
+
+{
+
+int Rno, Maxmarks, MinMarks, marks; 
+
+pubic :
+
+Exam () //Module 1
+
+{
+
+Rno=101;MaxMarks=100;MinMarks=40; Marks =75 ;
+
+}
+
+Exam (int Prno, int Pmarks) / / Module 2
+
+{
+
+Rno = Prno;MaxMarks = l0 0;MinMar ks=40;
+
+Marks=Pmarks; 
+
+}
+
+-Exam ()    //Module 3
+
+{
+
+cout&lt;&lt;"Exam Over" &lt;&lt;Endl ;
+
+}
+
+void show ( )    //module 4
+
+{
+
+cout&lt;&lt;Rno&lt;&lt;" : "&lt; &lt;MaxMarks &lt; &lt;":"&lt;&lt; MinMarks &lt;&lt;endl;
+
+cout&lt;&lt;"[Marks Got]" &lt;&lt;Marks&lt;&lt;endl;
+
+}
+
+};</pre>
+<p>
+   (i) As per Object Oriented Programming, which concept is illustrated by Module 1 and Module 2 together ?
+   <br/>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+<br/>
+   Polymorphism
+   <br/>
+   Or
+   <br/>
+   Constructor Overloading
+   <br/>
+   OR
+   <br/>
+   Function Overloading
+   <br/>
+<em>
+<strong>
+     (1 Mark for mentioning the correct concept)
+    </strong>
+</em>
+<br/>
+   (ii) What is
+   <strong>
+    Module 3
+   </strong>
+   referred as ? When do you think,
+   <strong>
+    Module 3
+   </strong>
+   will be invoked/called ?
+   <br/>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+<br/>
+   Destructor. It is invoked as soon as the scope of the object gets over.
+   <br/>
+<strong>
+<em>
+     (1/2 Mark for indentifying it as Destructor)
+    </em>
+</strong>
+<br/>
+<strong>
+<em>
+     (1/2 Mark for mentioning correctly when it be called/invoked)
+    </em>
+</strong>
+</p>
+<p>
+<span style="color: #eb4924;">
+<strong>
+     Question 7:
+    </strong>
+</span>
+<br/>
+   What do you understand by Function overloading or functional polymorphism? Explain with suitable example.
+   <br/>
+<strong style="color: green; font-weight: bold; text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);">
+<span style="color: #008000;">
+     Answer:
+    </span>
+</strong>
+<br/>
+   Function overloading is a method of using the same function or method to work using different sets of input. It is one of the example of polymorphism, where more than one function carrying similar name behaves differently with different set of parameters passed to them,
+  </p>
+<pre style="padding-left: 30px;">void show ()
+
+ {
+
+ cout&lt;&lt;"\n Hello World!";
+
+ }
+
+ void show(char na [ ])
+
+ {
+
+ cout&lt;&lt;"\n Hello Word! Its"&lt;&lt;na;
+
+ {</pre>
+<p>
+<em>
+<strong>
+     (1 Mark for correct explanation of Function overloading)
+    </strong>
+</em>
+<br/>
+<em>
+<strong>
+     (1 Mark for suitable example of Function overloading)
+    </strong>
+</em>
+</p>
+<p>
+<a class="button-red" href="http://www.learncbse.in/ncert-solutions-2/" title="NCERT Solutions Home Page">
+    NCERT Solutions
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/ncert-solutions-class-12-computer-science-c/" title="NCERT Solutions for Class 12 Computer Science (C++)">
+    Computer science
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/ncert-solutions-for-class-12-english/" title="NCERT Solutions for Class 12 English">
+    English
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/ncert-solutions-class-12-hindi-core/" title="NCERT Solutions for Class 12 Hindi">
+    Hindi
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/cbse-class-12-humanities/" title="NCERT Solutions for Class 12 Humanities">
+    Humanities
+   </a>
+<a class="button-blue" href="http://www.learncbse.in/cbse-class-12-commerce/" title="NCERT Solutions for Class 12 Commerce">
+    Commerce
+   </a>
+<a class="button-red" href="http://www.learncbse.in/cbse-class-12-science/" title="CBSE Class 12 Science">
+    Science
+   </a>
+</p>
+<p>
+<a href="https://bhaktived.com/balakanda-sarga-1-in-telugu/">
+    Balakanda Sarga 1 In Telugu
+   </a>
+</p>
+ CONTENT END 2 
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"&gt;
+		&lt;rdf:Description rdf:about="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-object-oriented-programming-c/"
+    dc:identifier="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-object-oriented-programming-c/"
+    dc:title="NCERT Solutions for Class 12 Computer Science (C++) &amp;#8211; Object Oriented Programming in C++"
+    trackback:ping="https://www.cbsetuts.com/ncert-solutions-class-12-computer-science-c-object-oriented-programming-c/trackback/" /&gt;
+&lt;/rdf:RDF&gt;
+</div>
+<div class="social-sidebar" id="social-sidebar">
+<button id="minimize-button" onclick="toggleSidebar()">−</button>
+<a href="https://t.me/learncbse_online" target="_blank" title="Telegram">
+<img alt="Telegram" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png"/>
+</a>
+<a href="https://x.com/learncbse_9" target="_blank" title="Twitter">
+<img alt="Twitter" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/733/733579.png"/>
+</a>
+<a href="https://www.reddit.com/r/learncbse_online/?rdt=59433" target="_blank" title="Reddit">
+<img alt="Reddit" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111589.png"/>
+</a>
+<a href="https://discord.gg/aM6xbTDz" target="_blank" title="Discord">
+<img alt="Discord" class="social-icon" loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png"/>
+</a>
+</div>
+<script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('social-sidebar');
+        sidebar.classList.toggle('minimized');
+    }
+</script>
+</body>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-C5VTZJSJCR">
+</script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C5VTZJSJCR');
+</script>
