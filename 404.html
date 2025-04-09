@@ -5,98 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Redirecting...</title>
   <style>
-    :root {
-      --bg: #f0f6ff;
-      --primary: #007bff;
-      --text: #0b0c1a;
-      --accent: #0056b3;
-      --glow: 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 30px var(--primary);
-    }
-
     body {
-      background-color: var(--bg);
-      color: var(--text);
-      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      height: 100vh;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      margin: 0;
+      flex-direction: column;
+      font-family: system-ui, sans-serif;
+      background: #f0f6ff;
+      color: #007bff;
       text-align: center;
-      overflow: hidden;
     }
-
     h1 {
-      font-size: 3.2rem;
-      color: var(--primary);
-      margin-bottom: 0.3em;
-      animation: pulse 1.5s infinite;
-      text-shadow: var(--glow);
+      font-size: 2rem;
+      margin: 0.5rem 0;
     }
-
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 1.2em;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: underline;
-    }
-
-    .glow-loader {
-      width: 60px;
-      height: 60px;
+    .loader {
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
-      background: var(--primary);
-      box-shadow: var(--glow);
-      animation: pulseGlow 1.2s infinite ease-in-out;
-      margin: 1.8rem auto;
+      background: #007bff;
+      margin: 1rem 0;
+      animation: pulse 1.2s infinite ease-in-out;
     }
-
     @keyframes pulse {
-      0% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.05); opacity: 0.85; }
-      100% { transform: scale(1); opacity: 1; }
-    }
-
-    @keyframes pulseGlow {
       0% {
-        box-shadow: 0 0 10px var(--primary);
+        transform: scale(1);
+        opacity: 1;
       }
       50% {
-        box-shadow: 0 0 25px var(--primary), 0 0 50px var(--primary);
+        transform: scale(1.15);
+        opacity: 0.7;
       }
       100% {
-        box-shadow: 0 0 10px var(--primary);
+        transform: scale(1);
+        opacity: 1;
       }
     }
-
+    p {
+      font-size: 1rem;
+    }
+    a {
+      color: #0056b3;
+    }
     footer {
       position: absolute;
       bottom: 10px;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
+      color: #0056b3;
       opacity: 0.6;
-      letter-spacing: 1px;
-      color: var(--accent);
     }
   </style>
 </head>
 <body>
-  <h1>Redirecting you to the page...</h1>
-  <p>Wait a second.</p>
-  <div class="glow-loader"></div>
-  <p>If nothing happens, <a id="fallback-link" href="#">click here</a>.</p>
+  <h1>Redirecting...</h1>
+  <div class="loader"></div>
+  <p>If nothing happens, <a id="fallback-link" href="https://learncbse.online/">click here</a>.</p>
   <footer>ZenX Auto-Redirect</footer>
 
   <script>
-    const path = window.location.pathname.replace(/\/$/, "");
-    const newUrl = path + ".html";
-    document.getElementById('fallback-link').href = newUrl;
-    setTimeout(() => {
-      window.location.replace(newUrl);
-    }, 500); // fastest safe redirect time
+    const path = location.pathname.replace(/\/$/, "") + ".html";
+    document.getElementById('fallback-link').href = path;
+    requestAnimationFrame(() => location.replace(path));
   </script>
 </body>
 </html>
