@@ -83,11 +83,6 @@ p {
 }
 
 </style><style> #menu-top a { padding: 12px 8px; /* Slightly increased padding for better touch targets */ margin: 10px 0 2px 0; /* Adjusted spacing for a more balanced design */ display: inline-block; text-align: center; font-family: 'Arial', sans-serif; /* Modern sans-serif font for a clean, fresh look */ font-size: 1.25rem; /* Slightly smaller font size for a more compact design */ font-weight: 600; /* Bold font weight for emphasis */ line-height: 1.5; /* Increased line height for readability */ letter-spacing: 0.02em; /* Slight letter spacing for clarity */ border-radius: 6px; /* Rounded corners for a contemporary appearance */ text-decoration: none; /* No underlines for a clean design */ color: #007BFF; /* Bold, vibrant blue for text */ transition: all 0.3s ease; /* Smooth transition for all interactive states */ } #menu-top a:hover { background-color: transparent; /* No background on hover */ color: #0056b3; /* Slightly darker blue text on hover */ cursor: pointer; box-shadow: 0 6px 15px rgba(0, 91, 179, 0.3); /* Enhanced shadow effect */ transform: scale(1.05); /* Subtle scale effect on hover */ } .responsive-banner { max-width: 100%; height: auto; display: block; margin: 0 auto; } /* Desktop View */ @media (min-width: 1024px) { .responsive-banner { max-width: 28%; /* Adjusted for smaller desktop view */ height: auto; /* Maintain aspect ratio */ } } /* Mobile View */ @media (max-width: 1023px) { .responsive-banner { max-width: 90%; height: auto; /* Maintain aspect ratio */ } } </style><style> /* Updated CSS Rules Here */ /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; /* Modern, clean sans-serif font */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; /* border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); padding: 10px 20px; */ flex-wrap: wrap; /* Ensure the menu items wrap on smaller screens */ text-align: center; /* border-radius: 8px; Rounded corners for a sleek design */ text-decoration: none; /* Remove underline for a clean look */ color: #0056b3; /* Deep blue color for professional tone */ transition: all 0.4s ease; /* Smoother transition effects */ } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; /* Prevent text from wrapping */ } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.7); */ transform: none; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; /* Darker text color for contrast */ border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover (Font Enlargement) */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* For Multi-Level Submenus */ .sub-menu-duplicate .sub-menu-duplicate { left: 100%; top: 0; transform: translateY(-10px); background-color: #f1f1f1; border-left: 4px solid #646667; } /* Active State for Menu Items */ .menu-link-duplicate:active, .menu-link-duplicate:focus { background-color: #0056b3; color: #fff; outline: none; } /* Mobile-Specific Styles */ @media (max-width: 768px) { /* Display only the main menu on mobile devices */ .menu-duplicate { display: flex !important; /* Ensure the main menu is visible */ flex-direction: row; /* Change to horizontal layout */ justify-content: center; /* Center-align menu items horizontally */ background-color: #fff; /* Maintain background color */ } .menu-item-duplicate { margin: 0 10px; /* Add spacing between main menu items horizontally */ } .menu-link-duplicate { font-size: 16px; /* Adjust font size for readability on mobile */ padding: 10px 15px; /* Increase touch area */ } /* Hide all submenus */ .sub-menu-duplicate { display: none !important; /* Completely hide submenus */ visibility: hidden !important; opacity: 0 !important; transform: none !important; } } </style><style> .social-sidebar { position: fixed; top: 50%; left: 0; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; background-color: #f9f9f9; padding: 10px; border-radius: 0 5px 5px 0; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); z-index: 1000; transition: all 0.3s ease; } .social-sidebar.minimized { left: -50px; } #minimize-button { background-color: #007BFF; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-size: 16px; margin-bottom: 10px; transition: background-color 0.3s ease; } #minimize-button:hover { background-color: #0056b3; } .social-sidebar a { text-decoration: none; display: block; } .social-sidebar .social-icon { width: 30px; height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; } .social-sidebar .social-icon:hover { transform: scale(1.2); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } /* Responsive Design */ @media (max-width: 768px) { .social-sidebar { top: auto; bottom: 10px; left: 10px; flex-direction: row; gap: 15px; border-radius: 5px; padding: 8px; } .social-sidebar.minimized { left: -100%; } .social-sidebar .social-icon { width: 24px; height: 24px; } } </style>
-
-
-
-
-
 </head>
 <body class="post-template-default single single-post postid-66727 single-format-standard content-sidebar genesis-breadcrumbs-hidden genesis-footer-widgets-visible magazine-pro-blue primary-nav">
 <ul class="menu-duplicate" id="menu-top-duplicate">
@@ -846,7 +841,7 @@ p {
 <h2 id="h2-2">
           CBSE Class 7 Hindi निबंध-लेखन
          </h2>
-<p>                                                        </p>
+<p> </p>
 <ul>
 <li>
            निबंध निर्धारित शब्द-सीमा के अंतर्गत ही लिखा जाता है।
@@ -923,13 +918,13 @@ p {
           <br/>
           पल में परलै होयगी, बहुरि करोगे कब।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <div class="code-block code-block-4" style="margin: 8px 0; clear: both;">
 </div>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
 <strong>
            2. गणतंत्र दिवस
@@ -937,11 +932,11 @@ p {
 <br/>
           भारत की पवित्र भूमि पर अनेक पर्व तथा उत्सव मनाए जाते हैं। इन पर्वो का अपना विशेष महत्त्व होता है। धार्मिक और सांस्कृतिक पर्वो के अतिरिक्त कुछ ऐसे पर्व हैं जिनका संबंध सारे राष्ट्र के जन-जीवन से होता है। इन्हें ‘राष्ट्रीय पर्व’ कहते हैं। 26 जनवरी इन्हीं में से एक है। यह भी एक प्रसिद्ध राष्ट्रीय त्योहार है। इसे गणतंत्र दिवस के रूप में मनाया जाता है। गणतंत्र का अर्थ है- जनता का राज्य। यह दिन हमारे लिए बड़ा शुभ है। इस दिन हमारा देश गणतंत्र बना था। भारत को स्वतंत्रता तो 15 अगस्त 1947 को ही मिल गई थी, परंतु जब सारे नियम बनाकर संविधान की पुस्तक तैयार कर दी गई तब 26 जनवरी 1950 के दिन भारत को पूरी तरह से स्वतंत्र गणतंत्र बना दिया गया। सारे संसार में इसकी घोषणा हो गई। भारत 26 जनवरी 1950 में पूरी तरह से स्वतंत्र है और यहाँ जनता का अपना राज्य है। कोई भी मनुष्य भारत का राष्ट्रपति बन सकता है। सबसे पहले राष्ट्रपति डॉ० राजेंद्र प्रसाद थे। वे बिहार के एक गाँव के किसान के लड़के थे, परंतु अपनी योग्यता के कारण राष्ट्रपति बने थे।
          </p>
-<p>                                                        </p>
+<p> </p>
 <div class="code-block code-block-5" style="margin: 8px 0; clear: both;">
 </div>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
 <strong>
            3. होली
@@ -949,10 +944,10 @@ p {
 <br/>
           रंगों का त्योहार होली वसंत ऋतु के आगमन का संदेशवाहक है। इसे वसंत का यौवन कहा जाता है। हमारे पूर्वजों ने होली के उत्सव को आपसी प्रेम का प्रतीक माना है। इसमें छोटे-बड़े सभी मिलकर पुराने भेद-भाव को भुला देते हैं। होली हँसी-खुशी का त्योहार है। यह एकता, भाई-चारे, मिलन और खुशी का प्रतीक है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
 <strong>
            4. हमारा देश-भारत वर्ष
@@ -960,9 +955,9 @@ p {
 <br/>
           भारत एक अत्यंत प्राचीन देश है जो कभी ‘सोने की चिड़िया’ कहलाता था। यह देश ऋषि-मुनियों साधु-संतों, महापुरुषों आदि का देश है। स्वयं भगवान ने भी इसी देश में अवतार लिया। यह देश देवताओं का भी दुलारा है। राजा दुष्यंत के पुत्र के नाम पर इसका नाम ‘भारत’ पड़ा। यह एक विशाल देश है। जनसंख्या के आधार पर यह संसार में दूसरे नंबर पर है। यह हमारी प्रिय मातृ भूमि है। भारत की प्राकृतिक बनावट एवं इसकी संपदा अद्भुत है। भारत के उत्तर में हिमालय है और शेष तीन ओर समुद्र हैं। यहाँ पर अनेक पर्वत, नदियाँ, मैदान और मरुस्थल हैं।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
 <strong>
            5. विद्यार्थी जीवन
@@ -972,13 +967,13 @@ p {
           <br/>
           की सबसे अधिक मधुर तथा सुनहरी अवस्था है। विद्यार्थी जीवन सारे जीवन की नींव है। अतः मानव जीवन की सफलताअसफलता विद्यार्थी जीवन पर ही आश्रित है। इसी काल में भावी जीवन की भव्य इमारत की आधारशिला का निर्माण होता है। यह आधारशिला जितनी मजबूत होगी, भावी जीवन भी उतना ही सुदृढ़ होगा। इस काल में विद्याध्ययन तथा ज्ञान प्राप्ति पर ध्यान न देने वाले विद्यार्थी जीवन के किसी भी क्षेत्र में सफल नहीं हो पाते।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           विद्यार्थी को संयमी होना पड़ता है। व्यसनों में फँसने वाले विद्यार्थी कभी उन्नति नहीं कर सकते। शिक्षकों तथा माता-पिता के प्रति आदर और श्रद्धा भाव रखना विद्यार्थी के लिए नितांत आवश्यक है। अनुशासन प्रियता, नियमितता, समय पर काम करना, उदारता, दूसरों की सहायता, पुरुषार्थ, सत्यवादिता, देश-भक्ति आदि विद्यार्थी जीवन के आवश्यक गुण हैं। इन गुणों के विकास
           <br/>
           के लिए प्रयत्नशील रहना चाहिए। इसके लिए उन्हें कुसंगति से बचना चाहिए तथा आलस्य का परित्याग करके विद्यार्थी जीवन के लक्ष्य की प्राप्ति के लिए प्रयत्नशील होना चाहिए। आज के विद्यार्थी वर्ग की दुर्दशा के लिए वर्तमान शिक्षा पद्धति भी जिम्मेदार है। अतः उसमें परिवर्तन आवश्यक है।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
 <strong>
            6. विज्ञान-वरदान या अभिशाप
@@ -986,10 +981,10 @@ p {
 <br/>
           आधुनिक युग विज्ञान का युग कहलाता है। विज्ञान ने अनेक चमत्कारिक आविष्कार किए हैं। इसने मनुष्य के व्यक्तिगत, सामाजिक तथा आर्थिक जीवन में आश्चर्यजनक परिवर्तन ला दिए हैं। आज मनुष्य चंद्रमा और अन्य ग्रहों-उपग्रहों तक पहुँचकर अपनी कीर्ति-पताका फहरा रहा है। यह सब विज्ञान की ही देन है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
 <strong>
            7. मित्रता
@@ -997,8 +992,8 @@ p {
 <br/>
           मनुष्य सामाजिक प्राणी है। मनुष्य को जीवन में अनेक वस्तुओं की आवश्यकता होती है। वह अपनी आवश्यकताओं को स्वयं पूरा नहीं कर सकता है। अतः उसे दूसरे लोगों की सहायता की जरूरत पड़ती है। यही आवश्यकता मित्रता को जन्म देती है। मित्रता अनमोल धन है। इसकी तुलना हीरे-मोती या सोने-चाँदी से नहीं की जा सकती। एक सच्चा और प्रिय मित्र वही है जो सुख-दुख में साथ दे। सच्चे मित्रों के बीच किसी भी सामाजिक, आर्थिक और सांस्कृतिक परिस्थिति के कारण व्यवधान नहीं हो सकता। मित्रता मनुष्य के हृदय को जोड़ती है, प्राणों के तार मिलाती है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
 <strong>
            8. दशहरा (विजयादशमी)
@@ -1006,8 +1001,8 @@ p {
 <br/>
           ‘दशहरा’ शब्द का शाब्दिक अर्थ है ‘दस सिरों का हारना’ क्योंकि श्रीराम ने रावण को जिसके दस सिर थे, हरा दिया था, इसलिए इसका नाम ‘दशहरा’ पड़ गया। इसके अतिरिक्त इस पर्व को ‘विजयदशमी’ भी कहा जाता है। यह त्योहार आश्विन मास के शुक्ल पक्ष की दशमी को मनाया जाता है। दशहरा धर्म की अधर्म पर तथा न्याय की अन्याय पर विजय का प्रतीक है। इस समय वर्षा की ऋतु के बाद शरद् ऋतु की शुरुआत होती है। इस दिन श्रीराम ने लंका के अत्याचारी राजा रावण का वध करके विजय प्राप्त की थी। रावण पर विजय प्राप्त करने की स्मृति में यह त्योहार मनाया जाता है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
 <strong>
            9. ‘प्रदूषण’
@@ -1015,13 +1010,13 @@ p {
 <br/>
           ‘प्रदूषण’ शब्द में दो शब्द मिले हैं-प्र + दूषण अर्थात दूषयुक्त। प्रदूषण का साधारण अर्थ है पर्यावरण के संतुलन का दोषपूर्ण हो जाना। प्रदूषण के कारण ही जल, थल और वायु दूषित हो गई है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>True</p>
-<p>                                                        </p>
+<p> </p>
 <p>
 <strong>
            10. वसंत ऋतु
@@ -1029,9 +1024,9 @@ p {
 <br/>
           शीतल मंद सुगंध पवन हर लेता श्रम है। पेड़ ऋतुओं का विविध दृश्ययुक्त अद्भुत क्रम है। धन्य है भारतीय जो स्वर्ग से भी सुंदर धरा पर निवास करते हैं। भारत में छह ऋतुएँ पाई जाती हैं- वर्षा, शरद, शिशिर, हेमंत, वसंत और ग्रीष्म। सभी ऋतुओं की अपनी-अपनी विशेषताएँ हैं। अपनी-अपनी सुंदरता है। इन सभी ऋतुओं में वसंत ऋतु सबसे सुंदर मानी जाती है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>CBSE Class 7 Hindi -</p>
 <div class="code-block code-block-7" style="margin: 8px 0; clear: both;">
 </div>
@@ -2318,6 +2313,127 @@ p {
         sidebar.classList.toggle('minimized');
     }
 </script>
+
+<!-- NCERT Guru Popup -->
+<style>
+#ncertGuruPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 2px solid #4a90e2;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  padding: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
+  z-index: 9999;
+}
+
+#ncertGuruPopup img {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+#ncertGuruPopup h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+  font-weight: 600;
+}
+
+#ncertGuruPopup p {
+  margin: 6px 0 12px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#ncertGuruPopup button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#ncertGuruPopup button:hover {
+  background-color: #3a78c2;
+}
+
+#ncertGuruPopup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #bbb;
+  font-weight: bold;
+}
+
+#ncertGuruPopup .close-btn:hover {
+  color: #000;
+}
+
+@media (max-width: 480px) {
+  #ncertGuruPopup {
+    padding: 20px 18px;
+  }
+
+  #ncertGuruPopup h3 {
+    font-size: 16px;
+  }
+
+  #ncertGuruPopup p {
+    font-size: 13px;
+  }
+
+  #ncertGuruPopup button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+</style>
+<div id="ncertGuruPopup">
+<button class="close-btn" onclick="document.getElementById('ncertGuruPopup').style.display='none';">×</button>
+<div style="display: flex; align-items: center; gap: 12px;">
+<img alt="App Icon" src="ncertguru-icon.png"/>
+<div>
+<h3>NCERT Guru: AI Question Solver</h3>
+<p>Instantly solve CBSE questions with AI. Try now for free!</p>
+</div>
+</div>
+<div style="margin-top: 16px; text-align: center;">
+<a href="https://play.google.com/store/apps/details?id=com.technosub.ncertgurusmartaiquestionsolver" target="_blank">
+<button>Try Now</button>
+</a>
+</div>
+</div>
+<script>
+(function() {
+  const popupKey = "ncertGuruPopupLastShown";
+  const today = new Date().toISOString().split('T')[0];
+  const lastShown = localStorage.getItem(popupKey);
+
+  if (lastShown !== today) {
+    window.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("ncertGuruPopup").style.display = "block";
+      localStorage.setItem(popupKey, today);
+    });
+  }
+})();
+</script>
+<!-- /NCERT Guru Popup -->
 </body>
 </html>
 <!-- Cache served by breeze CACHE - Last modified: Wed, 13 Nov 2024 07:58:21 GMT -->

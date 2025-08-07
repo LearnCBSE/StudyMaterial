@@ -83,11 +83,6 @@ p {
 }
 
 </style><style> #menu-top a { padding: 12px 8px; /* Slightly increased padding for better touch targets */ margin: 10px 0 2px 0; /* Adjusted spacing for a more balanced design */ display: inline-block; text-align: center; font-family: 'Arial', sans-serif; /* Modern sans-serif font for a clean, fresh look */ font-size: 1.25rem; /* Slightly smaller font size for a more compact design */ font-weight: 600; /* Bold font weight for emphasis */ line-height: 1.5; /* Increased line height for readability */ letter-spacing: 0.02em; /* Slight letter spacing for clarity */ border-radius: 6px; /* Rounded corners for a contemporary appearance */ text-decoration: none; /* No underlines for a clean design */ color: #007BFF; /* Bold, vibrant blue for text */ transition: all 0.3s ease; /* Smooth transition for all interactive states */ } #menu-top a:hover { background-color: transparent; /* No background on hover */ color: #0056b3; /* Slightly darker blue text on hover */ cursor: pointer; box-shadow: 0 6px 15px rgba(0, 91, 179, 0.3); /* Enhanced shadow effect */ transform: scale(1.05); /* Subtle scale effect on hover */ } .responsive-banner { max-width: 100%; height: auto; display: block; margin: 0 auto; } /* Desktop View */ @media (min-width: 1024px) { .responsive-banner { max-width: 28%; /* Adjusted for smaller desktop view */ height: auto; /* Maintain aspect ratio */ } } /* Mobile View */ @media (max-width: 1023px) { .responsive-banner { max-width: 90%; height: auto; /* Maintain aspect ratio */ } } </style><style> /* Updated CSS Rules Here */ /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; /* Modern, clean sans-serif font */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; /* border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); padding: 10px 20px; */ flex-wrap: wrap; /* Ensure the menu items wrap on smaller screens */ text-align: center; /* border-radius: 8px; Rounded corners for a sleek design */ text-decoration: none; /* Remove underline for a clean look */ color: #0056b3; /* Deep blue color for professional tone */ transition: all 0.4s ease; /* Smoother transition effects */ } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; /* Prevent text from wrapping */ } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.7); */ transform: none; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; /* Darker text color for contrast */ border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover (Font Enlargement) */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* For Multi-Level Submenus */ .sub-menu-duplicate .sub-menu-duplicate { left: 100%; top: 0; transform: translateY(-10px); background-color: #f1f1f1; border-left: 4px solid #646667; } /* Active State for Menu Items */ .menu-link-duplicate:active, .menu-link-duplicate:focus { background-color: #0056b3; color: #fff; outline: none; } /* Mobile-Specific Styles */ @media (max-width: 768px) { /* Display only the main menu on mobile devices */ .menu-duplicate { display: flex !important; /* Ensure the main menu is visible */ flex-direction: row; /* Change to horizontal layout */ justify-content: center; /* Center-align menu items horizontally */ background-color: #fff; /* Maintain background color */ } .menu-item-duplicate { margin: 0 10px; /* Add spacing between main menu items horizontally */ } .menu-link-duplicate { font-size: 16px; /* Adjust font size for readability on mobile */ padding: 10px 15px; /* Increase touch area */ } /* Hide all submenus */ .sub-menu-duplicate { display: none !important; /* Completely hide submenus */ visibility: hidden !important; opacity: 0 !important; transform: none !important; } } </style><style> .social-sidebar { position: fixed; top: 50%; left: 0; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; background-color: #f9f9f9; padding: 10px; border-radius: 0 5px 5px 0; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); z-index: 1000; transition: all 0.3s ease; } .social-sidebar.minimized { left: -50px; } #minimize-button { background-color: #007BFF; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-size: 16px; margin-bottom: 10px; transition: background-color 0.3s ease; } #minimize-button:hover { background-color: #0056b3; } .social-sidebar a { text-decoration: none; display: block; } .social-sidebar .social-icon { width: 30px; height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; } .social-sidebar .social-icon:hover { transform: scale(1.2); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } /* Responsive Design */ @media (max-width: 768px) { .social-sidebar { top: auto; bottom: 10px; left: 10px; flex-direction: row; gap: 15px; border-radius: 5px; padding: 8px; } .social-sidebar.minimized { left: -100%; } .social-sidebar .social-icon { width: 24px; height: 24px; } } </style>
-
-
-
-
-
 </head>
 <body class="post-template-default single single-post postid-66896 single-format-standard content-sidebar genesis-breadcrumbs-hidden genesis-footer-widgets-visible magazine-pro-blue primary-nav">
 <ul class="menu-duplicate" id="menu-top-duplicate">
@@ -849,7 +844,7 @@ p {
 <h2 id="h2-2">
           CBSE Class 8 Hindi पत्र लेखन
          </h2>
-<p>                                                        </p>
+<p> </p>
 <ol>
 <li>
            औपचारिक पत्र
@@ -1080,7 +1075,7 @@ p {
           <br/>
           सविनय निवेदन यह है कि हमारे क्षेत्र अंकुर विहार गाजियाबाद में गत पाँच-छह महीने से डाक वितरण अनियमितता से स्थानीय निवासी परेशान हैं।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           आशा है आप उक्त अनियमितताओं को दूर करने के लिए उचित कार्यवाही करेंगे।
           <br/>
@@ -1105,7 +1100,7 @@ p {
           <br/>
           सविनय निवेदन है कि मैं विद्यालय की आठवीं-सी का छात्र हूँ।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           अतः आपसे अनुरोध है कि मुझे इस प्रतियोगिता में भाग लेने की अनुमति देकर कृतार्थ करें।
           <br/>
@@ -1117,7 +1112,7 @@ p {
           <br/>
           कक्षा आठवीं ‘सी’
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           थानाध्यक्ष महोदय
           <br/>
@@ -1129,8 +1124,8 @@ p {
           <br/>
           मान्यवर
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           आपसे अनुरोध है कि आप रात्रि में गश्त बढ़ा दें तथा अपने अधीन कार्यरत पुलिसकर्मियों को अपराधियों से निपटने के लिए कड़े निर्देश दें।
           <br/>
@@ -1169,7 +1164,7 @@ p {
           <br/>
           क ख ग
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           व्यक्त कीजिए।
           <br/>
@@ -1185,7 +1180,7 @@ p {
           <br/>
           मेरे जन्म दिन पर आपके द्वारा भेजा गया बधाई संदेश तथा एक सुंदर हाथ-घड़ी का उपहार मिला। आपके द्वारा भेजा गया यह उपहार मेरे सभी मित्रों एवं सहपाठियों को भी काफ़ी पसंद आया।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           इतने सुंदर उपहार के लिए मैं आपका कृतज्ञ हूँ। आदरणीय मामा जी को सादर प्रणाम, ओजस्व को स्नेह।
           <br/>
@@ -1209,7 +1204,7 @@ p {
           <br/>
           आपके आशीर्वाद से मैं पूर्णतः स्वस्थ हूँ। मैं आशा करता हूँ कि आप भी सपरिवार सकुशल होंगे और ईश्वर से यही कामना करता हूँ। आपको यह जानकर अत्यंत प्रसन्नता होगी कि मेरी वितीय सत्र की परीक्षा का परिणाम आ गया है। मुझे गणित तथा विज्ञान में शत-प्रतिशत अंक मिले हैं तथा शेष विषयों में 93 प्रतिशत अंकों के आधार पर मैं कक्षा में प्रथम आया हूँ।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           मेरी ओर से पूजनीय माता और चाची को सादर प्रणाम तथा दीदी को प्रणाम।
           <br/>
@@ -1252,7 +1247,7 @@ p {
           <br/>
           कल शाम को तुम्हारा मित्र मिला। यह जानकर बड़ा दुख हुआ कि तुम्हारे पूज्य दादा जी को अचानक निधन गत सप्ताह हो गया। यह सुनकर मैं स्तब्ध रह गया। मुझे इस समाचार पर सहसा विश्वास नहीं हुआ। पिछले महीने जब मैं तुम्हारे यहाँ आया था तब वे कितने प्रसन्नचित एवं स्वस्थ लग रहे थे। उन्होंने उपहार के तौर पर एक कलम भी दिया था। वह कलम सदैव उनकी स्मृति बनकर मेरे पास रहेगा।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           मित्र, ईश्वर की लीला बड़ी विचित्र है। उनकी मरजी पर किसी का ज़ोर नहीं। जीवन-मरण उनके साथ ही में है। मैं तुमसे मिलने अवश्य आऊँगा।
           <br/>
@@ -1260,7 +1255,7 @@ p {
           <br/>
           राकेश
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           सेवा में,
           <br/>
@@ -1276,7 +1271,7 @@ p {
           <br/>
           निवेदन यह है कि मैं आपके विद्यालय की दसवीं कक्षा का छात्र हैं। इस विद्यालय में शिक्षण की उत्तम व्यवस्था है, जिसका प्रमाण बोर्ड की कक्षाओं का शत-प्रतिशत परीक्षा परिणाम है, किंतु खेद के साथ कहना पड़ रहा है कि विद्यालय में खेलों के समुचित और आवश्यक सामान के अभाव में हम छात्र अभ्यास करने से वंचित रह जाते हैं, जिसके कारण खेलों की उचित तैयारी नहीं हो पाती है। अभ्यास के अभाव में हमारे विद्यालय की टीमें दूसरे विद्यालयों के साथ हुई प्रतियोगिता में संघर्ष करती रहीं और अंततः पराजय हाथ लगी।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           मैं आपको पुनः आश्वस्त करता हूँ कि यदि हम पर्याप्त अभ्यास कर सकें तो निश्चित ही विजयी रहेंगे।
           <br/>
@@ -1339,7 +1334,7 @@ p {
           <br/>
           निवेदन यह है कि मैं इस विद्यालय में 2010 में IX कक्षा की छात्रा रही हूँ। अब मेरे पिता जी का स्थानांतरण नोएडा से जनकपुरी दिल्ली में हो गया है। मुझे जनकपुरी स्थित विद्यालय में प्रवेश लेना है। प्रवेश हेतु आवेदन पत्र के साथ चरित्र प्रमाण पत्र भी आवश्यक है।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           आपसे प्रार्थना है कि मुझे चरित्र प्रमाण पत्र प्रदान करने की कृपा करें जिसमें शैक्षिक एवं अन्य सहगामी क्रियाओं का उल्लेख किया गया हो।
           <br/>
@@ -1398,7 +1393,7 @@ p {
           <br/>
           विनम्र निवेदन यह है कि मैं भारतीय स्टेट बैंक, सुलतानपुर (उ.प्र.) की शाखा में वरिष्ठ लिपिक पद पर कार्यरत था। मेरी पदोन्नति होने के साथ ही मेरा स्थानांतरण दिल्ली स्थित आनंद विहार शाखा में हो गया। गत सप्ताह से मैंने कार्यभार ग्रहण कर यहीं आनंद विहार के पास रहना शुरू कर दिया है। मेरे पुत्र राजीव ने इसी सत्र अर्थात् 2010 में उ.प्र. बोर्ड से दसवीं परीक्षा 92 प्रतिशत अंकों के साथ उत्तीर्ण की है। मैं अपने पुत्र का XI में प्रवेश इस विद्यालय में कराना चाहता हूँ।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           राजीव का विद्यालय छोड़ने का प्रमाण पत्र, चरित्र प्रमाण पत्र आवेदन पत्र के साथ संलग्न है।
           <br/>
@@ -2748,6 +2743,127 @@ p {
         sidebar.classList.toggle('minimized');
     }
 </script>
+
+<!-- NCERT Guru Popup -->
+<style>
+#ncertGuruPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 2px solid #4a90e2;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  padding: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
+  z-index: 9999;
+}
+
+#ncertGuruPopup img {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+#ncertGuruPopup h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+  font-weight: 600;
+}
+
+#ncertGuruPopup p {
+  margin: 6px 0 12px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#ncertGuruPopup button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#ncertGuruPopup button:hover {
+  background-color: #3a78c2;
+}
+
+#ncertGuruPopup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #bbb;
+  font-weight: bold;
+}
+
+#ncertGuruPopup .close-btn:hover {
+  color: #000;
+}
+
+@media (max-width: 480px) {
+  #ncertGuruPopup {
+    padding: 20px 18px;
+  }
+
+  #ncertGuruPopup h3 {
+    font-size: 16px;
+  }
+
+  #ncertGuruPopup p {
+    font-size: 13px;
+  }
+
+  #ncertGuruPopup button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+</style>
+<div id="ncertGuruPopup">
+<button class="close-btn" onclick="document.getElementById('ncertGuruPopup').style.display='none';">×</button>
+<div style="display: flex; align-items: center; gap: 12px;">
+<img alt="App Icon" src="ncertguru-icon.png"/>
+<div>
+<h3>NCERT Guru: AI Question Solver</h3>
+<p>Instantly solve CBSE questions with AI. Try now for free!</p>
+</div>
+</div>
+<div style="margin-top: 16px; text-align: center;">
+<a href="https://play.google.com/store/apps/details?id=com.technosub.ncertgurusmartaiquestionsolver" target="_blank">
+<button>Try Now</button>
+</a>
+</div>
+</div>
+<script>
+(function() {
+  const popupKey = "ncertGuruPopupLastShown";
+  const today = new Date().toISOString().split('T')[0];
+  const lastShown = localStorage.getItem(popupKey);
+
+  if (lastShown !== today) {
+    window.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("ncertGuruPopup").style.display = "block";
+      localStorage.setItem(popupKey, today);
+    });
+  }
+})();
+</script>
+<!-- /NCERT Guru Popup -->
 </body>
 </html>
 <!-- Cache served by breeze CACHE - Last modified: Tue, 19 Nov 2024 03:16:39 GMT -->

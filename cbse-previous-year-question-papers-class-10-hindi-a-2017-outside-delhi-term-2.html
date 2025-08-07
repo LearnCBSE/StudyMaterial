@@ -82,11 +82,6 @@ p {
 }
 
 </style><style> #menu-top a { padding: 12px 8px; /* Slightly increased padding for better touch targets */ margin: 10px 0 2px 0; /* Adjusted spacing for a more balanced design */ display: inline-block; text-align: center; font-family: 'Arial', sans-serif; /* Modern sans-serif font for a clean, fresh look */ font-size: 1.25rem; /* Slightly smaller font size for a more compact design */ font-weight: 600; /* Bold font weight for emphasis */ line-height: 1.5; /* Increased line height for readability */ letter-spacing: 0.02em; /* Slight letter spacing for clarity */ border-radius: 6px; /* Rounded corners for a contemporary appearance */ text-decoration: none; /* No underlines for a clean design */ color: #007BFF; /* Bold, vibrant blue for text */ transition: all 0.3s ease; /* Smooth transition for all interactive states */ } #menu-top a:hover { background-color: transparent; /* No background on hover */ color: #0056b3; /* Slightly darker blue text on hover */ cursor: pointer; box-shadow: 0 6px 15px rgba(0, 91, 179, 0.3); /* Enhanced shadow effect */ transform: scale(1.05); /* Subtle scale effect on hover */ } .responsive-banner { max-width: 100%; height: auto; display: block; margin: 0 auto; } /* Desktop View */ @media (min-width: 1024px) { .responsive-banner { max-width: 28%; /* Adjusted for smaller desktop view */ height: auto; /* Maintain aspect ratio */ } } /* Mobile View */ @media (max-width: 1023px) { .responsive-banner { max-width: 90%; height: auto; /* Maintain aspect ratio */ } } </style><style> /* Updated CSS Rules Here */ /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; /* Modern, clean sans-serif font */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; /* border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); padding: 10px 20px; */ flex-wrap: wrap; /* Ensure the menu items wrap on smaller screens */ text-align: center; /* border-radius: 8px; Rounded corners for a sleek design */ text-decoration: none; /* Remove underline for a clean look */ color: #0056b3; /* Deep blue color for professional tone */ transition: all 0.4s ease; /* Smoother transition effects */ } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; /* Prevent text from wrapping */ } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.7); */ transform: none; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; /* Darker text color for contrast */ border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover (Font Enlargement) */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* For Multi-Level Submenus */ .sub-menu-duplicate .sub-menu-duplicate { left: 100%; top: 0; transform: translateY(-10px); background-color: #f1f1f1; border-left: 4px solid #646667; } /* Active State for Menu Items */ .menu-link-duplicate:active, .menu-link-duplicate:focus { background-color: #0056b3; color: #fff; outline: none; } /* Mobile-Specific Styles */ @media (max-width: 768px) { /* Display only the main menu on mobile devices */ .menu-duplicate { display: flex !important; /* Ensure the main menu is visible */ flex-direction: row; /* Change to horizontal layout */ justify-content: center; /* Center-align menu items horizontally */ background-color: #fff; /* Maintain background color */ } .menu-item-duplicate { margin: 0 10px; /* Add spacing between main menu items horizontally */ } .menu-link-duplicate { font-size: 16px; /* Adjust font size for readability on mobile */ padding: 10px 15px; /* Increase touch area */ } /* Hide all submenus */ .sub-menu-duplicate { display: none !important; /* Completely hide submenus */ visibility: hidden !important; opacity: 0 !important; transform: none !important; } } </style><style> .social-sidebar { position: fixed; top: 50%; left: 0; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; background-color: #f9f9f9; padding: 10px; border-radius: 0 5px 5px 0; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); z-index: 1000; transition: all 0.3s ease; } .social-sidebar.minimized { left: -50px; } #minimize-button { background-color: #007BFF; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-size: 16px; margin-bottom: 10px; transition: background-color 0.3s ease; } #minimize-button:hover { background-color: #0056b3; } .social-sidebar a { text-decoration: none; display: block; } .social-sidebar .social-icon { width: 30px; height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; } .social-sidebar .social-icon:hover { transform: scale(1.2); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } /* Responsive Design */ @media (max-width: 768px) { .social-sidebar { top: auto; bottom: 10px; left: 10px; flex-direction: row; gap: 15px; border-radius: 5px; padding: 8px; } .social-sidebar.minimized { left: -100%; } .social-sidebar .social-icon { width: 24px; height: 24px; } } </style>
-
-
-
-
-
 </head>
 <body class="post-template-default single single-post postid-83145 single-format-standard content-sidebar genesis-breadcrumbs-hidden genesis-footer-widgets-visible magazine-pro-blue primary-nav">
 <ul class="menu-duplicate" id="menu-top-duplicate">
@@ -851,7 +846,7 @@ p {
           <br/>
           लोकतन्त्र के मूलभूत तत्व को समझा नहीं गया है और इसलिए लोग समझते हैं कि सब कुछ सरकार कर देगी, हमारी कोई जिम्मेदारी नहीं है। लोगों में अपनी पहल से जिम्मेदारी उठाने और निभाने का संस्कार विकसित नहीं हो पाया है। फलस्वरूप देश की विशाल मानव-शक्ति अभी खर्राटे लेती पड़ी है और देश की पूँजी उपयोगी बनाने के बदले आज बोझरूप बन बैठी है। लेकिन उसे नींद से झकझोर कर जागृत करना है। किसी भी देश को महान बनाते हैं उसमें रहने वाले लोग। लेकिन अभी हमारे देश के नागरिक अपनी जिम्मेदारी से बचते रहे हैं। चाहे सड़क पर चलने की बात हो अथवा साफ-सफाई की बाते हो, जहाँ-तहाँ हम लोगों को गन्दगी फैलाते और बेतरतीब ढंग से वाहन चलाते देख सकते हैं। फिर चाहते हैं कि सब कुछ सरकार ठीक कर दे।
          </p>
-<p>                                                        </p>
+<p> </p>
 <div class="code-block code-block-2" style="margin: 8px 0; clear: both;">
 </div>
 <p>
@@ -934,8 +929,8 @@ p {
          </p>
 <div class="code-block code-block-4" style="margin: 8px 0; clear: both;">
 </div>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>True</p>
 <p>
           राखंगिढ़ी का पुरातात्विक महत्व विशिष्ट है। इस समय यह क्षेत्र पूरे विश्व के पुरातत्व विशेषज्ञों की दिलचस्पी और जिज्ञासा का केन्द्र बना हुआ है। यहाँ बहुत से काम बकाया हैं; जो अवशेष मिले हैं, उनका समुचित अध्ययन अभी शेष है। उत्खनन का काम अब भी अधूरा है।
@@ -1387,9 +1382,9 @@ p {
           <br/>
           (क) मन्नू भण्डारी ने अपनी माँ के बारे में बताया कि वह सुबह से शाम तक बच्चों की इच्छा और पिताजी की आज्ञाओं का पालन करती रहती थी। वह धैर्य और धरती से अधिक सहनशीलता की प्रतिमा थी। वह बेपड़ी-लिखी होने के बाद भी सबकी उचित अनुचित फरमाइशों को पूरा करने में लगी रहती थी। वह एक तरफ परम्परागत पत्नी थी तो दूसरी तरफ ममत्व एवं स्नेह से लबालब भरी माँ थी।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 11.
           <br/>
@@ -1440,9 +1435,9 @@ p {
           <br/>
           (क) अधिकांशतः स्त्रियाँ अपनी सुन्दरता के मोह में फँस जाती हैं जिसके कारण उनको प्रशंसा के बन्धन में बँधकर, कमजोर बनकर रहना पड़ता है जिसके कारण समाज के शोषण का शिकार बनती हैं। इसे ही अपना सर्वस्व मान घर की चारदीवारी में ही सीमित रह जाती हैं। परम्पराओं के निर्वाह तक सीमित रहना ही जीवन की सार्थकता समझ ली जाती है और वे अपने वास्तविक एवं आंतरिक गुणों से अनभिज्ञ रहती है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           (ङ) काव्यांश के आधार पर परशुराम के स्वभाव की विशेषताएँ
           <br/>
@@ -1502,7 +1497,7 @@ p {
            कारण और निवारण
           </li>
 </ul>
-<p>                                                        </p>
+<p> </p>
 <ul>
 <li>
            अभ्यास और परिश्रम
@@ -1521,18 +1516,18 @@ p {
           <br/>
           विज्ञापन शब्द ‘वि’ और ‘ज्ञापन के योग से मिलकर बना है, जिसका अर्थ है विशेष रूप से कुछ बताना अर्थात् किसी वस्तु के गुणों का अतिशयोक्तिपूर्ण वर्णन का दूसरा नाम विज्ञापन है। विज्ञापन समाज एवं व्यापार जगत् में होने वाले परिवर्तन को प्रदर्शित करने वाला उद्योग है, जो बदलते समय के साँचे में तेजी से ढल जाता है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           (ख) भ्रष्टाचार मुक्त समाज
           <br/>
           भ्रष्टाचार दो शब्दों ‘भ्रष्ट और आचार के मेल से बना है। ‘भ्रष्ट’ शब्द के कई अर्थ होते हैं ‘मार्ग से विचलित, ‘ध्वस्त एवं बुरे आचरण वाला तथा ‘आचरण का अर्थ है ‘चरित्र’, ‘व्यवहार या ‘चाल-चलन।। इस प्रकार भ्रष्टाचार का अर्थ हुआ-अनुचित व्यवहार एवं चाल-चलन|
          </p>
 <p>True</p>
-<p>                                                        </p>
+<p> </p>
 <p>
           कवि रघुवीर सहाय ने देश के भ्रष्ट नेताओं पर व्यंग्य करते हुए लिखा है
           <br/>
@@ -1554,8 +1549,8 @@ p {
           <br/>
           आज हमारे देश में धर्म, शिक्षा, राजनीति, प्रशासन इत्यादि सभी क्षेत्रों में भ्रष्टाचार ने अपने पाँव फैला दिए हैं। व्यापारी वर्ग सोचता है कि जाने कब घाटे की स्थिति आ जाए, इसलिए जैसे भी हो उचित-अनुचित तरीके से अधिक-से-अधिक धन कमा लिया जाए।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           सबसे पहले इसके कारणों, जैसे—गरीबी, बेरोजगारी, पिछड़ापन आदि को दूर किया जाना चाहिए।
           <br/>
@@ -1565,17 +1560,17 @@ p {
           <br/>
           देश को भ्रष्टाचार मुक्त बनाने के लिए अन्ना हजारे द्वारा किए गए प्रयासों का काफी अच्छा परिणाम सामने आया है। उन्होंने राष्ट्रव्यापी आन्दोलन चलाकर भारतीय युवाओं में देश की छवि को स्वस्थ बनाने का नया जोश भर दिया है। यदि देश का युवा वर्ग अपना कर्तव्य समझकर भ्रष्टाचार का विरोध करने लगे, तो वह दिन दूर नहीं जब भारत से भ्रष्टाचार रूपी दानव का अन्त हो जाएगा।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           (ग) पी.वी. सिन्धु : मेरी प्रिय खिलाड़ी
           <br/>
           पुसल वेंकट सिन्धु का जन्म 5 जुलाई, 1995 को हुआ, उनके पिता का नाम पी.वी. रमण है और उनकी माता पी. विजया है उनके माता और पिता दोनों ही हमारे देश के पूर्व वॉलीबाल खिलाड़ी रह चुके हैं उनकी एक बहन भी है, जिसका नाम पी.वी. दिव्या है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>2015                                                        </p>
 <p>True</p>
-<p>                                                        </p>
+<p> </p>
 <p>
           प्रश्न 15.
           <br/>
@@ -1791,7 +1786,7 @@ p {
            बचाव के उपाय
           </li>
 </ul>
-<p>                                                        </p>
+<p> </p>
 <ul>
 <li>
            ओलम्पिक खेल
@@ -1811,30 +1806,30 @@ p {
           “उत्तम स्वास्थ्य का आनन्द पाने के लिए, परिवार में खुशी लाने के लिए और सबको शान्ति प्रदान करने के लिए सबसे पहले अनुशासित बनने और अपने मस्तिष्क पर नियन्त्रण प्राप्त करने की आवश्यकता है।” ‘अनुशासन शब्द ‘शासन’ में ‘अनु’ उपसर्ग के जुड़ने से बना है, इस तरह अनुशासन का शाब्दिक अर्थ है शासन के पीछे चलना। प्रायः माता-पिता एवं गुरुजनों के आदेशानुसार चलना ही अनुशासन कहलाता है, किन्तु यह अनुशासन के अर्थ को सीमित करने जैसा है। व्यापक रूप से देखा जाए, तो स्वशासन अर्थात् आवश्यकतानुरूप स्वयं को नियन्त्रण में रखना भी अनुशासन ही है। अनुशासन के व्यापक अर्थ में, शासकीय कानून के पालन से लेकर सामाजिक मान्यताओं का सम्मान करना ही नहीं, बल्कि स्वस्थ रहने के लिए, स्वास्थ्य, नियमों का पालन करना भी सम्मिलित है।
          </p>
 <p>True</p>
-<p>                                                        </p>
+<p> </p>
 <p>
           (ख) प्राकृतिक आपदा-भूकम्प
           <br/>
           प्राकृतिक आपदा जब भी गुस्सा दिखाती है तो कहर ढहाए बिना नहीं मानती है। आकाश के तारों को छू लेने वाला विज्ञान प्राकृतिक आपदाओं के सामने घुटने टेक देता है। अनेक प्राकृतिक आपदाओं में कई आपदाएँ मनुष्य की अपनी देन हैं। कुछ वर्षों में प्रकृति के गुस्से के जो रूप देखे गए हैं, उन्हें देखकर ऐसा लगता है कि प्रकृति के क्षेत्र में मनुष्य जब हस्तक्षेप करता है, तो उसका ऐसा ही परिणाम होता है, जो सुनामी के रूप में और गुजरात के भूकम्प के रूप में देखने में और सुनने में आया।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           (ग) ओलम्पिक और भारत
           <br/>
           प्राचीनकाल में यदा-कदा खेल प्रतियोगिता का आयोजन किया जाता था और सबसे अच्छा प्रदर्शन करने वाले सैनिकों को सम्राट पुरस्कृत करते थे। प्रारम्भ में इसी प्रकार योद्धा-खिलाड़ियों के मध्य प्राचीन ओलम्पिक खेल प्रतियोगिता का आयोजन किया गया था। विश्व में प्रथम ओलम्पिक खेलों का विधिवत् आयोजन 776 ई. पूर्व यूनान (ग्रीस) के ओलम्पिया नामक नगर में हुआ था। इसी कारण इसका नाम ओलम्पिक पड़ा। प्रथम ओलम्पिक के आयोजन के पश्चात् प्रत्येक चार वर्ष की अवधि पर ओलम्पिक खेलों का आयोजन किया जाने लगा, जिसमें हजारों संख्या में लोग एकत्र होकर खेलों का आनन्द लेते थे।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           वर्ष 1900 में पेरिस ओलम्पिक में ब्रिटिश भारत का प्रतिनिधित्व करते हुए कोलकाता निवासी एंग्लो-इण्डियन सर नॉर्मन प्रिचार्ड ने हिस्सा लिया था, लेकिन सन् 1920 से इसमें भारत ने भाग लेना प्रारम्भ किया था। तब से लेकर सन् 2016 में आयोजित रियो ओलम्पिक तक भारत कुल मिलाकर 26 पदक जीत पाया है। इनमें से 11 पदक भारत ने हॉकी में जीते हैं, जिनमें से 8 स्वर्ण 1 रजत एवं 2 काँस्य पदक थे। वर्ष 1952 में हेलसिंकी
           <br/>
           ओलम्पिक में के.डी. जाधव के काँस्य पदक के रूप में किसी व्यक्तिगत स्पर्धा (कुश्ती) में प्रथम ओलम्पिक पदक जीतने का गौरव प्राप्त किया। इसके पश्चात् वर्ष 1996 में अटलांटा ओलम्पिक में लिएण्डर पेस ने टेनिस में एक कांस्य पदक तथा वर्ष 2000 में सिडनी ओलम्पिक में कर्णम मल्लेश्वरी ने भारोत्तोलन में काँस्य पदक जीता।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 15.
           <br/>
@@ -2027,7 +2022,7 @@ p {
            विश्व स्तर पर आतंकवाद,
           </li>
 </ul>
-<p>                                                        </p>
+<p> </p>
 <ul>
 <li>
            कैसे हुई भेंट .
@@ -2046,9 +2041,9 @@ p {
           <br/>
           यह सर्वविदित है कि 2 अक्टूबर को हमारे देश में प्रति वर्ष गाँधीजी का जन्म दिवस को एक राष्ट्रीय पर्व के रूप में मनाया जाता है। 2 अक्टूबर, 2014 को ससम्मान राष्ट्रपिता महात्मा गाँधी जी को याद किया गया, लेकिन ‘स्वच्छ भारत अभियान की शुरुआत के कारण इस बार यह और भी विशिष्ट दिन हो गयी। ‘स्वच्छ भारत अभियान एक राष्ट्रीय स्तर अभियान है। गाँधीजी की 145वीं जयन्ती के अवसर पर माननीय प्रधानमन्त्री श्री नरेन्द्र मोदी ने इस अभियान के आरम्भ की घोषणा की।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           अतः हमें अपने दैनिक जीवन में भी सफाई को एक मुहिम की भाँति शामिल करने की आवश्यकता है, साथ ही हमें इसे एक बड़े स्तर पर भी देखने की जरूरत है, ताकि हमारा
           <br/>
@@ -2059,20 +2054,20 @@ p {
           <br/>
           वर्तमान समय में आतंकवाद एक वैश्विक समस्या का रूप धारण कर चुका है जिसकी आग में सम्पूर्ण विश्व जल रहा है। कोई भी देश ये नहीं कह सकता कि हम आतंकवाद से पूर्णतया मुक्त हैं। वास्तविकता तो यह है कि कोई भी नहीं जानता कि आतंकवाद का अगला निशाना कौन तथा किस रूप में होगा।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>         150                                               </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>True</p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 15.
           <br/>
@@ -2129,8 +2124,8 @@ p {
           <br/>
           जन-जन की आवाज, जन-जन तक पहुँचाने के लिए कटिबद्ध आपके पत्र के माध्यम से मैं विद्यालय में योग-शिक्षा के महत्त्व को बताना चाहती हूँ।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           आप अपने समाचार-पत्र के माध्यम से पाठकों को योग-शिक्षा ग्रहण करने के लिए आग्रह करें।
           <br/>
@@ -3432,6 +3427,127 @@ p {
         sidebar.classList.toggle('minimized');
     }
 </script>
+
+<!-- NCERT Guru Popup -->
+<style>
+#ncertGuruPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 2px solid #4a90e2;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  padding: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
+  z-index: 9999;
+}
+
+#ncertGuruPopup img {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+#ncertGuruPopup h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+  font-weight: 600;
+}
+
+#ncertGuruPopup p {
+  margin: 6px 0 12px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#ncertGuruPopup button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#ncertGuruPopup button:hover {
+  background-color: #3a78c2;
+}
+
+#ncertGuruPopup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #bbb;
+  font-weight: bold;
+}
+
+#ncertGuruPopup .close-btn:hover {
+  color: #000;
+}
+
+@media (max-width: 480px) {
+  #ncertGuruPopup {
+    padding: 20px 18px;
+  }
+
+  #ncertGuruPopup h3 {
+    font-size: 16px;
+  }
+
+  #ncertGuruPopup p {
+    font-size: 13px;
+  }
+
+  #ncertGuruPopup button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+</style>
+<div id="ncertGuruPopup">
+<button class="close-btn" onclick="document.getElementById('ncertGuruPopup').style.display='none';">×</button>
+<div style="display: flex; align-items: center; gap: 12px;">
+<img alt="App Icon" src="ncertguru-icon.png"/>
+<div>
+<h3>NCERT Guru: AI Question Solver</h3>
+<p>Instantly solve CBSE questions with AI. Try now for free!</p>
+</div>
+</div>
+<div style="margin-top: 16px; text-align: center;">
+<a href="https://play.google.com/store/apps/details?id=com.technosub.ncertgurusmartaiquestionsolver" target="_blank">
+<button>Try Now</button>
+</a>
+</div>
+</div>
+<script>
+(function() {
+  const popupKey = "ncertGuruPopupLastShown";
+  const today = new Date().toISOString().split('T')[0];
+  const lastShown = localStorage.getItem(popupKey);
+
+  if (lastShown !== today) {
+    window.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("ncertGuruPopup").style.display = "block";
+      localStorage.setItem(popupKey, today);
+    });
+  }
+})();
+</script>
+<!-- /NCERT Guru Popup -->
 </body>
 </html>
 <!-- Cache served by breeze CACHE - Last modified: Wed, 20 Nov 2024 04:43:08 GMT -->

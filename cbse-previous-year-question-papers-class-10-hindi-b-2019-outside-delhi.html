@@ -83,11 +83,6 @@ p {
 }
 
 </style><style> #menu-top a { padding: 12px 8px; /* Slightly increased padding for better touch targets */ margin: 10px 0 2px 0; /* Adjusted spacing for a more balanced design */ display: inline-block; text-align: center; font-family: 'Arial', sans-serif; /* Modern sans-serif font for a clean, fresh look */ font-size: 1.25rem; /* Slightly smaller font size for a more compact design */ font-weight: 600; /* Bold font weight for emphasis */ line-height: 1.5; /* Increased line height for readability */ letter-spacing: 0.02em; /* Slight letter spacing for clarity */ border-radius: 6px; /* Rounded corners for a contemporary appearance */ text-decoration: none; /* No underlines for a clean design */ color: #007BFF; /* Bold, vibrant blue for text */ transition: all 0.3s ease; /* Smooth transition for all interactive states */ } #menu-top a:hover { background-color: transparent; /* No background on hover */ color: #0056b3; /* Slightly darker blue text on hover */ cursor: pointer; box-shadow: 0 6px 15px rgba(0, 91, 179, 0.3); /* Enhanced shadow effect */ transform: scale(1.05); /* Subtle scale effect on hover */ } .responsive-banner { max-width: 100%; height: auto; display: block; margin: 0 auto; } /* Desktop View */ @media (min-width: 1024px) { .responsive-banner { max-width: 28%; /* Adjusted for smaller desktop view */ height: auto; /* Maintain aspect ratio */ } } /* Mobile View */ @media (max-width: 1023px) { .responsive-banner { max-width: 90%; height: auto; /* Maintain aspect ratio */ } } </style><style> /* Updated CSS Rules Here */ /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; /* Modern, clean sans-serif font */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; /* border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); padding: 10px 20px; */ flex-wrap: wrap; /* Ensure the menu items wrap on smaller screens */ text-align: center; /* border-radius: 8px; Rounded corners for a sleek design */ text-decoration: none; /* Remove underline for a clean look */ color: #0056b3; /* Deep blue color for professional tone */ transition: all 0.4s ease; /* Smoother transition effects */ } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; /* Prevent text from wrapping */ } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.7); */ transform: none; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; /* Darker text color for contrast */ border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover (Font Enlargement) */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* For Multi-Level Submenus */ .sub-menu-duplicate .sub-menu-duplicate { left: 100%; top: 0; transform: translateY(-10px); background-color: #f1f1f1; border-left: 4px solid #646667; } /* Active State for Menu Items */ .menu-link-duplicate:active, .menu-link-duplicate:focus { background-color: #0056b3; color: #fff; outline: none; } /* Mobile-Specific Styles */ @media (max-width: 768px) { /* Display only the main menu on mobile devices */ .menu-duplicate { display: flex !important; /* Ensure the main menu is visible */ flex-direction: row; /* Change to horizontal layout */ justify-content: center; /* Center-align menu items horizontally */ background-color: #fff; /* Maintain background color */ } .menu-item-duplicate { margin: 0 10px; /* Add spacing between main menu items horizontally */ } .menu-link-duplicate { font-size: 16px; /* Adjust font size for readability on mobile */ padding: 10px 15px; /* Increase touch area */ } /* Hide all submenus */ .sub-menu-duplicate { display: none !important; /* Completely hide submenus */ visibility: hidden !important; opacity: 0 !important; transform: none !important; } } </style><style> .social-sidebar { position: fixed; top: 50%; left: 0; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; background-color: #f9f9f9; padding: 10px; border-radius: 0 5px 5px 0; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); z-index: 1000; transition: all 0.3s ease; } .social-sidebar.minimized { left: -50px; } #minimize-button { background-color: #007BFF; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-size: 16px; margin-bottom: 10px; transition: background-color 0.3s ease; } #minimize-button:hover { background-color: #0056b3; } .social-sidebar a { text-decoration: none; display: block; } .social-sidebar .social-icon { width: 30px; height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; } .social-sidebar .social-icon:hover { transform: scale(1.2); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } /* Responsive Design */ @media (max-width: 768px) { .social-sidebar { top: auto; bottom: 10px; left: 10px; flex-direction: row; gap: 15px; border-radius: 5px; padding: 8px; } .social-sidebar.minimized { left: -100%; } .social-sidebar .social-icon { width: 24px; height: 24px; } } </style>
-
-
-
-
-
 </head>
 <body class="post-template-default single single-post postid-83596 single-format-standard content-sidebar genesis-breadcrumbs-hidden genesis-footer-widgets-visible magazine-pro-blue primary-nav">
 <ul class="menu-duplicate" id="menu-top-duplicate">
@@ -845,7 +840,7 @@ p {
           <br/>
           अधिकतम अंक : 80
          </p>
-<p>                                                        </p>
+<p> </p>
 <ul>
 <li>
            इस प्रश्न-पत्र में चार खंड हैं – क, ख, ग और घ।
@@ -950,7 +945,7 @@ p {
           <br/>
           नया सूरजमुखी खिलखिलाता है।”
          </p>
-<p>                                                        </p>
+<p> </p>
 <div class="code-block code-block-3" style="margin: 8px 0; clear: both;">
 </div>
 <p>
@@ -1200,9 +1195,9 @@ p {
           <br/>
           (क) जिन मूल्यों पर देश तथा काल का कोई प्रभाव नहीं पड़ता है उन्हें ही हम शाश्वत मूल्य कहते हैं। जैसे सत्य, अहिंसा, दया, त्याग एवं परोपकार आदि। वर्तमान समय में इन शाश्वत मूल्यों की आवश्यकता तो हैं लेकिन अपनाने वाले बहुत कम है। पाठ के आधार पर कहें तो वास्तविकता है कि लोग बाहरी आवरण व सौन्दर्य से अपना मन भर लेते हैं सच्चाई की गहराई इनसे कोसों दूर रहती है।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>True</p>
-<p>                                                        </p>
+<p> </p>
 <p>
           (ग) कलकत्तावासियों के लिए 26 जनवरी 1931 का दिन बहुत महत्वपूर्ण था। इस दिन को अमर बनाने के लिए सबने एकजुट होकर काफी तैयारियाँ की, राष्ट्रीय झंडे लगाए गए, प्रत्येक मार्ग पर उत्साह और नवीनता दिखाई दे रही थी। सरकार के प्रतिबंधों के बावजूद हजारों की संख्या में जुलूस में भाग ले रहे थे मानो ऐसा लग रहा था कि आज स्वतंत्रता मिल गई हो।
           <br/>
@@ -1211,8 +1206,8 @@ p {
           इस दुनिया के अस्तिव में आने पर सब जीव-जन्तु मानव मिल जुलकर रहते थे, सबका इस प्रकृति में हिस्सा था, मेरा-तेरा नहीं था।
          </p>
 <p>True</p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 9.
           <br/>
@@ -1228,16 +1223,16 @@ p {
           <br/>
           (1) अध्ययनशील— बड़े भाईसाहब स्वभाव से ही अध्ययनशील थे। वे हरदम किताबों में लीन रहते थे। उनमें रटने की प्रवृत्ति थी।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>True</p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>True</p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 10.
           <br/>
@@ -1257,13 +1252,13 @@ p {
           <br/>
           (क) कबीर की साखी के आधार पर ईश्वर की प्राप्ति मन को एकाग्रचित्त करके आध्यात्मिक चिंतन द्वारा की जा सकती है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 11.
           <br/>
@@ -1277,12 +1272,12 @@ p {
           <br/>
           धरोहर अनेक प्रकार की होती हैं तोप भी हमारी राष्ट्रीय धरोहर है। यह तोप हमें 1857 के स्वतन्त्रता संघर्ष (संग्राम) की याद दिलाती है और देशवासियों को संघर्ष करने की प्रेरणा देती है। धरोहरें हमें संस्कृति व इतिहास से जोड़ती हैं। यह हमारी परंपराओं, हमारे सैनानियों, बलिदानों का परिचय करवाती हैं।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>True</p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 12.
           <br/>
@@ -1296,10 +1291,10 @@ p {
           <br/>
           पाठ के आधार पर टोपी हिन्दू परिवार से संबंध रखता था तथा इफ्फन मुसलमान थी किंतु फिर भी टोपी और इफ्फन में गल्ले संबंध थे। टोपी शुक्ला की पहली दोस्ती इफ्फन से हुई थी। दोनों विपरीत धर्मों के होने के कारण दोनों में अटूट व अभिन्न मित्र थे। पाठ के आधार पर कह सकते हैं कि इफ्फन के बिना टोपी शुक्ला की कहानी में अधूरापन लगेगा। दोनों के लिए रीति-रिवाज सामाजिक हैसियत, खान-पान आदि कोई महत्त्व नहीं रखते थे। दोनों का रिश्ता धर्म और जाति की सीमाएँ पार कर प्रेम के बंधन में बंध गया था। दोनों एक दूसरे के बिना अधूरे थे। निष्कर्ष तौर पर कह सकते हैं कि दोनों दो जिस्म एक जान थे।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>True</p>
-<p>                                                        </p>
+<p> </p>
 <p style="text-align: center;">
 <strong>
            खण्ड “घ”
@@ -1323,7 +1318,7 @@ p {
            समाज को लाभ
           </li>
 </ul>
-<p>                                                        </p>
+<p> </p>
 <ul>
 <li>
            लोकप्रियता
@@ -1335,7 +1330,7 @@ p {
            लाभ-हानि
           </li>
 </ul>
-<p>                                                        </p>
+<p> </p>
 <ul>
 <li>
            कब, कहाँ
@@ -1373,15 +1368,15 @@ p {
           <br/>
           और नहीं जगत में दुख बहुतेरे।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           (ख) मोबाइल फोन
           <br/>
           पिछले कुछ दशकों से हमारे रोजाना जीवन में बहुत तबदीली हुई है। रोज बाजार में नए-नए उत्पादन सामने आ रहे हैं जो हमारी जीवन शैली को तब्तदील कर रहे हैं नए उत्पादों में एक है मोबाइल। यह बिना तार के नैटवर्क से जुड़ा होता है। मोबाइल सीधा किसी भी व्यक्ति से जुड़ सकता है जिसके पास मोबाइल है। इससे सारा संसार जैसे सुकुड़ सा गया है। अब यह बात सोचने की है कि मोबाइल फैशन का हिस्सा है या एक जरूरत है। आज संसार में इसकी लोकप्रियता दिन प्रतिदिन बढ़ती जा रही है। इसने तो लैपटॉप को भी पीछे छोड़ दिया है इसमें ऐसी ऐसी सुविधाएँ मिलने लगी हैं। यह बात सही है इस मोबाइल ने सूचना संचार के क्षेत्र में बहुत बड़ी क्रांति ला दी है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           (ग) एक ठंडी सुबह
           <br/>
@@ -1434,7 +1429,7 @@ p {
           <br/>
           कक्षा IX
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           प्रेषक,
           <br/>
@@ -1481,8 +1476,8 @@ p {
           <br/>
           (समस्त विद्यार्थियों हेतु)
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           आपके इस उदारतापूर्वक कार्य से निर्धन बच्चों को आगे भविष्य में सहयोग होगा और वह अपने उज्ज्वल भविष्य का निर्माण कर सकेंगे।
           <br/>
@@ -1494,7 +1489,7 @@ p {
           <br/>
           क ख ग
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           उत्थान विद्यालय
           <br/>
@@ -1559,7 +1554,7 @@ p {
           <br/>
           गौरव- ठीक हैं माँ तुम्हारी बात समझ आ गई। मैं टीवी बंद करके मेहनत से अपनी परीक्षा की तैयारी करूंगा।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           राम– श्याम देखो कितनी बुरी दुर्घटना है।
           <br/>
@@ -1655,8 +1650,8 @@ p {
           <br/>
           बढ़ती जनसंख्या लगातार पर्यावरण पर प्रभाव डाल रही है। अर्थात् बढ़ती आबादी ने पर्यावरण के संतुलन को बिगाड़ रखा है। एतिहासिक दृष्टि से देखें तो पृथ्वी पहले से थी मानव उत्पत्ति बाद में हुई। धरती पर प्राणियों का उतना ही अधिकार है जितना अन्य मनुष्य का लेकिन मनुष्य ने अपनी बुद्धि के बल पर अपने और प्रकृति के बीच बड़ी दीवार खड़ी कर दी और अनावश्यक रूप से अपने स्वार्थ के लिए प्रकृति में हस्तक्षेप करने लगा। हस्तक्षेप यहाँ तक पहुँचा कि समुद्र के रेतीले तटों पर भी मानवों की बस्ती बसा दी। जंगल काट करे कंक्रीट की दुनिया बना ली जैसे-जैसे आबादी बढ़ रही है यह नजारा ज्यादा खतरनाक हो रहा है। अब वातावरण में गर्मी बढ़ने लगी मौसम चक्र टूट गया, सर्दी, तूफान, बर्फबारी बाढ़े अनियमित हो गई हैं, जिससे नए नए रोग पैदा हो गए हैं। पृथ्वी की सहन शक्ति लगभग समाप्त ही हो गई है। हर साल कुछ न कुछ नयी त्राहि देखने को मिलती है। अगर यह सिलसिला लगातार रहा तो वो समय दूर नहीं कि कभी भी प्रलय आना संभव होगा।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 11.
           <br/>
@@ -1670,8 +1665,8 @@ p {
           <br/>
           मीरा के पदों में भक्त की विपत्ति दूर करने के लिए। प्रभु श्रीकृष्ण ने जन-जन की पीड़ा हरने की विनती करती है। मीरा एक भक्त के उदाहरण देती हैं कि द्रोपदी जिसका दु:शासन ने भरी सभा ने चीर हरण करना चाहा-तब श्रीकृष्ण ने उन्हें वस्त्र बढ़ाकर उनकी रक्षा की। दूसरा उदाहरण उन्होंने भक्त प्रहाद की रक्षा करने के लिए नरसिंह का रूप धारण किया और उसका पेट फाड़ डाला इसी भाँति उन्होंने डूबते हाथी को मुख से हरि नाम सुनकर मगरमच्छ के मुँह से बचा लिया। वह यह उदाहरण देकर कृष्ण को अपने प्रति कर्त्तव्य का स्मरण कराती हैं कि हे गिरिधर आप मेरी भी पीड़ा हरण कीजिए। और कृष्ण को पाकर अपने जीवन की सबसे-बड़ी कामना भगवान की भक्ति में लीन होना चाहती हैं।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 12.
           <br/>
@@ -1685,8 +1680,8 @@ p {
           <br/>
           टोपी शुक्ला कहानी हमें हमारी परम्परा सभ्पता के अनुसार भारत की विविधता में एकता को और जोड़ने का संदेश देती है। जाति और धर्म से ऊपर उठकर एक साथ रहने का संदेश देती है। इन्सान में इन्सानियत होनी चाहिए धर्म जाति भगवान ने नहीं बनाई यह हमने बनाई है। धर्म कोई मायने नहीं रखता। व्यक्ति का व्यवहार सम्मानजनक होना चाहिए। पाठ के अनुसार हिन्दु-मुस्लिम के बीच की खाई को बढ़ाया गया है जो गलत है। बच्चों के प्यार में कोई धर्म आड़े नहीं आता दोनों एक दूसरे से बेइंतहा प्यार करते हैं दोनों एक दूसरे पर जान देते हैं मित्रता और आत्मीयता जाति और भाषा के बंधनों से परे होते हैं। लेकिन हमारी पुरनी रंजिश ने इन दोनों को मिलने नहीं दिया जो हमारे समाज के लिए लाभकारी नहीं है और न हीं हो सकते हैं। मिल-जुड़करे रहना हमारी परम्परा रही है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 14.
           <br/>
@@ -1720,7 +1715,7 @@ p {
           <br/>
           दिनांक : 10 अप्रैल 20 xx
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           सेवा में,
           <br/>
@@ -1789,9 +1784,9 @@ p {
           <br/>
           बड़े भाई साहब की डाँट-फटकार यदि न मिलती तो छोटा भाई कक्षा में प्रथम नहीं आती यह कथन एक दम सत्य है। बड़े भाई साहब की डाँट फटकार ने छोटे भाई को कक्षा में अव्वल आने में महत्त्वपूर्ण भूमिका निभाई। लेखक के भाई यदि समय-समय पर न टोकते तो हो तो सकता है वह अव्वल नहीं आता।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           जापाने में अधिकांश लोगों के मनोरूगा होने के कारण:
           <br/>
@@ -1820,8 +1815,8 @@ p {
           <br/>
           कवि ने वर्षा ऋतु में पर्वतीय प्रदेश पर होने वाले प्रकृति में क्षण-क्षण परिवर्तन को बड़े ही सुंदर ढंग से व्यक्त किया है। वर्षा ऋतु में कवि को यहाँ को दृश्य देखकर ऐसा लगता है। कि मानों मेखलाकार पर्वत अपने ऊपर खिले सुमन रूपी नेत्रों से तालाब के पारदर्शी जल में अपना प्रतिबिंब देख रही हो। पहाड़ों के बीच में बहते झरने पहाड़ों का गौरवगान करते प्रतीत होते हैं। पहाड़ों की छाती पर उगे वृक्ष ऐसे लगते हैं। मानो मन में आकांक्षाएँ लिए आकाश की ओर निहार रहे हों। कभी बादलों में उड़ जाने से ऐसा लगने लगता है कि पर्वत बादल रूपी पंख लगाकर आकाश में उड़ रहे हैं। यह सब जादुई दृश्य देखकर ऐसा लगता है कि जैसे इंद्र देवता जादू में खेल दिखा रहे हैं।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 12.
           <br/>
@@ -1873,7 +1868,7 @@ p {
           <br/>
           च ब क विद्यालय।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           प्रेषक,
           <br/>
@@ -1895,8 +1890,8 @@ p {
           <br/>
           मैं क ग च दिनांक:::::” को मेट्रो में सफर कर रहा था। सुबह के व्यस्त समय में यात्रियों की संख्या बहुत अधिक होती है। इसी व्यवस्था में मेरा ऑफिस का बैग मेट्रो के कोच में गलती से छूट गया था, जिसमें मेरे व ऑफिस के बहुत जरूरी कागज व कुछ रुपये थे। उसी दिन मैं जब अपने घर तक पहुँचा जल्दी में अपना बैग लेना भूल गया जिसकी रिपोर्ट मैंने मेट्रो अधिकरियों को उसी दिन दी थी। मुझे आश्वासन दिया गया कि आप का बैग मिलने पर लौटा दिया जाएगा। अपना फोन न० व पता लिखित रूप से पत्र सहित मैंने दे दिया था।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           संपादक जी से अनुरोध है कि इस पत्र को अपने लोकप्रिय समाचार पत्र में छापे व उनको उत्साह बढ़ाएँ।
           <br/>
@@ -3194,6 +3189,127 @@ p {
         sidebar.classList.toggle('minimized');
     }
 </script>
+
+<!-- NCERT Guru Popup -->
+<style>
+#ncertGuruPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 2px solid #4a90e2;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  padding: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
+  z-index: 9999;
+}
+
+#ncertGuruPopup img {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+#ncertGuruPopup h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+  font-weight: 600;
+}
+
+#ncertGuruPopup p {
+  margin: 6px 0 12px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#ncertGuruPopup button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#ncertGuruPopup button:hover {
+  background-color: #3a78c2;
+}
+
+#ncertGuruPopup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #bbb;
+  font-weight: bold;
+}
+
+#ncertGuruPopup .close-btn:hover {
+  color: #000;
+}
+
+@media (max-width: 480px) {
+  #ncertGuruPopup {
+    padding: 20px 18px;
+  }
+
+  #ncertGuruPopup h3 {
+    font-size: 16px;
+  }
+
+  #ncertGuruPopup p {
+    font-size: 13px;
+  }
+
+  #ncertGuruPopup button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+</style>
+<div id="ncertGuruPopup">
+<button class="close-btn" onclick="document.getElementById('ncertGuruPopup').style.display='none';">×</button>
+<div style="display: flex; align-items: center; gap: 12px;">
+<img alt="App Icon" src="ncertguru-icon.png"/>
+<div>
+<h3>NCERT Guru: AI Question Solver</h3>
+<p>Instantly solve CBSE questions with AI. Try now for free!</p>
+</div>
+</div>
+<div style="margin-top: 16px; text-align: center;">
+<a href="https://play.google.com/store/apps/details?id=com.technosub.ncertgurusmartaiquestionsolver" target="_blank">
+<button>Try Now</button>
+</a>
+</div>
+</div>
+<script>
+(function() {
+  const popupKey = "ncertGuruPopupLastShown";
+  const today = new Date().toISOString().split('T')[0];
+  const lastShown = localStorage.getItem(popupKey);
+
+  if (lastShown !== today) {
+    window.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("ncertGuruPopup").style.display = "block";
+      localStorage.setItem(popupKey, today);
+    });
+  }
+})();
+</script>
+<!-- /NCERT Guru Popup -->
 </body>
 </html>
 <!-- Cache served by breeze CACHE - Last modified: Tue, 12 Nov 2024 16:36:18 GMT -->

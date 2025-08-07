@@ -82,11 +82,6 @@ p {
 }
 
 </style><style> #menu-top a { padding: 12px 8px; /* Slightly increased padding for better touch targets */ margin: 10px 0 2px 0; /* Adjusted spacing for a more balanced design */ display: inline-block; text-align: center; font-family: 'Arial', sans-serif; /* Modern sans-serif font for a clean, fresh look */ font-size: 1.25rem; /* Slightly smaller font size for a more compact design */ font-weight: 600; /* Bold font weight for emphasis */ line-height: 1.5; /* Increased line height for readability */ letter-spacing: 0.02em; /* Slight letter spacing for clarity */ border-radius: 6px; /* Rounded corners for a contemporary appearance */ text-decoration: none; /* No underlines for a clean design */ color: #007BFF; /* Bold, vibrant blue for text */ transition: all 0.3s ease; /* Smooth transition for all interactive states */ } #menu-top a:hover { background-color: transparent; /* No background on hover */ color: #0056b3; /* Slightly darker blue text on hover */ cursor: pointer; box-shadow: 0 6px 15px rgba(0, 91, 179, 0.3); /* Enhanced shadow effect */ transform: scale(1.05); /* Subtle scale effect on hover */ } .responsive-banner { max-width: 100%; height: auto; display: block; margin: 0 auto; } /* Desktop View */ @media (min-width: 1024px) { .responsive-banner { max-width: 28%; /* Adjusted for smaller desktop view */ height: auto; /* Maintain aspect ratio */ } } /* Mobile View */ @media (max-width: 1023px) { .responsive-banner { max-width: 90%; height: auto; /* Maintain aspect ratio */ } } </style><style> /* Updated CSS Rules Here */ /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; /* Modern, clean sans-serif font */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; /* border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); padding: 10px 20px; */ flex-wrap: wrap; /* Ensure the menu items wrap on smaller screens */ text-align: center; /* border-radius: 8px; Rounded corners for a sleek design */ text-decoration: none; /* Remove underline for a clean look */ color: #0056b3; /* Deep blue color for professional tone */ transition: all 0.4s ease; /* Smoother transition effects */ } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; /* Prevent text from wrapping */ } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.7); */ transform: none; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; /* Darker text color for contrast */ border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover (Font Enlargement) */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* For Multi-Level Submenus */ .sub-menu-duplicate .sub-menu-duplicate { left: 100%; top: 0; transform: translateY(-10px); background-color: #f1f1f1; border-left: 4px solid #646667; } /* Active State for Menu Items */ .menu-link-duplicate:active, .menu-link-duplicate:focus { background-color: #0056b3; color: #fff; outline: none; } /* Mobile-Specific Styles */ @media (max-width: 768px) { /* Display only the main menu on mobile devices */ .menu-duplicate { display: flex !important; /* Ensure the main menu is visible */ flex-direction: row; /* Change to horizontal layout */ justify-content: center; /* Center-align menu items horizontally */ background-color: #fff; /* Maintain background color */ } .menu-item-duplicate { margin: 0 10px; /* Add spacing between main menu items horizontally */ } .menu-link-duplicate { font-size: 16px; /* Adjust font size for readability on mobile */ padding: 10px 15px; /* Increase touch area */ } /* Hide all submenus */ .sub-menu-duplicate { display: none !important; /* Completely hide submenus */ visibility: hidden !important; opacity: 0 !important; transform: none !important; } } </style><style> .social-sidebar { position: fixed; top: 50%; left: 0; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; background-color: #f9f9f9; padding: 10px; border-radius: 0 5px 5px 0; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); z-index: 1000; transition: all 0.3s ease; } .social-sidebar.minimized { left: -50px; } #minimize-button { background-color: #007BFF; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-size: 16px; margin-bottom: 10px; transition: background-color 0.3s ease; } #minimize-button:hover { background-color: #0056b3; } .social-sidebar a { text-decoration: none; display: block; } .social-sidebar .social-icon { width: 30px; height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; } .social-sidebar .social-icon:hover { transform: scale(1.2); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } /* Responsive Design */ @media (max-width: 768px) { .social-sidebar { top: auto; bottom: 10px; left: 10px; flex-direction: row; gap: 15px; border-radius: 5px; padding: 8px; } .social-sidebar.minimized { left: -100%; } .social-sidebar .social-icon { width: 24px; height: 24px; } } </style>
-
-
-
-
-
 </head>
 <body class="post-template-default single single-post postid-83533 single-format-standard content-sidebar genesis-breadcrumbs-hidden genesis-footer-widgets-visible magazine-pro-blue primary-nav">
 <ul class="menu-duplicate" id="menu-top-duplicate">
@@ -851,7 +846,7 @@ p {
           <br/>
           देश की आजादी के उनहत्तर वर्ष हो चुके हैं और आज जरूरत है अपने भीतर के तर्कप्रिय भारतीयों को जगाने की, पहले नागरिक और फिर उपभोक्ता बनने की। हमारा लोकतंत्र इसलिए बचा है कि हम सवाल उठाते रहे हैं। लेकिन वह बेहतर इसलिए नहीं बन पाया क्योंकि एक नागरिक के रूप में हम अपनी जिम्मेदारियों से भागते रहे हैं। किसी भी लोकतांत्रिक प्रणाली की सफलता जनता की जागरूकता पर ही निर्भर करती
          </p>
-<p>                                                        </p>
+<p> </p>
 <div class="code-block code-block-2" style="margin: 8px 0; clear: both;">
 </div>
 <p>
@@ -1391,8 +1386,8 @@ p {
           <br/>
           (क) इंदौर में वे सामाजिक–राजनीतिक संगठनों से जुड़े थे। उन्होंने शिक्षा का उपदेश ने दिया अपितु विद्यार्थियों को अपने घर पर रखकर भी पढ़ाया जिससे वे बाद में ऊँचे-ऊँचे पद पर आसीन हुए। वहाँ के समाज में उनकी काफी प्रतिष्ठा और सम्मान था।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 11.
           <br/>
@@ -1449,10 +1444,10 @@ p {
           <br/>
           (क) नारी सशक्तिकरण के युग में लड़कियाँ अब लड़की जैसी दिखाई नहीं देती है क्योंकि अब समय बदल रहा है। वे पुरुषों से कंधे से कंधा मिलाकर प्रत्येक क्षेत्र में कार्य कर अपनी प्रतिभा का प्रदर्शन कर रही हैं। इंदिरा गाँधी, लता मंगेशकर, साक्षी मलिक, पी.टी. ऊषा, सानिया मिर्जा, पी.वी. सिंधु, कल्पना चावला, सुनीता विलियम्स जैसे कई उदाहरण हैं जिनका नाम लेते ही समाज में नारियों की सफलता का परचम स्वतः फहरने लगता है। ऐसे में नारियों की दुनियाँ सिर्फ घर और रसोई तक सीमित नहीं है।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p> (),                                                      </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           (ङ) लक्ष्मण ने शूरवीरों के निम्नलिखित गुण बताए
           <br/>
@@ -1473,7 +1468,7 @@ p {
           <br/>
           जल संरक्षण अर्थात् जेल का रक्षण, जल को बचाना। आधुनिक मानव ने जल के अति दोहन एवं प्रदूषण ने जल को जो मानवकृत संकट उपस्थित किया है, वह किसी भी तरह सामूहिक आत्मघात से कम नहीं है। देश में पानी के लिए त्राहि-त्राहि मची हुई है। भूगर्भ का जलस्तर निरन्तर कम होता जा रहा है। गहराई से आने वाला पानी खारा और अपेय हो गया है। नदियाँ हमारे कुकर्मों के कारण प्रदूषित ही नहीं हुई हैं। बल्कि समाप्त होने के कगार पर आ गई हैं। प्रदूषण के कारण भूमण्डलीय ताप में वृद्धि हो रही है और ध्रुव प्रदेश की बर्फ तथा ग्लेशियर तेजी से पिघल रहे हैं। यह महासंकट की , चेतावनी है, जिसे मनुष्य स्वार्थवश अनसुनी कर रहा है।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           प्रश्न 14.
           <br/>
@@ -1492,7 +1487,7 @@ p {
            प्रेरणा
           </li>
 </ul>
-<p>                                                        </p>
+<p> </p>
 <ul>
 <li>
            वन अमूल्य वरदान
@@ -1504,7 +1499,7 @@ p {
            पर्यावरण के समाधान
           </li>
 </ul>
-<p>                                                        </p>
+<p> </p>
 <ul>
 <li>
            मीडिया का प्रभाव
@@ -1524,24 +1519,24 @@ p {
           पिछले सप्ताह हमारे स्कूल का स्थापना दिवस बड़ी धूम-धाम से मनाया गया। इस अवसर पर एक रंगारंग सांस्कृतिक कार्यक्रम प्रस्तुत किया गया। यह कार्यक्रम रात्रि आठ बजे से बारह बजे तक चला। सारा कार्यक्रम इतना आनन्दमय था कि पता ही नहीं चला कि कब समय बीत गया। कार्यक्रम की प्रस्तुति विशिष्ट थी।
          </p>
 <p>, ‘                                                      </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           (ग) मीडिया की भूमिका
           <br/>
           जिन साधनों का प्रयोग कर बहुत से मानव समूहों तक विचारों, भावनाओं व सूचनाओं को सम्प्रेषित किया जाता है, उन्हें हम जनसंचार माध्यम या मीडिया कहते हैं। मीडिया, ‘मीडियम’ शब्द का बहुवचन रूप है, जिसका अर्थ होता है-माध्यम।
          </p>
 <p>True</p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 15.
           <br/>
@@ -1570,8 +1565,8 @@ p {
           <br/>
           कल आपका टी.वी. पर प्रदर्शन देखा। उसे देखकर मुझे बहुत गर्व हुआ। आपने ओलम्पिक में रजत पदक प्राप्त करके भारत का नाम रोशन किया है। आपकी यह सफलता प्रशंसा के योग्य है। ओलम्पिक में रजत पदक पाना बड़े सम्मान की बात है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           अथवा
           <br/>
@@ -1594,7 +1589,7 @@ p {
           <br/>
           मैं लोहामंडी क्षेत्र की निवासी हैं तथा आपका ध्यान अपने क्षेत्र में जलभराव से हो रही समस्याओं की ओर आकर्षित करना चाहती हूँ। वर्षा ऋतु के पश्चात् जगह-जगह सड़कों पर जलभराव हो गया जिसके कारण मच्छरों का प्रकोप बढ़ गया है साथ ही आने-जाने वालों की गाड़ियों में पानी चले जाने के कारण खराब हो जाती हैं तथा वे दुर्घटना के शिकार हो जाते हैं। जल भराव से संपूर्ण क्षेत्र में दुर्गंध फैल रही है। ऐसा नहीं है कि हमारे क्षेत्र में सफाई कर्मचारी नहीं आते अपितु वे नियमित रूप से अपने कर्तव्यों का निर्वहन नहीं करते थे, परंतु वे उस जलभराव की समस्या का समाधान नहीं करते हैं। कई बार मौखिक रूप से क्षेत्रीय सफाई निरीक्षक से भी कहा तथा लिखित रूप में भी इसकी चर्चा की, परंतु किसी के कान पर जूं तक नहीं रेंगी। वर्षा के पानी का भराव गंदी नालियों और सफाई न होने के कारण पूरे क्षेत्र में मलेरिया के फैलने की भी संभावना बढ़ गई है। यह चिंता का विषय है।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           मुझे आशा है कि आप हमारे क्षेत्र की सफाई करवाने के लिए तुरंत आवश्यक कार्यवाही करेंगे।
           <br/>
@@ -1736,7 +1731,7 @@ p {
            कैसे करें
           </li>
 </ul>
-<p>                                                        </p>
+<p> </p>
 <ul>
 <li>
            खेलों की उपयोगिता
@@ -1748,7 +1743,7 @@ p {
            हमारा कर्तव्य
           </li>
 </ul>
-<p>                                                        </p>
+<p> </p>
 <ul>
 <li>
            पड़ोसियों का महत्त्व
@@ -1772,28 +1767,28 @@ p {
           <br/>
           तुलसी संगति साधु की कटै कोटि अपराध।।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           शठ सुधरहिं सत्संगति पाई।
           <br/>
           पारस परसि कुधात सुहाई।।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           तात स्वर्ग अपवर्ग सुख धरिअ तुला एक अंग,
           <br/>
           तूल न ताहि सकल मिलि जो सुख लव सत्संग।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           को न कुसंगति पाई नसाई।
           <br/>
           रहे न नीच मतों चतुराई।।।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           कबिरा संगति साधु की हरे और की व्याधि।
           <br/>
@@ -1804,9 +1799,9 @@ p {
           <br/>
           खेल मात्र खाली समय का सदुपयोग नहीं है, अपितु जीवन की नियमित आवश्यकता है। जिसने दिन में एक बार खेलों को स्थान दिया है, वह जीवन में सदैव खुश रहा है। बड़ी मुसीबतों में विचलित नहीं होता है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           (ग) हमारे पड़ोसी
           <br/>
@@ -1814,7 +1809,7 @@ p {
           <br/>
           अरस्तु मनुष्य समाज से पृथक रहकर अपने जीवन यापन की कल्पना नहीं कर सकता है। अगर वह ऐसा करता है। तो वह पशुतुल्य है। सामाजिक जीवन में सर्वप्रथम एक अच्छे पड़ोसी की आवश्यकता होती है। दिन अथवा रात कठिन परिस्थितियों में हम सबसे पहले अपने पड़ोसी से सहायता माँगते हैं, क्योंकि वही हमारे सबसे निकट होता है। इसलिए यह कहना अनुचित न होगा कि हमारा प्रिय स्वजन हमारा पड़ोसी होता है। यही हमारी मदद करता है। अगर हमारे अच्छे पड़ोसी हैं तो ऐसा प्रतीत होगा कि हम स्वर्ग में रह रहे हैं क्योंकि अच्छे पड़ोसी होते हैं तो हमारे जीवन की आधी परेशानियाँ स्वतः समाप्त हो जाती हैं जिससे हमारे जीवन शैली और जीवन स्तर में विकास होता है। पड़ोसी एक-दूसरे के पूरक होते हैं। खुशनुमा अवसर हो अथवा गमगीन माहौल, पड़ोसी जितनी सहायता करते हैं उतनी तो कभी हमारे अपने भी न करें। अच्छे पड़ोसी आवश्यकता पड़ने पर निःस्वार्थ भाव से हमारी सम-विषम परिस्थितियों में हमारे साथ खड़े होते हैं तथा हमारे सहायक भी होते हैं। किसी ने ठीक ही कहा है कि “प्रेम करने वाला पड़ोसी दूर रहने वाले भाई से कहीं उत्तम है।”
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           प्रश्न 15.
           <br/>
@@ -1852,7 +1847,7 @@ p {
           <br/>
           (छात्र प्रमुख)
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           पता : 37/18 जनकपुरी दिल्ली,
           <br/>
@@ -1986,7 +1981,7 @@ p {
            वांछनीय शिक्षा व्यवस्था
           </li>
 </ul>
-<p>                                                        </p>
+<p> </p>
 <ul>
 <li>
            स्मार्ट फोन की सुविधा
@@ -2005,8 +2000,8 @@ p {
           <br/>
           सफलता उसी मनुष्य का वरण करती है जिसने उसकी प्राप्ति के लिए श्रम किया हो। प्रथम श्रेणी वे ही विद्यार्थी उत्तीर्ण होते हैं जो पूरे वर्ष कठिन परिश्रम करते हैं। मनुष्य के पास श्रम के अतिरिक्त कुछ भी नहीं। जीवन में कामयाब होने के लिए मेहनत करनी पड़ती है। पुरुष वही होता है, जो पुरुषार्थ करता है। संपूर्ण विश्व में हो रही प्रगति पुरुषार्थ का ही परिणाम है। मनुष्य जितना परिश्रम करता है उतनी ही उन्नति करता है। साधारण से साधारण व्यक्ति भी अपने परिश्रम से महान उद्योगपति और देश का प्रधानमंत्री बन सकता है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           परिश्रम से ही व्यक्ति को यश और धन दोनों की प्राप्ति होती है। परिश्रम से मनुष्य धनोपार्जन भी करता है। ऐसे लोगों का भी उदाहरण यहाँ देखने को मिल सकता है। जिन्होंने दस रुपए से अपना व्यवसाय आरंभ किया और अपने परिश्रम के दम पर करोड़पति बन गए। जिसे अपने परिश्रम पर पूर्व विश्वास होता है वही प्रतिस्पर्धाओं में सफल होता है। मेहनत के कारण ही साधारण व्यक्ति भी एक महान वैज्ञानिक, कलाकार, डॉक्टर बनते हैं। विकास के मार्ग पर वही व्यक्ति अग्रसर होता है जो कभी मेहनत, श्रम से नहीं डरता, उससे नहीं भागता तथा एक दिन कामयाब होकर विश्व में अपना नाम रोशन करता है। कर्म का महत्व श्रीकृष्ण ने भी अर्जुन को गीता के उपदेश द्वारा समझाया था। उनके अनुसार
           <br/>
@@ -2026,16 +2021,16 @@ p {
           <br/>
           शिक्षा ही पशु और मनुष्य में अंतर पैदा करती है। मनुष्य का स्वभाव है कि वह उम्र बढ़ने के साथ-साथ सीखना शुरू कर देता है। अनेक बातें वह माता-पिता और साथियों से सीख जाती है। सामान्यतः यही वह समय होता है जब उसे स्कूल भेजा जाता है। शिक्षा प्रणाली अर्थात् एक निश्चित तरीके से शिक्षा देने की पद्धति कर्ब अस्तित्व में आई यह कहना मुश्किल है। बदलते वक्त के साथ शिक्षा प्रणाली में परिवर्तन हुए। वर्तमान में शिक्षा प्रणाली हमारे समक्ष में है, इसमें भी अनेक गुण और दोष देखे जा रहे हैं। आज हमारे समाज में सरकारी, अर्धसरकारी, प्राइवेट आदि अनगिनत शैक्षिक संस्थाएं हैं। जिनमें बच्चे को प्राथमिक शिक्षा दी जाती हैं। इनमें बच्चे को तीन साल से पाँच वर्ष की उम्र में प्रवेश दिया जाता है। जिनमें पाठ्यक्रम के अलावा खेल के माध्यम से शिक्षा दी जाती है। इनमें साधारणतः दस वर्ष के उम्र तक के बच्चे को शिक्षा तथा सामान्य विषयों की प्रारंभिक जानकारी दी जाती है। खेद का विषय यह है कि इस प्राथमिक शिक्षा को प्राप्त करते समय ही बहुत से विद्यार्थी विद्यालय छोड़ देते हैं और माता-पिता की आमदनी में सहयोग देने हेतु काम में लग जाते हैं। इस प्रकृति को रोकने के लिए सरकार ने अनेक कदम उठाए हैं।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           (ग) स्मार्ट फोन
           <br/>
           संचार का क्षेत्र भी इससे अछूता नहीं है। संचार के क्षेत्र में क्रांति लाने में विज्ञान-प्रदत्त कई उपकरणों का हाथ है, पर मोबाइल फोन की भूमिका सर्वाधिक है। मोबाइल फोन जिस तेजी से लोगों की पसन्द बनकर उभरा है, उतनी तेजी से कोई अन्य संचार साधन नहीं। आज इसे अमीर-गरीब, युवा–प्रौढ़ हर एक की जेब में देखा जा सकता है। मोबाइल फोन अत्यंत तेजी से लोकप्रिय हुआ है। इसके प्रभाव से शायद ही कोई बचा हो। आजकल इसे हर व्यक्ति की जेब में देखा जा सकता है। कभी विलासिता का साधन समझा जाने वाले मोबाइल फोन आज हर व्यक्ति की जरूरत बन गया है। इसकी लोकप्रियता का कारण इसका छोटा आकार, कम खर्चीला होना, सर्वसुलभता और इसमें उपलब्ध अनेकानेक सुविधाएँ हैं। मोबाइल फोन का जुड़ाव तार से न होने के कारण इसे कहीं भी लाना-ले जानी सरल है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 15.
           <br/>
@@ -2064,7 +2059,7 @@ p {
           <br/>
           अजये
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           सेवा में,
           <br/>
@@ -3379,6 +3374,127 @@ p {
         sidebar.classList.toggle('minimized');
     }
 </script>
+
+<!-- NCERT Guru Popup -->
+<style>
+#ncertGuruPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 2px solid #4a90e2;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  padding: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
+  z-index: 9999;
+}
+
+#ncertGuruPopup img {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+#ncertGuruPopup h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+  font-weight: 600;
+}
+
+#ncertGuruPopup p {
+  margin: 6px 0 12px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#ncertGuruPopup button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#ncertGuruPopup button:hover {
+  background-color: #3a78c2;
+}
+
+#ncertGuruPopup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #bbb;
+  font-weight: bold;
+}
+
+#ncertGuruPopup .close-btn:hover {
+  color: #000;
+}
+
+@media (max-width: 480px) {
+  #ncertGuruPopup {
+    padding: 20px 18px;
+  }
+
+  #ncertGuruPopup h3 {
+    font-size: 16px;
+  }
+
+  #ncertGuruPopup p {
+    font-size: 13px;
+  }
+
+  #ncertGuruPopup button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+</style>
+<div id="ncertGuruPopup">
+<button class="close-btn" onclick="document.getElementById('ncertGuruPopup').style.display='none';">×</button>
+<div style="display: flex; align-items: center; gap: 12px;">
+<img alt="App Icon" src="ncertguru-icon.png"/>
+<div>
+<h3>NCERT Guru: AI Question Solver</h3>
+<p>Instantly solve CBSE questions with AI. Try now for free!</p>
+</div>
+</div>
+<div style="margin-top: 16px; text-align: center;">
+<a href="https://play.google.com/store/apps/details?id=com.technosub.ncertgurusmartaiquestionsolver" target="_blank">
+<button>Try Now</button>
+</a>
+</div>
+</div>
+<script>
+(function() {
+  const popupKey = "ncertGuruPopupLastShown";
+  const today = new Date().toISOString().split('T')[0];
+  const lastShown = localStorage.getItem(popupKey);
+
+  if (lastShown !== today) {
+    window.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("ncertGuruPopup").style.display = "block";
+      localStorage.setItem(popupKey, today);
+    });
+  }
+})();
+</script>
+<!-- /NCERT Guru Popup -->
 </body>
 </html>
 <!-- Cache served by breeze CACHE - Last modified: Sat, 16 Nov 2024 08:56:58 GMT -->

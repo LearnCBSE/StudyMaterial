@@ -83,11 +83,6 @@ p {
 }
 
 </style><style> #menu-top a { padding: 12px 8px; /* Slightly increased padding for better touch targets */ margin: 10px 0 2px 0; /* Adjusted spacing for a more balanced design */ display: inline-block; text-align: center; font-family: 'Arial', sans-serif; /* Modern sans-serif font for a clean, fresh look */ font-size: 1.25rem; /* Slightly smaller font size for a more compact design */ font-weight: 600; /* Bold font weight for emphasis */ line-height: 1.5; /* Increased line height for readability */ letter-spacing: 0.02em; /* Slight letter spacing for clarity */ border-radius: 6px; /* Rounded corners for a contemporary appearance */ text-decoration: none; /* No underlines for a clean design */ color: #007BFF; /* Bold, vibrant blue for text */ transition: all 0.3s ease; /* Smooth transition for all interactive states */ } #menu-top a:hover { background-color: transparent; /* No background on hover */ color: #0056b3; /* Slightly darker blue text on hover */ cursor: pointer; box-shadow: 0 6px 15px rgba(0, 91, 179, 0.3); /* Enhanced shadow effect */ transform: scale(1.05); /* Subtle scale effect on hover */ } .responsive-banner { max-width: 100%; height: auto; display: block; margin: 0 auto; } /* Desktop View */ @media (min-width: 1024px) { .responsive-banner { max-width: 28%; /* Adjusted for smaller desktop view */ height: auto; /* Maintain aspect ratio */ } } /* Mobile View */ @media (max-width: 1023px) { .responsive-banner { max-width: 90%; height: auto; /* Maintain aspect ratio */ } } </style><style> /* Updated CSS Rules Here */ /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; /* Modern, clean sans-serif font */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; /* border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); padding: 10px 20px; */ flex-wrap: wrap; /* Ensure the menu items wrap on smaller screens */ text-align: center; /* border-radius: 8px; Rounded corners for a sleek design */ text-decoration: none; /* Remove underline for a clean look */ color: #0056b3; /* Deep blue color for professional tone */ transition: all 0.4s ease; /* Smoother transition effects */ } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; /* Prevent text from wrapping */ } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.7); */ transform: none; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; /* Darker text color for contrast */ border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover (Font Enlargement) */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* For Multi-Level Submenus */ .sub-menu-duplicate .sub-menu-duplicate { left: 100%; top: 0; transform: translateY(-10px); background-color: #f1f1f1; border-left: 4px solid #646667; } /* Active State for Menu Items */ .menu-link-duplicate:active, .menu-link-duplicate:focus { background-color: #0056b3; color: #fff; outline: none; } /* Mobile-Specific Styles */ @media (max-width: 768px) { /* Display only the main menu on mobile devices */ .menu-duplicate { display: flex !important; /* Ensure the main menu is visible */ flex-direction: row; /* Change to horizontal layout */ justify-content: center; /* Center-align menu items horizontally */ background-color: #fff; /* Maintain background color */ } .menu-item-duplicate { margin: 0 10px; /* Add spacing between main menu items horizontally */ } .menu-link-duplicate { font-size: 16px; /* Adjust font size for readability on mobile */ padding: 10px 15px; /* Increase touch area */ } /* Hide all submenus */ .sub-menu-duplicate { display: none !important; /* Completely hide submenus */ visibility: hidden !important; opacity: 0 !important; transform: none !important; } } </style><style> .social-sidebar { position: fixed; top: 50%; left: 0; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; background-color: #f9f9f9; padding: 10px; border-radius: 0 5px 5px 0; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); z-index: 1000; transition: all 0.3s ease; } .social-sidebar.minimized { left: -50px; } #minimize-button { background-color: #007BFF; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-size: 16px; margin-bottom: 10px; transition: background-color 0.3s ease; } #minimize-button:hover { background-color: #0056b3; } .social-sidebar a { text-decoration: none; display: block; } .social-sidebar .social-icon { width: 30px; height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; } .social-sidebar .social-icon:hover { transform: scale(1.2); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } /* Responsive Design */ @media (max-width: 768px) { .social-sidebar { top: auto; bottom: 10px; left: 10px; flex-direction: row; gap: 15px; border-radius: 5px; padding: 8px; } .social-sidebar.minimized { left: -100%; } .social-sidebar .social-icon { width: 24px; height: 24px; } } </style>
-
-
-
-
-
 </head>
 <body class="post-template-default single single-post postid-167423 single-format-standard content-sidebar genesis-breadcrumbs-hidden genesis-footer-widgets-visible magazine-pro-blue primary-nav">
 <ul class="menu-duplicate" id="menu-top-duplicate">
@@ -851,7 +846,7 @@ p {
           <br/>
           अधिकतम अंक : 80
          </p>
-<p>                                                        </p>
+<p> </p>
 <div class="code-block code-block-2" style="margin: 8px 0; clear: both;">
 </div>
 <ul>
@@ -1091,7 +1086,7 @@ p {
          </p>
 <div class="code-block code-block-5" style="margin: 8px 0; clear: both;">
 </div>
-<p>                                                        </p>
+<p> </p>
 <p>
           (ग) यह घटनाक्रम सन् 1942 का है तथा उस समय तक देश में स्वतंत्रता प्राप्ति का बिगुल बज चुका था।
           <br/>
@@ -1129,7 +1124,7 @@ p {
           <br/>
           (ग) “ उनका बेटा बीमार है, इसकी खबर रखने की लोगों को कहाँ फुरसत । ” कथन से लोगों की संवेदनशीलता का बोध होता है। लेखक को कष्ट है कि गाँव में भी भगत जी के बेटे के बीमार होने की किसी को कोई खबर ही नहीं थी क्योंकि लोगों ने उस बात को महत्त्वपूर्ण ही नहीं समझा होगा। वे केवल अपने ही जीवन को महत्त्व देते थे। उन्हें दूसरों की कोई परवाह नहीं थी ।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
 <img alt="CBSE Class 10 Hindi A Question Paper 2015 (Delhi) with Solutions" height="15" loading="lazy" src="https://www.learncbse.in/wp-content/uploads/2022/07/Learn-CBSE.png" width="113"/>
 </p>
@@ -1181,7 +1176,7 @@ p {
           <br/>
           (क) लक्ष्मण के अनुसार शूरवीर युद्धभूमि में कर्म करके दिखाते हैं। उनके वीरतापूर्ण कार्य उनका परिचय देते हैं। वे स्वयं अपने मुख से अपने गुणों का बखान नहीं करते । शूरवीर धैर्यवान एवं क्षोभरहित रहते हैं। वीर योद्धा कभी अपशब्द नहीं बोलते। वे अपनी प्रशंसा के पुल नहीं बाँधते । शत्रु को अपने समक्ष देखकर शूरवीर केवल अपनी प्रशंसा नहीं करते वरन् उसको ललकार कर युद्ध के लिए तैयार रहने को कहते हैं । शूरवीरों की विजयगाथा समाज को प्रेरणा देती है। लोगों को केवल अपना क्रोध दिखाकर डराना शूरवीरों को शोभा नहीं देता ।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           (ग) मुरझाकर गिरती पत्तियाँ यह संदेश देती हैं कि जीवन में मिलन के क्षण सदैव नहीं रहते। मिलन के बाद बिछुड़ना प्रकृति का अमिट नियम है।
           <br/>
@@ -1246,22 +1241,22 @@ p {
           <br/>
           मनुष्य ने अपनी बुद्धि और प्रतिभा से जो नए साधन खोजे हैं, प्लास्टिक उनमें से एक पदार्थ है। यदि आज कहा जाए कि दुनिया ही प्लास्टिक से चल रही है तो अतिश्योक्ति नहीं होगी। यह पदार्थ वज़न में हल्का, टिकाऊ और रंगबिरंगा होने के गुण के कारण बहुत उपयोगी और लोकप्रिय हो गया है। यह बिजली का कुचालक है इसलिए इसका उपयोग प्रत्येक इलेक्ट्रॉनिक से चलने वाली वस्तुओं में किया जाता है। वाशिंग मशीन, फ्रिज, माइक्रोवेव, कंम्प्यूटर, फर्नीचर, पॉलीबैग से लेकर बच्चों के खिलौनों तक में प्लास्टिक का प्रयोग होता है। खाने-पीने के बरतनों से लेकर दुनिया के जितने भी सुख-सुविधा के लिए साधन बनाए गए हैं, सब में प्लास्टिक का उपयोग होता है। बिजली के तारों तथा उनको ढकने हेतु तथा स्विचबोर्ड आदि में भी प्लास्टिक का उपयोग होता है । अत्यंत हलका होने के कारण इसका रख-रखाव आसान है तथा एक स्थान से दूसरे स्थान पर ले जाना भी सुगम है। बाज़ार में सारी पैकिंग प्लास्टिक से ही होती है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           (ii) मेरे जीवन का आदर्श
           <br/>
           जीवन में प्रत्येक मनुष्य का कोई न कोई आदर्श अवश्य होता है। वह अपना व्यक्तित्व उस आदर्श व्यक्ति के समान बनाना चाहता है और उसके पदचिह्नों पर चलकर अपना जीवन उज्ज्वल बनाता है। मेरे जीवन का आदर्श ‘महात्मा गाँधी’ हैं। वे मेरी प्रेरणा हैं। महात्मा गाँधी को ‘आधुनिक युग का अवतार पुरुष’ कहा जा सकता है। उन्होंने सत्य और अहिंसा का सहारा लेकर भारत को स्वतंत्रता प्राप्त करने में योगदान दिया । अत्यधिक पढ़े-लिखे होने के बावजूद भी वे सादा तथा सात्विक जीवन व्यतीत करते थे। उनके विचार बहुत उच्च थे। उनका व्यवहार अत्यंत नम्र था। वे शान्ति तथा अहिंसा के उपासक थे। उन्होंने कभी अपने आराम एवं खुशी की परवाह न करके दूसरों के लिए अपने समस्त जीवन का त्याग कर दिया। गाँधीजी मानवीय गुणों से परिपूर्ण थे। उन्होंने कभी असत्य का साथ नहीं दिया और न ही कभी किसी वर्ग विशेष अथवा धर्म के साथ कोई पक्षपात किया ।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           (iii) व्यायाम और स्वास्थ्य कहा
           <br/>
           जाता है कि स्वस्थ शरीर में ही स्वस्थ मन का वास होता है। व्यक्ति का शरीर यदि स्वस्थ न हो तो जीवन उसके लिए भार बन जाता है। अच्छे स्वास्थ्य के लिए व्यायाम का अत्यधिक महत्त्व है। नियमित व्यायाम करने वाला व्यक्ति अनेक घातक रोगों से बचा रहता है। उसके शरीर में रोगों के प्रतिरोधी कीटाणु पर्याप्त मात्रा में होते हैं। व्यायाम करने वाले व्यक्ति का शरीर प्रायः सुदृढ़ होता है। उसकी पाचन शक्ति प्रबल होती है। व्यायाम के अनेक लाभ हैं। व्यायाम करने वाला व्यक्ति तन तथा मन दोनों ही दृष्टि से स्वस्थ रहता है। उस पर आलस्य तथा रोगों की मार नहीं पड़ती।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 13.
           <br/>
@@ -1299,7 +1294,7 @@ p {
           <br/>
           क०ख०ग०
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           आपकी छोटी बहन की दोस्ती कुछ ऐसी लड़कियों से है, जिनकी पढ़ने में बिल्कुल रुचि नहीं है। अपनी बहन को उसके लक्ष्य की याद दिलाते हुए ऐसी सहेलियों से बचने के लिए कहते हुए एक पत्र लिखिए |
           <br/>
@@ -1335,10 +1330,10 @@ p {
 <tbody>
 <tr>
 <td>
-<p style="text-align: center;">                                                        </p>
-<p style="text-align: center;">                                                        </p>
-<p style="text-align: center;">                                                        </p>
-<p style="text-align: center;">                                                        </p>
+<p style="text-align: center;"> </p>
+<p style="text-align: center;"> </p>
+<p style="text-align: center;"> </p>
+<p style="text-align: center;"> </p>
 </td>
 </tr>
 </tbody>
@@ -2628,6 +2623,127 @@ p {
         sidebar.classList.toggle('minimized');
     }
 </script>
+
+<!-- NCERT Guru Popup -->
+<style>
+#ncertGuruPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 2px solid #4a90e2;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  padding: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
+  z-index: 9999;
+}
+
+#ncertGuruPopup img {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+#ncertGuruPopup h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+  font-weight: 600;
+}
+
+#ncertGuruPopup p {
+  margin: 6px 0 12px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#ncertGuruPopup button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#ncertGuruPopup button:hover {
+  background-color: #3a78c2;
+}
+
+#ncertGuruPopup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #bbb;
+  font-weight: bold;
+}
+
+#ncertGuruPopup .close-btn:hover {
+  color: #000;
+}
+
+@media (max-width: 480px) {
+  #ncertGuruPopup {
+    padding: 20px 18px;
+  }
+
+  #ncertGuruPopup h3 {
+    font-size: 16px;
+  }
+
+  #ncertGuruPopup p {
+    font-size: 13px;
+  }
+
+  #ncertGuruPopup button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+</style>
+<div id="ncertGuruPopup">
+<button class="close-btn" onclick="document.getElementById('ncertGuruPopup').style.display='none';">×</button>
+<div style="display: flex; align-items: center; gap: 12px;">
+<img alt="App Icon" src="ncertguru-icon.png"/>
+<div>
+<h3>NCERT Guru: AI Question Solver</h3>
+<p>Instantly solve CBSE questions with AI. Try now for free!</p>
+</div>
+</div>
+<div style="margin-top: 16px; text-align: center;">
+<a href="https://play.google.com/store/apps/details?id=com.technosub.ncertgurusmartaiquestionsolver" target="_blank">
+<button>Try Now</button>
+</a>
+</div>
+</div>
+<script>
+(function() {
+  const popupKey = "ncertGuruPopupLastShown";
+  const today = new Date().toISOString().split('T')[0];
+  const lastShown = localStorage.getItem(popupKey);
+
+  if (lastShown !== today) {
+    window.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("ncertGuruPopup").style.display = "block";
+      localStorage.setItem(popupKey, today);
+    });
+  }
+})();
+</script>
+<!-- /NCERT Guru Popup -->
 </body>
 </html>
 <!-- Cache served by breeze CACHE - Last modified: Mon, 09 Dec 2024 11:49:42 GMT -->

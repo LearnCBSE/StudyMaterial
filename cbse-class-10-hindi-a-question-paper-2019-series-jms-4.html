@@ -83,11 +83,6 @@ p {
 }
 
 </style><style> #menu-top a { padding: 12px 8px; /* Slightly increased padding for better touch targets */ margin: 10px 0 2px 0; /* Adjusted spacing for a more balanced design */ display: inline-block; text-align: center; font-family: 'Arial', sans-serif; /* Modern sans-serif font for a clean, fresh look */ font-size: 1.25rem; /* Slightly smaller font size for a more compact design */ font-weight: 600; /* Bold font weight for emphasis */ line-height: 1.5; /* Increased line height for readability */ letter-spacing: 0.02em; /* Slight letter spacing for clarity */ border-radius: 6px; /* Rounded corners for a contemporary appearance */ text-decoration: none; /* No underlines for a clean design */ color: #007BFF; /* Bold, vibrant blue for text */ transition: all 0.3s ease; /* Smooth transition for all interactive states */ } #menu-top a:hover { background-color: transparent; /* No background on hover */ color: #0056b3; /* Slightly darker blue text on hover */ cursor: pointer; box-shadow: 0 6px 15px rgba(0, 91, 179, 0.3); /* Enhanced shadow effect */ transform: scale(1.05); /* Subtle scale effect on hover */ } .responsive-banner { max-width: 100%; height: auto; display: block; margin: 0 auto; } /* Desktop View */ @media (min-width: 1024px) { .responsive-banner { max-width: 28%; /* Adjusted for smaller desktop view */ height: auto; /* Maintain aspect ratio */ } } /* Mobile View */ @media (max-width: 1023px) { .responsive-banner { max-width: 90%; height: auto; /* Maintain aspect ratio */ } } </style><style> /* Updated CSS Rules Here */ /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; /* Modern, clean sans-serif font */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; /* border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); padding: 10px 20px; */ flex-wrap: wrap; /* Ensure the menu items wrap on smaller screens */ text-align: center; /* border-radius: 8px; Rounded corners for a sleek design */ text-decoration: none; /* Remove underline for a clean look */ color: #0056b3; /* Deep blue color for professional tone */ transition: all 0.4s ease; /* Smoother transition effects */ } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; /* Prevent text from wrapping */ } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.7); */ transform: none; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; /* Darker text color for contrast */ border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover (Font Enlargement) */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* For Multi-Level Submenus */ .sub-menu-duplicate .sub-menu-duplicate { left: 100%; top: 0; transform: translateY(-10px); background-color: #f1f1f1; border-left: 4px solid #646667; } /* Active State for Menu Items */ .menu-link-duplicate:active, .menu-link-duplicate:focus { background-color: #0056b3; color: #fff; outline: none; } /* Mobile-Specific Styles */ @media (max-width: 768px) { /* Display only the main menu on mobile devices */ .menu-duplicate { display: flex !important; /* Ensure the main menu is visible */ flex-direction: row; /* Change to horizontal layout */ justify-content: center; /* Center-align menu items horizontally */ background-color: #fff; /* Maintain background color */ } .menu-item-duplicate { margin: 0 10px; /* Add spacing between main menu items horizontally */ } .menu-link-duplicate { font-size: 16px; /* Adjust font size for readability on mobile */ padding: 10px 15px; /* Increase touch area */ } /* Hide all submenus */ .sub-menu-duplicate { display: none !important; /* Completely hide submenus */ visibility: hidden !important; opacity: 0 !important; transform: none !important; } } </style><style> .social-sidebar { position: fixed; top: 50%; left: 0; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; background-color: #f9f9f9; padding: 10px; border-radius: 0 5px 5px 0; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); z-index: 1000; transition: all 0.3s ease; } .social-sidebar.minimized { left: -50px; } #minimize-button { background-color: #007BFF; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-size: 16px; margin-bottom: 10px; transition: background-color 0.3s ease; } #minimize-button:hover { background-color: #0056b3; } .social-sidebar a { text-decoration: none; display: block; } .social-sidebar .social-icon { width: 30px; height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; } .social-sidebar .social-icon:hover { transform: scale(1.2); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } /* Responsive Design */ @media (max-width: 768px) { .social-sidebar { top: auto; bottom: 10px; left: 10px; flex-direction: row; gap: 15px; border-radius: 5px; padding: 8px; } .social-sidebar.minimized { left: -100%; } .social-sidebar .social-icon { width: 24px; height: 24px; } } </style>
-
-
-
-
-
 </head>
 <body class="post-template-default single single-post postid-167849 single-format-standard content-sidebar genesis-breadcrumbs-hidden genesis-footer-widgets-visible magazine-pro-blue primary-nav">
 <ul class="menu-duplicate" id="menu-top-duplicate">
@@ -851,7 +846,7 @@ p {
           <br/>
           अधिकतम अंक : 80
          </p>
-<p>                                                        </p>
+<p> </p>
 <div class="code-block code-block-2" style="margin: 8px 0; clear: both;">
 </div>
 <ul>
@@ -897,11 +892,11 @@ p {
 <div class="code-block code-block-3" style="margin: 8px 0; clear: both;">
 </div>
 <p>–                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <div class="code-block code-block-4" style="margin: 8px 0; clear: both;">
 </div>
-<p>                                                        </p>
+<p> </p>
 <p>
 <img alt="CBSE Class 10 Hindi A Question Paper 2019 (Series: JMS/4) with Solutions" height="15" loading="lazy" src="https://www.learncbse.in/wp-content/uploads/2022/07/Learn-CBSE.png" width="113"/>
 </p>
@@ -952,13 +947,13 @@ p {
           <br/>
           (क) कवि ने प्राकृतिक संसाधनों के नष्ट होने के बाद हुए दुष्परिणामों को अँधेरा कहकर संबोधित किया है। कवि मनुष्य को अँधेरों की तरफ बढ़ने से इसलिए रोक रहा है ताकि उसका जीवन नष्ट न हो और वह खुशहाल व स्वस्थ रह सकें।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <div class="code-block code-block-5" style="margin: 8px 0; clear: both;">
 </div>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           लहरों में हलचल होती है……..
           <br/>
@@ -1005,9 +1000,9 @@ p {
           <br/>
           यहाँ जीवन के उतार-चढ़ाव को लहरों की हलचल के रूप में परिभाषित किया गया है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p style="text-align: center;">
 <strong>
            खण्ड ‘ख’
@@ -1256,9 +1251,9 @@ p {
           <br/>
           4. बबूल से शेफालिका के फूल झड़ने लगे हों ।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 11.
           <br/>
@@ -1268,7 +1263,7 @@ p {
           <br/>
           किसी भी दृश्य या घटना को देखकर या सुनकर मन के भीतर जो अकुलाहट और छटपटाहट होती है, वही भीतरी विवशता है। जब तक कवि या लेखक उसे शब्दों के माध्यम से अभिव्यक्त नहीं कर लेता तब तक उसे शांति नहीं मिलती। लेखक ने इसे स्पष्ट करने के लिए हिरोशिमा पर लिखी कविता की चर्चा की।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           प्रकृति को संरक्षित रखने में आम नागरिक की भूमिका को ‘साना-साना हाथ जोड़ि’ पाठ के आधार पर स्पष्ट कीजिए ।
           <br/>
@@ -1316,13 +1311,13 @@ p {
           <br/>
           मानव जीवन का पर्वों से अत्यंत गहरा संबंध है। विश्व के प्रत्येक देश में प्रत्येक धर्म के अनुयायियों द्वारा अपने – अपने पर्वों को मनाया जाता है। पर्व से तात्पर्य किसी ऐतिहासिक, धार्मिक, सांस्कृतिक अथवा राष्ट्रीय घटना के घटित हुए दिन को सबके साथ आनंदपूर्वक मनाना है। भारत को पर्वों का देश कहा जाए तो यह अतिश्योक्ति नहीं होगी। हमारे देश में वर्ष भर किसी न किसी राज्य में कोई न कोई पर्व पूरे हर्षोल्लास से मनाया जाता है। पर्व हमारे भावनात्मक विकास में सदैव सहभागी रहे हैं। पर्व मानव में एक नवीन ऊर्जा संचरित करते हैं। पर्व अनेक प्रकार के होते हैं – सामाजिक, राष्ट्रीय, सांस्कृतिक, धार्मिक, ऋतु संबंधी अथवा विशिष्ट लोगों से संबंधित। भारत के विभिन्न प्रांतों में विभिन्न पर्व मनाए जाते हैं। दीपावली, दशहरा, जन्माष्टमी, रामनवमी, शिवरात्रि, बुद्ध पूर्णिमा आदि पर्व भारत के मुख्य त्योहार हैं। दुर्गापूजा, गणेश चतुर्थी, पोंगल, बीहू, बैसाखी आदि प्रांतीय पर्व हैं। गणतंत्र दिवस, स्वतंत्रता दिवस, महात्मा गांधी जन्मदिवस आदि संपूर्ण भारत में मनाए जाते हैं। इन्द्र पूजा तथा गोवर्धन पूजा जैसे पर्व अत्यंत प्राचीन हैं, इनका उल्लेख श्रीमद्भागवत में भी मिलता है। वर्तमान समय में पर्वों के स्वरूप में बहुत परिवर्तन आ चुका है। उदाहरणस्वरूप दीपावली पहले अत्यंत सादगीपूर्ण एवं परंपरागत रूप से मनाई जाती थी। तेल के दीए जलाकर रोशनी के इस पर्व का स्वागत किया जाता था ।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           (ग) क्रिकेट मैच का आँखों देखा वर्णन
           <br/>
           मुझे 20-20 विश्वकप क्रिकेट के पहले आयोजन को देखने का अवसर प्राप्त हुआ था । विश्व की कुल 12 टीमों में से चार सर्वश्रेष्ठ टीमें ऑस्ट्रेलिया, पाकिस्तान, दक्षिण अफ्रीका एवं भारत सेमीफाइनल में पहुँची थीं। आश्चर्यजनक ढंग से पाकिस्तान ने ऑस्ट्रेलिया को और भारत ने दक्षिण अफ्रीका को सेमीफाइनल में हरा दिया। विश्व कप का यह फाइनल मैच दक्षिण अफ्रीका के वांडरर्स स्टेडियम में 24 सितम्बर, 2007 की शाम को आरंभ हुआ। टीमों के साथ-साथ देशवासियों ने भी मैच देखने की तैयारी पहले से कर ली थी। स्टेडियम भी खचाखच भरा था। मैच की शुरुआत हुई। भारत ने टॉस जीतकर पहले बल्लेबाजी करने का फैसला किया। गौतम गंभीर और युसुफ पठान ने पारी की शुरुआत की। तय रणनीति से खेलते हुए भारत ने अपने 20 ओवर में स्कोर 157 रन तक पहुँचाया । तालियों की गूँज से पूरा स्टेडियम गूँज रहा था। दर्शक ज़ोर-ज़ोर से चिल्लाकर अपनी-अपनी टीमों का हौसला बढ़ा रहे थे।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
 <img alt="CBSE Class 10 Hindi A Question Paper 2019 (Series: JMS/4) with Solutions" height="15" loading="lazy" src="https://www.learncbse.in/wp-content/uploads/2022/07/Learn-CBSE.png" width="113"/>
 </p>
@@ -1349,7 +1344,7 @@ p {
           <br/>
           क० ख०ग०
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           आजकल खाद्य पदार्थों में रासायनिक रंग, दवाइयाँ, मिलावट आदि का भरपूर प्रयोग किया जा रहा है। इन हानिकारक पदार्थों से मुक्त खाद्यों की अधिक उपलब्धता सुनिश्चित करने के लिए खाद्य आपूर्ति मंत्री को पत्र लिखिए।
           <br/>
@@ -1413,7 +1408,7 @@ p {
 </tr>
 </tbody>
 </table>
-<p>                                                        </p>
+<p> </p>
 <p>
           जैविक पदार्थों के कूड़े से आपने ऐसा रसायन तैयार किया है जिसका उपयोग घरेलू साफ़-सफ़ाई में काम आने वाले ज़हरीले रसायनों के स्थान पर हो सकता है। इसके प्रचार और बिक्री के लिए लगभग 20-25 शब्दों में एक विज्ञापन तैयार कीजिए ।
           <br/>
@@ -2727,6 +2722,127 @@ p {
         sidebar.classList.toggle('minimized');
     }
 </script>
+
+<!-- NCERT Guru Popup -->
+<style>
+#ncertGuruPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 2px solid #4a90e2;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  padding: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
+  z-index: 9999;
+}
+
+#ncertGuruPopup img {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+#ncertGuruPopup h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+  font-weight: 600;
+}
+
+#ncertGuruPopup p {
+  margin: 6px 0 12px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#ncertGuruPopup button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#ncertGuruPopup button:hover {
+  background-color: #3a78c2;
+}
+
+#ncertGuruPopup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #bbb;
+  font-weight: bold;
+}
+
+#ncertGuruPopup .close-btn:hover {
+  color: #000;
+}
+
+@media (max-width: 480px) {
+  #ncertGuruPopup {
+    padding: 20px 18px;
+  }
+
+  #ncertGuruPopup h3 {
+    font-size: 16px;
+  }
+
+  #ncertGuruPopup p {
+    font-size: 13px;
+  }
+
+  #ncertGuruPopup button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+</style>
+<div id="ncertGuruPopup">
+<button class="close-btn" onclick="document.getElementById('ncertGuruPopup').style.display='none';">×</button>
+<div style="display: flex; align-items: center; gap: 12px;">
+<img alt="App Icon" src="ncertguru-icon.png"/>
+<div>
+<h3>NCERT Guru: AI Question Solver</h3>
+<p>Instantly solve CBSE questions with AI. Try now for free!</p>
+</div>
+</div>
+<div style="margin-top: 16px; text-align: center;">
+<a href="https://play.google.com/store/apps/details?id=com.technosub.ncertgurusmartaiquestionsolver" target="_blank">
+<button>Try Now</button>
+</a>
+</div>
+</div>
+<script>
+(function() {
+  const popupKey = "ncertGuruPopupLastShown";
+  const today = new Date().toISOString().split('T')[0];
+  const lastShown = localStorage.getItem(popupKey);
+
+  if (lastShown !== today) {
+    window.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("ncertGuruPopup").style.display = "block";
+      localStorage.setItem(popupKey, today);
+    });
+  }
+})();
+</script>
+<!-- /NCERT Guru Popup -->
 </body>
 </html>
 <!-- Cache served by breeze CACHE - Last modified: Sat, 07 Dec 2024 21:34:27 GMT -->

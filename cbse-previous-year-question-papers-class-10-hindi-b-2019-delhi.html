@@ -82,11 +82,6 @@ p {
 }
 
 </style><style> #menu-top a { padding: 12px 8px; /* Slightly increased padding for better touch targets */ margin: 10px 0 2px 0; /* Adjusted spacing for a more balanced design */ display: inline-block; text-align: center; font-family: 'Arial', sans-serif; /* Modern sans-serif font for a clean, fresh look */ font-size: 1.25rem; /* Slightly smaller font size for a more compact design */ font-weight: 600; /* Bold font weight for emphasis */ line-height: 1.5; /* Increased line height for readability */ letter-spacing: 0.02em; /* Slight letter spacing for clarity */ border-radius: 6px; /* Rounded corners for a contemporary appearance */ text-decoration: none; /* No underlines for a clean design */ color: #007BFF; /* Bold, vibrant blue for text */ transition: all 0.3s ease; /* Smooth transition for all interactive states */ } #menu-top a:hover { background-color: transparent; /* No background on hover */ color: #0056b3; /* Slightly darker blue text on hover */ cursor: pointer; box-shadow: 0 6px 15px rgba(0, 91, 179, 0.3); /* Enhanced shadow effect */ transform: scale(1.05); /* Subtle scale effect on hover */ } .responsive-banner { max-width: 100%; height: auto; display: block; margin: 0 auto; } /* Desktop View */ @media (min-width: 1024px) { .responsive-banner { max-width: 28%; /* Adjusted for smaller desktop view */ height: auto; /* Maintain aspect ratio */ } } /* Mobile View */ @media (max-width: 1023px) { .responsive-banner { max-width: 90%; height: auto; /* Maintain aspect ratio */ } } </style><style> /* Updated CSS Rules Here */ /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; /* Modern, clean sans-serif font */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; /* border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); padding: 10px 20px; */ flex-wrap: wrap; /* Ensure the menu items wrap on smaller screens */ text-align: center; /* border-radius: 8px; Rounded corners for a sleek design */ text-decoration: none; /* Remove underline for a clean look */ color: #0056b3; /* Deep blue color for professional tone */ transition: all 0.4s ease; /* Smoother transition effects */ } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; /* Prevent text from wrapping */ } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.7); */ transform: none; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; /* Darker text color for contrast */ border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover (Font Enlargement) */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* For Multi-Level Submenus */ .sub-menu-duplicate .sub-menu-duplicate { left: 100%; top: 0; transform: translateY(-10px); background-color: #f1f1f1; border-left: 4px solid #646667; } /* Active State for Menu Items */ .menu-link-duplicate:active, .menu-link-duplicate:focus { background-color: #0056b3; color: #fff; outline: none; } /* Mobile-Specific Styles */ @media (max-width: 768px) { /* Display only the main menu on mobile devices */ .menu-duplicate { display: flex !important; /* Ensure the main menu is visible */ flex-direction: row; /* Change to horizontal layout */ justify-content: center; /* Center-align menu items horizontally */ background-color: #fff; /* Maintain background color */ } .menu-item-duplicate { margin: 0 10px; /* Add spacing between main menu items horizontally */ } .menu-link-duplicate { font-size: 16px; /* Adjust font size for readability on mobile */ padding: 10px 15px; /* Increase touch area */ } /* Hide all submenus */ .sub-menu-duplicate { display: none !important; /* Completely hide submenus */ visibility: hidden !important; opacity: 0 !important; transform: none !important; } } </style><style> .social-sidebar { position: fixed; top: 50%; left: 0; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; background-color: #f9f9f9; padding: 10px; border-radius: 0 5px 5px 0; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); z-index: 1000; transition: all 0.3s ease; } .social-sidebar.minimized { left: -50px; } #minimize-button { background-color: #007BFF; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-size: 16px; margin-bottom: 10px; transition: background-color 0.3s ease; } #minimize-button:hover { background-color: #0056b3; } .social-sidebar a { text-decoration: none; display: block; } .social-sidebar .social-icon { width: 30px; height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; } .social-sidebar .social-icon:hover { transform: scale(1.2); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } /* Responsive Design */ @media (max-width: 768px) { .social-sidebar { top: auto; bottom: 10px; left: 10px; flex-direction: row; gap: 15px; border-radius: 5px; padding: 8px; } .social-sidebar.minimized { left: -100%; } .social-sidebar .social-icon { width: 24px; height: 24px; } } </style>
-
-
-
-
-
 </head>
 <body class="post-template-default single single-post postid-83666 single-format-standard content-sidebar genesis-breadcrumbs-hidden genesis-footer-widgets-visible magazine-pro-blue primary-nav">
 <ul class="menu-duplicate" id="menu-top-duplicate">
@@ -858,7 +853,7 @@ p {
          </p>
 <div class="code-block code-block-2" style="margin: 8px 0; clear: both;">
 </div>
-<p>                                                        </p>
+<p> </p>
 <p>
           प्रत्येक मनुष्य में एक विशेष कार्य को अच्छी प्रकार करने की शक्ति होती है। वह बड़ी दृढ़ और उत्कृष्ट होती है। वह देर तक नहीं छिपती। उसी के अनुकूल व्यवसाय चुनने से ही सफलता मिलती है। जीवन में यदि आपने सही कार्यक्षेत्र चुन लिया तो समझ लीजिए कि बहुत बड़ा काम कर लिया।
           <br/>
@@ -883,9 +878,9 @@ p {
          </p>
 <div class="code-block code-block-3" style="margin: 8px 0; clear: both;">
 </div>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <div class="code-block code-block-4" style="margin: 8px 0; clear: both;">
 </div>
 <p>
@@ -927,7 +922,7 @@ p {
           <br/>
           (ग) किसी देश के नागरिक कर्मवीर हों तो देश को क्या लाभ होता है?
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           हम जब होंगे बड़े, घृणा का नाम मिटाकर लेंगे दम।
           <br/>
@@ -961,18 +956,18 @@ p {
           <br/>
           (क) कर्मवीरों की पहली विशेषता होती है कि वे स्थान अर्थात् सुविधाओं का ध्यान नहीं रखते। उन्हें जो भी करना होता है उसे किसी भी परिस्थिति में संभव कर दिखाते हैं। दूसरी विशेषता होती है कि उनके समान यदि पर्वताकार समस्या भी हो तो वे उसे धूल के समान उड़ा देते हैं। समस्याओं को देखकर वे घबराते नहीं अपितु उनमें नया उत्साह आ जाता है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <div class="code-block code-block-5" style="margin: 8px 0; clear: both;">
 </div>
-<p>                                                        </p>
+<p> </p>
 <p>
           (क) कविता में बच्चा अपने बड़े होने पर देशहित में बहुत से परिवर्तन करने का इच्छुक है। जैसे वह सबसे पहले देश से जात-पात, अमीरी-गरीबी और आपसी घृणा को मिटा देना चाहता है। दूसरी वह देश से हिंसा, जमाखोरी
           <br/>
           और भ्रष्टाचार को समाप्त कर देना चाहता है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p style="text-align: center;">
 <strong>
            खण्ड ‘ख’
@@ -993,8 +988,8 @@ p {
           <br/>
           उदाहरण—लड़का, खेलता आदि स्वतंत्र शब्द हैं। लड़के गेंद से खेलते हैं। प्रस्तुत वाक्य में प्रयुक्त सभी शब्द पद हैं।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 4.
           <br/>
@@ -1123,9 +1118,9 @@ p {
           <br/>
           बढ़ने लग हैं।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 9.
           <br/>
@@ -1139,8 +1134,8 @@ p {
           <br/>
           यथार्थ में परंपराएँ या मान्यताएँ जब बंधन बन बोझ लगने लगे तब उनका टूट जाना ही अच्छा है क्योंकि तभी हम समय के साथ आगे बढ़ पाएँगे। इस कहानी के सन्दर्भ में देखा जाए तो तताँरा-वामीरो का विवाह एक गलत परंपरा या मान्यता जो कहती है कि कोई विवाह गाँव से बाहर के युवक के साथ नहीं हो सकता, के कारण नहीं हो सकता था जिसके कारण उन्हें जान देनी पड़ती है। इस तरह की परंपराएँ या मान्यताएँ किसी का भला करने की जगह नुकसान करती हैं बंधनों में जकड़कर व्यक्ति और समाज का विकास, सुख-आनंद, अभिव्यक्ति आदि रूक जाती है। ‘तताँरा-वामीरों’ ने इन्हें तोड़ने के लिए अपने प्राणों की आहुति दे दी।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 10.
           <br/>
@@ -1158,10 +1153,10 @@ p {
           <br/>
           (क) मीराबाई श्रीकृष्ण से अपनी पीड़ा हरने की प्रार्थना करती हुई कहती हैं- हे प्रभु! जिस प्रकार आपने कई भक्तों को अनेक प्रकार से सहायता कर उनके दुख को दूर किया है उसी प्रकार आप मेरी भी पीड़ा को दूर कर मुझे सांसारिक कष्टों से दूर करें वह कहती हैं कि आपने द्रौपदी को वस्त्र बढ़ाकर भरी सभा में उसकी लाज रखी। नरसिंह का रूप धारण करके हिरण्यकश्यप को मार कर प्रहलाद को बचाया था। मगरमच्छ ने जब हाथी के पैर को अपने मुँह में दबोच लिया तो उसे बचाया और उसकी पीड़ा को दूर किया था। उसी प्रकार मेरी भी सभी प्रकार की पीड़ाओं और बाधाओं को आप दूर करें।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 11.
           <br/>
@@ -1175,8 +1170,8 @@ p {
           <br/>
           ‘मनुष्यता’ कविता में कवि ने सबको एक साथ चलने की प्रेरणा इसलिए दी है ताकि समाज में बंधुत्व, एकता, सौहार्द्र और आपसी हेलमेल का भाव कायम रहे। सभी एक पिता परमेश्वर की संतान हैं इसलिए सभी को प्रेम भाव से रहना चाहिए, सहायता करनी चाहिए और एक होकर चलना चाहिए। इससे हमारे बीच ईष्र्या-द्वेष के भाव का अंत हो जाएगा। मैत्री भावे से आपस में मिलकर रहने से सभी कार्य सफल होते हैं, ऊँच-नीच, वर्ग भेद नहीं रहता और समाज का कल्याण होता है। समर्थ भाव भी यही है कि हम सबकी भलाई करते हुए, सबको साथ लेकर चलते हुए अपनी कल्याण करें। बंधुत्व के नाते हमें सभी को साथ लेकर चलना चाहिए क्योंकि समाज का सही मायने में विकास ओर लाभ तभी संभव है जब सबका विकास हो।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 12.
           <br/>
@@ -1190,10 +1185,10 @@ p {
           <br/>
           हरिहर काका के साथ उनके भाइयों तथा ठाकुरबाड़ी के महंत ने समस्त नैतिक मूल्यों को ठुकराकर, सभी प्रकार की मर्यादाओं को तार-तार कर धन और जमीन की लिप्सा से ग्रसित होकर अमानवीय व्यवहार किया। जमीन नाम न करने पर भाइयों द्वारा हरिहर काका को बेरहमी से पीटा गया तथा ठाकुरबाड़ी के महंत द्वारा अपने पद की गरिमा को ध्वस्त करते हुए हरिहर काका का अपहरण करवाया गया।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p style="text-align: center;">
 <strong>
            खण्ड ‘घ’
@@ -1217,7 +1212,7 @@ p {
            हमारा दायित्व
           </li>
 </ul>
-<p>                                                        </p>
+<p> </p>
 <ul>
 <li>
            इंटरनेट का तात्पर्य
@@ -1229,7 +1224,7 @@ p {
            लाभ तथा हानि
           </li>
 </ul>
-<p>                                                        </p>
+<p> </p>
 <ul>
 <li>
            आवश्यकताओं में वृद्धि
@@ -1248,19 +1243,19 @@ p {
           <br/>
           वर्तमान वैज्ञानिक युग में जहाँ विकास के नाम पर धरती का दोहन किया जा रहा है तथा पर्यावरण को प्रतिपल ध्वस्त किया जा रहा है वहाँ वृक्षारोपण का महत्त्व स्वतः सिद्ध हो जाता है। वृक्ष प्रकृति की अनमोल संपदा है। मनुष्य एवं वृक्ष का अटूट सम्बन्ध है। वृक्षों से प्राप्त लकड़ी विभिन्न रूपों में मनुष्य के काम आती है। वृक्षों से हमें फल-फूल, जड़ी-बूटियाँ, औषधियाँ आदि प्राप्त होती हैं। शुद्ध वायु एवं तपती दोपहर में छाया वृक्षों से ही प्राप्त होती है। वृक्ष वर्षा में सहायक होते हैं एवं भूमि को उर्वरक बनाते हैं। वे प्रदूषण को समाप्त कर हमें ऑक्सीजन प्रदान करते हैं। वृक्ष बाढ़-सूखा एवं मिट्टी के कटान आदि प्राकृतिक आपदाओं से हमारी रक्षा करते हैं हमारी संस्कृति में वृक्षों को देवता मानकर उनकी पूजा की जाती है।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           इंटरनेट की दुनिया
           <br/>
           आज का विश्व विज्ञान की नींव पर टिका है। मनुष्य ने विज्ञान के द्वारा अनेक शक्तियाँ सुख-सुविधाएँ तथा चमत्कारी साधनों का आविष्कार किया है जिसमें इंटरनेट अत्यधिक महत्त्वपूर्ण और अद्भुत है। इंटरनेट पूरे विश्व के सभी कंप्यूटर को जोड़ने का काम करता है। इंटरनेट समस्त सूचनाओं का विश्वसनीय और त्वरित साधन बन चुका है। यह ऐसा इलेक्ट्रॉनिक साधन है जिसने अपनी अनगिनत विशेषताओं के बल पर जीवन के प्रत्येक क्षेत्र में दस्तक दी है। विज्ञान और इंजीनियरिंग के क्षेत्र में गणित और चिकित्सा की जटिल तथा विस्तृत सूचनाएँ एकत्र करने में इंटरनेट का व्यापक रूप से प्रयोग हो रहा है। रेलवे स्टेशनों, हवाई अड्डों पर इंटरनेट का प्रयोग आरक्षण आदि के लिए किया जा रहा है। बैकों, लेखा विभागों में इंटरनेट चमत्कारी भूमिका निभा रहा है। आय-व्यय का ब्योरा, अनगिनत खातों का हिसाब इंटरनेट के माध्यम से ही संबंधित व्यक्ति तक पहुँचाया जा रहा है।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           आधुनिक जीवन
           <br/>
           नगरीय सभ्यता से आधुनिक जीवन का प्रारंभ हुआ है और औद्योगिक क्रांति से इसमें पंख लग गये हैं। धीरे-धीरे आधुनिक जीवन में पारंपरिक रूढ़ियाँ हो गई और सामाजिक स्तर पर रहन-सहन के ढंग में भारी परिवर्तन आया। आधुनिकता का प्रभाव इतना सशक्त है कि वह व्यक्ति के विचारप्रवाह में बाधा डालती है। आधुनिकता से मनुष्य में असंतुष्टि उत्पन्न होती है। अपनी भौतिक, राजनैतिक, आर्थिक आवश्यकताओं के अतिरिक्त विश्व के कोई भी पदार्थ उसे आकर्षित नहीं करते हैं। दिवा-रात्रि वह वैयक्तिक असीमित आवश्यकताओं की पूर्ति में व्यग्र रहता है। वह स्वयं को विशाल आधुनिक सभ्यता का प्रामाणिक अंग सिद्ध करने के लिए आजीवन असफल प्रयास करता रहता है। वह इस कल्पना में डूबा रहता है कि वह सभ्यता का संचालक है, लेकिन इसकी अनिवार्यताओं से दूर भागने में असमर्थ है। आधुनिक युग की आवश्यकताएँ अपने उग्रतम रूप में पीड़ादायक और विडंबनापूर्ण हैं।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           आधुनिक जीवन की प्रक्रिया में महानगरों के जीवन में यांत्रिकता आ गई है, यहाँ की आर्थिक संपन्नता लोगों को शहरों की ओर भागने को प्रवृत्त करती है। आधुनिक जीवन को सीधा प्रभाव मनुष्य के जीवन पर पड़ा है इससे उसका जीवन और अधिक एकाकी और अशांत हो गया है। पहले मंदिर, मस्जिद, गुरुद्वारे, चर्च, नगर, परिवार, समाज आदि सभी एकता के सूत्र में बंधे हुए थे। आज सब ओर आपाधापी और मैं का भाव भरा हुआ है। इन परिस्थितियों में मानव अपनी परंपरा का त्याग किए बिना ही आधुनिक जीवन शैली को
           <br/>
@@ -1295,7 +1290,7 @@ p {
           <br/>
           मैं अपने इस पत्र के द्वारा आपका ध्यान अपने क्षेत्र के लोगों के लिए एक पुस्तकालय की व्यवस्था की ओर आकर्षित करना चाहता हूँ। वर्तमान तकनीकी युग में पुस्तकों के अध्ययन के प्रति लोगों का लगाव कम होता जा रहा है। परिणामतः उनका समय मोबाइल या अन्य व्यर्थ के विवादों में व्यतीत हो रहा है। लोगों की रचनात्मक शक्ति क्षीण होती जा रही है।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           आपकी इस व्यवस्था के लिए हम सभी क्षेत्रवासी आपके आजीवन आभारी रहेंगे।
           <br/>
@@ -1305,7 +1300,7 @@ p {
           <br/>
           दिल्ली।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           सेवा में,
           <br/>
@@ -1321,7 +1316,7 @@ p {
           <br/>
           सविनय निवेदन है कि मैं कक्षा नौ ‘अ’ का छात्र हैं। पिछली कक्षा में मुझसे अनजाने में अपने कक्षा के सहपाठियों के साथ अभद्र व्यवहार हो गया। मेरे कुछ मित्र एक-दूसरे के ऊपर पानी डाल रहे थे। मैं भी उन सबके साथ इस खेल में सम्मिलित था। बाद में मुझे ज्ञात हुआ कि मेरे इस व्यवहार से आपको बहुत कष्ट हुआ है।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           आपसे प्रार्थना है कि आप मेरे इस अभद्र व्यवहार को क्षमा कर मुझे अनुगृहित करेंगे।
           <br/>
@@ -1360,7 +1355,7 @@ p {
           <br/>
           दिनांक 02.08.20XX
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           अ. ब. स. विद्यालय, अ. ब. स. नगर
           <br/>
@@ -1403,7 +1398,7 @@ p {
           <br/>
           दूसरा मित्र— यह तो अच्छी बात है। चलो, साथ मिलकर हम भी प्रयास करते हैं तथा दिल्ली सरकार से आग्रह करेंगे कि वह भी कुछ सहयोग करें। पहला मित्र-धन्यवाद !
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           पहली महिला- सखी, दिल्ली अब महिलाओं के लिए सुरक्षित नहीं रही।
           <br/>
@@ -1466,7 +1461,7 @@ p {
           <br/>
           जनहित में प्रसारित।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           बिक्री के लिए उपलब्ध
           <br/>
@@ -1528,8 +1523,8 @@ p {
           <br/>
           लेखक ने डायरी में लिखा था, “आज जो बात थी वह निराली थी।”
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 11.
           <br/>
@@ -1547,8 +1542,8 @@ p {
           <br/>
           (क) ‘कैफी आजमी’ द्वारा रचित यह गीत सन 1962 के भारत-चीन युद्ध की ऐतिहासिक पृष्ठभूमि पर लिखा गया है। चीन ने तिब्बत की ओर से भारत पर आक्रमण किया था और भारतीय वीरों ने इस आक्रमण का सामना वीरता से किया। देश के सम्मान और रक्षा के लिए सैनिक हर चुनौतियों को स्वीकार करके अपने जीवन का बलिदान करने के लिए तैयार रहते हैं। अपनी अंतिम साँस तक देश के मान की रक्षा कर उसे शत्रुओं से बचाते हैं। कवि इस गीत के द्वारा देशभक्ति की भावना को विकसित कर समस्त देशवासियों को जागरूक करना चाहता है। उत्तर हथियारों से लैस सेना तब तक कारगर नहीं होती जब तक कि उनमें अदम्य साहस और उत्साह न हो। यह गीत उसी उत्साह और अदम्य साहस को बनाए रखने का काम करता है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 12.
           <br/>
@@ -1562,8 +1557,8 @@ p {
           <br/>
           एक पत्रकार के रूप में हरिहर काका के बारे में अपने समाचार पत्र को सूचित किया जाएगा कि धन की लालसा में उसके सगे संबंधी उसे परेशान कर रहे हैं। अपने समाचार पत्र में समाज की शीर्ष संस्था के पुरोधा महंत के चरित्र के बारे में विस्तार विवरण देना चाहूँगा। धन केंद्रित मानसिकता से समाज को बचाने के लिए लोगों को अपनत्व व सौहार्द्र से भरे सामाजिक जीवन जीने के लाभ से परिचित करवाना होगा। इसके लिए नुक्कड़ नाटक के आयोजन तथा टी.वी. आदि पर घर-घर की कलह आदि को दिखाने के स्थान पर प्रेम, सौहार्द व भाईचारे की भावना से ओतप्रोत धारावाहिकों का प्रसारण किया जाना चाहिए लोग जागरूक हों और अपनत्व के महत्व को समझते हुए अपने उत्तरदायित्व का निर्वहन कर सकें।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 14.
           <br/>
@@ -1603,7 +1598,7 @@ p {
           <br/>
           अ. ब. स. नगर
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           अ. ब. स. नगर
           <br/>
@@ -1617,7 +1612,7 @@ p {
           <br/>
           मैं कुशल हूँ, विश्वास है कि आप भी परिवार के सभी सदस्यों के साथ स्वस्थ होंगे।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           आपको विश्वास दिलाता हूँ कि मैं मेहनत करता रहूँगा और सर्वोत्तम स्थान पर स्थित रहूँगा।
           <br/>
@@ -1671,8 +1666,8 @@ p {
           <br/>
           पुलिस कमिश्नर का नोटिस था कि कोई सभा नहीं हो सकती और यदि सभा में भाग लेंगे तो दोषी समझे जाएँगे। इधर कौंसिल का नोटिस था कि मोनुमेंट के नीचे चार बजकर चौबीस मिनट पर झंडा फहराया जाएगा तथा स्वतंत्रता की प्रतिज्ञा पढ़ी जाएगी। खुला चैलेंज देकर ऐसी सभा पहले नहीं की गई थी और यह सभा तो कहना चाहिए कि खुली लड़ाई थी। चार बजकर दस मिनट पर सुभाष बाबू जुलूस लेकर आए। उनको चौरंगी पर ही रोका गया और पुलिस ने लाठियाँ चलानी शुरू कर र्दी। पुलिस अत्यंत बर्बर हो चुकी थी। पर सुभाष बाबू ज्योतिर्मय गांगुली के साथ आगे बढ़ते रहे। सुभाष बाबू को पकड़ लिया गया और गाड़ी में बैठाकर लालबाजार लॉकअप में भेज दिया गया। इस प्रकार पुलिस ने आंदोलनकारियों के साथ अत्यंर क्रूर व्यवहार किया।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 11.
           <br/>
@@ -1686,8 +1681,8 @@ p {
           <br/>
           ‘मनुष्यता’ कविता में कवि ने मनुष्यता के अनेक गुणों की चर्चा की है ताकि समाज में बंधुत्व, एकता सौहार्द और आपसी हेलमेल का भाव कायम रहे। सभी एक पिता परमेश्वर की संतान हैं इसलिए सभी को प्रेम भाव से रहना चाहिए, सहायता करनी चाहिए और एक होकर चलना चाहिए। इससे हमारे बीच ईष्र्या-द्वेष के भाव का अंत हो जाएगा। मैत्री भाव से आपस में मिलकर रहने से सभी कार्य सफल होते हैं, ऊँच-नीच, वर्ग भेद नहीं रहता और समाज का कल्याण होता है। कवि ने मानवता के गुणों को देदीप्यमान रखने वाले अनेक ऋषियों और मुनियों की चर्चा, कविता में करी है। मनुष्यता का सबसे बड़ा गुण यही है कि हमें सबकी भलाई करते हुए, सबको साथ लेकर चलते हुए ही अपनी कल्याण करना चाहिए। समाज का सही मायने में विकास ओर लाभ तभी संभव है जब सबका विकास हो।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 12.
           <br/>
@@ -1701,8 +1696,8 @@ p {
           <br/>
           लेखक को स्कूल जाना बिलकुल भी अच्छा नहीं लगता था। लेकिन जब पी. टी. साहब उन्हें परेड में शाबाशी देते तो उन्हें बहुत अच्छा लगता था। स्काउट की परेड में जब उन्हें धुले हुए साफ कपड़े और गले में दोरंगी रूमाल के साथ परेड करने को मिलता तो भी उन्हें मजा आता था। परेड के दौरान उनके बूटों की ठक-ठक उनके कानों में मधुर संगीत की तरह लगती थी। इन सब कारणों से लेखक और उनके साथी स्कूल जाते थे। आज के स्कूल प्राचीन काल के स्कूल से भिन्न हैं। यहाँ शारीरिक दंड देना वर्जित है। बच्चों के आकर्षण के अनेक साधन स्कूलों में उपलब्ध हैं। कक्षाओं और पाठ्यक्रम की व्यवस्था बाल मनोविज्ञान के अनुसार करी गयी है। इन सबके लिए सबसे बड़ा कारण बच्चों को स्कूल के प्रति लगाव को बढ़ावा देना है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 14.
           <br/>
@@ -1726,8 +1721,8 @@ p {
           <br/>
           मैं कुशल हूँ, विश्वास है कि आप भी परिवार के सभी सदस्यों के साथ स्वस्थ होंगी।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           शेष अगले पत्र में। अपने स्वास्थ्य का ध्यान रखियेगा।
           <br/>
@@ -1735,7 +1730,7 @@ p {
           <br/>
           अ. ब. स.।।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           सेवा में
           <br/>
@@ -3058,6 +3053,127 @@ p {
         sidebar.classList.toggle('minimized');
     }
 </script>
+
+<!-- NCERT Guru Popup -->
+<style>
+#ncertGuruPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 2px solid #4a90e2;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  padding: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
+  z-index: 9999;
+}
+
+#ncertGuruPopup img {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+#ncertGuruPopup h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+  font-weight: 600;
+}
+
+#ncertGuruPopup p {
+  margin: 6px 0 12px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#ncertGuruPopup button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#ncertGuruPopup button:hover {
+  background-color: #3a78c2;
+}
+
+#ncertGuruPopup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #bbb;
+  font-weight: bold;
+}
+
+#ncertGuruPopup .close-btn:hover {
+  color: #000;
+}
+
+@media (max-width: 480px) {
+  #ncertGuruPopup {
+    padding: 20px 18px;
+  }
+
+  #ncertGuruPopup h3 {
+    font-size: 16px;
+  }
+
+  #ncertGuruPopup p {
+    font-size: 13px;
+  }
+
+  #ncertGuruPopup button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+</style>
+<div id="ncertGuruPopup">
+<button class="close-btn" onclick="document.getElementById('ncertGuruPopup').style.display='none';">×</button>
+<div style="display: flex; align-items: center; gap: 12px;">
+<img alt="App Icon" src="ncertguru-icon.png"/>
+<div>
+<h3>NCERT Guru: AI Question Solver</h3>
+<p>Instantly solve CBSE questions with AI. Try now for free!</p>
+</div>
+</div>
+<div style="margin-top: 16px; text-align: center;">
+<a href="https://play.google.com/store/apps/details?id=com.technosub.ncertgurusmartaiquestionsolver" target="_blank">
+<button>Try Now</button>
+</a>
+</div>
+</div>
+<script>
+(function() {
+  const popupKey = "ncertGuruPopupLastShown";
+  const today = new Date().toISOString().split('T')[0];
+  const lastShown = localStorage.getItem(popupKey);
+
+  if (lastShown !== today) {
+    window.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("ncertGuruPopup").style.display = "block";
+      localStorage.setItem(popupKey, today);
+    });
+  }
+})();
+</script>
+<!-- /NCERT Guru Popup -->
 </body>
 </html>
 <!-- Cache served by breeze CACHE - Last modified: Mon, 02 Dec 2024 17:49:08 GMT -->

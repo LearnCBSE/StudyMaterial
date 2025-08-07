@@ -83,11 +83,6 @@ p {
 }
 
 </style><style> #menu-top a { padding: 12px 8px; /* Slightly increased padding for better touch targets */ margin: 10px 0 2px 0; /* Adjusted spacing for a more balanced design */ display: inline-block; text-align: center; font-family: 'Arial', sans-serif; /* Modern sans-serif font for a clean, fresh look */ font-size: 1.25rem; /* Slightly smaller font size for a more compact design */ font-weight: 600; /* Bold font weight for emphasis */ line-height: 1.5; /* Increased line height for readability */ letter-spacing: 0.02em; /* Slight letter spacing for clarity */ border-radius: 6px; /* Rounded corners for a contemporary appearance */ text-decoration: none; /* No underlines for a clean design */ color: #007BFF; /* Bold, vibrant blue for text */ transition: all 0.3s ease; /* Smooth transition for all interactive states */ } #menu-top a:hover { background-color: transparent; /* No background on hover */ color: #0056b3; /* Slightly darker blue text on hover */ cursor: pointer; box-shadow: 0 6px 15px rgba(0, 91, 179, 0.3); /* Enhanced shadow effect */ transform: scale(1.05); /* Subtle scale effect on hover */ } .responsive-banner { max-width: 100%; height: auto; display: block; margin: 0 auto; } /* Desktop View */ @media (min-width: 1024px) { .responsive-banner { max-width: 28%; /* Adjusted for smaller desktop view */ height: auto; /* Maintain aspect ratio */ } } /* Mobile View */ @media (max-width: 1023px) { .responsive-banner { max-width: 90%; height: auto; /* Maintain aspect ratio */ } } </style><style> /* Updated CSS Rules Here */ /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; /* Modern, clean sans-serif font */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; /* border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); padding: 10px 20px; */ flex-wrap: wrap; /* Ensure the menu items wrap on smaller screens */ text-align: center; /* border-radius: 8px; Rounded corners for a sleek design */ text-decoration: none; /* Remove underline for a clean look */ color: #0056b3; /* Deep blue color for professional tone */ transition: all 0.4s ease; /* Smoother transition effects */ } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; /* Prevent text from wrapping */ } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.7); */ transform: none; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; /* Darker text color for contrast */ border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover (Font Enlargement) */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* For Multi-Level Submenus */ .sub-menu-duplicate .sub-menu-duplicate { left: 100%; top: 0; transform: translateY(-10px); background-color: #f1f1f1; border-left: 4px solid #646667; } /* Active State for Menu Items */ .menu-link-duplicate:active, .menu-link-duplicate:focus { background-color: #0056b3; color: #fff; outline: none; } /* Mobile-Specific Styles */ @media (max-width: 768px) { /* Display only the main menu on mobile devices */ .menu-duplicate { display: flex !important; /* Ensure the main menu is visible */ flex-direction: row; /* Change to horizontal layout */ justify-content: center; /* Center-align menu items horizontally */ background-color: #fff; /* Maintain background color */ } .menu-item-duplicate { margin: 0 10px; /* Add spacing between main menu items horizontally */ } .menu-link-duplicate { font-size: 16px; /* Adjust font size for readability on mobile */ padding: 10px 15px; /* Increase touch area */ } /* Hide all submenus */ .sub-menu-duplicate { display: none !important; /* Completely hide submenus */ visibility: hidden !important; opacity: 0 !important; transform: none !important; } } </style><style> .social-sidebar { position: fixed; top: 50%; left: 0; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; background-color: #f9f9f9; padding: 10px; border-radius: 0 5px 5px 0; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); z-index: 1000; transition: all 0.3s ease; } .social-sidebar.minimized { left: -50px; } #minimize-button { background-color: #007BFF; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-size: 16px; margin-bottom: 10px; transition: background-color 0.3s ease; } #minimize-button:hover { background-color: #0056b3; } .social-sidebar a { text-decoration: none; display: block; } .social-sidebar .social-icon { width: 30px; height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; } .social-sidebar .social-icon:hover { transform: scale(1.2); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } /* Responsive Design */ @media (max-width: 768px) { .social-sidebar { top: auto; bottom: 10px; left: 10px; flex-direction: row; gap: 15px; border-radius: 5px; padding: 8px; } .social-sidebar.minimized { left: -100%; } .social-sidebar .social-icon { width: 24px; height: 24px; } } </style>
-
-
-
-
-
 </head>
 <body class="post-template-default single single-post postid-170021 single-format-standard content-sidebar genesis-breadcrumbs-hidden genesis-footer-widgets-visible magazine-pro-blue primary-nav">
 <ul class="menu-duplicate" id="menu-top-duplicate">
@@ -1155,7 +1150,7 @@ p {
            Competition from surrounding habitats increases: As the small patch developed after habitat loss and fragmentation there will be limited number of resources available so the population of small patch is likely to compete with members of the other neighboring patches for resources like food, water and shelter.
           </li>
 </ol>
-<p>                                                        </p>
+<p> </p>
 <p>
           Question 12.
           <br/>
@@ -1329,7 +1324,7 @@ p {
           (a) Insertional inactivation technique of recombinant DNA technology used to select bacteria that carry recombinant plasmids; a fragment of foreign DNA is inserted into a restriction site within a gene for antibiotic resistance, thus causing that gene to become nonfunctional. It is often used to identify recombinant vectors in gene cloning and in turn to distinguish a recombinant vector from a non-recombinant vector.
          </p>
 <p>False</p>
-<p>                                                        </p>
+<p> </p>
 <p>: (a) PCR, ELISA and autoradiography are some of the recombinant DNA technologies that can be used for the detection of disease even before any clinical symptom appears. (b) PCR, ELISA and autoradiography are some of the recombinant DNA technologies that can be used for the detection of disease even before any clinical symptom appears.</p>
 <p>
           PCR is now routinely used to detect HIV in suspected AIDS patients. It is being used to detect mutations
@@ -1462,7 +1457,7 @@ p {
           (a) (i) Eukaryotes have three RNA polymerases which are structurally distinct complexes, though share certain subunits in common, and have a specific function and specific promoter sequence. RNA polymerase I synthesize preribosomal RNA (pre- rRNA), which contains the precursor for the 18S, 5.8S, and 28S rRNAs. RNA polymerase II is synthesized mRNAs and some specialized RNAs. RNA polymerase III makes tRNAs, the 5S rRNA, and some other small specialized RNAs. The enzyme RNA Polymerase II is responsible for the transcription of eukaryotic hnRNA. (VA marks)
          </p>
 <p>ii) hnRNA is required to undergo spicing process before becoming functional mRNA in eukaryotes . all the non coding (introns) are removed and all the coding (exons) are bind together and forms functional mRNA .</p>
-<p>                                                        </p>
+<p> </p>
 <p>in eukaryotes, the length of the chromatin material is large so it is required to be packed in a manner so that it can be condensed in a single nucleus . there is a set of positively charged, basic proteins called histones . Histones are rich in the basic amino acid residues lysine and arginine . both the amino acid residues carry positive charges in their side chains .</p>
 <p>False</p>
 <p>nucleosomes in chromatin are seen as ‘beads- on-string’ structure when viewed under electron microscope (EM)</p>
@@ -1536,7 +1531,7 @@ p {
 <p>the Y chromosome is one of the two sex chromosomes in each of a male’s cells . in Y-linked inheritance, a variant can only be passed from father to son . therefore, the given case is an example of Y-linked dominant disorder .</p>
 <p>iii) According to the given pedigree chart, the genotypes of individuals ‘C’, ‘D’ and ‘H’ are XX, XX and XX respectively because these are females and mother is not the carrier of the disease in the generation I.</p>
 <p>to: (iv) (a) XX (female D) X XY (normal man) then the probability of a daughter being a sufferer of the disease is zero. This is because the given pedigree chart is indicative of X linked disorder so male progeny is likely to be affected by it and also the mother is not the carrier of the disorder so the female progeny will not be the carrier or affected by the disease.</p>
-<p>                                                        </p>
+<p> </p>
 <p>iv) (b) If X (mother B) is the carrier of the disease then the probability of their daughter being the sufferer of the disease is zero . in this case one of the daughter can be the carrier of the disease but will remain unaffected from the disease because the given disease is Y linked dominant trait which will not be transferred in females .</p>
 <p>
 <img alt="CBSE Class 12 Biology Question Paper (Outside Delhi 2023) with Solutions" height="15" loading="lazy" src="https://www.learncbse.in/wp-content/uploads/2022/07/Learn-CBSE.png" width="113"/>
@@ -1567,7 +1562,7 @@ p {
 <p>ii) The parasite reproduce asexually in the liver cells of the human host . it leads to bursting of cells and the parasite spreads into the bloodstream .</p>
 <p>paraphrase: (iii) Parasite when enters into the red blood cells reproduces asexually causing bursting of the red blood cells .</p>
 <p>a) Host X is mosquito which will feed on host Y to obtain its blood meal . b) Host X will take up gametocytes with blood meal .</p>
-<p>                                                        </p>
+<p> </p>
 <p>when the parasite enters into the red blood cells of the host it reproduces asexually . when the red blood cells get burst this causes cycles of fever and other symptoms . the disease is malaria and the rupture of RBCs is associated with release of a toxic substance, haemozoin .</p>
 <p style="text-align: center;">
 <span style="color: #0000ff;">
@@ -1613,7 +1608,7 @@ p {
          </p>
 <p>True</p>
 <p>True</p>
-<p>                                                        </p>
+<p> </p>
 <p>
           Note
           <br/>
@@ -1683,7 +1678,7 @@ p {
 <p>(i) Origin of replication (ori): This is a sequence from where replication starts and is responsible for controlling the copy number of the linked DNA. So, if one wants to recover many copies of the target DNA it should be cloned in a vector whose origin support high copy number. So, if one wants to recover many copies of the target DNA it should be cloned in a vector whose origin support high copy number.</p>
 <p>True</p>
 <p>Falk: restriction endonuclease cuts double stranded DNA very precisely . it was used to restrict the growth of viruses when it was discovered in bacteria . Falk: restriction endonuclease cuts double stranded DNA at specific recognition sites .</p>
-<p>                                                        </p>
+<p> </p>
 <p>specific Bt toxin genes were isolated from Bacillus thuringiensis . cryllAb controls the growth of corn borer infecting the healthy cotton plants . the genetically unmodified cotton crops will remain unprotected with the corn borer .</p>
 <p>(ii) Cotton bollworm and corn borer are the two insects that are killed by Bt toxin.</p>
 <p>Bt toxin is produced by bacteria Bacillus thuriengiensis . the endotoxin that accumulates in the bacterium is an inactive precursor . it gets activated only in the alkaline gut of insect .</p>
@@ -1717,7 +1712,7 @@ p {
          </p>
 <p>(i) (ii) (iii) (iv) (v) (v) (v) (iv) (v) (iv) (iv) (v) (iv) (v) (iv) (v) (iv) (v) (iv) (v) (v) (v) (v) (v) (v) (v) (v) (v) (v) (v) (v) (v) (v) (v)</p>
 <p>True</p>
-<p>                                                        </p>
+<p> </p>
 <p>
           Note
           <br/>
@@ -3017,6 +3012,127 @@ p {
         sidebar.classList.toggle('minimized');
     }
 </script>
+
+<!-- NCERT Guru Popup -->
+<style>
+#ncertGuruPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 2px solid #4a90e2;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  padding: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
+  z-index: 9999;
+}
+
+#ncertGuruPopup img {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+#ncertGuruPopup h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+  font-weight: 600;
+}
+
+#ncertGuruPopup p {
+  margin: 6px 0 12px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#ncertGuruPopup button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#ncertGuruPopup button:hover {
+  background-color: #3a78c2;
+}
+
+#ncertGuruPopup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #bbb;
+  font-weight: bold;
+}
+
+#ncertGuruPopup .close-btn:hover {
+  color: #000;
+}
+
+@media (max-width: 480px) {
+  #ncertGuruPopup {
+    padding: 20px 18px;
+  }
+
+  #ncertGuruPopup h3 {
+    font-size: 16px;
+  }
+
+  #ncertGuruPopup p {
+    font-size: 13px;
+  }
+
+  #ncertGuruPopup button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+</style>
+<div id="ncertGuruPopup">
+<button class="close-btn" onclick="document.getElementById('ncertGuruPopup').style.display='none';">×</button>
+<div style="display: flex; align-items: center; gap: 12px;">
+<img alt="App Icon" src="ncertguru-icon.png"/>
+<div>
+<h3>NCERT Guru: AI Question Solver</h3>
+<p>Instantly solve CBSE questions with AI. Try now for free!</p>
+</div>
+</div>
+<div style="margin-top: 16px; text-align: center;">
+<a href="https://play.google.com/store/apps/details?id=com.technosub.ncertgurusmartaiquestionsolver" target="_blank">
+<button>Try Now</button>
+</a>
+</div>
+</div>
+<script>
+(function() {
+  const popupKey = "ncertGuruPopupLastShown";
+  const today = new Date().toISOString().split('T')[0];
+  const lastShown = localStorage.getItem(popupKey);
+
+  if (lastShown !== today) {
+    window.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("ncertGuruPopup").style.display = "block";
+      localStorage.setItem(popupKey, today);
+    });
+  }
+})();
+</script>
+<!-- /NCERT Guru Popup -->
 </body>
 </html>
 <!-- Cache served by breeze CACHE - Last modified: Sat, 16 Nov 2024 07:50:30 GMT -->

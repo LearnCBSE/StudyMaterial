@@ -83,11 +83,6 @@ p {
 }
 
 </style><style> #menu-top a { padding: 12px 8px; /* Slightly increased padding for better touch targets */ margin: 10px 0 2px 0; /* Adjusted spacing for a more balanced design */ display: inline-block; text-align: center; font-family: 'Arial', sans-serif; /* Modern sans-serif font for a clean, fresh look */ font-size: 1.25rem; /* Slightly smaller font size for a more compact design */ font-weight: 600; /* Bold font weight for emphasis */ line-height: 1.5; /* Increased line height for readability */ letter-spacing: 0.02em; /* Slight letter spacing for clarity */ border-radius: 6px; /* Rounded corners for a contemporary appearance */ text-decoration: none; /* No underlines for a clean design */ color: #007BFF; /* Bold, vibrant blue for text */ transition: all 0.3s ease; /* Smooth transition for all interactive states */ } #menu-top a:hover { background-color: transparent; /* No background on hover */ color: #0056b3; /* Slightly darker blue text on hover */ cursor: pointer; box-shadow: 0 6px 15px rgba(0, 91, 179, 0.3); /* Enhanced shadow effect */ transform: scale(1.05); /* Subtle scale effect on hover */ } .responsive-banner { max-width: 100%; height: auto; display: block; margin: 0 auto; } /* Desktop View */ @media (min-width: 1024px) { .responsive-banner { max-width: 28%; /* Adjusted for smaller desktop view */ height: auto; /* Maintain aspect ratio */ } } /* Mobile View */ @media (max-width: 1023px) { .responsive-banner { max-width: 90%; height: auto; /* Maintain aspect ratio */ } } </style><style> /* Updated CSS Rules Here */ /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; /* Modern, clean sans-serif font */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; /* border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); padding: 10px 20px; */ flex-wrap: wrap; /* Ensure the menu items wrap on smaller screens */ text-align: center; /* border-radius: 8px; Rounded corners for a sleek design */ text-decoration: none; /* Remove underline for a clean look */ color: #0056b3; /* Deep blue color for professional tone */ transition: all 0.4s ease; /* Smoother transition effects */ } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; /* Prevent text from wrapping */ } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.7); */ transform: none; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; /* Darker text color for contrast */ border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover (Font Enlargement) */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* For Multi-Level Submenus */ .sub-menu-duplicate .sub-menu-duplicate { left: 100%; top: 0; transform: translateY(-10px); background-color: #f1f1f1; border-left: 4px solid #646667; } /* Active State for Menu Items */ .menu-link-duplicate:active, .menu-link-duplicate:focus { background-color: #0056b3; color: #fff; outline: none; } /* Mobile-Specific Styles */ @media (max-width: 768px) { /* Display only the main menu on mobile devices */ .menu-duplicate { display: flex !important; /* Ensure the main menu is visible */ flex-direction: row; /* Change to horizontal layout */ justify-content: center; /* Center-align menu items horizontally */ background-color: #fff; /* Maintain background color */ } .menu-item-duplicate { margin: 0 10px; /* Add spacing between main menu items horizontally */ } .menu-link-duplicate { font-size: 16px; /* Adjust font size for readability on mobile */ padding: 10px 15px; /* Increase touch area */ } /* Hide all submenus */ .sub-menu-duplicate { display: none !important; /* Completely hide submenus */ visibility: hidden !important; opacity: 0 !important; transform: none !important; } } </style><style> .social-sidebar { position: fixed; top: 50%; left: 0; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; background-color: #f9f9f9; padding: 10px; border-radius: 0 5px 5px 0; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); z-index: 1000; transition: all 0.3s ease; } .social-sidebar.minimized { left: -50px; } #minimize-button { background-color: #007BFF; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-size: 16px; margin-bottom: 10px; transition: background-color 0.3s ease; } #minimize-button:hover { background-color: #0056b3; } .social-sidebar a { text-decoration: none; display: block; } .social-sidebar .social-icon { width: 30px; height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; } .social-sidebar .social-icon:hover { transform: scale(1.2); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } /* Responsive Design */ @media (max-width: 768px) { .social-sidebar { top: auto; bottom: 10px; left: 10px; flex-direction: row; gap: 15px; border-radius: 5px; padding: 8px; } .social-sidebar.minimized { left: -100%; } .social-sidebar .social-icon { width: 24px; height: 24px; } } </style>
-
-
-
-
-
 </head>
 <body class="post-template-default single single-post postid-83044 single-format-standard content-sidebar genesis-breadcrumbs-hidden genesis-footer-widgets-visible magazine-pro-blue primary-nav">
 <ul class="menu-duplicate" id="menu-top-duplicate">
@@ -873,8 +868,8 @@ p {
          </p>
 <div class="code-block code-block-2" style="margin: 8px 0; clear: both;">
 </div>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>() ‘’   --  +                                                </p>
 <div class="code-block code-block-3" style="margin: 8px 0; clear: both;">
 </div>
@@ -988,11 +983,11 @@ p {
           <br/>
           (क) कविता हमेशा ही कठिन परिस्थितियों को हमारे अनुकूल कर नए पथ का सृजन करती है। जब आँसू पराजित हो जाते हैं तो कविता अपनी लेखनी द्वारा प्रतिकूल परिस्थितियों से जंग लड़ती है। जब कर्ता हताश हो जाता है तो उसमें नई उमंग भरती है। कविता एक ऐसे नए सूरज को निर्माण करती है जो नया सवेरा लाता है।
          </p>
-<p>                                                        </p>
+<p> </p>
 <div class="code-block code-block-4" style="margin: 8px 0; clear: both;">
 </div>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           (ङ) जब कर्ता अकर्ता हो जाता है अर्थात् प्रतिकूल परिस्थितियों के समक्ष हार जाता है तो कविता उसे जीना सिखाती है।
           <br/>
@@ -1167,8 +1162,8 @@ p {
           <br/>
           (क) एक दिन एक शिष्या ने खाँ साहब से कहा कि बाबा अब तो आपको बहुत प्रतिष्ठा व सम्मान मिल चुका है, फिर भी आप यह फटी हुई तहमद (लुंगी) क्यों पहनते हो? उस (शिष्या) ने ऐसा इसलिए कहा क्योंकि खाँ साहब इसी तहमद में ही सभी से मिलते थे और उसे यह अच्छा नहीं लगता था।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 8.
           <br/>
@@ -1188,10 +1183,10 @@ p {
           <br/>
           (क) लेखक ने फादर कामिल बुल्के की याद को ‘यज्ञ की पवित्र अग्नि’ इसलिए कहा है क्योंकि लेखक फादर बुल्के रूपी पवित्र ज्योति की याद में श्रद्धामत है, उनका सारा जीवन देश व देशवासियों के प्रति समर्पित था। जिस प्रकार यज्ञ की अग्नि पवित्र होती है तथा उसके ताप में उष्णता होती है उसी प्रकार फादर बुल्के को याद करना शरीर और मन में ऊष्मा, उत्साह तथा पवित्र भावे भर देता है। अतः फादर की स्मृति किसी यज्ञ की पवित्र आगे और उसकी लौ की तरह आजीवन बनी रहेगी।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 9.
           <br/>
@@ -1223,8 +1218,8 @@ p {
           <br/>
           (क) ‘हर चंद्रिका में छिपी एक रात कृष्णा है— इस पंक्ति में कवि यह तथ्य अवगत कराना चाहते हैं कि मनुष्य को इस यथार्थ को स्वीकार कर लेना चाहिए कि जीवन में सुख-दुख का चोली दामन का साथ होता है। जीवन में केवल सुख रूपी चाँदनी रातें ही नहीं अपितु दुख रूपी अमावस्या भी आती है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 10.
           <br/>
@@ -1244,10 +1239,10 @@ p {
           <br/>
           (क) संगतकार की मनुष्यता अपने स्वर को अधिक न उठाने की कोशिश करना ही मनुष्यता’ है। अपने स्वर को अधिक ऊँचा न उठाना उसकी इंसानियत है। वह अपनी मनुष्यता बनाए रखने के लिए कभी भी मुख्य गायक को अकेलेपन का अहसास नहीं होने देता। वह अपने राग के माध्यम से मुख्य गायक को यह भी बता देता है कि पहले गाया गया राग फिर से भी गाया जा सकता है। वह गाते समय यह कोशिश करता है कि उसका स्वर मुख्य गायक के स्वर से किसी भी हालत में ऊँचा न उठ जाय।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 11.
           <br/>
@@ -1288,7 +1283,7 @@ p {
            व्यावहारिक समाधान
           </li>
 </ul>
-<p>                                                        </p>
+<p> </p>
 <ul>
 <li>
            विकास में स्वच्छता का योगदान
@@ -1300,7 +1295,7 @@ p {
            रोकने के उपाय
           </li>
 </ul>
-<p>                                                        </p>
+<p> </p>
 <ul>
 <li>
            जीवन शैली का आशय
@@ -1321,18 +1316,18 @@ p {
           <br/>
           महँगाई का अर्थ होता है वस्तुओं की कीमत में वृद्धि होना। इस महँगाई पर ही पूरे देश की अर्थव्यवस्था टिकी होती है। मॅहगाई मनुष्य के जीवन शैली को प्रभावित करती है। आप समाज की यह प्रमुख समस्या है जिसने उच्च, मध्यम व निम्न सभी वर्गों की कमर तोड़ रखी है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           (ख) स्वच्छ भारत अभियान
           <br/>
           ‘एक कदम स्वच्छता की ओर ‘स्वच्छता’ आज केवल घर या मुहल्ले तक नहीं बल्कि इसका दायरा काफी बड़ा बन गया है। देश और राष्ट्र की स्वच्छता से ही वास्तविक विकास हो सकता है। जिस देश का नागरिक स्वच्छता के प्रति सजग होगा उस देश का विकास अबाध गति से होगा। प्रत्येक नागरिक का कर्तव्य है कि वह अपने देश की स्वच्छता में अपना सहयोग दें। इसी को ध्यान में रखते हुए हमारी सरकार ने स्वच्छ भारत अभियान चलाया है जिसमें यह प्रण लिया गया है कि प्रत्येक गली, मुहल्ला, सड़कों से लेकर शौचालय का निर्माण कराना और बुनियादी ढांचे को बदलना एवं स्वच्छता का संदेश फैलाना।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           (ग) बदलती जीवन शैली
           <br/>
@@ -1473,10 +1468,10 @@ p {
           <br/>
           (क) लेखिका मन्नू भंडारी की माँ का स्वभाव पिता से विपरीत था। वह धैर्यवान व सहनशक्ति से युक्त महिला थी। पिता की हर फरमाइश को अपना कर्तव्य समझना व बच्चों की हर उचित अनुचित माँगों को पूरा करना ही अपना फर्ज समझती थी। अशिक्षित माँ का त्याग, असहाय व मजबूरी में लिपटा हुआ था।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 10.
           <br/>
@@ -1496,10 +1491,10 @@ p {
           <br/>
           (क) उक्त पंक्ति में यह संदेश दिया गया है कि ससुराल में बहुएँ घर गृहस्थी में फँसकर, अत्याचारों को सहते हुए स्वयं को नुकसान न पहुचाएँ और न ही दूसरों के द्वारा किए गए जुल्मों को सहन करें। वे अपनी कमजोरियों के प्रति सचेत रहें एवं मजबूर बनें। क्योंकि आज भी नारियों पर जुल्म किए जाते हैं और उन्हें जलाया जाता है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 11.
           <br/>
@@ -1553,7 +1548,7 @@ p {
           <br/>
           निवेदन है कि मैं दिल्ली का निवासी हूँ और नियमित रूप से प्रातः आठ बजे जनकपुरी से द्वारका तक जाने वाली बस का यात्री हैं। बस का संवाहक और चालक दोनों को ही व्यवहार मधुर तथा सहयोगीपूर्ण है। दोनों ही कुशलता और हिम्मत के धनी हैं।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           अतः मैं विभाग से निवेदन करता हूँ कि संवाहक के इस साहसिक कार्य की प्रशंसा करते हुए उसे सम्मानित किया जाए जिससे सभी को प्रेरणा मिल सके।
           <br/>
@@ -1617,10 +1612,10 @@ p {
           <br/>
           (क) मन्नू भंडारी के पिता के दकियानूसी मित्र ने उन्हें कहा कि आपने मन्नू को कुछ ज्यादा ही आजादी दे रखी है। न जाने कैसे-कैसे उल्टे-सीधे लड़कों के साथ हड़ताले करवा रही है, हुड़दंग मचाती फिर रही है। मान-मर्यादा, इज्जत आबरू का ख्याल ही नहीं रहा है। हमारे आपके घरों की लड़कियों को यह सब शोभा नहीं देता। इसे सुनकर मन्नू भंडारी के पिता भड़क उठे।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p> ()                                                      </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           प्रश्न 10.
           <br/>
@@ -1642,10 +1637,10 @@ p {
           <br/>
           निर्दोष बताया। (1) धनुष अत्यंत जीर्ण था जो राम के हाथ लगाते ही टूट गया। (2) हमारे लिए तो सभी धनुष एक समान हैं इस धनुष के टूटने से हमारा क्या लाभ या हानि होगी। (3) राम ने तो इसे नया समझकर छुआ ही था, छूने भर से ही ये टूट गया।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 11.
           <br/>
@@ -3013,6 +3008,127 @@ p {
         sidebar.classList.toggle('minimized');
     }
 </script>
+
+<!-- NCERT Guru Popup -->
+<style>
+#ncertGuruPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 2px solid #4a90e2;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  padding: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
+  z-index: 9999;
+}
+
+#ncertGuruPopup img {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+#ncertGuruPopup h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+  font-weight: 600;
+}
+
+#ncertGuruPopup p {
+  margin: 6px 0 12px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#ncertGuruPopup button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#ncertGuruPopup button:hover {
+  background-color: #3a78c2;
+}
+
+#ncertGuruPopup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #bbb;
+  font-weight: bold;
+}
+
+#ncertGuruPopup .close-btn:hover {
+  color: #000;
+}
+
+@media (max-width: 480px) {
+  #ncertGuruPopup {
+    padding: 20px 18px;
+  }
+
+  #ncertGuruPopup h3 {
+    font-size: 16px;
+  }
+
+  #ncertGuruPopup p {
+    font-size: 13px;
+  }
+
+  #ncertGuruPopup button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+</style>
+<div id="ncertGuruPopup">
+<button class="close-btn" onclick="document.getElementById('ncertGuruPopup').style.display='none';">×</button>
+<div style="display: flex; align-items: center; gap: 12px;">
+<img alt="App Icon" src="ncertguru-icon.png"/>
+<div>
+<h3>NCERT Guru: AI Question Solver</h3>
+<p>Instantly solve CBSE questions with AI. Try now for free!</p>
+</div>
+</div>
+<div style="margin-top: 16px; text-align: center;">
+<a href="https://play.google.com/store/apps/details?id=com.technosub.ncertgurusmartaiquestionsolver" target="_blank">
+<button>Try Now</button>
+</a>
+</div>
+</div>
+<script>
+(function() {
+  const popupKey = "ncertGuruPopupLastShown";
+  const today = new Date().toISOString().split('T')[0];
+  const lastShown = localStorage.getItem(popupKey);
+
+  if (lastShown !== today) {
+    window.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("ncertGuruPopup").style.display = "block";
+      localStorage.setItem(popupKey, today);
+    });
+  }
+})();
+</script>
+<!-- /NCERT Guru Popup -->
 </body>
 </html>
 <!-- Cache served by breeze CACHE - Last modified: Mon, 18 Nov 2024 05:06:16 GMT -->

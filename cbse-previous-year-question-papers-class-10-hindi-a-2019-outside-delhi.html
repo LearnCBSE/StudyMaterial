@@ -82,11 +82,6 @@ p {
 }
 
 </style><style> #menu-top a { padding: 12px 8px; /* Slightly increased padding for better touch targets */ margin: 10px 0 2px 0; /* Adjusted spacing for a more balanced design */ display: inline-block; text-align: center; font-family: 'Arial', sans-serif; /* Modern sans-serif font for a clean, fresh look */ font-size: 1.25rem; /* Slightly smaller font size for a more compact design */ font-weight: 600; /* Bold font weight for emphasis */ line-height: 1.5; /* Increased line height for readability */ letter-spacing: 0.02em; /* Slight letter spacing for clarity */ border-radius: 6px; /* Rounded corners for a contemporary appearance */ text-decoration: none; /* No underlines for a clean design */ color: #007BFF; /* Bold, vibrant blue for text */ transition: all 0.3s ease; /* Smooth transition for all interactive states */ } #menu-top a:hover { background-color: transparent; /* No background on hover */ color: #0056b3; /* Slightly darker blue text on hover */ cursor: pointer; box-shadow: 0 6px 15px rgba(0, 91, 179, 0.3); /* Enhanced shadow effect */ transform: scale(1.05); /* Subtle scale effect on hover */ } .responsive-banner { max-width: 100%; height: auto; display: block; margin: 0 auto; } /* Desktop View */ @media (min-width: 1024px) { .responsive-banner { max-width: 28%; /* Adjusted for smaller desktop view */ height: auto; /* Maintain aspect ratio */ } } /* Mobile View */ @media (max-width: 1023px) { .responsive-banner { max-width: 90%; height: auto; /* Maintain aspect ratio */ } } </style><style> /* Updated CSS Rules Here */ /* General Menu Styles */ .menu-duplicate { font-family: 'Roboto', sans-serif; /* Modern, clean sans-serif font */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; position: relative; background-color: #ffffff; /* border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); padding: 10px 20px; */ flex-wrap: wrap; /* Ensure the menu items wrap on smaller screens */ text-align: center; /* border-radius: 8px; Rounded corners for a sleek design */ text-decoration: none; /* Remove underline for a clean look */ color: #0056b3; /* Deep blue color for professional tone */ transition: all 0.4s ease; /* Smoother transition effects */ } /* Main Menu Items */ .menu-item-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 1.35rem; /* Slightly larger font size for better readability */ font-weight: 700; /* Stronger emphasis for headings */ line-height: 1.6; /* Enhanced line height for better flow */ letter-spacing: 0.03em; /* Slightly increased spacing for clarity */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ position: relative; margin-right: 20px; padding: 4px 8px; } .menu-link-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 18px; text-decoration: none; color: #333; padding: 12px 18px; display: block; border-radius: 5px; transition: all 0.3s ease; white-space: nowrap; /* Prevent text from wrapping */ } /* Main Menu Item Hover */ .menu-link-duplicate:hover { background-color: #007bff; color: #fff; /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.7); */ transform: none; } /* Submenu Styling */ .sub-menu-duplicate { font-family: 'Roboto', sans-serif; /* Consistent font choice */ font-size: 15px; /* Standard font size for submenu links */ font-weight: 500; /* Medium weight for better visibility */ visibility: hidden; opacity: 0; list-style: none; padding: 10px 0; margin: 0; position: absolute; top: 100%; left: 0; background-color: #ffffff; color: #333; /* Darker text color for contrast */ border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000; transform: translateY(-10px); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; } /* Submenu Hover */ .menu-item-duplicate:hover > .sub-menu-duplicate { visibility: visible; opacity: 1; transform: translateY(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; } .sub-menu-duplicate .menu-item-duplicate { margin: 0; padding: 0; } /* Submenu Links */ .sub-menu-duplicate .menu-link-duplicate { display: block; padding: 10px 20px; font-size: 14px; color: #333; background-color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; } /* Submenu Link Hover (Font Enlargement) */ .sub-menu-duplicate .menu-link-duplicate:hover { background-color: #007bff; color: #fff; transform: scale(1.1); } /* For Multi-Level Submenus */ .sub-menu-duplicate .sub-menu-duplicate { left: 100%; top: 0; transform: translateY(-10px); background-color: #f1f1f1; border-left: 4px solid #646667; } /* Active State for Menu Items */ .menu-link-duplicate:active, .menu-link-duplicate:focus { background-color: #0056b3; color: #fff; outline: none; } /* Mobile-Specific Styles */ @media (max-width: 768px) { /* Display only the main menu on mobile devices */ .menu-duplicate { display: flex !important; /* Ensure the main menu is visible */ flex-direction: row; /* Change to horizontal layout */ justify-content: center; /* Center-align menu items horizontally */ background-color: #fff; /* Maintain background color */ } .menu-item-duplicate { margin: 0 10px; /* Add spacing between main menu items horizontally */ } .menu-link-duplicate { font-size: 16px; /* Adjust font size for readability on mobile */ padding: 10px 15px; /* Increase touch area */ } /* Hide all submenus */ .sub-menu-duplicate { display: none !important; /* Completely hide submenus */ visibility: hidden !important; opacity: 0 !important; transform: none !important; } } </style><style> .social-sidebar { position: fixed; top: 50%; left: 0; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; background-color: #f9f9f9; padding: 10px; border-radius: 0 5px 5px 0; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); z-index: 1000; transition: all 0.3s ease; } .social-sidebar.minimized { left: -50px; } #minimize-button { background-color: #007BFF; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-size: 16px; margin-bottom: 10px; transition: background-color 0.3s ease; } #minimize-button:hover { background-color: #0056b3; } .social-sidebar a { text-decoration: none; display: block; } .social-sidebar .social-icon { width: 30px; height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; } .social-sidebar .social-icon:hover { transform: scale(1.2); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } /* Responsive Design */ @media (max-width: 768px) { .social-sidebar { top: auto; bottom: 10px; left: 10px; flex-direction: row; gap: 15px; border-radius: 5px; padding: 8px; } .social-sidebar.minimized { left: -100%; } .social-sidebar .social-icon { width: 24px; height: 24px; } } </style>
-
-
-
-
-
 </head>
 <body class="post-template-default single single-post postid-82987 single-format-standard content-sidebar genesis-breadcrumbs-hidden genesis-footer-widgets-visible magazine-pro-blue primary-nav">
 <ul class="menu-duplicate" id="menu-top-duplicate">
@@ -844,7 +839,7 @@ p {
           <br/>
           अधिकतम अंक : 80
          </p>
-<p>                                                        </p>
+<p> </p>
 <ul>
 <li>
            इस श्वश्न-पत्र में चार खंड हैं – क, ख, ग और घ।
@@ -1157,12 +1152,12 @@ p {
           <br/>
           (क) बालगोबिन भगत गृहस्थ होकर भी साधु का प्रतिनिधित्व करते थे। सामाजिक रूढ़वादिता में विश्वास नहीं रखते थे। वे कबीर को अपना साहब मानते थे और जो कुछ भी खेत में उपजता उसको सबसे पहले कबीर के मठ में रख देते थे।
          </p>
-<p>                                                        </p>
+<p> </p>
 <div class="code-block code-block-5" style="margin: 8px 0; clear: both;">
 </div>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 9.
           <br/>
@@ -1194,8 +1189,8 @@ p {
           <br/>
           (क) परशुराम के क्रुद्ध होने पर लक्ष्मण ने कहा हे मुनि हमारी समझ में तो सारे धनुष एक समान होते हैं। श्रीरामचंद्र ने तो इसे नए के धोखे में हुआ था और छूते ही टूट गया। श्रीराम चंद्र जी का इसमें कोई दोष नहीं है। आप तो व्यर्थ में ही इतना क्रोध कर रहे हैं।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 10.
           <br/>
@@ -1215,10 +1210,10 @@ p {
           <br/>
           (क) गोपियों ने उद्धव से कहा हे उद्धव तुम तो कमल के पत्ते के समान हो जो जल में रहकर भी जल के प्रभाव में नहीं आता, तुम तेल के समान और कृष्ण जल के समान हैं जो तेल पर अपना प्रभाव नहीं छोड़ पाता। गोपियाँ स्वयं को चींटी और कृष्ण को गुड़ के समान बताती हैं। गोपियाँ कहती हैं जिस प्रकार हारिल पक्षी अपनी लकड़ी को पंजों में दबाकर रहता है ठीक उसी प्रकार हमने कृष्ण को मजबूती से पकड़ रखा है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 11.
           <br/>
@@ -1261,7 +1256,7 @@ p {
            सुरक्षा में कमियों के कारण व सुझाव
           </li>
 </ul>
-<p>                                                        </p>
+<p> </p>
 <ul>
 <li>
            भले दिनों के मित्र
@@ -1273,7 +1268,7 @@ p {
            मित्र की परख
           </li>
 </ul>
-<p>                                                        </p>
+<p> </p>
 <ul>
 <li>
            विद्यालय में क्या है अनावश्यक
@@ -1292,11 +1287,11 @@ p {
           <br/>
           हम सभी जानते हैं कि हमारा देश हिंदुस्तान पूरे विश्व में अपनी अलग रीति रिवाज तथा संस्कृति के लिए प्रसिद्ध है। भारत में प्राचीन काल से ही यह परंपरा रही है कि यहाँ महिलाओं को समाज में विशिष्ट आदर एवं सम्मान दिया जाता है। भारत वह देश है जहाँ महिलाओं की सुरक्षा और इज्जत का खास ख्याल रखा जाता है। भारतीय संस्कृति में महिलाओं को देवी लक्ष्मी का दर्जा दिया गया है। अगर हम इक्कीसर्वी सदी की बात करें तो महिलाएं हर कार्यक्षेत्र में पुरुषों के साथ कंधे से कंधा मिला काम कर रही हैं चाहे वो राजनीति, बैंक, विद्यालय, खेल, पुलिस, रक्षा क्षेत्र, खुद का कारोबार हो या आसमान में उड़ने की अभिलाषा हो।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>True</p>
-<p>                                                        </p>
+<p> </p>
 <p>
           (ख) मित्र की परख संकट में
           <br/>
@@ -1306,8 +1301,8 @@ p {
           <br/>
           जगत में जानि पड़ते सब कोई।”
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>True</p>
 <p>True</p>
 <p>True</p>
@@ -1316,9 +1311,9 @@ p {
           <br/>
           घर के बाद विद्यालय हर व्यक्ति के जीवन में एक महत्वपूर्ण भूमिका निभाता है। विद्यालय एक ऐसा स्थान है, जहाँ लोग बहुत कुछ सीखते हैं और पढ़ते हैं। इसे ज्ञान का मंदिर कहा जाता है। अपने विद्यालय या पाठशाला में हम सब जीवन का सबसे अधिक समय व्यतीत करते हैं। जिसमें हम कई विषयों में शिक्षा प्राप्त करते हैं।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 13.
           <br/>
@@ -1344,7 +1339,7 @@ p {
           <br/>
           सविनय निवेदन इस प्रकार है कि मैं च छ ज क्षेत्र का निवासी हूँ इस पत्र के द्वारा आपको ध्यान अपने क्षेत्र की स्वास्थ्य समस्यों की ओर आकृष्ट करना चाहता हूँ। हमारे क्षेत्र में डेंगू प्रबल रूप से फैलता ही जा रही है जिस कारण अस्पतालों में , भी मरीजों की संख्या बढ़ती जा रही है। अस्पतालों में स्वास्थ्य सेवाओं की सख्त कमी है। उचित स्वास्थ्य सुविधाएँ और डॉक्टरों की कमी के कारण मरीजों की मृत्यु हो रही है।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           यदि आपने मेरी समस्या पर अमल किया तो मैं और मेरे क्षेत्र के निवासी आपके अत्यंत आभारी रहेंगे।
           <br/>
@@ -1370,8 +1365,8 @@ p {
           <br/>
           मैं यहाँ पर कुशल मंगल हूँ तथा तुम्हारी कुशलता की कामना ईश्वर से करता हूँ।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
 <p>
           ईश्वर से प्रार्थना है कि तुम्हारे जैसा मित्र सबको मिले। मैं तुम्हारी दयालुता को कभी भुला नहीं पाऊंगा घर में अपने माता-पिता को मेरा प्रणाम देना और छोटे भाई बहन को प्यार।
           <br/>
@@ -1479,10 +1474,10 @@ p {
           <br/>
           (क) जिस प्रकार यज्ञ की पवित्र अग्नि अपने चारों ओर के वातावरण को शुद्ध पवित्र करके महका देती है और लम्बे समय तक वह पवित्रता और शुद्धता बनी रहती है, ठीक उसी प्रकार फादर बुल्के भी अपने स्नेह और ममता की छाँव से सबको सराबोर कर देते थे।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 10.
           <br/>
@@ -1502,10 +1497,10 @@ p {
           <br/>
           (क) संगतकार की मनुष्यता यह है कि वह हमेशा स्वयं को मुख्य गायक के पीछे ही रखता है वह अपनी मनुष्यता बनाए रखने के लिए कभी भी मुख्य गायक को अकेलेपन का अहसास नहीं होने देता। वह हमेशा मुख्य गायक को ऊँचाई पर रखता है। जब मुख्य गायक का स्वर कभी अनहद में भटक जाता है तो संगतकार उन सुरों को सँभालने का कार्य करता है और मुख्य गायक को हताश नहीं होने देता। इस प्रकारे वह अपनी मनुष्यता को बनाकर रखता है।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 13.
           <br/>
@@ -1611,13 +1606,13 @@ p {
           <br/>
           कि वे खीरे को अपदार्थ और तुच्छ समझते हैं।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           शीला अग्रवाल ने उन्हें साहित्य के क्षेत्र में आगे बढ़ने को कार्य किया। मन्नू को चुनिंदा उच्च साहित्यकारों की पुस्तकें पढ़ने के लिए प्रेरित किया। साथ ही घर की चारदीवारी से बाहर निकालकर उनको आंदोलन के
           <br/>
           लिए प्रेरित किया।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           प्रश्न 10.
           <br/>
@@ -1641,10 +1636,10 @@ p {
           <br/>
           (क) उत्साह कविता में कवि बादल से अनुरोध करता है। कि हे बादलो तुम गगन को चारों ओर से घेर लो, घोर अंधकार कर लो और क्रांति करो। अनंत दिशा से आकर घरघोर गर्जना करके बरसों और तपती हुई धरा को शीतल कर दो। क्रांति के द्वारा परिवर्तन ले आओ।
          </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
-<p>                                                        </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
 <p>
           प्रश्न 11.
           <br/>
@@ -1662,7 +1657,7 @@ p {
           <br/>
           ‘जॉर्ज पंचम की नाक’ पाठ एक सटीक व्यंग्य है हमारे शाही तंत्र की गुलामी की मानसिकता पर जब रानी एलिजाबेथ द्वितीय भारत दौरे पर आ रही थी तो बड़े-बड़े हुक्कामों ने दिल्ली का काया पलट कर दिया। वे भूल चुके हैं कि इसी महारानी के देश ने ही उन्हें कभी गुलाम बनाया था। इस निबंध में सरकारी कार्यप्रणाली पर भी व्यंग्य है। नाजनीनों की तरह दिल्ली को सजाया संवारा गया । जॉर्ज पंचम की मूर्ति से गायब नाक के लिए मूर्तिकार को नाक लगाने का आदेश दे दिया गया। मूर्तिकार हिंदुस्तान के कोने कोने में गया किन्तु मूर्ति की नाप की नाक ढूँढने में असफल रहा।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           प्रश्न 13.
           <br/>
@@ -1695,7 +1690,7 @@ p {
           <br/>
           सविनय निवेदन है कि मैं च. छ. ज. क्षेत्र का निवासी इस पत्र के माध्यम से आपको दमकल विभाग और पुलिस की लापरवाही की शिकायत करना चाहता हूँ। कल मेरे पड़ोसी के यहाँ अचानक आग लग गयी, जिस कारण पड़ौसियों का घर पूरी तरह से जल कर स्वाहा हो गया।
          </p>
-<p>                                                        </p>
+<p> </p>
 <p>
           दमकल विभाग के कर्मचारी समय पर आते तो इतने बड़े नुकसान को बचाया जा सकता था। आपसे अनुरोध है कि दमकल विभाग और पुलिसकर्मियों के प्रति सख्त कार्यवाही करें जो सूचना देने के बाद भी घटनास्थल पर नहीं आए।
           <br/>
@@ -3016,6 +3011,127 @@ p {
         sidebar.classList.toggle('minimized');
     }
 </script>
+
+<!-- NCERT Guru Popup -->
+<style>
+#ncertGuruPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 2px solid #4a90e2;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  padding: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
+  z-index: 9999;
+}
+
+#ncertGuruPopup img {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+#ncertGuruPopup h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+  font-weight: 600;
+}
+
+#ncertGuruPopup p {
+  margin: 6px 0 12px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#ncertGuruPopup button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#ncertGuruPopup button:hover {
+  background-color: #3a78c2;
+}
+
+#ncertGuruPopup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #bbb;
+  font-weight: bold;
+}
+
+#ncertGuruPopup .close-btn:hover {
+  color: #000;
+}
+
+@media (max-width: 480px) {
+  #ncertGuruPopup {
+    padding: 20px 18px;
+  }
+
+  #ncertGuruPopup h3 {
+    font-size: 16px;
+  }
+
+  #ncertGuruPopup p {
+    font-size: 13px;
+  }
+
+  #ncertGuruPopup button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+</style>
+<div id="ncertGuruPopup">
+<button class="close-btn" onclick="document.getElementById('ncertGuruPopup').style.display='none';">×</button>
+<div style="display: flex; align-items: center; gap: 12px;">
+<img alt="App Icon" src="ncertguru-icon.png"/>
+<div>
+<h3>NCERT Guru: AI Question Solver</h3>
+<p>Instantly solve CBSE questions with AI. Try now for free!</p>
+</div>
+</div>
+<div style="margin-top: 16px; text-align: center;">
+<a href="https://play.google.com/store/apps/details?id=com.technosub.ncertgurusmartaiquestionsolver" target="_blank">
+<button>Try Now</button>
+</a>
+</div>
+</div>
+<script>
+(function() {
+  const popupKey = "ncertGuruPopupLastShown";
+  const today = new Date().toISOString().split('T')[0];
+  const lastShown = localStorage.getItem(popupKey);
+
+  if (lastShown !== today) {
+    window.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("ncertGuruPopup").style.display = "block";
+      localStorage.setItem(popupKey, today);
+    });
+  }
+})();
+</script>
+<!-- /NCERT Guru Popup -->
 </body>
 </html>
 <!-- Cache served by breeze CACHE - Last modified: Sat, 07 Dec 2024 20:32:56 GMT -->
