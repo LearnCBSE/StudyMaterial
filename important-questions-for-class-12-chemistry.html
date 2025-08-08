@@ -2215,109 +2215,315 @@ p {
         sidebar.classList.toggle('minimized');
     }
 </script>
-
 <!-- NCERT Guru Popup -->
+
+
+
+<!-- /NCERT Guru Popup -->
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <style>
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.9) rotate(2deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
 #ncertGuruPopup {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  border: 2px solid #4a90e2;
-  border-radius: 20px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
-  width: 90%;
-  max-width: 400px;
-  padding: 24px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  display: none;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 50%, #45B7D1 100%);
+  background-size: 200% 200%;
+  animation: shimmer 3s ease-in-out infinite;
+  border-radius: 24px;
+  box-shadow: 0 24px 48px rgba(0,0,0,0.25), 0 0 0 1px rgba(255,255,255,0.2) inset;
+  width: 400px;
+  max-width: calc(100vw - 40px);
   z-index: 9999;
+  padding: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  display: none;
+  animation: slideInUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards, shimmer 3s ease-in-out infinite;
+  overflow: hidden;
+  position: relative;
+}
+
+#ncertGuruPopup::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  z-index: 1;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  #ncertGuruPopup {
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    width: auto;
+    max-width: none;
+  }
+}
+
+#ncertGuruPopup .popup-content {
+  padding: 32px;
+  position: relative;
+  z-index: 2;
+}
+
+#ncertGuruPopup .popup-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+#ncertGuruPopup .app-icon-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+#ncertGuruPopup .app-icon-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  background: linear-gradient(45deg, #FFD93D 0%, #FF6B6B 50%, #6BCB77 100%);
+  border-radius: 18px;
+  opacity: 0.8;
+  filter: blur(10px);
+  z-index: -1;
+  animation: pulse 2s ease-in-out infinite;
 }
 
 #ncertGuruPopup img {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 1;
+  border: 3px solid rgba(255, 255, 255, 0.9);
 }
 
 #ncertGuruPopup h3 {
-  margin: 0;
-  font-size: 18px;
-  color: #222;
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  letter-spacing: -0.5px;
+}
+
+#ncertGuruPopup .subtitle {
+  font-size: 14px;
+  color: rgba(255,255,255,0.95);
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: inline-flex;
+  backdrop-filter: blur(10px);
+}
+
+#ncertGuruPopup .subtitle::before {
+  content: '✨';
+  font-size: 16px;
+  animation: pulse 1.5s ease-in-out infinite;
 }
 
 #ncertGuruPopup p {
-  margin: 6px 0 12px;
-  color: #555;
-  font-size: 14px;
-  line-height: 1.4;
+  margin: 0 0 28px 0;
+  color: rgba(255,255,255,1);
+  font-size: 17px;
+  line-height: 1.7;
+  font-weight: 400;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
-#ncertGuruPopup button {
-  background-color: #4a90e2;
-  color: white;
+#ncertGuruPopup .cta-button {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  color: #FF6B6B;
   border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
+  padding: 18px 36px;
+  border-radius: 16px;
   cursor: pointer;
-  font-size: 14px;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
+  font-size: 17px;
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2), inset 0 -2px 0 rgba(0,0,0,0.1);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-#ncertGuruPopup button:hover {
-  background-color: #3a78c2;
+#ncertGuruPopup .cta-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 107, 107, 0.1);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+#ncertGuruPopup .cta-button:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+#ncertGuruPopup .cta-button:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.25), inset 0 -2px 0 rgba(0,0,0,0.15);
+}
+
+#ncertGuruPopup .cta-button:active {
+  transform: translateY(0);
+}
+
+#ncertGuruPopup .cta-button span {
+  position: relative;
+  z-index: 1;
+}
+
+#ncertGuruPopup .cta-button::after {
+  content: '🚀';
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+
+#ncertGuruPopup .cta-button:hover::after {
+  transform: translateX(4px);
 }
 
 #ncertGuruPopup .close-btn {
   position: absolute;
-  top: 10px;
-  right: 14px;
-  background: none;
+  top: 12px;
+  right: 12px;
+  background: rgba(255,255,255,0.2);
   border: none;
-  font-size: 22px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
   cursor: pointer;
-  color: #bbb;
-  font-weight: bold;
+  color: #ffffff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
 }
 
 #ncertGuruPopup .close-btn:hover {
-  color: #000;
+  background: rgba(255,255,255,0.3);
+  transform: rotate(90deg);
 }
 
-@media (max-width: 480px) {
-  #ncertGuruPopup {
-    padding: 20px 18px;
-  }
+#ncertGuruPopup .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: linear-gradient(135deg, #FFD93D 0%, #FF6B6B 100%);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  animation: pulse 1.5s ease-in-out infinite;
+  box-shadow: 0 4px 12px rgba(255,107,107,0.5);
+  letter-spacing: 1px;
+  z-index: 3;
+}
 
+/* Additional mobile optimizations */
+@media (max-width: 480px) {
   #ncertGuruPopup h3 {
+    font-size: 22px;
+  }
+  
+  #ncertGuruPopup p {
     font-size: 16px;
   }
-
-  #ncertGuruPopup p {
-    font-size: 13px;
+  
+  #ncertGuruPopup .cta-button {
+    padding: 16px 28px;
+    font-size: 16px;
   }
-
-  #ncertGuruPopup button {
-    width: 100%;
-    padding: 12px;
+  
+  #ncertGuruPopup img {
+    width: 56px;
+    height: 56px;
+  }
+  
+  #ncertGuruPopup .popup-content {
+    padding: 24px;
   }
 }
 </style>
 <div id="ncertGuruPopup">
+<div class="popup-content">
 <button class="close-btn" onclick="document.getElementById('ncertGuruPopup').style.display='none';">×</button>
-<div style="display: flex; align-items: center; gap: 12px;">
-<img alt="App Icon" src="ncertguru-icon.png"/>
+<div class="badge">HOT 🔥</div>
+<div class="popup-header">
+<div class="app-icon-wrapper">
+<img alt="NCERT Guru App Icon" src="ncertguru-icon.png"/>
+</div>
 <div>
-<h3>NCERT Guru: AI Question Solver</h3>
-<p>Instantly solve CBSE questions with AI. Try now for free!</p>
+<h3>NCERT Guru</h3>
+<div class="subtitle">AI Study Companion</div>
 </div>
 </div>
-<div style="margin-top: 16px; text-align: center;">
-<a href="https://play.google.com/store/apps/details?id=com.technosub.ncertgurusmartaiquestionsolver" target="_blank">
-<button>Try Now</button>
+<p><strong>Score 95%+</strong> in your exams! 🎯 Get instant AI-powered solutions for any CBSE question in seconds!</p>
+<a class="cta-button" href="https://play.google.com/store/apps/details?id=com.zenx.ncertpdfviewer" target="_blank">
+<span>Get Free Access Now</span>
 </a>
 </div>
 </div>
@@ -2329,13 +2535,14 @@ p {
 
   if (lastShown !== today) {
     window.addEventListener("DOMContentLoaded", function() {
-      document.getElementById("ncertGuruPopup").style.display = "block";
-      localStorage.setItem(popupKey, today);
+      setTimeout(function() {
+        document.getElementById("ncertGuruPopup").style.display = "block";
+        localStorage.setItem(popupKey, today);
+      }, 1500); // Slight delay for better user experience
     });
   }
 })();
 </script>
-<!-- /NCERT Guru Popup -->
 </body>
 </html>
 <!-- Cache served by breeze CACHE - Last modified: Mon, 21 Oct 2024 21:54:52 GMT -->
